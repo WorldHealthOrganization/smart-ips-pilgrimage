@@ -1,0 +1,13 @@
+﻿/github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.smart-ips-pilgrimage.json: line 1, col 121, Error - Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide) (INVALID)
+/github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.smart-ips-pilgrimage.json: line 1, col 14883, Warning - Profile reference 'SMARTImplementationGuide' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles (STRUCTURE)
+/github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLink.json: line 0, col 0, Error - Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLink.json - the canonical URL (http://smart.who.int/smart-ips-pilgrimage/StructureDefinition/SmartHealthLink) does not match the URL (http://smart.who.int/ddcc/StructureDefinition/SmartHealthLink) (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLink.json: line 0, col 0, Error - URL Mismatch http://smart.who.int/smart-ips-pilgrimage/StructureDefinition/SmartHealthLink vs http://smart.who.int/ddcc/StructureDefinition/SmartHealthLink (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload.json: line 0, col 0, Error - Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload.json - the canonical URL (http://smart.who.int/smart-ips-pilgrimage/StructureDefinition/SmartHealthLinkPayload) does not match the URL (http://smart.who.int/ddcc/StructureDefinition/SmartHealthLinkPayload) (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload.json: line 0, col 0, Error - URL Mismatch http://smart.who.int/smart-ips-pilgrimage/StructureDefinition/SmartHealthLinkPayload vs http://smart.who.int/ddcc/StructureDefinition/SmartHealthLinkPayload (BUSINESSRULE)
+
+SMARTIPSforPilgrimage : Validation Results
+=========================================
+
+err = 6, warn = 5, info = 0
+IG Publisher Version: 1.5.6
+Generated Thu Dec 14 13:04:20 UTC 2023. FHIR version 4.3.0 for fhir.who.smart-ips-pilgrimage#0.1.0 (canonical = http://smart.who.int/smart-ips-pilgrimage)

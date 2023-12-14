@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "SmartHealthLink",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ddcc/StructureDefinition/SmartHealthLink",
+    "version" : "0.1.0",
+    "name" : "SmartHealthLink"
+  },
+  {
+    "id" : "SmartHealthLinkPayload",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ddcc/StructureDefinition/SmartHealthLinkPayload",
+    "version" : "0.1.0",
+    "name" : "SmartHealthLinkPayload"
+  },
+  {
+    "id" : "fhir.who.smart-ips-pilgrimage",
+    "type" : "ImplementationGuide",
+    "url" : "http://smart.who.int/smart-ips-pilgrimage/ImplementationGuide/fhir.who.smart-ips-pilgrimage",
+    "version" : "0.1.0",
+    "name" : "SMARTIPSforPilgrimage"
+  }
+]
