@@ -1,0 +1,36 @@
+{
+  "resourceType" : "GraphDefinition",
+  "id" : "consent-post-counseling",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: GraphDefinition</b><a name=\"consent-post-counseling\"> </a><a name=\"hcconsent-post-counseling\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource GraphDefinition &quot;consent-post-counseling&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGTransactionDefinition.html\">SGTransactionDefinition</a></p></div><p><b>name</b>: consent-post-counseling</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>description</b>: Record Consent - Post-Counseling. Intended in bulk</p><h3>Links</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td></tr><tr><td style=\"display: none\">*</td><td>, , , </td></tr></table></div>"
+  },
+  "name" : "consent-post-counseling",
+  "status" : "active",
+  "experimental" : false,
+  "description" : "Record Consent - Post-Counseling. Intended in bulk",
+  "link" : [{
+    "extension" : [{
+      "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+      "valueCoding" : {
+        "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+        "code" : "consent-post-counseling"
+      }
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "Consent can be recorded based on a post counseling based on a blanket jurisdictional policy for Pilgrims as part of their permission to go on Hajj against a list of Pilgrim IDs of those that went through the health assessment check."
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "The OCHIE shall support create and update per the  [IHE PCF Consent Recorder Capability Statement](https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRecorder.html). "
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "The OCHIE SHALL act as  [IHE PCF Consent Recorder](https://profiles.ihe.net/ITI/PCF/volume-1.html#153111-consent-recorder) "
+    }]
+  }]
+}

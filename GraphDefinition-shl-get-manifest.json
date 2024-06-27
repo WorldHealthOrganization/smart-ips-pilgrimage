@@ -1,0 +1,36 @@
+{
+  "resourceType" : "GraphDefinition",
+  "id" : "shl-get-manifest",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: GraphDefinition</b><a name=\"shl-get-manifest\"> </a><a name=\"hcshl-get-manifest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource GraphDefinition &quot;shl-get-manifest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGTransactionDefinition.html\">SGTransactionDefinition</a></p></div><p><b>name</b>: shl-get-manifest</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>description</b>: Get SHL Manifest</p><h3>Links</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td></tr><tr><td style=\"display: none\">*</td><td>, , , </td></tr></table></div>"
+  },
+  "name" : "shl-get-manifest",
+  "status" : "active",
+  "experimental" : false,
+  "description" : "Get SHL Manifest",
+  "link" : [{
+    "extension" : [{
+      "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+      "valueCoding" : {
+        "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+        "code" : "shl-get-manifest"
+      }
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "Initatied by the HCEMR once a Smart Health Link provided by a Pilgrim has been scanned."
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "See the [Smart Health Link - Manifest](https://docs.smarthealthit.org/smart-health-links/spec/#shlink-manifest-request) specifcation with the following modifications:\n- The *contentType* entry MAY also include the value \"application/pdf\" in the case that the corresponding *location* entry of the Smart Health Link is for a PDF rendering of the Verifiable Digital Health Certificate (e.g. Verifiable IPS).\n- The *contentType* entry MAY also include the value \"text/html\" in the case that the corresponding *location* entry of the Smart Health Link is for an external viewing portal for Verifiable Digital Health Certificate (e.g. Verifiable IPS).\n- The *contentType* entry MAY also include the value \"text/html\" in the case that the corresponding *location* entry of the Smart Health Link is a Verifiable Digital Health Certificate (e.g. Verifiable IPS)."
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : ""
+    }]
+  }]
+}

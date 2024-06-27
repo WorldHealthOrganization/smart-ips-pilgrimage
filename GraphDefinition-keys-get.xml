@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GraphDefinition xmlns="http://hl7.org/fhir">
+  <id value="keys-get"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: GraphDefinition</b><a name="keys-get"> </a><a name="hckeys-get"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource GraphDefinition &quot;keys-get&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGTransactionDefinition.html">SGTransactionDefinition</a></p></div><p><b>name</b>: keys-get</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>description</b>: Retrieve Verification Keys</p><h3>Links</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td></tr><tr><td style="display: none">*</td><td>, , , </td></tr></table></div>
+  </text>
+  <name value="keys-get"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Retrieve Verification Keys"/>
+  <link>
+    <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
+      <valueCoding>
+        <system value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"/>
+        <code value="keys-get"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value=""/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="The HCEMR SHALL use one of the following transactions:&#xA;- [Retrieve Verification Keys - DID](https://smart.who.int/trust/transactions.html#get_keys_did)&#xA;- [Retrieve Verification Keys  - API](https://smart.who.int/trust/transactions.html#get_keys_api)"/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="The HCEMR shall use the verificaiton keys to verify the provance of the Verificable Smart Health Link and the Verifable IPS"/>
+    </extension>
+  </link>
+</GraphDefinition>

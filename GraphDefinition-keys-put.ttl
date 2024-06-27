@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/GraphDefinition/keys-put> a fhir:GraphDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "keys-put"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGTransactionDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: GraphDefinition</b><a name=\"keys-put\"> </a><a name=\"hckeys-put\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource GraphDefinition &quot;keys-put&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGTransactionDefinition.html\">SGTransactionDefinition</a></p></div><p><b>name</b>: keys-put</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>description</b>: Publish Verification Keys</p><h3>Links</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td></tr><tr><td style=\"display: none\">*</td><td>, , , </td></tr></table></div>"
+  ] ; # 
+  fhir:name [ fhir:v "keys-put"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:description [ fhir:v "Publish Verification Keys"] ; # 
+  fhir:link ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Sgcode"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "keys-put" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "" ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "The OCHIE SHALL use one of the following transactions:\n- [Publish Verification Keys - API](https://smart.who.int/trust/transactions.html#put_keys_api)" ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
