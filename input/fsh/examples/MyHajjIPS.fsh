@@ -178,7 +178,7 @@ Usage: #inline
 * qualification.code.coding = $v2-0360#MD "Doctor of Medicine"
 
 Instance: 890751f4-2924-4636-bab7-efffc7f3cf15
-InstanceOf: Organization
+InstanceOf: HajjOrganization
 Usage: #inline
 * identifier.system = "urn:oid:2.16.528.1.1007.3.3"
 * identifier.value = "564738757"
@@ -192,6 +192,7 @@ Usage: #inline
 * address.city = "Dordrecht"
 * address.postalCode = "3311 CE"
 * address.country = "NL"
+* type = http://terminology.hl7.org/CodeSystem/organization-type#pay
 
 Instance: c64139e7-f02d-409c-bf34-75e8bf23bc80
 InstanceOf: Condition
@@ -417,7 +418,7 @@ Usage: #example
 * status = #current
 * type = http://loinc.org#64292-6 "Release of information consent"
 * subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
-* author = Reference(890751f4-2924-4636-bab7-efffc7f3cf15)
+* author = Reference(urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15)
 * description = "The captured signed document"
 * content.attachment.title = "Hello World"
 * content.attachment.contentType = #text/plain

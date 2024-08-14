@@ -21,7 +21,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[consent].resource only HajjConsent
 
 
-Profile: HajjIPS-Composition
+Profile: HajjIPSComposition
 Parent: CompositionUvIps
 Title: "Composition (IPS) for Hajj"
 Description: "Clinical document used to represent the International Patient Summary (IPS) data set for Hajj Pilgrimage" 

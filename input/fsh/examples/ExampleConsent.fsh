@@ -1,6 +1,6 @@
 Instance: ExampleConsent
 InstanceOf: HajjConsent
-Usage: #example
+Usage: #inline
 * id = "c7781f44-6df8-4a8b-9e06-0b34263a47c6"
 * status = #active
 * scope = $consentscope#patient-privacy

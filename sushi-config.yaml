@@ -18,9 +18,9 @@ publisher:
   email: smart@who.int
 
 
-meta:
-  profile:
-    - SGImplementationGuide
+#meta:
+#  profile:
+#    - SGImplementationGuide
 
 pages:
   index.md:
