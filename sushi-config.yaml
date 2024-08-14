@@ -1,5 +1,6 @@
 id: who.ips-pilgrimage
-canonical: https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies
+#canonical: https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies
+canonical: http://smart.who.int/ips-pilgrimage
 name: SMART IPS for Pilgrimage
 title: SMART Verifiable IPS for Pilgrimage
 description: An Implementation Guide which describes how to utilize GDHCN and IPS for verifable health documents during pilgrimage.
@@ -19,7 +20,7 @@ publisher:
 
 meta:
   profile:
-    - SMARTImplementationGuide
+    - SGImplementationGuide
 
 pages:
   index.md:

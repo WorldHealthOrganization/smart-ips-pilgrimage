@@ -416,8 +416,8 @@ Usage: #example
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * status = #current
 * type = http://loinc.org#64292-6 "Release of information consent"
-* subject = Reference(Patient/ex-patient)
-* author = Reference(Organization/ex-organization)
+* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* author = Reference(890751f4-2924-4636-bab7-efffc7f3cf15)
 * description = "The captured signed document"
 * content.attachment.title = "Hello World"
 * content.attachment.contentType = #text/plain
