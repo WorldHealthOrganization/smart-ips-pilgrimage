@@ -26,43 +26,51 @@ Usage: #example
 * relatesTo.targetIdentifier.value = "c2277753-9f90-4a95-8ddb-a0b3f6e7d292"
 * event.code = $v3-ActClass#PCPR
 * event.period.end = "2017-12-11T14:30:00+01:00"
+
 * section[sectionProblems].title = "Active Problems"
-* section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
+// * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
 * section[sectionProblems].text.status = #generated
 * section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hot75e8bf23bc89 flushes</div>"
 * section[sectionProblems].entry = Reference(c64139e7-f02d-409c-bf34-75e8bf23bc89)
+
 * section[sectionMedications].title = "Medication"
-* section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
+// * section[sectionMedications].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[sectionMedications].text.status = #generated
 * section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Medication</th><th>Strength</th><th>Form</th><th>Dosage</th><th>Comment</th></tr></thead><tbody><tr><td>Anastrozole</td><td>1 mg</td><td>tablet</td><td>once daily</td><td>treatment for breast cancer</td></tr><tr><td>Black Cohosh Extract</td><td></td><td>pil</td><td></td><td>herbal supplement</td></tr></tbody></table></div>"
 * section[sectionMedications].entry[0] = Reference(c220e36c-eb67-4fc4-9ba1-2fabc52acec5)
 * section[sectionMedications].entry[+] = Reference(47524493-846a-4a26-bae2-4ab03e60f02d)
+
 * section[sectionAllergies].title = "Allergies and Intolerances"
-* section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+// * section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[sectionAllergies].text.status = #generated
 * section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality</div>"
 * section[sectionAllergies].entry[0] = Reference(72884cad-ebe6-4f43-a51a-2f978275f131)
+
 * section[sectionPastIllnessHx].title = "History of Past Illness"
-* section[sectionPastIllnessHx].code = $loinc#11348-0 "History of Past illness Narrative"
+// * section[sectionPastIllnessHx].code = $loinc#11348-0 "History of Past illness Narrative"
 * section[sectionPastIllnessHx].text.status = #generated
 * section[sectionPastIllnessHx].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Breast cancer Stage II with no evidence of recurrence following treatment</div>"
 * section[sectionPastIllnessHx].entry = Reference(c4597aa2-688a-401b-a658-70acc6de28c5)
+
 * section[sectionPlanOfCare].title = "Plan of Treatment"
-* section[sectionPlanOfCare].code = $loinc#18776-5 "Plan of care note"
+// * section[sectionPlanOfCare].code = $loinc#18776-5 "Plan of care note"
 * section[sectionPlanOfCare].text.status = #generated
 * section[sectionPlanOfCare].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Continue hormone medication with Anastrozole for total of 5 years and monitor for potential breast cancer recurrence</div>"
+
 * section[sectionResults].title = "Results"
-* section[sectionResults].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
+// * section[sectionResults].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
 * section[sectionResults].text.status = #generated
 * section[sectionResults].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th colspan=\"3\">Blood typing</th></tr></thead><tbody><tr><td>Blood group</td><td>A+</td><td/></tr><tr><td>C Ab [Presence] in Serum or Plasma</td><td>Positive</td><td/></tr><tr><td>E Ab [Presence] in Serum or Plasma</td><td>Positive</td><td/></tr><tr><td>Little c Ab [Presence] in Serum or Plasma</td><td>Negative</td><td/></tr></tbody></table><table><thead><tr><th colspan=\"3\">Hemoglobin A1c monitoring</th></tr></thead><tbody><tr><td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</td><td>7.5 %</td><td/></tr></tbody></table><table><thead><tr><th colspan=\"3\">Bacteriology</th></tr></thead><tbody><tr><td colspan=\"3\">Methicillin resistant Staphylococcus aureus</td></tr><tr><td colspan=\"3\">Healthy carrier of MRSA</td></tr></tbody></table></div>"
 * section[sectionResults].entry[0] = Reference(2639657a-c19a-48e2-82cc-471e13b8ad93)
 * section[sectionResults].entry[+] = Reference(cc354e00-a419-47ea-8b6c-1768b2a01645)
 * section[sectionResults].entry[+] = Reference(26bee0a9-5997-4557-ab9d-c6adbb05b571)
+
 * section[sectionAdvanceDirectives].title = "Advance Directives"
-* section[sectionAdvanceDirectives].code = $loinc#42348-3
+// * section[sectionAdvanceDirectives].code = $loinc#42348-3
 * section[sectionAdvanceDirectives].text.status = #generated
 * section[sectionAdvanceDirectives].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent MYS for pilgrimage</div>"
 * section[sectionAdvanceDirectives].entry = Reference(c7781f44-6df8-4a8b-9e06-0b34263a47c6)
+
 
 
 Instance: 2b90dd2b-2dab-4c75-9bb9-a355e07401e7
@@ -138,7 +146,7 @@ Usage: #example
 * code.coding[=].display.extension.extension[=].valueString = "opvliegers"
 * code.coding[=].display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * code.coding[+] = $icd-10#N95.1 "Menopausal and female climacteric states"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * onsetDateTime = "2015"
 * recordedDate = "2016-10"
 
@@ -149,7 +157,7 @@ Usage: #example
 * identifier.value = "b75f92cb-61d4-469a-9387-df5ef70d25f0"
 * status = #active
 * medicationReference = Reference(urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc)
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * effectivePeriod.start = "2015-03"
 * dosage.timing.repeat.count = 1
 * dosage.timing.repeat.periodUnit = #d
@@ -164,7 +172,7 @@ Usage: #example
 * identifier.value = "9e312d6b-c6b6-439a-a730-6efaa5dcf8bc"
 * status = #active
 * medicationReference = Reference(urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626)
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * effectivePeriod.start = "2016-01"
 * dosage.route = $standardterms#20053000 "Oral use"
 
@@ -201,7 +209,7 @@ Usage: #example
 * extension.url = "http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement"
 * extension.valueDateTime = "2010"
 * code = $sct#373270004 "Substance with penicillin structure and antibacterial mechanism of action (substance)"
-* patient = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* patient = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * onsetDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * onsetDateTime.extension.valueCode = #unknown
 //* onsetDateTime = "2010"
@@ -222,7 +230,7 @@ Usage: #example
 * code.coding[=].display.extension.extension[=].valueString = "Borstkanker stadium II zonder aanwijzingen van recidieven na behandeling"
 * code.coding[=].display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * code.coding[+] = $icd-o-3#8500/3 "Infiltrating duct carcinoma, NOS"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * onsetDateTime = "2015-01"
 * abatementDateTime = "2015-03"
 
@@ -237,9 +245,9 @@ Instance: aa11a2be-3e36-4be7-b58a-6fc3dace2740
 InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Usage: #example
 * status = #final
-* category = $observation-category#laboratory
+//* category = $observation-category#laboratory
 * code = $loinc#882-1 "ABO and Rh group [Type] in Blood"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * effectiveDateTime = "2015-10-10T09:15:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#278149003 "Blood group A Rh(D) positive"
@@ -248,9 +256,9 @@ Instance: 6e39ccf3-f997-4a2b-8f28-b4b71c778c79
 InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Usage: #example
 * status = #final
-* category = $observation-category#laboratory
+//* category = $observation-category#laboratory
 * code = $loinc#945-6 "C Ab [Presence] in Serum or Plasma"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#10828004 "Positive"
@@ -259,9 +267,9 @@ Instance: b4916505-a06b-460c-9be8-011609282456
 InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Usage: #example
 * status = #final
-* category = $observation-category#laboratory
+// * category = $observation-category#laboratory
 * code = $loinc#1018-1 "E Ab [Presence] in Serum or Plasma"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#10828004 "Positive"
@@ -270,9 +278,9 @@ Instance: a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3
 InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Usage: #example
 * status = #final
-* category = $observation-category#laboratory
+// * category = $observation-category#laboratory
 * code = $loinc#1156-9 "little c Ab [Presence] in Serum or Plasma"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#260385009 "Negative"
@@ -281,9 +289,9 @@ Instance: 2639657a-c19a-48e2-82cc-471e13b8ad93
 InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Usage: #example
 * status = #final
-* category = $observation-category#laboratory
+// * category = $observation-category#laboratory
 * code.text = "Blood typing"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * effectiveDateTime = "2015-10-10"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * hasMember[0] = Reference(urn:uuid:aa11a2be-3e36-4be7-b58a-6fc3dace2741)
@@ -295,9 +303,9 @@ Instance: cc354e00-a419-47ea-8b6c-1768b2a01645
 InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Usage: #example
 * status = #final
-* category = $observation-category#laboratory
+// * category = $observation-category#laboratory
 * code = $loinc#17856-6 "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * effectiveDateTime = "2017-11-10T08:20:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueQuantity = 7.5 '%' "%"
@@ -307,9 +315,9 @@ Instance: 26bee0a9-5997-4557-ab9d-c6adbb05b571
 InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Usage: #example
 * status = #final
-* category = $observation-category#laboratory
+// * category = $observation-category#laboratory
 * code = $loinc#42803-7 "Bacteria identified in Isolate"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
 * effectiveDateTime = "2017-12-10T08:20:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#115329001 "Methicillin resistant Staphylococcus aureus"

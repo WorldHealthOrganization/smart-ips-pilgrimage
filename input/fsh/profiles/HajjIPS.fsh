@@ -2,6 +2,8 @@ Profile: HajjIPS
 Parent: BundleUvIps
 Title: "Bundle - IPS for Hajj"
 Description: "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide for the Hajj Pilgrimage."
+* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Bundle - IPS for Hajj</p></div>"
+* ^text.status = #generated
 * entry MS
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
@@ -25,6 +27,9 @@ Profile: HajjIPSComposition
 Parent: CompositionUvIps
 Title: "Composition (IPS) for Hajj"
 Description: "Clinical document used to represent the International Patient Summary (IPS) data set for Hajj Pilgrimage" 
+
+* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Composition - IPS for Hajj</p></div>"
+* ^text.status = #generated
 
 * section[sectionAdvanceDirectives] 1..1
 * section[sectionAdvanceDirectives].entry only Reference(HajjConsent)

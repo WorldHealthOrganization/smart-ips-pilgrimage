@@ -167,6 +167,7 @@ Usage: #inline
 
 Instance: 1c616b24-3895-48c4-9a02-9a64110351ef
 InstanceOf: Practitioner
+Description: "A Practitioner"
 Usage: #inline
 * identifier.system = "urn:oid:2.16.528.1.1007.3.1"
 * identifier.value = "129854633"
@@ -179,6 +180,7 @@ Usage: #inline
 
 Instance: 890751f4-2924-4636-bab7-efffc7f3cf15
 InstanceOf: HajjOrganization
+Description: "A HajjOrganization"
 Usage: #inline
 * identifier.system = "urn:oid:2.16.528.1.1007.3.3"
 * identifier.value = "564738757"
@@ -196,6 +198,7 @@ Usage: #inline
 
 Instance: c64139e7-f02d-409c-bf34-75e8bf23bc80
 InstanceOf: Condition
+Description: "A Condition"
 Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "c87bf51c-e53c-4bfe-b8b7-aa62bdd93002"
@@ -216,6 +219,7 @@ Usage: #inline
 
 Instance: c220e36c-eb67-4fc4-9ba1-2fabc52acec6
 InstanceOf: MedicationStatement
+Description: "A Medication"
 Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "b75f92cb-61d4-469a-9387-df5ef70d25f0"
@@ -231,6 +235,7 @@ Usage: #inline
 
 Instance: 47524493-846a-4a26-bae2-4ab03e60f02e
 InstanceOf: MedicationStatement
+Description: "Another Medication"
 Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "9e312d6b-c6b6-439a-a730-6efaa5dcf8bc"
@@ -242,6 +247,7 @@ Usage: #inline
 
 Instance: 976d0804-cae0-45ae-afe3-a19f3ceba6bc
 InstanceOf: Medication
+Description: "Yet another Medication"
 Usage: #inline
 * code.coding[0] = $sct#108774000 "Product containing anastrozole (medicinal product)"
 * code.coding[+] = urn:oid:2.16.840.1.113883.2.4.4.1#99872 "ANASTROZOL 1MG TABLET"
@@ -250,6 +256,7 @@ Usage: #inline
 
 Instance: 8adc0999-9468-4ac9-9557-680fa133d626
 InstanceOf: Medication
+Description: "And more Medication"
 Usage: #inline
 * code.coding[0] = $sct#412588001 "Cimicifuga racemosa extract (substance)"
 * code.coding[=].display.extension.extension[0].url = "lang"
@@ -262,6 +269,7 @@ Usage: #inline
 
 Instance: 72884cad-ebe6-4f43-a51a-2f978275f132
 InstanceOf: AllergyIntolerance
+Description: "An AllergyIntolerance"
 Usage: #inline
 //* identifier.system = "urn:oid:1.2.3.999"
 //* identifier.value = "72884cad-ebe6-4f43-a51a-2f978275f132"
@@ -280,6 +288,7 @@ Usage: #inline
 
 Instance: c4597aa2-688a-401b-a658-70acc6de28c6
 InstanceOf: Condition
+Description: "Another Condition"
 Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "66d4a8c7-9081-43e0-a63f-489c2ae6edd6"
@@ -300,6 +309,7 @@ Usage: #inline
 
 Instance: 45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7
 InstanceOf: Organization
+Description: "An Organization"
 Usage: #inline
 * active = true
 * type = $organization-type#other
@@ -307,6 +317,7 @@ Usage: #inline
 
 Instance: aa11a2be-3e36-4be7-b58a-6fc3dace2741
 InstanceOf: Observation
+Description: "An Observation"
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory
@@ -318,6 +329,7 @@ Usage: #inline
 
 Instance: 6e39ccf3-f997-4a2b-8f28-b4b71c778c70
 InstanceOf: Observation
+Description: "An Observation"
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory
@@ -329,6 +341,7 @@ Usage: #inline
 
 Instance: b4916505-a06b-460c-9be8-011609282457
 InstanceOf: Observation
+Description: "An Observation"
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory
@@ -340,6 +353,7 @@ Usage: #inline
 
 Instance: a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4
 InstanceOf: Observation
+Description: "An Observation"
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory
@@ -351,6 +365,7 @@ Usage: #inline
 
 Instance: 2639657a-c19a-48e2-82cc-471e13b8ad94
 InstanceOf: Observation
+Description: "An Observation"
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory
@@ -365,6 +380,7 @@ Usage: #inline
 
 Instance: cc354e00-a419-47ea-8b6c-1768b2a01646
 InstanceOf: Observation
+Description: "An Observation"
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory
@@ -377,6 +393,7 @@ Usage: #inline
 
 Instance: 26bee0a9-5997-4557-ab9d-c6adbb05b572
 InstanceOf: Observation
+Description: "An Observation"
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory
@@ -390,7 +407,8 @@ Usage: #inline
 
 Instance: c7781f44-6df8-4a8b-9e06-0b34263a47c7
 InstanceOf: HajjConsent
-Usage: #inline
+Description: "A Consent"
+Usage: #example
 * status = #active
 * scope = $consentscope#patient-privacy
 * provision.purpose.code = #CONSENT-KSA
@@ -403,7 +421,7 @@ Usage: #inline
 * provision.period.end = "2016-01-01"
 * category.coding.code = #acd
 * performer.display = "Org1"
-* sourceReference = Reference(DocumentReference/ex-documentreference)
+* sourceReference = Reference(ex-documentreference)
 
 Instance: ex-documentreference
 InstanceOf: DocumentReference
