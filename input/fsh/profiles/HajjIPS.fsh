@@ -15,8 +15,8 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry.search ..0
 * entry.request ..0
 * entry.response ..0
-* entry contains
-    consent 1..*
+// * entry contains
+//     consent 1..*
 
 * entry[consent].resource only HajjConsent
 
