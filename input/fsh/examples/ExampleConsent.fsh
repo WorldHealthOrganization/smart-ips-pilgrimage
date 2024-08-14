@@ -1,7 +1,6 @@
-Instance: ExampleConsent
+Instance: c7781f44-6df8-4a8b-9e06-0b34263a47c6
 InstanceOf: HajjConsent
 Usage: #inline
-* id = "c7781f44-6df8-4a8b-9e06-0b34263a47c6"
 * status = #active
 * scope = $consentscope#patient-privacy
 * provision.purpose.code = #CONSENT-KSA
