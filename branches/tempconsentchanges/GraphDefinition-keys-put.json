@@ -1,0 +1,36 @@
+{
+  "resourceType" : "GraphDefinition",
+  "id" : "keys-put",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition keys-put</b></p><a name=\"keys-put\"> </a><a name=\"hckeys-put\"> </a><a name=\"keys-put-en-US\"> </a><p><b>name</b>: keys-put</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Publish Verification Keys</p>\n</div><blockquote><p><b>link</b></p></blockquote></div>"
+  },
+  "name" : "keys-put",
+  "status" : "active",
+  "experimental" : false,
+  "description" : "Publish Verification Keys",
+  "link" : [{
+    "extension" : [{
+      "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+      "valueCoding" : {
+        "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+        "code" : "keys-put"
+      }
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : ""
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "The OCHIE SHALL use one of the following transactions:\n- [Publish Verification Keys - API](https://smart.who.int/trust/transactions.html#put_keys_api)"
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : ""
+    }]
+  }]
+}

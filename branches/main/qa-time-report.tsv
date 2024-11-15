@@ -1,0 +1,4 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-who.ips-pilgrimage.json	7521	-	0	0	0	0	0	0	7	75	0	0	0	0	0	0	0	1	0	0	90	59	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-SmartHealthLink.json	1538	47	0	0	0	0	0	31	0	35	0	0	0	0	0	0	0	0	0	0	42	960	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload.json	5404	35	0	0	0	0	0	40	0	16	0	0	0	0	0	0	0	0	0	0	82	294	0	0	0	2	0	0
