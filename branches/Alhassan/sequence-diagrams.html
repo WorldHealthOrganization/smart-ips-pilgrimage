@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Sequence Diagrams - SMART Verifiable IPS for Pilgrimage v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.2"}
+    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting Guidelines for Country use</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">Non-functional Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="trust_domain.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">SMART Verifiable IPS for Pilgrimage</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='data-models-and-exchange.html'><b>Data Models and Exchange</b></a></li><li><b>Sequence Diagrams</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SMART Verifiable IPS for Pilgrimage, published by WHO. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/smart-ips-pilgrimage">https://github.com/WorldHealthOrganization/smart-ips-pilgrimage</a> and changes regularly. See the <a href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Sequence Diagrams</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>This page includes sequence diagrams that describe interactions between actors and participants described in this Implementation Guide.</p>
+
+<h3 id="overall_workflow">Overall Workflow</h3>
+<p>&lt;?xml version=”1.0” encoding=”us-ascii” standalone=”no”?&gt;<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" preserveAspectRatio="none" version="1.1" viewBox="0 0 2121 1341" zoomAndPan="magnify"><defs></defs><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="221" x="949" y="27.9951">Religious Pilgrimage and IPS</text><rect fill="none" height="162.9297" style="stroke:#000000;stroke-width:1.5;" width="911" x="286" y="168.1875"></rect><rect fill="none" height="46.2656" style="stroke:#000000;stroke-width:1.5;" width="1088" x="109" y="801.5078"></rect><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="57" x2="57" y1="151.1875" y2="1227.6328"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="202" x2="202" y1="151.1875" y2="1227.6328"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="352" x2="352" y1="151.1875" y2="1227.6328"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="610" x2="610" y1="151.1875" y2="1227.6328"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="859" x2="859" y1="151.1875" y2="1227.6328"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1135" x2="1135" y1="151.1875" y2="1227.6328"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1705" x2="1705" y1="151.1875" y2="1227.6328"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1870" x2="1870" y1="151.1875" y2="1227.6328"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="2047" x2="2047" y1="151.1875" y2="1227.6328"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="14" y="131.5889">Pilgrim from</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="5" y="147.8857">Origin Country</text><ellipse cx="57" cy="67.0938" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"></ellipse><path d="M57,75.0938 L57,102.0938 M44,83.0938 L70,83.0938 M57,102.0938 L44,117.0938 M57,102.0938 L70,117.0938 " fill="none" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="14" y="1239.6279">Pilgrim from</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="5" y="1255.9248">Origin Country</text><ellipse cx="57" cy="1267.7266" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"></ellipse><path d="M57,1275.7266 L57,1302.7266 M44,1283.7266 L70,1283.7266 M57,1302.7266 L44,1317.7266 M57,1302.7266 L70,1317.7266 " fill="none" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="119" y="115.292">Accompanying Clinician</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="184" y="131.5889">from</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="150.5" y="147.8857">Origin Country</text><ellipse cx="202.5" cy="50.7969" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"></ellipse><path d="M202.5,58.7969 L202.5,85.7969 M189.5,66.7969 L215.5,66.7969 M202.5,85.7969 L189.5,100.7969 M202.5,85.7969 L215.5,100.7969 " fill="none" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="119" y="1239.6279">Accompanying Clinician</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="184" y="1255.9248">from</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="150.5" y="1272.2217">Origin Country</text><ellipse cx="202.5" cy="1284.0234" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"></ellipse><path d="M202.5,1292.0234 L202.5,1319.0234 M189.5,1300.0234 L215.5,1300.0234 M202.5,1319.0234 L189.5,1334.0234 M202.5,1319.0234 L215.5,1334.0234 " fill="none" style="stroke:#181818;stroke-width:0.5;"></path><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="112" x="296" y="103.5938"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="303" y="123.5889">Origin Country</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="307.5" y="139.8857">Health Wallet</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="112" x="296" y="1226.6328"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="303" y="1246.6279">Origin Country</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="307.5" y="1262.9248">Health Wallet</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="112" x="554" y="103.5938"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="561" y="123.5889">Origin Country</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="599" y="139.8857">HIE</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="112" x="554" y="1226.6328"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="561" y="1246.6279">Origin Country</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="599" y="1262.9248">HIE</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="807" y="119.8906"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="814" y="139.8857">WHO GDHCN</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="807" y="1226.6328"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="814" y="1246.6279">WHO GDHCN</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="1083" y="103.5938"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="1090" y="123.5889">Host Country</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="1119.5" y="139.8857">EMR</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="1083" y="1226.6328"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="1090" y="1246.6279">Host Country</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="1119.5" y="1262.9248">EMR</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="1653.5" y="131.5889">Health Worker</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="1649" y="147.8857">in Host Country</text><ellipse cx="1705" cy="67.0938" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"></ellipse><path d="M1705,75.0938 L1705,102.0938 M1692,83.0938 L1718,83.0938 M1705,102.0938 L1692,117.0938 M1705,102.0938 L1718,117.0938 " fill="none" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="1653.5" y="1239.6279">Health Worker</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="1649" y="1255.9248">in Host Country</text><ellipse cx="1705" cy="1267.7266" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"></ellipse><path d="M1705,1275.7266 L1705,1302.7266 M1692,1283.7266 L1718,1283.7266 M1705,1302.7266 L1692,1317.7266 M1705,1302.7266 L1718,1317.7266 " fill="none" style="stroke:#181818;stroke-width:0.5;"></path><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="198" x="1771" y="119.8906"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="1778" y="139.8857">Jamaah Haji Indonesia Card</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="198" x="1771" y="1226.6328"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="1778" y="1246.6279">Jamaah Haji Indonesia Card</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136" x="1979" y="119.8906"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="1986" y="139.8857">Bar code scanner</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136" x="1979" y="1226.6328"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="1986" y="1246.6279">Bar code scanner</text><path d="M286,168.1875 L363,168.1875 L363,175.3203 L353,185.3203 L286,185.3203 L286,168.1875 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="162.9297" style="stroke:#000000;stroke-width:1.5;" width="911" x="286" y="168.1875"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="32" x="301" y="181.2544">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="162" x="378" y="180.3979">[routine synchronization]</text><line style="stroke:#181818;stroke-width:1.0;" x1="352" x2="394" y1="221.5859" y2="221.5859"></line><line style="stroke:#181818;stroke-width:1.0;" x1="394" x2="394" y1="221.5859" y2="234.5859"></line><line style="stroke:#181818;stroke-width:1.0;" x1="353" x2="394" y1="234.5859" y2="234.5859"></line><polygon fill="#181818" points="363,230.5859,353,234.5859,363,238.5859,359,234.5859" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="359" y="208.9536">01:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="209" x="386" y="201.3872">generate public-private key pairs</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="185" x="386" y="216.52">for issuing health documents</text><polygon fill="#181818" points="847,274.8516,857,278.8516,847,282.8516,851,278.8516" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="610" x2="853" y1="278.8516" y2="278.8516"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="617" y="266.2192">02:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="105" x="644" y="258.6528">send public keys</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="114" x="644" y="273.7856">for IPS verification</text><polygon fill="#181818" points="870,319.1172,860,323.1172,870,327.1172,866,323.1172" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="864" x2="1134" y1="323.1172" y2="323.1172"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="876" y="310.4849">03:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="225" x="903" y="302.9185">retrieves and caches all public keys</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="903" y="318.0513">for IPS and SHL verification</text><line style="stroke:#A80036;stroke-width:2.0;" x1="850" x2="868" y1="338.1172" y2="356.1172"></line><line style="stroke:#A80036;stroke-width:2.0;" x1="850" x2="868" y1="356.1172" y2="338.1172"></line><polygon fill="#181818" points="340,403.5156,350,407.5156,340,411.5156,344,407.5156" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="57" x2="346" y1="407.5156" y2="407.5156"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="64" y="387.3169">04:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="91" y="372.1841">request health document</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157" x="91" y="387.3169">with selective disclosure,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="91" y="402.4497">time limits and passcode</text><polygon fill="#181818" points="598,432.6484,608,436.6484,598,440.6484,602,436.6484" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="352" x2="604" y1="436.6484" y2="436.6484"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="359" y="431.5825">05:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="386" y="431.5825">request health document</text><line style="stroke:#181818;stroke-width:1.0;" x1="610" x2="652" y1="496.0469" y2="496.0469"></line><line style="stroke:#181818;stroke-width:1.0;" x1="652" x2="652" y1="496.0469" y2="509.0469"></line><line style="stroke:#181818;stroke-width:1.0;" x1="611" x2="652" y1="509.0469" y2="509.0469"></line><polygon fill="#181818" points="621,505.0469,611,509.0469,621,513.0469,617,509.0469" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="617" y="475.8481">06:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="171" x="644" y="460.7153">generate health document</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="208" x="644" y="475.8481">create signature with private key</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="170" x="644" y="490.981">attach signature and keyid</text><polygon fill="#181818" points="363,549.3125,353,553.3125,363,557.3125,359,553.3125" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="357" x2="609" y1="553.3125" y2="553.3125"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="369" y="540.6802">07:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="207" x="396" y="533.1138">issue verifiable health document</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="396" y="548.2466">(IPS via SHL)</text><polygon fill="#181818" points="1858,578.4453,1868,582.4453,1858,586.4453,1862,582.4453" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="610" x2="1864" y1="582.4453" y2="582.4453"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="617" y="577.3794">08:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="347" x="644" y="577.3794">issue Jamaah Haji Indonesia Card with QR code printed</text><line style="stroke:#181818;stroke-width:1.0;" x1="1135" x2="1177" y1="611.5781" y2="611.5781"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1177" x2="1177" y1="611.5781" y2="624.5781"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1136" x2="1177" y1="624.5781" y2="624.5781"></line><polygon fill="#181818" points="1146,620.5781,1136,624.5781,1146,628.5781,1142,624.5781" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="1142" y="606.5122">09:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="405" x="1169" y="606.5122">Upload pilgrims demographic information few weeks before Hajj</text><polygon fill="#181818" points="1693,695.1094,1703,699.1094,1693,703.1094,1697,699.1094" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="57" x2="1699" y1="699.1094" y2="699.1094"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="64" y="671.3442">10:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="253" x="91" y="648.645">travels to Host Country and seeks care,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="281" x="91" y="663.7778">shares verifiable health document(IPS) from</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="170" x="91" y="678.9106">health wallet (IPS via SHL),</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168" x="91" y="694.0435">shares pilgrimage number</text><polygon fill="#181818" points="1146,724.2422,1136,728.2422,1146,732.2422,1142,728.2422" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="1140" x2="1704" y1="728.2422" y2="728.2422"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="1152" y="723.1763">11:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="519" x="1179" y="723.1763">identifies pilgrim with demographics and registers patient with pilgrimage number</text><polygon fill="#181818" points="2035,753.375,2045,757.375,2035,761.375,2039,757.375" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="1705" x2="2041" y1="757.375" y2="757.375"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="1712" y="752.3091">12:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="193" x="1739" y="752.3091">uses scanner to scan QR code</text><polygon fill="#181818" points="1123,782.5078,1133,786.5078,1123,790.5078,1127,786.5078" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="57" x2="1129" y1="786.5078" y2="786.5078"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="64" y="781.4419">13:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="91" y="781.4419">enters PIN</text><path d="M109,801.5078 L186,801.5078 L186,808.6406 L176,818.6406 L109,818.6406 L109,801.5078 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="46.2656" style="stroke:#000000;stroke-width:1.5;" width="1088" x="109" y="801.5078"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="32" x="124" y="814.5747">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="31" x="201" y="813.7183">[opt]</text><polygon fill="#181818" points="1123,835.7734,1133,839.7734,1123,843.7734,1127,839.7734" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="202.5" x2="1129" y1="839.7734" y2="839.7734"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="209.5" y="834.7075">14:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="306" x="236.5" y="834.7075">[optional] enters PIN if Pilgrim is unable to do so</text><polygon fill="#181818" points="363,902.1719,353,906.1719,363,910.1719,359,906.1719" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="357" x2="1134" y1="906.1719" y2="906.1719"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="369" y="885.9731">15:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="396" y="870.8403">scans QR code from</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="396" y="885.9731">pilgrim's health wallet</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="396" y="901.106">(IPS via SHL)</text><line style="stroke:#A80036;stroke-width:2.0;" x1="343" x2="361" y1="897.1719" y2="915.1719"></line><line style="stroke:#A80036;stroke-width:2.0;" x1="343" x2="361" y1="915.1719" y2="897.1719"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1135" x2="1177" y1="950.4375" y2="950.4375"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1177" x2="1177" y1="950.4375" y2="963.4375"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1136" x2="1177" y1="963.4375" y2="963.4375"></line><polygon fill="#181818" points="1146,959.4375,1136,963.4375,1146,967.4375,1142,963.4375" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="1142" y="937.8052">16:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="166" x="1169" y="930.2388">verifies QR code signature</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="1173" y="945.3716">using cached keys</text><polygon fill="#181818" points="621,1018.8359,611,1022.8359,621,1026.8359,617,1022.8359" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="615" x2="1134" y1="1022.8359" y2="1022.8359"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="627" y="1002.6372">17:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="203" x="654" y="987.5044">retrieves health document (IPS)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="222" x="654" y="1002.6372">(document might be pregenerated</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="161" x="658" y="1017.77">or generated on request)</text><line style="stroke:#A80036;stroke-width:2.0;" x1="601" x2="619" y1="1013.8359" y2="1031.8359"></line><line style="stroke:#A80036;stroke-width:2.0;" x1="601" x2="619" y1="1031.8359" y2="1013.8359"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1135" x2="1177" y1="1067.1016" y2="1067.1016"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1177" x2="1177" y1="1067.1016" y2="1080.1016"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1136" x2="1177" y1="1080.1016" y2="1080.1016"></line><polygon fill="#181818" points="1146,1076.1016,1136,1080.1016,1146,1084.1016,1142,1080.1016" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="1142" y="1054.4692">18:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="256" x="1169" y="1046.9028">verifies health document (IPS) signature</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="1173" y="1062.0356">using cached keys</text><line style="stroke:#181818;stroke-width:1.0;" x1="1135" x2="1177" y1="1109.2344" y2="1109.2344"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1177" x2="1177" y1="1109.2344" y2="1122.2344"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1136" x2="1177" y1="1122.2344" y2="1122.2344"></line><polygon fill="#181818" points="1146,1118.2344,1136,1122.2344,1146,1126.2344,1142,1122.2344" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="1142" y="1104.1685">19:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="267" x="1169" y="1104.1685">saves local copy of health document (IPS)</text><polygon fill="#181818" points="1693,1147.3672,1703,1151.3672,1693,1155.3672,1697,1151.3672" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="1135" x2="1699" y1="1151.3672" y2="1151.3672"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="1142" y="1146.3013">20:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="233" x="1169" y="1146.3013">display contents of health document</text><polygon fill="#181818" points="68,1176.5,58,1180.5,68,1184.5,64,1180.5" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="62" x2="1704" y1="1180.5" y2="1180.5"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="74" y="1175.4341">21:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="164" x="101" y="1175.4341">provides appropriate care</text><polygon fill="#181818" points="1146,1205.6328,1136,1209.6328,1146,1213.6328,1142,1209.6328" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="1140" x2="1704" y1="1209.6328" y2="1209.6328"></line><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23" x="1152" y="1204.5669">22:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="178" x="1179" y="1204.5669">updates local record of care</text></g></svg></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package who.ips-pilgrimage#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Apr 23, 2024 13:37+0000">2024-04-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/ips-pilgrimage/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

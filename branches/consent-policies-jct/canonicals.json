@@ -1,0 +1,86 @@
+[
+  {
+    "id" : "QRCard",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/ActorDefinition/QRCard",
+    "version" : "0.1.0",
+    "name" : "QRCard"
+  },
+  {
+    "id" : "IPS.HAJJ",
+    "type" : "CodeSystem",
+    "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ",
+    "version" : "0.1.0",
+    "name" : "IPS_HAJJ"
+  },
+  {
+    "id" : "who.ips-pilgrimage",
+    "type" : "ImplementationGuide",
+    "url" : "http://smart.who.int/ips-pilgrimage/ImplementationGuide/who.ips-pilgrimage",
+    "version" : "0.1.0",
+    "name" : "SMARTIPSforPilgrimage"
+  },
+  {
+    "id" : "ConsentPeriod",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentPeriod",
+    "version" : "0.1.0",
+    "name" : "ConsentPeriod"
+  },
+  {
+    "id" : "ConsentVerifiedBy",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy",
+    "version" : "0.1.0",
+    "name" : "ConsentVerifiedBy"
+  },
+  {
+    "id" : "HajjConsent",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent",
+    "version" : "0.1.0",
+    "name" : "HajjConsent"
+  },
+  {
+    "id" : "HajjIPS",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS",
+    "version" : "0.1.0",
+    "name" : "HajjIPS"
+  },
+  {
+    "id" : "HajjIPSComposition",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPSComposition",
+    "version" : "0.1.0",
+    "name" : "HajjIPSComposition"
+  },
+  {
+    "id" : "HajjOrganization",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization",
+    "version" : "0.1.0",
+    "name" : "HajjOrganization"
+  },
+  {
+    "id" : "SmartHealthLink",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLink",
+    "version" : "0.1.0",
+    "name" : "SmartHealthLink"
+  },
+  {
+    "id" : "SmartHealthLinkPayload",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLinkPayload",
+    "version" : "0.1.0",
+    "name" : "SmartHealthLinkPayload"
+  },
+  {
+    "id" : "IPS.HAJJ.CONSENT",
+    "type" : "ValueSet",
+    "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT",
+    "version" : "0.1.0",
+    "name" : "IPS_HAJJ_CONSENT"
+  }
+]
