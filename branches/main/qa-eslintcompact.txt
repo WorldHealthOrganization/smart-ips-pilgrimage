@@ -1,0 +1,18 @@
+SMARTIPSforPilgrimage
+=========================================
+
+Generic: line 0, col 0, Error - The link 'business-process.html' for "Business Processes" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'actors.html' for "Actors" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'logical-models.html' for "Logical Models" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The html source references validator.pack which is deprecated. Change the IG to describe the use of the package system instead (BUSINESSRULE)
+Generic: line 0, col 0, Error - The link 'artifacts.html#knowledge-artifacts-measure' for "Artifact Index - Measures" cannot be resolved (valid targets: [segment-header, project-nav, publish-box, bottom, segment-post-footer, fhir-logo, who-logo, family-nav, ig-status, 1, structures-logical-models, top, stripe, segment-footer, segment-navbar, language-selector, artifact-index, segment-content, segment-breadcrumb]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'content_profiles.html' for "Content Profiles" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+/github/workspace/fsh-generated/resources/ImplementationGuide-who.ips-pilgrimage.json: line 1, col 110, Error - Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide) (INVALID)
+/github/workspace/fsh-generated/resources/ImplementationGuide-who.ips-pilgrimage.json: line 1, col 15378, Warning - Profile reference 'SMARTImplementationGuide' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles (STRUCTURE)
+
+err = 2, warn = 5, info = 0
+IG Publisher Version: 1.6.1

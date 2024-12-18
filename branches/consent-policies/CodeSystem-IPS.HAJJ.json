@@ -1,0 +1,51 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS.HAJJ",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS.HAJJ</b></p><a name=\"IPS.HAJJ\"> </a><a name=\"hcIPS.HAJJ\"> </a><a name=\"IPS.HAJJ-en-US\"> </a><p>This case-insensitive code system <code>https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">CONSENT-KSA<a name=\"IPS.HAJJ-CONSENT-KSA\"> </a></td><td>Consent for Kingdom of Saudi Arabia</td><td>&lt;INSERT TEXT FROM KSA: discuss pilgrim's consent to share their IPS during provision of clinical care during the Hajj event as well as any follow-up care that may be needed.&gt;</td></tr><tr><td style=\"white-space:nowrap\">CONSENT-IDN<a name=\"IPS.HAJJ-CONSENT-IDN\"> </a></td><td>Consent for Indonesia</td><td>&lt;INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj&gt;</td></tr><tr><td style=\"white-space:nowrap\">CONSENT-MYS<a name=\"IPS.HAJJ-CONSENT-MYS\"> </a></td><td>Consent for Malaysia</td><td>&lt;INSERT TEXT FROM MALAYSIA: discuss pilgrims's consent to utilize MySejahtera to enable access to KSA to their IPS if they are in need of care during Hajj&gt;</td></tr><tr><td style=\"white-space:nowrap\">CONSENT-OMN<a name=\"IPS.HAJJ-CONSENT-OMN\"> </a></td><td>Consent for Oman</td><td>&lt;INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care&gt;</td></tr></table></div>"
+  },
+  "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ",
+  "version" : "0.1.0",
+  "name" : "IPS_HAJJ",
+  "title" : "IPS.HAJJ CodeSystem",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-07-23T09:26:46+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "CodeSystem for IPS.HAJJ CodeSystem for utilization of IPS during Hajj",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "CONSENT-KSA",
+    "display" : "Consent for Kingdom of Saudi Arabia",
+    "definition" : "<INSERT TEXT FROM KSA: discuss pilgrim's consent to share their IPS during provision of clinical care during the Hajj event as well as any follow-up care that may be needed.>"
+  },
+  {
+    "code" : "CONSENT-IDN",
+    "display" : "Consent for Indonesia",
+    "definition" : "<INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj>"
+  },
+  {
+    "code" : "CONSENT-MYS",
+    "display" : "Consent for Malaysia",
+    "definition" : "<INSERT TEXT FROM MALAYSIA: discuss pilgrims's consent to utilize MySejahtera to enable access to KSA to their IPS if they are in need of care during Hajj>"
+  },
+  {
+    "code" : "CONSENT-OMN",
+    "display" : "Consent for Oman",
+    "definition" : "<INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care>"
+  }]
+}
