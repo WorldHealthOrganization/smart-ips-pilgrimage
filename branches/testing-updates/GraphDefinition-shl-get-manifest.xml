@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GraphDefinition xmlns="http://hl7.org/fhir">
+  <id value="shl-get-manifest"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: GraphDefinition shl-get-manifest</b></p><a name="shl-get-manifest"> </a><a name="hcshl-get-manifest"> </a><a name="hcshl-get-manifest-en-US"> </a><p><b>name</b>: shl-get-manifest</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Get SHL Manifest</p>
+</div><blockquote><p><b>link</b></p></blockquote></div>
+  </text>
+  <name value="shl-get-manifest"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Get SHL Manifest"/>
+  <link>
+    <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
+      <valueCoding>
+        <system value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"/>
+        <code value="shl-get-manifest"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="Initatied by the HCEMR once a Smart Health Link provided by a Pilgrim has been scanned."/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="See the [Smart Health Link - Manifest](https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html#smart-health-link-manifest-request) specifcation with the following modifications:&#xA;- The *contentType* entry MAY also include the value &quot;application/pdf&quot; in the case that the corresponding *location* entry of the Smart Health Link is for a PDF rendering of the Verifiable Digital Health Certificate (e.g. Verifiable IPS).&#xA;- The *contentType* entry MAY also include the value &quot;text/html&quot; in the case that the corresponding *location* entry of the Smart Health Link is for an external viewing portal for Verifiable Digital Health Certificate (e.g. Verifiable IPS).&#xA;- The *contentType* entry MAY also include the value &quot;text/html&quot; in the case that the corresponding *location* entry of the Smart Health Link is a Verifiable Digital Health Certificate (e.g. Verifiable IPS)."/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value=""/>
+    </extension>
+  </link>
+</GraphDefinition>

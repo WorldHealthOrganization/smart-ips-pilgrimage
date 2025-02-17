@@ -1,0 +1,27 @@
+SMARTIPSforPilgrimage : Validation Results
+=========================================
+
+err = 2, warn = 5, info = 0
+IG Publisher Version: 1.6.1
+Generated Tue Mar 12 18:51:09 UTC 2024. FHIR version 4.3.0 for who.ips-pilgrimage#0.1.0 (canonical = http://smart.who.int/ips-pilgrimage)
+ Build Errors : 6 / 4 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-who.ips-pilgrimage : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLink : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload : 0 / 0 / 1
+</table>
+== n/a ==
+ERROR: /github/workspace/output/business-requirements.html#/html/body/div/div/div/div/div/ul/li/a at Line 280, column 8: The link 'business-process.html' for "Business Processes" cannot be resolved
+ERROR: /github/workspace/output/data-models-and-exchange.html#/html/body/div/div/div/div/div/ul/li/a at Line 281, column 8: The link 'actors.html' for "Actors" cannot be resolved
+ERROR: /github/workspace/output/data-models-and-exchange.html#/html/body/div/div/div/div/div/ul/li/a at Line 284, column 8: The link 'logical-models.html' for "Logical Models" cannot be resolved
+ERROR: /github/workspace/output/downloads.html: The html source references validator.pack which is deprecated. Change the IG to describe the use of the package system instead
+ERROR: /github/workspace/output/indicators-measures.html#/html/body/div/div/div/div/div/p/a at Line 278, column 70: The link 'artifacts.html#knowledge-artifacts-measure' for "Artifact Index - Measures" cannot be resolved (valid targets: [segment-header, project-nav, publish-box, bottom, segment-post-footer, fhir-logo, who-logo, family-nav, ig-status, 1, structures-logical-models, top, stripe, segment-footer, segment-navbar, language-selector, artifact-index, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/reference-implementations.html#/html/body/div/div/div/div/div/p/a at Line 282, column 97: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-who.ips-pilgrimage.json ==
+ERROR: ImplementationGuide/who.ips-pilgrimage: ImplementationGuide.meta.profile[0]: Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide)
+WARNING: ImplementationGuide/who.ips-pilgrimage: ImplementationGuide.meta.profile[0]: Profile reference 'SMARTImplementationGuide' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/StructureDefinition-SmartHealthLink.json ==
+== fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload.json ==

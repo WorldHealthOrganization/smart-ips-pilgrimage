@@ -1,0 +1,346 @@
+{
+  "resourceType" : "Basic",
+  "id" : "FunctionalTest",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.url",
+    "valueUri" : "http://smart.who.int/ips-pilgrimage/TestPlan/FunctionalTest"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.version",
+    "valueString" : "2.0.3"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.name",
+    "valueString" : "FunctionalTestPlan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.title",
+    "valueString" : "End-to-End Functional Tests for IPS-Pilgrimage Workflow"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.status",
+    "valueCode" : "active"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.date",
+    "valueDateTime" : "2025-02-17"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.publisher",
+    "valueString" : "WHO"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.contact",
+    "valueContactDetail" : {
+      "name" : "WHO",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://who.int"
+      },
+      {
+        "system" : "email",
+        "value" : "smart@who.int"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.jurisdiction"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.purpose",
+    "valueMarkdown" : "To validate end-to-end workflows including IPS issuance, verification, and retrieval for international interoperability."
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.copyright",
+    "valueMarkdown" : "© 2025 World Health Organization. All rights reserved."
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.category",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes",
+        "code" : "integration",
+        "display" : "Integration"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.scope",
+    "valueReference" : {
+      "display" : "Testing scenarios from WHO IPS Implementation Guide"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testTools",
+    "valueMarkdown" : "ITB with Gherkin+FHIR support"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.exitCriteria",
+    "valueMarkdown" : "All test cases should pass without errors. Critical paths must be verified."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence",
+      "valueInteger" : 1
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope",
+      "valueReference" : {
+        "reference" : "ConsentRegistry"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative",
+        "valueMarkdown" : "Test cases for successful and failed consent recording"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "text/x-gherkin"
+            }]
+          }
+        },
+        {
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference",
+          "valueReference" : {
+            "reference" : "Binary/BRecordConsent"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"
+      }],
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence",
+      "valueInteger" : 2
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope",
+      "valueReference" : {
+        "reference" : "VHLService"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative",
+        "valueMarkdown" : "Test cases for generating QR code with VHL"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "text/x-gherkin"
+            }]
+          }
+        },
+        {
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference",
+          "valueReference" : {
+            "reference" : "Binary/BIssueVHL"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"
+      }],
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence",
+      "valueInteger" : 3
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope",
+      "valueReference" : {
+        "reference" : "VerifierService"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative",
+        "valueMarkdown" : "Test cases for verifying QR code signature"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "text/x-gherkin"
+            }]
+          }
+        },
+        {
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference",
+          "valueReference" : {
+            "reference" : "Binary/BVerifyQR"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"
+      }],
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence",
+      "valueInteger" : 4
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope",
+      "valueReference" : {
+        "reference" : "VHLManifestService"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative",
+        "valueMarkdown" : "Test cases for VHL manifest retrieval"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "text/x-gherkin"
+            }]
+          }
+        },
+        {
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference",
+          "valueReference" : {
+            "reference" : "Binary/BRetrieveVHLManifest"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"
+      }],
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence",
+      "valueInteger" : 5
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope",
+      "valueReference" : {
+        "reference" : "IPSServer"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative",
+        "valueMarkdown" : "Test cases for IPS retrieval"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "text/x-gherkin"
+            }]
+          }
+        },
+        {
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference",
+          "valueReference" : {
+            "reference" : "Binary/BRetrieveIPS"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"
+      }],
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence",
+      "valueInteger" : 6
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope",
+      "valueReference" : {
+        "reference" : "IPSServer"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative",
+        "valueMarkdown" : "Test cases for IPS content validation"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "text/x-gherkin"
+            }]
+          }
+        },
+        {
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference",
+          "valueReference" : {
+            "reference" : "Binary/BValidateIPS"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"
+      }],
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence",
+      "valueInteger" : 7
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope",
+      "valueReference" : {
+        "reference" : "EMRViewer"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative",
+        "valueMarkdown" : "Test case for rendering IPS narrative"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "text/x-gherkin"
+            }]
+          }
+        },
+        {
+          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference",
+          "valueReference" : {
+            "reference" : "Binary/BDisplayIPS"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"
+      }],
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "TestPlan"
+    }]
+  }
+}
