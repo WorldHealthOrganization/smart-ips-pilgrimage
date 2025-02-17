@@ -138,7 +138,9 @@ menu:
 
 parameters:
   path-pages:
-    - input/testing
+    - input/tests/features
+  path-binary:
+    - input/tests/features
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
