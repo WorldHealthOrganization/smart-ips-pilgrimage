@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/GraphDefinition/doc-sign> a fhir:GraphDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "doc-sign"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGTransactionDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition doc-sign</b></p><a name=\"doc-sign\"> </a><a name=\"hcdoc-sign\"> </a><a name=\"hcdoc-sign-en-US\"> </a><p><b>name</b>: doc-sign</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Sign IPS</p>\n</div><blockquote><p><b>link</b></p></blockquote></div>"
+  ] ; # 
+  fhir:name [ fhir:v "doc-sign"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:description [ fhir:v "Sign IPS"] ; # 
+  fhir:link ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Sgcode"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "doc-sign" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Once the OCHIE has generated an International Patient Summary (IPS) document." ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "The OCHIE SHALL use one of the following:\n- the [IHE Document Digital Signature (DSG)](https://profiles.ihe.net/ITI/TF/Volume1/ch-37.html) profile for XML-singatures\n- the IHE Document Digital Signature - JSON (DSGj)(forthcoming) profile for JSON-singatures" ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Once the IPS has been signed it is now a Verififable Digital Health Certificate and SHALL be available for retrieval via a Smart Health Link.  " ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
