@@ -72,6 +72,8 @@ Usage: #example
 * identifier[entryUUID].value = "urn:uuid:7d5bb8ac-68ee-4926-85e7-b8aac8e1f12e"
 * identifier[entryUUID].use = #official
 * status = #current
+* relatesTo[+].code = $DocRelationshipType#signs
+* relatesTo[=].target = Reference(FHIRIPSDocumentReference)
 * content.format.code = #urn:ihe:iti:dsg:detached:2014
 * content.format.system = "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
 * content.attachment.contentType = #application/json
@@ -90,6 +92,8 @@ Usage: #example
 * identifier[entryUUID].value = "urn:uuid:7d5bb8ac-68ee-4926-85e7-b8aac8e1f13e"
 * identifier[entryUUID].use = #official
 * status = #current
+* relatesTo[+].code = $DocRelationshipType#signs
+* relatesTo[=].target = Reference(IPSPDFDocumentReference)
 * content.format.code = #urn:ihe:iti:dsg:detached:2014
 * content.format.system = "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
 * content.attachment.contentType = #application/json
