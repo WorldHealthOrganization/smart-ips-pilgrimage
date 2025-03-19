@@ -5,7 +5,7 @@ Description: "Example Hajj Pilgrimage Minimal Folder Search Set"
 Usage: #example
 * type = #searchset
 * link.relation = "self"
-* link.url = "https://example.org/fhir/DocumentReference?_format=json"
+* link.url = "http://example.org/fhir/List?_id=PilgrimFolder&_include=List:item"
 * entry[0].fullUrl = Canonical(IPSPDFDocumentReference)
 * entry[=].resource = IPSPDFDocumentReference
 * entry[+].fullUrl = Canonical(FHIRIPSDocumentReference)
