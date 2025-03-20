@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "d969ee4a-2644-46c6-8b6d-75d620a0586e-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/d969ee4a-2644-46c6-8b6d-75d620a0586e-2",
+  "name" : "UnionBrowserCsAndBrowserCs",
+  "title" : "Union of Browser And Browser",
+  "status" : "active",
+  "date" : "2025-03-20T00:11:13+00:00",
+  "concept" : [{
+    "code" : "Firefox",
+    "display" : "Firefox"
+  },
+  {
+    "code" : "Chrome",
+    "display" : "Chrome"
+  },
+  {
+    "code" : "MicrosoftEdge",
+    "display" : "MicrosoftEdge"
+  },
+  {
+    "code" : "InternetExplorer",
+    "display" : "InternetExplorer"
+  },
+  {
+    "code" : "Safari",
+    "display" : "Safari"
+  },
+  {
+    "code" : "Other",
+    "display" : "Other"
+  }]
+}

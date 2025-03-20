@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "d969ee4a-2644-46c6-8b6d-75d620a0586e-18",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/d969ee4a-2644-46c6-8b6d-75d620a0586e-18",
+  "name" : "IntersectionLanguageCsAndLanguageCs",
+  "title" : "Intersection of Language And Language",
+  "status" : "active",
+  "date" : "2025-03-20T00:11:13+00:00",
+  "concept" : [{
+    "code" : "Arabic",
+    "display" : "Arabic"
+  },
+  {
+    "code" : "Chinese",
+    "display" : "Chinese"
+  },
+  {
+    "code" : "English",
+    "display" : "English"
+  },
+  {
+    "code" : "French",
+    "display" : "French"
+  },
+  {
+    "code" : "Russian",
+    "display" : "Russian"
+  },
+  {
+    "code" : "Spanish",
+    "display" : "Spanish"
+  },
+  {
+    "code" : "Other",
+    "display" : "Other"
+  }]
+}

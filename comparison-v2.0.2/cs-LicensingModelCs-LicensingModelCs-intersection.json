@@ -1,0 +1,17 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "d969ee4a-2644-46c6-8b6d-75d620a0586e-21",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/d969ee4a-2644-46c6-8b6d-75d620a0586e-21",
+  "name" : "IntersectionLicensingModelCsAndLicensingModelCs",
+  "title" : "Intersection of Licensing Model And Licensing Model",
+  "status" : "active",
+  "date" : "2025-03-20T00:11:13+00:00",
+  "concept" : [{
+    "code" : "Proprietary",
+    "display" : "Proprietary"
+  },
+  {
+    "code" : "Open-Source",
+    "display" : "Open-Source"
+  }]
+}

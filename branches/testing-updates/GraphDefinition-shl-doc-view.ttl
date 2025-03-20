@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/GraphDefinition/shl-doc-view> a fhir:GraphDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "shl-doc-view"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGTransactionDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition shl-doc-view</b></p><a name=\"shl-doc-view\"> </a><a name=\"hcshl-doc-view\"> </a><a name=\"hcshl-doc-view-en-US\"> </a><p><b>name</b>: shl-doc-view</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Use SHL to access Document Viewer</p>\n</div><blockquote><p><b>link</b></p></blockquote></div>"
+  ] ; # 
+  fhir:name [ fhir:v "shl-doc-view"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:description [ fhir:v "Use SHL to access Document Viewer"] ; # 
+  fhir:link ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Sgcode"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "shl-doc-view" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "" ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "" ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

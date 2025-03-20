@@ -1,0 +1,166 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/Composition/MyComposition> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MyComposition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition"^^xsd:anyURI ;
+       fhir:link <https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition MyComposition</b></p><a name=\"MyComposition\"> </a><a name=\"hcMyComposition\"> </a><a name=\"hcMyComposition-en-US\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>date</b>: 2020-12-11 14:30:00+0100</p><p><b>author</b>: <a href=\"http://hl7.org/fhir/uv/ips/STU1.1/Practitioner-eumfh-39-07.html\">??</a></p><p><b>title</b>: Patient Summary as of December 11, 2020 14:30</p><p><b>confidentiality</b>: normal</p><blockquote><p><b>attester</b></p><p><b>mode</b>: Legal</p><p><b>time</b>: 2020-12-11 14:30:00+0100</p><p><b>party</b>: <a href=\"http://hl7.org/fhir/uv/ips/STU1.1/Practitioner-eumfh-39-07.html\">??</a></p></blockquote><blockquote><p><b>attester</b></p><p><b>mode</b>: Legal</p><p><b>time</b>: 2020-12-11 14:30:00+0100</p><p><b>party</b>: <a href=\"http://hl7.org/fhir/uv/ips/STU1.1/Organization-simple-org.html\">??</a></p></blockquote><p><b>custodian</b>: <a href=\"http://hl7.org/fhir/uv/ips/STU1.1/Organization-simple-org.html\">??</a></p><h3>RelatesTos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Appends</td><td><code>urn:oid:2.16.724.4.8.10.200.10</code>/20e12ce3-857f-49c0-b888-cb670597f191</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActClass PCPR}\">care provision</span></td><td>?? --&gt; 2020-12-11 14:30:00+0100</td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ] ;
+       fhir:display [ fhir:v "Patient summary Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/Patient/eumfh-39-07> ;
+     fhir:reference [ fhir:v "Patient/eumfh-39-07" ]
+  ] ; # 
+  fhir:date [ fhir:v "2020-12-11T14:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/Practitioner/eumfh-39-07> ;
+     fhir:reference [ fhir:v "Practitioner/eumfh-39-07" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Patient Summary as of December 11, 2020 14:30"] ; # 
+  fhir:confidentiality [ fhir:v "N"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:time [ fhir:v "2020-12-11T14:30:00+01:00"^^xsd:dateTime ] ;
+     fhir:party [
+       fhir:link <https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/Practitioner/eumfh-39-07> ;
+       fhir:reference [ fhir:v "Practitioner/eumfh-39-07" ]
+     ]
+  ] [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:time [ fhir:v "2020-12-11T14:30:00+01:00"^^xsd:dateTime ] ;
+     fhir:party [
+       fhir:link <https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/Organization/simple-org> ;
+       fhir:reference [ fhir:v "Organization/simple-org" ]
+     ]
+  ] ) ; # 
+  fhir:custodian [
+     fhir:link <https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/Organization/simple-org> ;
+     fhir:reference [ fhir:v "Organization/simple-org" ]
+  ] ; # 
+  fhir:relatesTo ( [
+     fhir:code [ fhir:v "appends" ] ;
+     fhir:target [
+       a fhir:Identifier ;
+       fhir:system [ fhir:v "urn:oid:2.16.724.4.8.10.200.10"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "20e12ce3-857f-49c0-b888-cb670597f191" ]
+     ]
+  ] ) ; # 
+  fhir:event ( [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActClass"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PCPR" ]
+       ] )
+     ] ) ;
+     fhir:period [
+       fhir:end [ fhir:v "2020-12-11T14:30:00+01:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Active Problems" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ]
+       ] [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ] ;
+         fhir:display [ fhir:v "Problem list Reported" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><div><b>Condition Name</b>: Acute myocardial infarction of anterior wall</div><div><b>Code</b>: <span>54329005</span></div><div><b>Status</b>: <span>Active</span></div></li></ul></div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/Condition/eumfh-39-07-1> ;
+       fhir:reference [ fhir:v "Condition/eumfh-39-07-1" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Medication" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48765-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48765-2" ]
+       ] [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ] ;
+         fhir:display [ fhir:v "History of Medication use Narrative" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><div><b>Medication Name</b>: Simvastatin 40 MG Disintegrating Oral Tablet</div><div><b>Code</b>: <span>C10AA01</span></div><div><b>Status</b>: <span>Active, started 2014</span></div><div>Instructions: Take 40 mg/day</div></li></ul></div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/MedicationStatement/eumfh-39-07-1> ;
+       fhir:reference [ fhir:v "MedicationStatement/eumfh-39-07-1" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Allergies and Intolerances" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ]
+       ] [
+         a loinc:48765-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48765-2" ] ;
+         fhir:display [ fhir:v "Allergies and adverse reactions Document" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><div><b>Allergy Name</b>: No known allergies</div><div><b>Verification Status</b>: Confirmed</div><div><b>Reaction</b>: <span>no information</span></div></li></ul></div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/AllergyIntolerance/eumfh-39-07-1> ;
+       fhir:reference [ fhir:v "AllergyIntolerance/eumfh-39-07-1" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Consent" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:59284-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "59284-0" ] ;
+         fhir:display [ fhir:v "Consent Document" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="smart.who.int.ips-pilgrimage"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGImplementationGuide"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.ips-pilgrimage</b></p><a name="smart.who.int.ips-pilgrimage"> </a><a name="hcsmart.who.int.ips-pilgrimage"> </a><a name="smart.who.int.ips-pilgrimage-en-US"> </a><h2>SMART_WHO_INT_IPS_Pilgrimage</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/ips-pilgrimage/ImplementationGuide/smart.who.int.ips-pilgrimage</pre><div><p>An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage.</p>
+</div></div>
+  </text>
+  <url value="http://smart.who.int/ips-pilgrimage/ImplementationGuide/smart.who.int.ips-pilgrimage"/>
+  <version value="1.0.1"/>
+  <name value="SMART_WHO_INT_IPS_Pilgrimage"/>
+  <title value="SMART Verifiable IPS for Pilgrimage"/>
+  <status value="draft"/>
+  <date value="2024-11-21T11:25:11+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="smart@who.int"/>
+    </telecom>
+  </contact>
+  <description value="An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage."/>
+  <packageId value="smart.who.int.ips-pilgrimage"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.3.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.1.0"/>
+  </dependsOn>
+  <dependsOn id="smart_who_int_base">
+    <uri value="http://smart.who.int/base/ImplementationGuide/smart.who.int.base"/>
+    <packageId value="smart.who.int.base"/>
+    <version value="0.1.0"/>
+  </dependsOn>
+  <dependsOn id="ihe_iti_mcsd">
+    <uri value="https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd"/>
+    <packageId value="ihe.iti.mcsd"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_ips">
+    <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
+    <packageId value="hl7.fhir.uv.ips"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_sdc">
+    <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
+    <packageId value="hl7.fhir.uv.sdc"/>
+    <version value="3.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_cpg">
+    <uri value="http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"/>
+    <packageId value="hl7.fhir.uv.cpg"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="ihe_iti_pcf">
+    <uri value="https://profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf"/>
+    <packageId value="ihe.iti.pcf"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://smart.who.int/ips-pilgrimage/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://smart.who.int/ips-pilgrimage/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Browser"/>
+      </reference>
+      <name value="Browser"/>
+      <description value="Browser"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BrowserCs"/>
+      </reference>
+      <name value="Browser"/>
+      <description value="Browser"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/Questionnaire-ConnectathonSubmission"/>
+      </reference>
+      <name value="Connectathon Submission"/>
+      <description value="Connectathon Submission"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ConsentPeriod"/>
+      </reference>
+      <name value="ConsentPeriod"/>
+      <description value="Consent Period extension for use in Consent resources prior to R5."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ConsentVerifiedBy"/>
+      </reference>
+      <name value="ConsentVerifiedBy"/>
+      <description value="Consent VerfifiedBy extension for use in Consent resources prior to R5."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DistributionModel"/>
+      </reference>
+      <name value="Distribution Model"/>
+      <description value="Distribution Model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DistributionModelCs"/>
+      </reference>
+      <name value="Distribution Model"/>
+      <description value="Distribution Model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HajjConsent"/>
+      </reference>
+      <name value="HajjConsent"/>
+      <description value="A profile of the consent resource to track consent of a pilgrim to participate&#xA;&#xA;FHIR R5 upgrade notes (need this implemented as a structure map):&#xA; * make cardinality of decision 1.. and should stop using it in lieu of verification.verified&#xA; * use verification.verifiedBy instead of Consent.organization&#xA; * the period extenion should be replaced by Consent.period&#xA; * the Consent.patient should be replaced by Consent.subject&#xA; * Consent.verification.verifiedBy should be used instead of Consent.organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HajjOrganization"/>
+      </reference>
+      <name value="HajjOrganization"/>
+      <description value="A profile of the consent resource to track consent of a pilgrim to participate"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/IPS.HAJJ.ACTOR"/>
+      </reference>
+      <name value="IPS.HAJJ.ACTOR CodeSystem"/>
+      <description value="CodeSystem for IPS.HAJJ.ACTOR CodeSystem for utilization of IPS during Hajj"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/IPS.HAJJ.ACTOR"/>
+      </reference>
+      <name value="IPS.HAJJ.ACTOR ValueSet of actor"/>
+      <description value="ValueSet of codes for actor for Hajj"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/IPS.HAJJ.ACTOR.SYSTEM"/>
+      </reference>
+      <name value="IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor"/>
+      <description value="ValueSet of codes for system actors for Hajj"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/IPS.HAJJ.CONSENT"/>
+      </reference>
+      <name value="IPS.HAJJ.CONSENT CodeSystem"/>
+      <description value="CodeSystem for IPS.HAJJ.CONSENT CodeSystem for utilization of IPS during Hajj"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/IPS.HAJJ.CONSENT"/>
+      </reference>
+      <name value="IPS.HAJJ.CONSENT ValueSet of consent policies"/>
+      <description value="ValueSet of codes for consent policies for Hajj pilgrims"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/IPS.HAJJ.TRANSACTION"/>
+      </reference>
+      <name value="IPS.HAJJ.TRANSACTION CodeSystem"/>
+      <description value="CodeSystem for IPS.HAJJ.TRANSACTION CodeSystem for utilization of IPS during Hajj"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/IPS.HAJJ.TRANSACTION"/>
+      </reference>
+      <name value="IPS.HAJJ.TRANSACTION ValueSet of transaction "/>
+      <description value="ValueSet of codes for transaction for Hajj"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Language"/>
+      </reference>
+      <name value="Language"/>
+      <description value="Language"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/LanguageCs"/>
+      </reference>
+      <name value="Language"/>
+      <description value="Language"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/LicensingModel"/>
+      </reference>
+      <name value="Licensing Model"/>
+      <description value="Licensing Model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/LicensingModelCs"/>
+      </reference>
+      <name value="Licensing Model"/>
+      <description value="Licensing Model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OperatingSystem"/>
+      </reference>
+      <name value="Operating System"/>
+      <description value="Operating System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/OperatingSystemCs"/>
+      </reference>
+      <name value="Operating System"/>
+      <description value="Operating System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="changes.html"/>
+          <title value="Changes"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="dependencies.html"/>
+          <title value="Dependencies"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="references.html"/>
+          <title value="References"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="adapting.html"/>
+          <title value="Adapting Guidelines for Country use"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="license.html"/>
+          <title value="License"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="business-requirements.html"/>
+        <title value="Business Requirements"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="concepts.html"/>
+          <title value="Concepts"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="personas.html"/>
+          <title value="Generic Personas"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="scenarios.html"/>
+          <title value="User Scenarios"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="business-processes.html"/>
+          <title value="Business Processes"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="dictionary.html"/>
+          <title value="Data Dictionary"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="decision-logic.html"/>
+          <title value="Decision-support logic"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="indicators.html"/>
+          <title value="Indicator and Performance Metrics"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="functional-requirements.html"/>
+          <title value="Functional Requirements"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="non-functional-requirements.html"/>
+          <title value="Non-functional Requirements"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="data-models-and-exchange.html"/>
+        <title value="Data Models and Exchange"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="system-actors.html"/>
+          <title value="System Actors"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="sequence-diagrams.html"/>
+          <title value="Sequence Diagrams"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="transactions.html"/>
+          <title value="Transactions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="indicators-measures.html"/>
+          <title value="Indicators and Measures"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="codings.html"/>
+          <title value="Codings"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="deployment.html"/>
+        <title value="Deployment"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="security-privacy.html"/>
+          <title value="Security and Privacy Considerations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="testing.html"/>
+          <title value="Testing"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-data.html"/>
+          <title value="Test Data"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-cases.html"/>
+          <title value="Test Cases"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="reference-implementations.html"/>
+          <title value="Reference Implementations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="reference-implementations-malaysia.html"/>
+          <title value="Reference Implementation in Malaysia"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="trust_domain.html"/>
+          <title value="Trust Domains"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="downloads.html"/>
+          <title value="Downloads"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="indices.html"/>
+        <title value="Indices"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="artifacts.html"/>
+          <title value="Artifact Index"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="maps.html"/>
+          <title value="Mappings"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

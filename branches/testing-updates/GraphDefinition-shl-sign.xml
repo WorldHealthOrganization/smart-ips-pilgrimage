@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GraphDefinition xmlns="http://hl7.org/fhir">
+  <id value="shl-sign"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: GraphDefinition shl-sign</b></p><a name="shl-sign"> </a><a name="hcshl-sign"> </a><a name="hcshl-sign-en-US"> </a><p><b>name</b>: shl-sign</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Sign Smart Health Link</p>
+</div><blockquote><p><b>link</b></p></blockquote></div>
+  </text>
+  <name value="shl-sign"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Sign Smart Health Link"/>
+  <link>
+    <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
+      <valueCoding>
+        <system value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"/>
+        <code value="shl-sign"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="Once a Smart Health Link has been generated, it SHALL be signed."/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="Use the  [Sign Health Certificate Claim](https://smart.who.int/trust/transactions.html#sign_claim) transaction."/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="One the Smart Health Link has been signed, it is a Verifiable Smart Health Link which should be provided to the Pilgrim."/>
+    </extension>
+  </link>
+</GraphDefinition>

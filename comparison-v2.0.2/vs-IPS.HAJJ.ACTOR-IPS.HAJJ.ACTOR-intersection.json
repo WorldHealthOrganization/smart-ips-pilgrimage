@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "d969ee4a-2644-46c6-8b6d-75d620a0586e-60",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/d969ee4a-2644-46c6-8b6d-75d620a0586e-60",
+  "name" : "IntersectionIPS_HAJJ_ACTORAndIPS_HAJJ_ACTOR",
+  "title" : "Intersection of IPS.HAJJ.ACTOR ValueSet of actor And IPS.HAJJ.ACTOR ValueSet of actor",
+  "status" : "active",
+  "date" : "2025-03-20T00:11:15+00:00"
+}

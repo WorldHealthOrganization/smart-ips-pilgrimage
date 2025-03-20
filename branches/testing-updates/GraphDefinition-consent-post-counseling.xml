@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GraphDefinition xmlns="http://hl7.org/fhir">
+  <id value="consent-post-counseling"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: GraphDefinition consent-post-counseling</b></p><a name="consent-post-counseling"> </a><a name="hcconsent-post-counseling"> </a><a name="hcconsent-post-counseling-en-US"> </a><p><b>name</b>: consent-post-counseling</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Record Consent - Post-Counseling. Intended in bulk</p>
+</div><blockquote><p><b>link</b></p></blockquote></div>
+  </text>
+  <name value="consent-post-counseling"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Record Consent - Post-Counseling. Intended in bulk"/>
+  <link>
+    <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
+      <valueCoding>
+        <system value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"/>
+        <code value="consent-post-counseling"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="Consent can be recorded based on a post counseling based on a blanket jurisdictional policy for Pilgrims as part of their permission to go on Hajj against a list of Pilgrim IDs of those that went through the health assessment check."/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="The OCHIE shall support create and update per the  [IHE PCF Consent Recorder Capability Statement](https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRecorder.html). "/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="The OCHIE SHALL act as  [IHE PCF Consent Recorder](https://profiles.ihe.net/ITI/PCF/volume-1.html#153111-consent-recorder) "/>
+    </extension>
+  </link>
+</GraphDefinition>
