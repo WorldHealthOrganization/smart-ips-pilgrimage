@@ -5,4 +5,5 @@
 
 
 ##### Message Semantics Response
-- The message semantics shall follow the [ITI-67](https://profiles.ihe.net/ITI/MHD/ITI-67.html#2367422-message-semantics) Find Document References response message and for a successful queries return a FHIR bundle that includes all documentReference available in the VHL folder for the pilgrim.
+- The message semantics shall follow a <b>modified</b> version of the [ITI-67](https://profiles.ihe.net/ITI/MHD/ITI-67.html#2367422-message-semantics) Find Document References response message and for a successful queries return a FHIR bundle that includes all documentReference available in the VHL folder for the pilgrim.  The modification of the ITI-67 transaction is that the Origin Country HIE shall respect the <em>_include</em> search parameter with value <em>List:item</em> as the URL generated in the VHL Payload is of  of the format:
+> {host}/DocumentReference?_list={folder_id}&_include=List:item"

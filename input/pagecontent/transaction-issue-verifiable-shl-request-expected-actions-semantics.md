@@ -3,7 +3,7 @@ The following are the expected actions for the [Origin Country HIE](system-actor
   - <mark>IPS document in FHIR or PDF or both</mark>
   - Signed IPS document as DSG jws JSON object for each document included in the folder
 - The [SHL specifications](https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html)shall be followed to create a SMART Health Link which is then wrapped in [HCERT structure](https://www.smart.who.int/trust/StructureDefinition-Hcert.html) and shared as a [CWT structure](https://www.smart.who.int/trust/StructureDefinition-CWT.html), by following the below steps:
-  - <b>Establish a location that points to the document references within the folder for the pilgrim in the following syntax: "{host}/DocumentReference?_list={folder_id}" . This shall be used as the Health Link URL within the VHL Payload</b>
+  - <b>Establish a location that points to the document references within the folder for the pilgrim in the following syntax: "{host}/DocumentReference?_list={folder_id}&_include=List:item" . This shall be used as the Health Link URL within the VHL Payload</b>
   - Construct [SHLink Payload](https://smart.who.int/trust/StructureDefinition-SmartHealthLinkPayload.html)
     - Minified
     - Base64urlencoded
