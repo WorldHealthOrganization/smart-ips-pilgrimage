@@ -1,0 +1,29 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "af6bb489-6b7a-402b-8727-bb24275800d6-23",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/af6bb489-6b7a-402b-8727-bb24275800d6-23",
+  "name" : "UnionOperatingSystemCsAndOperatingSystemCs",
+  "title" : "Union of Operating System And Operating System",
+  "status" : "active",
+  "date" : "2025-04-07T12:27:19+00:00",
+  "concept" : [{
+    "code" : "Linux",
+    "display" : "Linux"
+  },
+  {
+    "code" : "Unix",
+    "display" : "Unix"
+  },
+  {
+    "code" : "Windows",
+    "display" : "Windows"
+  },
+  {
+    "code" : "Mac",
+    "display" : "Mac"
+  },
+  {
+    "code" : "Other",
+    "display" : "Other"
+  }]
+}

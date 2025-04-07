@@ -1,0 +1,92 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/Browser",
+      "version" : "1.0.1",
+      "status" : "draft",
+      "name" : "Browser",
+      "title" : "Browser",
+      "description" : "Browser",
+      "systems" : [
+        "http://worldhealthorganization.github.io/smart-ips-pilgrimage/Browser"
+      ]
+    },
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/DistributionModel",
+      "version" : "1.0.1",
+      "status" : "draft",
+      "name" : "DistributionModel",
+      "title" : "Distribution Model",
+      "description" : "Distribution Model",
+      "systems" : [
+        "http://worldhealthorganization.github.io/smart-ips-pilgrimage/DistributionModel"
+      ]
+    },
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "IPS_HAJJ_ACTOR",
+      "title" : "IPS.HAJJ.ACTOR ValueSet of actor",
+      "description" : "ValueSet of codes for actor for Hajj",
+      "systems" : [
+        "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR"
+      ]
+    },
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "IPS_HAJJ_CONSENT",
+      "title" : "IPS.HAJJ.CONSENT ValueSet of consent policies",
+      "description" : "ValueSet of codes for consent policies for Hajj pilgrims",
+      "systems" : [
+        "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT"
+      ]
+    },
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.TRANSACTION",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "IPS_HAJJ_TRANSACTION",
+      "title" : "IPS.HAJJ.TRANSACTION ValueSet of transaction ",
+      "description" : "ValueSet of codes for transaction for Hajj ",
+      "systems" : [
+        "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"
+      ]
+    },
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/Language",
+      "version" : "1.0.1",
+      "status" : "draft",
+      "name" : "Language",
+      "title" : "Language",
+      "description" : "Language",
+      "systems" : [
+        "http://worldhealthorganization.github.io/smart-ips-pilgrimage/Language"
+      ]
+    },
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/LicensingModel",
+      "version" : "1.0.1",
+      "status" : "draft",
+      "name" : "LicensingModel",
+      "title" : "Licensing Model",
+      "description" : "Licensing Model",
+      "systems" : [
+        "http://worldhealthorganization.github.io/smart-ips-pilgrimage/LicensingModel"
+      ]
+    },
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/OperatingSystem",
+      "version" : "1.0.1",
+      "status" : "draft",
+      "name" : "OperatingSystem",
+      "title" : "Operating System",
+      "description" : "Operating System",
+      "systems" : [
+        "http://worldhealthorganization.github.io/smart-ips-pilgrimage/OperatingSystem"
+      ]
+    }
+  ]
+}

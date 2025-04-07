@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GraphDefinition xmlns="http://hl7.org/fhir">
+  <id value="doc-sign"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: GraphDefinition doc-sign</b></p><a name="doc-sign"> </a><a name="hcdoc-sign"> </a><a name="hcdoc-sign-en-US"> </a><p><b>name</b>: doc-sign</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Sign IPS</p>
+</div><blockquote><p><b>link</b></p></blockquote></div>
+  </text>
+  <name value="doc-sign"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Sign IPS"/>
+  <link>
+    <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
+      <valueCoding>
+        <system value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"/>
+        <code value="doc-sign"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="Once the OCHIE has generated an International Patient Summary (IPS) document."/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="The OCHIE SHALL use one of the following:&#xA;- the [IHE Document Digital Signature (DSG)](https://profiles.ihe.net/ITI/TF/Volume1/ch-37.html) profile for XML-singatures&#xA;- the IHE Document Digital Signature - JSON (DSGj)(forthcoming) profile for JSON-singatures"/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="Once the IPS has been signed it is now a Verififable Digital Health Certificate and SHALL be available for retrieval via a Smart Health Link.  "/>
+    </extension>
+  </link>
+</GraphDefinition>

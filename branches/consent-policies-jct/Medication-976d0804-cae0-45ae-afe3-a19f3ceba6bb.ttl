@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bb> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "976d0804-cae0-45ae-afe3-a19f3ceba6bb"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication 976d0804-cae0-45ae-afe3-a19f3ceba6bb</b></p><a name=\"976d0804-cae0-45ae-afe3-a19f3ceba6bb\"> </a><a name=\"hc976d0804-cae0-45ae-afe3-a19f3ceba6bb\"> </a><a name=\"976d0804-cae0-45ae-afe3-a19f3ceba6bb-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 108774000}, {urn:oid:2.16.840.1.113883.2.4.4.1 99872}, {urn:oid:2.16.840.1.113883.2.4.4.7 2076667}, {http://www.whocc.no/atc L02BG03}\">Product containing anastrozole (medicinal product)</span></p></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:108774000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "108774000" ] ;
+       fhir:display [ fhir:v "Product containing anastrozole (medicinal product)" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "99872" ] ;
+       fhir:display [ fhir:v "ANASTROZOL 1MG TABLET" ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.7"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2076667" ] ;
+       fhir:display [ fhir:v "ANASTROZOL CF TABLET FILMOMHULD 1MG" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "L02BG03" ] ;
+       fhir:display [ fhir:v "anastrozole" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

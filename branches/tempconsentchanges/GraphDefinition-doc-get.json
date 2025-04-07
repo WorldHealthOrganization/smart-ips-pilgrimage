@@ -1,0 +1,36 @@
+{
+  "resourceType" : "GraphDefinition",
+  "id" : "doc-get",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition doc-get</b></p><a name=\"doc-get\"> </a><a name=\"hcdoc-get\"> </a><a name=\"doc-get-en-US\"> </a><p><b>name</b>: doc-get</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Get IPS</p>\n</div><blockquote><p><b>link</b></p></blockquote></div>"
+  },
+  "name" : "doc-get",
+  "status" : "active",
+  "experimental" : false,
+  "description" : "Get IPS",
+  "link" : [{
+    "extension" : [{
+      "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+      "valueCoding" : {
+        "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+        "code" : "doc-get"
+      }
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "SHL Manifest was retrieved and refers to IPS or other document"
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "Same for retrieving a FHIR Document Bundle such as IPS using GET"
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "Return the requested bundle assuming access controls and jurisidictional policies are met"
+    }]
+  }]
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "af6bb489-6b7a-402b-8727-bb24275800d6-20",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/af6bb489-6b7a-402b-8727-bb24275800d6-20",
+  "name" : "UnionLicensingModelCsAndLicensingModelCs",
+  "title" : "Union of Licensing Model And Licensing Model",
+  "status" : "active",
+  "date" : "2025-04-07T12:27:19+00:00",
+  "concept" : [{
+    "code" : "Proprietary",
+    "display" : "Proprietary"
+  },
+  {
+    "code" : "Open-Source",
+    "display" : "Open-Source"
+  }]
+}

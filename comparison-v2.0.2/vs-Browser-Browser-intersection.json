@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "af6bb489-6b7a-402b-8727-bb24275800d6-51",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/af6bb489-6b7a-402b-8727-bb24275800d6-51",
+  "name" : "IntersectionBrowserAndBrowser",
+  "title" : "Intersection of Browser And Browser",
+  "status" : "draft",
+  "date" : "2025-04-07T12:27:21+00:00"
+}
