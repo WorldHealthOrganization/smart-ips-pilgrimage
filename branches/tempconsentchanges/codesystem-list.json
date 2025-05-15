@@ -1,0 +1,28 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "IPS_HAJJ_ACTOR",
+      "title" : "IPS.HAJJ.ACTOR CodeSystem",
+      "description" : "CodeSystem for IPS.HAJJ.ACTOR CodeSystem for utilization of IPS during Hajj"
+    },
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "IPS_HAJJ_CONSENT",
+      "title" : "IPS.HAJJ.CONSENT CodeSystem",
+      "description" : "CodeSystem for IPS.HAJJ.CONSENT CodeSystem for utilization of IPS during Hajj"
+    },
+    {
+      "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "IPS_HAJJ_TRANSACTION",
+      "title" : "IPS.HAJJ.TRANSACTION CodeSystem",
+      "description" : "CodeSystem for IPS.HAJJ.TRANSACTION CodeSystem for utilization of IPS during Hajj"
+    }
+  ]
+}

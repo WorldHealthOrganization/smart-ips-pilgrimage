@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Language",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet Language</b></p><a name=\"Language\"> </a><a name=\"hcLanguage\"> </a><a name=\"Language-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-LanguageCs.html\"><code>http://worldhealthorganization.github.io/smart-ips-pilgrimage/Language</code></a></li></ul></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/Language",
+  "version" : "1.0.1",
+  "name" : "Language",
+  "title" : "Language",
+  "status" : "draft",
+  "date" : "2024-11-21T11:25:11+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Language",
+  "compose" : {
+    "include" : [{
+      "system" : "http://worldhealthorganization.github.io/smart-ips-pilgrimage/Language"
+    }]
+  }
+}

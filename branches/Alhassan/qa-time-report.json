@@ -1,0 +1,164 @@
+{
+  "date" : "Tue, 23 Apr, 2024 13:37:50 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-who.ips-pilgrimage.json",
+      "size" : 7521,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 37
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 50,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 50,
+          "length" : 80
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 1629
+        },
+        {
+          "activity" : "validate",
+          "start" : 53,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 96
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 70
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 72,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 72,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 76,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-SmartHealthLink.json",
+      "size" : 1419,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 27
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 30
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 50,
+          "length" : 32
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 50,
+          "length" : 46
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 761
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 53,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 48
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 881
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 72,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload.json",
+      "size" : 5285,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 33
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 26
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 50,
+          "length" : 26
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 50,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 116
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 85
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 280
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 72,
+          "length" : 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "GraphDefinition",
+  "id" : "shl-sign",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition shl-sign</b></p><a name=\"shl-sign\"> </a><a name=\"hcshl-sign\"> </a><a name=\"shl-sign-en-US\"> </a><p><b>name</b>: shl-sign</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Sign Smart Health Link</p>\n</div><blockquote><p><b>link</b></p></blockquote></div>"
+  },
+  "name" : "shl-sign",
+  "status" : "active",
+  "experimental" : false,
+  "description" : "Sign Smart Health Link",
+  "link" : [{
+    "extension" : [{
+      "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+      "valueCoding" : {
+        "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+        "code" : "shl-sign"
+      }
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "Once a Smart Health Link has been generated, it SHALL be signed."
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "Use the  [Sign Health Certificate Claim](https://smart.who.int/trust/transactions.html#sign_claim) transaction."
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "One the Smart Health Link has been signed, it is a Verifiable Smart Health Link which should be provided to the Pilgrim."
+    }]
+  }]
+}

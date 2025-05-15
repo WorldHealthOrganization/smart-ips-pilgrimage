@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="f4e3ca25-460b-4ce8-a9c2-a4a1a6576f83"/>
+  <meta>
+    <lastUpdated value="2024-07-23T09:26:46.148+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/ValueSet/IPS.HAJJ.CONSENT"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-IPS.HAJJ.html">codesystem IPS.HAJJ CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ-CONSENT-KSA"> </a>  
+                  <a href="CodeSystem-IPS.HAJJ.html#IPS.HAJJ-CONSENT-KSA">CONSENT-KSA</a>
+                </td>
+                <td>https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ</td>
+                <td>Consent for Kingdom of Saudi Arabia</td>
+                <td>
+                  <div>
+                    <p>&lt;INSERT TEXT FROM KSA: discuss pilgrim's consent to share their IPS during provision of clinical care during the Hajj event as well as any follow-up care that may be needed.&gt;</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ-CONSENT-IDN"> </a>  
+                  <a href="CodeSystem-IPS.HAJJ.html#IPS.HAJJ-CONSENT-IDN">CONSENT-IDN</a>
+                </td>
+                <td>https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ</td>
+                <td>Consent for Indonesia</td>
+                <td>
+                  <div>
+                    <p>&lt;INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj&gt;</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ-CONSENT-MYS"> </a>  
+                  <a href="CodeSystem-IPS.HAJJ.html#IPS.HAJJ-CONSENT-MYS">CONSENT-MYS</a>
+                </td>
+                <td>https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ</td>
+                <td>Consent for Malaysia</td>
+                <td>
+                  <div>
+                    <p>&lt;INSERT TEXT FROM MALAYSIA: discuss pilgrims's consent to utilize MySejahtera to enable access to KSA to their IPS if they are in need of care during Hajj&gt;</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ-CONSENT-OMN"> </a>  
+                  <a href="CodeSystem-IPS.HAJJ.html#IPS.HAJJ-CONSENT-OMN">CONSENT-OMN</a>
+                </td>
+                <td>https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ</td>
+                <td>Consent for Oman</td>
+                <td>
+                  <div>
+                    <p>&lt;INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care&gt;</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/ValueSet/IPS.HAJJ.CONSENT"/>
+        <version value="0.1.0"/>
+        <name value="IPS_HAJJ_CONSENT"/>
+        <title value="IPS.HAJJ.CONSENT ValueSet of consent policies"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-07-23T09:26:46+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:0e6371fd-d5ea-4c54-94b5-fb98948c4222"/>
+          <timestamp value="2024-07-23T09:28:04+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ"/>
+            <code value="CONSENT-KSA"/>
+            <display value="Consent for Kingdom of Saudi Arabia"/>
+          </contains>
+          <contains>
+            <system value="https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ"/>
+            <code value="CONSENT-IDN"/>
+            <display value="Consent for Indonesia"/>
+          </contains>
+          <contains>
+            <system value="https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ"/>
+            <code value="CONSENT-MYS"/>
+            <display value="Consent for Malaysia"/>
+          </contains>
+          <contains>
+            <system value="https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ"/>
+            <code value="CONSENT-OMN"/>
+            <display value="Consent for Oman"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

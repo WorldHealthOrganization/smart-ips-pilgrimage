@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GraphDefinition xmlns="http://hl7.org/fhir">
+  <id value="keys-put"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: GraphDefinition keys-put</b></p><a name="keys-put"> </a><a name="hckeys-put"> </a><a name="hckeys-put-en-US"> </a><p><b>name</b>: keys-put</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Publish Verification Keys</p>
+</div><blockquote><p><b>link</b></p></blockquote></div>
+  </text>
+  <name value="keys-put"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Publish Verification Keys"/>
+  <link>
+    <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
+      <valueCoding>
+        <system value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"/>
+        <code value="keys-put"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value=""/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value="The OCHIE SHALL use one of the following transactions:&#xA;- [Publish Verification Keys - API](https://smart.who.int/trust/transactions.html#put_keys_api)"/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value=""/>
+    </extension>
+  </link>
+</GraphDefinition>
