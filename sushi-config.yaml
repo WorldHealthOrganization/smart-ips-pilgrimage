@@ -3,7 +3,7 @@ canonical: http://smart.who.int/ips-pilgrimage
 name: SMART_WHO_INT_IPS_Pilgrimage
 title: SMART Verifiable IPS for Pilgrimage
 description: An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage
-status: draft # draft | active | retired | unknown
+status: active # draft | active | retired | unknown
 version: 2.0.3
 #fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
