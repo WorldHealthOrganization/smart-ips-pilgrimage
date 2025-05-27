@@ -23,6 +23,8 @@ meta:
   profile:
     - http://smart.who.int/base/StructureDefinition/SGImplementationGuide
 
+
+
 pages:
   index.md:
     title: Home
@@ -139,6 +141,12 @@ menu:
 parameters:
   path-pages:
     - input/testing
+    - input/test/features
+  path-binary:
+    - input/test/features
+  path-test:
+    - input/test/testplans
+    - input/test/features
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
