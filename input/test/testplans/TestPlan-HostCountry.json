@@ -1,19 +1,18 @@
 {
     "resourceType": "TestPlan",
-    "id": "FunctionalTest2",
+    "id": "HostCountryTestPlan",
     "status": "active",
     "version": "1.0.0",
-    "name": "FunctionalTestPlan",
-    "title": "End-to-End Functional Tests for IPS-Pilgrimage Workflow",
-    "date": "2025-02-17",
+    "name": "HostCountryTestPlan",
+    "title": "Functional Unit Tests for the Host Country System Actor during the IPS-Pilgrimage Workflow",
     "publisher": "World Health Organization (WHO)",
     "contact": [
       {
-        "name": "WHO Testing Team",
+        "name": "WHO SMART Guidelines",
         "telecom": [
           {
             "system": "email",
-            "value": "testing-team@who.int"
+            "value": "SMART@who.int"
           }
         ]
       }
@@ -29,22 +28,25 @@
         ]
       }
     ],
-    "purpose": "To validate end-to-end workflows including IPS issuance, verification, and retrieval for international interoperability.",
+    "purpose": "Unit Tests for the Host Country EMR to verify, retrieve and display of IPS for pilgrims.",
     "copyright": "© 2025 World Health Organization. All rights reserved.",
     "category": [
       {
         "coding": [
           {
             "system": "http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes",
-            "code": "integration",
-            "display": "Integration"
+            "code": "unit",
+            "display": "unit"
           }
         ]
       }
     ],
     "scope": [
       {
-        "display": "Testing scenarios from WHO IPS Implementation Guide"
+        "display": "Unit Tests for the Host Country EMR to verify, retrieve and display of IPS for pilgrims."
+      },
+      {
+        "artifactCanonical" : "ActorDefinition/HostCountryEMR"
       }
     ],
     "testTools": "ITB with Gherkin+FHIR support",
@@ -52,56 +54,6 @@
     "testCase": [
       {
         "sequence": 1,
-        "scope": [
-          {
-            "reference": "ConsentRegistry"
-          }
-        ],
-        "testRun": [
-          {
-            "narrative": "Test cases for successful and failed consent recording",
-            "script": {
-              "language": {
-                "coding": [
-                  {
-                    "code": "text/x-gherkin"
-                  }
-                ]
-              },
-              "sourceReference": {
-                "reference": "Binary/record-consent"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "sequence": 2,
-        "scope": [
-          {
-            "reference": "VHLService"
-          }
-        ],
-        "testRun": [
-          {
-            "narrative": "Test cases for generating QR code with VHL",
-            "script": {
-              "language": {
-                "coding": [
-                  {
-                    "code": "text/x-gherkin"
-                  }
-                ]
-              },
-              "sourceReference": {
-                "reference": "Binary/issue-vhl"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "sequence": 3,
         "scope": [
           {
             "reference": "VerifierService"
@@ -126,7 +78,7 @@
         ]
       },
       {
-        "sequence": 4,
+        "sequence": 2,
         "scope": [
           {
             "reference": "VHLManifestService"
@@ -151,7 +103,7 @@
         ]
       },
       {
-        "sequence": 5,
+        "sequence": 3,
         "scope": [
           {
             "reference": "IPSServer"
@@ -176,7 +128,7 @@
         ]
       },
       {
-        "sequence": 6,
+        "sequence": 4,
         "scope": [
           {
             "reference": "IPSServer"
@@ -201,7 +153,7 @@
         ]
       },
       {
-        "sequence": 7,
+        "sequence": 5,
         "scope": [
           {
             "reference": "EMRViewer"

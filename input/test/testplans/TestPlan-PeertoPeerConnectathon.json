@@ -1,0 +1,254 @@
+{
+    "resourceType": "TestPlan",
+    "id": "PeertoPeerConnectathon",
+    "status": "active",
+    "version": "1.0.0",
+    "name": "PeertoPeerConnectathon",
+    "title": "End-to-End Functional Tests for IPS-Pilgrimage Workflow",
+    "publisher": "World Health Organization (WHO)",
+    "contact": [
+      {
+        "name": "WHO SMART Guidelines",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "SMART@who.int"
+          }
+        ]
+      }
+    ],
+    "jurisdiction": [
+      {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:3166",
+            "code": "001",
+            "display": "World Health Organization"
+          }
+        ]
+      }
+    ],
+    "purpose": "To validate end-to-end workflows including IPS issuance, verification, and retrieval for international interoperability.",
+    "copyright": "© 2025 World Health Organization. All rights reserved.",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes",
+            "code": "integration",
+            "display": "Integration"
+          }
+        ]
+      }
+    ],
+    "scope": [
+      {
+        "display": "Testing scenarios from WHO IPS Implementation Guide"
+      }
+    ],
+    "testTools": "ITB with Gherkin+FHIR support",
+    "exitCriteria": "All test cases should pass without errors. Critical paths must be verified.",
+    "testCase": [
+      {
+        "sequence": 1,
+        "scope": [
+          {
+            "reference": "mTLSconnection"
+          }
+        ],
+        "testRun": [
+          {
+            "narrative": "Test cases for successful mTLS connection",
+            "script": {
+              "language": {
+                "coding": [
+                  {
+                    "code": "text/x-gherkin"
+                  }
+                ]
+              },
+              "sourceReference": {
+                "reference": "Binary/connectivity"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "sequence": 2,
+        "scope": [
+          {
+            "reference": "ConsentRegistry"
+          }
+        ],
+        "testRun": [
+          {
+            "narrative": "Test cases for successful and failed consent recording",
+            "script": {
+              "language": {
+                "coding": [
+                  {
+                    "code": "text/x-gherkin"
+                  }
+                ]
+              },
+              "sourceReference": {
+                "reference": "Binary/record-consent"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "sequence": 3,
+        "scope": [
+          {
+            "reference": "VHLService"
+          }
+        ],
+        "testRun": [
+          {
+            "narrative": "Test cases for generating QR code with VHL",
+            "script": {
+              "language": {
+                "coding": [
+                  {
+                    "code": "text/x-gherkin"
+                  }
+                ]
+              },
+              "sourceReference": {
+                "reference": "Binary/issue-vhl"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "sequence": 4,
+        "scope": [
+          {
+            "reference": "VerifierService"
+          }
+        ],
+        "testRun": [
+          {
+            "narrative": "Test cases for verifying QR code signature",
+            "script": {
+              "language": {
+                "coding": [
+                  {
+                    "code": "text/x-gherkin"
+                  }
+                ]
+              },
+              "sourceReference": {
+                "reference": "Binary/verify-qr"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "sequence": 5,
+        "scope": [
+          {
+            "reference": "VHLManifestService"
+          }
+        ],
+        "testRun": [
+          {
+            "narrative": "Test cases for VHL manifest retrieval",
+            "script": {
+              "language": {
+                "coding": [
+                  {
+                    "code": "text/x-gherkin"
+                  }
+                ]
+              },
+              "sourceReference": {
+                "reference": "Binary/retrieve-vhl-manifest"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "sequence": 6,
+        "scope": [
+          {
+            "reference": "IPSServer"
+          }
+        ],
+        "testRun": [
+          {
+            "narrative": "Test cases for IPS retrieval",
+            "script": {
+              "language": {
+                "coding": [
+                  {
+                    "code": "text/x-gherkin"
+                  }
+                ]
+              },
+              "sourceReference": {
+                "reference": "Binary/retrieve-ips"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "sequence": 7,
+        "scope": [
+          {
+            "reference": "IPSServer"
+          }
+        ],
+        "testRun": [
+          {
+            "narrative": "Test cases for IPS content validation",
+            "script": {
+              "language": {
+                "coding": [
+                  {
+                    "code": "text/x-gherkin"
+                  }
+                ]
+              },
+              "sourceReference": {
+                "reference": "Binary/validate-ips"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "sequence": 8,
+        "scope": [
+          {
+            "reference": "EMRViewer"
+          }
+        ],
+        "testRun": [
+          {
+            "narrative": "Test case for rendering IPS narrative",
+            "script": {
+              "language": {
+                "coding": [
+                  {
+                    "code": "text/x-gherkin"
+                  }
+                ]
+              },
+              "sourceReference": {
+                "reference": "Binary/display-ips"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

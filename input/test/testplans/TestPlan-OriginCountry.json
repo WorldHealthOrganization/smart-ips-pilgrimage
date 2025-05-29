@@ -1,0 +1,107 @@
+{
+    "resourceType": "TestPlan",
+    "id": "OriginCountryTestPlan",
+    "status": "active",
+    "version": "1.0.0",
+    "name": "OriginCountryTestPlan",
+    "title": "Functional Unit Tests for the Origin Country System Actor during the IPS-Pilgrimage Workflow",
+    "publisher": "World Health Organization (WHO)",
+    "contact": [
+      {
+        "name": "WHO SMART Guidelines",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "SMART@who.int"
+          }
+        ]
+      }
+    ],
+    "jurisdiction": [
+      {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:3166",
+            "code": "001",
+            "display": "World Health Organization"
+          }
+        ]
+      }
+    ],
+    "purpose": "Unit tests for Origin Country to verify IPS issuance.",
+    "copyright": "© 2025 World Health Organization. All rights reserved.",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes",
+            "code": "unit",
+            "display": "unit"
+          }
+        ]
+      }
+    ],
+    "scope": [
+      {
+        "display": "Functional Tests for the Origin Country System Actor during the IPS-Pilgrimage Workflow"
+      },
+      {
+        "artifactCanonical" : "ActorDefinition/OriginCountryHIE"
+      }
+    ],
+    "testTools": "ITB with Gherkin+FHIR support",
+    "exitCriteria": "All test cases should pass without errors. Critical paths must be verified.",
+    "testCase": [
+      {
+        "sequence": 1,
+        "scope": [
+          {
+            "reference": "ConsentRegistry"
+          }
+        ],
+        "testRun": [
+          {
+            "narrative": "Test cases for successful and failed consent recording",
+            "script": {
+              "language": {
+                "coding": [
+                  {
+                    "code": "text/x-gherkin"
+                  }
+                ]
+              },
+              "sourceReference": {
+                "reference": "Binary/record-consent"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "sequence": 2,
+        "scope": [
+          {
+            "reference": "VHLService"
+          }
+        ],
+        "testRun": [
+          {
+            "narrative": "Test cases for generating QR code with VHL",
+            "script": {
+              "language": {
+                "coding": [
+                  {
+                    "code": "text/x-gherkin"
+                  }
+                ]
+              },
+              "sourceReference": {
+                "reference": "Binary/issue-vhl"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

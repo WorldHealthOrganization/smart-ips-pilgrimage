@@ -6,3 +6,4 @@ Alias: $IPSHajjConsent = http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ
 Alias: $IPSHajjTrans = http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION
 Alias: $IPSHajjActor = http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR
 Alias: $DocRelationshipType = http://hl7.org/fhir/document-relationship-type
+Alias: $actorType = http://hl7.org/fhir/examplescenario-actor-type

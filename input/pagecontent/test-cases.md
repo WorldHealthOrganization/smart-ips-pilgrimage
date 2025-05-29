@@ -27,7 +27,7 @@ The testing artifacts in this implementation guide are not intended to be used t
 
 ##### Retrieve IPS
 
-{% include gherkin_file file="record-ips.feature"%}
+{% include gherkin_file file="retrieve-ips.feature"%}
 
 ##### Validate retrieved IPS content
 
