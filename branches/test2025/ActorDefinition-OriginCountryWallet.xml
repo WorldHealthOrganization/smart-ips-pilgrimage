@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="OriginCountryWallet"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGActor"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActorDefinition OriginCountryWallet</b></p><a name="OriginCountryWallet"> </a><a name="hcOriginCountryWallet"> </a><a name="OriginCountryWallet-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGActor.html">SGActor</a></p></div><table class="grid"><tr><td><b>Actor: Origin Country Health Wallet </b></td><td>Origin Country Health Wallet</td><td>Type: system </td></tr><tr><td colspan="3"/></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url">
+    <valueUri value="http://smart.who.int/ips-pilgrimage/ActorDefinition/OriginCountryWallet"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version">
+    <valueString value="2.1.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name">
+    <valueString value="Origin Country Health Wallet"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title">
+    <valueString value="Origin Country Health Wallet"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status">
+    <valueCode value="active"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date">
+    <valueDateTime value="2025-05-30T10:39:35+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+      <telecom>
+        <system value="email"/>
+        <value value="smart@who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description">
+    <valueMarkdown value="Health Wallet App linked to the National HIE that manages access to patient summary information of a Pilgrim, particularly the IPS. The wallet app should manage consent profiles including time-bound access to an IPS, selective disclosure of content that is shared within the patient summary, and opt-out/opt-in on usage of the patient summary in a 'break the glass' scenario."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type">
+    <valueCode value="system"/>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="ActorDefinition"/>
+    </coding>
+  </code>
+</Basic>

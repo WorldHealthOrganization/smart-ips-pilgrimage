@@ -1,0 +1,24 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage.json	13725	-	0	0	0	0	0	0	8	234	0	0	0	0	0	0	0	0	0	0	120	237	0	0	0	0	5	0	1
+fsh-generated/resources/CodeSystem-BrowserCs.json	702	4	1	0	0	1	0	0	0	48	0	0	1	0	0	0	0	1	0	0	18	11686	0	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-DistributionModelCs.json	549	3	0	0	0	0	0	0	0	46	0	0	0	0	0	0	0	0	0	0	16	231	0	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-IPS.HAJJ.ACTOR.json	852	3	0	0	0	0	0	0	1	40	0	0	0	0	0	0	0	0	0	0	16	238	0	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT.json	1738	3	0	0	0	0	0	0	0	21	0	0	0	0	0	0	0	0	0	0	22	245	0	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-IPS.HAJJ.TRANSACTION.json	1242	3	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	19	260	0	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-LanguageCs.json	742	2	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	17	198	0	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-LicensingModelCs.json	473	3	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	16	179	0	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-OperatingSystemCs.json	635	3	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	15	176	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-Questionnaire-ConnectathonSubmission.json	7920	5	0	0	0	0	0	0	1	123	0	0	0	0	0	0	0	0	0	0	127	11250	0	0	1	0	2	0	0
+fsh-generated/resources/StructureDefinition-ConsentPeriod.json	1240	7	1	0	0	0	0	14	0	24	0	0	0	0	0	0	0	0	0	0	111	868	0	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ConsentVerifiedBy.json	1528	5	0	0	0	0	0	31	0	15	0	0	0	0	0	0	0	0	0	0	56	367	0	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-HajjConsent.json	3559	7	0	0	0	0	0	118	0	76	0	0	0	0	0	0	0	2	0	0	270	1204	0	0	0	0	9	1	1
+fsh-generated/resources/StructureDefinition-HajjOrganization.json	656	6	0	0	0	0	0	36	0	21	0	0	0	0	0	0	0	0	0	0	140	463	0	0	0	0	4	0	0
+fsh-generated/resources/ValueSet-Browser.json	358	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	22	289	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-DistributionModel.json	420	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	18	196	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.json	816	5	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	16	189	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.json	450	5	0	0	1	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	14	190	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT.json	491	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	14	190	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-IPS.HAJJ.TRANSACTION.json	494	5	0	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	13	206	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-Language.json	364	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	15	218	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-LicensingModel.json	402	5	1	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	16	189	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-OperatingSystem.json	408	5	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	16	270	0	0	0	0	1	0	0

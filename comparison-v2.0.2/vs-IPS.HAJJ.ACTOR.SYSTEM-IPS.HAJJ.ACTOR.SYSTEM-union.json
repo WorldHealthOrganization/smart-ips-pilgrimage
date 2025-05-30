@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "1da20737-d820-400c-a19e-4ea37e7fba22-56",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/1da20737-d820-400c-a19e-4ea37e7fba22-56",
+  "name" : "UnionIPS_HAJJ_ACTOR_SYSTEMAndIPS_HAJJ_ACTOR_SYSTEM",
+  "title" : "Union of IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor And IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor",
+  "status" : "active",
+  "date" : "2025-05-27T10:27:48+00:00",
+  "compose" : {
+    "exclude" : [{
+      "concept" : [{
+        "code" : "pilgrim",
+        "display" : "Pilgrim"
+      },
+      {
+        "code" : "qrcode",
+        "display" : "QR Code"
+      }]
+    }]
+  }
+}

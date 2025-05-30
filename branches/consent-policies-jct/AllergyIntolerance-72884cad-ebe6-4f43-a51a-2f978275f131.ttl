@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f131> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "72884cad-ebe6-4f43-a51a-2f978275f131"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance 72884cad-ebe6-4f43-a51a-2f978275f131</b></p><a name=\"72884cad-ebe6-4f43-a51a-2f978275f131\"> </a><a name=\"hc72884cad-ebe6-4f43-a51a-2f978275f131\"> </a><a name=\"72884cad-ebe6-4f43-a51a-2f978275f131-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Medication</p><p><b>criticality</b>: High Risk</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 373270004}\">Substance with penicillin structure and antibacterial mechanism of action (substance)</span></p><p><b>patient</b>: <a href=\"Patient-2b90dd2b-2dab-4c75-9bb9-a355e07401e7.html\">Martha DeLarosa  Female, DoB: 1972-05-01 ( urn:oid:2.16.840.1.113883.2.4.6.3#574687583)</a></p><p><b>onset</b>: Absent because : unknown</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2010"^^xsd:gYear ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "allergy"] ; # 
+  fhir:category ( [ fhir:v "medication"] ) ; # 
+  fhir:criticality [ fhir:v "high"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:373270004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "373270004" ] ;
+       fhir:display [ fhir:v "Substance with penicillin structure and antibacterial mechanism of action (substance)" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://smart.who.int/ips-pilgrimage/Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e7> ;
+     fhir:reference [ fhir:v "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e7" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "unknown" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

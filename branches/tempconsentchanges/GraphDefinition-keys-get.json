@@ -1,0 +1,36 @@
+{
+  "resourceType" : "GraphDefinition",
+  "id" : "keys-get",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition keys-get</b></p><a name=\"keys-get\"> </a><a name=\"hckeys-get\"> </a><a name=\"keys-get-en-US\"> </a><p><b>name</b>: keys-get</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Retrieve Verification Keys</p>\n</div><blockquote><p><b>link</b></p></blockquote></div>"
+  },
+  "name" : "keys-get",
+  "status" : "active",
+  "experimental" : false,
+  "description" : "Retrieve Verification Keys",
+  "link" : [{
+    "extension" : [{
+      "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+      "valueCoding" : {
+        "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+        "code" : "keys-get"
+      }
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : ""
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "The HCEMR SHALL use one of the following transactions:\n- [Retrieve Verification Keys - DID](https://smart.who.int/trust/transactions.html#get_keys_did)\n- [Retrieve Verification Keys  - API](https://smart.who.int/trust/transactions.html#get_keys_api)"
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "The HCEMR shall use the verificaiton keys to verify the provance of the Verificable Smart Health Link and the Verifable IPS"
+    }]
+  }]
+}

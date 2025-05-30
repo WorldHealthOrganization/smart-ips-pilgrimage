@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GraphDefinition xmlns="http://hl7.org/fhir">
+  <id value="shl-doc-view"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: GraphDefinition shl-doc-view</b></p><a name="shl-doc-view"> </a><a name="hcshl-doc-view"> </a><a name="shl-doc-view-en-US"> </a><p><b>name</b>: shl-doc-view</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Use SHL to access Document Viewer</p>
+</div><blockquote><p><b>link</b></p></blockquote></div>
+  </text>
+  <name value="shl-doc-view"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Use SHL to access Document Viewer"/>
+  <link>
+    <extension url="http://smart.who.int/base/StructureDefinition/Sgcode">
+      <valueCoding>
+        <system value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"/>
+        <code value="shl-doc-view"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value=""/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value=""/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/Markdown">
+      <valueMarkdown value=""/>
+    </extension>
+  </link>
+</GraphDefinition>

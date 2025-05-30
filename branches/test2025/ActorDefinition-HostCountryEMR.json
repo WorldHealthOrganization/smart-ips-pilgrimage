@@ -1,0 +1,74 @@
+{
+  "resourceType" : "Basic",
+  "id" : "HostCountryEMR",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGActor"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition HostCountryEMR</b></p><a name=\"HostCountryEMR\"> </a><a name=\"hcHostCountryEMR\"> </a><a name=\"HostCountryEMR-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGActor.html\">SGActor</a></p></div><table class=\"grid\"><tr><td><b>Actor: Host Country EMR </b></td><td>Host Country EMR</td><td>Type: system </td></tr><tr><td colspan=\"3\"/></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url",
+    "valueUri" : "http://smart.who.int/ips-pilgrimage/ActorDefinition/HostCountryEMR"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version",
+    "valueString" : "2.1.0"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name",
+    "valueString" : "Host Country EMR"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title",
+    "valueString" : "Host Country EMR"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status",
+    "valueCode" : "active"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date",
+    "valueDateTime" : "2025-05-30T10:39:35+00:00"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher",
+    "valueString" : "WHO"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact",
+    "valueContactDetail" : {
+      "name" : "WHO",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://who.int"
+      },
+      {
+        "system" : "email",
+        "value" : "smart@who.int"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description",
+    "valueMarkdown" : "EMR used in Host Country of the pilgrimage by the Host Country Health Worker for accessing and managing health records. Serves as the interface utilized to view and/or ingest patient summary documents from Pilgrims. The Host Country EMR should, at a minimum, save a rendered version (e.g. PDF) of the Pilgrim's patient summary document for audit and liability purposes. The Host Country EMR may optionally ingest the patient summary document and transmit or otherwise make it available to the Host Country HIE for continued patient care."
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type",
+    "valueCode" : "system"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "ActorDefinition"
+    }]
+  }
+}

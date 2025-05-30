@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Medication",
+  "id" : "976d0804-cae0-45ae-afe3-a19f3ceba6bb",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication 976d0804-cae0-45ae-afe3-a19f3ceba6bb</b></p><a name=\"976d0804-cae0-45ae-afe3-a19f3ceba6bb\"> </a><a name=\"hc976d0804-cae0-45ae-afe3-a19f3ceba6bb\"> </a><a name=\"976d0804-cae0-45ae-afe3-a19f3ceba6bb-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 108774000}, {urn:oid:2.16.840.1.113883.2.4.4.1 99872}, {urn:oid:2.16.840.1.113883.2.4.4.7 2076667}, {http://www.whocc.no/atc L02BG03}\">Product containing anastrozole (medicinal product)</span></p></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108774000",
+      "display" : "Product containing anastrozole (medicinal product)"
+    },
+    {
+      "system" : "urn:oid:2.16.840.1.113883.2.4.4.1",
+      "code" : "99872",
+      "display" : "ANASTROZOL 1MG TABLET"
+    },
+    {
+      "system" : "urn:oid:2.16.840.1.113883.2.4.4.7",
+      "code" : "2076667",
+      "display" : "ANASTROZOL CF TABLET FILMOMHULD 1MG"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "L02BG03",
+      "display" : "anastrozole"
+    }]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "4c56a3be-0f67-47ac-bffd-3c50c5b069d6-63",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/4c56a3be-0f67-47ac-bffd-3c50c5b069d6-63",
+  "name" : "IntersectionIPS_HAJJ_CONSENTAndIPS_HAJJ_CONSENT",
+  "title" : "Intersection of IPS.HAJJ.CONSENT ValueSet of consent policies And IPS.HAJJ.CONSENT ValueSet of consent policies",
+  "status" : "active",
+  "date" : "2025-05-30T10:45:58+00:00"
+}

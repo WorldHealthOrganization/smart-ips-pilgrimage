@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "7b1c3014-7728-4471-b8a6-04670f77152e-3",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7b1c3014-7728-4471-b8a6-04670f77152e-3",
+  "name" : "IntersectionBrowserCsAndBrowserCs",
+  "title" : "Intersection of Browser And Browser",
+  "status" : "active",
+  "date" : "2025-05-27T10:24:53+00:00",
+  "concept" : [{
+    "code" : "Firefox",
+    "display" : "Firefox"
+  },
+  {
+    "code" : "Chrome",
+    "display" : "Chrome"
+  },
+  {
+    "code" : "MicrosoftEdge",
+    "display" : "MicrosoftEdge"
+  },
+  {
+    "code" : "InternetExplorer",
+    "display" : "InternetExplorer"
+  },
+  {
+    "code" : "Safari",
+    "display" : "Safari"
+  },
+  {
+    "code" : "Other",
+    "display" : "Other"
+  }]
+}

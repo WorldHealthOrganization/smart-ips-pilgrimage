@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "7b1c3014-7728-4471-b8a6-04670f77152e-75",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/7b1c3014-7728-4471-b8a6-04670f77152e-75",
+  "name" : "IntersectionOperatingSystemAndOperatingSystem",
+  "title" : "Intersection of Operating System And Operating System",
+  "status" : "draft",
+  "date" : "2025-05-27T10:24:55+00:00"
+}

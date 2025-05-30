@@ -1,0 +1,16 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/Binary/verify-qr> a fhir:Binary ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "verify-qr"] ; # 
+  fhir:contentType [ fhir:v "text/x-gherkin"] ; # 
+  fhir:data [ fhir:v "RmVhdHVyZTogVmVyaWZ5IFFSIENvZGUgc2lnbmF0dXJlCgpTY2VuYXJpbzogVmVyaWZ5IHZhbGlkIFFSIENvZGUKR0lWRU4gYSBRUiBjb2RlIGlzIHNoYXJlZApXSEVOIGEgc2Nhbm5lciBpcyB1c2VkIHRvIHJlYWQgdGhlIFFSIGNvZGUKVEhFTiBhIGJhc2U2NCBlbmNvZGVkIENXVCBpcyBvYnRhaW5lZApBTkQgQ09TRSBtZXNzYWdlIGlzIGV4dHJhY3RlZApBTkQgc2lnbmF0dXJlIG9uIENXVCBQYXlsb2FkIGlzIHZlcmlmaWVkIHVzaW5nIEtpZCByZWZlcmVuY2UgaW4gQ1dUIEhlYWRlcgpBTkQgc2lnbmF0dXJlIHZlcmlmaWNhdGlvbiBpcyBzdWNjZXNzZnVsIGFuZCB0aGUgSENFUlQgaXMgb2J0YWluZWQKClNjZW5hcmlvOiBRUiBjb2RlIHByb3ZpZGVkIGlzIGludmFsaWQKR0lWRU4gYSBRUiBjb2RlIGlzIHNoYXJlZCBmb3Igd2hpY2ggdGhlIHNpZ25hdHVyZSBoYXMgZXhwaXJlZApXSEVOIGEgc2Nhbm5lciBpcyB1c2VkIHRvIHJlYWQgdGhlIFFSIGNvZGUKVEhFTiBhIGJhc2U2NCBlbmNvZGVkIENXVCBpcyBvYnRhaW5lZApBTkQgQ09TRSBtZXNzYWdlIGlzIGV4dHJhY3RlZApBTkQgc2lnbmF0dXJlIG9uIENXVCBQYXlsb2FkIGlzIHZlcmlmaWVkIHVzaW5nIEtpZCByZWZlcmVuY2UgaW4gQ1dUIEhlYWRlcgpBTkQgc2lnbmF0dXJlIHZlcmlmaWNhdGlvbiBmYWlscwpBTkQgRXJyb3IgbWVzc2FnZSBpcyBzZW50"^^xsd:base64Binary] . # 
+
+# -------------------------------------------------------------------------------------
+

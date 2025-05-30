@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="OriginCountryHIE"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGActor"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActorDefinition OriginCountryHIE</b></p><a name="OriginCountryHIE"> </a><a name="hcOriginCountryHIE"> </a><a name="OriginCountryHIE-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGActor.html">SGActor</a></p></div><table class="grid"><tr><td><b>Actor: Origin Country HIE </b></td><td>Origin Country HIE</td><td>Type: system </td></tr><tr><td colspan="3"/></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url">
+    <valueUri value="http://smart.who.int/ips-pilgrimage/ActorDefinition/OriginCountryHIE"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version">
+    <valueString value="2.1.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name">
+    <valueString value="Origin Country HIE"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title">
+    <valueString value="Origin Country HIE"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status">
+    <valueCode value="active"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date">
+    <valueDateTime value="2025-05-30T10:39:35+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+      <telecom>
+        <system value="email"/>
+        <value value="smart@who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description">
+    <valueMarkdown value="Health information exchange of origin country of a Pilgrim. Responsible for providing standardized patient summary information for a Pilgrim and making that accessible to the Pilgrim as part of a patient-mediated exchange data exchange and consent approach."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type">
+    <valueCode value="system"/>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="ActorDefinition"/>
+    </coding>
+  </code>
+</Basic>

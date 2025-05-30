@@ -1,0 +1,99 @@
+SMARTIPSforPilgrimage : Validation Results
+=========================================
+
+err = 10, warn = 17, info = 25
+$--
+Generated $--. FHIR version $-- for who.ips-pilgrimage#$-- (canonical = https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies)
+ Build Errors : 5 / 7 / 0
+ /github/workspace/fsh-generated/resources/ActorDefinition-QRCard : 1 / 1 / 2
+ /github/workspace/fsh-generated/resources/Bundle-MyIPS : 0 / 3 / 54
+ /github/workspace/fsh-generated/resources/CodeSystem-IPS.HAJJ : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Composition-30551ce1-5a28-4356-b684-1e639094ad4d : 3 / 0 / 10
+ /github/workspace/fsh-generated/resources/Condition-c4597aa2-688a-401b-a658-70acc6de28c6 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-c64139e7-f02d-409c-bf34-75e8bf23bc80 : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c7 : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-who.ips-pilgrimage : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConsentPeriod : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConsentVerifiedBy : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjConsent : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjIPS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjIPS-Composition : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjOrganization : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLink : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/c4597aa2-688a-401b-a658-70acc6de28c6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/data-models-and-exchange.html#/html/body/div/div/div/div/div/ul/li/a at Line 285, column 8: The link 'logical-models.html' for "Logical Models" cannot be resolved
+ERROR: /github/workspace/output/downloads.html: The html source references validator.pack which is deprecated. Change the IG to describe the use of the package system instead
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 353, column 9: The link 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation' for "CPG ImmunizationRecommendation" cannot be resolved
+ERROR: /github/workspace/output/indicators-measures.html#/html/body/div/div/div/div/div/p/a at Line 279, column 70: The link 'artifacts.html#knowledge-artifacts-measure' for "Artifact Index - Measures" cannot be resolved (valid targets: [terminology-value-sets, project-nav, publish-box, segment-post-footer, who-logo, top, example-example-instances, stripe, segment-footer, language-selector, artifact-index, segment-content, structures-extension-definitions, segment-header, bottom, structures-resource-profiles, fhir-logo, family-nav, ig-status, 1, structures-logical-models, 2, terminology-code-systems, 3, 4, 5, 6, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/reference-implementations.html#/html/body/div/div/div/div/div/p/a at Line 283, column 97: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ActorDefinition-QRCard.json ==
+ERROR: ActorDefinition/QRCard: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
+WARNING: ActorDefinition/QRCard: ActorDefinition.meta.profile[0]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Bundle-MyIPS.json ==
+INFORMATION: Bundle/MyIPS: Bundle.entry[2].resource.qualification[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v2-0360|2.7|0360
+INFORMATION: Bundle/MyIPS: Bundle.entry[2].resource/*Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef*/.qualification[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v2-0360|2.7|0360
+INFORMATION: Bundle/MyIPS: Bundle.entry[4].resource.code: Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded
+INFORMATION: Bundle/MyIPS: Bundle.entry[4].resource/*Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80*/.code: Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded
+INFORMATION: Bundle/MyIPS: Bundle.entry[5].resource.dosage[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+INFORMATION: Bundle/MyIPS: Bundle.entry[5].resource/*MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6*/.dosage[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+INFORMATION: Bundle/MyIPS: Bundle.entry[7].resource/*Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc*/.code.coding[1].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated
+INFORMATION: Bundle/MyIPS: Bundle.entry[7].resource/*Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc*/.code.coding[2].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated
+INFORMATION: Bundle/MyIPS: Bundle.entry[7].resource/*Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc*/.code.coding[1]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated
+INFORMATION: Bundle/MyIPS: Bundle.entry[7].resource/*Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc*/.code.coding[2]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated
+INFORMATION: Bundle/MyIPS: Bundle.entry[9].resource.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource.category[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource/*Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7*/.meta.profile[1]: Profile reference 'https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition-HajjConsent' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+WARNING: Bundle/MyIPS: Bundle.meta.profile[1]: Profile reference 'http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.json ==
+== fsh-generated/resources/Composition-30551ce1-5a28-4356-b684-1e639094ad4d.json ==
+INFORMATION: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[0].entry[0]: This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[0].entry[1]: This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[1].entry[0]: This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[1]: Slice 'Composition.section:sectionAllergies.entry:allergyOrIntolerance': a matching slice is required, but not found (from https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0). Note that other slices are allowed in addition to this required slice
+INFORMATION: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[2].entry[0]: This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[2]: Slice 'Composition.section:sectionProblems.entry:problem': a matching slice is required, but not found (from https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0). Note that other slices are allowed in addition to this required slice
+INFORMATION: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[3].entry[0]: This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[4].entry[0]: This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[4]: Slice 'Composition.section:sectionPastIllnessHx.entry:pastProblem': a matching slice is required, but not found (from https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0). Note that other slices are allowed in addition to this required slice
+INFORMATION: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[6].entry[0]: This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[6].entry[1]: This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Composition/30551ce1-5a28-4356-b684-1e639094ad4d: Composition.section[6].entry[2]: This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/Condition-c4597aa2-688a-401b-a658-70acc6de28c6.json ==
+INFORMATION: Condition/c4597aa2-688a-401b-a658-70acc6de28c6: Condition.severity: None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6750-9)
+== fsh-generated/resources/Condition-c64139e7-f02d-409c-bf34-75e8bf23bc80.json ==
+INFORMATION: Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80: Condition.severity: None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6751-7)
+INFORMATION: Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80: Condition.code: Reference to experimental CodeSystem http://hl7.org/fhir/sid/icd-10|2019-covid-expanded
+== fsh-generated/resources/Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c7.json ==
+WARNING: Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7: Consent.category[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7: Consent.meta.profile[1]: Profile reference 'https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition-HajjConsent' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/ImplementationGuide-who.ips-pilgrimage.json ==
+ERROR: ImplementationGuide/who.ips-pilgrimage: ImplementationGuide.meta.profile[0]: Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide)
+WARNING: ImplementationGuide/who.ips-pilgrimage: ImplementationGuide.meta.profile[0]: Profile reference 'SMARTImplementationGuide' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/StructureDefinition-ConsentPeriod.json ==
+== fsh-generated/resources/StructureDefinition-ConsentVerifiedBy.json ==
+WARNING: StructureDefinition.where(url = 'https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/ConsentVerifiedBy'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-HajjConsent.json ==
+== fsh-generated/resources/StructureDefinition-HajjIPS.json ==
+== fsh-generated/resources/StructureDefinition-HajjIPS-Composition.json ==
+WARNING: StructureDefinition/HajjIPS-Composition: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+INFORMATION: StructureDefinition/HajjIPS-Composition: Composition.extension: The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated
+== fsh-generated/resources/StructureDefinition-HajjOrganization.json ==
+WARNING: StructureDefinition.where(url = 'https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjOrganization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-SmartHealthLink.json ==
+ERROR: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLink'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLink.json - the canonical URL (https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/SmartHealthLink) does not match the URL (http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLink)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLink: URL Mismatch https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/SmartHealthLink vs http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLink
+== fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload.json ==
+ERROR: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLinkPayload'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload.json - the canonical URL (https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/SmartHealthLinkPayload) does not match the URL (http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLinkPayload)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload: URL Mismatch https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/SmartHealthLinkPayload vs http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLinkPayload
+== fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT.json ==

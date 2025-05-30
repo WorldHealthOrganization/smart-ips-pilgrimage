@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "4c56a3be-0f67-47ac-bffd-3c50c5b069d6-66",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/4c56a3be-0f67-47ac-bffd-3c50c5b069d6-66",
+  "name" : "IntersectionIPS_HAJJ_TRANSACTIONAndIPS_HAJJ_TRANSACTION",
+  "title" : "Intersection of IPS.HAJJ.TRANSACTION ValueSet of transaction And IPS.HAJJ.TRANSACTION ValueSet of transaction",
+  "status" : "active",
+  "date" : "2025-05-30T10:45:58+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "7b1c3014-7728-4471-b8a6-04670f77152e-71",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/7b1c3014-7728-4471-b8a6-04670f77152e-71",
+  "name" : "UnionLicensingModelAndLicensingModel",
+  "title" : "Union of Licensing Model And Licensing Model",
+  "status" : "draft",
+  "date" : "2025-05-27T10:24:55+00:00"
+}

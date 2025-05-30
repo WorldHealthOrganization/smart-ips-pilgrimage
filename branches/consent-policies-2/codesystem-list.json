@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IPS_HAJJ",
+      "title" : "IPS.HAJJ CodeSystem",
+      "description" : "CodeSystem for IPS.HAJJ CodeSystem for utilization of IPS during Hajj"
+    }
+  ]
+}

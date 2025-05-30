@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "1da20737-d820-400c-a19e-4ea37e7fba22-74",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/1da20737-d820-400c-a19e-4ea37e7fba22-74",
+  "name" : "UnionOperatingSystemAndOperatingSystem",
+  "title" : "Union of Operating System And Operating System",
+  "status" : "draft",
+  "date" : "2025-05-27T10:27:48+00:00"
+}

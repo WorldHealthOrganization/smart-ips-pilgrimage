@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DistributionModelCs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DistributionModelCs</b></p><a name=\"DistributionModelCs\"> </a><a name=\"hcDistributionModelCs\"> </a><a name=\"DistributionModelCs-en-US\"> </a><p>This  code system <code>http://worldhealthorganization.github.io/smart-ips-pilgrimage/DistributionModel</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Cloud-based<a name=\"DistributionModelCs-Cloud-based\"> </a></td></tr><tr><td style=\"white-space:nowrap\">On-premise<a name=\"DistributionModelCs-On-premise\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Hybrid<a name=\"DistributionModelCs-Hybrid\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://worldhealthorganization.github.io/smart-ips-pilgrimage/DistributionModel",
+  "version" : "1.0.1",
+  "name" : "DistributionModelCs",
+  "title" : "Distribution Model",
+  "status" : "draft",
+  "date" : "2024-11-21T11:25:11+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Distribution Model",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "Cloud-based",
+    "display" : "Cloud-based"
+  },
+  {
+    "code" : "On-premise",
+    "display" : "On-premise"
+  },
+  {
+    "code" : "Hybrid",
+    "display" : "Hybrid"
+  }]
+}

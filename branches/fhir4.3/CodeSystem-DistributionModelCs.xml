@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DistributionModelCs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem DistributionModelCs</b></p><a name="DistributionModelCs"> </a><a name="hcDistributionModelCs"> </a><a name="DistributionModelCs-en-US"> </a><p>This  code system <code>http://worldhealthorganization.github.io/smart-ips-pilgrimage/DistributionModel</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Cloud-based<a name="DistributionModelCs-Cloud-based"> </a></td></tr><tr><td style="white-space:nowrap">On-premise<a name="DistributionModelCs-On-premise"> </a></td></tr><tr><td style="white-space:nowrap">Hybrid<a name="DistributionModelCs-Hybrid"> </a></td></tr></table></div>
+  </text>
+  <url value="http://worldhealthorganization.github.io/smart-ips-pilgrimage/DistributionModel"/>
+  <version value="1.0.1"/>
+  <name value="DistributionModelCs"/>
+  <title value="Distribution Model"/>
+  <status value="draft"/>
+  <date value="2024-11-21T11:25:11+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="smart@who.int"/>
+    </telecom>
+  </contact>
+  <description value="Distribution Model"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Cloud-based"/>
+    <display value="Cloud-based"/>
+  </concept>
+  <concept>
+    <code value="On-premise"/>
+    <display value="On-premise"/>
+  </concept>
+  <concept>
+    <code value="Hybrid"/>
+    <display value="Hybrid"/>
+  </concept>
+</CodeSystem>

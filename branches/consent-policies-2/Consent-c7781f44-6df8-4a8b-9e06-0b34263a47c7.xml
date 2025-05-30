@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="c7781f44-6df8-4a8b-9e06-0b34263a47c7"/>
+  <meta>
+    <profile value="https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjConsent"/>
+    <profile value="https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition-HajjConsent"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Consent c7781f44-6df8-4a8b-9e06-0b34263a47c7</b></p><a name="c7781f44-6df8-4a8b-9e06-0b34263a47c7"> </a><a name="hcc7781f44-6df8-4a8b-9e06-0b34263a47c7"> </a><a name="c7781f44-6df8-4a8b-9e06-0b34263a47c7-en-US"> </a><p><b>status</b>: Active</p><p><b>scope</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/consentscope patient-privacy}">Privacy Consent</span></p><p><b>category</b>: <span title="Codes:">CONSENT-KSA</span></p><p><b>patient</b>: patient1</p><p><b>dateTime</b>: 2016-05-11</p><p><b>organization</b>: Org1</p><p><b>policyRule</b>: <span title="Codes:">some policy</span></p><h3>Verifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Verified</b></td><td><b>VerifiedWith</b></td><td><b>VerificationDate</b></td></tr><tr><td style="display: none">*</td><td>true</td><td>verifier</td><td>2003</td></tr></table><h3>Provisions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td>1964-01-01 --&gt; 2016-01-01</td></tr></table></div>
+  </text>
+  <extension url="https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/ConsentPeriod">
+    <valuePeriod>
+      <start value="2022"/>
+    </valuePeriod>
+  </extension>
+  <status value="active"/>
+  <scope>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="patient-privacy"/>
+    </coding>
+  </scope>
+  <category>
+    <coding>
+      <code value="CONSENT-KSA"/>
+    </coding>
+  </category>
+  <patient>
+    <display value="patient1"/>
+  </patient>
+  <dateTime value="2016-05-11"/>
+  <organization>
+    <display value="Org1"/>
+  </organization>
+  <policyRule>
+    <text value="some policy"/>
+  </policyRule>
+  <verification>
+    <verified value="true"/>
+    <verifiedWith>
+      <display value="verifier"/>
+    </verifiedWith>
+    <verificationDate value="2003"/>
+  </verification>
+  <provision>
+    <period>
+      <start value="1964-01-01"/>
+      <end value="2016-01-01"/>
+    </period>
+  </provision>
+</Consent>

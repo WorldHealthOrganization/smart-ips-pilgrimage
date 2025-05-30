@@ -1,0 +1,29 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "2b1d6b24-e00f-4ea3-a119-b64b13fed1c6-24",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/2b1d6b24-e00f-4ea3-a119-b64b13fed1c6-24",
+  "name" : "IntersectionOperatingSystemCsAndOperatingSystemCs",
+  "title" : "Intersection of Operating System And Operating System",
+  "status" : "active",
+  "date" : "2025-05-27T12:19:36+00:00",
+  "concept" : [{
+    "code" : "Linux",
+    "display" : "Linux"
+  },
+  {
+    "code" : "Unix",
+    "display" : "Unix"
+  },
+  {
+    "code" : "Windows",
+    "display" : "Windows"
+  },
+  {
+    "code" : "Mac",
+    "display" : "Mac"
+  },
+  {
+    "code" : "Other",
+    "display" : "Other"
+  }]
+}

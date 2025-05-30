@@ -1,0 +1,198 @@
+SMART_WHO_INT_IPS_Pilgrimage : Validation Results
+=========================================
+
+err = 13, warn = 101, info = 20
+$--
+Generated $--. FHIR version $-- for smart.who.int.ips-pilgrimage#$-- (canonical = http://smart.who.int/ips-pilgrimage)
+ Build Errors : 10 / 4 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-BrowserCs : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-DistributionModelCs : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-IPS.HAJJ.ACTOR : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-IPS.HAJJ.TRANSACTION : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-LanguageCs : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-LicensingModelCs : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-OperatingSystemCs : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage : 2 / 50 / 17
+ /github/workspace/fsh-generated/resources/Questionnaire-Questionnaire-ConnectathonSubmission : 0 / 18 / 7
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConsentPeriod : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConsentVerifiedBy : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjConsent : 0 / 7 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjOrganization : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-Browser : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DistributionModel : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.SYSTEM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.TRANSACTION : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-Language : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-LicensingModel : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OperatingSystem : 0 / 1 / 1
+</table>
+== n/a ==
+ERROR: /github/workspace/output/Questionnaire-Questionnaire-ConnectathonSubmission-form.html: unexpected non-end of element null::div  at line 343 column 267
+ERROR: /github/workspace/output/business-requirements.html#/html/body/div/div/div/div/div/ul/li/a at Line 281, column 8: The link 'business-process.html' for "Business Processes" cannot be resolved
+ERROR: /github/workspace/output/data-models-and-exchange.html#/html/body/div/div/div/div/div/ul/li/a at Line 282, column 8: The link 'actors.html' for "Actors" cannot be resolved
+ERROR: /github/workspace/output/data-models-and-exchange.html#/html/body/div/div/div/div/div/ul/li/a at Line 285, column 8: The link 'logical-models.html' for "Logical Models" cannot be resolved
+ERROR: /github/workspace/output/downloads.html: The html source references validator.pack which is deprecated. Change the IG to describe the use of the package system instead
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 364, column 9: The link 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation' for "CPG ImmunizationRecommendation" cannot be resolved
+ERROR: /github/workspace/output/indicators-measures.html#/html/body/div/div/div/div/div/p/a at Line 279, column 70: The link 'artifacts.html#knowledge-artifacts-measure' for "Artifact Index - Measures" cannot be resolved (valid targets: [terminology-value-sets, project-nav, publish-box, segment-post-footer, who-logo, top, stripe, segment-footer, language-selector, artifact-index, segment-content, structures-extension-definitions, segment-header, bottom, structures-resource-profiles, fhir-logo, family-nav, ig-status, 1, 2, terminology-code-systems, 3, 4, 5, structures-questionnaires, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/system-actors.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 297, column 14: The link 'transaction.html#issue-shl-request' for "issue SHL request (issue-shl-request)" cannot be resolved
+ERROR: /github/workspace/output/system-actors.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 317, column 14: The link 'transaction.html#issue-shl-request' for "issue SHL request (issue-shl-request)" cannot be resolved
+ERROR: /github/workspace/output/trust_domain.html#/html/body/div/div/div/div/div/p/a at Line 295, column 171: The link 'http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ' for "here" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-BrowserCs.json ==
+ERROR: CodeSystem.where(url = 'http://worldhealthorganization.github.io/smart-ips-pilgrimage/Browser'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-BrowserCs.json - the canonical URL (http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs) does not match the URL (http://worldhealthorganization.github.io/smart-ips-pilgrimage/Browser)
+INFORMATION: CodeSystem/BrowserCs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/BrowserCs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/BrowserCs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-BrowserCs: URL Mismatch http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs vs http://worldhealthorganization.github.io/smart-ips-pilgrimage/Browser
+== fsh-generated/resources/CodeSystem-DistributionModelCs.json ==
+ERROR: CodeSystem.where(url = 'http://worldhealthorganization.github.io/smart-ips-pilgrimage/DistributionModel'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-DistributionModelCs.json - the canonical URL (http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs) does not match the URL (http://worldhealthorganization.github.io/smart-ips-pilgrimage/DistributionModel)
+INFORMATION: CodeSystem/DistributionModelCs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/DistributionModelCs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/DistributionModelCs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-DistributionModelCs: URL Mismatch http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs vs http://worldhealthorganization.github.io/smart-ips-pilgrimage/DistributionModel
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.ACTOR.json ==
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT.json ==
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.TRANSACTION.json ==
+WARNING: CodeSystem/IPS.HAJJ.TRANSACTION: CodeSystem.concept[8].display: value should not start or finish with whitespace 'Record Consent - Digital Health Wallet '
+== fsh-generated/resources/CodeSystem-LanguageCs.json ==
+ERROR: CodeSystem.where(url = 'http://worldhealthorganization.github.io/smart-ips-pilgrimage/Language'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-LanguageCs.json - the canonical URL (http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs) does not match the URL (http://worldhealthorganization.github.io/smart-ips-pilgrimage/Language)
+INFORMATION: CodeSystem/LanguageCs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/LanguageCs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/LanguageCs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-LanguageCs: URL Mismatch http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs vs http://worldhealthorganization.github.io/smart-ips-pilgrimage/Language
+== fsh-generated/resources/CodeSystem-LicensingModelCs.json ==
+ERROR: CodeSystem.where(url = 'http://worldhealthorganization.github.io/smart-ips-pilgrimage/LicensingModel'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-LicensingModelCs.json - the canonical URL (http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs) does not match the URL (http://worldhealthorganization.github.io/smart-ips-pilgrimage/LicensingModel)
+INFORMATION: CodeSystem/LicensingModelCs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/LicensingModelCs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/LicensingModelCs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-LicensingModelCs: URL Mismatch http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs vs http://worldhealthorganization.github.io/smart-ips-pilgrimage/LicensingModel
+== fsh-generated/resources/CodeSystem-OperatingSystemCs.json ==
+ERROR: CodeSystem.where(url = 'http://worldhealthorganization.github.io/smart-ips-pilgrimage/OperatingSystem'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-OperatingSystemCs.json - the canonical URL (http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs) does not match the URL (http://worldhealthorganization.github.io/smart-ips-pilgrimage/OperatingSystem)
+INFORMATION: CodeSystem/OperatingSystemCs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/OperatingSystemCs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/OperatingSystemCs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-OperatingSystemCs: URL Mismatch http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs vs http://worldhealthorganization.github.io/smart-ips-pilgrimage/OperatingSystem
+== fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage.json ==
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[15].name: value should not start or finish with whitespace 'IPS.HAJJ.TRANSACTION ValueSet of transaction '
+ERROR: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide: ImplementationGuide.experimental: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0)
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.status: ValueSet 'http://hl7.org/fhir/ValueSet/publication-status|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.license: ValueSet 'http://hl7.org/fhir/ValueSet/spdx-license|4.0.1' not found
+ERROR: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.license: Value is 'CC0-1.0' but is fixed to 'CC-BY-SA-3.0-IGO' in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0#ImplementationGuide.license
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.fhirVersion[0]: ValueSet 'http://hl7.org/fhir/ValueSet/FHIR-version|4.0.1' not found
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[0]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[1]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[2]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[3]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[4]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[5]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[6]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[7]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[8]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[16]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[17]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[18]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[19]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[20]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[21]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[0].page[0].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[0].page[1].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[0].page[2].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[0].page[3].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[0].page[4].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[1].page[0].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[1].page[1].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[1].page[2].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[1].page[3].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[1].page[4].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[1].page[5].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[1].page[6].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[1].page[7].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[1].page[8].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[2].page[0].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[2].page[1].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[2].page[2].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[2].page[3].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[2].page[4].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[3].page[0].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[3].page[1].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[3].page[2].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[3].page[3].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[3].page[4].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[3].page[5].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[3].page[6].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[3].page[7].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[4].page[0].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.page.page[4].page[1].generation: ValueSet 'http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[0].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[1].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[2].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[3].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[4].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[5].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[6].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[7].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[8].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[9].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[10].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[11].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[12].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[13].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[14].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.parameter[15].code: ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1' not found
+== fsh-generated/resources/Questionnaire-Questionnaire-ConnectathonSubmission.json ==
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.status: ValueSet 'http://hl7.org/fhir/ValueSet/publication-status|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[0].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[1].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[2].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[3].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[4].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[5].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[6].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[7].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[8].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[9].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[10].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[11].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[12].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[0].item[0].item[13].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire.item[1].type: ValueSet 'http://hl7.org/fhir/ValueSet/item-type|4.0.1' not found
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire: Constraint failed: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/Questionnaire)
+== fsh-generated/resources/StructureDefinition-ConsentPeriod.json ==
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentPeriod'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ConsentVerifiedBy.json ==
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-HajjConsent.json ==
+WARNING: StructureDefinition/HajjConsent: StructureDefinition.differential.element[3].binding: The definition for the element 'Consent.category' binds to the value set 'http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/HajjConsent: StructureDefinition.snapshot.element[13].binding: The definition for the element 'Consent.category' binds to the value set 'http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/HajjConsent: StructureDefinition.snapshot.element[44].binding: The definition for the element 'Consent.provision.actor.role' binds to the value set 'http://hl7.org/fhir/ValueSet/security-role-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/HajjConsent: StructureDefinition.snapshot.element[46].binding: The definition for the element 'Consent.provision.action' binds to the value set 'http://hl7.org/fhir/ValueSet/consent-action' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/HajjConsent: StructureDefinition.snapshot.element[49].binding: The definition for the element 'Consent.provision.class' binds to the value set 'http://hl7.org/fhir/ValueSet/consent-content-class' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/HajjConsent: StructureDefinition.snapshot.element[50].binding: The definition for the element 'Consent.provision.code' binds to the value set 'http://hl7.org/fhir/ValueSet/consent-content-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-HajjOrganization.json ==
+WARNING: StructureDefinition/HajjOrganization: StructureDefinition.snapshot.element[12].binding: The definition for the element 'Organization.type' binds to the value set 'http://hl7.org/fhir/ValueSet/organization-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/HajjOrganization: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Organization.contact.purpose' binds to the value set 'http://hl7.org/fhir/ValueSet/contactentity-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-Browser.json ==
+WARNING: ValueSet/Browser: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-DistributionModel.json ==
+WARNING: ValueSet/DistributionModel: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.json ==
+== fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.json ==
+== fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT.json ==
+== fsh-generated/resources/ValueSet-IPS.HAJJ.TRANSACTION.json ==
+WARNING: ValueSet/IPS.HAJJ.TRANSACTION: ValueSet.title: value should not start or finish with whitespace 'IPS.HAJJ.TRANSACTION ValueSet of transaction '
+== fsh-generated/resources/ValueSet-Language.json ==
+WARNING: ValueSet/Language: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-LicensingModel.json ==
+WARNING: ValueSet/LicensingModel: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-OperatingSystem.json ==
+WARNING: ValueSet/OperatingSystem: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

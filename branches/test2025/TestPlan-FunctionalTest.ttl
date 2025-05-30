@@ -1,0 +1,411 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/Basic/FunctionalTest> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FunctionalTest"] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.url"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:uri ;
+       fhir:v "http://smart.who.int/ips-pilgrimage/TestPlan/FunctionalTest"^^xsd:anyURI
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.version"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "2.1.0"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.name"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "FunctionalTestPlan"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.title"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "End-to-End Functional Tests for IPS-Pilgrimage Workflow"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "active"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.date"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:dateTime ;
+       fhir:v "2025-02-17"^^xsd:date
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.publisher"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "WHO"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.contact"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:ContactDetail ;
+       fhir:name [ fhir:v "WHO" ] ;
+       fhir:telecom ( [
+         fhir:system [ fhir:v "url" ] ;
+         fhir:value [ fhir:v "http://who.int" ]
+       ] [
+         fhir:system [ fhir:v "email" ] ;
+         fhir:value [ fhir:v "smart@who.int" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.jurisdiction"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.purpose"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:markdown ;
+       fhir:v "To validate end-to-end workflows including IPS issuance, verification, and retrieval for international interoperability."
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.copyright"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:markdown ;
+       fhir:v "© 2025 World Health Organization. All rights reserved."
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.category"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "integration" ] ;
+         fhir:display [ fhir:v "Integration" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.scope"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:display [ fhir:v "Testing scenarios from WHO IPS Implementation Guide" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testTools"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:markdown ;
+       fhir:v "ITB with Gherkin+FHIR support"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.exitCriteria"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:markdown ;
+       fhir:v "All test cases should pass without errors. Critical paths must be verified."
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:integer ;
+         fhir:v 1
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:reference [ fhir:v "ConsentRegistry" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:markdown ;
+           fhir:v "Test cases for successful and failed consent recording"
+         ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:code [ fhir:v "text/x-gherkin" ]
+             ] )
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <http://smart.who.int/ips-pilgrimage/Binary/record-consent> ;
+             fhir:reference [ fhir:v "Binary/record-consent" ]
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"^^xsd:anyURI ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:integer ;
+         fhir:v 2
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:reference [ fhir:v "VHLService" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:markdown ;
+           fhir:v "Test cases for generating QR code with VHL"
+         ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:code [ fhir:v "text/x-gherkin" ]
+             ] )
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <http://smart.who.int/ips-pilgrimage/Binary/issue-vhl> ;
+             fhir:reference [ fhir:v "Binary/issue-vhl" ]
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"^^xsd:anyURI ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:integer ;
+         fhir:v 3
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:reference [ fhir:v "VerifierService" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:markdown ;
+           fhir:v "Test cases for verifying QR code signature"
+         ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:code [ fhir:v "text/x-gherkin" ]
+             ] )
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <http://smart.who.int/ips-pilgrimage/Binary/verify-qr> ;
+             fhir:reference [ fhir:v "Binary/verify-qr" ]
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"^^xsd:anyURI ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:integer ;
+         fhir:v 4
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:reference [ fhir:v "VHLManifestService" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:markdown ;
+           fhir:v "Test cases for VHL manifest retrieval"
+         ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:code [ fhir:v "text/x-gherkin" ]
+             ] )
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <http://smart.who.int/ips-pilgrimage/Binary/retrieve-vhl-manifest> ;
+             fhir:reference [ fhir:v "Binary/retrieve-vhl-manifest" ]
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"^^xsd:anyURI ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:integer ;
+         fhir:v 5
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:reference [ fhir:v "IPSServer" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:markdown ;
+           fhir:v "Test cases for IPS retrieval"
+         ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:code [ fhir:v "text/x-gherkin" ]
+             ] )
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:reference [ fhir:v "retrieve-ips.feature" ]
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"^^xsd:anyURI ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:integer ;
+         fhir:v 6
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:reference [ fhir:v "IPSServer" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:markdown ;
+           fhir:v "Test cases for IPS content validation"
+         ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:code [ fhir:v "text/x-gherkin" ]
+             ] )
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <http://smart.who.int/ips-pilgrimage/Binary/validate-ips> ;
+             fhir:reference [ fhir:v "Binary/validate-ips" ]
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"^^xsd:anyURI ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:integer ;
+         fhir:v 7
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:reference [ fhir:v "EMRViewer" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:markdown ;
+           fhir:v "Test case for rendering IPS narrative"
+         ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:code [ fhir:v "text/x-gherkin" ]
+             ] )
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <http://smart.who.int/ips-pilgrimage/Binary/display-ips> ;
+             fhir:reference [ fhir:v "Binary/display-ips" ]
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun"^^xsd:anyURI ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TestPlan" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

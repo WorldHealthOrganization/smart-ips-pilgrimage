@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="HostCountryTestPlan"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.url">
+    <valueUri value="http://smart.who.int/ips-pilgrimage/TestPlan/HostCountryTestPlan"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.version">
+    <valueString value="2.1.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.name">
+    <valueString value="HostCountryTestPlan"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.title">
+    <valueString value="Functional Unit Tests for the Host Country System Actor during the IPS-Pilgrimage Workflow"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.status">
+    <valueCode value="active"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.date">
+    <valueDateTime value="2025-05-30T10:39:35+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+      <telecom>
+        <system value="email"/>
+        <value value="smart@who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.jurisdiction"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.purpose">
+    <valueMarkdown value="Unit Tests for the Host Country EMR to verify, retrieve and display of IPS for pilgrims."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.copyright">
+    <valueMarkdown value="© 2025 World Health Organization. All rights reserved."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.category">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes"/>
+        <code value="unit"/>
+        <display value="unit"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.scope">
+    <valueReference>
+      <display value="Unit Tests for the Host Country EMR to verify, retrieve and display of IPS for pilgrims."/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testTools">
+    <valueMarkdown value="ITB with Gherkin+FHIR support"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.exitCriteria">
+    <valueMarkdown value="All test cases should pass without errors. Critical paths must be verified."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence">
+      <valueInteger value="1"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope">
+      <valueReference>
+        <reference value="https://profiles.ihe.net/ITI/VHL/Requirements/ReceiveVHL"/>
+      </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun">
+      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative">
+        <valueMarkdown value="Test cases for verifying QR code signature"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script">
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language">
+          <valueCodeableConcept>
+            <coding>
+              <code value="text/x-gherkin"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference">
+          <valueReference>
+            <reference value="Binary/verify-qr"/>
+          </valueReference>
+        </extension>
+      </extension>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence">
+      <valueInteger value="2"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope">
+      <valueReference>
+        <reference value="https://profiles.ihe.net/ITI/VHL/Requirements/RequestVHLDocuments"/>
+      </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun">
+      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative">
+        <valueMarkdown value="Test cases for VHL manifest retrieval"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script">
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language">
+          <valueCodeableConcept>
+            <coding>
+              <code value="text/x-gherkin"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference">
+          <valueReference>
+            <reference value="Binary/retrieve-vhl-manifest"/>
+          </valueReference>
+        </extension>
+      </extension>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence">
+      <valueInteger value="3"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope">
+      <valueReference>
+        <reference value="https://profiles.ihe.net/ITI/VHL/RequestVHLDocument"/>
+      </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun">
+      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative">
+        <valueMarkdown value="Test cases for IPS retrieval"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script">
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language">
+          <valueCodeableConcept>
+            <coding>
+              <code value="text/x-gherkin"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference">
+          <valueReference>
+            <reference value="Binary/retrieve-ips"/>
+          </valueReference>
+        </extension>
+      </extension>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence">
+      <valueInteger value="4"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope">
+      <valueReference>
+        <reference value="http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"/>
+      </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun">
+      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative">
+        <valueMarkdown value="Test cases for IPS content validation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script">
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language">
+          <valueCodeableConcept>
+            <coding>
+              <code value="text/x-gherkin"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference">
+          <valueReference>
+            <reference value="Binary/validate-ips"/>
+          </valueReference>
+        </extension>
+      </extension>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.sequence">
+      <valueInteger value="5"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.scope">
+      <valueReference>
+        <reference value="EMRViewer"/>
+      </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun">
+      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.narrative">
+        <valueMarkdown value="Test case for rendering IPS narrative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script">
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.language">
+          <valueCodeableConcept>
+            <coding>
+              <code value="text/x-gherkin"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-TestPlan.testCase.testRun.script.sourceReference">
+          <valueReference>
+            <reference value="Binary/display-ips"/>
+          </valueReference>
+        </extension>
+      </extension>
+    </extension>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="TestPlan"/>
+    </coding>
+  </code>
+</Basic>

@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "1da20737-d820-400c-a19e-4ea37e7fba22-8",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1da20737-d820-400c-a19e-4ea37e7fba22-8",
+  "name" : "UnionIPS_HAJJ_ACTORAndIPS_HAJJ_ACTOR",
+  "title" : "Union of IPS.HAJJ.ACTOR CodeSystem And IPS.HAJJ.ACTOR CodeSystem",
+  "status" : "active",
+  "date" : "2025-05-27T10:27:46+00:00",
+  "concept" : [{
+    "code" : "ochie",
+    "display" : "Origin Country HIE"
+  },
+  {
+    "code" : "ochw",
+    "display" : "Origin Country Health Wallet"
+  },
+  {
+    "code" : "hcemr",
+    "display" : "Host Country EMR"
+  },
+  {
+    "code" : "pilgrim",
+    "display" : "Pilgrim"
+  },
+  {
+    "code" : "scanner",
+    "display" : "Scanner"
+  },
+  {
+    "code" : "qrcode",
+    "display" : "QR Code"
+  }]
+}

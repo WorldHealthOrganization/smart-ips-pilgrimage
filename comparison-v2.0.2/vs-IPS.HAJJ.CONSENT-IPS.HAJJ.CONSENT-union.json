@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "1da20737-d820-400c-a19e-4ea37e7fba22-62",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/1da20737-d820-400c-a19e-4ea37e7fba22-62",
+  "name" : "UnionIPS_HAJJ_CONSENTAndIPS_HAJJ_CONSENT",
+  "title" : "Union of IPS.HAJJ.CONSENT ValueSet of consent policies And IPS.HAJJ.CONSENT ValueSet of consent policies",
+  "status" : "active",
+  "date" : "2025-05-27T10:27:48+00:00"
+}

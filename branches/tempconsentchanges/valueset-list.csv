@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR,1.0.1,active,,IPS_HAJJ_ACTOR,IPS.HAJJ.ACTOR ValueSet of actor,"ValueSet of codes for actor for Hajj",,"Internal"
+http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT,1.0.1,active,,IPS_HAJJ_CONSENT,IPS.HAJJ.CONSENT ValueSet of consent policies,"ValueSet of codes for consent policies for Hajj pilgrims",,"Internal"
+http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.TRANSACTION,1.0.1,active,,IPS_HAJJ_TRANSACTION,IPS.HAJJ.TRANSACTION ValueSet of transaction ,"ValueSet of codes for transaction for Hajj ",,"Internal"

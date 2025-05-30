@@ -1,0 +1,36 @@
+{
+  "resourceType" : "GraphDefinition",
+  "id" : "consent-wallet",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition consent-wallet</b></p><a name=\"consent-wallet\"> </a><a name=\"hcconsent-wallet\"> </a><a name=\"hcconsent-wallet-en-US\"> </a><p><b>name</b>: consent-wallet</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Record consent on a digital health wallet</p>\n</div><blockquote><p><b>link</b></p></blockquote></div>"
+  },
+  "name" : "consent-wallet",
+  "status" : "active",
+  "experimental" : false,
+  "description" : "Record consent on a digital health wallet",
+  "link" : [{
+    "extension" : [{
+      "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+      "valueCoding" : {
+        "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+        "code" : "consent-wallet"
+      }
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "Consent record based on individual's interaction with their digital health wallet.  "
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "The OCHIE shall support create and update per the  [IHE PCF Consent Recorder Capability Statement](https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRecorder.html). "
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : "The OCHIE SHALL act as  [IHE PCF Consent Recorder](https://profiles.ihe.net/ITI/PCF/volume-1.html#153111-consent-recorder)"
+    }]
+  }]
+}

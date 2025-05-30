@@ -1,0 +1,36 @@
+{
+  "resourceType" : "GraphDefinition",
+  "id" : "shl-doc-view",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition shl-doc-view</b></p><a name=\"shl-doc-view\"> </a><a name=\"hcshl-doc-view\"> </a><a name=\"hcshl-doc-view-en-US\"> </a><p><b>name</b>: shl-doc-view</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Use SHL to access Document Viewer</p>\n</div><blockquote><p><b>link</b></p></blockquote></div>"
+  },
+  "name" : "shl-doc-view",
+  "status" : "active",
+  "experimental" : false,
+  "description" : "Use SHL to access Document Viewer",
+  "link" : [{
+    "extension" : [{
+      "url" : "http://smart.who.int/base/StructureDefinition/Sgcode",
+      "valueCoding" : {
+        "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+        "code" : "shl-doc-view"
+      }
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : ""
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : ""
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/Markdown",
+      "valueMarkdown" : ""
+    }]
+  }]
+}

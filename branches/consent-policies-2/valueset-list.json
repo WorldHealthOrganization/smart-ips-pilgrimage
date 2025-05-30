@@ -1,0 +1,15 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/ValueSet/IPS.HAJJ.CONSENT",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IPS_HAJJ_CONSENT",
+      "title" : "IPS.HAJJ.CONSENT ValueSet of consent policies",
+      "description" : "ValueSet of codes for consent policies for Hajj pilgrims",
+      "systems" : [
+        "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ"
+      ]
+    }
+  ]
+}

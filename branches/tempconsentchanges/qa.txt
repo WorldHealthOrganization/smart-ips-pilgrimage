@@ -1,0 +1,315 @@
+SMART_WHO_INT_IPS_Pilgrimage : Validation Results
+=========================================
+
+err = 181, warn = 36, info = 30
+IG Publisher Version: 1.6.19
+Generated Tue Aug 13 15:58:42 UTC 2024. FHIR version 4.3.0 for smart.who.int.ips-pilgrimage#1.0.1 (canonical = http://smart.who.int/ips-pilgrimage)
+ Build Errors : 8 / 4 / 0
+ /github/workspace/fsh-generated/resources/ActorDefinition-HCEMR : 1 / 1 / 3
+ /github/workspace/fsh-generated/resources/ActorDefinition-OCHIE : 1 / 1 / 3
+ /github/workspace/fsh-generated/resources/ActorDefinition-OCHW : 1 / 1 / 3
+ /github/workspace/fsh-generated/resources/ActorDefinition-Pilgrim : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/ActorDefinition-QRCard : 1 / 1 / 3
+ /github/workspace/fsh-generated/resources/ActorDefinition-Scanner : 1 / 1 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-IPS.HAJJ.ACTOR : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-IPS.HAJJ.TRANSACTION : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/GraphDefinition-consent-post-counseling : 17 / 2 / 3
+ /github/workspace/fsh-generated/resources/GraphDefinition-consent-wallet : 17 / 2 / 3
+ /github/workspace/fsh-generated/resources/GraphDefinition-doc-get : 17 / 2 / 3
+ /github/workspace/fsh-generated/resources/GraphDefinition-doc-sign : 17 / 2 / 3
+ /github/workspace/fsh-generated/resources/GraphDefinition-keys-get : 20 / 2 / 3
+ /github/workspace/fsh-generated/resources/GraphDefinition-keys-put : 23 / 2 / 3
+ /github/workspace/fsh-generated/resources/GraphDefinition-shl-doc-view : 26 / 2 / 3
+ /github/workspace/fsh-generated/resources/GraphDefinition-shl-get-manifest : 20 / 2 / 3
+ /github/workspace/fsh-generated/resources/GraphDefinition-shl-sign : 17 / 2 / 3
+ /github/workspace/fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConsentPeriod : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConsentVerifiedBy : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjConsent : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjOrganization : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.TRANSACTION : 0 / 1 / 1
+</table>
+== n/a ==
+ERROR: /github/workspace/output/business-requirements.html#/html/body/div/div/div/div/div/ul/li/a at Line 281, column 8: The link 'business-process.html' for "Business Processes" cannot be resolved
+ERROR: /github/workspace/output/data-models-and-exchange.html#/html/body/div/div/div/div/div/ul/li/a at Line 282, column 8: The link 'actors.html' for "Actors" cannot be resolved
+ERROR: /github/workspace/output/data-models-and-exchange.html#/html/body/div/div/div/div/div/ul/li/a at Line 285, column 8: The link 'logical-models.html' for "Logical Models" cannot be resolved
+ERROR: /github/workspace/output/downloads.html: The html source references validator.pack which is deprecated. Change the IG to describe the use of the package system instead
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 364, column 9: The link 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation' for "CPG ImmunizationRecommendation" cannot be resolved
+ERROR: /github/workspace/output/indicators-measures.html#/html/body/div/div/div/div/div/p/a at Line 279, column 70: The link 'artifacts.html#knowledge-artifacts-measure' for "Artifact Index - Measures" cannot be resolved (valid targets: [terminology-value-sets, project-nav, publish-box, segment-post-footer, who-logo, top, example-example-instances, stripe, segment-footer, language-selector, artifact-index, segment-content, structures-extension-definitions, segment-header, bottom, structures-resource-profiles, fhir-logo, family-nav, ig-status, 1, 2, terminology-code-systems, 3, 4, 5, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/reference-implementations.html#/html/body/div/div/div/div/div/p/a at Line 283, column 97: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
+ERROR: /github/workspace/output/trust_domain.html#/html/body/div/div/div/div/div/p/a at Line 295, column 171: The link 'http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ' for "here" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ActorDefinition-HCEMR.json ==
+INFORMATION: ActorDefinition/HCEMR: ActorDefinition.extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|1.0.1
+ERROR: ActorDefinition/HCEMR: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
+WARNING: ActorDefinition/HCEMR: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ActorDefinition-OCHIE.json ==
+INFORMATION: ActorDefinition/OCHIE: ActorDefinition.extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|1.0.1
+ERROR: ActorDefinition/OCHIE: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
+WARNING: ActorDefinition/OCHIE: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ActorDefinition-OCHW.json ==
+INFORMATION: ActorDefinition/OCHW: ActorDefinition.extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|1.0.1
+ERROR: ActorDefinition/OCHW: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
+WARNING: ActorDefinition/OCHW: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ActorDefinition-Pilgrim.json ==
+INFORMATION: ActorDefinition/Pilgrim: ActorDefinition.extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|1.0.1
+WARNING: ActorDefinition/Pilgrim: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-trust/StructureDefinition/Credential.Holder' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ActorDefinition-QRCard.json ==
+INFORMATION: ActorDefinition/QRCard: ActorDefinition.extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|1.0.1
+ERROR: ActorDefinition/QRCard: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
+WARNING: ActorDefinition/QRCard: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ActorDefinition-Scanner.json ==
+INFORMATION: ActorDefinition/Scanner: ActorDefinition.extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|1.0.1
+ERROR: ActorDefinition/Scanner: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
+WARNING: ActorDefinition/Scanner: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.ACTOR.json ==
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT.json ==
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.TRANSACTION.json ==
+WARNING: CodeSystem/IPS.HAJJ.TRANSACTION: CodeSystem.concept[8].display: value should not start or finish with whitespace 'Record Consent - Digital Health Wallet '
+== fsh-generated/resources/GraphDefinition-consent-post-counseling.json ==
+ERROR: GraphDefinition.link[0]: Unrecognized property 'sourceId'
+ERROR: GraphDefinition.link[0]: Unrecognized property 'targetId'
+ERROR: GraphDefinition: Unrecognized property 'node'
+ERROR: GraphDefinition: Unrecognized property 'title'
+WARNING: GraphDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/GraphDefinition/consent-post-counseling'): The resource needed to modified during loading to apply common headers version=1.0.1, contact, copyright=null, jurisdiction, publisher=WHO, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition: GraphDefinition.title: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition: GraphDefinition.node: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0]: GraphDefinition.link.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0]: GraphDefinition.link.sourceId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/consent-post-counseling: GraphDefinition.link[0]: GraphDefinition.link.targetId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+INFORMATION: GraphDefinition/consent-post-counseling: GraphDefinition.link[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|1.0.1
+WARNING: GraphDefinition/consent-post-counseling: GraphDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/GraphDefinition)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/GraphDefinition-consent-wallet.json ==
+ERROR: GraphDefinition.link[0]: Unrecognized property 'sourceId'
+ERROR: GraphDefinition.link[0]: Unrecognized property 'targetId'
+ERROR: GraphDefinition: Unrecognized property 'node'
+ERROR: GraphDefinition: Unrecognized property 'title'
+WARNING: GraphDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/GraphDefinition/consent-wallet'): The resource needed to modified during loading to apply common headers version=1.0.1, contact, copyright=null, jurisdiction, publisher=WHO, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: GraphDefinition/consent-wallet: GraphDefinition: GraphDefinition.title: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/consent-wallet: GraphDefinition: GraphDefinition.node: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0]: GraphDefinition.link.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0]: GraphDefinition.link.sourceId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/consent-wallet: GraphDefinition.link[0]: GraphDefinition.link.targetId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+INFORMATION: GraphDefinition/consent-wallet: GraphDefinition.link[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|1.0.1
+WARNING: GraphDefinition/consent-wallet: GraphDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/GraphDefinition)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/GraphDefinition-doc-get.json ==
+ERROR: GraphDefinition.link[0]: Unrecognized property 'sourceId'
+ERROR: GraphDefinition.link[0]: Unrecognized property 'targetId'
+ERROR: GraphDefinition: Unrecognized property 'node'
+ERROR: GraphDefinition: Unrecognized property 'title'
+WARNING: GraphDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/GraphDefinition/doc-get'): The resource needed to modified during loading to apply common headers version=1.0.1, contact, copyright=null, jurisdiction, publisher=WHO, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: GraphDefinition/doc-get: GraphDefinition: GraphDefinition.title: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/doc-get: GraphDefinition: GraphDefinition.node: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0]: GraphDefinition.link.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0]: GraphDefinition.link.sourceId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/doc-get: GraphDefinition.link[0]: GraphDefinition.link.targetId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+INFORMATION: GraphDefinition/doc-get: GraphDefinition.link[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|1.0.1
+WARNING: GraphDefinition/doc-get: GraphDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/GraphDefinition)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/GraphDefinition-doc-sign.json ==
+ERROR: GraphDefinition.link[0]: Unrecognized property 'sourceId'
+ERROR: GraphDefinition.link[0]: Unrecognized property 'targetId'
+ERROR: GraphDefinition: Unrecognized property 'node'
+ERROR: GraphDefinition: Unrecognized property 'title'
+WARNING: GraphDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/GraphDefinition/doc-sign'): The resource needed to modified during loading to apply common headers version=1.0.1, contact, copyright=null, jurisdiction, publisher=WHO, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: GraphDefinition/doc-sign: GraphDefinition: GraphDefinition.title: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/doc-sign: GraphDefinition: GraphDefinition.node: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0]: GraphDefinition.link.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0]: GraphDefinition.link.sourceId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/doc-sign: GraphDefinition.link[0]: GraphDefinition.link.targetId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+INFORMATION: GraphDefinition/doc-sign: GraphDefinition.link[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|1.0.1
+WARNING: GraphDefinition/doc-sign: GraphDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/GraphDefinition)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/GraphDefinition-keys-get.json ==
+ERROR: GraphDefinition.link[0]: Unrecognized property 'sourceId'
+ERROR: GraphDefinition.link[0]: Unrecognized property 'targetId'
+ERROR: GraphDefinition: Unrecognized property 'node'
+ERROR: GraphDefinition: Unrecognized property 'title'
+WARNING: GraphDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/GraphDefinition/keys-get'): The resource needed to modified during loading to apply common headers version=1.0.1, contact, copyright=null, jurisdiction, publisher=WHO, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: GraphDefinition/keys-get: GraphDefinition: GraphDefinition.title: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/keys-get: GraphDefinition: GraphDefinition.node: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0]: GraphDefinition.link.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0]: GraphDefinition.link.sourceId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0]: GraphDefinition.link.targetId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+INFORMATION: GraphDefinition/keys-get: GraphDefinition.link[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|1.0.1
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0].extension[1].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0].extension[1].value.ofType(markdown): value cannot be empty
+ERROR: GraphDefinition/keys-get: GraphDefinition.link[0].extension[1].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children unless an empty Parameters resource' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+WARNING: GraphDefinition/keys-get: GraphDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/GraphDefinition)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/GraphDefinition-keys-put.json ==
+ERROR: GraphDefinition.link[0]: Unrecognized property 'sourceId'
+ERROR: GraphDefinition.link[0]: Unrecognized property 'targetId'
+ERROR: GraphDefinition: Unrecognized property 'node'
+ERROR: GraphDefinition: Unrecognized property 'title'
+WARNING: GraphDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/GraphDefinition/keys-put'): The resource needed to modified during loading to apply common headers version=1.0.1, contact, copyright=null, jurisdiction, publisher=WHO, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: GraphDefinition/keys-put: GraphDefinition: GraphDefinition.title: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/keys-put: GraphDefinition: GraphDefinition.node: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0]: GraphDefinition.link.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0]: GraphDefinition.link.sourceId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0]: GraphDefinition.link.targetId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+INFORMATION: GraphDefinition/keys-put: GraphDefinition.link[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|1.0.1
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[1].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[1].value.ofType(markdown): value cannot be empty
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[1].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children unless an empty Parameters resource' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[3].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[3].value.ofType(markdown): value cannot be empty
+ERROR: GraphDefinition/keys-put: GraphDefinition.link[0].extension[3].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children unless an empty Parameters resource' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+WARNING: GraphDefinition/keys-put: GraphDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/GraphDefinition)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/GraphDefinition-shl-doc-view.json ==
+ERROR: GraphDefinition.link[0]: Unrecognized property 'sourceId'
+ERROR: GraphDefinition.link[0]: Unrecognized property 'targetId'
+ERROR: GraphDefinition: Unrecognized property 'node'
+ERROR: GraphDefinition: Unrecognized property 'title'
+WARNING: GraphDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/GraphDefinition/shl-doc-view'): The resource needed to modified during loading to apply common headers version=1.0.1, contact, copyright=null, jurisdiction, publisher=WHO, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition: GraphDefinition.title: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition: GraphDefinition.node: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0]: GraphDefinition.link.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0]: GraphDefinition.link.sourceId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0]: GraphDefinition.link.targetId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+INFORMATION: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|1.0.1
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[1].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[1].value.ofType(markdown): value cannot be empty
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[1].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children unless an empty Parameters resource' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[2].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[2].value.ofType(markdown): value cannot be empty
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[2].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children unless an empty Parameters resource' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[3].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[3].value.ofType(markdown): value cannot be empty
+ERROR: GraphDefinition/shl-doc-view: GraphDefinition.link[0].extension[3].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children unless an empty Parameters resource' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+WARNING: GraphDefinition/shl-doc-view: GraphDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/GraphDefinition)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/GraphDefinition-shl-get-manifest.json ==
+ERROR: GraphDefinition.link[0]: Unrecognized property 'sourceId'
+ERROR: GraphDefinition.link[0]: Unrecognized property 'targetId'
+ERROR: GraphDefinition: Unrecognized property 'node'
+ERROR: GraphDefinition: Unrecognized property 'title'
+WARNING: GraphDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/GraphDefinition/shl-get-manifest'): The resource needed to modified during loading to apply common headers version=1.0.1, contact, copyright=null, jurisdiction, publisher=WHO, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition: GraphDefinition.title: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition: GraphDefinition.node: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0]: GraphDefinition.link.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0]: GraphDefinition.link.sourceId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0]: GraphDefinition.link.targetId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+INFORMATION: GraphDefinition/shl-get-manifest: GraphDefinition.link[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|1.0.1
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0].extension[3].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0].extension[3].value.ofType(markdown): value cannot be empty
+ERROR: GraphDefinition/shl-get-manifest: GraphDefinition.link[0].extension[3].value.ofType(markdown): Constraint failed: ele-1: 'All FHIR elements must have a @value or children unless an empty Parameters resource' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+WARNING: GraphDefinition/shl-get-manifest: GraphDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/GraphDefinition)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/GraphDefinition-shl-sign.json ==
+ERROR: GraphDefinition.link[0]: Unrecognized property 'sourceId'
+ERROR: GraphDefinition.link[0]: Unrecognized property 'targetId'
+ERROR: GraphDefinition: Unrecognized property 'node'
+ERROR: GraphDefinition: Unrecognized property 'title'
+WARNING: GraphDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/GraphDefinition/shl-sign'): The resource needed to modified during loading to apply common headers version=1.0.1, contact, copyright=null, jurisdiction, publisher=WHO, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: GraphDefinition/shl-sign: GraphDefinition: GraphDefinition.title: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-sign: GraphDefinition: GraphDefinition.node: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0].extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0].extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0].extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0]: GraphDefinition.link.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0]: Slice 'GraphDefinition.link.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1). Note that other slices are allowed in addition to this required slice
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0]: GraphDefinition.link.sourceId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+ERROR: GraphDefinition/shl-sign: GraphDefinition.link[0]: GraphDefinition.link.targetId: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGTransactionDefinition|0.1.1)
+INFORMATION: GraphDefinition/shl-sign: GraphDefinition.link[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|1.0.1
+WARNING: GraphDefinition/shl-sign: GraphDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/GraphDefinition)
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage.json ==
+ERROR: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.meta.profile[0]: Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide)
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[12].name: value should not start or finish with whitespace 'IPS.HAJJ.TRANSACTION ValueSet of transaction '
+WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.meta.profile[0]: Profile reference 'SMARTImplementationGuide' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/StructureDefinition-ConsentPeriod.json ==
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentPeriod'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ConsentVerifiedBy.json ==
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-HajjConsent.json ==
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-HajjOrganization.json ==
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.json ==
+== fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT.json ==
+== fsh-generated/resources/ValueSet-IPS.HAJJ.TRANSACTION.json ==
+WARNING: ValueSet/IPS.HAJJ.TRANSACTION: ValueSet.title: value should not start or finish with whitespace 'IPS.HAJJ.TRANSACTION ValueSet of transaction '

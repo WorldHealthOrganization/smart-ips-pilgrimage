@@ -1,0 +1,21 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "1da20737-d820-400c-a19e-4ea37e7fba22-5",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1da20737-d820-400c-a19e-4ea37e7fba22-5",
+  "name" : "UnionDistributionModelCsAndDistributionModelCs",
+  "title" : "Union of Distribution Model And Distribution Model",
+  "status" : "active",
+  "date" : "2025-05-27T10:27:46+00:00",
+  "concept" : [{
+    "code" : "Cloud-based",
+    "display" : "Cloud-based"
+  },
+  {
+    "code" : "On-premise",
+    "display" : "On-premise"
+  },
+  {
+    "code" : "Hybrid",
+    "display" : "Hybrid"
+  }]
+}

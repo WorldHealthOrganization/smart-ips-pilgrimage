@@ -1,0 +1,86 @@
+[
+  {
+    "id" : "SmartHealthLink",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLink",
+    "version" : "0.1.0",
+    "name" : "SmartHealthLink"
+  },
+  {
+    "id" : "SmartHealthLinkPayload",
+    "type" : "StructureDefinition",
+    "url" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/SmartHealthLinkPayload",
+    "version" : "0.1.0",
+    "name" : "SmartHealthLinkPayload"
+  },
+  {
+    "id" : "QRCard",
+    "type" : "ActorDefinition",
+    "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/ActorDefinition/QRCard",
+    "version" : "0.1.0",
+    "name" : "QRCard"
+  },
+  {
+    "id" : "IPS.HAJJ",
+    "type" : "CodeSystem",
+    "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/CodeSystem/IPS.HAJJ",
+    "version" : "0.1.0",
+    "name" : "IPS_HAJJ"
+  },
+  {
+    "id" : "who.ips-pilgrimage",
+    "type" : "ImplementationGuide",
+    "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/ImplementationGuide/who.ips-pilgrimage",
+    "version" : "0.1.0",
+    "name" : "SMARTIPSforPilgrimage"
+  },
+  {
+    "id" : "ConsentPeriod",
+    "type" : "StructureDefinition",
+    "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/ConsentPeriod",
+    "version" : "0.1.0",
+    "name" : "ConsentPeriod"
+  },
+  {
+    "id" : "ConsentVerifiedBy",
+    "type" : "StructureDefinition",
+    "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/ConsentVerifiedBy",
+    "version" : "0.1.0",
+    "name" : "ConsentVerifiedBy"
+  },
+  {
+    "id" : "HajjConsent",
+    "type" : "StructureDefinition",
+    "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjConsent",
+    "version" : "0.1.0",
+    "name" : "HajjConsent"
+  },
+  {
+    "id" : "HajjIPS",
+    "type" : "StructureDefinition",
+    "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS",
+    "version" : "0.1.0",
+    "name" : "HajjIPS"
+  },
+  {
+    "id" : "HajjIPS-Composition",
+    "type" : "StructureDefinition",
+    "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjIPS-Composition",
+    "version" : "0.1.0",
+    "name" : "HajjIPS-Composition"
+  },
+  {
+    "id" : "HajjOrganization",
+    "type" : "StructureDefinition",
+    "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/StructureDefinition/HajjOrganization",
+    "version" : "0.1.0",
+    "name" : "HajjOrganization"
+  },
+  {
+    "id" : "IPS.HAJJ.CONSENT",
+    "type" : "ValueSet",
+    "url" : "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/consent-policies/ValueSet/IPS.HAJJ.CONSENT",
+    "version" : "0.1.0",
+    "name" : "IPS_HAJJ_CONSENT"
+  }
+]

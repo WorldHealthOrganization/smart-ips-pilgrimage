@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/GraphDefinition/shl-get-manifest> a fhir:GraphDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "shl-get-manifest"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://smart.who.int/base/StructureDefinition/SGTransactionDefinition"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGTransactionDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition shl-get-manifest</b></p><a name=\"shl-get-manifest\"> </a><a name=\"hcshl-get-manifest\"> </a><a name=\"shl-get-manifest-en-US\"> </a><p><b>name</b>: shl-get-manifest</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>description</b>: </p><div><p>Get SHL Manifest</p>\n</div><blockquote><p><b>link</b></p></blockquote></div>"
+  ] ; # 
+  fhir:name [ fhir:v "shl-get-manifest"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:description [ fhir:v "Get SHL Manifest"] ; # 
+  fhir:link ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Sgcode"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "shl-get-manifest" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Initatied by the HCEMR once a Smart Health Link provided by a Pilgrim has been scanned." ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "See the [Smart Health Link - Manifest](https://docs.smarthealthit.org/smart-health-links/spec/#shlink-manifest-request) specifcation with the following modifications:\n- The *contentType* entry MAY also include the value \"application/pdf\" in the case that the corresponding *location* entry of the Smart Health Link is for a PDF rendering of the Verifiable Digital Health Certificate (e.g. Verifiable IPS).\n- The *contentType* entry MAY also include the value \"text/html\" in the case that the corresponding *location* entry of the Smart Health Link is for an external viewing portal for Verifiable Digital Health Certificate (e.g. Verifiable IPS).\n- The *contentType* entry MAY also include the value \"text/html\" in the case that the corresponding *location* entry of the Smart Health Link is a Verifiable Digital Health Certificate (e.g. Verifiable IPS)." ]
+     ] [
+       fhir:url [ fhir:v "http://smart.who.int/base/StructureDefinition/Markdown"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

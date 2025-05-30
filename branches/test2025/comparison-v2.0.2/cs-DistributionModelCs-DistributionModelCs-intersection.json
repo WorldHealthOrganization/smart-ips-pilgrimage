@@ -1,0 +1,21 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "2b1d6b24-e00f-4ea3-a119-b64b13fed1c6-6",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/2b1d6b24-e00f-4ea3-a119-b64b13fed1c6-6",
+  "name" : "IntersectionDistributionModelCsAndDistributionModelCs",
+  "title" : "Intersection of Distribution Model And Distribution Model",
+  "status" : "active",
+  "date" : "2025-05-27T12:19:36+00:00",
+  "concept" : [{
+    "code" : "Cloud-based",
+    "display" : "Cloud-based"
+  },
+  {
+    "code" : "On-premise",
+    "display" : "On-premise"
+  },
+  {
+    "code" : "Hybrid",
+    "display" : "Hybrid"
+  }]
+}

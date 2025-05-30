@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "OperatingSystem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OperatingSystem</b></p><a name=\"OperatingSystem\"> </a><a name=\"hcOperatingSystem\"> </a><a name=\"hcOperatingSystem-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-OperatingSystemCs.html\"><code>http://worldhealthorganization.github.io/smart-ips-pilgrimage/OperatingSystem</code></a></li></ul></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/OperatingSystem",
+  "version" : "1.0.1",
+  "name" : "OperatingSystem",
+  "title" : "Operating System",
+  "status" : "draft",
+  "date" : "2024-06-27T07:42:30+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Operating System",
+  "compose" : {
+    "include" : [{
+      "system" : "http://worldhealthorganization.github.io/smart-ips-pilgrimage/OperatingSystem"
+    }]
+  }
+}

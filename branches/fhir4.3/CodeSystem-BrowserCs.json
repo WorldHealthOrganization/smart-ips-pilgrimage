@@ -1,0 +1,53 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BrowserCs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BrowserCs</b></p><a name=\"BrowserCs\"> </a><a name=\"hcBrowserCs\"> </a><a name=\"BrowserCs-en-US\"> </a><p>This  code system <code>http://worldhealthorganization.github.io/smart-ips-pilgrimage/Browser</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Firefox<a name=\"BrowserCs-Firefox\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Chrome<a name=\"BrowserCs-Chrome\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MicrosoftEdge<a name=\"BrowserCs-MicrosoftEdge\"> </a></td></tr><tr><td style=\"white-space:nowrap\">InternetExplorer<a name=\"BrowserCs-InternetExplorer\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Safari<a name=\"BrowserCs-Safari\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"BrowserCs-Other\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://worldhealthorganization.github.io/smart-ips-pilgrimage/Browser",
+  "version" : "1.0.1",
+  "name" : "BrowserCs",
+  "title" : "Browser",
+  "status" : "draft",
+  "date" : "2024-11-21T11:25:11+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Browser",
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "Firefox",
+    "display" : "Firefox"
+  },
+  {
+    "code" : "Chrome",
+    "display" : "Chrome"
+  },
+  {
+    "code" : "MicrosoftEdge",
+    "display" : "MicrosoftEdge"
+  },
+  {
+    "code" : "InternetExplorer",
+    "display" : "InternetExplorer"
+  },
+  {
+    "code" : "Safari",
+    "display" : "Safari"
+  },
+  {
+    "code" : "Other",
+    "display" : "Other"
+  }]
+}

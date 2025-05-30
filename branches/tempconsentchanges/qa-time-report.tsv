@@ -1,0 +1,27 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage.json	13818	-	0	0	0	0	0	0	6	268	0	0	0	0	0	0	0	1	0	0	115	80	0	0	0	5	0	1
+fsh-generated/resources/ActorDefinition-HCEMR.json	682	8	1	0	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0	0	20	24	0	0	0	1	0	0
+fsh-generated/resources/ActorDefinition-OCHIE.json	802	6	0	0	0	0	0	0	0	36	0	0	0	0	0	0	0	0	0	0	18	20	0	0	0	0	0	0
+fsh-generated/resources/ActorDefinition-OCHW.json	722	5	1	0	0	0	0	0	0	29	0	0	0	0	0	0	0	0	0	0	17	17	0	0	0	1	0	0
+fsh-generated/resources/ActorDefinition-Pilgrim.json	681	4	0	0	0	0	0	0	1	7	0	0	0	0	0	0	0	0	0	0	16	17	0	0	0	0	0	0
+fsh-generated/resources/ActorDefinition-QRCard.json	712	6	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	17	26	0	0	0	1	0	0
+fsh-generated/resources/ActorDefinition-Scanner.json	683	5	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	17	29	0	0	0	0	0	1
+fsh-generated/resources/CodeSystem-IPS.HAJJ.ACTOR.json	852	5	1	0	0	0	0	0	0	11	0	0	1	0	0	0	0	0	0	0	24	11513	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT.json	1738	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	28	232	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-IPS.HAJJ.TRANSACTION.json	1242	4	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	26	253	0	0	0	1	0	0
+fsh-generated/resources/GraphDefinition-consent-post-counseling.json	2534	7	1	0	0	0	0	0	1	4	0	0	0	0	0	0	0	0	0	0	18	15	0	0	0	0	0	0
+fsh-generated/resources/GraphDefinition-consent-wallet.json	2318	5	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	18	14	0	0	0	0	0	0
+fsh-generated/resources/GraphDefinition-doc-get.json	2049	4	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	17	13	0	0	0	0	0	0
+fsh-generated/resources/GraphDefinition-doc-sign.json	2322	4	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	18	13	0	0	0	1	0	0
+fsh-generated/resources/GraphDefinition-keys-get.json	2262	5	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	17	13	0	0	0	0	0	0
+fsh-generated/resources/GraphDefinition-keys-put.json	2037	5	1	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	16	13	0	0	0	0	0	0
+fsh-generated/resources/GraphDefinition-shl-doc-view.json	1903	4	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	13	13	0	0	0	0	0	0
+fsh-generated/resources/GraphDefinition-shl-get-manifest.json	2847	5	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	14	14	0	0	0	0	0	0
+fsh-generated/resources/GraphDefinition-shl-sign.json	2148	5	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	13	9	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ConsentPeriod.json	1240	5	1	0	0	0	0	14	1	33	0	0	0	0	0	0	0	0	0	0	55	784	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ConsentVerifiedBy.json	1528	5	0	0	0	0	0	29	0	12	0	0	0	0	0	0	0	0	0	0	56	264	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-HajjConsent.json	3559	5	0	0	0	0	0	125	0	69	0	0	0	0	0	0	0	1	0	0	284	1013	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-HajjOrganization.json	656	5	0	0	0	0	0	48	0	20	0	0	0	0	0	0	0	1	0	0	119	317	0	0	0	4	0	0
+fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.json	450	5	1	0	0	0	0	0	0	168	0	0	0	0	0	0	0	0	0	0	14	9354	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT.json	491	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	13	271	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-IPS.HAJJ.TRANSACTION.json	494	4	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	12	292	0	0	0	0	0	0

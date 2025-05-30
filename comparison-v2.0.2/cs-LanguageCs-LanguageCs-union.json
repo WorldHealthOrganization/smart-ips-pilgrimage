@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "1da20737-d820-400c-a19e-4ea37e7fba22-17",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1da20737-d820-400c-a19e-4ea37e7fba22-17",
+  "name" : "UnionLanguageCsAndLanguageCs",
+  "title" : "Union of Language And Language",
+  "status" : "active",
+  "date" : "2025-05-27T10:27:46+00:00",
+  "concept" : [{
+    "code" : "Arabic",
+    "display" : "Arabic"
+  },
+  {
+    "code" : "Chinese",
+    "display" : "Chinese"
+  },
+  {
+    "code" : "English",
+    "display" : "English"
+  },
+  {
+    "code" : "French",
+    "display" : "French"
+  },
+  {
+    "code" : "Russian",
+    "display" : "Russian"
+  },
+  {
+    "code" : "Spanish",
+    "display" : "Spanish"
+  },
+  {
+    "code" : "Other",
+    "display" : "Other"
+  }]
+}
