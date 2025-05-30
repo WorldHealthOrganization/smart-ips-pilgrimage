@@ -285,4 +285,5 @@ dependencies:
   hl7.fhir.uv.cpg: 2.0.0
   ihe.iti.pcf: 1.1.0
   ihe.iti.mhd: 4.2.2
+  ihe.iti.vhl: current
 #  who.base: current
