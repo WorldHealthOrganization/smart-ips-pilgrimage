@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "53484378e4fd06a7ae4a720ebbcda9ee99f26417",
+          "ref": "30e5c16942555e537dcf9611e7229e3a89196f75",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -43,7 +43,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-14",
-              "ref": "53484378e4fd06a7ae4a720ebbcda9ee99f26417",
+              "ref": "30e5c16942555e537dcf9611e7229e3a89196f75",
               "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge all and republish' (top bar and home cards in the page's language: cat-harness-tools#2008, cat-harness#1293, fhir-harness#403, smart-ips-pilgrimage#83); freshness rule moves every harness to its current main."
             },
             "standing": {
@@ -62,7 +62,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "5a6a9c0da27b7619b8720468ecd0e3bb9978224d",
+          "ref": "8d000b963490e9ba3b85c43d13fa03cd34f8b3f1",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -87,7 +87,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-14",
-              "ref": "5a6a9c0da27b7619b8720468ecd0e3bb9978224d",
+              "ref": "8d000b963490e9ba3b85c43d13fa03cd34f8b3f1",
               "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge + re-pin (Recommended)' and 'merge when green and republish' (the RTL navbar and translated navbar labels: cat-harness-tools#1982, #1984; cat-harness#1284, #1285); freshness rule (2026-11-12) moves every harness to its current main. Also brings fhir-harness past #382, so this site publishes its translated pages."
             },
             "standing": {
@@ -106,7 +106,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "9c04b6fa237c2ab5f6217ffcb42c760f3783b2f3",
+          "ref": "e916aad0895a4bfd56c5743a55e7d4b25dd22eff",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -116,7 +116,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-14",
-              "ref": "9c04b6fa237c2ab5f6217ffcb42c760f3783b2f3",
+              "ref": "e916aad0895a4bfd56c5743a55e7d4b25dd22eff",
               "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge all and republish' (top bar and home cards in the page's language: cat-harness-tools#2008, cat-harness#1293, fhir-harness#403, smart-ips-pilgrimage#83); freshness rule moves every harness to its current main."
             },
             "standing": {
@@ -135,7 +135,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "4e78fc4c51bc448d53f873da3115df5f53b5f526",
+          "ref": "4901847f4645f6f23fb40feaf149dd30eda5a8ae",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -151,7 +151,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-14",
-              "ref": "4e78fc4c51bc448d53f873da3115df5f53b5f526",
+              "ref": "4901847f4645f6f23fb40feaf149dd30eda5a8ae",
               "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge all and republish' (top bar and home cards in the page's language: cat-harness-tools#2008, cat-harness#1293, fhir-harness#403, smart-ips-pilgrimage#83); freshness rule moves every harness to its current main."
             },
             "standing": {
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "775426b8e6d72a2baf036065564554794df71ee0",
+          "ref": "28cdaa14f420c92b75ebca9aa7725d298a255179",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -186,7 +186,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-14",
-              "ref": "775426b8e6d72a2baf036065564554794df71ee0",
+              "ref": "28cdaa14f420c92b75ebca9aa7725d298a255179",
               "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge all and republish' (top bar and home cards in the page's language: cat-harness-tools#2008, cat-harness#1293, fhir-harness#403, smart-ips-pilgrimage#83); freshness rule moves every harness to its current main."
             },
             "standing": {
@@ -205,7 +205,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "47c631d2850b87987af8d072607356318a633b62",
+          "ref": "06efeba456a15c9045cf2f991e9aac5610fd3b81",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -218,7 +218,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-14",
-              "ref": "47c631d2850b87987af8d072607356318a633b62",
+              "ref": "06efeba456a15c9045cf2f991e9aac5610fd3b81",
               "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge all and republish' (top bar and home cards in the page's language: cat-harness-tools#2008, cat-harness#1293, fhir-harness#403, smart-ips-pilgrimage#83); freshness rule moves every harness to its current main."
             },
             "standing": {
@@ -237,7 +237,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
+          "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -247,7 +247,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-14",
-              "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
+              "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
               "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge + re-pin (Recommended)' and 'merge when green and republish' (the RTL navbar and translated navbar labels: cat-harness-tools#1982, #1984; cat-harness#1284, #1285); freshness rule (2026-11-12) moves every harness to its current main. Also brings fhir-harness past #382, so this site publishes its translated pages."
             },
             "standing": {
@@ -266,7 +266,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "b653e0577a1649969319196ec738353fe2068793",
+          "ref": "db808314c98a9b931d08e923d80a8f8dbcdb7d89",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -279,7 +279,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-14",
-              "ref": "b653e0577a1649969319196ec738353fe2068793",
+              "ref": "db808314c98a9b931d08e923d80a8f8dbcdb7d89",
               "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge + re-pin (Recommended)' and 'merge when green and republish' (the RTL navbar and translated navbar labels: cat-harness-tools#1982, #1984; cat-harness#1284, #1285); freshness rule (2026-11-12) moves every harness to its current main. Also brings fhir-harness past #382, so this site publishes its translated pages."
             },
             "standing": {
