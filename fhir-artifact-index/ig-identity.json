@@ -1,9 +1,0 @@
-{
-  "$schema": "folio-ig-identity/v1",
-  "id": "smart.who.int.ips-pilgrimage",
-  "canonical": "http://smart.who.int/ips-pilgrimage",
-  "status": "draft",
-  "version": "2.1.0",
-  "readFrom": "https://github.com/litlfred/smart-ips-pilgrimage sushi-config.yaml",
-  "readAt": "2026-11-01"
-}

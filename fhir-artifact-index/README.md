@@ -7,12 +7,10 @@ generated: "scripts/subgraph-readmes.ts of the bootstrap toolset (https://github
 
 # smart-ips-pilgrimage-artifact-index
 
-The artefact index for smart-ips-pilgrimage. `index.json`, `menu.json`, `releases.json` and `package.tgz` are NOT COMMITTED: fhir-harness's `ig-index:build` writes them at publish from the IG's AST (`builtAtPublish`, fhir-harness#124). `ig-identity.json` and the README stay committed. Bean nr5p.
+The artefact index for smart-ips-pilgrimage. `index.json`, `menu.json`, `releases.json` and `package.tgz` are NOT COMMITTED: fhir-harness's `ig-index:build` writes them at publish from the IG's AST (`builtAtPublish`, fhir-harness#124). Only the README stays committed. Bean nr5p.
 
 Part of [SMART Verifiable IPS for Pilgrimage](../README.md) 2.1.0, declared as `smart-ips-pilgrimage-artifact-index`, holding `fhir-artifact-index`.
 
-| file | what it is | used by |
-|---|---|---|
-| [`ig-identity.json`](ig-identity.json) | data |  |
+_This directory holds no files yet._
 
 <!-- kg:subgraph:end -->
