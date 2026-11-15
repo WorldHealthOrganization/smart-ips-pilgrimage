@@ -171,7 +171,6 @@
       "covers": [
         "archimate"
       ],
-      "title": "ArchiMate views",
       "writer": [
         "cat-harness-tools/archimate/scripts/gen-archimate-pages.ts"
       ]
