@@ -9,7 +9,7 @@
     {
       "harness": "who-iris",
       "repository": "litlfred/who-iris",
-      "ref": "94a15b9d29b817c9d59fd4d0cc2baff7f0286112"
+      "ref": "80e69124a0046cf8a61d6441dab18c241be4f65f"
     },
     {
       "harness": "fhir-harness",
@@ -24,7 +24,7 @@
     {
       "harness": "cat-harness",
       "repository": "litlfred/cat-harness",
-      "ref": "ad19c7767a7d489b37abb018607cf55e616d8fd8"
+      "ref": "78f1f0291e8b2a1aae4fde2cfee80b97848b9538"
     },
     {
       "harness": "cat-harness-tools",
@@ -119,7 +119,7 @@
     {
       "instance": "cat-harness",
       "repository": "litlfred/cat-harness",
-      "sha": "ad19c7767a7d489b37abb018607cf55e616d8fd8",
+      "sha": "78f1f0291e8b2a1aae4fde2cfee80b97848b9538",
       "upstreamRoot": "",
       "path": "cat-harness",
       "via": "cat-harness",
@@ -133,8 +133,8 @@
           "id": "*",
           "path": "cat-harness",
           "upstreamPath": ".",
-          "treeDigest": "1c05cc8ded54f64148e031e25c4fe50114f47e2756c83b54d2371092f57b98f5",
-          "files": 2635,
+          "treeDigest": "8ce9c963c6329aede7de72255d8543f1a394b37150803b7f771c17c3774a0e56",
+          "files": 2950,
           "except": [
             "docs/proposals",
             "docs/wireframes",
@@ -142,10 +142,7 @@
             "integrations",
             "kg-ops",
             "library/corpus",
-            "platform-ui",
-            "research",
-            "sdlc",
-            "work-plan"
+            "research"
           ]
         }
       ],
@@ -153,7 +150,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-15",
-        "ref": "ad19c7767a7d489b37abb018607cf55e616d8fd8",
+        "ref": "78f1f0291e8b2a1aae4fde2cfee80b97848b9538",
         "approver": "declared",
         "standing": {
           "follows": "main",
@@ -213,11 +210,8 @@
           "id": "*",
           "path": "fhir-harness",
           "upstreamPath": ".",
-          "treeDigest": "77773b838e3723b1379d91498b14f5f6a0f72adf7df0cf03cb44e314fd44ab1b",
-          "files": 966,
-          "except": [
-            "collab"
-          ]
+          "treeDigest": "7bb1fae9fe1c4e4e5574139013974090675b4383152351a98cd300d0435926a1",
+          "files": 976
         }
       ],
       "trust": {
@@ -250,11 +244,10 @@
           "id": "*",
           "path": "folio-assistant-core",
           "upstreamPath": ".",
-          "treeDigest": "10b5fe0eb597f6c148c19e65a14033ee4c6950b532f567d370cba3df106d6b98",
-          "files": 1547,
+          "treeDigest": "c4b59dba67330bb4bdfcf6f21c842e4f8de5ac713da2df92ccb04e3b2e51c20a",
+          "files": 1603,
           "except": [
             "board",
-            "collab",
             "dsa",
             "library-extras",
             "library/corpus"
@@ -291,16 +284,11 @@
           "id": "*",
           "path": "smart-base",
           "upstreamPath": "smart-base",
-          "treeDigest": "16712fef22d0ff55680b6652d108073309418e2d58d8a5aa2d3a56575ba7d0b5",
-          "files": 455,
+          "treeDigest": "48db5e5e486ff529d7f383669be60bfdd896e03443ff13cc9e04913ca8bfdf0d",
+          "files": 705,
           "except": [
-            "L1",
-            "L2",
             "L2-bpmn",
-            "L2-dmn",
-            "L3",
-            "L4",
-            "collab"
+            "L2-dmn"
           ]
         }
       ],
@@ -354,7 +342,7 @@
     {
       "instance": "who-iris",
       "repository": "litlfred/who-iris",
-      "sha": "94a15b9d29b817c9d59fd4d0cc2baff7f0286112",
+      "sha": "80e69124a0046cf8a61d6441dab18c241be4f65f",
       "upstreamRoot": "",
       "path": "who-iris",
       "via": "who-iris",
@@ -368,15 +356,15 @@
           "id": "*",
           "path": "who-iris",
           "upstreamPath": ".",
-          "treeDigest": "32eaa454ed107a487dc1d948fb832785de6db4d965a3d81d840f6b74b37ff9d2",
-          "files": 43669
+          "treeDigest": "67f9d940816901dfb78d4bcbac10a6b6b5892757d3c52d89f2d41d448d2fc04a",
+          "files": 43761
         }
       ],
       "trust": {
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-15",
-        "ref": "94a15b9d29b817c9d59fd4d0cc2baff7f0286112",
+        "ref": "80e69124a0046cf8a61d6441dab18c241be4f65f",
         "approver": "declared",
         "standing": {
           "follows": "main",
