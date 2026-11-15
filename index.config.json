@@ -229,7 +229,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "3f6222dd638b4a3ffebc1ffe7d6037f28c2925cd",
+          "ref": "e64799819de369df21ea05769bd1a55c705b7f3d",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -242,7 +242,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-15",
-              "ref": "3f6222dd638b4a3ffebc1ffe7d6037f28c2925cd",
+              "ref": "e64799819de369df21ea05769bd1a55c705b7f3d",
               "evidence": "standing consent by litlfred 2026-11-12 (Q-BIBNAV-2 B: follow main); hand re-pin of every layer to main after cat-harness-tools#2278 (standing re-pin could not mount smart-base), Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
             },
             "standing": {
