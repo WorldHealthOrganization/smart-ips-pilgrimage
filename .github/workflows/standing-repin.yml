@@ -24,7 +24,7 @@ permissions:
 
 jobs:
   repin:
-    uses: litlfred/cat-harness-tools/.github/workflows/standing-repin.yml@d5b0550b29fdecdd5907eb15cba3cc4e48c782f9 # index.lock.json
+    uses: litlfred/cat-harness-tools/.github/workflows/standing-repin.yml@e64799819de369df21ea05769bd1a55c705b7f3d # index.lock.json
     with:
       dry-run: ${{ inputs.dry_run == true }}
     secrets:
