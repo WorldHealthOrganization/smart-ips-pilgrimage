@@ -259,5 +259,12 @@
       "directory": "smart-ips-pilgrimage-docs",
       "reason": "the artefact pages gen-ig-pages renders from this instance's artefact index with the IG-page templates and the smart-base themes and chrome, all read at the checkout's pins"
     }
+  ],
+  "enableSubgraphs": [
+    "folio-assistant-core.collab",
+    "smart-base.collab",
+    "fhir-harness.collab",
+    "smart-base.L2-collab",
+    "smart-base.L3-collab"
   ]
 }
