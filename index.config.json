@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "5b702b9cfd89c3edfc4e4306bf31e2415a89294e",
+          "ref": "30e5c16942555e537dcf9611e7229e3a89196f75",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,9 +42,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "5b702b9cfd89c3edfc4e4306bf31e2415a89294e",
-              "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge all and republish' (top bar and home cards in the page's language: cat-harness-tools#2008, cat-harness#1293, fhir-harness#403, smart-ips-pilgrimage#83); freshness rule moves every harness to its current main."
+              "on": "2026-11-15",
+              "ref": "30e5c16942555e537dcf9611e7229e3a89196f75",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -62,7 +67,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "cf722fb3f8623aa92872129a1788aa992a887e3f",
+          "ref": "80e69124a0046cf8a61d6441dab18c241be4f65f",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -86,9 +91,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "cf722fb3f8623aa92872129a1788aa992a887e3f",
-              "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge + re-pin (Recommended)' and 'merge when green and republish' (the RTL navbar and translated navbar labels: cat-harness-tools#1982, #1984; cat-harness#1284, #1285); freshness rule (2026-11-12) moves every harness to its current main. Also brings fhir-harness past #382, so this site publishes its translated pages."
+              "on": "2026-11-15",
+              "ref": "80e69124a0046cf8a61d6441dab18c241be4f65f",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -106,7 +116,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "b721f0ffcfeecdfe86850b4f0f307936581cff9a",
+          "ref": "ab3ef64d309d7103e239baddbde5a050ef58976e",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -115,9 +125,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "b721f0ffcfeecdfe86850b4f0f307936581cff9a",
-              "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge all and republish' (top bar and home cards in the page's language: cat-harness-tools#2008, cat-harness#1293, fhir-harness#403, smart-ips-pilgrimage#83); freshness rule moves every harness to its current main."
+              "on": "2026-11-15",
+              "ref": "ab3ef64d309d7103e239baddbde5a050ef58976e",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -135,7 +150,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "88d2589b98ae644111f955894e6daec8304a4f69",
+          "ref": "b90a5b9f59dc487109ec50c4e97a620e3e669e9d",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -150,9 +165,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "88d2589b98ae644111f955894e6daec8304a4f69",
-              "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge all and republish' (top bar and home cards in the page's language: cat-harness-tools#2008, cat-harness#1293, fhir-harness#403, smart-ips-pilgrimage#83); freshness rule moves every harness to its current main."
+              "on": "2026-11-15",
+              "ref": "b90a5b9f59dc487109ec50c4e97a620e3e669e9d",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -170,7 +190,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "ec52cd5d3e7f34386f421c4bc6bc2637db344224",
+          "ref": "78f1f0291e8b2a1aae4fde2cfee80b97848b9538",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -185,9 +205,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "ec52cd5d3e7f34386f421c4bc6bc2637db344224",
-              "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge all and republish' (top bar and home cards in the page's language: cat-harness-tools#2008, cat-harness#1293, fhir-harness#403, smart-ips-pilgrimage#83); freshness rule moves every harness to its current main."
+              "on": "2026-11-15",
+              "ref": "78f1f0291e8b2a1aae4fde2cfee80b97848b9538",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -205,7 +230,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "d5b0550b29fdecdd5907eb15cba3cc4e48c782f9",
+          "ref": "c440c081af352febe48fde5f11971367c3a46752",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -217,9 +242,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "d5b0550b29fdecdd5907eb15cba3cc4e48c782f9",
-              "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge all and republish' (top bar and home cards in the page's language: cat-harness-tools#2008, cat-harness#1293, fhir-harness#403, smart-ips-pilgrimage#83); freshness rule moves every harness to its current main."
+              "on": "2026-11-15",
+              "ref": "c440c081af352febe48fde5f11971367c3a46752",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -237,7 +267,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
+          "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -246,9 +276,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
-              "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge + re-pin (Recommended)' and 'merge when green and republish' (the RTL navbar and translated navbar labels: cat-harness-tools#1982, #1984; cat-harness#1284, #1285); freshness rule (2026-11-12) moves every harness to its current main. Also brings fhir-harness past #382, so this site publishes its translated pages."
+              "on": "2026-11-15",
+              "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -266,7 +301,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "0f88368db7560afac6d3e16fd905cbb974350f82",
+          "ref": "db808314c98a9b931d08e923d80a8f8dbcdb7d89",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -278,9 +313,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "0f88368db7560afac6d3e16fd905cbb974350f82",
-              "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'Merge + re-pin (Recommended)' and 'merge when green and republish' (the RTL navbar and translated navbar labels: cat-harness-tools#1982, #1984; cat-harness#1284, #1285); freshness rule (2026-11-12) moves every harness to its current main. Also brings fhir-harness past #382, so this site publishes its translated pages."
+              "on": "2026-11-15",
+              "ref": "db808314c98a9b931d08e923d80a8f8dbcdb7d89",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -298,7 +338,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-trust-tools",
-          "ref": "d94e21d23d798ab309d57d7c4bb2ee570a80e8fc",
+          "ref": "5143e093f774235a40fcef0592c7d0828e0b895c",
           "overrides": {
             "smart-trust-tools": {
               "whole": true
@@ -307,9 +347,14 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-13",
-              "ref": "d94e21d23d798ab309d57d7c4bb2ee570a80e8fc",
-              "evidence": "owner in Claude Code session https://claude.ai/code/session_01EucfRpPqZBRX3HohW44aeQ, 2026-11-13: 'merge when green and republish'. Freshness: moved to main while the cat-harness-tools#2000 re-pin was open."
+              "on": "2026-11-15",
+              "ref": "5143e093f774235a40fcef0592c7d0828e0b895c",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
