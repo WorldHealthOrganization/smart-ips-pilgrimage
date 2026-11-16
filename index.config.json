@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "ebf19f235bd14081e8a7c73c09afb4fec5813728",
+          "ref": "690717a7c6f1b2c8fff2ce757a8ee3bf9e89ad4d",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,8 +42,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "ebf19f235bd14081e8a7c73c09afb4fec5813728",
-              "evidence": "litlfred 2026-11-16T06:36:48Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9GbDZs1PWPLeRr9h1WjnESP): \"Yes, +12 hours\" — extend the repin and merge window past 07:01Z to 2026-11-16T19:01Z, to merge smart-base#430 and re-pin every leaf and folio-assistant onto it"
+              "ref": "690717a7c6f1b2c8fff2ce757a8ee3bf9e89ad4d",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 19:01Z (owner card 06:36Z); re-pin cascade wave 3"
             },
             "standing": {
               "follows": "main",
@@ -105,7 +105,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "ea28d50a92b9614ab845c36eee72de06616c1a3d",
+          "ref": "2c8e08fc5e6c6569e608167707bbe2deab8c7828",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -115,8 +115,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "ea28d50a92b9614ab845c36eee72de06616c1a3d",
-              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+              "ref": "2c8e08fc5e6c6569e608167707bbe2deab8c7828",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 19:01Z (owner card 06:36Z); re-pin cascade wave 3"
             },
             "standing": {
               "follows": "main",
@@ -134,7 +134,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "c17d92bba438d8b501a9fd51d6252802602d70c5",
+          "ref": "38125f11642b201b444a2c605848805ffd703955",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -150,8 +150,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "c17d92bba438d8b501a9fd51d6252802602d70c5",
-              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+              "ref": "38125f11642b201b444a2c605848805ffd703955",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 19:01Z (owner card 06:36Z); re-pin cascade wave 3"
             },
             "standing": {
               "follows": "main",
@@ -204,7 +204,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "5a986de61107c9080b6f69bf2aa5d2aa211c042f",
+          "ref": "f027203d3b1bb0b6cd152a7a317a453f6517ac5c",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -217,8 +217,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "5a986de61107c9080b6f69bf2aa5d2aa211c042f",
-              "evidence": "litlfred 2026-11-16T06:36:48Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9GbDZs1PWPLeRr9h1WjnESP): \"Yes, +12 hours\" — extend the repin and merge window past 07:01Z to 2026-11-16T19:01Z, to merge smart-base#430 and re-pin every leaf and folio-assistant onto it"
+              "ref": "f027203d3b1bb0b6cd152a7a317a453f6517ac5c",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 19:01Z (owner card 06:36Z); re-pin cascade wave 3"
             },
             "standing": {
               "follows": "main",
@@ -307,7 +307,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-trust-tools",
-          "ref": "579438f23e438e6d98b8f1c4515f3f67f77ef1af",
+          "ref": "47b7e467ee613f39187e18ef2aa3228963c38783",
           "overrides": {
             "smart-trust-tools": {
               "whole": true
@@ -317,8 +317,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "579438f23e438e6d98b8f1c4515f3f67f77ef1af",
-              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+              "ref": "47b7e467ee613f39187e18ef2aa3228963c38783",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 19:01Z (owner card 06:36Z); re-pin cascade wave 3"
             },
             "standing": {
               "follows": "main",
