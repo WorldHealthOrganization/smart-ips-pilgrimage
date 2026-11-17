@@ -1,0 +1,262 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "373270004",
+    "display" : "Substance with penicillin structure and antibacterial mechanism of action (substance)"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Penicillin antibacterial",
+  "code" : "373270004",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "severity" : "warning",
+  "error" : "The concept '373270004' has a status of inactive and its use should be reviewed",
+  "server" : "https://tx.fhir.org/r4",
+  "inactive" : true,
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Validate \"[http://snomed.info/sct#373270004 (\"Substance with penicillin structure and antibacterial mechanism of action (substance)\")]\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://snomed.info/sct#373270004\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Code \"373270004\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "INACTIVE_CONCEPT_FOUND"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "business-rule",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "code-comment"
+      }],
+      "text" : "The concept '373270004' has a status of inactive and its use should be reviewed"
+    },
+    "expression" : ["CodeableConcept.coding[0]"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "373270004",
+    "display" : "Substance with penicillin structure and antibacterial mechanism of action (substance)"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0'; The concept '373270004' has a status of inactive and its use should be reviewed",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0: Prepare include[0]: \"(^http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: Prepare include[0]: \"(http://snomed.info/sct)(conceptdescendent-of105590001)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: Prepare include[1]: \"(http://snomed.info/sct)(conceptdescendent-of373873005)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: Prepare include[2]: \"(http://snomed.info/sct)(conceptdescendent-of418038007)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0: Prepare include[1]: \"(^http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips|1.1.0: Prepare include[0]: \"(http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips)(no-allergy-info,no-known-allergies,no-known-medication-allergies,no-known-environmental-allergies,no-known-food-allergies)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips|1.1.0: CodeSystem found: \"http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips|1.1.0\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#373270004 (\"Substance with penicillin structure and antibacterial mechanism of action (substance)\")]\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0: Check \"http://snomed.info/sct#373270004\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips\n1ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: Check \"http://snomed.info/sct#373270004\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008\n2ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: check code in (http://snomed.info/sct)(conceptdescendent-of105590001) at CodeableConcept.coding[0]\n2ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: Filter concept descendent-of 105590001: Code \"373270004\" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n3ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008\n3ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: check code in (http://snomed.info/sct)(conceptdescendent-of373873005) at CodeableConcept.coding[0]\n3ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: Filter concept descendent-of 373873005: Code \"373270004\" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n3ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008\n3ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: check code in (http://snomed.info/sct)(conceptdescendent-of418038007) at CodeableConcept.coding[0]\n3ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips|1.1.0: Filter concept descendent-of 418038007: Code \"373270004\" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n3ms http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips\n3ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips|1.1.0: Check \"http://snomed.info/sct#373270004\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips|1.1.0: Include for http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips not considered for \"http://snomed.info/sct\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#373270004 ('Substance with penicillin structure and antibacterial mechanism of action (substance)')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips|1.1.0'"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "INACTIVE_CONCEPT_FOUND"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "business-rule",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "code-comment"
+      }],
+      "text" : "The concept '373270004' has a status of inactive and its use should be reviewed"
+    },
+    "expression" : ["CodeableConcept.coding[0]"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "278149003",
+    "display" : "Blood group A Rh(D) positive"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Blood group A Rh(D) positive",
+  "code" : "278149003",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Validate \"[http://snomed.info/sct#278149003 (\"Blood group A Rh(D) positive\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://snomed.info/sct#278149003\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Code \"278149003\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "10828004",
+    "display" : "Positive"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Positive",
+  "code" : "10828004",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Validate \"[http://snomed.info/sct#10828004 (\"Positive\")]\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://snomed.info/sct#10828004\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Code \"10828004\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "260385009",
+    "display" : "Negative"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Negative",
+  "code" : "260385009",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Validate \"[http://snomed.info/sct#260385009 (\"Negative\")]\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://snomed.info/sct#260385009\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Code \"260385009\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "115329001",
+    "display" : "Methicillin resistant Staphylococcus aureus"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Methicillin resistant Staphylococcus aureus",
+  "code" : "115329001",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Validate \"[http://snomed.info/sct#115329001 (\"Methicillin resistant Staphylococcus aureus\")]\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://snomed.info/sct#115329001\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Code \"115329001\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------

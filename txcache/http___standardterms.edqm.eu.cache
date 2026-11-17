@@ -1,0 +1,107 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20053000",
+  "display" : "Oral use"
+}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Oral use",
+  "code" : "20053000",
+  "system" : "http://standardterms.edqm.eu",
+  "version" : "5 February 2025",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://standardterms.edqm.eu/vs|5 February 2025: Validate \"[http://standardterms.edqm.eu#20053000 (\"Oral use\")]\"\n0ms http://standardterms.edqm.eu/vs|5 February 2025: Check \"http://standardterms.edqm.eu#20053000\"\n0ms http://standardterms.edqm.eu/vs|5 February 2025: CodeSystem found: http://standardterms.edqm.eu|5 February 2025 for http://standardterms.edqm.eu|5 February 2025\n0ms http://standardterms.edqm.eu/vs|5 February 2025: check code in (http://standardterms.edqm.eu) at Coding\n1ms http://standardterms.edqm.eu/vs|5 February 2025: Code \"20053000\" found in http://standardterms.edqm.eu|5 February 2025",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20053000",
+  "display" : "Oral use"
+}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Oral use",
+  "code" : "20053000",
+  "system" : "http://standardterms.edqm.eu",
+  "version" : "5 February 2025",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://standardterms.edqm.eu/vs|5 February 2025: Validate \"[http://standardterms.edqm.eu#20053000 (\"Oral use\")]\"\n0ms http://standardterms.edqm.eu/vs|5 February 2025: Check \"http://standardterms.edqm.eu#20053000\"\n1ms http://standardterms.edqm.eu/vs|5 February 2025: CodeSystem found: http://standardterms.edqm.eu|5 February 2025 for http://standardterms.edqm.eu|5 February 2025\n1ms http://standardterms.edqm.eu/vs|5 February 2025: check code in (http://standardterms.edqm.eu) at Coding\n1ms http://standardterms.edqm.eu/vs|5 February 2025: Code \"20053000\" found in http://standardterms.edqm.eu|5 February 2025",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20053000"
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Oral use",
+  "code" : "20053000",
+  "system" : "http://standardterms.edqm.eu",
+  "version" : "5 February 2025",
+  "severity" : "error",
+  "error" : "The provided code 'http://standardterms.edqm.eu#20053000' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0 for validation purposes\n0ms http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0: Prepare include[0]: \"(http://standardterms.edqm.eu)(status=Current,class=ROA,domain=Human and Veterinary)\"\n0ms http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0: CodeSystem found: \"http://standardterms.edqm.eu|5 February 2025\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0: Validate \"[http://standardterms.edqm.eu#20053000 (\"undefined\")]\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0: Check \"http://standardterms.edqm.eu#20053000\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0: CodeSystem found: http://standardterms.edqm.eu|5 February 2025 for http://standardterms.edqm.eu\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0: check code in (http://standardterms.edqm.eu)(status=Current,class=ROA,domain=Human and Veterinary) at Coding\n7ms http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0: Filter status = Current),class = ROA),domain = Human and Veterinary): Code \"20053000\" not found in http://standardterms.edqm.eu|5 February 2025",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://standardterms.edqm.eu#20053000' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration--0|1.1.0'"
+    },
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------

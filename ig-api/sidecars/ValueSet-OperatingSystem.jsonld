@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/ips-pilgrimage/ValueSet-OperatingSystem.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/ips-pilgrimage/CodeSystem-OperatingSystemCs"
+  },
+  "@id": "http://smart.who.int/ips-pilgrimage/ValueSet-OperatingSystem.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-17T06:36:40.069898092Z",
+  "@graph": [
+    {
+      "id": "#Linux",
+      "name": "Linux"
+    },
+    {
+      "id": "#Unix",
+      "name": "Unix"
+    },
+    {
+      "id": "#Windows",
+      "name": "Windows"
+    },
+    {
+      "id": "#Mac",
+      "name": "Mac"
+    },
+    {
+      "id": "#Other",
+      "name": "Other"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

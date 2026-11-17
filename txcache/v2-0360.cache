@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/v2-0360",
+  "version" : "2.7",
+  "code" : "MD",
+  "display" : "Doctor of Medicine"
+}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Doctor of Medicine",
+  "code" : "MD",
+  "system" : "http://terminology.hl7.org/CodeSystem/v2-0360",
+  "version" : "2.7",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://terminology.hl7.org/CodeSystem/v2-0360/vs|2.7: Validate \"[http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD (\"Doctor of Medicine\")]\"\n1ms http://terminology.hl7.org/CodeSystem/v2-0360/vs|2.7: Check \"http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD\"\n1ms http://terminology.hl7.org/CodeSystem/v2-0360/vs|2.7: CodeSystem found: http://terminology.hl7.org/CodeSystem/v2-0360|2.7 for http://terminology.hl7.org/CodeSystem/v2-0360|2.7\n1ms http://terminology.hl7.org/CodeSystem/v2-0360/vs|2.7: check code in (http://terminology.hl7.org/CodeSystem/v2-0360) at Coding\n1ms http://terminology.hl7.org/CodeSystem/v2-0360/vs|2.7: Code \"MD\" found in http://terminology.hl7.org/CodeSystem/v2-0360|2.7",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "MSG_DRAFT_SRC_STATUS"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "business-rule",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "status-check"
+      }],
+      "text" : "Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v2-0360|2.7 from active ValueSet http://terminology.hl7.org/CodeSystem/v2-0360/vs|2.7"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------

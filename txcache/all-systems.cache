@@ -1,0 +1,2034 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "ar"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"ar", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "العربية",
+  "code" : "ar",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Analysing http://hl7.org/fhir/ValueSet/languages|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Parameters: disp-lang=ar, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes))\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: \"urn:ietf:bcp:47|null\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Validate \"[undefined#ar (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Check \"undefined#ar\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"ar\" found in urn:ietf:bcp:47|null\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n2ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n2ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"ar\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "es"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"es", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Español",
+  "code" : "es",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Analysing http://hl7.org/fhir/ValueSet/languages|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Parameters: disp-lang=es, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes))\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: \"urn:ietf:bcp:47|null\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Validate \"[undefined#es (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Check \"undefined#es\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"es\" found in urn:ietf:bcp:47|null\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"es\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "fr"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"fr", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Français",
+  "code" : "fr",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Analysing http://hl7.org/fhir/ValueSet/languages|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes))\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: \"urn:ietf:bcp:47|null\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Validate \"[undefined#fr (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Check \"undefined#fr\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"fr\" found in urn:ietf:bcp:47|null\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"fr\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "ru"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"ru", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Русский",
+  "code" : "ru",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Analysing http://hl7.org/fhir/ValueSet/languages|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Parameters: disp-lang=ru, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes))\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: \"urn:ietf:bcp:47|null\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Validate \"[undefined#ru (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Check \"undefined#ru\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"ru\" found in urn:ietf:bcp:47|null\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"ru\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "zh"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"zh", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "中文",
+  "code" : "zh",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Analysing http://hl7.org/fhir/ValueSet/languages|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Parameters: disp-lang=zh, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes))\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: \"urn:ietf:bcp:47|null\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Validate \"[undefined#zh (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Check \"undefined#zh\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"zh\" found in urn:ietf:bcp:47|null\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"zh\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/fhir+xml"
+}, "url": "urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d", "version": "1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "application/fhir+xml",
+  "code" : "application/fhir+xml",
+  "system" : "urn:ietf:bcp:13",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Analysing urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1 for validation purposes\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Prepare include[0]: \"(urn:ietf:bcp:13)\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: CodeSystem found: \"urn:ietf:bcp:13|null\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Validate \"[undefined#application/fhir+xml (\"undefined\")]\" and infer system\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Check \"undefined#application/fhir+xml\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: check code in (urn:ietf:bcp:13) at \n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Code \"application/fhir+xml\" found in urn:ietf:bcp:13|null\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Inferred CodeSystem = \"urn:ietf:bcp:13\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: CodeSystem found: urn:ietf:bcp:13|null for urn:ietf:bcp:13\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: check code in (urn:ietf:bcp:13) at \n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Code \"application/fhir+xml\" found in urn:ietf:bcp:13|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/fhir+xml"
+}, "url": "http://hl7.org/fhir/ValueSet/mimetypes", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "application/fhir+xml",
+  "code" : "application/fhir+xml",
+  "system" : "urn:ietf:bcp:13",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Analysing http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 for validation purposes\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:13)\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: CodeSystem found: \"urn:ietf:bcp:13|null\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Validate \"[undefined#application/fhir+xml (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Check \"undefined#application/fhir+xml\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: check code in (urn:ietf:bcp:13) at \n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Code \"application/fhir+xml\" found in urn:ietf:bcp:13|null\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:13\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: CodeSystem found: urn:ietf:bcp:13|null for urn:ietf:bcp:13\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: check code in (urn:ietf:bcp:13) at \n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Code \"application/fhir+xml\" found in urn:ietf:bcp:13|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/fhir+json"
+}, "url": "urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d", "version": "1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "application/fhir+json",
+  "code" : "application/fhir+json",
+  "system" : "urn:ietf:bcp:13",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Analysing urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1 for validation purposes\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Prepare include[0]: \"(urn:ietf:bcp:13)\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: CodeSystem found: \"urn:ietf:bcp:13|null\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Validate \"[undefined#application/fhir+json (\"undefined\")]\" and infer system\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Check \"undefined#application/fhir+json\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: check code in (urn:ietf:bcp:13) at \n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Code \"application/fhir+json\" found in urn:ietf:bcp:13|null\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Inferred CodeSystem = \"urn:ietf:bcp:13\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: CodeSystem found: urn:ietf:bcp:13|null for urn:ietf:bcp:13\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: check code in (urn:ietf:bcp:13) at \n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Code \"application/fhir+json\" found in urn:ietf:bcp:13|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/fhir+json"
+}, "url": "http://hl7.org/fhir/ValueSet/mimetypes", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "application/fhir+json",
+  "code" : "application/fhir+json",
+  "system" : "urn:ietf:bcp:13",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Analysing http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 for validation purposes\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:13)\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: CodeSystem found: \"urn:ietf:bcp:13|null\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Validate \"[undefined#application/fhir+json (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Check \"undefined#application/fhir+json\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: check code in (urn:ietf:bcp:13) at \n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Code \"application/fhir+json\" found in urn:ietf:bcp:13|null\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:13\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: CodeSystem found: urn:ietf:bcp:13|null for urn:ietf:bcp:13\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: check code in (urn:ietf:bcp:13) at \n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Code \"application/fhir+json\" found in urn:ietf:bcp:13|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "en"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "English",
+  "code" : "en",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Analysing http://hl7.org/fhir/ValueSet/languages|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Parameters: disp-lang=en, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes))\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: \"urn:ietf:bcp:47|null\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Validate \"[undefined#en (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Check \"undefined#en\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"en\" found in urn:ietf:bcp:47|null\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"en\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "NL"
+}, "url": "http://hl7.org/fhir/ValueSet/iso3166-1-2", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Netherlands",
+  "code" : "NL",
+  "system" : "urn:iso:std:iso:3166",
+  "version" : "2018",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: Analysing http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: Prepare include[0]: \"(urn:iso:std:iso:3166)(AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,... +229 more (249 codes))\"\n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: CodeSystem found: \"urn:iso:std:iso:3166|2018\"\n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: Validate \"[undefined#NL (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: Check \"undefined#NL\"\n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: check code in (urn:iso:std:iso:3166)(AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,... +229 more (249 codes)) at \n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: Code \"NL\" found in urn:iso:std:iso:3166|2018\n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: Inferred CodeSystem = \"urn:iso:std:iso:3166\"\n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: CodeSystem found: urn:iso:std:iso:3166|2018 for urn:iso:std:iso:3166\n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: check code in (urn:iso:std:iso:3166)(AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,... +229 more (249 codes)) at \n1ms http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1: Code \"NL\" found in urn:iso:std:iso:3166|2018",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "75326-9",
+    "display" : "Problem"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/condition-category)(problem-list-item)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/condition-category|2.0.0\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0: Validate \"[http://loinc.org#75326-9 (\"Problem\")]\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0: Check \"http://loinc.org#75326-9\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0: Include for http://terminology.hl7.org/CodeSystem/condition-category not considered for \"http://loinc.org\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://loinc.org#75326-9 ('Problem')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips|1.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6751-7",
+    "display" : "Moderate"
+  }]
+}, "url": "http://hl7.org/fhir/ValueSet/condition-severity", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Analysing http://hl7.org/fhir/ValueSet/condition-severity|4.0.1 for validation purposes\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Prepare include[0]: \"(http://snomed.info/sct)(24484000,6736007,255604002)\"\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Validate \"[http://loinc.org#LA6751-7 (\"Moderate\")]\"\n2ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Check \"http://loinc.org#LA6751-7\"\n2ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Include for http://snomed.info/sct not considered for \"http://loinc.org\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://loinc.org#LA6751-7 ('Moderate')' was not found in the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "198436008",
+    "display" : "Menopausal flushing (finding)"
+  },
+  {
+    "system" : "http://hl7.org/fhir/sid/icd-10",
+    "code" : "N95.1",
+    "display" : "Menopausal and female climacteric states"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Menopausal flushing",
+  "code" : "198436008",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "severity" : "error",
+  "error" : "'Menopausal flushing (finding)' is no longer considered a correct display for code '198436008' (status = inactive). The correct display is one of Menopausal flushing,Menopausal hot flushes,Menopausal hot flashes,Menopausal flushing (disorder)",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Prepare include[0]: \"(^http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Prepare include[0]: \"(http://snomed.info/sct)(conceptdescendent-of404684003)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Prepare include[1]: \"(http://snomed.info/sct)(conceptdescendent-of243796009)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Prepare include[2]: \"(http://snomed.info/sct)(conceptdescendent-of272379006)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Prepare include[1]: \"(^http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0: Prepare include[0]: \"(http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips)(no-problem-info,no-known-problems)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0: CodeSystem found: \"http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips|1.1.0\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#198436008 (\"Menopausal flushing (finding)\"), http://hl7.org/fhir/sid/icd-10#N95.1 (\"Menopausal and female climacteric states\")]\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Check \"http://snomed.info/sct#198436008\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Check \"http://snomed.info/sct#198436008\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: check code in (http://snomed.info/sct)(conceptdescendent-of404684003) at CodeableConcept.coding[0]\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Filter concept descendent-of 404684003: Code \"198436008\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Check \"http://hl7.org/fhir/sid/icd-10#N95.1\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Check \"http://hl7.org/fhir/sid/icd-10#N95.1\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008 not considered for \"http://hl7.org/fhir/sid/icd-10\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008 not considered for \"http://hl7.org/fhir/sid/icd-10\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008 not considered for \"http://hl7.org/fhir/sid/icd-10\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips\n4ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0: Check \"http://hl7.org/fhir/sid/icd-10#N95.1\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0: Include for http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips not considered for \"http://hl7.org/fhir/sid/icd-10\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "INACTIVE_DISPLAY_FOUND"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "display-comment"
+      }],
+      "text" : "'Menopausal flushing (finding)' is no longer considered a correct display for code '198436008' (status = inactive). The correct display is one of Menopausal flushing,Menopausal hot flushes,Menopausal hot flashes,Menopausal flushing (disorder)"
+    },
+    "expression" : ["CodeableConcept.coding[0].display"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://hl7.org/fhir/sid/icd-10#N95.1 ('Menopausal and female climacteric states')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[1].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "nl-NL"
+}, "url": "urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf", "version": "1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Dutch (Netherlands)",
+  "code" : "nl-NL",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: Analysing urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1 for validation purposes\n0ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: Prepare include[0]: \"(urn:ietf:bcp:47)\"\n0ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: CodeSystem found: \"urn:ietf:bcp:47|null\"\n0ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: Validate \"[undefined#nl-NL (\"undefined\")]\" and infer system\n0ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: Check \"undefined#nl-NL\"\n1ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: check code in (urn:ietf:bcp:47) at \n1ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: Code \"nl-NL\" found in urn:ietf:bcp:47|null\n1ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n1ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n1ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: check code in (urn:ietf:bcp:47) at \n1ms urn:uuid:9cd3a74e-36bd-3f17-90c9-df7c9eeb62cf|1: Code \"nl-NL\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "nl-NL"
+}, "url": "http://hl7.org/fhir/ValueSet/all-languages", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Dutch (Netherlands)",
+  "code" : "nl-NL",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: Analysing http://hl7.org/fhir/ValueSet/all-languages|4.0.1 for validation purposes\n0ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:47)\"\n0ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: CodeSystem found: \"urn:ietf:bcp:47|null\"\n1ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: Validate \"[undefined#nl-NL (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: Check \"undefined#nl-NL\"\n1ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: check code in (urn:ietf:bcp:47) at \n1ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: Code \"nl-NL\" found in urn:ietf:bcp:47|null\n1ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n1ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n1ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: check code in (urn:ietf:bcp:47) at \n1ms http://hl7.org/fhir/ValueSet/all-languages|4.0.1: Code \"nl-NL\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "nl-NL"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Dutch (Netherlands)",
+  "code" : "nl-NL",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Analysing http://hl7.org/fhir/ValueSet/languages|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes))\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: \"urn:ietf:bcp:47|null\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Validate \"[undefined#nl-NL (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Check \"undefined#nl-NL\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"nl-NL\" found in urn:ietf:bcp:47|null\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"nl-NL\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "75326-9",
+    "display" : "Problem"
+  }]
+}, "url": "http://hl7.org/fhir/ValueSet/condition-category", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/StructureDefinition/Condition|4.0.1]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/condition-category|4.0.1'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/condition-category|4.0.1: Analysing http://hl7.org/fhir/ValueSet/condition-category|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/condition-category|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/condition-category|4.0.1: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/condition-category)\"\n1ms http://hl7.org/fhir/ValueSet/condition-category|4.0.1: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/condition-category|2.0.0\"\n1ms http://hl7.org/fhir/ValueSet/condition-category|4.0.1: Validate \"[http://loinc.org#75326-9 (\"Problem\")]\"\n2ms http://hl7.org/fhir/ValueSet/condition-category|4.0.1: Check \"http://loinc.org#75326-9\"\n3ms http://hl7.org/fhir/ValueSet/condition-category|4.0.1: Include for http://terminology.hl7.org/CodeSystem/condition-category not considered for \"http://loinc.org\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://loinc.org#75326-9 ('Problem')' was not found in the value set 'http://hl7.org/fhir/ValueSet/condition-category|4.0.1'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/condition-category|4.0.1'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6751-7",
+    "display" : "Moderate"
+  }]
+}, "url": "http://hl7.org/fhir/ValueSet/condition-severity", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/StructureDefinition/Condition|4.0.1]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Analysing http://hl7.org/fhir/ValueSet/condition-severity|4.0.1 for validation purposes\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Prepare include[0]: \"(http://snomed.info/sct)(24484000,6736007,255604002)\"\n1ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Validate \"[http://loinc.org#LA6751-7 (\"Moderate\")]\"\n2ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Check \"http://loinc.org#LA6751-7\"\n2ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Include for http://snomed.info/sct not considered for \"http://loinc.org\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://loinc.org#LA6751-7 ('Moderate')' was not found in the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "198436008",
+    "display" : "Menopausal flushing (finding)"
+  },
+  {
+    "system" : "http://hl7.org/fhir/sid/icd-10",
+    "code" : "N95.1",
+    "display" : "Menopausal and female climacteric states"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Menopausal flushing",
+  "code" : "198436008",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "severity" : "error",
+  "error" : "'Menopausal flushing (finding)' is no longer considered a correct display for code '198436008' (status = inactive). The correct display is one of Menopausal flushing,Menopausal hot flushes,Menopausal hot flashes,Menopausal flushing (disorder)",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Validate \"[http://snomed.info/sct#198436008 (\"Menopausal flushing (finding)\"), http://hl7.org/fhir/sid/icd-10#N95.1 (\"Menopausal and female climacteric states\")]\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://snomed.info/sct#198436008\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Code \"198436008\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://hl7.org/fhir/sid/icd-10#N95.1\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 not considered for \"http://hl7.org/fhir/sid/icd-10\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "INACTIVE_DISPLAY_FOUND"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "display-comment"
+      }],
+      "text" : "'Menopausal flushing (finding)' is no longer considered a correct display for code '198436008' (status = inactive). The correct display is one of Menopausal flushing,Menopausal hot flushes,Menopausal hot flashes,Menopausal flushing (disorder)"
+    },
+    "expression" : ["CodeableConcept.coding[0].display"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "108774000",
+    "display" : "Product containing anastrozole (medicinal product)"
+  },
+  {
+    "system" : "http://www.whocc.no/atc",
+    "code" : "L02BG03",
+    "display" : "anastrozole"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Anastrozole-containing product",
+  "code" : "108774000",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Prepare include[0]: \"(^http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Prepare include[0]: \"(http://snomed.info/sct)(conceptdescendent-of373873005)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Prepare exclude[0]: \"(http://snomed.info/sct)(conceptdescendent-of787859002)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Prepare include[1]: \"(^http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: Prepare include[0]: \"(http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips)(no-medication-info,no-known-medications)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: CodeSystem found: \"http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips|1.1.0\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#108774000 (\"Product containing anastrozole (medicinal product)\"), http://www.whocc.no/atc#L02BG03 (\"anastrozole\")]\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check \"http://snomed.info/sct#108774000\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Check \"http://snomed.info/sct#108774000\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: check code in (http://snomed.info/sct)(conceptdescendent-of373873005) at CodeableConcept.coding[0]\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Filter concept descendent-of 373873005: Code \"108774000\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: check code not in (http://snomed.info/sct)(conceptdescendent-of787859002) at CodeableConcept.coding[0]\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Filter concept descendent-of 787859002: Code \"108774000\" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check \"http://www.whocc.no/atc#L02BG03\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Check \"http://www.whocc.no/atc#L02BG03\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008 not considered for \"http://www.whocc.no/atc\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips\n2ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: Check \"http://www.whocc.no/atc#L02BG03\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: Include for http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips not considered for \"http://www.whocc.no/atc\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://www.whocc.no/atc#L02BG03 ('anastrozole')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[1].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "d"
+}, "url": "http://hl7.org/fhir/ValueSet/units-of-time", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "d",
+  "code" : "d",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.2",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: Analysing http://hl7.org/fhir/ValueSet/units-of-time|4.0.1 for validation purposes\n0ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: Prepare include[0]: \"(http://unitsofmeasure.org)(s,min,h,d,wk,mo,a)\"\n0ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: CodeSystem found: \"http://unitsofmeasure.org|2.2\"\n1ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: Validate \"[undefined#d (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: Check \"undefined#d\"\n1ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: check code in (http://unitsofmeasure.org)(s,min,h,d,wk,mo,a) at \n1ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: Code \"d\" found in http://unitsofmeasure.org|2.2\n1ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: Inferred CodeSystem = \"http://unitsofmeasure.org\"\n1ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org\n1ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: check code in (http://unitsofmeasure.org)(s,min,h,d,wk,mo,a) at \n1ms http://hl7.org/fhir/ValueSet/units-of-time|4.0.1: Code \"d\" found in http://unitsofmeasure.org|2.2",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "412588001",
+    "display" : "Cimicifuga racemosa extract (substance)"
+  },
+  {
+    "system" : "http://www.whocc.no/atc",
+    "code" : "G02CX04",
+    "display" : "Cimicifugae rhizoma"
+  }],
+  "text" : "Black Cohosh Extract herbal supplement"
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Prepare include[0]: \"(^http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Prepare include[0]: \"(http://snomed.info/sct)(conceptdescendent-of373873005)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Prepare exclude[0]: \"(http://snomed.info/sct)(conceptdescendent-of787859002)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Prepare include[1]: \"(^http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: Prepare include[0]: \"(http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips)(no-medication-info,no-known-medications)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: CodeSystem found: \"http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips|1.1.0\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#412588001 (\"Cimicifuga racemosa extract (substance)\"), http://www.whocc.no/atc#G02CX04 (\"Cimicifugae rhizoma\")]\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check \"http://snomed.info/sct#412588001\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Check \"http://snomed.info/sct#412588001\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008\n1ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: check code in (http://snomed.info/sct)(conceptdescendent-of373873005) at CodeableConcept.coding[0]\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Filter concept descendent-of 373873005: Code \"412588001\" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips\n2ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: Check \"http://snomed.info/sct#412588001\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: Include for http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips not considered for \"http://snomed.info/sct\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check \"http://www.whocc.no/atc#G02CX04\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Check \"http://www.whocc.no/atc#G02CX04\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips|1.1.0: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008 not considered for \"http://www.whocc.no/atc\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips\n2ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: Check \"http://www.whocc.no/atc#G02CX04\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips|1.1.0: Include for http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips not considered for \"http://www.whocc.no/atc\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#412588001 ('Cimicifuga racemosa extract (substance)')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://www.whocc.no/atc#G02CX04 ('Cimicifugae rhizoma')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[1].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips|1.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "108774000",
+    "display" : "Product containing anastrozole (medicinal product)"
+  },
+  {
+    "system" : "http://www.whocc.no/atc",
+    "code" : "L02BG03",
+    "display" : "anastrozole"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Anastrozole-containing product",
+  "code" : "108774000",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Validate \"[http://snomed.info/sct#108774000 (\"Product containing anastrozole (medicinal product)\"), http://www.whocc.no/atc#L02BG03 (\"anastrozole\")]\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://snomed.info/sct#108774000\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Code \"108774000\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://www.whocc.no/atc#L02BG03\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 not considered for \"http://www.whocc.no/atc\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "412588001",
+    "display" : "Cimicifuga racemosa extract (substance)"
+  },
+  {
+    "system" : "http://www.whocc.no/atc",
+    "code" : "G02CX04",
+    "display" : "Cimicifugae rhizoma"
+  }],
+  "text" : "Black Cohosh Extract herbal supplement"
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Black cohosh extract",
+  "code" : "412588001",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "severity" : "error",
+  "error" : "'Cimicifuga racemosa extract (substance)' is no longer considered a correct display for code '412588001' (status = inactive). The correct display is one of Black cohosh extract,Cimicifuga racemosa extract,Actaea racemosa extract (substance),Black snakeroot extract,Actaea racemosa extract,Black baneberry extract",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Validate \"[http://snomed.info/sct#412588001 (\"Cimicifuga racemosa extract (substance)\"), http://www.whocc.no/atc#G02CX04 (\"Cimicifugae rhizoma\")]\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://snomed.info/sct#412588001\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Code \"412588001\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n2ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://www.whocc.no/atc#G02CX04\"\n2ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 not considered for \"http://www.whocc.no/atc\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "INACTIVE_DISPLAY_FOUND"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "display-comment"
+      }],
+      "text" : "'Cimicifuga racemosa extract (substance)' is no longer considered a correct display for code '412588001' (status = inactive). The correct display is one of Black cohosh extract,Cimicifuga racemosa extract,Actaea racemosa extract (substance),Black snakeroot extract,Actaea racemosa extract,Black baneberry extract"
+    },
+    "expression" : ["CodeableConcept.coding[0].display"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6750-9",
+    "display" : "Severe"
+  }]
+}, "url": "http://hl7.org/fhir/ValueSet/condition-severity", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Analysing http://hl7.org/fhir/ValueSet/condition-severity|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Prepare include[0]: \"(http://snomed.info/sct)(24484000,6736007,255604002)\"\n1ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Validate \"[http://loinc.org#LA6750-9 (\"Severe\")]\"\n3ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Check \"http://loinc.org#LA6750-9\"\n3ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Include for http://snomed.info/sct not considered for \"http://loinc.org\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://loinc.org#LA6750-9 ('Severe')' was not found in the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "254837009",
+    "display" : "Malignant tumor of breast"
+  },
+  {
+    "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+    "code" : "8500/3",
+    "display" : "Infiltrating duct carcinoma, NOS"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Malignant neoplasm of breast",
+  "code" : "254837009",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Prepare include[0]: \"(^http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Prepare include[0]: \"(http://snomed.info/sct)(conceptdescendent-of404684003)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Prepare include[1]: \"(http://snomed.info/sct)(conceptdescendent-of243796009)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Prepare include[2]: \"(http://snomed.info/sct)(conceptdescendent-of272379006)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Prepare include[1]: \"(^http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0: Prepare include[0]: \"(http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips)(no-problem-info,no-known-problems)\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0: CodeSystem found: \"http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips|1.1.0\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#254837009 (\"Malignant tumor of breast\"), http://terminology.hl7.org/CodeSystem/icd-o-3#8500/3 (\"Infiltrating duct carcinoma, NOS\")]\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Check \"http://snomed.info/sct#254837009\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Check \"http://snomed.info/sct#254837009\"\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008\n1ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: check code in (http://snomed.info/sct)(conceptdescendent-of404684003) at CodeableConcept.coding[0]\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Filter concept descendent-of 404684003: Code \"254837009\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Check \"http://terminology.hl7.org/CodeSystem/icd-o-3#8500/3\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Check \"http://terminology.hl7.org/CodeSystem/icd-o-3#8500/3\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008 not considered for \"http://terminology.hl7.org/CodeSystem/icd-o-3\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008 not considered for \"http://terminology.hl7.org/CodeSystem/icd-o-3\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips|1.1.0: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008 not considered for \"http://terminology.hl7.org/CodeSystem/icd-o-3\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0: Check included value set http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips\n4ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0: Check \"http://terminology.hl7.org/CodeSystem/icd-o-3#8500/3\"\n4ms http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips|1.1.0: Include for http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips not considered for \"http://terminology.hl7.org/CodeSystem/icd-o-3\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#8500/3 ('Infiltrating duct carcinoma, NOS')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[1].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6750-9",
+    "display" : "Severe"
+  }]
+}, "url": "http://hl7.org/fhir/ValueSet/condition-severity", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/StructureDefinition/Condition|4.0.1]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Analysing http://hl7.org/fhir/ValueSet/condition-severity|4.0.1 for validation purposes\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Prepare include[0]: \"(http://snomed.info/sct)(24484000,6736007,255604002)\"\n1ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: CodeSystem found: \"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\"\n1ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Validate \"[http://loinc.org#LA6750-9 (\"Severe\")]\"\n3ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Check \"http://loinc.org#LA6750-9\"\n3ms http://hl7.org/fhir/ValueSet/condition-severity|4.0.1: Include for http://snomed.info/sct not considered for \"http://loinc.org\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://loinc.org#LA6750-9 ('Severe')' was not found in the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/ValueSet/condition-severity|4.0.1'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "254837009",
+    "display" : "Malignant tumor of breast"
+  },
+  {
+    "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+    "code" : "8500/3",
+    "display" : "Infiltrating duct carcinoma, NOS"
+  }]
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Malignant neoplasm of breast",
+  "code" : "254837009",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Validate \"[http://snomed.info/sct#254837009 (\"Malignant tumor of breast\"), http://terminology.hl7.org/CodeSystem/icd-o-3#8500/3 (\"Infiltrating duct carcinoma, NOS\")]\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://snomed.info/sct#254837009\"\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Code \"254837009\" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Check \"http://terminology.hl7.org/CodeSystem/icd-o-3#8500/3\"\n1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20260701: Include for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701 not considered for \"http://terminology.hl7.org/CodeSystem/icd-o-3\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "59284-0",
+    "display" : "Patient Consent"
+  }]
+}, "url": "http://hl7.org/fhir/ValueSet/consent-category", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/StructureDefinition/Consent|4.0.1]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Consent Document",
+  "code" : "59284-0",
+  "system" : "http://loinc.org",
+  "version" : "2.83",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n10ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Analysing http://hl7.org/fhir/ValueSet/consent-category|4.0.1 for validation purposes\n10ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n10ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/consentcategorycodes)\"\n10ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/consentcategorycodes|1.0.1\"\n10ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Prepare include[1]: \"(^http://terminology.hl7.org/ValueSet/v3-ActConsentType)\"\n10ms http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0: Analysing http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0 for validation purposes\n10ms http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/v3-ActCode)(conceptis-a_ActConsentType)\"\n10ms http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/v3-ActCode|11.0.0\"\n10ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Prepare include[2]: \"(http://loinc.org)(59284-0,57016-8,57017-6,64292-6)\"\n13ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: CodeSystem found: \"http://loinc.org|2.83\"\n13ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Validate \"[http://loinc.org#59284-0 (\"Patient Consent\")]\"\n13ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Check \"http://loinc.org#59284-0\"\n13ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Include for http://terminology.hl7.org/CodeSystem/consentcategorycodes not considered for \"http://loinc.org\"\n13ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Check included value set http://terminology.hl7.org/ValueSet/v3-ActConsentType\n13ms http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0: Check \"http://loinc.org#59284-0\"\n13ms http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0: Include for http://terminology.hl7.org/CodeSystem/v3-ActCode not considered for \"http://loinc.org\"\n13ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: CodeSystem found: http://loinc.org|2.83 for http://loinc.org\n13ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: check code in (http://loinc.org)(59284-0,57016-8,57017-6,64292-6) at CodeableConcept.coding[0]\n13ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Code \"59284-0\" found in http://loinc.org|2.83",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "text/plain"
+}, "url": "urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d", "version": "1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "text/plain",
+  "code" : "text/plain",
+  "system" : "urn:ietf:bcp:13",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Analysing urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1 for validation purposes\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Prepare include[0]: \"(urn:ietf:bcp:13)\"\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: CodeSystem found: \"urn:ietf:bcp:13|null\"\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Validate \"[undefined#text/plain (\"undefined\")]\" and infer system\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Check \"undefined#text/plain\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: check code in (urn:ietf:bcp:13) at \n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Code \"text/plain\" found in urn:ietf:bcp:13|null\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Inferred CodeSystem = \"urn:ietf:bcp:13\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: CodeSystem found: urn:ietf:bcp:13|null for urn:ietf:bcp:13\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: check code in (urn:ietf:bcp:13) at \n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Code \"text/plain\" found in urn:ietf:bcp:13|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "text/plain"
+}, "url": "http://hl7.org/fhir/ValueSet/mimetypes", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "text/plain",
+  "code" : "text/plain",
+  "system" : "urn:ietf:bcp:13",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Analysing http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 for validation purposes\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:13)\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: CodeSystem found: \"urn:ietf:bcp:13|null\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Validate \"[undefined#text/plain (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Check \"undefined#text/plain\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: check code in (urn:ietf:bcp:13) at \n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Code \"text/plain\" found in urn:ietf:bcp:13|null\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:13\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: CodeSystem found: urn:ietf:bcp:13|null for urn:ietf:bcp:13\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: check code in (urn:ietf:bcp:13) at \n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Code \"text/plain\" found in urn:ietf:bcp:13|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "59284-0",
+    "display" : "Patient Consent"
+  }]
+}, "url": "http://hl7.org/fhir/ValueSet/consent-category", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent|2.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "Consent Document",
+  "code" : "59284-0",
+  "system" : "http://loinc.org",
+  "version" : "2.83",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n12ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Analysing http://hl7.org/fhir/ValueSet/consent-category|4.0.1 for validation purposes\n12ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n12ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/consentcategorycodes)\"\n12ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/consentcategorycodes|1.0.1\"\n12ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Prepare include[1]: \"(^http://terminology.hl7.org/ValueSet/v3-ActConsentType)\"\n13ms http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0: Analysing http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0 for validation purposes\n13ms http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/v3-ActCode)(conceptis-a_ActConsentType)\"\n13ms http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/v3-ActCode|11.0.0\"\n13ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Prepare include[2]: \"(http://loinc.org)(59284-0,57016-8,57017-6,64292-6)\"\n16ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: CodeSystem found: \"http://loinc.org|2.83\"\n16ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Validate \"[http://loinc.org#59284-0 (\"Patient Consent\")]\"\n16ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Check \"http://loinc.org#59284-0\"\n16ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Include for http://terminology.hl7.org/CodeSystem/consentcategorycodes not considered for \"http://loinc.org\"\n16ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Check included value set http://terminology.hl7.org/ValueSet/v3-ActConsentType\n16ms http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0: Check \"http://loinc.org#59284-0\"\n16ms http://terminology.hl7.org/ValueSet/v3-ActConsentType|3.0.0: Include for http://terminology.hl7.org/CodeSystem/v3-ActCode not considered for \"http://loinc.org\"\n16ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: CodeSystem found: http://loinc.org|2.83 for http://loinc.org\n16ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: check code in (http://loinc.org)(59284-0,57016-8,57017-6,64292-6) at CodeableConcept.coding[0]\n16ms http://hl7.org/fhir/ValueSet/consent-category|4.0.1: Code \"59284-0\" found in http://loinc.org|2.83",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "278149003",
+    "display" : "Blood group A Rh(D) positive"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0 for validation purposes\n0ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Prepare include[0]: \"(http://loinc.org)(LA15173-0,LA26683-5,LA4489-6)\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: CodeSystem found: \"http://loinc.org|2.83\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#278149003 (\"Blood group A Rh(D) positive\")]\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Check \"http://snomed.info/sct#278149003\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Include for http://loinc.org not considered for \"http://snomed.info/sct\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#278149003 ('Blood group A Rh(D) positive')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "10828004",
+    "display" : "Positive"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0 for validation purposes\n1ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Prepare include[0]: \"(http://loinc.org)(LA15173-0,LA26683-5,LA4489-6)\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: CodeSystem found: \"http://loinc.org|2.83\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#10828004 (\"Positive\")]\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Check \"http://snomed.info/sct#10828004\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Include for http://loinc.org not considered for \"http://snomed.info/sct\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#10828004 ('Positive')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "260385009",
+    "display" : "Negative"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0 for validation purposes\n0ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Prepare include[0]: \"(http://loinc.org)(LA15173-0,LA26683-5,LA4489-6)\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: CodeSystem found: \"http://loinc.org|2.83\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#260385009 (\"Negative\")]\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Check \"http://snomed.info/sct#260385009\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Include for http://loinc.org not considered for \"http://snomed.info/sct\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#260385009 ('Negative')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "115329001",
+    "display" : "Methicillin resistant Staphylococcus aureus"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0 for validation purposes\n0ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Prepare include[0]: \"(http://loinc.org)(LA15173-0,LA26683-5,LA4489-6)\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: CodeSystem found: \"http://loinc.org|2.83\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#115329001 (\"Methicillin resistant Staphylococcus aureus\")]\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Check \"http://snomed.info/sct#115329001\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0: Include for http://loinc.org not considered for \"http://snomed.info/sct\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#115329001 ('Methicillin resistant Staphylococcus aureus')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|1.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "278149003",
+    "display" : "Blood group A Rh(D) positive"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0 for validation purposes\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Prepare include[0]: \"(http://loinc.org)(LA18976-3,LA18977-1,LA15920-4,LA18978-9,LA18979-7,LA18980-5,LA18981-3,LA18982-1)\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: CodeSystem found: \"http://loinc.org|2.83\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#278149003 (\"Blood group A Rh(D) positive\")]\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Check \"http://snomed.info/sct#278149003\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Include for http://loinc.org not considered for \"http://snomed.info/sct\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#278149003 ('Blood group A Rh(D) positive')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "10828004",
+    "display" : "Positive"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0 for validation purposes\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Prepare include[0]: \"(http://loinc.org)(LA18976-3,LA18977-1,LA15920-4,LA18978-9,LA18979-7,LA18980-5,LA18981-3,LA18982-1)\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: CodeSystem found: \"http://loinc.org|2.83\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#10828004 (\"Positive\")]\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Check \"http://snomed.info/sct#10828004\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Include for http://loinc.org not considered for \"http://snomed.info/sct\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#10828004 ('Positive')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "260385009",
+    "display" : "Negative"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0 for validation purposes\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Prepare include[0]: \"(http://loinc.org)(LA18976-3,LA18977-1,LA15920-4,LA18978-9,LA18979-7,LA18980-5,LA18981-3,LA18982-1)\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: CodeSystem found: \"http://loinc.org|2.83\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#260385009 (\"Negative\")]\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Check \"http://snomed.info/sct#260385009\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Include for http://loinc.org not considered for \"http://snomed.info/sct\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#260385009 ('Negative')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "115329001",
+    "display" : "Methicillin resistant Staphylococcus aureus"
+  }]
+}, "url": "http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips", "version": "1.1.0", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "externalSource":"StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips|1.1.0]", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Analysing http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0 for validation purposes\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Prepare include[0]: \"(http://loinc.org)(LA18976-3,LA18977-1,LA15920-4,LA18978-9,LA18979-7,LA18980-5,LA18981-3,LA18982-1)\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: CodeSystem found: \"http://loinc.org|2.83\"\n2ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Validate \"[http://snomed.info/sct#115329001 (\"Methicillin resistant Staphylococcus aureus\")]\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Check \"http://snomed.info/sct#115329001\"\n3ms http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0: Include for http://loinc.org not considered for \"http://snomed.info/sct\"",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "None_of_the_provided_codes_are_in_the_value_set_one"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "this-code-not-in-vs"
+      }],
+      "text" : "The provided code 'http://snomed.info/sct#115329001 ('Methicillin resistant Staphylococcus aureus')' was not found in the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'"
+    },
+    "expression" : ["CodeableConcept.coding[0].code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "TX_GENERAL_CC_ERROR_MESSAGE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "No valid coding was found for the value set 'http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips|1.1.0'"
+    }
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "en-GB"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"en-GB", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "English (United Kingdom)",
+  "code" : "en-GB",
+  "system" : "urn:ietf:bcp:47",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Analysing http://hl7.org/fhir/ValueSet/languages|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Parameters: disp-lang=en-GB, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes))\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: \"urn:ietf:bcp:47|null\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Validate \"[undefined#en-GB (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Check \"undefined#en-GB\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"en-GB\" found in urn:ietf:bcp:47|null\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:47\"\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: CodeSystem found: urn:ietf:bcp:47|null for urn:ietf:bcp:47\n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: check code in (urn:ietf:bcp:47)(ar,bn,cs,da,de,de-AT,de-CH,de-DE,el,en,en-AU,en-CA,en-GB,en-IN,en-NZ,en-SG,en-US,es,es-AR,es-ES,... +36 more (56 codes)) at \n1ms http://hl7.org/fhir/ValueSet/languages|4.0.1: Code \"en-GB\" found in urn:ietf:bcp:47|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/pdf"
+}, "url": "urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d", "version": "1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "application/pdf",
+  "code" : "application/pdf",
+  "system" : "urn:ietf:bcp:13",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Analysing urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1 for validation purposes\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Prepare include[0]: \"(urn:ietf:bcp:13)\"\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: CodeSystem found: \"urn:ietf:bcp:13|null\"\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Validate \"[undefined#application/pdf (\"undefined\")]\" and infer system\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Check \"undefined#application/pdf\"\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: check code in (urn:ietf:bcp:13) at \n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Code \"application/pdf\" found in urn:ietf:bcp:13|null\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Inferred CodeSystem = \"urn:ietf:bcp:13\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: CodeSystem found: urn:ietf:bcp:13|null for urn:ietf:bcp:13\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: check code in (urn:ietf:bcp:13) at \n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Code \"application/pdf\" found in urn:ietf:bcp:13|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/pdf"
+}, "url": "http://hl7.org/fhir/ValueSet/mimetypes", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "application/pdf",
+  "code" : "application/pdf",
+  "system" : "urn:ietf:bcp:13",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Analysing http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 for validation purposes\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:13)\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: CodeSystem found: \"urn:ietf:bcp:13|null\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Validate \"[undefined#application/pdf (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Check \"undefined#application/pdf\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: check code in (urn:ietf:bcp:13) at \n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Code \"application/pdf\" found in urn:ietf:bcp:13|null\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:13\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: CodeSystem found: urn:ietf:bcp:13|null for urn:ietf:bcp:13\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: check code in (urn:ietf:bcp:13) at \n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Code \"application/pdf\" found in urn:ietf:bcp:13|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/json"
+}, "url": "urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d", "version": "1", "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "application/json",
+  "code" : "application/json",
+  "system" : "urn:ietf:bcp:13",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Analysing urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1 for validation purposes\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Prepare include[0]: \"(urn:ietf:bcp:13)\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: CodeSystem found: \"urn:ietf:bcp:13|null\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Validate \"[undefined#application/json (\"undefined\")]\" and infer system\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Check \"undefined#application/json\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: check code in (urn:ietf:bcp:13) at \n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Code \"application/json\" found in urn:ietf:bcp:13|null\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Inferred CodeSystem = \"urn:ietf:bcp:13\"\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: CodeSystem found: urn:ietf:bcp:13|null for urn:ietf:bcp:13\n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: check code in (urn:ietf:bcp:13) at \n1ms urn:uuid:f639a9e0-1944-3f7b-916b-24cdbef8f89d|1: Code \"application/json\" found in urn:ietf:bcp:13|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/json"
+}, "url": "http://hl7.org/fhir/ValueSet/mimetypes", "version": "4.0.1", "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"true", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en-US"
+  }]
+}}####
+v: {
+  "display" : "application/json",
+  "code" : "application/json",
+  "system" : "urn:ietf:bcp:13",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Analysing http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 for validation purposes\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Prepare include[0]: \"(urn:ietf:bcp:13)\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: CodeSystem found: \"urn:ietf:bcp:13|null\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Validate \"[undefined#application/json (\"undefined\")]\" and infer system\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Check \"undefined#application/json\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: check code in (urn:ietf:bcp:13) at \n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Code \"application/json\" found in urn:ietf:bcp:13|null\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Inferred CodeSystem = \"urn:ietf:bcp:13\"\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: CodeSystem found: urn:ietf:bcp:13|null for urn:ietf:bcp:13\n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: check code in (urn:ietf:bcp:13) at \n1ms http://hl7.org/fhir/ValueSet/mimetypes|4.0.1: Code \"application/json\" found in urn:ietf:bcp:13|null",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------

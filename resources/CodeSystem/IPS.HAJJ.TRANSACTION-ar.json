@@ -1,0 +1,104 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS.HAJJ.TRANSACTION-ar",
+  "language" : "ar",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ar\" lang=\"ar\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS.HAJJ.TRANSACTION-ar</b></p><a name=\"IPS.HAJJ.TRANSACTION-ar\"> </a><a name=\"hcIPS.HAJJ.TRANSACTION-ar\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: ar</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-ar</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-keys-put\">keys-put</a><a name=\"IPS.HAJJ.TRANSACTION-ar-keys-put\"> </a></td><td>نشر مفاتيح التحقق</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-keys-get\">keys-get</a><a name=\"IPS.HAJJ.TRANSACTION-ar-keys-get\"> </a></td><td>استرجاع مفاتيح التحقق</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-doc-sign\">doc-sign</a><a name=\"IPS.HAJJ.TRANSACTION-ar-doc-sign\"> </a></td><td>توقيع ملخص IPS</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-doc-get\">doc-get</a><a name=\"IPS.HAJJ.TRANSACTION-ar-doc-get\"> </a></td><td>استرجاع ملخص IPS</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-sign\">shl-sign</a><a name=\"IPS.HAJJ.TRANSACTION-ar-shl-sign\"> </a></td><td>توقيع رابط SMART Health Link</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-doc-view\">shl-doc-view</a><a name=\"IPS.HAJJ.TRANSACTION-ar-shl-doc-view\"> </a></td><td>الوصول إلى عارض مستندات SHL</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-get-manifest\">shl-get-manifest</a><a name=\"IPS.HAJJ.TRANSACTION-ar-shl-get-manifest\"> </a></td><td>استرجاع بيان مستندات SHL</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-consent-post-counseling\">consent-post-counseling</a><a name=\"IPS.HAJJ.TRANSACTION-ar-consent-post-counseling\"> </a></td><td>تسجيل الموافقة - بعد الإرشاد</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-consent-wallet\">consent-wallet</a><a name=\"IPS.HAJJ.TRANSACTION-ar-consent-wallet\"> </a></td><td>تسجيل الموافقة - المحفظة الصحية الرقمية</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-ar",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJTRANSACTIONAr",
+  "title" : "نظام الرموز IPS.HAJJ.TRANSACTION",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "ملحق باللغة العربية (ar) لنظام الرموز IPS.HAJJ.TRANSACTION: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+  "caseSensitive" : true,
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+  "concept" : [{
+    "code" : "keys-put",
+    "display" : "نشر مفاتيح التحقق",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "نشر مفاتيح التحقق"
+    }]
+  },
+  {
+    "code" : "keys-get",
+    "display" : "استرجاع مفاتيح التحقق",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "استرجاع مفاتيح التحقق"
+    }]
+  },
+  {
+    "code" : "doc-sign",
+    "display" : "توقيع ملخص IPS",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "توقيع ملخص IPS"
+    }]
+  },
+  {
+    "code" : "doc-get",
+    "display" : "استرجاع ملخص IPS",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "استرجاع ملخص IPS"
+    }]
+  },
+  {
+    "code" : "shl-sign",
+    "display" : "توقيع رابط SMART Health Link",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "توقيع رابط SMART Health Link"
+    }]
+  },
+  {
+    "code" : "shl-doc-view",
+    "display" : "الوصول إلى عارض مستندات SHL",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "الوصول إلى عارض مستندات SHL"
+    }]
+  },
+  {
+    "code" : "shl-get-manifest",
+    "display" : "استرجاع بيان مستندات SHL",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "استرجاع بيان مستندات SHL"
+    }]
+  },
+  {
+    "code" : "consent-post-counseling",
+    "display" : "تسجيل الموافقة - بعد الإرشاد",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "تسجيل الموافقة - بعد الإرشاد"
+    }]
+  },
+  {
+    "code" : "consent-wallet",
+    "display" : "تسجيل الموافقة - المحفظة الصحية الرقمية",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "تسجيل الموافقة - المحفظة الصحية الرقمية"
+    }]
+  }]
+}

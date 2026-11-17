@@ -1,0 +1,52 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DistributionModelCs-zh",
+  "language" : "zh",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"zh\" lang=\"zh\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DistributionModelCs-zh</b></p><a name=\"DistributionModelCs-zh\"> </a><a name=\"hcDistributionModelCs-zh\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: zh</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-zh</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-Cloud-based\">Cloud-based</a><a name=\"DistributionModelCs-zh-Cloud-based\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-On-premise\">On-premise</a><a name=\"DistributionModelCs-zh-On-premise\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-Hybrid\">Hybrid</a><a name=\"DistributionModelCs-zh-Hybrid\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-zh",
+  "version" : "2.1.0",
+  "name" : "DistributionModelCsZh",
+  "title" : "DistributionModelCs — Chinese (zh) supplement",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Simplified Chinese (zh) display designations for the DistributionModelCs code system, drafted by an agent and not signed off by a human.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+  "concept" : [{
+    "code" : "Cloud-based",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "基于云"
+    }]
+  },
+  {
+    "code" : "On-premise",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "本地部署"
+    }]
+  },
+  {
+    "code" : "Hybrid",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "混合"
+    }]
+  }]
+}

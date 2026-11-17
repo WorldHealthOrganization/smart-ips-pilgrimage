@@ -1,0 +1,87 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "LanguageCs-ru",
+  "language" : "ru",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ru\" lang=\"ru\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem LanguageCs-ru</b></p><a name=\"LanguageCs-ru\"> </a><a name=\"hcLanguageCs-ru\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: ru</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-ru</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Arabic\">Arabic</a><a name=\"LanguageCs-ru-Arabic\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Chinese\">Chinese</a><a name=\"LanguageCs-ru-Chinese\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-English\">English</a><a name=\"LanguageCs-ru-English\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-French\">French</a><a name=\"LanguageCs-ru-French\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Russian\">Russian</a><a name=\"LanguageCs-ru-Russian\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Spanish\">Spanish</a><a name=\"LanguageCs-ru-Spanish\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Other\">Other</a><a name=\"LanguageCs-ru-Other\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-ru",
+  "version" : "2.1.0",
+  "name" : "LanguageCsRu",
+  "title" : "LanguageCs (ru designations, unofficial)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Russian designations for LanguageCs: an agent translation that no person has signed off.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+  "concept" : [{
+    "code" : "Arabic",
+    "display" : "Arabic",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Арабский"
+    }]
+  },
+  {
+    "code" : "Chinese",
+    "display" : "Chinese",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Китайский"
+    }]
+  },
+  {
+    "code" : "English",
+    "display" : "English",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Английский"
+    }]
+  },
+  {
+    "code" : "French",
+    "display" : "French",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Французский"
+    }]
+  },
+  {
+    "code" : "Russian",
+    "display" : "Russian",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Русский"
+    }]
+  },
+  {
+    "code" : "Spanish",
+    "display" : "Spanish",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Испанский"
+    }]
+  },
+  {
+    "code" : "Other",
+    "display" : "Other",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Другой"
+    }]
+  }]
+}

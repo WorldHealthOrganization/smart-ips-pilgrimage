@@ -1,0 +1,80 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "LanguageCs-zh",
+  "language" : "zh",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"zh\" lang=\"zh\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem LanguageCs-zh</b></p><a name=\"LanguageCs-zh\"> </a><a name=\"hcLanguageCs-zh\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: zh</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-zh</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Arabic\">Arabic</a><a name=\"LanguageCs-zh-Arabic\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Chinese\">Chinese</a><a name=\"LanguageCs-zh-Chinese\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-English\">English</a><a name=\"LanguageCs-zh-English\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-French\">French</a><a name=\"LanguageCs-zh-French\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Russian\">Russian</a><a name=\"LanguageCs-zh-Russian\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Spanish\">Spanish</a><a name=\"LanguageCs-zh-Spanish\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Other\">Other</a><a name=\"LanguageCs-zh-Other\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-zh",
+  "version" : "2.1.0",
+  "name" : "LanguageCsZh",
+  "title" : "LanguageCs — Chinese (zh) supplement",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Simplified Chinese (zh) display designations for the LanguageCs code system, drafted by an agent and not signed off by a human.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+  "concept" : [{
+    "code" : "Arabic",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "阿拉伯语"
+    }]
+  },
+  {
+    "code" : "Chinese",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "中文"
+    }]
+  },
+  {
+    "code" : "English",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "英语"
+    }]
+  },
+  {
+    "code" : "French",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "法语"
+    }]
+  },
+  {
+    "code" : "Russian",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "俄语"
+    }]
+  },
+  {
+    "code" : "Spanish",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "西班牙语"
+    }]
+  },
+  {
+    "code" : "Other",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "其他"
+    }]
+  }]
+}

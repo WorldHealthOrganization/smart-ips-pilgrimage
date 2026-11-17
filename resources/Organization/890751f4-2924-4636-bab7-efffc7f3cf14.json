@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Organization",
+  "id" : "890751f4-2924-4636-bab7-efffc7f3cf14",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization 890751f4-2924-4636-bab7-efffc7f3cf14</b></p><a name=\"890751f4-2924-4636-bab7-efffc7f3cf14\"> </a><a name=\"hc890751f4-2924-4636-bab7-efffc7f3cf14\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anorg Aniza Tion BV / The best custodian ever (urn:oid:2.16.528.1.1007.3.3#564738757)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the organization\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+31-51-34343400\">+31-51-34343400</a></li><li>Houttuinen 27 Dordrecht 3311 CE NL (work)</li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:2.16.528.1.1007.3.3",
+    "value" : "564738757"
+  }],
+  "active" : true,
+  "name" : "Anorg Aniza Tion BV / The best custodian ever",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+31-51-34343400",
+    "use" : "work"
+  }],
+  "address" : [{
+    "use" : "work",
+    "line" : ["Houttuinen 27"],
+    "city" : "Dordrecht",
+    "postalCode" : "3311 CE",
+    "country" : "NL"
+  }]
+}

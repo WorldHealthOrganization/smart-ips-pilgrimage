@@ -1,0 +1,778 @@
+[
+  {
+    "outputFile": "AllergyIntolerance-72884cad-ebe6-4f43-a51a-2f978275f131.json",
+    "fshName": "72884cad-ebe6-4f43-a51a-2f978275f131",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 188,
+    "endLine": 204
+  },
+  {
+    "outputFile": "Bundle-MyIPS.json",
+    "fshName": "MyIPS",
+    "fshType": "Instance",
+    "fshFile": "examples/MyHajjIPS.fsh",
+    "startLine": 21,
+    "endLine": 74
+  },
+  {
+    "outputFile": "Bundle-PilgrimFolderSearchSetExtended.json",
+    "fshName": "PilgrimFolderSearchSetExtended",
+    "fshType": "Instance",
+    "fshFile": "examples/PilgrimSearchSetExtended.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "CapabilityStatement-VHLDocumentResponder.json",
+    "fshName": "VHLDocumentResponder",
+    "fshType": "Instance",
+    "fshFile": "capabilitystatements/VHLDocumentResponder.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "CodeSystem-BrowserCs-ar.json",
+    "fshName": "BrowserCsAr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ar.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
+    "outputFile": "CodeSystem-BrowserCs-es.json",
+    "fshName": "BrowserCsEs",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/es.fsh",
+    "startLine": 91,
+    "endLine": 117
+  },
+  {
+    "outputFile": "CodeSystem-BrowserCs-fr.json",
+    "fshName": "BrowserCsFr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/fr.fsh",
+    "startLine": 6,
+    "endLine": 33
+  },
+  {
+    "outputFile": "CodeSystem-BrowserCs-ru.json",
+    "fshName": "BrowserCsRu",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ru.fsh",
+    "startLine": 73,
+    "endLine": 83
+  },
+  {
+    "outputFile": "CodeSystem-BrowserCs-zh.json",
+    "fshName": "BrowserCsZh",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/zh.fsh",
+    "startLine": 7,
+    "endLine": 18
+  },
+  {
+    "outputFile": "CodeSystem-BrowserCs.json",
+    "fshName": "BrowserCs",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/BrowserCs.fsh",
+    "startLine": 2,
+    "endLine": 16
+  },
+  {
+    "outputFile": "CodeSystem-DistributionModelCs-ar.json",
+    "fshName": "DistributionModelCsAr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ar.fsh",
+    "startLine": 34,
+    "endLine": 52
+  },
+  {
+    "outputFile": "CodeSystem-DistributionModelCs-es.json",
+    "fshName": "DistributionModelCsEs",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/es.fsh",
+    "startLine": 119,
+    "endLine": 136
+  },
+  {
+    "outputFile": "CodeSystem-DistributionModelCs-fr.json",
+    "fshName": "DistributionModelCsFr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/fr.fsh",
+    "startLine": 35,
+    "endLine": 53
+  },
+  {
+    "outputFile": "CodeSystem-DistributionModelCs-ru.json",
+    "fshName": "DistributionModelCsRu",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ru.fsh",
+    "startLine": 142,
+    "endLine": 158
+  },
+  {
+    "outputFile": "CodeSystem-DistributionModelCs-zh.json",
+    "fshName": "DistributionModelCsZh",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/zh.fsh",
+    "startLine": 20,
+    "endLine": 37
+  },
+  {
+    "outputFile": "CodeSystem-DistributionModelCs.json",
+    "fshName": "DistributionModelCs",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/DistributionModelCs.fsh",
+    "startLine": 2,
+    "endLine": 13
+  },
+  {
+    "outputFile": "CodeSystem-IPS-HAJJ-ACTOR-es.json",
+    "fshName": "IPSHAJJACTOREs",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/es.fsh",
+    "startLine": 63,
+    "endLine": 89
+  },
+  {
+    "outputFile": "CodeSystem-IPS-HAJJ-ACTOR-ru.json",
+    "fshName": "IPSHAJJACTORRu",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ru.fsh",
+    "startLine": 115,
+    "endLine": 140
+  },
+  {
+    "outputFile": "CodeSystem-IPS-HAJJ-CONSENT-es.json",
+    "fshName": "IPSHAJJCONSENTEs",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/es.fsh",
+    "startLine": 41,
+    "endLine": 61
+  },
+  {
+    "outputFile": "CodeSystem-IPS-HAJJ-CONSENT-ru.json",
+    "fshName": "IPSHAJJCONSENTRu",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ru.fsh",
+    "startLine": 40,
+    "endLine": 59
+  },
+  {
+    "outputFile": "CodeSystem-IPS-HAJJ-TRANSACTION-es.json",
+    "fshName": "IPSHAJJTRANSACTIONEs",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/es.fsh",
+    "startLine": 4,
+    "endLine": 39
+  },
+  {
+    "outputFile": "CodeSystem-IPS-HAJJ-TRANSACTION-ru.json",
+    "fshName": "IPSHAJJTRANSACTIONRu",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ru.fsh",
+    "startLine": 4,
+    "endLine": 38
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.ACTOR-ar.json",
+    "fshName": "IPSHAJJACTORAr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ar.fsh",
+    "startLine": 54,
+    "endLine": 81
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.ACTOR-fr.json",
+    "fshName": "IPSHAJJACTORFr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/fr.fsh",
+    "startLine": 55,
+    "endLine": 82
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.ACTOR-zh.json",
+    "fshName": "IPSHAJJACTORZh",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/zh.fsh",
+    "startLine": 39,
+    "endLine": 65
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.ACTOR.json",
+    "fshName": "IPS.HAJJ.ACTOR",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/IPS.HAJJ.ACTOR.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.CONSENT-ar.json",
+    "fshName": "IPSHAJJCONSENTAr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ar.fsh",
+    "startLine": 83,
+    "endLine": 104
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.CONSENT-fr.json",
+    "fshName": "IPSHAJJCONSENTFr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/fr.fsh",
+    "startLine": 84,
+    "endLine": 105
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.CONSENT-zh.json",
+    "fshName": "IPSHAJJCONSENTZh",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/zh.fsh",
+    "startLine": 67,
+    "endLine": 87
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.CONSENT.json",
+    "fshName": "IPS.HAJJ.CONSENT",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/IPS.HAJJ.CONSENT.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.TRANSACTION-ar.json",
+    "fshName": "IPSHAJJTRANSACTIONAr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ar.fsh",
+    "startLine": 106,
+    "endLine": 142
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.TRANSACTION-fr.json",
+    "fshName": "IPSHAJJTRANSACTIONFr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/fr.fsh",
+    "startLine": 107,
+    "endLine": 143
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.TRANSACTION-zh.json",
+    "fshName": "IPSHAJJTRANSACTIONZh",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/zh.fsh",
+    "startLine": 89,
+    "endLine": 124
+  },
+  {
+    "outputFile": "CodeSystem-IPS.HAJJ.TRANSACTION.json",
+    "fshName": "IPS.HAJJ.TRANSACTION",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/IPS.HAJJ.TRANSACTION.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "CodeSystem-LanguageCs-ar.json",
+    "fshName": "LanguageCsAr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ar.fsh",
+    "startLine": 144,
+    "endLine": 174
+  },
+  {
+    "outputFile": "CodeSystem-LanguageCs-es.json",
+    "fshName": "LanguageCsEs",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/es.fsh",
+    "startLine": 138,
+    "endLine": 167
+  },
+  {
+    "outputFile": "CodeSystem-LanguageCs-fr.json",
+    "fshName": "LanguageCsFr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/fr.fsh",
+    "startLine": 145,
+    "endLine": 175
+  },
+  {
+    "outputFile": "CodeSystem-LanguageCs-ru.json",
+    "fshName": "LanguageCsRu",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ru.fsh",
+    "startLine": 85,
+    "endLine": 113
+  },
+  {
+    "outputFile": "CodeSystem-LanguageCs-zh.json",
+    "fshName": "LanguageCsZh",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/zh.fsh",
+    "startLine": 126,
+    "endLine": 155
+  },
+  {
+    "outputFile": "CodeSystem-LanguageCs.json",
+    "fshName": "LanguageCs",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/LanugageCs.fsh",
+    "startLine": 2,
+    "endLine": 16
+  },
+  {
+    "outputFile": "CodeSystem-LicensingModelCs-ar.json",
+    "fshName": "LicensingModelCsAr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ar.fsh",
+    "startLine": 176,
+    "endLine": 191
+  },
+  {
+    "outputFile": "CodeSystem-LicensingModelCs-es.json",
+    "fshName": "LicensingModelCsEs",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/es.fsh",
+    "startLine": 169,
+    "endLine": 183
+  },
+  {
+    "outputFile": "CodeSystem-LicensingModelCs-fr.json",
+    "fshName": "LicensingModelCsFr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/fr.fsh",
+    "startLine": 177,
+    "endLine": 192
+  },
+  {
+    "outputFile": "CodeSystem-LicensingModelCs-ru.json",
+    "fshName": "LicensingModelCsRu",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ru.fsh",
+    "startLine": 160,
+    "endLine": 173
+  },
+  {
+    "outputFile": "CodeSystem-LicensingModelCs-zh.json",
+    "fshName": "LicensingModelCsZh",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/zh.fsh",
+    "startLine": 157,
+    "endLine": 171
+  },
+  {
+    "outputFile": "CodeSystem-LicensingModelCs.json",
+    "fshName": "LicensingModelCs",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/LicensingModelCs.fsh",
+    "startLine": 2,
+    "endLine": 12
+  },
+  {
+    "outputFile": "CodeSystem-OperatingSystemCs-ar.json",
+    "fshName": "OperatingSystemCsAr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ar.fsh",
+    "startLine": 193,
+    "endLine": 217
+  },
+  {
+    "outputFile": "CodeSystem-OperatingSystemCs-es.json",
+    "fshName": "OperatingSystemCsEs",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/es.fsh",
+    "startLine": 185,
+    "endLine": 208
+  },
+  {
+    "outputFile": "CodeSystem-OperatingSystemCs-fr.json",
+    "fshName": "OperatingSystemCsFr",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/fr.fsh",
+    "startLine": 194,
+    "endLine": 218
+  },
+  {
+    "outputFile": "CodeSystem-OperatingSystemCs-ru.json",
+    "fshName": "OperatingSystemCsRu",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/ru.fsh",
+    "startLine": 61,
+    "endLine": 71
+  },
+  {
+    "outputFile": "CodeSystem-OperatingSystemCs-zh.json",
+    "fshName": "OperatingSystemCsZh",
+    "fshType": "CodeSystem",
+    "fshFile": "translations/zh.fsh",
+    "startLine": 173,
+    "endLine": 184
+  },
+  {
+    "outputFile": "CodeSystem-OperatingSystemCs.json",
+    "fshName": "OperatingSystemCs",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/OperatingSystemCs.fsh",
+    "startLine": 2,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Composition-ExampleComposition.json",
+    "fshName": "ExampleComposition",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 1,
+    "endLine": 66
+  },
+  {
+    "outputFile": "Condition-c4597aa2-688a-401b-a658-70acc6de28c5.json",
+    "fshName": "c4597aa2-688a-401b-a658-70acc6de28c5",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 206,
+    "endLine": 225
+  },
+  {
+    "outputFile": "Condition-c64139e7-f02d-409c-bf34-75e8bf23bc89.json",
+    "fshName": "c64139e7-f02d-409c-bf34-75e8bf23bc89",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 124,
+    "endLine": 143
+  },
+  {
+    "outputFile": "Consent-6ba64cfe-b224-4d40-87bf-4d8122e65e62.json",
+    "fshName": "ExampleConsentXXR",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleConsent.fsh",
+    "startLine": 63,
+    "endLine": 88
+  },
+  {
+    "outputFile": "Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c6.json",
+    "fshName": "ExampleConsent",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleConsent.fsh",
+    "startLine": 36,
+    "endLine": 61
+  },
+  {
+    "outputFile": "DocumentReference-FHIRIPSDocumentReference.json",
+    "fshName": "FHIRIPSDocumentReference",
+    "fshType": "Instance",
+    "fshFile": "examples/PilgrimFolder.fsh",
+    "startLine": 22,
+    "endLine": 40
+  },
+  {
+    "outputFile": "DocumentReference-FHIRIPSSignedDocumentReference.json",
+    "fshName": "FHIRIPSSignedDocumentReference",
+    "fshType": "Instance",
+    "fshFile": "examples/PilgrimFolder.fsh",
+    "startLine": 63,
+    "endLine": 80
+  },
+  {
+    "outputFile": "DocumentReference-IPSPDFDocumentReference.json",
+    "fshName": "IPSPDFDocumentReference",
+    "fshType": "Instance",
+    "fshFile": "examples/PilgrimFolder.fsh",
+    "startLine": 42,
+    "endLine": 60
+  },
+  {
+    "outputFile": "DocumentReference-IPSSignedPDFDocumentReference.json",
+    "fshName": "IPSSignedPDFDocumentReference",
+    "fshType": "Instance",
+    "fshFile": "examples/PilgrimFolder.fsh",
+    "startLine": 83,
+    "endLine": 100
+  },
+  {
+    "outputFile": "DocumentReference-ex-documentreference.json",
+    "fshName": "ex-documentreference",
+    "fshType": "Instance",
+    "fshFile": "examples/MyHajjIPS.fsh",
+    "startLine": 445,
+    "endLine": 461
+  },
+  {
+    "outputFile": "DocumentReference-ex-documentreference1.json",
+    "fshName": "ex-documentreference1",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleConsent.fsh",
+    "startLine": 90,
+    "endLine": 106
+  },
+  {
+    "outputFile": "List-PilgrimFolder.json",
+    "fshName": "PilgrimFolder",
+    "fshType": "Instance",
+    "fshFile": "examples/PilgrimFolder.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Medication-8adc0999-9468-4ac9-9557-680fa133d625.json",
+    "fshName": "8adc0999-9468-4ac9-9557-680fa133d625",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 176,
+    "endLine": 187
+  },
+  {
+    "outputFile": "Medication-976d0804-cae0-45ae-afe3-a19f3ceba6bb.json",
+    "fshName": "976d0804-cae0-45ae-afe3-a19f3ceba6bb",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 170,
+    "endLine": 175
+  },
+  {
+    "outputFile": "MedicationStatement-47524493-846a-4a26-bae2-4ab03e60f02d.json",
+    "fshName": "47524493-846a-4a26-bae2-4ab03e60f02d",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 159,
+    "endLine": 169
+  },
+  {
+    "outputFile": "MedicationStatement-c220e36c-eb67-4fc4-9ba1-2fabc52acec5.json",
+    "fshName": "c220e36c-eb67-4fc4-9ba1-2fabc52acec5",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 144,
+    "endLine": 158
+  },
+  {
+    "outputFile": "Observation-2639657a-c19a-48e2-82cc-471e13b8ad93.json",
+    "fshName": "2639657a-c19a-48e2-82cc-471e13b8ad93",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 277,
+    "endLine": 290
+  },
+  {
+    "outputFile": "Observation-26bee0a9-5997-4557-ab9d-c6adbb05b571.json",
+    "fshName": "26bee0a9-5997-4557-ab9d-c6adbb05b571",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 303,
+    "endLine": 314
+  },
+  {
+    "outputFile": "Observation-6e39ccf3-f997-4a2b-8f28-b4b71c778c79.json",
+    "fshName": "6e39ccf3-f997-4a2b-8f28-b4b71c778c79",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 244,
+    "endLine": 254
+  },
+  {
+    "outputFile": "Observation-a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3.json",
+    "fshName": "a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 266,
+    "endLine": 276
+  },
+  {
+    "outputFile": "Observation-aa11a2be-3e36-4be7-b58a-6fc3dace2740.json",
+    "fshName": "aa11a2be-3e36-4be7-b58a-6fc3dace2740",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 233,
+    "endLine": 243
+  },
+  {
+    "outputFile": "Observation-b4916505-a06b-460c-9be8-011609282456.json",
+    "fshName": "b4916505-a06b-460c-9be8-011609282456",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 255,
+    "endLine": 265
+  },
+  {
+    "outputFile": "Observation-cc354e00-a419-47ea-8b6c-1768b2a01645.json",
+    "fshName": "cc354e00-a419-47ea-8b6c-1768b2a01645",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 291,
+    "endLine": 302
+  },
+  {
+    "outputFile": "Organization-45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6.json",
+    "fshName": "45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 226,
+    "endLine": 232
+  },
+  {
+    "outputFile": "Organization-890751f4-2924-4636-bab7-efffc7f3cf14.json",
+    "fshName": "890751f4-2924-4636-bab7-efffc7f3cf14",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 108,
+    "endLine": 123
+  },
+  {
+    "outputFile": "Organization-ExampleHostMoH.json",
+    "fshName": "ExampleHostMoH",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleConsent.fsh",
+    "startLine": 25,
+    "endLine": 34
+  },
+  {
+    "outputFile": "Organization-ExampleOriginHIE.json",
+    "fshName": "ExampleOriginHIE",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleConsent.fsh",
+    "startLine": 14,
+    "endLine": 23
+  },
+  {
+    "outputFile": "Patient-2b90dd2b-2dab-4c75-9bb9-a355e07401e7.json",
+    "fshName": "Martha",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 67,
+    "endLine": 95
+  },
+  {
+    "outputFile": "Practitioner-1c616b24-3895-48c4-9a02-9a64110351ee.json",
+    "fshName": "1c616b24-3895-48c4-9a02-9a64110351ee",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleComposition.fsh",
+    "startLine": 96,
+    "endLine": 107
+  },
+  {
+    "outputFile": "Questionnaire-Questionnaire-ConnectathonSubmission.json",
+    "fshName": "Questionnaire-ConnectathonSubmission",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/connectathonSubmission.fsh",
+    "startLine": 8,
+    "endLine": 57
+  },
+  {
+    "outputFile": "StructureDefinition-ConsentPeriod.json",
+    "fshName": "ConsentPeriod",
+    "fshType": "Extension",
+    "fshFile": "extensions/ConsentPeriod.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-ConsentVerifiedBy.json",
+    "fshName": "ConsentVerifiedBy",
+    "fshType": "Extension",
+    "fshFile": "extensions/ConsentVerifiedBy.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-HajjConsent.json",
+    "fshName": "HajjConsent",
+    "fshType": "Profile",
+    "fshFile": "profiles/HajjConsent.fsh",
+    "startLine": 1,
+    "endLine": 49
+  },
+  {
+    "outputFile": "StructureDefinition-HajjIPS.json",
+    "fshName": "HajjIPS",
+    "fshType": "Profile",
+    "fshFile": "profiles/HajjIPS.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-HajjIPSComposition.json",
+    "fshName": "HajjIPSComposition",
+    "fshType": "Profile",
+    "fshFile": "profiles/HajjIPS.fsh",
+    "startLine": 22,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-HajjOrganization.json",
+    "fshName": "HajjOrganization",
+    "fshType": "Profile",
+    "fshFile": "profiles/HajjOrganization.fsh",
+    "startLine": 3,
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-Browser.json",
+    "fshName": "Browser",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/Browser.fsh",
+    "startLine": 2,
+    "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-DistributionModel.json",
+    "fshName": "DistributionModel",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/DistributionModel.fsh",
+    "startLine": 2,
+    "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-IPS.HAJJ.ACTOR.SYSTEM.json",
+    "fshName": "IPS.HAJJ.ACTOR.SYSTEM",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/IPS.HAJJ.ACTOR.SYSTEM.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-IPS.HAJJ.ACTOR.json",
+    "fshName": "IPS.HAJJ.ACTOR",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/IPS.HAJJ.ACTOR.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "ValueSet-IPS.HAJJ.CONSENT.json",
+    "fshName": "IPS.HAJJ.CONSENT",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/IPS.HAJJ.CONSENT.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "ValueSet-IPS.HAJJ.TRANSACTION.json",
+    "fshName": "IPS.HAJJ.TRANSACTION",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/IPS.HAJJ.TRANSACTION.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "ValueSet-Language.json",
+    "fshName": "Language",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/Language.fsh",
+    "startLine": 2,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-LicensingModel.json",
+    "fshName": "LicensingModel",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/LicensingModel.fsh",
+    "startLine": 2,
+    "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-OperatingSystem.json",
+    "fshName": "OperatingSystem",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/OperatingSystem.fsh",
+    "startLine": 2,
+    "endLine": 9
+  }
+]

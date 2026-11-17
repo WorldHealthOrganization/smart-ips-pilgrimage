@@ -1,0 +1,72 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "OperatingSystemCs-ar",
+  "language" : "ar",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ar\" lang=\"ar\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem OperatingSystemCs-ar</b></p><a name=\"OperatingSystemCs-ar\"> </a><a name=\"hcOperatingSystemCs-ar\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: ar</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-ar</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Linux\">Linux</a><a name=\"OperatingSystemCs-ar-Linux\"> </a></td><td>Linux</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Unix\">Unix</a><a name=\"OperatingSystemCs-ar-Unix\"> </a></td><td>Unix</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Windows\">Windows</a><a name=\"OperatingSystemCs-ar-Windows\"> </a></td><td>Windows</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Mac\">Mac</a><a name=\"OperatingSystemCs-ar-Mac\"> </a></td><td>Mac</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Other\">Other</a><a name=\"OperatingSystemCs-ar-Other\"> </a></td><td>أخرى</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-ar",
+  "version" : "2.1.0",
+  "name" : "OperatingSystemCsAr",
+  "title" : "نظام التشغيل",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "ملحق باللغة العربية (ar) لنظام الرموز OperatingSystemCs: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+  "caseSensitive" : true,
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+  "concept" : [{
+    "code" : "Linux",
+    "display" : "Linux",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "Linux"
+    }]
+  },
+  {
+    "code" : "Unix",
+    "display" : "Unix",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "Unix"
+    }]
+  },
+  {
+    "code" : "Windows",
+    "display" : "Windows",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "Windows"
+    }]
+  },
+  {
+    "code" : "Mac",
+    "display" : "Mac",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "Mac"
+    }]
+  },
+  {
+    "code" : "Other",
+    "display" : "أخرى",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "أخرى"
+    }]
+  }]
+}

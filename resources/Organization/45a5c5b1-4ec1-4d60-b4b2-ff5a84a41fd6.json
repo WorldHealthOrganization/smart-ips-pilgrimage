@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Organization",
+  "id" : "45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization 45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6</b></p><a name=\"45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6\"> </a><a name=\"hc45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Laboratoire de charme (Other)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The kind(s) of organization that this is\">Type:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type other}\">Other</span></td></tr></table></div>"
+  },
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "code" : "other"
+    }]
+  }],
+  "name" : "Laboratoire de charme"
+}

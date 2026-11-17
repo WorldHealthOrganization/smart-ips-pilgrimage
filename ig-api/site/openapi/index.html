@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OpenAPI Documentation - DAK API</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"
+          href="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css">
+    <style>
+      body { margin: 0; padding: 0; font-family: var(--fa-font-sans,system-ui,sans-serif); }
+      /* Definition selector bar below the header */
+      #definition-selector-bar {
+        background-color: #0070a1;
+        color: #ffffff;
+        padding: 0.5rem 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+      }
+      #definition-selector-bar label {
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      #definition-select {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+        border: 1px solid rgba(255,255,255,0.6);
+        background-color: #ffffff;
+        color: #00477d;
+        min-width: 200px;
+        max-width: 100%;
+        flex: 1;
+      }
+      /* Hide Swagger UI topbar entirely */
+      .swagger-ui .topbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+  <!-- No header of its own: the site gives every page the IG's one bar. -->
+
+  <div id="definition-selector-bar">
+    <label for="definition-select">Select a definition:</label>
+    <select id="definition-select" onchange="switchDefinition(this.value)">
+    </select>
+  </div>
+  <div id="swagger-ui"></div>
+  <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js"></script>
+  <script>
+  var swaggerUrls = [
+  {
+    "url": "../ValueSet-Browser.openapi.json",
+    "name": "Browser Schema"
+  },
+  {
+    "url": "../ValueSet-DistributionModel.openapi.json",
+    "name": "Distribution Model Schema"
+  },
+  {
+    "url": "../ValueSet-IPS.HAJJ.ACTOR.SYSTEM.openapi.json",
+    "name": "IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor Schema"
+  },
+  {
+    "url": "../ValueSet-IPS.HAJJ.ACTOR.openapi.json",
+    "name": "IPS.HAJJ.ACTOR ValueSet of actor Schema"
+  },
+  {
+    "url": "../ValueSet-IPS.HAJJ.CONSENT.openapi.json",
+    "name": "IPS.HAJJ.CONSENT ValueSet of consent policies Schema"
+  },
+  {
+    "url": "../ValueSet-IPS.HAJJ.TRANSACTION.openapi.json",
+    "name": "IPS.HAJJ.TRANSACTION ValueSet of transaction Schema"
+  },
+  {
+    "url": "../ValueSet-Language.openapi.json",
+    "name": "Language Schema"
+  },
+  {
+    "url": "../ValueSet-LicensingModel.openapi.json",
+    "name": "Licensing Model Schema"
+  },
+  {
+    "url": "../ValueSet-OperatingSystem.openapi.json",
+    "name": "Operating System Schema"
+  }
+];
+  var ui;
+  window.onload = function() {
+    var select = document.getElementById('definition-select');
+    swaggerUrls.forEach(function(item, idx) {
+      var opt = document.createElement('option');
+      opt.value = item.url;
+      opt.textContent = item.name;
+      select.appendChild(opt);
+    });
+    ui = SwaggerUIBundle({
+      url: "../ValueSet-Browser.openapi.json",
+      dom_id: '#swagger-ui',
+      presets: [SwaggerUIBundle.presets.apis],
+      layout: "BaseLayout"
+    });
+  };
+  function switchDefinition(url) {
+    ui.specActions.updateUrl(url);
+    ui.specActions.download(url);
+  }
+  </script>
+
+  </body>
+</html>

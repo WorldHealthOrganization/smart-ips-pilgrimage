@@ -1,0 +1,68 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS-HAJJ-CONSENT-es",
+  "language" : "es",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"es\" lang=\"es\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS-HAJJ-CONSENT-es</b></p><a name=\"IPS-HAJJ-CONSENT-es\"> </a><a name=\"hcIPS-HAJJ-CONSENT-es\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: es</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-CONSENT-es</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-KSA\">CONSENT-KSA</a><a name=\"IPS-HAJJ-CONSENT-es-CONSENT-KSA\"> </a></td><td>Consentimiento para el Reino de la Arabia Saudita</td><td>El peregrino consiente en compartir su Resumen Internacional del Paciente (datos del IPS) durante la prestación de atención clínica en los establecimientos de salud del Ministerio de Salud de la Arabia Saudita en la zona del distrito del Hajj durante el evento Hajj-1446/2025, así como para cualquier atención de seguimiento que pueda necesitar de cualquier profesional de la salud</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-IDN\">CONSENT-IDN</a><a name=\"IPS-HAJJ-CONSENT-es-CONSENT-IDN\"> </a></td><td>Consentimiento para Indonesia</td><td>&lt;INSERTAR TEXTO DE INDONESIA: tratar el consentimiento de los peregrinos para utilizar Satusehat a fin de que el KSA acceda a su IPS si necesitan atención durante el Hajj&gt;</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-MYS\">CONSENT-MYS</a><a name=\"IPS-HAJJ-CONSENT-es-CONSENT-MYS\"> </a></td><td>Consentimiento para Malasia</td><td>El peregrino malasio del Hajj ha dado su consentimiento para compartir con el Reino de la Arabia Saudita el Resumen Internacional del Paciente (IPS) generado a partir de los datos registrados durante el examen de salud del peregrino del Hajj, así como los registros de vacunación almacenados en MySejahtera</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-OMN\">CONSENT-OMN</a><a name=\"IPS-HAJJ-CONSENT-es-CONSENT-OMN\"> </a></td><td>Consentimiento para Omán</td><td>&lt;INSERTAR TEXTO DE OMÁN: tratar el consentimiento de los peregrinos para utilizar el portal de e-Salud de Omán a fin de que el KSA acceda a su IPS si necesitan atención&gt;</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-CONSENT-es",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJCONSENTEs",
+  "title" : "IPS.HAJJ.CONSENT (es designations, unofficial)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Spanish designations for IPS.HAJJ.CONSENT: an agent translation that no person has signed off.",
+  "caseSensitive" : false,
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+  "concept" : [{
+    "code" : "CONSENT-KSA",
+    "display" : "Consentimiento para el Reino de la Arabia Saudita",
+    "definition" : "El peregrino consiente en compartir su Resumen Internacional del Paciente (datos del IPS) durante la prestación de atención clínica en los establecimientos de salud del Ministerio de Salud de la Arabia Saudita en la zona del distrito del Hajj durante el evento Hajj-1446/2025, así como para cualquier atención de seguimiento que pueda necesitar de cualquier profesional de la salud",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Consentimiento para el Reino de la Arabia Saudita"
+    }]
+  },
+  {
+    "code" : "CONSENT-IDN",
+    "display" : "Consentimiento para Indonesia",
+    "definition" : "<INSERTAR TEXTO DE INDONESIA: tratar el consentimiento de los peregrinos para utilizar Satusehat a fin de que el KSA acceda a su IPS si necesitan atención durante el Hajj>",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Consentimiento para Indonesia"
+    }]
+  },
+  {
+    "code" : "CONSENT-MYS",
+    "display" : "Consentimiento para Malasia",
+    "definition" : "El peregrino malasio del Hajj ha dado su consentimiento para compartir con el Reino de la Arabia Saudita el Resumen Internacional del Paciente (IPS) generado a partir de los datos registrados durante el examen de salud del peregrino del Hajj, así como los registros de vacunación almacenados en MySejahtera",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Consentimiento para Malasia"
+    }]
+  },
+  {
+    "code" : "CONSENT-OMN",
+    "display" : "Consentimiento para Omán",
+    "definition" : "<INSERTAR TEXTO DE OMÁN: tratar el consentimiento de los peregrinos para utilizar el portal de e-Salud de Omán a fin de que el KSA acceda a su IPS si necesitan atención>",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Consentimiento para Omán"
+    }]
+  }]
+}

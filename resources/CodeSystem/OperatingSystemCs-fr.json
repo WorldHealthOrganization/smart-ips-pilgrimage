@@ -1,0 +1,72 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "OperatingSystemCs-fr",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr\" lang=\"fr\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem OperatingSystemCs-fr</b></p><a name=\"OperatingSystemCs-fr\"> </a><a name=\"hcOperatingSystemCs-fr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-fr</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Linux\">Linux</a><a name=\"OperatingSystemCs-fr-Linux\"> </a></td><td>Linux</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Unix\">Unix</a><a name=\"OperatingSystemCs-fr-Unix\"> </a></td><td>Unix</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Windows\">Windows</a><a name=\"OperatingSystemCs-fr-Windows\"> </a></td><td>Windows</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Mac\">Mac</a><a name=\"OperatingSystemCs-fr-Mac\"> </a></td><td>Mac</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Other\">Other</a><a name=\"OperatingSystemCs-fr-Other\"> </a></td><td>Autre</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-fr",
+  "version" : "2.1.0",
+  "name" : "OperatingSystemCsFr",
+  "title" : "Système d’exploitation",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "French (fr) supplement to OperatingSystemCs. Unofficial agent translation.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+  "count" : 5,
+  "concept" : [{
+    "code" : "Linux",
+    "display" : "Linux",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Linux"
+    }]
+  },
+  {
+    "code" : "Unix",
+    "display" : "Unix",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Unix"
+    }]
+  },
+  {
+    "code" : "Windows",
+    "display" : "Windows",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Windows"
+    }]
+  },
+  {
+    "code" : "Mac",
+    "display" : "Mac",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Mac"
+    }]
+  },
+  {
+    "code" : "Other",
+    "display" : "Autre",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Autre"
+    }]
+  }]
+}

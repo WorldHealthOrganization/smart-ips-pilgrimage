@@ -1,0 +1,79 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS-HAJJ-ACTOR-ru",
+  "language" : "ru",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ru\" lang=\"ru\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS-HAJJ-ACTOR-ru</b></p><a name=\"IPS-HAJJ-ACTOR-ru\"> </a><a name=\"hcIPS-HAJJ-ACTOR-ru\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: ru</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-ACTOR-ru</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochie\">ochie</a><a name=\"IPS-HAJJ-ACTOR-ru-ochie\"> </a></td><td>Origin Country HIE</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochw\">ochw</a><a name=\"IPS-HAJJ-ACTOR-ru-ochw\"> </a></td><td>Origin Country Health Wallet</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-hcemr\">hcemr</a><a name=\"IPS-HAJJ-ACTOR-ru-hcemr\"> </a></td><td>Host Country EMR</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-pilgrim\">pilgrim</a><a name=\"IPS-HAJJ-ACTOR-ru-pilgrim\"> </a></td><td>Pilgrim</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-scanner\">scanner</a><a name=\"IPS-HAJJ-ACTOR-ru-scanner\"> </a></td><td>Scanner</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-qrcode\">qrcode</a><a name=\"IPS-HAJJ-ACTOR-ru-qrcode\"> </a></td><td>QR Code</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-ACTOR-ru",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJACTORRu",
+  "title" : "IPS.HAJJ.ACTOR (ru designations, unofficial)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Russian designations for IPS.HAJJ.ACTOR: an agent translation that no person has signed off.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+  "concept" : [{
+    "code" : "ochie",
+    "display" : "Origin Country HIE",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "HIE страны происхождения"
+    }]
+  },
+  {
+    "code" : "ochw",
+    "display" : "Origin Country Health Wallet",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Кошелёк медицинских данных страны происхождения"
+    }]
+  },
+  {
+    "code" : "hcemr",
+    "display" : "Host Country EMR",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "EMR принимающей страны"
+    }]
+  },
+  {
+    "code" : "pilgrim",
+    "display" : "Pilgrim",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Паломник"
+    }]
+  },
+  {
+    "code" : "scanner",
+    "display" : "Scanner",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Сканер"
+    }]
+  },
+  {
+    "code" : "qrcode",
+    "display" : "QR Code",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "QR-код"
+    }]
+  }]
+}

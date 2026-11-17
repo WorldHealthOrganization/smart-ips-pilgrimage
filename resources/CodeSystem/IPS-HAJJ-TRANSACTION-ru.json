@@ -1,0 +1,103 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS-HAJJ-TRANSACTION-ru",
+  "language" : "ru",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ru\" lang=\"ru\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS-HAJJ-TRANSACTION-ru</b></p><a name=\"IPS-HAJJ-TRANSACTION-ru\"> </a><a name=\"hcIPS-HAJJ-TRANSACTION-ru\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: ru</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-TRANSACTION-ru</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-keys-put\">keys-put</a><a name=\"IPS-HAJJ-TRANSACTION-ru-keys-put\"> </a></td><td>Publish Verification Keys</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-keys-get\">keys-get</a><a name=\"IPS-HAJJ-TRANSACTION-ru-keys-get\"> </a></td><td>Retrieve Verification Keys</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-doc-sign\">doc-sign</a><a name=\"IPS-HAJJ-TRANSACTION-ru-doc-sign\"> </a></td><td>Sign IPS</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-doc-get\">doc-get</a><a name=\"IPS-HAJJ-TRANSACTION-ru-doc-get\"> </a></td><td>Retrieve IPS</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-sign\">shl-sign</a><a name=\"IPS-HAJJ-TRANSACTION-ru-shl-sign\"> </a></td><td>Sign Smart Health Link</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-doc-view\">shl-doc-view</a><a name=\"IPS-HAJJ-TRANSACTION-ru-shl-doc-view\"> </a></td><td>Access SHL Document Viewer</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-get-manifest\">shl-get-manifest</a><a name=\"IPS-HAJJ-TRANSACTION-ru-shl-get-manifest\"> </a></td><td>Retrieve SHL Document Manifest</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-consent-post-counseling\">consent-post-counseling</a><a name=\"IPS-HAJJ-TRANSACTION-ru-consent-post-counseling\"> </a></td><td>Record Consent - Post-Counseling</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-consent-wallet\">consent-wallet</a><a name=\"IPS-HAJJ-TRANSACTION-ru-consent-wallet\"> </a></td><td>Record Consent - Digital Health Wallet</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-TRANSACTION-ru",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJTRANSACTIONRu",
+  "title" : "IPS.HAJJ.TRANSACTION (ru designations, unofficial)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Russian designations for IPS.HAJJ.TRANSACTION: an agent translation that no person has signed off.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+  "concept" : [{
+    "code" : "keys-put",
+    "display" : "Publish Verification Keys",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Опубликовать ключи проверки"
+    }]
+  },
+  {
+    "code" : "keys-get",
+    "display" : "Retrieve Verification Keys",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Получить ключи проверки"
+    }]
+  },
+  {
+    "code" : "doc-sign",
+    "display" : "Sign IPS",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Подписать IPS"
+    }]
+  },
+  {
+    "code" : "doc-get",
+    "display" : "Retrieve IPS",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Получить IPS"
+    }]
+  },
+  {
+    "code" : "shl-sign",
+    "display" : "Sign Smart Health Link",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Подписать SMART Health Link"
+    }]
+  },
+  {
+    "code" : "shl-doc-view",
+    "display" : "Access SHL Document Viewer",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Открыть средство просмотра документов SHL"
+    }]
+  },
+  {
+    "code" : "shl-get-manifest",
+    "display" : "Retrieve SHL Document Manifest",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Получить манифест документов SHL"
+    }]
+  },
+  {
+    "code" : "consent-post-counseling",
+    "display" : "Record Consent - Post-Counseling",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Зарегистрировать согласие после консультирования"
+    }]
+  },
+  {
+    "code" : "consent-wallet",
+    "display" : "Record Consent - Digital Health Wallet",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Зарегистрировать согласие в цифровом кошельке медицинских данных"
+    }]
+  }]
+}

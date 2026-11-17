@@ -1,0 +1,708 @@
+{
+  "$schema" : "ig-ast-dependencies/v1",
+  "authority" : "cache",
+  "edges" : 78,
+  "resolvedInIg" : 60,
+  "dependencies" : [{
+    "source" : "Bundle/MyIPS",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS",
+    "targetVersion" : null,
+    "resolved" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS|2.1.0",
+    "path" : "Bundle.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "Composition/ExampleComposition",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPSComposition",
+    "targetVersion" : null,
+    "resolved" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPSComposition|2.1.0",
+    "path" : "Composition.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "Consent/6ba64cfe-b224-4d40-87bf-4d8122e65e62",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent",
+    "targetVersion" : null,
+    "resolved" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent|2.1.0",
+    "path" : "Consent.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c6",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent",
+    "targetVersion" : null,
+    "resolved" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent|2.1.0",
+    "path" : "Consent.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "DocumentReference/FHIRIPSDocumentReference",
+    "kind" : "meta.profile",
+    "target" : "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "DocumentReference.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "DocumentReference/FHIRIPSSignedDocumentReference",
+    "kind" : "meta.profile",
+    "target" : "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "DocumentReference.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "DocumentReference/IPSPDFDocumentReference",
+    "kind" : "meta.profile",
+    "target" : "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "DocumentReference.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "DocumentReference/IPSSignedPDFDocumentReference",
+    "kind" : "meta.profile",
+    "target" : "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "DocumentReference.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "List/PilgrimFolder",
+    "kind" : "meta.profile",
+    "target" : "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "List.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "Organization/ExampleHostMoH",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization",
+    "targetVersion" : null,
+    "resolved" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization|2.1.0",
+    "path" : "Organization.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "Organization/ExampleOriginHIE",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization",
+    "targetVersion" : null,
+    "resolved" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization|2.1.0",
+    "path" : "Organization.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CapabilityStatement/VHLDocumentResponder|2.1.0",
+    "kind" : "imports",
+    "target" : "https://profiles.ihe.net/ITI/MHD/CapabilityStatement/IHE.MHD.DocumentResponder",
+    "targetVersion" : "4.2.2",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-ar|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-es|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-fr|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-ru|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-zh|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-ar|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-es|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-fr|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-ru|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-zh|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-ACTOR-es|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-ACTOR-ru|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-CONSENT-es|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-CONSENT-ru|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-TRANSACTION-es|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-TRANSACTION-ru|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-ar|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-fr|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-zh|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-ar|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-fr|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-zh|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-ar|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-fr|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-zh|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-ar|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-es|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-fr|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-ru|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-zh|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-ar|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-es|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-fr|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-ru|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-zh|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-ar|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-es|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-fr|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-ru|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-zh|2.1.0",
+    "kind" : "supplements",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ImplementationGuide/smart.who.int.ips-pilgrimage|2.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://smart.who.int/base/StructureDefinition/SGImplementationGuide",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "ImplementationGuide.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/Questionnaire/Questionnaire-ConnectathonSubmission|2.1.0",
+    "kind" : "meta.profile",
+    "target" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap",
+    "targetVersion" : null,
+    "resolved" : null,
+    "path" : "Questionnaire.meta.profile",
+    "origin" : "ast-export"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentPeriod|2.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy|2.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy|2.1.0",
+    "kind" : "refers to",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Organization",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy|2.1.0",
+    "kind" : "refers to",
+    "target" : "http://hl7.org/fhir/StructureDefinition/Practitioner",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy|2.1.0",
+    "kind" : "refers to",
+    "target" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+    "targetVersion" : "4.0.1",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent|2.1.0",
+    "kind" : "binds to",
+    "target" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent|2.1.0",
+    "kind" : "binds to",
+    "target" : "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse",
+    "targetVersion" : "3.1.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent|2.1.0",
+    "kind" : "derives from",
+    "target" : "https://profiles.ihe.net/ITI/PCF/StructureDefinition/IHE.PCF.consentIntermediate",
+    "targetVersion" : "1.1.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent|2.1.0",
+    "kind" : "refers to",
+    "target" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPSComposition|2.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips",
+    "targetVersion" : "1.1.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS|2.1.0",
+    "kind" : "derives from",
+    "target" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips",
+    "targetVersion" : "1.1.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS|2.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS|2.1.0",
+    "kind" : "uses",
+    "target" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPSComposition",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPSComposition|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization|2.1.0",
+    "kind" : "derives from",
+    "target" : "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization",
+    "targetVersion" : "3.8.0",
+    "resolved" : null,
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ValueSet/Browser|2.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ValueSet/DistributionModel|2.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR.SYSTEM|2.1.0",
+    "kind" : "excludes from",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR.SYSTEM|2.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR|2.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT|2.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.TRANSACTION|2.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ValueSet/Language|2.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ValueSet/LicensingModel|2.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  },
+  {
+    "source" : "http://smart.who.int/ips-pilgrimage/ValueSet/OperatingSystem|2.1.0",
+    "kind" : "includes from",
+    "target" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+    "targetVersion" : "2.1.0",
+    "resolved" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0",
+    "path" : null,
+    "origin" : "publisher"
+  }]
+}

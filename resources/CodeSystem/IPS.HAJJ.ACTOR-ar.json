@@ -1,0 +1,80 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS.HAJJ.ACTOR-ar",
+  "language" : "ar",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ar\" lang=\"ar\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS.HAJJ.ACTOR-ar</b></p><a name=\"IPS.HAJJ.ACTOR-ar\"> </a><a name=\"hcIPS.HAJJ.ACTOR-ar\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: ar</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-ar</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochie\">ochie</a><a name=\"IPS.HAJJ.ACTOR-ar-ochie\"> </a></td><td>منصة تبادل المعلومات الصحية (HIE) في بلد المنشأ</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochw\">ochw</a><a name=\"IPS.HAJJ.ACTOR-ar-ochw\"> </a></td><td>المحفظة الصحية في بلد المنشأ</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-hcemr\">hcemr</a><a name=\"IPS.HAJJ.ACTOR-ar-hcemr\"> </a></td><td>السجل الطبي الإلكتروني (EMR) في البلد المضيف</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-pilgrim\">pilgrim</a><a name=\"IPS.HAJJ.ACTOR-ar-pilgrim\"> </a></td><td>الحاج</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-scanner\">scanner</a><a name=\"IPS.HAJJ.ACTOR-ar-scanner\"> </a></td><td>الماسح الضوئي</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-qrcode\">qrcode</a><a name=\"IPS.HAJJ.ACTOR-ar-qrcode\"> </a></td><td>رمز QR</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-ar",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJACTORAr",
+  "title" : "نظام الرموز IPS.HAJJ.ACTOR",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "ملحق باللغة العربية (ar) لنظام الرموز IPS.HAJJ.ACTOR: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+  "caseSensitive" : true,
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+  "concept" : [{
+    "code" : "ochie",
+    "display" : "منصة تبادل المعلومات الصحية (HIE) في بلد المنشأ",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "منصة تبادل المعلومات الصحية (HIE) في بلد المنشأ"
+    }]
+  },
+  {
+    "code" : "ochw",
+    "display" : "المحفظة الصحية في بلد المنشأ",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "المحفظة الصحية في بلد المنشأ"
+    }]
+  },
+  {
+    "code" : "hcemr",
+    "display" : "السجل الطبي الإلكتروني (EMR) في البلد المضيف",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "السجل الطبي الإلكتروني (EMR) في البلد المضيف"
+    }]
+  },
+  {
+    "code" : "pilgrim",
+    "display" : "الحاج",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "الحاج"
+    }]
+  },
+  {
+    "code" : "scanner",
+    "display" : "الماسح الضوئي",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "الماسح الضوئي"
+    }]
+  },
+  {
+    "code" : "qrcode",
+    "display" : "رمز QR",
+    "designation" : [{
+      "language" : "ar",
+      "value" : "رمز QR"
+    }]
+  }]
+}

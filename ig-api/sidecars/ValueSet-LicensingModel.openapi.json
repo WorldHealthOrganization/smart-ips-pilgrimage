@@ -1,0 +1,62 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Licensing Model Schema API",
+    "description": "JSON Schema for Licensing Model ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-LicensingModel.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-LicensingModel",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-LicensingModel.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-LicensingModel",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-LicensingModel.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-LicensingModel": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/ips-pilgrimage/ValueSet-LicensingModel.schema.json",
+        "title": "Licensing Model Schema",
+        "description": "JSON Schema for Licensing Model ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "Proprietary",
+              "Open-Source"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the Licensing Model ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/ips-pilgrimage/ValueSet-LicensingModel.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/ips-pilgrimage/ValueSet-LicensingModel.displays.json",
+        "fhir:valueSet": "http://smart.who.int/ips-pilgrimage/ValueSet/LicensingModel",
+        "fhir:version": "2.1.0",
+        "fhir:expansionTimestamp": "2026-11-17T06:35:34+00:00"
+      }
+    }
+  }
+}

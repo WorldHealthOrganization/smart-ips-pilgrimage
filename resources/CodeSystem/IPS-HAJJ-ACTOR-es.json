@@ -1,0 +1,80 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS-HAJJ-ACTOR-es",
+  "language" : "es",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"es\" lang=\"es\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS-HAJJ-ACTOR-es</b></p><a name=\"IPS-HAJJ-ACTOR-es\"> </a><a name=\"hcIPS-HAJJ-ACTOR-es\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: es</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-ACTOR-es</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochie\">ochie</a><a name=\"IPS-HAJJ-ACTOR-es-ochie\"> </a></td><td>HIE del país de origen</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochw\">ochw</a><a name=\"IPS-HAJJ-ACTOR-es-ochw\"> </a></td><td>Billetera de salud del país de origen</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-hcemr\">hcemr</a><a name=\"IPS-HAJJ-ACTOR-es-hcemr\"> </a></td><td>EMR del país anfitrión</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-pilgrim\">pilgrim</a><a name=\"IPS-HAJJ-ACTOR-es-pilgrim\"> </a></td><td>Peregrino</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-scanner\">scanner</a><a name=\"IPS-HAJJ-ACTOR-es-scanner\"> </a></td><td>Escáner</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-qrcode\">qrcode</a><a name=\"IPS-HAJJ-ACTOR-es-qrcode\"> </a></td><td>Código QR</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-ACTOR-es",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJACTOREs",
+  "title" : "IPS.HAJJ.ACTOR (es designations, unofficial)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Spanish designations for IPS.HAJJ.ACTOR: an agent translation that no person has signed off.",
+  "caseSensitive" : false,
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+  "concept" : [{
+    "code" : "ochie",
+    "display" : "HIE del país de origen",
+    "designation" : [{
+      "language" : "es",
+      "value" : "HIE del país de origen"
+    }]
+  },
+  {
+    "code" : "ochw",
+    "display" : "Billetera de salud del país de origen",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Billetera de salud del país de origen"
+    }]
+  },
+  {
+    "code" : "hcemr",
+    "display" : "EMR del país anfitrión",
+    "designation" : [{
+      "language" : "es",
+      "value" : "EMR del país anfitrión"
+    }]
+  },
+  {
+    "code" : "pilgrim",
+    "display" : "Peregrino",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Peregrino"
+    }]
+  },
+  {
+    "code" : "scanner",
+    "display" : "Escáner",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Escáner"
+    }]
+  },
+  {
+    "code" : "qrcode",
+    "display" : "Código QR",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Código QR"
+    }]
+  }]
+}

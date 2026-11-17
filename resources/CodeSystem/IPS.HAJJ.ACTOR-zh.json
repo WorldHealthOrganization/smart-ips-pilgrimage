@@ -1,0 +1,73 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS.HAJJ.ACTOR-zh",
+  "language" : "zh",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"zh\" lang=\"zh\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS.HAJJ.ACTOR-zh</b></p><a name=\"IPS.HAJJ.ACTOR-zh\"> </a><a name=\"hcIPS.HAJJ.ACTOR-zh\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: zh</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-zh</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochie\">ochie</a><a name=\"IPS.HAJJ.ACTOR-zh-ochie\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochw\">ochw</a><a name=\"IPS.HAJJ.ACTOR-zh-ochw\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-hcemr\">hcemr</a><a name=\"IPS.HAJJ.ACTOR-zh-hcemr\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-pilgrim\">pilgrim</a><a name=\"IPS.HAJJ.ACTOR-zh-pilgrim\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-scanner\">scanner</a><a name=\"IPS.HAJJ.ACTOR-zh-scanner\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-qrcode\">qrcode</a><a name=\"IPS.HAJJ.ACTOR-zh-qrcode\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-zh",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJACTORZh",
+  "title" : "IPS.HAJJ.ACTOR — Chinese (zh) supplement",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Simplified Chinese (zh) display designations for the IPS.HAJJ.ACTOR code system, drafted by an agent and not signed off by a human.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+  "concept" : [{
+    "code" : "ochie",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "来源国健康信息交换（HIE）"
+    }]
+  },
+  {
+    "code" : "ochw",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "来源国健康钱包"
+    }]
+  },
+  {
+    "code" : "hcemr",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "东道国电子病历（EMR）"
+    }]
+  },
+  {
+    "code" : "pilgrim",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "朝觐者"
+    }]
+  },
+  {
+    "code" : "scanner",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "扫描器"
+    }]
+  },
+  {
+    "code" : "qrcode",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "QR 码"
+    }]
+  }]
+}

@@ -1,0 +1,1052 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "714870e9-cd94-4c6f-9c9f-f65a7b80844f",
+  "meta" : {
+    "lastUpdated" : "2026-11-17T06:31:57.532+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/OperatingSystem",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-OperatingSystemCs.html\">codesystem Operating System v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-Linux\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Linux\">Linux</a></td><td>Linux</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Linux&quot;, &quot;display&quot;: &quot;Linux&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Linux&quot;/&gt;&lt;display value=&quot;Linux&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-Unix\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Unix\">Unix</a></td><td>Unix</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Unix&quot;, &quot;display&quot;: &quot;Unix&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Unix&quot;/&gt;&lt;display value=&quot;Unix&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-Windows\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Windows\">Windows</a></td><td>Windows</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Windows&quot;, &quot;display&quot;: &quot;Windows&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Windows&quot;/&gt;&lt;display value=&quot;Windows&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-Mac\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Mac\">Mac</a></td><td>Mac</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Mac&quot;, &quot;display&quot;: &quot;Mac&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Mac&quot;/&gt;&lt;display value=&quot;Mac&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-Other\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Other\">Other</a></td><td>Other</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Other&quot;, &quot;display&quot;: &quot;Other&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Other&quot;/&gt;&lt;display value=&quot;Other&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/OperatingSystem",
+      "version" : "2.1.0",
+      "name" : "OperatingSystem",
+      "title" : "Operating System",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:b22e3aa6-b6fa-4ffc-8d91-f3d31305f44d",
+        "timestamp" : "2026-11-17T06:35:29+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+          "code" : "Linux",
+          "display" : "Linux"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+          "code" : "Unix",
+          "display" : "Unix"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+          "code" : "Windows",
+          "display" : "Windows"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+          "code" : "Mac",
+          "display" : "Mac"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+          "code" : "Other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/Browser",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-BrowserCs.html\">codesystem Browser v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 6 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-Firefox\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-Firefox\">Firefox</a></td><td>Firefox</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Firefox&quot;, &quot;display&quot;: &quot;Firefox&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Firefox&quot;/&gt;&lt;display value=&quot;Firefox&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-Chrome\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-Chrome\">Chrome</a></td><td>Chrome</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Chrome&quot;, &quot;display&quot;: &quot;Chrome&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Chrome&quot;/&gt;&lt;display value=&quot;Chrome&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-MicrosoftEdge\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-MicrosoftEdge\">MicrosoftEdge</a></td><td>MicrosoftEdge</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;MicrosoftEdge&quot;, &quot;display&quot;: &quot;MicrosoftEdge&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;MicrosoftEdge&quot;/&gt;&lt;display value=&quot;MicrosoftEdge&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-InternetExplorer\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-InternetExplorer\">InternetExplorer</a></td><td>InternetExplorer</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;InternetExplorer&quot;, &quot;display&quot;: &quot;InternetExplorer&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;InternetExplorer&quot;/&gt;&lt;display value=&quot;InternetExplorer&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-Safari\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-Safari\">Safari</a></td><td>Safari</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Safari&quot;, &quot;display&quot;: &quot;Safari&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Safari&quot;/&gt;&lt;display value=&quot;Safari&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-Other\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-Other\">Other</a></td><td>Other</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Other&quot;, &quot;display&quot;: &quot;Other&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Other&quot;/&gt;&lt;display value=&quot;Other&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/Browser",
+      "version" : "2.1.0",
+      "name" : "Browser",
+      "title" : "Browser",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:fac59fcb-b9a2-4aee-b641-2e8566a526c4",
+        "timestamp" : "2026-11-17T06:35:29+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "Firefox",
+          "display" : "Firefox"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "Chrome",
+          "display" : "Chrome"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "MicrosoftEdge",
+          "display" : "MicrosoftEdge"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "InternetExplorer",
+          "display" : "InternetExplorer"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "Safari",
+          "display" : "Safari"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "Other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/DistributionModel",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-DistributionModelCs.html\">codesystem Distribution Model v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-Cloud-based\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-Cloud-based\">Cloud-based</a></td><td>Cloud-based</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Cloud-based&quot;, &quot;display&quot;: &quot;Cloud-based&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Cloud-based&quot;/&gt;&lt;display value=&quot;Cloud-based&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-On-premise\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-On-premise\">On-premise</a></td><td>On-premise</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;On-premise&quot;, &quot;display&quot;: &quot;On-premise&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;On-premise&quot;/&gt;&lt;display value=&quot;On-premise&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-Hybrid\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-Hybrid\">Hybrid</a></td><td>Hybrid</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Hybrid&quot;, &quot;display&quot;: &quot;Hybrid&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Hybrid&quot;/&gt;&lt;display value=&quot;Hybrid&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/DistributionModel",
+      "version" : "2.1.0",
+      "name" : "DistributionModel",
+      "title" : "Distribution Model",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:37acc3c3-219d-449a-a000-b09195f4df36",
+        "timestamp" : "2026-11-17T06:35:29+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+          "code" : "Cloud-based",
+          "display" : "Cloud-based"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+          "code" : "On-premise",
+          "display" : "On-premise"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+          "code" : "Hybrid",
+          "display" : "Hybrid"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/LicensingModel",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-LicensingModelCs.html\">codesystem Licensing Model v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-Proprietary\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LicensingModelCs.html#LicensingModelCs-Proprietary\">Proprietary</a></td><td>Proprietary</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Proprietary&quot;, &quot;display&quot;: &quot;Proprietary&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Proprietary&quot;/&gt;&lt;display value=&quot;Proprietary&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-Open-Source\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LicensingModelCs.html#LicensingModelCs-Open-Source\">Open-Source</a></td><td>Open-Source</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Open-Source&quot;, &quot;display&quot;: &quot;Open-Source&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Open-Source&quot;/&gt;&lt;display value=&quot;Open-Source&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/LicensingModel",
+      "version" : "2.1.0",
+      "name" : "LicensingModel",
+      "title" : "Licensing Model",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:5c3d6ea7-fda4-400c-bd43-5b4614962853",
+        "timestamp" : "2026-11-17T06:35:29+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs",
+          "code" : "Proprietary",
+          "display" : "Proprietary"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs",
+          "code" : "Open-Source",
+          "display" : "Open-Source"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/Language",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-LanguageCs.html\">codesystem Language v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 7 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-Arabic\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-Arabic\">Arabic</a></td><td>Arabic</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Arabic&quot;, &quot;display&quot;: &quot;Arabic&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Arabic&quot;/&gt;&lt;display value=&quot;Arabic&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-Chinese\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-Chinese\">Chinese</a></td><td>Chinese</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Chinese&quot;, &quot;display&quot;: &quot;Chinese&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Chinese&quot;/&gt;&lt;display value=&quot;Chinese&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-English\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-English\">English</a></td><td>English</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;English&quot;, &quot;display&quot;: &quot;English&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;English&quot;/&gt;&lt;display value=&quot;English&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-French\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-French\">French</a></td><td>French</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;French&quot;, &quot;display&quot;: &quot;French&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;French&quot;/&gt;&lt;display value=&quot;French&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-Russian\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-Russian\">Russian</a></td><td>Russian</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Russian&quot;, &quot;display&quot;: &quot;Russian&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Russian&quot;/&gt;&lt;display value=&quot;Russian&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-Spanish\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-Spanish\">Spanish</a></td><td>Spanish</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Spanish&quot;, &quot;display&quot;: &quot;Spanish&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Spanish&quot;/&gt;&lt;display value=&quot;Spanish&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-Other\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-Other\">Other</a></td><td>Other</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Other&quot;, &quot;display&quot;: &quot;Other&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Other&quot;/&gt;&lt;display value=&quot;Other&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/Language",
+      "version" : "2.1.0",
+      "name" : "Language",
+      "title" : "Language",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:37fe02a0-7210-4635-8b66-3e9772e02d01",
+        "timestamp" : "2026-11-17T06:35:30+00:00",
+        "total" : 7,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "Arabic",
+          "display" : "Arabic"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "Chinese",
+          "display" : "Chinese"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "English",
+          "display" : "English"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "French",
+          "display" : "French"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "Russian",
+          "display" : "Russian"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "Spanish",
+          "display" : "Spanish"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "Other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR.SYSTEM",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-IPS.HAJJ.ACTOR.html\">codesystem IPS.HAJJ.ACTOR CodeSystem v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-ochie\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochie\">ochie</a></td><td>Origin Country HIE</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;ochie&quot;, &quot;display&quot;: &quot;Origin Country HIE&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;ochie&quot;/&gt;&lt;display value=&quot;Origin Country HIE&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-ochw\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochw\">ochw</a></td><td>Origin Country Health Wallet</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;ochw&quot;, &quot;display&quot;: &quot;Origin Country Health Wallet&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;ochw&quot;/&gt;&lt;display value=&quot;Origin Country Health Wallet&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-hcemr\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-hcemr\">hcemr</a></td><td>Host Country EMR</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;hcemr&quot;, &quot;display&quot;: &quot;Host Country EMR&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;hcemr&quot;/&gt;&lt;display value=&quot;Host Country EMR&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-scanner\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-scanner\">scanner</a></td><td>Scanner</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;scanner&quot;, &quot;display&quot;: &quot;Scanner&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;scanner&quot;/&gt;&lt;display value=&quot;Scanner&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR.SYSTEM",
+      "version" : "2.1.0",
+      "name" : "IPS_HAJJ_ACTOR_SYSTEM",
+      "title" : "IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor",
+      "status" : "active",
+      "experimental" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:589a006c-d87f-4de7-9e4b-a07ac955f650",
+        "timestamp" : "2026-11-17T06:35:30+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "ochie",
+          "display" : "Origin Country HIE"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "ochw",
+          "display" : "Origin Country Health Wallet"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "hcemr",
+          "display" : "Host Country EMR"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "scanner",
+          "display" : "Scanner"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/Browser",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-BrowserCs.html\">codesystem Browser v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 6 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-Firefox\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-Firefox\">Firefox</a></td><td>Firefox</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Firefox&quot;, &quot;display&quot;: &quot;Firefox&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Firefox&quot;/&gt;&lt;display value=&quot;Firefox&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-Chrome\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-Chrome\">Chrome</a></td><td>Chrome</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Chrome&quot;, &quot;display&quot;: &quot;Chrome&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Chrome&quot;/&gt;&lt;display value=&quot;Chrome&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-MicrosoftEdge\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-MicrosoftEdge\">MicrosoftEdge</a></td><td>MicrosoftEdge</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;MicrosoftEdge&quot;, &quot;display&quot;: &quot;MicrosoftEdge&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;MicrosoftEdge&quot;/&gt;&lt;display value=&quot;MicrosoftEdge&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-InternetExplorer\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-InternetExplorer\">InternetExplorer</a></td><td>InternetExplorer</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;InternetExplorer&quot;, &quot;display&quot;: &quot;InternetExplorer&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;InternetExplorer&quot;/&gt;&lt;display value=&quot;InternetExplorer&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-Safari\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-Safari\">Safari</a></td><td>Safari</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Safari&quot;, &quot;display&quot;: &quot;Safari&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Safari&quot;/&gt;&lt;display value=&quot;Safari&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-Other\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BrowserCs.html#BrowserCs-Other\">Other</a></td><td>Other</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Other&quot;, &quot;display&quot;: &quot;Other&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Other&quot;/&gt;&lt;display value=&quot;Other&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/Browser",
+      "version" : "2.1.0",
+      "name" : "Browser",
+      "title" : "Browser",
+      "status" : "draft",
+      "date" : "2026-11-17T06:31:57+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:37c3cc04-f51e-41fc-9acf-1dca6ba12ee8",
+        "timestamp" : "2026-11-17T06:35:33+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "Firefox",
+          "display" : "Firefox"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "Chrome",
+          "display" : "Chrome"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "MicrosoftEdge",
+          "display" : "MicrosoftEdge"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "InternetExplorer",
+          "display" : "InternetExplorer"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "Safari",
+          "display" : "Safari"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+          "code" : "Other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/DistributionModel",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-DistributionModelCs.html\">codesystem Distribution Model v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-Cloud-based\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-Cloud-based\">Cloud-based</a></td><td>Cloud-based</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Cloud-based&quot;, &quot;display&quot;: &quot;Cloud-based&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Cloud-based&quot;/&gt;&lt;display value=&quot;Cloud-based&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-On-premise\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-On-premise\">On-premise</a></td><td>On-premise</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;On-premise&quot;, &quot;display&quot;: &quot;On-premise&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;On-premise&quot;/&gt;&lt;display value=&quot;On-premise&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-Hybrid\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-Hybrid\">Hybrid</a></td><td>Hybrid</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Hybrid&quot;, &quot;display&quot;: &quot;Hybrid&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Hybrid&quot;/&gt;&lt;display value=&quot;Hybrid&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/DistributionModel",
+      "version" : "2.1.0",
+      "name" : "DistributionModel",
+      "title" : "Distribution Model",
+      "status" : "draft",
+      "date" : "2026-11-17T06:31:57+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:a5e1655e-028e-4095-987a-bc4ff0a81e06",
+        "timestamp" : "2026-11-17T06:35:34+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+          "code" : "Cloud-based",
+          "display" : "Cloud-based"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+          "code" : "On-premise",
+          "display" : "On-premise"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+          "code" : "Hybrid",
+          "display" : "Hybrid"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR.SYSTEM",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-IPS.HAJJ.ACTOR.html\">codesystem IPS.HAJJ.ACTOR CodeSystem v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-ochie\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochie\">ochie</a></td><td>Origin Country HIE</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;ochie&quot;, &quot;display&quot;: &quot;Origin Country HIE&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;ochie&quot;/&gt;&lt;display value=&quot;Origin Country HIE&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-ochw\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochw\">ochw</a></td><td>Origin Country Health Wallet</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;ochw&quot;, &quot;display&quot;: &quot;Origin Country Health Wallet&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;ochw&quot;/&gt;&lt;display value=&quot;Origin Country Health Wallet&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-hcemr\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-hcemr\">hcemr</a></td><td>Host Country EMR</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;hcemr&quot;, &quot;display&quot;: &quot;Host Country EMR&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;hcemr&quot;/&gt;&lt;display value=&quot;Host Country EMR&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-scanner\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-scanner\">scanner</a></td><td>Scanner</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;scanner&quot;, &quot;display&quot;: &quot;Scanner&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;scanner&quot;/&gt;&lt;display value=&quot;Scanner&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR.SYSTEM",
+      "version" : "2.1.0",
+      "name" : "IPS_HAJJ_ACTOR_SYSTEM",
+      "title" : "IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-11-17T06:31:57+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:86521512-de45-4d52-82a4-eb08f8b999ec",
+        "timestamp" : "2026-11-17T06:35:34+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "ochie",
+          "display" : "Origin Country HIE"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "ochw",
+          "display" : "Origin Country Health Wallet"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "hcemr",
+          "display" : "Host Country EMR"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "scanner",
+          "display" : "Scanner"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-IPS.HAJJ.ACTOR.html\">codesystem IPS.HAJJ.ACTOR CodeSystem v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 6 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-ochie\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochie\">ochie</a></td><td>Origin Country HIE</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;ochie&quot;, &quot;display&quot;: &quot;Origin Country HIE&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;ochie&quot;/&gt;&lt;display value=&quot;Origin Country HIE&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-ochw\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-ochw\">ochw</a></td><td>Origin Country Health Wallet</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;ochw&quot;, &quot;display&quot;: &quot;Origin Country Health Wallet&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;ochw&quot;/&gt;&lt;display value=&quot;Origin Country Health Wallet&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-hcemr\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-hcemr\">hcemr</a></td><td>Host Country EMR</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;hcemr&quot;, &quot;display&quot;: &quot;Host Country EMR&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;hcemr&quot;/&gt;&lt;display value=&quot;Host Country EMR&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-pilgrim\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-pilgrim\">pilgrim</a></td><td>Pilgrim</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;pilgrim&quot;, &quot;display&quot;: &quot;Pilgrim&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;pilgrim&quot;/&gt;&lt;display value=&quot;Pilgrim&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-scanner\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-scanner\">scanner</a></td><td>Scanner</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;scanner&quot;, &quot;display&quot;: &quot;Scanner&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;scanner&quot;/&gt;&lt;display value=&quot;Scanner&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-qrcode\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.ACTOR.html#IPS.HAJJ.ACTOR-qrcode\">qrcode</a></td><td>QR Code</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;qrcode&quot;, &quot;display&quot;: &quot;QR Code&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;qrcode&quot;/&gt;&lt;display value=&quot;QR Code&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR",
+      "version" : "2.1.0",
+      "name" : "IPS_HAJJ_ACTOR",
+      "title" : "IPS.HAJJ.ACTOR ValueSet of actor",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-11-17T06:31:57+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:b0a4035c-8b15-4ad4-ae21-862f36851cdc",
+        "timestamp" : "2026-11-17T06:35:34+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "ochie",
+          "display" : "Origin Country HIE"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "ochw",
+          "display" : "Origin Country Health Wallet"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "hcemr",
+          "display" : "Host Country EMR"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "pilgrim",
+          "display" : "Pilgrim"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "scanner",
+          "display" : "Scanner"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR",
+          "code" : "qrcode",
+          "display" : "QR Code"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-IPS.HAJJ.CONSENT.html\">codesystem IPS.HAJJ.CONSENT CodeSystem v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 6 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-CONSENT-KSA\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-KSA\">CONSENT-KSA</a></td><td>Consent for Kingdom of Saudi Arabia</td><td>The Pilgrim consents to share his-her International Patient Summary (IPS data) during the  provision of clinical care at Ministry of Health-Saudi Arabia in Haj District area healthcare facilities through the Hajj-1446/2025 event as any follow up care that might be needed from any healthcare practitioners</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;CONSENT-KSA&quot;, &quot;display&quot;: &quot;Consent for Kingdom of Saudi Arabia&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;CONSENT-KSA&quot;/&gt;&lt;display value=&quot;Consent for Kingdom of Saudi Arabia&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-CONSENT-IDN\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-IDN\">CONSENT-IDN</a></td><td>Consent for Indonesia</td><td>&lt;INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj&gt;</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;CONSENT-IDN&quot;, &quot;display&quot;: &quot;Consent for Indonesia&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;CONSENT-IDN&quot;/&gt;&lt;display value=&quot;Consent for Indonesia&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-CONSENT-MYS\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-MYS\">CONSENT-MYS</a></td><td>Consent for Malaysia</td><td>The Malaysian Hajj pilgrim has provided consent for sharing the International Patient Summary (IPS) generated from the data recorded during the Hajj pilgrim health examination, as well as the vaccination records stored on MySejahtera to Kingdom of Saudi Arabia</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;CONSENT-MYS&quot;, &quot;display&quot;: &quot;Consent for Malaysia&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;CONSENT-MYS&quot;/&gt;&lt;display value=&quot;Consent for Malaysia&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-CONSENT-OMN\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-OMN\">CONSENT-OMN</a></td><td>Consent for Oman</td><td>&lt;INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care&gt;</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;CONSENT-OMN&quot;, &quot;display&quot;: &quot;Consent for Oman&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;CONSENT-OMN&quot;/&gt;&lt;display value=&quot;Consent for Oman&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-CONSENT-XXK\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-XXK\">CONSENT-XXK</a></td><td>Consent for Onesa (fictional example)</td><td>Fictional example, used by this guide's examples and the pilgrim's journey: the Onesan pilgrim consents to Onesa's health information exchange releasing the International Patient Summary (IPS), generated from the data recorded during the pre-pilgrimage health examination, to the Ministry of Health of Taifafeki for clinical care during the pilgrimage. Onesa (ISO 3166-1 user-assigned code XXK) is not a real country; this code is modelled on CONSENT-MYS.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;CONSENT-XXK&quot;, &quot;display&quot;: &quot;Consent for Onesa (fictional example)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;CONSENT-XXK&quot;/&gt;&lt;display value=&quot;Consent for Onesa (fictional example)&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-CONSENT-XXR\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-XXR\">CONSENT-XXR</a></td><td>Consent for Taifafeki (fictional example)</td><td>Fictional example, used by this guide's examples and the pilgrim's journey: the pilgrim consents to share his-her International Patient Summary (IPS) during the provision of clinical care at Ministry of Health of Taifafeki healthcare facilities through the pilgrimage, and any follow-up care that might be needed from any healthcare practitioners. Taifafeki (ISO 3166-1 user-assigned code XXR) is not a real country; this code is modelled on CONSENT-KSA.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;CONSENT-XXR&quot;, &quot;display&quot;: &quot;Consent for Taifafeki (fictional example)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;CONSENT-XXR&quot;/&gt;&lt;display value=&quot;Consent for Taifafeki (fictional example)&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT",
+      "version" : "2.1.0",
+      "name" : "IPS_HAJJ_CONSENT",
+      "title" : "IPS.HAJJ.CONSENT ValueSet of consent policies",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-11-17T06:31:57+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:be2d1383-7796-49e1-8b59-eb85d275bf1a",
+        "timestamp" : "2026-11-17T06:35:34+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+          "code" : "CONSENT-KSA",
+          "display" : "Consent for Kingdom of Saudi Arabia"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+          "code" : "CONSENT-IDN",
+          "display" : "Consent for Indonesia"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+          "code" : "CONSENT-MYS",
+          "display" : "Consent for Malaysia"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+          "code" : "CONSENT-OMN",
+          "display" : "Consent for Oman"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+          "code" : "CONSENT-XXK",
+          "display" : "Consent for Onesa (fictional example)"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+          "code" : "CONSENT-XXR",
+          "display" : "Consent for Taifafeki (fictional example)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.TRANSACTION",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html\">codesystem IPS.HAJJ.TRANSACTION CodeSystem v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 9 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-keys-put\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-keys-put\">keys-put</a></td><td>Publish Verification Keys</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;keys-put&quot;, &quot;display&quot;: &quot;Publish Verification Keys&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;keys-put&quot;/&gt;&lt;display value=&quot;Publish Verification Keys&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-keys-get\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-keys-get\">keys-get</a></td><td>Retrieve Verification Keys</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;keys-get&quot;, &quot;display&quot;: &quot;Retrieve Verification Keys&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;keys-get&quot;/&gt;&lt;display value=&quot;Retrieve Verification Keys&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-doc-sign\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-doc-sign\">doc-sign</a></td><td>Sign IPS</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;doc-sign&quot;, &quot;display&quot;: &quot;Sign IPS&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;doc-sign&quot;/&gt;&lt;display value=&quot;Sign IPS&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-doc-get\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-doc-get\">doc-get</a></td><td>Retrieve IPS</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;doc-get&quot;, &quot;display&quot;: &quot;Retrieve IPS&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;doc-get&quot;/&gt;&lt;display value=&quot;Retrieve IPS&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-shl-sign\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-sign\">shl-sign</a></td><td>Sign Smart Health Link</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;shl-sign&quot;, &quot;display&quot;: &quot;Sign Smart Health Link&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;shl-sign&quot;/&gt;&lt;display value=&quot;Sign Smart Health Link&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-shl-doc-view\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-doc-view\">shl-doc-view</a></td><td>Access SHL Document Viewer</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;shl-doc-view&quot;, &quot;display&quot;: &quot;Access SHL Document Viewer&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;shl-doc-view&quot;/&gt;&lt;display value=&quot;Access SHL Document Viewer&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-shl-get-manifest\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-get-manifest\">shl-get-manifest</a></td><td>Retrieve SHL Document Manifest</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;shl-get-manifest&quot;, &quot;display&quot;: &quot;Retrieve SHL Document Manifest&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;shl-get-manifest&quot;/&gt;&lt;display value=&quot;Retrieve SHL Document Manifest&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-consent-post-counseling\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-consent-post-counseling\">consent-post-counseling</a></td><td>Record Consent - Post-Counseling</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;consent-post-counseling&quot;, &quot;display&quot;: &quot;Record Consent - Post-Counseling&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;consent-post-counseling&quot;/&gt;&lt;display value=&quot;Record Consent - Post-Counseling&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-consent-wallet\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-consent-wallet\">consent-wallet</a></td><td>Record Consent - Digital Health Wallet</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;consent-wallet&quot;, &quot;display&quot;: &quot;Record Consent - Digital Health Wallet&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;consent-wallet&quot;/&gt;&lt;display value=&quot;Record Consent - Digital Health Wallet&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.TRANSACTION",
+      "version" : "2.1.0",
+      "name" : "IPS_HAJJ_TRANSACTION",
+      "title" : "IPS.HAJJ.TRANSACTION ValueSet of transaction",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-11-17T06:31:57+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:2c1a6730-3b6b-456a-b92e-02713a82977c",
+        "timestamp" : "2026-11-17T06:35:34+00:00",
+        "total" : 9,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+          "code" : "keys-put",
+          "display" : "Publish Verification Keys"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+          "code" : "keys-get",
+          "display" : "Retrieve Verification Keys"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+          "code" : "doc-sign",
+          "display" : "Sign IPS"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+          "code" : "doc-get",
+          "display" : "Retrieve IPS"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+          "code" : "shl-sign",
+          "display" : "Sign Smart Health Link"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+          "code" : "shl-doc-view",
+          "display" : "Access SHL Document Viewer"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+          "code" : "shl-get-manifest",
+          "display" : "Retrieve SHL Document Manifest"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+          "code" : "consent-post-counseling",
+          "display" : "Record Consent - Post-Counseling"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+          "code" : "consent-wallet",
+          "display" : "Record Consent - Digital Health Wallet"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/Language",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-LanguageCs.html\">codesystem Language v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 7 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-Arabic\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-Arabic\">Arabic</a></td><td>Arabic</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Arabic&quot;, &quot;display&quot;: &quot;Arabic&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Arabic&quot;/&gt;&lt;display value=&quot;Arabic&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-Chinese\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-Chinese\">Chinese</a></td><td>Chinese</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Chinese&quot;, &quot;display&quot;: &quot;Chinese&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Chinese&quot;/&gt;&lt;display value=&quot;Chinese&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-English\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-English\">English</a></td><td>English</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;English&quot;, &quot;display&quot;: &quot;English&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;English&quot;/&gt;&lt;display value=&quot;English&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-French\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-French\">French</a></td><td>French</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;French&quot;, &quot;display&quot;: &quot;French&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;French&quot;/&gt;&lt;display value=&quot;French&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-Russian\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-Russian\">Russian</a></td><td>Russian</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Russian&quot;, &quot;display&quot;: &quot;Russian&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Russian&quot;/&gt;&lt;display value=&quot;Russian&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-Spanish\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-Spanish\">Spanish</a></td><td>Spanish</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Spanish&quot;, &quot;display&quot;: &quot;Spanish&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Spanish&quot;/&gt;&lt;display value=&quot;Spanish&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-Other\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LanguageCs.html#LanguageCs-Other\">Other</a></td><td>Other</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Other&quot;, &quot;display&quot;: &quot;Other&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Other&quot;/&gt;&lt;display value=&quot;Other&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/Language",
+      "version" : "2.1.0",
+      "name" : "Language",
+      "title" : "Language",
+      "status" : "draft",
+      "date" : "2026-11-17T06:31:57+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:d660bf77-8a03-4972-b32c-0e031f6c2bb7",
+        "timestamp" : "2026-11-17T06:35:34+00:00",
+        "total" : 7,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "Arabic",
+          "display" : "Arabic"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "Chinese",
+          "display" : "Chinese"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "English",
+          "display" : "English"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "French",
+          "display" : "French"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "Russian",
+          "display" : "Russian"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "Spanish",
+          "display" : "Spanish"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+          "code" : "Other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/LicensingModel",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-LicensingModelCs.html\">codesystem Licensing Model v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-Proprietary\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LicensingModelCs.html#LicensingModelCs-Proprietary\">Proprietary</a></td><td>Proprietary</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Proprietary&quot;, &quot;display&quot;: &quot;Proprietary&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Proprietary&quot;/&gt;&lt;display value=&quot;Proprietary&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-Open-Source\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-LicensingModelCs.html#LicensingModelCs-Open-Source\">Open-Source</a></td><td>Open-Source</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Open-Source&quot;, &quot;display&quot;: &quot;Open-Source&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Open-Source&quot;/&gt;&lt;display value=&quot;Open-Source&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/LicensingModel",
+      "version" : "2.1.0",
+      "name" : "LicensingModel",
+      "title" : "Licensing Model",
+      "status" : "draft",
+      "date" : "2026-11-17T06:31:57+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:c171694b-c520-44fd-8edd-157ee05c8a84",
+        "timestamp" : "2026-11-17T06:35:34+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs",
+          "code" : "Proprietary",
+          "display" : "Proprietary"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs",
+          "code" : "Open-Source",
+          "display" : "Open-Source"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://smart.who.int/ips-pilgrimage/ValueSet/OperatingSystem",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-OperatingSystemCs.html\">codesystem Operating System v2.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-Linux\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Linux\">Linux</a></td><td>Linux</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Linux&quot;, &quot;display&quot;: &quot;Linux&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Linux&quot;/&gt;&lt;display value=&quot;Linux&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-Unix\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Unix\">Unix</a></td><td>Unix</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Unix&quot;, &quot;display&quot;: &quot;Unix&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Unix&quot;/&gt;&lt;display value=&quot;Unix&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-Windows\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Windows\">Windows</a></td><td>Windows</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Windows&quot;, &quot;display&quot;: &quot;Windows&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Windows&quot;/&gt;&lt;display value=&quot;Windows&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-Mac\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Mac\">Mac</a></td><td>Mac</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Mac&quot;, &quot;display&quot;: &quot;Mac&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Mac&quot;/&gt;&lt;display value=&quot;Mac&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-Other\"> </a><code>http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-OperatingSystemCs.html#OperatingSystemCs-Other\">Other</a></td><td>Other</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;Other&quot;, &quot;display&quot;: &quot;Other&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;Other&quot;/&gt;&lt;display value=&quot;Other&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/OperatingSystem",
+      "version" : "2.1.0",
+      "name" : "OperatingSystem",
+      "title" : "Operating System",
+      "status" : "draft",
+      "date" : "2026-11-17T06:31:57+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:c218398d-0c71-4d70-9d75-04fb238ac283",
+        "timestamp" : "2026-11-17T06:35:34+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+          "code" : "Linux",
+          "display" : "Linux"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+          "code" : "Unix",
+          "display" : "Unix"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+          "code" : "Windows",
+          "display" : "Windows"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+          "code" : "Mac",
+          "display" : "Mac"
+        },
+        {
+          "system" : "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs",
+          "code" : "Other",
+          "display" : "Other"
+        }]
+      }
+    }
+  }]
+}

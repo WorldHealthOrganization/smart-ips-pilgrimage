@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "#/ValueSets.schema.json",
+  "title": "ValueSet Enumeration Schema",
+  "description": "JSON Schema defining the structure of the ValueSet enumeration endpoint response",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "valueset",
+      "description": "The type of schemas enumerated (valueset)"
+    },
+    "count": {
+      "type": "integer",
+      "description": "Total number of schemas available"
+    },
+    "schemas": {
+      "type": "array",
+      "description": "Array of available schemas",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "Schema filename"
+          },
+          "id": {
+            "type": "string",
+            "description": "Schema $id"
+          },
+          "title": {
+            "type": "string",
+            "description": "Schema title"
+          },
+          "description": {
+            "type": "string",
+            "description": "Schema description"
+          },
+          "url": {
+            "type": "string",
+            "description": "Relative URL to the schema file"
+          },
+          "valueSetUrl": {
+            "type": "string",
+            "description": "FHIR canonical URL of the ValueSet"
+          },
+          "codeCount": {
+            "type": "integer",
+            "description": "Number of codes in the ValueSet"
+          }
+        },
+        "required": [
+          "filename",
+          "title",
+          "url"
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "count",
+    "schemas"
+  ],
+  "example": {
+    "type": "valueset",
+    "count": 9,
+    "schemas": [
+      {
+        "filename": "ValueSet-Browser.schema.json",
+        "id": "http://smart.who.int/ips-pilgrimage/ValueSet-Browser.schema.json",
+        "title": "Browser Schema",
+        "description": "JSON Schema for Browser ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-Browser.schema.json",
+        "valueSetUrl": "http://smart.who.int/ips-pilgrimage/ValueSet/Browser"
+      },
+      {
+        "filename": "ValueSet-DistributionModel.schema.json",
+        "id": "http://smart.who.int/ips-pilgrimage/ValueSet-DistributionModel.schema.json",
+        "title": "Distribution Model Schema",
+        "description": "JSON Schema for Distribution Model ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-DistributionModel.schema.json",
+        "valueSetUrl": "http://smart.who.int/ips-pilgrimage/ValueSet/DistributionModel"
+      },
+      {
+        "filename": "ValueSet-IPS.HAJJ.ACTOR.SYSTEM.schema.json",
+        "id": "http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.schema.json",
+        "title": "IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor Schema",
+        "description": "JSON Schema for IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-IPS.HAJJ.ACTOR.SYSTEM.schema.json",
+        "valueSetUrl": "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR.SYSTEM"
+      },
+      {
+        "filename": "ValueSet-IPS.HAJJ.ACTOR.schema.json",
+        "id": "http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.ACTOR.schema.json",
+        "title": "IPS.HAJJ.ACTOR ValueSet of actor Schema",
+        "description": "JSON Schema for IPS.HAJJ.ACTOR ValueSet of actor ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-IPS.HAJJ.ACTOR.schema.json",
+        "valueSetUrl": "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR"
+      },
+      {
+        "filename": "ValueSet-IPS.HAJJ.CONSENT.schema.json",
+        "id": "http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.CONSENT.schema.json",
+        "title": "IPS.HAJJ.CONSENT ValueSet of consent policies Schema",
+        "description": "JSON Schema for IPS.HAJJ.CONSENT ValueSet of consent policies ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-IPS.HAJJ.CONSENT.schema.json",
+        "valueSetUrl": "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT"
+      },
+      {
+        "filename": "ValueSet-IPS.HAJJ.TRANSACTION.schema.json",
+        "id": "http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.TRANSACTION.schema.json",
+        "title": "IPS.HAJJ.TRANSACTION ValueSet of transaction Schema",
+        "description": "JSON Schema for IPS.HAJJ.TRANSACTION ValueSet of transaction ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-IPS.HAJJ.TRANSACTION.schema.json",
+        "valueSetUrl": "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.TRANSACTION"
+      },
+      {
+        "filename": "ValueSet-Language.schema.json",
+        "id": "http://smart.who.int/ips-pilgrimage/ValueSet-Language.schema.json",
+        "title": "Language Schema",
+        "description": "JSON Schema for Language ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-Language.schema.json",
+        "valueSetUrl": "http://smart.who.int/ips-pilgrimage/ValueSet/Language"
+      },
+      {
+        "filename": "ValueSet-LicensingModel.schema.json",
+        "id": "http://smart.who.int/ips-pilgrimage/ValueSet-LicensingModel.schema.json",
+        "title": "Licensing Model Schema",
+        "description": "JSON Schema for Licensing Model ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-LicensingModel.schema.json",
+        "valueSetUrl": "http://smart.who.int/ips-pilgrimage/ValueSet/LicensingModel"
+      },
+      {
+        "filename": "ValueSet-OperatingSystem.schema.json",
+        "id": "http://smart.who.int/ips-pilgrimage/ValueSet-OperatingSystem.schema.json",
+        "title": "Operating System Schema",
+        "description": "JSON Schema for Operating System ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-OperatingSystem.schema.json",
+        "valueSetUrl": "http://smart.who.int/ips-pilgrimage/ValueSet/OperatingSystem"
+      }
+    ]
+  }
+}

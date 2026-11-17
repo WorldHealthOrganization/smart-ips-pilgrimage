@@ -1,0 +1,55 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DistributionModelCs-ru",
+  "language" : "ru",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ru\" lang=\"ru\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DistributionModelCs-ru</b></p><a name=\"DistributionModelCs-ru\"> </a><a name=\"hcDistributionModelCs-ru\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: ru</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-ru</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-Cloud-based\">Cloud-based</a><a name=\"DistributionModelCs-ru-Cloud-based\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-On-premise\">On-premise</a><a name=\"DistributionModelCs-ru-On-premise\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-DistributionModelCs.html#DistributionModelCs-Hybrid\">Hybrid</a><a name=\"DistributionModelCs-ru-Hybrid\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-ru",
+  "version" : "2.1.0",
+  "name" : "DistributionModelCsRu",
+  "title" : "DistributionModelCs (ru designations, unofficial)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Russian designations for DistributionModelCs: an agent translation that no person has signed off.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs",
+  "concept" : [{
+    "code" : "Cloud-based",
+    "display" : "Cloud-based",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Облачная"
+    }]
+  },
+  {
+    "code" : "On-premise",
+    "display" : "On-premise",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Локальная"
+    }]
+  },
+  {
+    "code" : "Hybrid",
+    "display" : "Hybrid",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "Гибридная"
+    }]
+  }]
+}

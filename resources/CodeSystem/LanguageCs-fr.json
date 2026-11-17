@@ -1,0 +1,88 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "LanguageCs-fr",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr\" lang=\"fr\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem LanguageCs-fr</b></p><a name=\"LanguageCs-fr\"> </a><a name=\"hcLanguageCs-fr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-fr</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Arabic\">Arabic</a><a name=\"LanguageCs-fr-Arabic\"> </a></td><td>Arabe</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Chinese\">Chinese</a><a name=\"LanguageCs-fr-Chinese\"> </a></td><td>Chinois</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-English\">English</a><a name=\"LanguageCs-fr-English\"> </a></td><td>Anglais</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-French\">French</a><a name=\"LanguageCs-fr-French\"> </a></td><td>Français</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Russian\">Russian</a><a name=\"LanguageCs-fr-Russian\"> </a></td><td>Russe</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Spanish\">Spanish</a><a name=\"LanguageCs-fr-Spanish\"> </a></td><td>Espagnol</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-LanguageCs.html#LanguageCs-Other\">Other</a><a name=\"LanguageCs-fr-Other\"> </a></td><td>Autre</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-fr",
+  "version" : "2.1.0",
+  "name" : "LanguageCsFr",
+  "title" : "Langue",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "French (fr) supplement to LanguageCs. Unofficial agent translation.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs",
+  "count" : 7,
+  "concept" : [{
+    "code" : "Arabic",
+    "display" : "Arabe",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Arabe"
+    }]
+  },
+  {
+    "code" : "Chinese",
+    "display" : "Chinois",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Chinois"
+    }]
+  },
+  {
+    "code" : "English",
+    "display" : "Anglais",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Anglais"
+    }]
+  },
+  {
+    "code" : "French",
+    "display" : "Français",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Français"
+    }]
+  },
+  {
+    "code" : "Russian",
+    "display" : "Russe",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Russe"
+    }]
+  },
+  {
+    "code" : "Spanish",
+    "display" : "Espagnol",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Espagnol"
+    }]
+  },
+  {
+    "code" : "Other",
+    "display" : "Autre",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Autre"
+    }]
+  }]
+}

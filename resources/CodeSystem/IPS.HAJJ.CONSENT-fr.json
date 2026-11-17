@@ -1,0 +1,68 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS.HAJJ.CONSENT-fr",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr\" lang=\"fr\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS.HAJJ.CONSENT-fr</b></p><a name=\"IPS.HAJJ.CONSENT-fr\"> </a><a name=\"hcIPS.HAJJ.CONSENT-fr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-fr</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-KSA\">CONSENT-KSA</a><a name=\"IPS.HAJJ.CONSENT-fr-CONSENT-KSA\"> </a></td><td>Consentement pour le Royaume d’Arabie saoudite</td><td>Le pèlerin consent à partager son résumé international du patient (données IPS) lors de la prestation de soins cliniques par le ministère de la Santé d’Arabie saoudite dans les établissements de santé de la zone du district du Hajj pendant le Hajj 1446/2025, ainsi que pour tout suivi qui pourrait être nécessaire de la part de professionnels de santé</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-IDN\">CONSENT-IDN</a><a name=\"IPS.HAJJ.CONSENT-fr-CONSENT-IDN\"> </a></td><td>Consentement pour l’Indonésie</td><td>&lt;INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj&gt;</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-MYS\">CONSENT-MYS</a><a name=\"IPS.HAJJ.CONSENT-fr-CONSENT-MYS\"> </a></td><td>Consentement pour la Malaisie</td><td>Le pèlerin malaisien du Hajj a consenti au partage du résumé international du patient (IPS) généré à partir des données enregistrées lors de l’examen de santé du pèlerin du Hajj, ainsi que des dossiers de vaccination conservés dans MySejahtera, avec le Royaume d’Arabie saoudite</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-OMN\">CONSENT-OMN</a><a name=\"IPS.HAJJ.CONSENT-fr-CONSENT-OMN\"> </a></td><td>Consentement pour Oman</td><td>&lt;INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care&gt;</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-fr",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJCONSENTFr",
+  "title" : "Système de codes IPS.HAJJ.CONSENT",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "French (fr) supplement to IPS.HAJJ.CONSENT. Unofficial agent translation.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+  "count" : 4,
+  "concept" : [{
+    "code" : "CONSENT-KSA",
+    "display" : "Consentement pour le Royaume d’Arabie saoudite",
+    "definition" : "Le pèlerin consent à partager son résumé international du patient (données IPS) lors de la prestation de soins cliniques par le ministère de la Santé d’Arabie saoudite dans les établissements de santé de la zone du district du Hajj pendant le Hajj 1446/2025, ainsi que pour tout suivi qui pourrait être nécessaire de la part de professionnels de santé",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Consentement pour le Royaume d’Arabie saoudite"
+    }]
+  },
+  {
+    "code" : "CONSENT-IDN",
+    "display" : "Consentement pour l’Indonésie",
+    "definition" : "<INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj>",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Consentement pour l’Indonésie"
+    }]
+  },
+  {
+    "code" : "CONSENT-MYS",
+    "display" : "Consentement pour la Malaisie",
+    "definition" : "Le pèlerin malaisien du Hajj a consenti au partage du résumé international du patient (IPS) généré à partir des données enregistrées lors de l’examen de santé du pèlerin du Hajj, ainsi que des dossiers de vaccination conservés dans MySejahtera, avec le Royaume d’Arabie saoudite",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Consentement pour la Malaisie"
+    }]
+  },
+  {
+    "code" : "CONSENT-OMN",
+    "display" : "Consentement pour Oman",
+    "definition" : "<INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care>",
+    "designation" : [{
+      "language" : "fr",
+      "value" : "Consentement pour Oman"
+    }]
+  }]
+}

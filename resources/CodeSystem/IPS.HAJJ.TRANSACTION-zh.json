@@ -1,0 +1,94 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS.HAJJ.TRANSACTION-zh",
+  "language" : "zh",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"zh\" lang=\"zh\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS.HAJJ.TRANSACTION-zh</b></p><a name=\"IPS.HAJJ.TRANSACTION-zh\"> </a><a name=\"hcIPS.HAJJ.TRANSACTION-zh\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: zh</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-zh</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-keys-put\">keys-put</a><a name=\"IPS.HAJJ.TRANSACTION-zh-keys-put\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-keys-get\">keys-get</a><a name=\"IPS.HAJJ.TRANSACTION-zh-keys-get\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-doc-sign\">doc-sign</a><a name=\"IPS.HAJJ.TRANSACTION-zh-doc-sign\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-doc-get\">doc-get</a><a name=\"IPS.HAJJ.TRANSACTION-zh-doc-get\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-sign\">shl-sign</a><a name=\"IPS.HAJJ.TRANSACTION-zh-shl-sign\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-doc-view\">shl-doc-view</a><a name=\"IPS.HAJJ.TRANSACTION-zh-shl-doc-view\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-get-manifest\">shl-get-manifest</a><a name=\"IPS.HAJJ.TRANSACTION-zh-shl-get-manifest\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-consent-post-counseling\">consent-post-counseling</a><a name=\"IPS.HAJJ.TRANSACTION-zh-consent-post-counseling\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-consent-wallet\">consent-wallet</a><a name=\"IPS.HAJJ.TRANSACTION-zh-consent-wallet\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-zh",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJTRANSACTIONZh",
+  "title" : "IPS.HAJJ.TRANSACTION — Chinese (zh) supplement",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Simplified Chinese (zh) display designations for the IPS.HAJJ.TRANSACTION code system, drafted by an agent and not signed off by a human.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+  "concept" : [{
+    "code" : "keys-put",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "发布验证密钥"
+    }]
+  },
+  {
+    "code" : "keys-get",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "获取验证密钥"
+    }]
+  },
+  {
+    "code" : "doc-sign",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "签署 IPS"
+    }]
+  },
+  {
+    "code" : "doc-get",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "获取 IPS"
+    }]
+  },
+  {
+    "code" : "shl-sign",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "签署智能健康链接"
+    }]
+  },
+  {
+    "code" : "shl-doc-view",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "访问 SHL 文档查看器"
+    }]
+  },
+  {
+    "code" : "shl-get-manifest",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "获取 SHL 文档清单"
+    }]
+  },
+  {
+    "code" : "consent-post-counseling",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "记录同意——咨询后"
+    }]
+  },
+  {
+    "code" : "consent-wallet",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "记录同意——数字健康钱包"
+    }]
+  }]
+}

@@ -1,0 +1,80 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BrowserCs-es",
+  "language" : "es",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"es\" lang=\"es\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BrowserCs-es</b></p><a name=\"BrowserCs-es\"> </a><a name=\"hcBrowserCs-es\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: es</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-es</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-BrowserCs.html#BrowserCs-Firefox\">Firefox</a><a name=\"BrowserCs-es-Firefox\"> </a></td><td>Firefox</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-BrowserCs.html#BrowserCs-Chrome\">Chrome</a><a name=\"BrowserCs-es-Chrome\"> </a></td><td>Chrome</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-BrowserCs.html#BrowserCs-MicrosoftEdge\">MicrosoftEdge</a><a name=\"BrowserCs-es-MicrosoftEdge\"> </a></td><td>MicrosoftEdge</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-BrowserCs.html#BrowserCs-InternetExplorer\">InternetExplorer</a><a name=\"BrowserCs-es-InternetExplorer\"> </a></td><td>InternetExplorer</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-BrowserCs.html#BrowserCs-Safari\">Safari</a><a name=\"BrowserCs-es-Safari\"> </a></td><td>Safari</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-BrowserCs.html#BrowserCs-Other\">Other</a><a name=\"BrowserCs-es-Other\"> </a></td><td>Otro</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-es",
+  "version" : "2.1.0",
+  "name" : "BrowserCsEs",
+  "title" : "BrowserCs (es designations, unofficial)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Spanish designations for BrowserCs: an agent translation that no person has signed off.",
+  "caseSensitive" : false,
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs",
+  "concept" : [{
+    "code" : "Firefox",
+    "display" : "Firefox",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Firefox"
+    }]
+  },
+  {
+    "code" : "Chrome",
+    "display" : "Chrome",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Chrome"
+    }]
+  },
+  {
+    "code" : "MicrosoftEdge",
+    "display" : "MicrosoftEdge",
+    "designation" : [{
+      "language" : "es",
+      "value" : "MicrosoftEdge"
+    }]
+  },
+  {
+    "code" : "InternetExplorer",
+    "display" : "InternetExplorer",
+    "designation" : [{
+      "language" : "es",
+      "value" : "InternetExplorer"
+    }]
+  },
+  {
+    "code" : "Safari",
+    "display" : "Safari",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Safari"
+    }]
+  },
+  {
+    "code" : "Other",
+    "display" : "Otro",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Otro"
+    }]
+  }]
+}

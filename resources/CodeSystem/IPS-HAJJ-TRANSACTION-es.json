@@ -1,0 +1,104 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS-HAJJ-TRANSACTION-es",
+  "language" : "es",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"es\" lang=\"es\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS-HAJJ-TRANSACTION-es</b></p><a name=\"IPS-HAJJ-TRANSACTION-es\"> </a><a name=\"hcIPS-HAJJ-TRANSACTION-es\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: es</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-TRANSACTION-es</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-keys-put\">keys-put</a><a name=\"IPS-HAJJ-TRANSACTION-es-keys-put\"> </a></td><td>Publicar las claves de verificación</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-keys-get\">keys-get</a><a name=\"IPS-HAJJ-TRANSACTION-es-keys-get\"> </a></td><td>Obtener las claves de verificación</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-doc-sign\">doc-sign</a><a name=\"IPS-HAJJ-TRANSACTION-es-doc-sign\"> </a></td><td>Firmar el IPS</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-doc-get\">doc-get</a><a name=\"IPS-HAJJ-TRANSACTION-es-doc-get\"> </a></td><td>Obtener el IPS</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-sign\">shl-sign</a><a name=\"IPS-HAJJ-TRANSACTION-es-shl-sign\"> </a></td><td>Firmar el Smart Health Link</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-doc-view\">shl-doc-view</a><a name=\"IPS-HAJJ-TRANSACTION-es-shl-doc-view\"> </a></td><td>Acceder al visor de documentos del SHL</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-shl-get-manifest\">shl-get-manifest</a><a name=\"IPS-HAJJ-TRANSACTION-es-shl-get-manifest\"> </a></td><td>Obtener el manifiesto de documentos del SHL</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-consent-post-counseling\">consent-post-counseling</a><a name=\"IPS-HAJJ-TRANSACTION-es-consent-post-counseling\"> </a></td><td>Registrar el consentimiento tras el asesoramiento</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.TRANSACTION.html#IPS.HAJJ.TRANSACTION-consent-wallet\">consent-wallet</a><a name=\"IPS-HAJJ-TRANSACTION-es-consent-wallet\"> </a></td><td>Registrar el consentimiento en la billetera de salud digital</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-TRANSACTION-es",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJTRANSACTIONEs",
+  "title" : "IPS.HAJJ.TRANSACTION (es designations, unofficial)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Spanish designations for IPS.HAJJ.TRANSACTION: an agent translation that no person has signed off.",
+  "caseSensitive" : false,
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION",
+  "concept" : [{
+    "code" : "keys-put",
+    "display" : "Publicar las claves de verificación",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Publicar las claves de verificación"
+    }]
+  },
+  {
+    "code" : "keys-get",
+    "display" : "Obtener las claves de verificación",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Obtener las claves de verificación"
+    }]
+  },
+  {
+    "code" : "doc-sign",
+    "display" : "Firmar el IPS",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Firmar el IPS"
+    }]
+  },
+  {
+    "code" : "doc-get",
+    "display" : "Obtener el IPS",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Obtener el IPS"
+    }]
+  },
+  {
+    "code" : "shl-sign",
+    "display" : "Firmar el Smart Health Link",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Firmar el Smart Health Link"
+    }]
+  },
+  {
+    "code" : "shl-doc-view",
+    "display" : "Acceder al visor de documentos del SHL",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Acceder al visor de documentos del SHL"
+    }]
+  },
+  {
+    "code" : "shl-get-manifest",
+    "display" : "Obtener el manifiesto de documentos del SHL",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Obtener el manifiesto de documentos del SHL"
+    }]
+  },
+  {
+    "code" : "consent-post-counseling",
+    "display" : "Registrar el consentimiento tras el asesoramiento",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Registrar el consentimiento tras el asesoramiento"
+    }]
+  },
+  {
+    "code" : "consent-wallet",
+    "display" : "Registrar el consentimiento en la billetera de salud digital",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Registrar el consentimiento en la billetera de salud digital"
+    }]
+  }]
+}

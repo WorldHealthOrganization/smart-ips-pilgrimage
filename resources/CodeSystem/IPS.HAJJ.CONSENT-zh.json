@@ -1,0 +1,59 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IPS.HAJJ.CONSENT-zh",
+  "language" : "zh",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"zh\" lang=\"zh\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IPS.HAJJ.CONSENT-zh</b></p><a name=\"IPS.HAJJ.CONSENT-zh\"> </a><a name=\"hcIPS.HAJJ.CONSENT-zh\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: zh</p></div><p>This code system supplement <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-zh</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-KSA\">CONSENT-KSA</a><a name=\"IPS.HAJJ.CONSENT-zh-CONSENT-KSA\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-IDN\">CONSENT-IDN</a><a name=\"IPS.HAJJ.CONSENT-zh-CONSENT-IDN\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-MYS\">CONSENT-MYS</a><a name=\"IPS.HAJJ.CONSENT-zh-CONSENT-MYS\"> </a></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-OMN\">CONSENT-OMN</a><a name=\"IPS.HAJJ.CONSENT-zh-CONSENT-OMN\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-zh",
+  "version" : "2.1.0",
+  "name" : "IPSHAJJCONSENTZh",
+  "title" : "IPS.HAJJ.CONSENT — Chinese (zh) supplement",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-17T06:31:57+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    },
+    {
+      "system" : "email",
+      "value" : "smart@who.int"
+    }]
+  }],
+  "description" : "Unofficial Simplified Chinese (zh) display designations for the IPS.HAJJ.CONSENT code system, drafted by an agent and not signed off by a human.",
+  "content" : "supplement",
+  "supplements" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
+  "concept" : [{
+    "code" : "CONSENT-KSA",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "沙特阿拉伯王国的同意"
+    }]
+  },
+  {
+    "code" : "CONSENT-IDN",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "印度尼西亚的同意"
+    }]
+  },
+  {
+    "code" : "CONSENT-MYS",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "马来西亚的同意"
+    }]
+  },
+  {
+    "code" : "CONSENT-OMN",
+    "designation" : [{
+      "language" : "zh",
+      "value" : "阿曼的同意"
+    }]
+  }]
+}
