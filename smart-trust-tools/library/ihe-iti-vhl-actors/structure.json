@@ -1,0 +1,50 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "ihe-iti-vhl-actors",
+  "source": {
+    "file": "actors.fsh",
+    "sha256": "ded951945702fe28b69a31f7bc3eacceb326bd9d6ba04ac92bbb978a49db1cfe",
+    "digest": "file",
+    "bytes": 1828,
+    "mtime": "2026-06-14T19:40:53Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "actors.fsh",
+        "sha256": "ded951945702fe28b69a31f7bc3eacceb326bd9d6ba04ac92bbb978a49db1cfe",
+        "bytes": 1828,
+        "lines": 43,
+        "format": "verbatim"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/IHE/ITI.VHL",
+      "commit": "48201473ffa66725158e729b7478a01304944a6c",
+      "ref": "master",
+      "committed": "2026-06-14T19:40:53Z",
+      "path": "input/fsh/actors.fsh",
+      "published": "https://github.com/IHE/ITI.VHL/blob/48201473ffa66725158e729b7478a01304944a6c/input/fsh/actors.fsh",
+      "retrieved": "2026-10-21T07:00:00Z"
+    }
+  },
+  "metadata": {
+    "title": "IHE ITI VHL ActorDefinitions (FSH)"
+  },
+  "toc_source": "files",
+  "sections": [
+    {
+      "id": "s001-actors-fsh",
+      "number": null,
+      "title": "actors.fsh",
+      "level": 1,
+      "file": "actors.fsh",
+      "line_start": 1,
+      "line_end": 43,
+      "unit": "file",
+      "n_chars": 1830,
+      "n_words": 277
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

@@ -1,0 +1,132 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix lmx: <https://github.com/litlfred/smart-trust-tools/models/lmx#> .
+
+<https://github.com/litlfred/smart-trust-tools/models/shape/DVCMin>
+    a sh:NodeShape ;
+    rdfs:label "DVC HCERT Payload" ;
+    rdfs:isDefinedBy <http://smart.who.int/trust-phw/StructureDefinition/DVCMin> ;
+    sh:targetClass <http://smart.who.int/trust-phw/StructureDefinition/DVCMin> ;
+    lmx:abstract true ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#n> ; sh:name "n" ; sh:description "Name" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#dob> ; sh:name "dob" ; sh:description "Date of birth" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^(([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?)$" ; lmx:fhirType "date" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#s> ; sh:name "s" ; sh:description "Sex" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([^\\s]+( [^\\s]+)*)$" ; lmx:fhirType "code" ; lmx:bindingStrength "extensible" ; lmx:valueSet <http://hl7.org/fhir/administrative-gender> ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#nt> ; sh:name "nt" ; sh:description "Nationality" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([^\\s]+( [^\\s]+)*)$" ; lmx:fhirType "code" ; lmx:bindingStrength "extensible" ; lmx:valueSet <http://hl7.org/fhir/ValueSet/iso3166-1-3> ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#id> ; sh:name "id" ; sh:description "National Identification Document" ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#dt> ; sh:name "dt" ; sh:description "National ID Document Type" ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([^\\s]+( [^\\s]+)*)$" ; lmx:fhirType "code" ; lmx:bindingStrength "extensible" ; lmx:valueSet <http://terminology.hl7.org/ValueSet/v2-0203> ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#gn> ; sh:name "gn" ; sh:description "Parent or Guardian Name" ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#vx> ; sh:name "vx" ; sh:description "Vaccine Details" ; sh:minCount 1 ; sh:maxCount 1 ; sh:node <https://github.com/litlfred/smart-trust-tools/models/shape/DVCMinVaccineDetails> ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#v> ; sh:name "v" ; sh:description "Version" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] .
+
+<https://github.com/litlfred/smart-trust-tools/models/shape/DVCMinPreQual>
+    a sh:NodeShape ;
+    rdfs:label "DVCMinPreQual" ;
+    rdfs:isDefinedBy <http://smart.who.int/trust-phw/StructureDefinition/DVCMinPreQual> ;
+    sh:targetClass <http://smart.who.int/trust-phw/StructureDefinition/DVCMinPreQual> ;
+    lmx:abstract false ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#n> ; sh:name "n" ; sh:description "Name" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#dob> ; sh:name "dob" ; sh:description "Date of birth" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^(([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?)$" ; lmx:fhirType "date" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#s> ; sh:name "s" ; sh:description "Sex" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([^\\s]+( [^\\s]+)*)$" ; lmx:fhirType "code" ; lmx:bindingStrength "extensible" ; lmx:valueSet <http://hl7.org/fhir/administrative-gender> ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#nt> ; sh:name "nt" ; sh:description "Nationality" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([^\\s]+( [^\\s]+)*)$" ; lmx:fhirType "code" ; lmx:bindingStrength "extensible" ; lmx:valueSet <http://hl7.org/fhir/ValueSet/iso3166-1-3> ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#id> ; sh:name "id" ; sh:description "National Identification Document" ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#dt> ; sh:name "dt" ; sh:description "National ID Document Type" ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([^\\s]+( [^\\s]+)*)$" ; lmx:fhirType "code" ; lmx:bindingStrength "extensible" ; lmx:valueSet <http://terminology.hl7.org/ValueSet/v2-0203> ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#gn> ; sh:name "gn" ; sh:description "Parent or Guardian Name" ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#vx> ; sh:name "vx" ; sh:description "Vaccine Details" ; sh:minCount 1 ; sh:maxCount 1 ; sh:node <https://github.com/litlfred/smart-trust-tools/models/shape/DVCMinVaccineDetailsPreQual> ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMin#v> ; sh:name "v" ; sh:description "Version" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] .
+
+<https://github.com/litlfred/smart-trust-tools/models/shape/DVCMinVaccineDetails>
+    a sh:NodeShape ;
+    rdfs:label "DVC HCert Vaccine Details (Minimal)" ;
+    rdfs:isDefinedBy <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails> ;
+    sh:targetClass <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails> ;
+    lmx:abstract true ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#vp> ; sh:name "vp" ; sh:description "Vaccine Product ID" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([^\\s]+( [^\\s]+)*)$" ; lmx:fhirType "code" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#dv> ; sh:name "dv" ; sh:description "Date of vaccination" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^(([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?)$" ; lmx:fhirType "date" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#cn> ; sh:name "cn" ; sh:description "Name of supervising clinician" ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#is> ; sh:name "is" ; sh:description "Certificate issuer id (referenced organization)" ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([A-Za-z0-9\\-\\.]{1,64})$" ; lmx:fhirType "id" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#bo> ; sh:name "bo" ; sh:description "Batch No" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] ;
+    sh:or ( [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#is> ; sh:minCount 1 ] [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#cn> ; sh:minCount 1 ] ) ;
+    sh:message "must-have-issuer-or-clinician-name: Either issuer or clinicianName must be present" .
+
+<https://github.com/litlfred/smart-trust-tools/models/shape/DVCMinVaccineDetailsPreQual>
+    a sh:NodeShape ;
+    rdfs:label "DVC HCERT Payload for PreQual DB" ;
+    rdfs:isDefinedBy <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetailsPreQual> ;
+    sh:targetClass <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetailsPreQual> ;
+    lmx:abstract false ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#vp> ; sh:name "vp" ; sh:description "Vaccine Product ID" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([^\\s]+( [^\\s]+)*)$" ; lmx:fhirType "code" ; lmx:bindingStrength "required" ; lmx:valueSet <http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds> ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#dv> ; sh:name "dv" ; sh:description "Date of vaccination" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^(([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?)$" ; lmx:fhirType "date" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#cn> ; sh:name "cn" ; sh:description "Name of supervising clinician" ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#is> ; sh:name "is" ; sh:description "Certificate issuer id (referenced organization)" ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([A-Za-z0-9\\-\\.]{1,64})$" ; lmx:fhirType "id" ] ;
+    sh:property [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#bo> ; sh:name "bo" ; sh:description "Batch No" ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^([\\s\\S]+)$" ; lmx:fhirType "string" ] ;
+    sh:or ( [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#is> ; sh:minCount 1 ] [ sh:path <http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#cn> ; sh:minCount 1 ] ) ;
+    sh:message "must-have-issuer-or-clinician-name: Either issuer or clinicianName must be present" .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMin#n>
+    rdfs:label "Name" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.A9.DE.1> ;
+    skos:closeMatch <http://loinc.org/rdf/87226-7> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMin#dob>
+    rdfs:label "Date of birth" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.A9.DE.2> ;
+    skos:closeMatch <http://loinc.org/rdf/21112-8> ;
+    skos:closeMatch <http://snomed.info/id/184099003> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMin#s>
+    rdfs:label "Sex" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.A9.DE.3> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMin#nt>
+    rdfs:label "Nationality" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.A9.DE.8> ;
+    skos:closeMatch <http://loinc.org/rdf/69433-1> ;
+    skos:closeMatch <http://snomed.info/id/223369002> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMin#id>
+    rdfs:label "National Identification Document" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.A9.DE.9> ;
+    skos:closeMatch <http://loinc.org/rdf/76435-7> ;
+    skos:closeMatch <http://snomed.info/id/900000000000474003> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMin#dt>
+    rdfs:label "National ID Document Type" .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMin#gn>
+    rdfs:label "Parent or Guardian Name" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.A9.DE.10> ;
+    skos:closeMatch <http://loinc.org/rdf/79183-0> ;
+    skos:closeMatch <http://snomed.info/id/394619001> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMin#vx>
+    rdfs:label "Vaccine Details" .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMin#v>
+    rdfs:label "Version" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.D5.DE.27> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#vp>
+    rdfs:label "Vaccine Product ID" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.C5.DE.11> ;
+    skos:closeMatch <http://loinc.org/rdf/39236-5> ;
+    skos:closeMatch <http://snomed.info/id/787859002> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#dv>
+    rdfs:label "Date of vaccination" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.C5.DE.13> ;
+    skos:closeMatch <http://loinc.org/rdf/30952-6> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#cn>
+    rdfs:label "Name of supervising clinician" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.C5.DE.14> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#is>
+    rdfs:label "Certificate issuer id (referenced organization)" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.C5.DE.15> .
+
+<http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#bo>
+    rdfs:label "Batch No" ;
+    skos:closeMatch <http://smart.who.int/trust-phw/CodeSystem/ICVP.Core#ICVP.C5.DE.17> ;
+    skos:closeMatch <http://loinc.org/rdf/30959-1> .

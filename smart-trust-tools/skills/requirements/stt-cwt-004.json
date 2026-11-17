@@ -1,0 +1,35 @@
+{
+  "id": "req:stt-cwt-004",
+  "title": "Validity inside the DSC validity",
+  "description": "Restates QR Code Generation, 4. Step 3 — Build the CWT claim set; HCERT Specification, 3.2.5 Expiration Time; HCERT Specification, 3.2.6 Issued At. QR Code Generation, 4. Step 3 — Build the CWT claim set: “MUST NOT predate the DSC validity period ... MUST NOT exceed the DSC validity period”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Validity inside the DSC validity",
+      "conformance": "SHALL",
+      "requirement": "Before signing, the issuer SHALL check that iat is not before the DSC notBefore and exp is not after the DSC notAfter, and SHALL refuse to sign otherwise.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-CWT-004 passes in each implementation's suite (Kotlin: `STT-CWT-004 the validity must fit inside the DSC's` (BuildCwtTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s005-4-step-3-build-the-cwt-claim-set",
+    "library/who-smart-trust-hcert-spec/sections/s011-3-2-5-expiration-time",
+    "library/who-smart-trust-hcert-spec/sections/s012-3-2-6-issued-at"
+  ]
+}

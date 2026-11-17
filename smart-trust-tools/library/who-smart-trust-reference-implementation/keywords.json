@@ -1,0 +1,198 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "who-smart-trust-reference-implementation",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "covid certificates",
+      "score": 3.2145,
+      "evidence": []
+    },
+    {
+      "term": "digital covid",
+      "score": 3.2095,
+      "evidence": []
+    },
+    {
+      "term": "network gateway",
+      "score": 3.0616,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "trust network",
+      "score": 2.8736,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "digital services",
+      "score": 2.4593,
+      "evidence": []
+    },
+    {
+      "term": "regi-trust",
+      "score": 2.4233,
+      "evidence": []
+    },
+    {
+      "term": "linux foundation",
+      "score": 2.3896,
+      "evidence": []
+    },
+    {
+      "term": "trusted digital",
+      "score": 2.2135,
+      "evidence": []
+    },
+    {
+      "term": "open source",
+      "score": 2.1818,
+      "evidence": []
+    },
+    {
+      "term": "european union",
+      "score": 2.0439,
+      "evidence": []
+    },
+    {
+      "term": "governance",
+      "score": 1.8937,
+      "evidence": []
+    },
+    {
+      "term": "management infrastructure",
+      "score": 1.8396,
+      "evidence": []
+    }
+  ],
+  "sections": {
+    "s001-trust-registry-network": [
+      {
+        "term": "management infrastructure",
+        "score": 1.8396,
+        "evidence": []
+      },
+      {
+        "term": "regi-trust",
+        "score": 1.7868,
+        "evidence": []
+      },
+      {
+        "term": "trusted digital",
+        "score": 1.3584,
+        "evidence": []
+      },
+      {
+        "term": "digital services",
+        "score": 1.2921,
+        "evidence": []
+      },
+      {
+        "term": "trust management",
+        "score": 1.2692,
+        "evidence": []
+      },
+      {
+        "term": "networks",
+        "score": 0.9787,
+        "evidence": []
+      },
+      {
+        "term": "ecosystems",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "governance",
+        "score": 0.9468,
+        "evidence": []
+      }
+    ],
+    "s002-proof-of-concept": [
+      {
+        "term": "concept",
+        "score": 2.086,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "proof",
+        "score": 1.6902,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "covid certificate",
+        "score": 1.2937,
+        "evidence": []
+      }
+    ],
+    "s003-implementation-toolkit-and-technical-specificati": [
+      {
+        "term": "technical",
+        "score": 2.1656,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "implementation",
+        "score": 1.8322,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "functional",
+        "score": 0.9592,
+        "evidence": []
+      }
+    ],
+    "s004-trust-network-gateway": [
+      {
+        "term": "network gateway",
+        "score": 4.1926,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "trust network",
+        "score": 2.71,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "european union",
+        "score": 1.5901,
+        "evidence": []
+      },
+      {
+        "term": "digital covid",
+        "score": 1.2135,
+        "evidence": []
+      },
+      {
+        "term": "implementation",
+        "score": 0.7891,
+        "evidence": []
+      },
+      {
+        "term": "certificates",
+        "score": 0.4789,
+        "evidence": []
+      }
+    ]
+  }
+}

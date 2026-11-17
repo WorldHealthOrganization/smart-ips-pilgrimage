@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-endpoints/sections/s002-operational-metadata",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "Operational Metadata",
+  "contains": [
+    "library/who-smart-trust-endpoints/blocks/prose-s002-operational-metadata"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-endpoints",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-endpoints",
+  "provenance": "ingested"
+}

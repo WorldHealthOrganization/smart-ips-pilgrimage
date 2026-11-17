@@ -1,0 +1,40 @@
+{
+  "id": "req:stt-vhl-002",
+  "title": "VHL payload at HCERT key 5 as a CBOR map",
+  "description": "Stakeholder directive, in the context of Stakeholder directive: Verifiable Health Links follow IHE VHL, CBOR map at key 5; HCERT Specification, 3.2.7.1.5; IHE VHL ITI-YY3, 2:3.YY3.4.1.3 Expected Actions; IHE VHL ITI-YY4 Provide VHL. Stakeholder directive: Verifiable Health Links follow IHE VHL, CBOR map at key 5: “CBOR map primary”. IHE VHL ITI-YY3 Generate VHL, 2:3.YY3.4.1.3 Expected Actions: “SHALL contain the VHL payload embedded in HCERT claim structure (claim key -260, key 5)”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-vhl-001"
+  ],
+  "reference": [
+    "memory/dir-vhl",
+    "library/who-smart-trust-hcert-spec/sections/s013-3-2-7-health-certificate-claim",
+    "library/ihe-iti-vhl-iti-yy3/sections/s010-2-3-yy3-4-1-3-expected-actions",
+    "library/ihe-iti-vhl-iti-yy4"
+  ],
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "VHL payload at HCERT key 5 as a CBOR map",
+      "conformance": "SHALL",
+      "requirement": "The issuer SHALL carry the VHL payload at HCERT claim -260 key 5 as a CBOR map with text keys, exp and v as CBOR integers. The verifier SHALL read key 5 as that map, and SHALL also accept a vhlink:/ text string there, so that VHLs built to IHE ITI-YY3 still verify.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VHL-002 passes in each implementation's suite (Kotlin: `STT-VHL-002 the payload is a CBOR map at HCERT key 5, and verifies` (VhlShareTest.kt); `STT-VHL-002 STT-VHL-003 a vhlink string at key 5 still verifies, and the map is smaller` (VhlShareTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "directive"
+  ]
+}

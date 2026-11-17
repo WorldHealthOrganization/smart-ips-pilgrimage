@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-qr-code-generation/sections/s011-10-step-9-render-the-qr-code",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "10. Step 9 — Render the QR code",
+  "contains": [
+    "library/who-smart-trust-qr-code-generation/blocks/prose-s011-10-step-9-render-the-qr-code"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-qr-code-generation",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-qr-code-generation",
+  "provenance": "ingested"
+}

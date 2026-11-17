@@ -1,0 +1,35 @@
+{
+  "id": "req:stt-sel-001",
+  "title": "Built-in subclaim registry",
+  "description": "Restates QR Code Generation, 2.1 Subclaims defined in this guide; HCERT Specification, 3.2.7.1 Subclaims; HCert logical model. QR Code Generation, 2.1 Subclaims defined in this guide: “These are the subclaims enumerated by the HCert logical model.”. HCERT Specification, 3.2.7.1 Subclaims: “While the logical model enlists assigned sub claims, the ones listed in this specification are considered authoritative”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Built-in subclaim registry",
+      "conformance": "SHALL",
+      "requirement": "The library SHALL ship a subclaim registry containing 1 (HCertDCC), 3 (DDCCCoreDataSetVS), 4 (DDCCCoreDataSetTR), 5 (VHL URI), -6 (DVCMin) and -7 (MedicationTreatmentLineMin), each with its status (Assigned, Proposed, Development range) and logical-model canonical URL.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-SEL-001 passes in each implementation's suite (Kotlin: `STT-SEL-001 the registry holds the subclaims the guide defines` (SelectPayloadTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s003-2-step-1-select-the-payload-type",
+    "library/who-smart-trust-hcert-spec/sections/s013-3-2-7-health-certificate-claim",
+    "library/who-smart-trust-hcert-model"
+  ]
+}

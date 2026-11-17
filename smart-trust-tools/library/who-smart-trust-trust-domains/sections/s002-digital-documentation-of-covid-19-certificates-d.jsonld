@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-trust-domains/sections/s002-digital-documentation-of-covid-19-certificates-d",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "Digital Documentation of COVID-19 Certificates (DDCC)",
+  "contains": [
+    "library/who-smart-trust-trust-domains/blocks/prose-s002-digital-documentation-of-covid-19-certificates-d"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-trust-domains",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-trust-domains",
+  "provenance": "ingested"
+}

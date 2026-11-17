@@ -1,0 +1,35 @@
+{
+  "id": "req:stt-ver-007",
+  "title": "Dispatch to logical model, then business rules",
+  "description": "Restates QR Code Generation, 11. Verifying: the same steps upwards. QR Code Generation, 11. Verifying: the same steps upwards: “Read the hcert claim, dispatch on the subclaim to the right logical model, and only then apply business rules.”.",
+  "status": "proposed",
+  "reference": [
+    "http://smart.who.int/trust/Requirements/UtilizeVDHC#UtilizeVDHC-display-verified-content",
+    "http://smart.who.int/trust/Requirements/UtilizeVDHC#UtilizeVDHC-execute-business-rule",
+    "library/who-smart-trust-qr-code-generation/sections/s012-11-verifying-the-same-steps-upwards"
+  ],
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Dispatch to logical model, then business rules",
+      "conformance": "SHALL",
+      "requirement": "After verification the verifier SHALL decode each hcert entry with the codec registered for its subclaim, falling back to RawPayload. It SHALL then run any registered BusinessRuleHooks and attach their outcomes to the result.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VER-007 passes in each implementation's suite (Kotlin: `STT-VER-007 the payload is dispatched to its logical model by subclaim` (VerifyTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}

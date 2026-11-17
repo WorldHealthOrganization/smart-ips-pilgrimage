@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-smart-trust-reference-implementation",
+  "type": "webpage",
+  "title": "Reference Implementations",
+  "title-short": "Ref. impl.",
+  "publisher": "World Health Organization",
+  "URL": "https://smart.who.int/trust/reference_implementation.html",
+  "provenance": "authored",
+  "heldAt": "library/who-smart-trust-reference-implementation"
+}

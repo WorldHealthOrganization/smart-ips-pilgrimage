@@ -1,0 +1,809 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "ihe-iti-vhl-iti-yy5",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "option http",
+      "score": 12.971,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "documentreference option",
+      "score": 12.7342,
+      "evidence": []
+    },
+    {
+      "term": "oauth token",
+      "score": 12.6823,
+      "evidence": []
+    },
+    {
+      "term": "vhl manifest",
+      "score": 12.359,
+      "evidence": []
+    },
+    {
+      "term": "vhl receiver",
+      "score": 12.2469,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "fhir search",
+      "score": 12.1922,
+      "evidence": []
+    },
+    {
+      "term": "search request",
+      "score": 12.0868,
+      "evidence": []
+    },
+    {
+      "term": "authentication option",
+      "score": 11.9208,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "linkvhlr key",
+      "score": 11.7639,
+      "evidence": []
+    },
+    {
+      "term": "ssraa option",
+      "score": 11.5275,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "manifest url",
+      "score": 11.1315,
+      "evidence": []
+    },
+    {
+      "term": "search parameters",
+      "score": 11.1205,
+      "evidence": []
+    }
+  ],
+  "sections": {
+    "s001-input-pagecontent-iti-yy5-md": [
+      {
+        "term": "assign",
+        "score": 1.0349,
+        "evidence": []
+      },
+      {
+        "term": "extension",
+        "score": 0.7074,
+        "evidence": []
+      },
+      {
+        "term": "reqrequestvhldocsdescription",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s002-2-3-yy5-1-scope": [
+      {
+        "term": "capability statement",
+        "score": 1.9163,
+        "evidence": []
+      },
+      {
+        "term": "ssraa option",
+        "score": 1.6336,
+        "evidence": []
+      },
+      {
+        "term": "documentreference option",
+        "score": 1.5955,
+        "evidence": []
+      },
+      {
+        "term": "credential option",
+        "score": 1.5749,
+        "evidence": []
+      },
+      {
+        "term": "verifiable credential",
+        "score": 1.4726,
+        "evidence": []
+      },
+      {
+        "term": "http message",
+        "score": 1.4726,
+        "evidence": []
+      },
+      {
+        "term": "fhir search",
+        "score": 1.2467,
+        "evidence": []
+      },
+      {
+        "term": "retrieve manifest",
+        "score": 1.2087,
+        "evidence": []
+      }
+    ],
+    "s003-2-3-yy5-2-actor-roles": [
+      {
+        "term": "actor",
+        "score": 1.3296,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "roles",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "search request",
+        "score": 0.988,
+        "evidence": []
+      }
+    ],
+    "s004-2-3-yy5-3-referenced-standards": [
+      {
+        "term": "json web",
+        "score": 2.1019,
+        "evidence": []
+      },
+      {
+        "term": "standards",
+        "score": 1.8511,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "resource fhir",
+        "score": 1.7771,
+        "evidence": []
+      },
+      {
+        "term": "backend services",
+        "score": 1.4974,
+        "evidence": []
+      },
+      {
+        "term": "shl manifest",
+        "score": 1.4488,
+        "evidence": []
+      },
+      {
+        "term": "ssraa option",
+        "score": 1.3574,
+        "evidence": []
+      },
+      {
+        "term": "document sharing",
+        "score": 1.2762,
+        "evidence": []
+      },
+      {
+        "term": "list resource",
+        "score": 1.2623,
+        "evidence": []
+      }
+    ],
+    "s007-2-3-yy5-4-1-1-trigger-events": [
+      {
+        "term": "trigger",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "events",
+        "score": 1.0182,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "reqrequestvhldocsdescription",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s008-2-3-yy5-4-1-2-message-semantics": [
+      {
+        "term": "search parameters",
+        "score": 2.0391,
+        "evidence": []
+      },
+      {
+        "term": "fhir search",
+        "score": 1.7499,
+        "evidence": []
+      },
+      {
+        "term": "manifest url",
+        "score": 1.6326,
+        "evidence": []
+      },
+      {
+        "term": "type cardinality",
+        "score": 1.3922,
+        "evidence": []
+      },
+      {
+        "term": "cardinality description",
+        "score": 1.3064,
+        "evidence": []
+      },
+      {
+        "term": "patient",
+        "score": 1.0188,
+        "evidence": []
+      },
+      {
+        "term": "token",
+        "score": 0.9352,
+        "evidence": []
+      },
+      {
+        "term": "integer",
+        "score": 0.8069,
+        "evidence": []
+      }
+    ],
+    "s009-2-3-yy5-4-1-3-authentication-option-http-message": [
+      {
+        "term": "http message",
+        "score": 2.6314,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "message signatures",
+        "score": 2.2958,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "signature components",
+        "score": 2.0621,
+        "evidence": []
+      },
+      {
+        "term": "signed components",
+        "score": 1.7612,
+        "evidence": []
+      },
+      {
+        "term": "cryptographic algorithm",
+        "score": 1.6154,
+        "evidence": []
+      },
+      {
+        "term": "signature base",
+        "score": 1.5373,
+        "evidence": []
+      }
+    ],
+    "s010-2-3-yy5-4-1-4-authentication-option-oauth-with-s": [
+      {
+        "term": "ssraa option",
+        "score": 3.8515,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "scalable registration",
+        "score": 3.3358,
+        "evidence": []
+      },
+      {
+        "term": "access token",
+        "score": 2.4002,
+        "evidence": []
+      },
+      {
+        "term": "jwt client",
+        "score": 2.371,
+        "evidence": []
+      },
+      {
+        "term": "client authentication",
+        "score": 2.3361,
+        "evidence": []
+      },
+      {
+        "term": "client assertion",
+        "score": 2.3205,
+        "evidence": []
+      },
+      {
+        "term": "ssraa discovery",
+        "score": 2.2305,
+        "evidence": []
+      },
+      {
+        "term": "community policies",
+        "score": 1.9312,
+        "evidence": []
+      }
+    ],
+    "s011-2-3-yy5-4-1-5-authentication-option-verifiable-c": [
+      {
+        "term": "verifiable credential",
+        "score": 3.4581,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "credential option",
+        "score": 2.9167,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "cryptographic proof",
+        "score": 2.1093,
+        "evidence": []
+      },
+      {
+        "term": "shl body",
+        "score": 2.1069,
+        "evidence": []
+      },
+      {
+        "term": "post body",
+        "score": 1.8664,
+        "evidence": []
+      },
+      {
+        "term": "linkvhlr identity",
+        "score": 1.7694,
+        "evidence": []
+      },
+      {
+        "term": "body parameter",
+        "score": 1.7569,
+        "evidence": []
+      },
+      {
+        "term": "embedded dataintegrityproof",
+        "score": 1.6387,
+        "evidence": []
+      }
+    ],
+    "s012-2-3-yy5-4-1-6-expected-actions-vhl-receiver": [
+      {
+        "term": "search parameters",
+        "score": 2.1665,
+        "evidence": []
+      },
+      {
+        "term": "base url",
+        "score": 1.7564,
+        "evidence": []
+      },
+      {
+        "term": "access token",
+        "score": 1.7453,
+        "evidence": []
+      },
+      {
+        "term": "manifest url",
+        "score": 1.7156,
+        "evidence": []
+      },
+      {
+        "term": "fhir search",
+        "score": 1.6867,
+        "evidence": []
+      },
+      {
+        "term": "request body",
+        "score": 1.6283,
+        "evidence": []
+      },
+      {
+        "term": "private key",
+        "score": 1.2814,
+        "evidence": []
+      },
+      {
+        "term": "payload fields",
+        "score": 1.2071,
+        "evidence": []
+      }
+    ],
+    "s013-2-3-yy5-4-1-7-expected-actions-vhl-sharer": [
+      {
+        "term": "token invalid",
+        "score": 3.1226,
+        "evidence": []
+      },
+      {
+        "term": "verify token",
+        "score": 2.7782,
+        "evidence": []
+      },
+      {
+        "term": "vhl sharer",
+        "score": 2.1307,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "search parameters",
+        "score": 2.0758,
+        "evidence": []
+      },
+      {
+        "term": "extract shl",
+        "score": 2.0228,
+        "evidence": []
+      },
+      {
+        "term": "consent filters",
+        "score": 2.0079,
+        "evidence": []
+      },
+      {
+        "term": "chained search",
+        "score": 1.9321,
+        "evidence": []
+      },
+      {
+        "term": "fhir search",
+        "score": 1.8715,
+        "evidence": []
+      }
+    ],
+    "s016-2-3-yy5-4-2-2-message-semantics": [
+      {
+        "term": "message semantics",
+        "score": 2.6257,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "mhd iti",
+        "score": 2.2935,
+        "evidence": []
+      },
+      {
+        "term": "iti response",
+        "score": 2.2755,
+        "evidence": []
+      },
+      {
+        "term": "documentreference resources",
+        "score": 2.1497,
+        "evidence": []
+      },
+      {
+        "term": "case bundle",
+        "score": 2.1058,
+        "evidence": []
+      },
+      {
+        "term": "referenced documentreference",
+        "score": 1.9672,
+        "evidence": []
+      },
+      {
+        "term": "documentreference option",
+        "score": 1.8231,
+        "evidence": []
+      },
+      {
+        "term": "binary retrieval",
+        "score": 1.7828,
+        "evidence": []
+      }
+    ],
+    "s017-2-3-yy5-4-2-3-expected-actions": [
+      {
+        "term": "documentreference resources",
+        "score": 1.4536,
+        "evidence": []
+      },
+      {
+        "term": "decrypt",
+        "score": 0.8676,
+        "evidence": []
+      },
+      {
+        "term": "bundle",
+        "score": 0.6922,
+        "evidence": []
+      },
+      {
+        "term": "actions",
+        "score": 0.6865,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s018-2-3-yy5-4-2-4-document-content-retrieval": [
+      {
+        "term": "mhd document",
+        "score": 1.4818,
+        "evidence": []
+      },
+      {
+        "term": "retrieval",
+        "score": 1.3759,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "encrypted",
+        "score": 1.1385,
+        "evidence": []
+      },
+      {
+        "term": "binary",
+        "score": 1.0949,
+        "evidence": []
+      },
+      {
+        "term": "http message",
+        "score": 1.0944,
+        "evidence": []
+      },
+      {
+        "term": "message signatures",
+        "score": 0.9097,
+        "evidence": []
+      }
+    ],
+    "s019-2-3-yy5-4-2-5-document-encryption": [
+      {
+        "term": "compact serialization",
+        "score": 1.9947,
+        "evidence": []
+      },
+      {
+        "term": "jwe compact",
+        "score": 1.5564,
+        "evidence": []
+      },
+      {
+        "term": "encryption",
+        "score": 1.3492,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "protected header",
+        "score": 1.1739,
+        "evidence": []
+      },
+      {
+        "term": "vhl payload",
+        "score": 1.0906,
+        "evidence": []
+      },
+      {
+        "term": "generated",
+        "score": 1.0334,
+        "evidence": []
+      },
+      {
+        "term": "encrypted",
+        "score": 0.9806,
+        "evidence": []
+      },
+      {
+        "term": "document",
+        "score": 0.978,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s022-2-3-yy5-5-2-http-message-signatures": [
+      {
+        "term": "http message",
+        "score": 1.9204,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "message signatures",
+        "score": 1.8194,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "timestamp validation",
+        "score": 1.1395,
+        "evidence": []
+      }
+    ],
+    "s023-2-3-yy5-5-3-oauth-with-ssraa-option": [
+      {
+        "term": "jwt client",
+        "score": 2.0806,
+        "evidence": []
+      },
+      {
+        "term": "ssraa option",
+        "score": 1.8532,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "access token",
+        "score": 1.4159,
+        "evidence": []
+      },
+      {
+        "term": "oauth",
+        "score": 1.2587,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s024-2-3-yy5-5-4-vhl-authorization": [
+      {
+        "term": "validate vhl",
+        "score": 1.4076,
+        "evidence": []
+      },
+      {
+        "term": "hash",
+        "score": 0.6563,
+        "evidence": []
+      },
+      {
+        "term": "authorization",
+        "score": 0.626,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "constant-time",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s025-2-3-yy5-5-5-trust-network-validation": [
+      {
+        "term": "trust network",
+        "score": 1.6674,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "client key",
+        "score": 0.9139,
+        "evidence": []
+      },
+      {
+        "term": "trust list",
+        "score": 0.8828,
+        "evidence": []
+      }
+    ],
+    "s026-2-3-yy5-5-6-audit-logging": [
+      {
+        "term": "logging",
+        "score": 1.0827,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "audit",
+        "score": 0.8042,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "keyid",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s027-2-3-yy5-5-7-rate-limiting": [
+      {
+        "term": "rate limiting",
+        "score": 2.742,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "address",
+        "score": 0.5974,
+        "evidence": []
+      },
+      {
+        "term": "exceeded",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s028-2-3-yy5-5-8-passcode-security": [
+      {
+        "term": "passcode",
+        "score": 1.5908,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "failed",
+        "score": 0.7593,
+        "evidence": []
+      },
+      {
+        "term": "attempts",
+        "score": 0.7159,
+        "evidence": []
+      }
+    ],
+    "s029-2-3-yy5-5-9-verifiable-credential-option": [
+      {
+        "term": "reject vcs",
+        "score": 2.0107,
+        "evidence": []
+      },
+      {
+        "term": "vcs whose",
+        "score": 1.762,
+        "evidence": []
+      },
+      {
+        "term": "verifiable credential",
+        "score": 1.729,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "credential option",
+        "score": 1.5863,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "url query",
+        "score": 1.394,
+        "evidence": []
+      }
+    ]
+  }
+}

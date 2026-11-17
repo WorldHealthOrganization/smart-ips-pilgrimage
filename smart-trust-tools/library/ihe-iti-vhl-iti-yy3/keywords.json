@@ -1,0 +1,444 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "ihe-iti-vhl-iti-yy3",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "vhl url",
+      "score": 8.9966,
+      "evidence": []
+    },
+    {
+      "term": "vhl payload",
+      "score": 8.8353,
+      "evidence": []
+    },
+    {
+      "term": "vhl option",
+      "score": 8.6711,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "enveloped vhl",
+      "score": 8.305,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "vhl carrier",
+      "score": 8.0949,
+      "evidence": []
+    },
+    {
+      "term": "vhl sharer",
+      "score": 8.0325,
+      "evidence": []
+    },
+    {
+      "term": "generate vhl",
+      "score": 7.3396,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "vhl receiver",
+      "score": 7.2775,
+      "evidence": []
+    },
+    {
+      "term": "same vhl",
+      "score": 7.1742,
+      "evidence": []
+    },
+    {
+      "term": "vhl holder",
+      "score": 7.1417,
+      "evidence": []
+    },
+    {
+      "term": "authorized vhl",
+      "score": 6.612,
+      "evidence": []
+    },
+    {
+      "term": "manifest url",
+      "score": 6.3139,
+      "evidence": [
+        "heading"
+      ]
+    }
+  ],
+  "sections": {
+    "s001-input-pagecontent-iti-yy3-md": [
+      {
+        "term": "assign",
+        "score": 1.0349,
+        "evidence": []
+      },
+      {
+        "term": "site",
+        "score": 0.6243,
+        "evidence": []
+      },
+      {
+        "term": "reqgeneratevhlrequest",
+        "score": 0.6052,
+        "evidence": []
+      }
+    ],
+    "s002-2-3-yy3-1-scope": [
+      {
+        "term": "extension",
+        "score": 1.0363,
+        "evidence": []
+      },
+      {
+        "term": "downstream",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "reqgeneratevhlrequest",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "assign",
+        "score": 0.9296,
+        "evidence": []
+      },
+      {
+        "term": "caller",
+        "score": 0.8709,
+        "evidence": []
+      },
+      {
+        "term": "reqgeneratevhlresponse",
+        "score": 0.8709,
+        "evidence": []
+      },
+      {
+        "term": "url",
+        "score": 0.7512,
+        "evidence": []
+      }
+    ],
+    "s004-2-3-yy3-3-referenced-standards": [
+      {
+        "term": "json web",
+        "score": 1.4347,
+        "evidence": []
+      },
+      {
+        "term": "data integrity",
+        "score": 1.2061,
+        "evidence": []
+      },
+      {
+        "term": "w3c data",
+        "score": 1.2059,
+        "evidence": []
+      },
+      {
+        "term": "smart health",
+        "score": 1.0678,
+        "evidence": []
+      },
+      {
+        "term": "health links",
+        "score": 0.9776,
+        "evidence": []
+      }
+    ],
+    "s006-2-3-yy3-4-1-generate-vhl-request-message": [
+      {
+        "term": "message",
+        "score": 1.1304,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "generate",
+        "score": 0.8414,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "operation",
+        "score": 0.7159,
+        "evidence": []
+      }
+    ],
+    "s009-2-3-yy3-4-1-2-1-output-carrier-options": [
+      {
+        "term": "carrier",
+        "score": 2.7491,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "output",
+        "score": 2.2176,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "enveloped vhl",
+        "score": 1.3873,
+        "evidence": []
+      },
+      {
+        "term": "vhl option",
+        "score": 1.2235,
+        "evidence": []
+      },
+      {
+        "term": "vhl payload",
+        "score": 1.1604,
+        "evidence": []
+      },
+      {
+        "term": "same vhl",
+        "score": 1.0748,
+        "evidence": []
+      },
+      {
+        "term": "expected actions",
+        "score": 1.0271,
+        "evidence": []
+      },
+      {
+        "term": "populated",
+        "score": 0.8676,
+        "evidence": []
+      }
+    ],
+    "s010-2-3-yy3-4-1-3-expected-actions": [
+      {
+        "term": "payload construction",
+        "score": 1.8062,
+        "evidence": []
+      },
+      {
+        "term": "vhl payload",
+        "score": 1.7065,
+        "evidence": []
+      },
+      {
+        "term": "linkvhls supports",
+        "score": 1.5875,
+        "evidence": []
+      },
+      {
+        "term": "manifest url",
+        "score": 1.5456,
+        "evidence": []
+      },
+      {
+        "term": "document encryption",
+        "score": 1.4508,
+        "evidence": []
+      },
+      {
+        "term": "document binaries",
+        "score": 1.3949,
+        "evidence": []
+      },
+      {
+        "term": "steps above",
+        "score": 1.3619,
+        "evidence": []
+      },
+      {
+        "term": "encryption key",
+        "score": 1.3593,
+        "evidence": []
+      }
+    ],
+    "s013-2-3-yy3-4-2-2-message-semantics": [
+      {
+        "term": "response message",
+        "score": 1.6175,
+        "evidence": []
+      },
+      {
+        "term": "output",
+        "score": 1.1088,
+        "evidence": []
+      },
+      {
+        "term": "enveloped vhl",
+        "score": 1.0699,
+        "evidence": []
+      },
+      {
+        "term": "hcert claim",
+        "score": 1.0403,
+        "evidence": []
+      },
+      {
+        "term": "claim key",
+        "score": 1.0231,
+        "evidence": []
+      },
+      {
+        "term": "vhl payload",
+        "score": 0.915,
+        "evidence": []
+      }
+    ],
+    "s014-2-3-yy3-4-2-3-expected-actions": [
+      {
+        "term": "vhl receivers",
+        "score": 1.135,
+        "evidence": []
+      },
+      {
+        "term": "vhl holder",
+        "score": 1.0235,
+        "evidence": []
+      },
+      {
+        "term": "passcode",
+        "score": 0.7954,
+        "evidence": []
+      }
+    ],
+    "s016-2-3-yy3-5-1-encryption-key-security": [
+      {
+        "term": "encryption key",
+        "score": 2.342,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "kept",
+        "score": 0.5974,
+        "evidence": []
+      },
+      {
+        "term": "random",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s017-2-3-yy3-5-2-qr-code-security": [
+      {
+        "term": "codes",
+        "score": 0.9595,
+        "evidence": []
+      },
+      {
+        "term": "consider",
+        "score": 0.5974,
+        "evidence": []
+      },
+      {
+        "term": "copied",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s018-2-3-yy3-5-3-passcode-security": [
+      {
+        "term": "plaintext passcode",
+        "score": 2.0706,
+        "evidence": []
+      },
+      {
+        "term": "vhl sharer",
+        "score": 0.8804,
+        "evidence": []
+      },
+      {
+        "term": "stored",
+        "score": 0.7159,
+        "evidence": []
+      }
+    ],
+    "s019-2-3-yy3-5-4-manifest-url-construction": [
+      {
+        "term": "manifest url",
+        "score": 1.8812,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "construction",
+        "score": 0.8795,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "mandatory",
+        "score": 0.5619,
+        "evidence": []
+      }
+    ],
+    "s020-2-3-yy3-5-5-oauth-with-ssraa-option-fhir-base-ur": [
+      {
+        "term": "base url",
+        "score": 2.4821,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "ssraa option",
+        "score": 2.3384,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "fhir base",
+        "score": 1.9893,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "udap discovery",
+        "score": 1.3839,
+        "evidence": []
+      }
+    ],
+    "s021-2-3-yy3-5-6-vc-enveloped-vhl-option": [
+      {
+        "term": "vhl",
+        "score": 0.8792,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "enveloped",
+        "score": 0.6698,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "equivalent",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ]
+  }
+}

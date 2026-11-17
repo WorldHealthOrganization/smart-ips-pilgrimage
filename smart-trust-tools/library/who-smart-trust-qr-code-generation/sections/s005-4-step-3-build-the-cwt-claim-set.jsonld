@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-qr-code-generation/sections/s005-4-step-3-build-the-cwt-claim-set",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "4. Step 3 — Build the CWT claim set",
+  "contains": [
+    "library/who-smart-trust-qr-code-generation/blocks/prose-s005-4-step-3-build-the-cwt-claim-set"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-qr-code-generation",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-qr-code-generation",
+  "provenance": "ingested"
+}

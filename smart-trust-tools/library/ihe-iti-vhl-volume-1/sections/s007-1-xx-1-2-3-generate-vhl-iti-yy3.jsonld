@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-volume-1/sections/s007-1-xx-1-2-3-generate-vhl-iti-yy3",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "1:XX.1.2.3 Generate VHL [ITI-YY3]",
+  "contains": [
+    "library/ihe-iti-vhl-volume-1/blocks/prose-s007-1-xx-1-2-3-generate-vhl-iti-yy3"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "provenance": "ingested"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "hcert-library",
+  "version": "0.1.0",
+  "description": "Building and keeping the HCERT libraries and their contract: architecture, generated artefacts, conformance and the published graph.",
+  "skills": [
+    "hcert-library-architecture",
+    "hcert-contract-maintenance",
+    "hcert-conformance-testing",
+    "hcert-kg-publication"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "req:stt-tst-011",
+  "title": "The merged guide's example decodes as published",
+  "description": "Engineering consequence of QR Code Generation, 12.6 The certificates, as merged (WHO af75be2): two DVC certificates issued by GDHCN DEV participant XXR, whose DSC is on the DEV trust list. QR Code Generation, 12.6 The certificates: “To verify them, resolve that kid against the GDHCN trust list rather than against any copy of the certificate shipped beside the QR code.”.",
+  "status": "proposed",
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s019-12-6-the-certificates",
+    "library/who-smart-trust-qr-code-generation/sections/s017-12-4-the-payload",
+    "vectors/smart-trust-af75be2/dvc-qr-example-XXR.json",
+    "vectors/smart-trust-af75be2/XXR-DSC-did.json"
+  ],
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "The merged guide's example decodes as published",
+      "conformance": "SHALL",
+      "requirement": "Both libraries SHALL decode the two HC1 strings of QR Code Generation 12.6 without verifying them, and SHALL read kid kW/6VnwPRKI=, iss XR, subclaim -6 and the payloads of 12.4, with the PreQual product identifiers in vp. Without the XXR DSC, verification SHALL stop at TRUST_LOOKUP with KID_NOT_FOUND. With XXR's DSC DID document from the GDHCN DEV trust list in the trust store, both certificates SHALL verify, with the payload's key usage authorised and no diagnostics.",
+      "category": "test",
+      "successCriteria": [
+        {
+          "key": "decode",
+          "criterion": "A test named after STT-TST-011 passes in each implementation's suite (Kotlin: `STT-TST-011 STT-TST-002 the merged guide's XXR certificates decode as published` (ConformanceVectorsTest.kt)), and the TypeScript suite's check of the same name passes on both packages.",
+          "verification": "test"
+        },
+        {
+          "key": "verify",
+          "criterion": "A test named after STT-TST-011 that loads vectors/smart-trust-af75be2/XXR-DSC-did.json passes in each implementation's suite (Kotlin: `STT-TST-011 the merged guide's XXR certificates verify against the DEV trust list's DSC` (ConformanceVectorsTest.kt)), and the TypeScript suite's check of the same name passes on both packages.",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "test",
+    "derived"
+  ]
+}

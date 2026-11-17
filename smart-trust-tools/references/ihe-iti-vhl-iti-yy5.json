@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "ihe-iti-vhl-iti-yy5",
+  "type": "webpage",
+  "title": "IHE VHL ITI-YY5 Retrieve Manifest",
+  "title-short": "ITI-YY5",
+  "publisher": "IHE International",
+  "URL": "https://profiles.ihe.net/ITI/VHL/ITI-YY5.html",
+  "provenance": "authored",
+  "heldAt": "library/ihe-iti-vhl-iti-yy5"
+}

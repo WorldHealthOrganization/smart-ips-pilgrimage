@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-tst-007",
+  "title": "One TypeScript conformance suite for both Node packages",
+  "description": "Engineering consequence of Stakeholder directive: transpile targets and API-first; DVC QR example, machine-readable summary (test participant XXA).",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-gen-011"
+  ],
+  "reference": [
+    "memory/dir-targets",
+    "vectors/smart-trust-pr129/dvc-qr-example-XXA.json"
+  ],
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "One TypeScript conformance suite for both Node packages",
+      "conformance": "SHALL",
+      "requirement": "A single TypeScript test suite, type-checked against api/generated/ts and driven by the shared vectors, SHALL run in CI against both the Kotlin/JS npm package and the jco-transpiled Rust component, and SHALL pass on both.",
+      "category": "test",
+      "successCriteria": [
+        {
+          "key": "ts-suite",
+          "criterion": "One TypeScript suite, type-checked against api/generated/ts and driven by vectors/, passes against both the Kotlin/JS package and the jco-transpiled Rust component in CI.",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "test",
+    "derived"
+  ]
+}

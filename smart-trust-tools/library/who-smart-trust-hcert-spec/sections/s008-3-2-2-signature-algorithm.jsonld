@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-hcert-spec/sections/s008-3-2-2-signature-algorithm",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "3.2.2 Signature Algorithm",
+  "contains": [
+    "library/who-smart-trust-hcert-spec/blocks/prose-s008-3-2-2-signature-algorithm"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-spec",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-spec",
+  "provenance": "ingested"
+}

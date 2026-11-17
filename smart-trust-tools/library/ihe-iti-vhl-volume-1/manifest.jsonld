@@ -1,0 +1,73 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "IHE ITI Verifiable Health Link (VHL), Volume 1",
+  "contains": [
+    "library/ihe-iti-vhl-volume-1/sections/s001-input-pagecontent-volume-1-md",
+    "library/ihe-iti-vhl-volume-1/sections/s002-1-xx-1-actors-transactions-and-content-modules",
+    "library/ihe-iti-vhl-volume-1/sections/s003-1-xx-1-1-actors",
+    "library/ihe-iti-vhl-volume-1/sections/s004-1-xx-1-2-transaction-descriptions",
+    "library/ihe-iti-vhl-volume-1/sections/s005-1-xx-1-2-1-submit-pki-material-with-did-iti-yy1",
+    "library/ihe-iti-vhl-volume-1/sections/s006-1-xx-1-2-2-retrieve-trust-list-with-did-iti-yy2",
+    "library/ihe-iti-vhl-volume-1/sections/s007-1-xx-1-2-3-generate-vhl-iti-yy3",
+    "library/ihe-iti-vhl-volume-1/sections/s008-1-xx-1-2-4-provide-vhl-iti-yy4",
+    "library/ihe-iti-vhl-volume-1/sections/s009-1-xx-1-2-5-retrieve-manifest-iti-yy5",
+    "library/ihe-iti-vhl-volume-1/sections/s010-1-xx-2-actor-options",
+    "library/ihe-iti-vhl-volume-1/sections/s011-1-xx-2-1-sign-manifest-request-option-vhl-receiv",
+    "library/ihe-iti-vhl-volume-1/sections/s012-1-xx-2-2-include-documentreference-option-vhl-sh",
+    "library/ihe-iti-vhl-volume-1/sections/s013-1-xx-2-3-verify-document-signature-option-vhl-re",
+    "library/ihe-iti-vhl-volume-1/sections/s014-1-xx-2-4-oauth-with-ssraa-option",
+    "library/ihe-iti-vhl-volume-1/sections/s015-1-xx-2-5-verifiable-credential-option",
+    "library/ihe-iti-vhl-volume-1/sections/s016-1-xx-2-6-vc-enveloped-vhl-option-vhl-sharer",
+    "library/ihe-iti-vhl-volume-1/sections/s017-1-xx-3-required-actor-groupings",
+    "library/ihe-iti-vhl-volume-1/sections/s018-1-xx-4-overview",
+    "library/ihe-iti-vhl-volume-1/sections/s019-1-xx-4-1-concepts",
+    "library/ihe-iti-vhl-volume-1/sections/s020-1-xx-4-2-use-cases",
+    "library/ihe-iti-vhl-volume-1/sections/s021-1-xx-4-2-1-use-case-1-who-global-digital-health-",
+    "library/ihe-iti-vhl-volume-1/sections/s022-1-xx-4-2-1-1-hajj-pilgrimage-use-case-descriptio",
+    "library/ihe-iti-vhl-volume-1/sections/s023-1-xx-4-2-1-2-pan-american-highway-for-health-use",
+    "library/ihe-iti-vhl-volume-1/sections/s024-1-xx-4-2-2-use-case-2-eu-vaccination-card",
+    "library/ihe-iti-vhl-volume-1/sections/s025-1-xx-4-2-3-use-case-3-us-trusted-exchange-framew",
+    "library/ihe-iti-vhl-volume-1/sections/s026-1-xx-5-security-considerations",
+    "library/ihe-iti-vhl-volume-1/sections/s027-1-xx-5-1-trust-network-security",
+    "library/ihe-iti-vhl-volume-1/sections/s028-1-xx-5-2-secure-channel-requirements",
+    "library/ihe-iti-vhl-volume-1/sections/s029-1-xx-5-3-cryptographic-algorithm-selection",
+    "library/ihe-iti-vhl-volume-1/sections/s030-1-xx-5-4-vhl-integrity-and-authorization",
+    "library/ihe-iti-vhl-volume-1/sections/s031-1-xx-5-5-audit-requirements",
+    "library/ihe-iti-vhl-volume-1/sections/s032-1-xx-5-6-privacy-considerations",
+    "library/ihe-iti-vhl-volume-1/sections/s033-1-xx-6-cross-profile-considerations",
+    "library/ihe-iti-vhl-volume-1/sections/s034-1-xx-6-1-atna-audit-trail-and-node-authenticatio",
+    "library/ihe-iti-vhl-volume-1/sections/s035-1-xx-6-2-pcf-privacy-consent-on-fhir",
+    "library/ihe-iti-vhl-volume-1/sections/s036-1-xx-6-3-mhd-mobile-health-document-sharing",
+    "library/ihe-iti-vhl-volume-1/sections/s037-1-xx-6-4-mcsd-mobile-care-services-discovery",
+    "library/ihe-iti-vhl-volume-1/sections/s038-1-xx-6-5-dsg-dsgj-document-digital-signature"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-4.0",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-4.0",
+    "basis": "IHE/ITI.VHL LICENSE (Creative Commons Attribution 4.0 International) and sushi-config.yaml license: CC-BY-4.0 at the ingested commit. The text is held unmodified, with attribution."
+  },
+  "meta": {
+    "doc_id": "ihe-iti-vhl-volume-1",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "volume-1.md",
+    "source_sha256": "1227bd54486fad1f7d6b2d607b93df49fff065453c961a12709aa4c78103fbe5",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

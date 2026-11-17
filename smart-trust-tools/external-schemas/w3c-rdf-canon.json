@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "w3c-rdf-canon",
+  "authority": "W3C",
+  "title": "RDF Dataset Canonicalization (RDFC-1.0, formerly URDNA2015)",
+  "version": "W3C Recommendation 2024-05-21",
+  "specUrl": "https://www.w3.org/TR/rdf-canon/",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

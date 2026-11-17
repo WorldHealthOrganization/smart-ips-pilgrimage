@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "bytecodealliance-wit",
+  "authority": "other",
+  "title": "WIT, the WebAssembly Component Model interface definition language",
+  "version": "Component Model",
+  "specUrl": "https://component-model.bytecodealliance.org/design/wit.html",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": [],
+  "note": "Bytecode Alliance."
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "folio-graph-typology/v1",
+  "kind": "payload-models",
+  "title": "Derived payload models",
+  "perInstance": true,
+  "renderable": false,
+  "holds": "derived",
+  "summary": "The payload models lm-derive writes from the FHIR logical models: a JSON-LD context, SHACL shapes and CDDL rules (models/generated/). Never edited by hand.",
+  "validatorNotApplicable": "derived wholly from models/fhir by lm-derive, whose --check fails when a file is stale; check-models checks the SHACL shapes against the SHACL shapes for SHACL (pyshacl's meta-SHACL) and validates the PR 129 payload against all three, reading it as RDF through the JSON-LD context.",
+  "avatar": {
+    "glyph": "M4 5h16v14H4zM4 10h16M10 10v9M16 3l4 4",
+    "tone": 12,
+    "reads": "a logical model with an arrow: shapes written from it"
+  }
+}

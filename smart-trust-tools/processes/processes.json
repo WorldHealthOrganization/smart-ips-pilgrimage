@@ -1,0 +1,7 @@
+{
+  "$schema": "concern-groups/v1",
+  "_comment": "The concern groups this instance's diagrams sit in, by code from cat-harness code-lists/concern-group.json.",
+  "groups": [
+    "content"
+  ]
+}

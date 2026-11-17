@@ -1,0 +1,35 @@
+{
+  "id": "req:stt-tst-002",
+  "title": "Byte-exact CBOR vector",
+  "description": "Engineering consequence of QR Code Generation, 12.5 Size at each stage, as merged (WHO af75be2), and of the PR 129 branch's machine-readable summary (test participant XXA).",
+  "status": "proposed",
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Byte-exact CBOR vector",
+      "conformance": "SHALL",
+      "requirement": "Encoding a published example's claim set with deterministic CBOR SHALL give exactly the payload bytes inside its COSE_Sign1: 222 bytes for the XXR hepb1 certificate and 221 for bcg, 210 and 209 for the XXA pair. The merged guide's XXR certificates are published as fixed strings, so their COSE_Sign1, deflated and HC1 sizes SHALL equal those the vector records, which for hepatitis B are the 307, 293 and 444 that section 12.5 states. Sizes of newly issued certificates SHALL NOT be asserted exactly, because signatures are randomized.",
+      "category": "test",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "Tests named after STT-TST-002 pass in each implementation's suite (Kotlin: `STT-TST-002 STT-CBR-001 deterministic re-encoding reproduces the issued CWT byte for byte` and `STT-TST-011 STT-TST-002 the merged guide's XXR certificates decode as published` (ConformanceVectorsTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "test",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s018-12-5-size-at-each-stage",
+    "vectors/smart-trust-af75be2/dvc-qr-example-XXR.json",
+    "vectors/smart-trust-pr129/dvc-qr-example-XXA.json"
+  ]
+}

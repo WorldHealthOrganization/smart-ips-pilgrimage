@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-smart-trust-endpoints",
+  "type": "webpage",
+  "title": "Endpoints",
+  "title-short": "Endpoints",
+  "publisher": "World Health Organization",
+  "URL": "https://smart.who.int/trust/endpoints.html",
+  "provenance": "authored",
+  "heldAt": "library/who-smart-trust-endpoints"
+}

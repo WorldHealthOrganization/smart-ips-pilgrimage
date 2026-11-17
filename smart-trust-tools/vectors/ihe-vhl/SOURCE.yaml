@@ -1,0 +1,14 @@
+# IHE ITI Verifiable Health Link test material.
+repo: IHE/ITI.VHL
+sha: 48201473ffa66725158e729b7478a01304944a6c
+files:
+  iti-yy5-manifest-case-b.json: >-
+    input/pagecontent/ITI-YY5.md, 2:3.YY5.4.2.2, the Case B example Bundle,
+    as published (doc002 to doc004 are abbreviated there to bare ids).
+  jwe-dir-a256gcm.json: >-
+    Not from IHE. TEST ONLY: made by tools/vhl-jwe-fixture/make-jwe-fixture.mjs with node:crypto,
+    independently of the library, to cross-check its JWE decryption.
+examples:
+  iti-yy3-vhlink: >-
+    The ITI-YY3 example payload and link, with the base64url re-encoded from the
+    JSON shown (upstream it encodes "extensions"; OI-22).

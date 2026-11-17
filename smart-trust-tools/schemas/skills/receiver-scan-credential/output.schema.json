@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Receiver Scan Credential Output",
+  "description": "What the receiving system is handed; it verifies or follows the link (hcert-verify, vhl-receive, or an SHL receiver).",
+  "type": "object",
+  "required": [
+    "scanned"
+  ],
+  "properties": {
+    "scanned": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "qr"
+          ],
+          "properties": {
+            "qr": {
+              "type": "string",
+              "pattern": "^(HC1:|shlink:/)",
+              "description": "The QR's text: HC1:… for an HCERT or a VHL (hcert-prefix-context), shlink:/… for a SMART Health Link (HL7 SMART Health Links specification)."
+            },
+            "passcode": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "unreadable"
+          ],
+          "properties": {
+            "unreadable": {
+              "const": true
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "additionalProperties": false
+}

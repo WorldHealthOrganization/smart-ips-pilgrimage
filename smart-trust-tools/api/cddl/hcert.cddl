@@ -1,0 +1,86 @@
+; HCERT wire format (CBOR), RFC 8610 CDDL.
+;
+; Sources (WHO SMART Trust IG):
+;   hcert_spec.md 3.2 CWT Claims, 4.2 Barcode          (deployed)
+;   qr_code_generation.md 4-9 Steps 3-8                (PR 129)
+;   RFC 9052 COSE_Sign1, RFC 8392 CWT
+;
+; Payload rules (dvc-min, ...) are generated from the FHIR logical models
+; into models/generated/<ig>.cddl. CDDL has no import mechanism, so this file
+; is concatenated with them for validation (tools/check-models/check_models.py).
+;
+; Draft for upstreaming: the envelope belongs in WorldHealthOrganization/
+; smart-trust and the payload rules with their logical models (OI-19).
+
+; Steps 5-8 output, before ZLIB/Base45. Issuers MUST tag. [STT-COS-001]
+hc1-cose = #6.18(cose-sign1)
+
+cose-sign1 = [
+  protected: bstr .cbor protected-header,
+  unprotected: unprotected-header,
+  payload: bstr .cbor cwt-claims,
+  signature: bstr,
+]
+
+; alg and kid in the protected header. [STT-COS-003]
+protected-header = {
+  1 => cose-alg,
+  ? 4 => kid,
+}
+
+; kid MAY appear here instead; the protected one wins. [STT-COS-003]
+unprotected-header = {
+  ? 4 => kid,
+}
+
+cose-alg = es256 / ps256
+es256 = -7    ; primary   [STT-COS-002]
+ps256 = -37   ; secondary [STT-COS-002]
+
+; First 8 bytes of SHA-256 over the DER DSC. [STT-KID-001]
+kid = bstr .size 8
+
+; ES256 signatures are fixed-width r||s. [STT-COS-005]
+es256-signature = bstr .size 64
+
+; CWT claim set. [STT-CWT-001]
+cwt-claims = {
+  ? 1 => tstr,             ; iss, alpha-2 when a country [STT-CWT-005]
+  6 => numeric-date,       ; iat [STT-CWT-002]
+  4 => numeric-date,       ; exp, mandatory [STT-CWT-003]
+  -260 => hcert,
+}
+
+; HCERT requires integer NumericDate (RFC 8392 would also allow float).
+numeric-date = int
+
+; Issuance: exactly one subclaim entry, so hcert is a choice of
+; single-entry maps. [STT-SEL-004] (OI-02)
+; Subclaim registry (QR Code Generation 2.1). [STT-SEL-001]
+; Adding a subclaim means adding an alternative here.
+hcert = hcert-dcc / hcert-ddcc-vs / hcert-ddcc-tr / hcert-vhl / hcert-dvc / hcert-mtl
+
+hcert-dcc = { 1 => any }               ; HCertDCC (EU DCC core data set)
+hcert-ddcc-vs = { 3 => any }           ; DDCCCoreDataSetVS (proposed)
+hcert-ddcc-tr = { 4 => any }           ; DDCCCoreDataSetTR (proposed)
+hcert-vhl = { 5 => vhl-payload / vhl-uri } ; Verifiable Health Link [STT-VHL-002]
+hcert-dvc = { -6 => dvc-min }          ; DVCMin, development range (OI-09, OI-17)
+hcert-mtl = { -7 => any }              ; MedicationTreatmentLineMin, development range
+
+; The SMART Health Links payload format that IHE VHL reuses, as a CBOR map:
+; the primary form at key 5. [STT-VHL-001, STT-VHL-002] (OI-21, OI-23)
+vhl-payload = {
+  url: tstr,               ; https manifest URL (a FHIR List search)
+  key: tstr .size 43,      ; 32 random bytes, base64url
+  ? exp: int,              ; epoch seconds
+  ? flag: tstr .regexp "L?P?",
+  ? label: tstr .size (0..80),
+  ? v: int,
+  ? extension: { ? fhirBaseUrl: tstr, * tstr => any },
+}
+
+; IHE ITI-YY3's text form, still accepted on decode. [STT-VHL-003]
+vhl-uri = tstr .regexp "vhlink:/[A-Za-z0-9_-]+"
+
+; Context identifier and Base45 text (step 8). [STT-HC1-001, STT-B45-001]
+hc1-string = tstr .regexp "HC1:[0-9A-Z $%*+./:-]+"

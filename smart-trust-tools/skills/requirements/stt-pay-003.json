@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-pay-003",
+  "title": "One immunization event per DVC",
+  "description": "Restates QR Code Generation, 3. Step 2 — Assemble the payload; QR Code Generation, 12.1 Scenario. QR Code Generation, 3. Step 2 — Assemble the payload: “vx is 1..1. One DVC documents one immunization event. A visit at which two vaccines are administered produces two certificates and two QR codes.”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-pay-001"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s004-3-step-2-assemble-the-payload",
+    "library/who-smart-trust-qr-code-generation/sections/s014-12-1-scenario"
+  ],
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "One immunization event per DVC",
+      "conformance": "SHALL",
+      "requirement": "A DVCMin SHALL carry exactly one vx. The library SHALL provide a helper that turns one visit with N administered vaccines into N payloads, one per vaccine, and so N certificates.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-PAY-003 passes in each implementation's suite (Kotlin: `STT-PAY-003 one immunization event per DVC` (AssemblePayloadTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}

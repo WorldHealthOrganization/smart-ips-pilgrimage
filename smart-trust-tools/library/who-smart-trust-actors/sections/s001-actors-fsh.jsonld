@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-actors/sections/s001-actors-fsh",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "actors.fsh",
+  "contains": [
+    "library/who-smart-trust-actors/blocks/prose-s001-actors-fsh"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-actors",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-actors",
+  "provenance": "ingested"
+}

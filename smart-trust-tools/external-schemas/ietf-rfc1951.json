@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc1951",
+  "authority": "IETF",
+  "title": "RFC 1951 DEFLATE Compressed Data Format",
+  "version": "RFC 1951",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc1951",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

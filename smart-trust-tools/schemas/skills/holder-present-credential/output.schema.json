@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Holder Present Credential Output",
+  "type": "object",
+  "required": [
+    "shown"
+  ],
+  "properties": {
+    "shown": {
+      "type": "object",
+      "required": [
+        "member",
+        "kind",
+        "medium",
+        "qr"
+      ],
+      "properties": {
+        "member": {
+          "type": "string",
+          "description": "Who the credential is about, as the holder labels them."
+        },
+        "kind": {
+          "enum": [
+            "hcert",
+            "vhl",
+            "shl"
+          ],
+          "description": "An HCERT certificate; the HCERT carrying a Verifiable Health Link at key 5; or a SMART Health Link."
+        },
+        "medium": {
+          "enum": [
+            "paper",
+            "wallet"
+          ]
+        },
+        "qr": {
+          "type": "string",
+          "pattern": "^(HC1:|shlink:/)",
+          "description": "The QR's text: HC1:… for an HCERT or a VHL (hcert-prefix-context), shlink:/… for a SMART Health Link (HL7 SMART Health Links specification)."
+        }
+      },
+      "additionalProperties": false
+    },
+    "passcodeToSay": {
+      "type": "boolean",
+      "description": "True for a health link whose manifest needs a passcode (a VHL, or an SHL with the P flag): the holder says it to the health worker."
+    }
+  },
+  "additionalProperties": false
+}

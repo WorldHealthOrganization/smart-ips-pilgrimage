@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-ver-003",
+  "title": "Defensive protected-header parsing",
+  "description": "Restates QR Code Generation, 11. Verifying: the same steps upwards; HCERT Specification, 6.3 Input Data Validation. QR Code Generation, 11. Verifying: the same steps upwards: “Parsing the protected header necessarily happens before signature verification, which makes it an attack surface”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-ver-001"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s012-11-verifying-the-same-steps-upwards",
+    "library/who-smart-trust-hcert-spec/sections/s025-6-3-input-data-validation"
+  ],
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Defensive protected-header parsing",
+      "conformance": "SHALL",
+      "requirement": "Before the signature is checked, the verifier SHALL validate the types and lengths in the protected header: alg is a supported integer, kid is a byte string of the expected length, and no duplicate labels. It SHALL fail closed on anything unexpected.",
+      "category": "security",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VER-003 passes in each implementation's suite (Kotlin: `STT-VER-003 a protected header with an unsupported alg is refused` (SignCoseTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "security",
+    "direct"
+  ]
+}

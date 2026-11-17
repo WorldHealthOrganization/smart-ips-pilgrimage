@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-qr-code-generation",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "QR Code Generation",
+  "contains": [
+    "library/who-smart-trust-qr-code-generation/sections/s001-generating-a-qr-code",
+    "library/who-smart-trust-qr-code-generation/sections/s002-1-the-pipeline-at-a-glance",
+    "library/who-smart-trust-qr-code-generation/sections/s003-2-step-1-select-the-payload-type",
+    "library/who-smart-trust-qr-code-generation/sections/s004-3-step-2-assemble-the-payload",
+    "library/who-smart-trust-qr-code-generation/sections/s005-4-step-3-build-the-cwt-claim-set",
+    "library/who-smart-trust-qr-code-generation/sections/s006-5-step-4-serialise-as-cbor",
+    "library/who-smart-trust-qr-code-generation/sections/s007-6-step-5-sign-as-a-cose-sign1",
+    "library/who-smart-trust-qr-code-generation/sections/s008-7-step-6-compress",
+    "library/who-smart-trust-qr-code-generation/sections/s009-8-step-7-encode-as-base45",
+    "library/who-smart-trust-qr-code-generation/sections/s010-9-step-8-prefix-the-context-identifier",
+    "library/who-smart-trust-qr-code-generation/sections/s011-10-step-9-render-the-qr-code",
+    "library/who-smart-trust-qr-code-generation/sections/s012-11-verifying-the-same-steps-upwards",
+    "library/who-smart-trust-qr-code-generation/sections/s013-12-worked-example-a-newborn-birth-dose-dvc",
+    "library/who-smart-trust-qr-code-generation/sections/s014-12-1-scenario",
+    "library/who-smart-trust-qr-code-generation/sections/s015-12-2-host-country-schedule",
+    "library/who-smart-trust-qr-code-generation/sections/s016-12-3-issuer",
+    "library/who-smart-trust-qr-code-generation/sections/s017-12-4-the-payload",
+    "library/who-smart-trust-qr-code-generation/sections/s018-12-5-size-at-each-stage",
+    "library/who-smart-trust-qr-code-generation/sections/s019-12-6-the-certificates"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-NC-SA-3.0-IGO",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-NC-SA-3.0-IGO",
+    "basis": "WorldHealthOrganization/smart-trust LICENSE at the ingested commit: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO. Its own license.md page says Creative Commons Attribution 3.0 IGO instead (recorded as a bean). The text is held unmodified, with attribution, for non-commercial reference."
+  },
+  "meta": {
+    "doc_id": "who-smart-trust-qr-code-generation",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "qr_code_generation.md",
+    "source_sha256": "03253100cd38b5c6f2ec0b167ee11742215a8bd4e5aea3d09495b8ce6068f052",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

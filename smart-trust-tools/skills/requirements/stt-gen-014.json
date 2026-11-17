@@ -1,0 +1,38 @@
+{
+  "id": "req:stt-gen-014",
+  "title": "Kotlin API skeleton generated from the WIT",
+  "description": "Stakeholder directive, in the context of Stakeholder directive: transpile targets and API-first; WIT, WebAssembly Component Model IDL.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-gen-010",
+    "req:stt-gen-004"
+  ],
+  "reference": [
+    "memory/dir-targets",
+    "external-schemas/bytecodealliance-wit"
+  ],
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Kotlin API skeleton generated from the WIT",
+      "conformance": "SHALL",
+      "requirement": "The Kotlin API (types and interfaces, no behaviour) SHALL be generated from the WIT contract by tools/wit2kotlin/wit2kotlin.py, following the WIT to Kotlin mapping rules in api/README.md, into a Kotlin Multiplatform module targeting the JVM and Node.js. The generated API SHALL NOT expose the contract language: no Kotlin type, member or KDoc names WIT or a WIT world, and worlds are not generated. Kotlin implementations SHALL implement the generated interfaces. CI SHALL fail when the generated skeleton is out of date with the WIT or does not compile.",
+      "category": "architecture",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-GEN-014 passes in each implementation's suite (Kotlin: `STT-GEN-014 STT-GEN-010 the API is generated from the contract and names no WIT` (ArchitectureTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "architecture",
+    "directive"
+  ]
+}

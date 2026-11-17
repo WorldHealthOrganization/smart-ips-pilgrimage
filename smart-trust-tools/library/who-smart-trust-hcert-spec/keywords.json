@@ -1,0 +1,731 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "who-smart-trust-hcert-spec",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "dsc certificates",
+      "score": 10.4281,
+      "evidence": []
+    },
+    {
+      "term": "health certificates",
+      "score": 10.1899,
+      "evidence": []
+    },
+    {
+      "term": "sca certificates",
+      "score": 9.9268,
+      "evidence": []
+    },
+    {
+      "term": "claim key",
+      "score": 8.8798,
+      "evidence": []
+    },
+    {
+      "term": "signing certificates",
+      "score": 8.6112,
+      "evidence": []
+    },
+    {
+      "term": "covid certificates",
+      "score": 8.3791,
+      "evidence": []
+    },
+    {
+      "term": "vaccination certificates",
+      "score": 7.772,
+      "evidence": []
+    },
+    {
+      "term": "key identifier",
+      "score": 7.6583,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "issuer signature",
+      "score": 7.4262,
+      "evidence": []
+    },
+    {
+      "term": "certificate container",
+      "score": 7.3409,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "public key",
+      "score": 6.8702,
+      "evidence": []
+    },
+    {
+      "term": "certificate authorities",
+      "score": 6.8237,
+      "evidence": []
+    }
+  ],
+  "sections": {
+    "s001-electronic-health-certificate-specification": [
+      {
+        "term": "electronic",
+        "score": 1.0182,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "specification",
+        "score": 0.9425,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "claims",
+        "score": 0.8771,
+        "evidence": []
+      }
+    ],
+    "s002-1-introduction": [
+      {
+        "term": "introduction",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "optical",
+        "score": 0.6052,
+        "evidence": []
+      },
+      {
+        "term": "generic",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s003-2-terminology": [
+      {
+        "term": "called",
+        "score": 1.2309,
+        "evidence": []
+      },
+      {
+        "term": "terminology",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "signing certificate",
+        "score": 1.1323,
+        "evidence": []
+      },
+      {
+        "term": "health certificates",
+        "score": 0.9362,
+        "evidence": []
+      },
+      {
+        "term": "dcc",
+        "score": 0.7187,
+        "evidence": []
+      },
+      {
+        "term": "sca",
+        "score": 0.703,
+        "evidence": []
+      }
+    ],
+    "s004-3-electronic-health-certificate-container-format": [
+      {
+        "term": "electronic health",
+        "score": 2.5283,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "container format",
+        "score": 2.4184,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "certificate container",
+        "score": 2.2418,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s005-3-1-structure-of-the-payload": [
+      {
+        "term": "payload",
+        "score": 1.1016,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "defined",
+        "score": 0.7201,
+        "evidence": []
+      },
+      {
+        "term": "cbor",
+        "score": 0.6471,
+        "evidence": []
+      }
+    ],
+    "s007-3-2-1-cwt-structure-overview": [
+      {
+        "term": "overview",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "claim key",
+        "score": 1.1665,
+        "evidence": []
+      },
+      {
+        "term": "cwt",
+        "score": 0.8775,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s008-3-2-2-signature-algorithm": [
+      {
+        "term": "signature algorithm",
+        "score": 4.3111,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "secondary algorithm",
+        "score": 3.3864,
+        "evidence": []
+      },
+      {
+        "term": "primary algorithm",
+        "score": 3.0137,
+        "evidence": []
+      },
+      {
+        "term": "hash algorithm",
+        "score": 2.2956,
+        "evidence": []
+      },
+      {
+        "term": "cose algorithm",
+        "score": 2.2538,
+        "evidence": []
+      },
+      {
+        "term": "algorithm parameter",
+        "score": 2.2489,
+        "evidence": []
+      }
+    ],
+    "s009-3-2-3-key-identifier": [
+      {
+        "term": "key identifier",
+        "score": 2.6193,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "both options",
+        "score": 1.1703,
+        "evidence": []
+      },
+      {
+        "term": "dscs",
+        "score": 0.9734,
+        "evidence": []
+      },
+      {
+        "term": "reasons",
+        "score": 0.9592,
+        "evidence": []
+      }
+    ],
+    "s010-3-2-4-issuer": [
+      {
+        "term": "issuer",
+        "score": 1.1124,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "claim",
+        "score": 0.6701,
+        "evidence": []
+      },
+      {
+        "term": "identify",
+        "score": 0.6158,
+        "evidence": []
+      }
+    ],
+    "s011-3-2-5-expiration-time": [
+      {
+        "term": "expiration time",
+        "score": 2.6943,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "validity period",
+        "score": 1.3301,
+        "evidence": []
+      },
+      {
+        "term": "force",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s012-3-2-6-issued-at": [
+      {
+        "term": "issued",
+        "score": 1.2816,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "health certificate",
+        "score": 0.6761,
+        "evidence": []
+      },
+      {
+        "term": "validity",
+        "score": 0.6675,
+        "evidence": []
+      }
+    ],
+    "s013-3-2-7-health-certificate-claim": [
+      {
+        "term": "ddcc vaccination",
+        "score": 3.6324,
+        "evidence": []
+      },
+      {
+        "term": "vaccination status",
+        "score": 2.7731,
+        "evidence": []
+      },
+      {
+        "term": "vaccination certificates",
+        "score": 2.7026,
+        "evidence": []
+      },
+      {
+        "term": "health certificate",
+        "score": 2.5595,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "covid certificates",
+        "score": 2.38,
+        "evidence": []
+      },
+      {
+        "term": "digital covid",
+        "score": 2.3758,
+        "evidence": []
+      },
+      {
+        "term": "ddcc fhir",
+        "score": 2.2648,
+        "evidence": []
+      },
+      {
+        "term": "covid vaccine",
+        "score": 2.2008,
+        "evidence": []
+      }
+    ],
+    "s015-4-1-raw": [
+      {
+        "term": "raw",
+        "score": 1.9185,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "transfer",
+        "score": 1.0334,
+        "evidence": []
+      },
+      {
+        "term": "transport",
+        "score": 0.7159,
+        "evidence": []
+      }
+    ],
+    "s017-4-2-1-payload-cwt-compression": [
+      {
+        "term": "cwt",
+        "score": 0.8775,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "zlib",
+        "score": 0.5215,
+        "evidence": []
+      },
+      {
+        "term": "deflate",
+        "score": 0.5091,
+        "evidence": []
+      }
+    ],
+    "s018-4-2-2-qr-2d-barcode": [
+      {
+        "term": "presentation media",
+        "score": 1.6138,
+        "evidence": []
+      },
+      {
+        "term": "optical code",
+        "score": 1.4948,
+        "evidence": []
+      },
+      {
+        "term": "context identifier",
+        "score": 1.1028,
+        "evidence": []
+      },
+      {
+        "term": "symbols",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "encoded",
+        "score": 0.9235,
+        "evidence": []
+      },
+      {
+        "term": "character",
+        "score": 0.8075,
+        "evidence": []
+      },
+      {
+        "term": "base",
+        "score": 0.7146,
+        "evidence": []
+      }
+    ],
+    "s019-5-trusted-list-format-dsc-list": [
+      {
+        "term": "unique subject",
+        "score": 2.4861,
+        "evidence": []
+      },
+      {
+        "term": "subject key",
+        "score": 2.0835,
+        "evidence": []
+      },
+      {
+        "term": "contain unique",
+        "score": 2.0528,
+        "evidence": []
+      },
+      {
+        "term": "sca certificate",
+        "score": 1.4808,
+        "evidence": []
+      },
+      {
+        "term": "validity period",
+        "score": 1.3301,
+        "evidence": []
+      }
+    ],
+    "s020-5-1-simplified-sca-dsc": [
+      {
+        "term": "sca",
+        "score": 0.8871,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "version",
+        "score": 0.6399,
+        "evidence": []
+      },
+      {
+        "term": "dsc",
+        "score": 0.6284,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s021-5-2-icao-emrtd-pki-and-trust-centers": [
+      {
+        "term": "emrtd",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "icao",
+        "score": 1.0827,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "sca",
+        "score": 0.8871,
+        "evidence": []
+      }
+    ],
+    "s022-6-security-considerations": [
+      {
+        "term": "security",
+        "score": 0.8822,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "considerations",
+        "score": 0.7934,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "monitoring",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s023-6-1-hcert-signature-validity-time": [
+      {
+        "term": "validity",
+        "score": 1.9558,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "validity period",
+        "score": 1.814,
+        "evidence": []
+      },
+      {
+        "term": "time",
+        "score": 1.1207,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "health certificates",
+        "score": 1.1134,
+        "evidence": []
+      },
+      {
+        "term": "requires",
+        "score": 0.9458,
+        "evidence": []
+      },
+      {
+        "term": "signature",
+        "score": 0.8894,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s024-6-2-key-management": [
+      {
+        "term": "private keys",
+        "score": 1.9267,
+        "evidence": []
+      },
+      {
+        "term": "risks",
+        "score": 1.3311,
+        "evidence": []
+      },
+      {
+        "term": "health certificates",
+        "score": 0.9982,
+        "evidence": []
+      },
+      {
+        "term": "key",
+        "score": 0.9928,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "different",
+        "score": 0.9787,
+        "evidence": []
+      },
+      {
+        "term": "compromised",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "external",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "management",
+        "score": 0.9034,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s025-6-3-input-data-validation": [
+      {
+        "term": "input",
+        "score": 1.3625,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "issuer signature",
+        "score": 1.0543,
+        "evidence": []
+      },
+      {
+        "term": "validation",
+        "score": 0.9539,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s026-appendix-a-trust-management": [
+      {
+        "term": "gdhcn participants",
+        "score": 2.8387,
+        "evidence": []
+      },
+      {
+        "term": "gdhcn secretariat",
+        "score": 2.7987,
+        "evidence": []
+      },
+      {
+        "term": "sca certificates",
+        "score": 2.1481,
+        "evidence": []
+      },
+      {
+        "term": "signing certificates",
+        "score": 1.7978,
+        "evidence": []
+      },
+      {
+        "term": "dsc certificates",
+        "score": 1.7465,
+        "evidence": []
+      },
+      {
+        "term": "public keys",
+        "score": 1.5292,
+        "evidence": []
+      },
+      {
+        "term": "public key",
+        "score": 1.1462,
+        "evidence": []
+      },
+      {
+        "term": "own",
+        "score": 1.1237,
+        "evidence": []
+      }
+    ],
+    "s027-a-1-the-key-identifier-kid-s": [
+      {
+        "term": "key identifier",
+        "score": 1.9604,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "dsc",
+        "score": 0.6284,
+        "evidence": []
+      },
+      {
+        "term": "der",
+        "score": 0.6052,
+        "evidence": []
+      }
+    ],
+    "s028-a-2-extended-key-usage-identifiers": [
+      {
+        "term": "key usage",
+        "score": 4.1314,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "extended key",
+        "score": 4.05,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "usage extension",
+        "score": 2.3822,
+        "evidence": []
+      },
+      {
+        "term": "usage policy",
+        "score": 2.2965,
+        "evidence": []
+      }
+    ]
+  }
+}

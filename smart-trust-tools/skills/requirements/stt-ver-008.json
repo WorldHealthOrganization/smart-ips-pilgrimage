@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-ver-008",
+  "title": "Typed verification result and failure taxonomy",
+  "description": "Engineering consequence of QR Code Generation, 11. Verifying: the same steps upwards; Stakeholder directive: Kotlin library first, Rust library second.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-gen-006"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s012-11-verifying-the-same-steps-upwards",
+    "memory/dir-languages"
+  ],
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Typed verification result and failure taxonomy",
+      "conformance": "SHALL",
+      "requirement": "A certificate failing verification SHALL produce a Failed result, not an exception or panic. Failed results SHALL name the step that failed and a reason from a closed set shared by both languages: BadPrefix, UnsupportedContextVersion, Base45Invalid, InflateFailed, LimitExceeded, CoseMalformed, HeaderInvalid, UnsupportedAlgorithm, KidNotFound, SignatureInvalid, KeyUsageMismatch, Expired, NotYetValid, HcertMissing, MultipleSubclaims, PayloadInvalid. Exceptions or errors SHALL be reserved for programming errors and infrastructure failures.",
+      "category": "api",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VER-008 passes in each implementation's suite (Kotlin: `STT-VER-008 STT-VER-009 every failure is a value naming its step and reason, offline` (VerifyTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "api",
+    "derived"
+  ]
+}

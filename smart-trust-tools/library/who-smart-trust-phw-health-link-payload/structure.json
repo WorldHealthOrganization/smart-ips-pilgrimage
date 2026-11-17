@@ -1,0 +1,69 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-phw-health-link-payload",
+  "source": {
+    "file": "who-smart-trust-phw-health-link-payload",
+    "sha256": "090248666de5e614fd335058750406085bb8cccc1fffc108b828c47c7b1c1a00",
+    "digest": "listing",
+    "bytes": 2505,
+    "mtime": "2026-08-31T12:50:22Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/fsh/models/HealthLinkPayload.fsh",
+        "sha256": "52429020d7d018cd66654fede1e1f46a00205bccb9cade9a14cf239df6443938",
+        "bytes": 1848,
+        "lines": 23,
+        "format": "verbatim"
+      },
+      {
+        "path": "input/fsh/models/VerifiableHealthLinkPayload.fsh",
+        "sha256": "98727a1cccc936bcbddf37c538ba3bdb054e2fd320be8a51e509d214dca2b295",
+        "bytes": 657,
+        "lines": 24,
+        "format": "verbatim"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust-phw",
+      "commit": "fd3b5480e5df8001890d31ecc9761051c17c2cc5",
+      "ref": "main",
+      "committed": "2026-08-31T12:50:22Z",
+      "path": "input/fsh/models/HealthLinkPayload.fsh",
+      "published": "https://smart.who.int/trust-phw/StructureDefinition-VerifiableHealthLinkPayload.html",
+      "retrieved": "2026-10-20T19:45:00Z"
+    }
+  },
+  "metadata": {
+    "title": "HealthLinkPayload and VerifiableHealthLinkPayload logical models (FSH)"
+  },
+  "toc_source": "files",
+  "sections": [
+    {
+      "id": "s001-input-fsh-models-healthlinkpayload-fsh",
+      "number": null,
+      "title": "input/fsh/models/HealthLinkPayload.fsh",
+      "level": 1,
+      "file": "input/fsh/models/HealthLinkPayload.fsh",
+      "line_start": 1,
+      "line_end": 23,
+      "unit": "file",
+      "n_chars": 1858,
+      "n_words": 257
+    },
+    {
+      "id": "s002-input-fsh-models-verifiablehealthlinkpayload-fsh",
+      "number": null,
+      "title": "input/fsh/models/VerifiableHealthLinkPayload.fsh",
+      "level": 1,
+      "file": "input/fsh/models/VerifiableHealthLinkPayload.fsh",
+      "line_start": 1,
+      "line_end": 24,
+      "unit": "file",
+      "n_chars": 669,
+      "n_words": 77
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred. 2 files form this one source; source.sha256 is the sha256 of their sha256sum listing, in files order."
+}

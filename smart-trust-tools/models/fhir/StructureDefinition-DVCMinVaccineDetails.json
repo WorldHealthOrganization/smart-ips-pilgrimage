@@ -1,0 +1,150 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DVCMinVaccineDetails",
+  "url": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails",
+  "version": "0.1.0",
+  "name": "DVCMinVaccineDetails",
+  "title": "DVC HCert Vaccine Details (Minimal)",
+  "status": "active",
+  "description": "DVC Vaccine Details for a minimal DVC payload for use within an HCERT Payload",
+  "fhirVersion": "5.0.0",
+  "kind": "logical",
+  "abstract": true,
+  "type": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DVCMinVaccineDetails",
+        "path": "DVCMinVaccineDetails",
+        "short": "DVC HCert Vaccine Details (Minimal)",
+        "definition": "DVC Vaccine Details for a minimal DVC payload for use within an HCERT Payload",
+        "constraint": [
+          {
+            "key": "must-have-issuer-or-clinician-name",
+            "severity": "error",
+            "human": "Either issuer or clinicianName must be present",
+            "expression": "is.exists() or cn.exists()",
+            "source": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails"
+          }
+        ]
+      },
+      {
+        "id": "DVCMinVaccineDetails.vp",
+        "path": "DVCMinVaccineDetails.vp",
+        "code": [
+          {
+            "code": "ICVP.C5.DE.11",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          },
+          {
+            "code": "39236-5",
+            "system": "http://loinc.org",
+            "display": "Vaccine code"
+          },
+          {
+            "code": "787859002",
+            "system": "http://snomed.info/sct",
+            "display": "Vaccine product (medicinal product)"
+          }
+        ],
+        "short": "Vaccine Product ID",
+        "definition": "Vaccine Product ID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "DVCMinVaccineDetails.dv",
+        "path": "DVCMinVaccineDetails.dv",
+        "code": [
+          {
+            "code": "ICVP.C5.DE.13",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          },
+          {
+            "code": "30952-6",
+            "system": "http://loinc.org",
+            "display": "Date and time of vaccination"
+          }
+        ],
+        "short": "Date of vaccination",
+        "definition": "Date of vaccination",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "DVCMinVaccineDetails.cn",
+        "path": "DVCMinVaccineDetails.cn",
+        "code": [
+          {
+            "code": "ICVP.C5.DE.14",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          }
+        ],
+        "short": "Name of supervising clinician",
+        "definition": "Name of supervising clinician",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DVCMinVaccineDetails.is",
+        "path": "DVCMinVaccineDetails.is",
+        "code": [
+          {
+            "code": "ICVP.C5.DE.15",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          }
+        ],
+        "short": "Certificate issuer id (referenced organization)",
+        "definition": "Certificate issuer id (referenced organization)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "DVCMinVaccineDetails.bo",
+        "path": "DVCMinVaccineDetails.bo",
+        "code": [
+          {
+            "code": "ICVP.C5.DE.17",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          },
+          {
+            "code": "30959-1",
+            "system": "http://loinc.org",
+            "display": "Lot number [Identifier] Vaccine"
+          }
+        ],
+        "short": "Batch No",
+        "definition": "Batch No",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

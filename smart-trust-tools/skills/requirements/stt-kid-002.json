@@ -1,0 +1,35 @@
+{
+  "id": "req:stt-kid-002",
+  "title": "kid is a lookup hint, not unique",
+  "description": "Restates QR Code Generation, 6. Step 5 — Sign as a COSE_Sign1; HCERT Specification, 3.2.3 Key Identifier. QR Code Generation, 6. Step 5 — Sign as a COSE_Sign1: “a verifier that finds several DSCs with the same kid MUST try all of them”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-receiver",
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "kid is a lookup hint, not unique",
+      "conformance": "SHALL",
+      "requirement": "Trust-list lookup by kid SHALL return every matching DSC, and the verifier SHALL try each candidate until one verifies. A kid match alone SHALL NOT count as authentication.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-KID-002 passes in each implementation's suite (Kotlin: `STT-VER-006 STT-KID-002 a kid nobody trusts fails the trust lookup` (VerifyTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s007-6-step-5-sign-as-a-cose-sign1",
+    "library/who-smart-trust-hcert-spec/sections/s009-3-2-3-key-identifier"
+  ]
+}

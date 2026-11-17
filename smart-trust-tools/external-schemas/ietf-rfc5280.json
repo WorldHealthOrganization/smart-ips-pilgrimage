@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc5280",
+  "authority": "IETF",
+  "title": "RFC 5280 Internet X.509 PKI Certificate and CRL Profile",
+  "version": "RFC 5280",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc5280",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

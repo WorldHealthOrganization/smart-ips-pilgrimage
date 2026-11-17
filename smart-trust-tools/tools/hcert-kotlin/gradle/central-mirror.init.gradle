@@ -1,0 +1,15 @@
+// Resolve Maven Central and the Gradle plugin portal through Google's mirror
+// of Maven Central, for when repo.maven.apache.org refuses (it answers 429
+// to some shared egress). Safe to use because nothing is trusted on the
+// mirror's word: gradle/verification-metadata.xml pins the sha256 of every
+// artefact, and a different byte fails the build.
+//   gradle -p tools/hcert-kotlin --init-script gradle/central-mirror.init.gradle build
+def mirror = "https://maven-central.storage-download.googleapis.com/maven2/"
+settingsEvaluated { settings ->
+    settings.pluginManagement.repositories { maven { url mirror } }
+    settings.dependencyResolutionManagement.repositories { maven { url mirror } }
+}
+allprojects {
+    buildscript { repositories { maven { url mirror } } }
+    repositories { maven { url mirror } }
+}

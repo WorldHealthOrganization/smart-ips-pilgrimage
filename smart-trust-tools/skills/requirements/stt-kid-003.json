@@ -1,0 +1,34 @@
+{
+  "id": "req:stt-kid-003",
+  "title": "kid text forms",
+  "description": "Engineering consequence of QR Code Generation, 12.6 The certificates; GDHCN Trustlists (DID), Example DID documents. QR Code Generation, 12.6 The certificates: “Both certificates carry the key identifier kW/6VnwPRKI= (hex 916ffa567c0f44a2).”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "kid text forms",
+      "conformance": "SHALL",
+      "requirement": "Kid SHALL convert to and from hex, standard base64 and URL-safe base64. Trust-list matching SHALL compare the kid bytes, not their text form.",
+      "category": "api",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-KID-003 passes in each implementation's suite (Kotlin: `STT-KID-003 a kid reads and writes as standard and URL-safe base64` (TrustListTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "api",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s019-12-6-the-certificates",
+    "library/who-smart-trust-did-gdhcn/sections/s004-example-did-documents"
+  ]
+}

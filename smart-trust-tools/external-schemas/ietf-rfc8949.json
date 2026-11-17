@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc8949",
+  "authority": "IETF",
+  "title": "RFC 8949 Concise Binary Object Representation (CBOR)",
+  "version": "RFC 8949",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc8949",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

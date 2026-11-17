@@ -1,0 +1,16 @@
+# Conformance vector from PR 129's branch of the WHO SMART Trust IG, QR Code
+# Generation 12, before the merge. [STT-TST-001]
+# The merged guide (af75be2) reissued the example under DEV participant XXR
+# and no longer publishes this JSON or DSC; vectors/smart-trust-af75be2 holds
+# the merged example. This pair stays because it is the only published
+# example whose DSC is in hand, so it is the end-to-end verification vector.
+repo: WorldHealthOrganization/smart-trust
+pr: 129
+sha: 50bcb25b387d7e7113ffc9e9046452580f9d67aa
+files:
+  dvc-qr-example-XXA.json: input/images/dvc-qr-example-XXA.json
+  dvc-qr-example-XXA-dsc.pem: input/images/dvc-qr-example-XXA-dsc.pem
+notes: >-
+  TEST DATA ONLY. Issued for GDHCN test participant XXA (iss XX) with
+  throw-away keys that are on no trust list. Valid 2026-09-29T08:30Z to
+  2027-09-29T08:30Z. kid WHM+BYqqZiE=.

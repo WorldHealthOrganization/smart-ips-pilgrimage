@@ -1,0 +1,34 @@
+{
+  "id": "req:stt-cbr-001",
+  "title": "Deterministic CBOR on encode",
+  "description": "Engineering consequence of QR Code Generation, 5. Step 4 — Serialise as CBOR; RFC 8949 CBOR (obsoletes RFC 7049).",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Deterministic CBOR on encode",
+      "conformance": "SHALL",
+      "requirement": "The encoder SHALL produce deterministic CBOR (RFC 8949 section 4.2.1 core deterministic encoding). For the HCERT key sets this matches the RFC 7049 canonical (length-first) ordering. Same input gives same bytes, in both languages.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-CBR-001 passes in each implementation's suite (Kotlin: `STT-CBR-001 maps are encoded in deterministic key order, whatever order they were built in` (EncodeCborTest.kt); `STT-TST-002 STT-CBR-001 deterministic re-encoding reproduces the issued CWT byte for byte` (ConformanceVectorsTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s006-5-step-4-serialise-as-cbor",
+    "external-schemas/ietf-rfc8949"
+  ]
+}

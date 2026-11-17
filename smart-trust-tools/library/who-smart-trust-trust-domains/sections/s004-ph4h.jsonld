@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-trust-domains/sections/s004-ph4h",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "PH4H",
+  "contains": [
+    "library/who-smart-trust-trust-domains/blocks/prose-s004-ph4h"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-trust-domains",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-trust-domains",
+  "provenance": "ingested"
+}

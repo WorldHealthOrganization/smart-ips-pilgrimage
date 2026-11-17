@@ -1,0 +1,15 @@
+{
+  "$schema": "folio-graph-typology/v1",
+  "kind": "fhir-logical-models",
+  "title": "FHIR logical models",
+  "perInstance": true,
+  "renderable": false,
+  "holds": "context",
+  "summary": "The WHO SMART Trust PHW logical models (DVCMin and its PreQual and vaccine-details variants) as FHIR R5 StructureDefinitions, fetched at a pinned commit by fetch-lms, and the R5 primitive patterns. lm-derive reads them.",
+  "validatorNotApplicable": "FHIR R5 StructureDefinitions compiled by SUSHI from smart-trust-phw at the commit models/fhir/SOURCE.yaml pins, and the R5 primitive regexes extracted from hl7.fhir.r5.core; their schema is FHIR R5 itself (external-schemas/hl7-fhir-r5), so a validator for them is a FHIR validator, not a Zod schema here. lm-derive refuses, in both its generate and --check modes and before writing anything, any definition that is not a kind=logical FHIR 5.0.0 model, an unknown base, a nested element, an element property, type or type profile it does not map, a choice type, an untyped element, an element-level invariant, and a model invariant it cannot translate, naming the model and element; the only way past one is an entry with a reason in tools/lm-derive/allow-unmapped.json, which is empty because these models map completely. The HL7 FHIR Validator checks them against FHIR R5 as the site's pre step when it is published to main, never for a staging preview (the fhir-validate Tool, with the jar and packages pinned by sha256 in toolchain/fhir-validator/validator.json); until the two packages listed there without a sha256 are pinned, it refuses, and so does main's publish.",
+  "avatar": {
+    "glyph": "M4 5h16v14H4zM4 10h16M10 10v9",
+    "tone": 12,
+    "reads": "a structure definition's table: elements, types, cardinality"
+  }
+}

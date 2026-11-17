@@ -1,0 +1,254 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-changes",
+  "source": {
+    "file": "changes.md",
+    "sha256": "3984ebc0eac3c1ff13aa213f14b31dd1b7335e6fef908331876d0a324f4b7f2b",
+    "digest": "file",
+    "bytes": 3819,
+    "mtime": "2026-10-22T10:51:06Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/pagecontent/changes.md",
+        "sha256": "3984ebc0eac3c1ff13aa213f14b31dd1b7335e6fef908331876d0a324f4b7f2b",
+        "bytes": 3819,
+        "lines": 94,
+        "format": "markdown"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust",
+      "commit": "af75be20b75ab87efcfd1201ccd43020f487f660",
+      "ref": "main",
+      "committed": "2026-10-22T10:51:06Z",
+      "path": "input/pagecontent/changes.md",
+      "published": "https://smart.who.int/trust/changes.html",
+      "retrieved": "2026-10-22T16:40:00Z"
+    }
+  },
+  "metadata": {
+    "title": "Change Log"
+  },
+  "toc_source": "headings",
+  "sections": [
+    {
+      "id": "s001-changes",
+      "number": null,
+      "title": "Changes",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 2,
+      "line_end": 5,
+      "unit": "heading",
+      "n_chars": 67,
+      "n_words": 13
+    },
+    {
+      "id": "s002-2024-01-29-v1-0-0-first-stable-release",
+      "number": null,
+      "title": "2024-01-29 v1.0.0 - First stable release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 6,
+      "line_end": 8,
+      "unit": "heading",
+      "n_chars": 67,
+      "n_words": 11
+    },
+    {
+      "id": "s003-2024-02-01-v1-1-0",
+      "number": null,
+      "title": "2024-02-01 v1.1.0",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 9,
+      "line_end": 11,
+      "unit": "heading",
+      "n_chars": 50,
+      "n_words": 7
+    },
+    {
+      "id": "s004-2024-02-21-v1-1-1",
+      "number": null,
+      "title": "2024-02-21 v1.1.1",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 12,
+      "line_end": 14,
+      "unit": "heading",
+      "n_chars": 45,
+      "n_words": 7
+    },
+    {
+      "id": "s005-2024-03-22-v1-1-2-release",
+      "number": null,
+      "title": "2024-03-22 v1.1.2 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 15,
+      "line_end": 21,
+      "unit": "heading",
+      "n_chars": 296,
+      "n_words": 46
+    },
+    {
+      "id": "s006-2024-10-28-v1-1-4-release",
+      "number": null,
+      "title": "2024-10-28 v1.1.4 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 22,
+      "line_end": 27,
+      "unit": "heading",
+      "n_chars": 220,
+      "n_words": 32
+    },
+    {
+      "id": "s007-2024-12-19-v1-1-5-release",
+      "number": null,
+      "title": "2024-12-19 v1.1.5 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 28,
+      "line_end": 30,
+      "unit": "heading",
+      "n_chars": 62,
+      "n_words": 9
+    },
+    {
+      "id": "s008-2025-04-02-v1-2-0-release",
+      "number": null,
+      "title": "2025-04-02 v1.2.0 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 31,
+      "line_end": 39,
+      "unit": "heading",
+      "n_chars": 445,
+      "n_words": 71
+    },
+    {
+      "id": "s009-2025-10-27-v1-3-0-release",
+      "number": null,
+      "title": "2025-10-27 v1.3.0 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 40,
+      "line_end": 44,
+      "unit": "heading",
+      "n_chars": 192,
+      "n_words": 28
+    },
+    {
+      "id": "s010-2026-02-11-v1-4-0-release",
+      "number": null,
+      "title": "2026-02-11 v1.4.0 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 45,
+      "line_end": 50,
+      "unit": "heading",
+      "n_chars": 243,
+      "n_words": 32
+    },
+    {
+      "id": "s011-2026-04-27-v1-5-0-release",
+      "number": null,
+      "title": "2026-04-27 v1.5.0 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 51,
+      "line_end": 55,
+      "unit": "heading",
+      "n_chars": 352,
+      "n_words": 47
+    },
+    {
+      "id": "s012-2026-07-23-v1-6-0-release",
+      "number": null,
+      "title": "2026-07-23 v1.6.0 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 56,
+      "line_end": 63,
+      "unit": "heading",
+      "n_chars": 382,
+      "n_words": 55
+    },
+    {
+      "id": "s013-2026-07-29-v1-7-0-release",
+      "number": null,
+      "title": "2026-07-29 v1.7.0 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 64,
+      "line_end": 69,
+      "unit": "heading",
+      "n_chars": 246,
+      "n_words": 36
+    },
+    {
+      "id": "s014-2026-08-27-v1-7-1-release",
+      "number": null,
+      "title": "2026-08-27 v1.7.1 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 70,
+      "line_end": 72,
+      "unit": "heading",
+      "n_chars": 78,
+      "n_words": 11
+    },
+    {
+      "id": "s015-2026-09-03-v1-7-2-release",
+      "number": null,
+      "title": "2026-09-03 v1.7.2 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 73,
+      "line_end": 75,
+      "unit": "heading",
+      "n_chars": 95,
+      "n_words": 13
+    },
+    {
+      "id": "s016-2026-10-01-v1-7-3-release",
+      "number": null,
+      "title": "2026-10-01 v1.7.3 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 76,
+      "line_end": 81,
+      "unit": "heading",
+      "n_chars": 265,
+      "n_words": 38
+    },
+    {
+      "id": "s017-2026-10-09-v1-7-4-release",
+      "number": null,
+      "title": "2026-10-09 v1.7.4 - release",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 82,
+      "line_end": 84,
+      "unit": "heading",
+      "n_chars": 97,
+      "n_words": 13
+    },
+    {
+      "id": "s018-v1-7-5",
+      "number": null,
+      "title": "v1.7.5",
+      "level": 3,
+      "file": "input/pagecontent/changes.md",
+      "line_start": 85,
+      "line_end": 94,
+      "unit": "heading",
+      "n_chars": 581,
+      "n_words": 89
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

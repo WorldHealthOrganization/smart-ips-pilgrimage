@@ -1,0 +1,184 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "who-smart-trust-trust-domains",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "digital documentation",
+      "score": 3.1309,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "ips pilgrimage",
+      "score": 2.7801,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "implementation guide",
+      "score": 2.5676,
+      "evidence": []
+    },
+    {
+      "term": "covid certificates",
+      "score": 2.4825,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "verifiable digital",
+      "score": 2.431,
+      "evidence": []
+    },
+    {
+      "term": "data models",
+      "score": 2.2996,
+      "evidence": []
+    },
+    {
+      "term": "digital health",
+      "score": 2.2609,
+      "evidence": []
+    },
+    {
+      "term": "core data",
+      "score": 2.2381,
+      "evidence": []
+    },
+    {
+      "term": "credential formats",
+      "score": 2.1818,
+      "evidence": []
+    },
+    {
+      "term": "ips during",
+      "score": 1.9807,
+      "evidence": []
+    },
+    {
+      "term": "data elements",
+      "score": 1.9361,
+      "evidence": []
+    },
+    {
+      "term": "ddcc",
+      "score": 1.7379,
+      "evidence": [
+        "heading"
+      ]
+    }
+  ],
+  "sections": {
+    "s001-trust-domains": [
+      {
+        "term": "trust domains",
+        "score": 2.595,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "trusted services",
+        "score": 1.6282,
+        "evidence": []
+      },
+      {
+        "term": "verifiable digital",
+        "score": 1.3898,
+        "evidence": []
+      },
+      {
+        "term": "digital health",
+        "score": 1.2865,
+        "evidence": []
+      }
+    ],
+    "s002-digital-documentation-of-covid-19-certificates-d": [
+      {
+        "term": "digital documentation",
+        "score": 3.6562,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "covid certificates",
+        "score": 3.5618,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "ddcc",
+        "score": 2.3173,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "implementation guide",
+        "score": 1.4328,
+        "evidence": []
+      },
+      {
+        "term": "data elements",
+        "score": 1.3357,
+        "evidence": []
+      },
+      {
+        "term": "credential formats",
+        "score": 1.3142,
+        "evidence": []
+      }
+    ],
+    "s003-source-specifications": [
+      {
+        "term": "source",
+        "score": 1.7419,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "specifications",
+        "score": 1.3679,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "certificate formats",
+        "score": 1.2316,
+        "evidence": []
+      }
+    ],
+    "s005-ips-pilgrimage-ips-pilgrimage": [
+      {
+        "term": "ips pilgrimage",
+        "score": 5.5601,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "ips during",
+        "score": 1.9807,
+        "evidence": []
+      },
+      {
+        "term": "logic",
+        "score": 0.8709,
+        "evidence": []
+      }
+    ]
+  }
+}

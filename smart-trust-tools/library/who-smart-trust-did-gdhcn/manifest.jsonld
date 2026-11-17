@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-did-gdhcn",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "GDHCN Trustlists (DID)",
+  "contains": [
+    "library/who-smart-trust-did-gdhcn/sections/s001-gdhcn-trustlists",
+    "library/who-smart-trust-did-gdhcn/sections/s002-trustlists-2-0-0",
+    "library/who-smart-trust-did-gdhcn/sections/s003-did-trustlists-structure",
+    "library/who-smart-trust-did-gdhcn/sections/s004-example-did-documents",
+    "library/who-smart-trust-did-gdhcn/sections/s005-environments-repositories",
+    "library/who-smart-trust-did-gdhcn/sections/s006-trustlist-specification-1-0-0"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-NC-SA-3.0-IGO",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-NC-SA-3.0-IGO",
+    "basis": "WorldHealthOrganization/smart-trust LICENSE at the ingested commit: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO. Its own license.md page says Creative Commons Attribution 3.0 IGO instead (recorded as a bean). The text is held unmodified, with attribution, for non-commercial reference."
+  },
+  "meta": {
+    "doc_id": "who-smart-trust-did-gdhcn",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "concepts_did_gdhcn.md",
+    "source_sha256": "3ff5591597ae8324e6dbef135f66a6a2feca46f15ea9b50949cd153ff14dcf4a",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

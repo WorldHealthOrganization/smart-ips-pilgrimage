@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-volume-1/sections/s024-1-xx-4-2-2-use-case-2-eu-vaccination-card",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "1:XX.4.2.2 Use Case #2: EU Vaccination Card",
+  "contains": [
+    "library/ihe-iti-vhl-volume-1/blocks/prose-s024-1-xx-4-2-2-use-case-2-eu-vaccination-card"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "provenance": "ingested"
+}

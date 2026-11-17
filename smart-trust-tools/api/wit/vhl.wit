@@ -1,0 +1,117 @@
+package who:smart-trust@0.1.0;
+
+/// Verifiable Health Links, as the IHE ITI VHL profile specifies them, with
+/// the SMART Health Links payload format. Pure functions: the host does the
+/// HTTP (ITI-YY5 manifest search, ITI-68 document GETs) over mutual TLS, holds
+/// the receiver's signing key and logs audit events. [STT-VHL-010]
+interface vhl {
+    use types.{validation-issue, numeric-date};
+
+    /// The SMART Health Links payload format that IHE VHL reuses. At HCERT
+    /// claim -260 key 5 it is a CBOR map with these text keys
+    /// (fhir-base-url is extension.fhirBaseUrl). [STT-VHL-001, STT-VHL-002]
+    record vhl-payload {
+        /// Manifest URL: a FHIR List search with _id, code, status and
+        /// patient.identifier.
+        url: string,
+        /// 32 random bytes, 43 base64url characters.
+        key: string,
+        /// Expiry, epoch seconds.
+        exp: option<s64>,
+        /// L and/or P, in alphabetical order.
+        flag: option<string>,
+        /// At most 80 characters.
+        label: option<string>,
+        /// Protocol version; 1 when absent.
+        v: option<s32>,
+        /// extension.fhirBaseUrl, for the OAuth with SSRAA option.
+        fhir-base-url: option<string>,
+    }
+
+    variant vhl-error {
+        invalid(list<validation-issue>),
+        /// Not of the form vhlink:/<base64url JSON>.
+        not-a-vhlink(string),
+        manifest(string),
+        /// Wrong key, a bad tag, or a malformed JWE.
+        decrypt-failed(string),
+        /// A JWE alg or enc other than dir / A256GCM. [STT-VHL-007]
+        unsupported(string),
+    }
+
+    /// Every rule of the payload format; with `now`, an expired link too.
+    /// [STT-VHL-001, STT-VHL-009]
+    validate: func(p: vhl-payload, now: option<numeric-date>) -> list<validation-issue>;
+
+    /// [STT-VHL-003]
+    to-vhlink: func(p: vhl-payload) -> string;
+    from-vhlink: func(text: string) -> result<vhl-payload, vhl-error>;
+
+    /// A new key from the platform's secure random generator. [STT-VHL-004]
+    new-key: func() -> string;
+
+    /// The ITI-YY5 Retrieve Manifest request for the host to POST.
+    record manifest-request {
+        /// <base>/List/_search
+        url: string,
+        /// application/x-www-form-urlencoded
+        content-type: string,
+        body: string,
+    }
+
+    /// [STT-VHL-005]
+    build-manifest-request: func(p: vhl-payload, recipient: string, passcode: option<string>, embedded-length-max: option<u32>) -> result<manifest-request, vhl-error>;
+
+    /// One document listed by the manifest.
+    record manifest-document {
+        /// DocumentReference.content.attachment.url, when the DocumentReference
+        /// was included; the host GETs it (ITI-68).
+        url: option<string>,
+        /// List.entry.item.reference, when it was not; the host reads it first.
+        reference: option<string>,
+        /// The decrypted content type (attachment.contentType).
+        content-type: option<string>,
+        title: option<string>,
+    }
+
+    /// The ITI-YY5 searchset Bundle. [STT-VHL-006]
+    parse-manifest: func(bundle-json: string) -> result<list<manifest-document>, vhl-error>;
+
+    record decrypted {
+        /// The JWE cty header, when present.
+        content-type: option<string>,
+        content: list<u8>,
+    }
+
+    /// JWE Compact, dir / A256GCM, the payload key. [STT-VHL-007]
+    encrypt: func(content: list<u8>, content-type: string, key: string) -> result<string, vhl-error>;
+    decrypt: func(jwe: string, key: string) -> result<decrypted, vhl-error>;
+
+    /// What the receiver signs for the HTTP Message Signatures option.
+    record signature-request {
+        method: string,
+        authority: string,
+        path: string,
+        content-type: option<string>,
+        body: option<list<u8>>,
+        keyid: string,
+        /// e.g. ecdsa-p256-sha256
+        alg: string,
+        created: numeric-date,
+    }
+
+    record signature-base {
+        /// RFC 9530 Content-Digest header value, when there is a body.
+        content-digest: option<string>,
+        /// Signature-Input header value.
+        signature-input: string,
+        /// The RFC 9421 signature base: the bytes the host signs.
+        base: list<u8>,
+    }
+
+    /// [STT-VHL-008]
+    build-signature-base: func(r: signature-request) -> signature-base;
+    /// The Signature header value. An ecdsa-p256-sha256 DER signature is
+    /// converted to r||s.
+    signature-header: func(signature: list<u8>, alg: string) -> result<string, vhl-error>;
+}

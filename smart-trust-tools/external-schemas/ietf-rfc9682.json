@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc9682",
+  "authority": "IETF",
+  "title": "RFC 9682 Updates to the CDDL Grammar",
+  "version": "RFC 9682",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc9682",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

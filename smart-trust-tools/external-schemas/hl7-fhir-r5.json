@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "hl7-fhir-r5",
+  "authority": "HL7",
+  "title": "HL7 FHIR R5",
+  "version": "5.0.0",
+  "specUrl": "https://hl7.org/fhir/R5/",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

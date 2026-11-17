@@ -1,0 +1,12 @@
+# The GDHCN Trust Domain code systems, as the WHO SMART Trust IG publishes
+# them (FHIR R4 JSON), for STT-SEL-006: trust domains are data the host loads.
+repo: WorldHealthOrganization/smart-trust
+branch: gh-pages
+sha: ece10f22b3bbfe3fd34e73ae5e3d23862cc98641
+version: 1.7.5
+source: input/fsh/codesystems/Domains*.fsh at main e277cce5dcb8d2134ef1625c3a38e27cdf19e835
+licence: CC-BY-NC-SA-3.0-IGO (WHO); held unmodified, with attribution, for non-commercial testing.
+files:
+  CodeSystem-Domains.json: http://smart.who.int/trust/CodeSystem/Domains (production)
+  CodeSystem-Domains-UAT.json: http://smart.who.int/trust/CodeSystem/Domains-UAT
+  CodeSystem-Domains-DEV.json: http://smart.who.int/trust/CodeSystem/Domains-DEV

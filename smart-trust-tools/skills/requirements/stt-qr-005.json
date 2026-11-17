@@ -1,0 +1,33 @@
+{
+  "id": "req:stt-qr-005",
+  "title": "Camera scanning out of scope",
+  "description": "Engineering consequence of QR Code Generation, 11. Verifying: the same steps upwards. QR Code Generation, 11. Verifying: the same steps upwards: “Confirm the HC1: prefix and strip it.”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Camera scanning out of scope",
+      "conformance": "SHALL",
+      "requirement": "Decoding QR images from a camera or file is out of scope for the core libraries. The verifier entry point SHALL be the scanned text (HC1 string) or raw COSE bytes.",
+      "category": "scope",
+      "successCriteria": [
+        {
+          "key": "text-entry",
+          "criterion": "Inspection of the public API finds the verifier's entry points take the HC1 text or COSE bytes, and no image or camera type.",
+          "verification": "inspection"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "scope",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s012-11-verifying-the-same-steps-upwards"
+  ]
+}

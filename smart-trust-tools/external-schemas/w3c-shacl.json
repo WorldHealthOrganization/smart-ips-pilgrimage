@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "w3c-shacl",
+  "authority": "W3C",
+  "title": "Shapes Constraint Language (SHACL)",
+  "version": "W3C Recommendation 2017",
+  "specUrl": "https://www.w3.org/TR/shacl/",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc8230",
+  "authority": "IETF",
+  "title": "RFC 8230 Using RSA Algorithms with COSE Messages (PS256)",
+  "version": "RFC 8230",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc8230",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

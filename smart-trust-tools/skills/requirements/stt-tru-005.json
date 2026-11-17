@@ -1,0 +1,36 @@
+{
+  "id": "req:stt-tru-005",
+  "title": "Static trust lists",
+  "description": "Restates HCERT Specification, Appendix A - Trust Management; RFC 7517 JSON Web Key. HCERT Specification, Appendix A - Trust Management: “the file format of this trusted list may vary, e.g., it can be a signed JWKS”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-tru-001"
+  ],
+  "reference": [
+    "library/who-smart-trust-hcert-spec/sections/s026-appendix-a-trust-management"
+  ],
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Static trust lists",
+      "conformance": "SHALL",
+      "requirement": "The trust store SHALL load DSCs from PEM and DER, for tests, pinned bilateral or national lists, and fully offline deployments.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-TRU-005 passes in each implementation's suite (Kotlin: `STT-TRU-005 a static list of PEM certificates loads` (TrustListTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}

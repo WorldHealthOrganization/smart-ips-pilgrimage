@@ -1,0 +1,36 @@
+{
+  "id": "req:stt-ver-001",
+  "title": "Verification order",
+  "description": "Restates QR Code Generation, 1. The pipeline at a glance; QR Code Generation, 11. Verifying: the same steps upwards. QR Code Generation, 1. The pipeline at a glance: “A verifier runs the same list upwards.”.",
+  "status": "proposed",
+  "reference": [
+    "http://smart.who.int/trust/Requirements/UtilizeVDHC#UtilizeVDHC-reveive",
+    "http://smart.who.int/trust/Requirements/UtilizeVDHC#UtilizeVDHC-validate-hash",
+    "library/who-smart-trust-qr-code-generation/sections/s002-1-the-pipeline-at-a-glance",
+    "library/who-smart-trust-qr-code-generation/sections/s012-11-verifying-the-same-steps-upwards"
+  ],
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Verification order",
+      "conformance": "SHALL",
+      "requirement": "The verifier SHALL run the QR Code Generation section 11 sequence in order: prefix, Base45, inflate, COSE parse, header validation, trust lookup by kid, signature verification, EKU check, CWT decode and time checks, subclaim dispatch, business rules.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VER-001 passes in each implementation's suite (Kotlin: `STT-VER-001 STT-VER-002 a tampered payload fails at the signature, before any payload is read` (VerifyTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}

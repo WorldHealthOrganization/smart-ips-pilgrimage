@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc7049",
+  "authority": "IETF",
+  "title": "RFC 7049 CBOR (obsoleted by RFC 8949)",
+  "version": "RFC 7049",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc7049",
+  "namespaces": [],
+  "use": "cites",
+  "terms": [],
+  "note": "Cited by the HCERT Specification; the library follows RFC 8949 (OI-05)."
+}

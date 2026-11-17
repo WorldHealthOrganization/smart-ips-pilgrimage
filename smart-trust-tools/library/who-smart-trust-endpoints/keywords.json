@@ -1,0 +1,107 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "who-smart-trust-endpoints",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "prod country",
+      "score": 4.0331,
+      "evidence": []
+    },
+    {
+      "term": "uat country",
+      "score": 4.0331,
+      "evidence": []
+    },
+    {
+      "term": "dev country",
+      "score": 3.7808,
+      "evidence": []
+    },
+    {
+      "term": "user-acceptence testing",
+      "score": 2.7943,
+      "evidence": []
+    },
+    {
+      "term": "environment",
+      "score": 2.2572,
+      "evidence": []
+    },
+    {
+      "term": "network gateway",
+      "score": 2.0357,
+      "evidence": [
+        "heading"
+      ]
+    }
+  ],
+  "sections": {
+    "s006-trustlist-distribution-endpoints": [
+      {
+        "term": "endpoints",
+        "score": 1.5142,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "distribution",
+        "score": 1.0827,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "trustlist",
+        "score": 1.0385,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s007-trust-network-gateway": [
+      {
+        "term": "network gateway",
+        "score": 2.2268,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "trust network",
+        "score": 1.3183,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "prod",
+        "score": 0.7539,
+        "evidence": []
+      }
+    ],
+    "s008-status-monitoring-dashboards": [
+      {
+        "term": "prod country",
+        "score": 2.3278,
+        "evidence": []
+      },
+      {
+        "term": "uat country",
+        "score": 2.3278,
+        "evidence": []
+      },
+      {
+        "term": "dev country",
+        "score": 2.2948,
+        "evidence": []
+      }
+    ]
+  }
+}

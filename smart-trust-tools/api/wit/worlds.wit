@@ -1,0 +1,45 @@
+package who:smart-trust@0.1.0;
+
+/// Pure encoding and decoding: the pipeline steps on their own. No host
+/// imports. [STT-GEN-002]
+world hcert-codec {
+    export types;
+    export codec;
+    export cose;
+}
+
+/// Verifier: what a scanning app or border system embeds. The host supplies
+/// secure random bytes (wasi:random), which VHL keys and JWE IVs need; the
+/// verifier itself draws none. [STT-VHL-004, STT-VHL-007]
+world hcert-verifier {
+    import wasi:random/random@0.2.6;
+    export types;
+    export codec;
+    export cose;
+    export subclaims;
+    export dvc;
+    export vhl;
+    export payloads;
+    export trust;
+    export verifier;
+}
+
+/// Issuer: what a clinic or national issuance service embeds. Randomness
+/// as for the verifier; signing stays two-phase, so no key enters.
+world hcert-issuer {
+    import wasi:random/random@0.2.6;
+    export types;
+    export codec;
+    export cose;
+    export subclaims;
+    export dvc;
+    export vhl;
+    export payloads;
+    export issuer;
+}
+
+/// Everything.
+world hcert {
+    include hcert-verifier;
+    include hcert-issuer;
+}

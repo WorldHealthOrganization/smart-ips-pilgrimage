@@ -1,0 +1,18 @@
+{
+  "id": "trust-anchor",
+  "title": "Trust Anchor",
+  "kind": "system",
+  "description": "IHE ITI VHL TrustAnchor: the authority (the GDHCN) that collects participants' PKI material and publishes the trust list a receiver loads. In smart-trust terms the Trust Network Anchor.",
+  "roles": [],
+  "capabilities": [],
+  "meta": {
+    "definedBy": [
+      "https://profiles.ihe.net/ITI/VHL/ActorDefinition/TrustAnchor",
+      "http://smart.who.int/trust/ActorDefinition/TrustNetworkAnchor"
+    ],
+    "reference": [
+      "library/ihe-iti-vhl-actors/sections/s001-actors-fsh",
+      "library/who-smart-trust-actors/sections/s001-actors-fsh"
+    ]
+  }
+}

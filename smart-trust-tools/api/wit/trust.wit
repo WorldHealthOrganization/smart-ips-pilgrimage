@@ -1,0 +1,69 @@
+package who:smart-trust@0.1.0;
+
+/// Trust material. The host fetches it (GDHCN DID trustlist, pinned PEM)
+/// and fills the store, so the core never does network I/O and stays
+/// synchronous. [STT-TRU-001, STT-GEN-012]
+interface trust {
+    use types.{kid, numeric-date};
+
+    variant trust-error {
+        parse(string),
+        /// A DID document names a trust domain the loaded GDHCN Trust Domain
+        /// code system does not hold. [STT-SEL-006]
+        unknown-trust-domain(string),
+        /// A DID document's proof does not verify, or the document is not
+        /// one the proof profile models. [STT-TRU-006]
+        proof-invalid(string),
+    }
+
+    record trusted-dsc {
+        der: list<u8>,
+        kid: kid,
+        country: option<string>,
+        not-before: numeric-date,
+        not-after: numeric-date,
+        /// Extended Key Usage OIDs; empty means valid for any type.
+        /// [STT-VER-004]
+        extended-key-usages: list<string>,
+        /// Trust domain and participant, when the DSC came from a DID
+        /// trustlist document.
+        domain: option<string>,
+        participant: option<string>,
+    }
+
+    resource trust-store {
+        constructor();
+        /// Each add-* returns the number of DSCs added. [STT-TRU-005]
+        add-pem: func(pem: string) -> result<u32, trust-error>;
+        add-der: func(der: list<u8>) -> result<u32, trust-error>;
+        /// A GDHCN DID trustlist v2 document, embedded or reference
+        /// variant. [STT-TRU-002]
+        add-did-document: func(json: string) -> result<u32, trust-error>;
+        /// Same, but only after the document's proof verifies against
+        /// `signer`, the did:web document of the proof's verificationMethod,
+        /// which the host fetched; on any failure nothing is added.
+        /// [STT-TRU-006]
+        add-verified-did-document: func(json: string, signer: string) -> result<u32, trust-error>;
+        /// The trust domains a DID document may name, read from a GDHCN
+        /// Trust Domain CodeSystem (FHIR JSON) the host fetched. Data, not
+        /// an enum: once loaded, a DID document naming another domain is
+        /// refused whole; before, any domain is kept as given. Loading
+        /// again replaces the set. Returns the number of codes.
+        /// [STT-SEL-006]
+        load-trust-domains: func(codesystem-json: string) -> result<u32, trust-error>;
+        /// The loaded trust domain codes; empty when none are loaded.
+        trust-domains: func() -> list<string>;
+        /// Every DSC with this kid (kids are not unique). [STT-KID-002]
+        candidates: func(k: kid) -> list<trusted-dsc>;
+        size: func() -> u32;
+        clear: func();
+    }
+
+    /// Verify a GDHCN trust list DID document's JsonWebSignature2020 proof,
+    /// as the TNG key distribution service makes it: URDNA2015 over the
+    /// document and the proof options with pinned contexts, a detached
+    /// b64:false ES256 JWS whose signature may be DER or r||s. `signer` is
+    /// the did:web document of the proof's verificationMethod. Fails closed
+    /// on any term the profile does not model. [STT-TRU-006]
+    verify-did-proof: func(document: string, signer: string) -> result<_, trust-error>;
+}

@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-reference-implementation/sections/s002-proof-of-concept",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "Proof of Concept",
+  "contains": [
+    "library/who-smart-trust-reference-implementation/blocks/prose-s002-proof-of-concept"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-reference-implementation",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-reference-implementation",
+  "provenance": "ingested"
+}

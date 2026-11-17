@@ -1,0 +1,11 @@
+{
+  "name": "wallet",
+  "version": "0.1.0",
+  "description": "What the people at either end of a health wallet credential do, which the library leaves to them: the holder (IHE ITI VHL VHL Holder, smart-trust Holder) presents a certificate or a health link (a Verifiable Health Link, or a SMART Health Link) as a QR and consents to share one; the health worker at the issuing side hands it over, and the one at the receiving system scans it. The library's own operations are the hcert and vhl packages; a SMART Health Link is the same holder's work over the HL7 SMART Health Links specification, of which VHL is the HCERT-carried profile.",
+  "skills": [
+    "hand-over-credential",
+    "holder-consent-to-share",
+    "holder-present-credential",
+    "receiver-scan-credential"
+  ]
+}

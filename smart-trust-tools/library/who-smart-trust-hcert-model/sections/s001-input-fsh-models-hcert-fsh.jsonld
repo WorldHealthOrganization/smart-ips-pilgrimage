@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-hcert-model/sections/s001-input-fsh-models-hcert-fsh",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "input/fsh/models/hcert.fsh",
+  "contains": [
+    "library/who-smart-trust-hcert-model/blocks/prose-s001-input-fsh-models-hcert-fsh"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-model",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-model",
+  "provenance": "ingested"
+}

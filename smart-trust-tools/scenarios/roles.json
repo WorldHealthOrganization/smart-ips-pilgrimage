@@ -1,0 +1,142 @@
+{
+  "_comment": "Roles this instance owns: the systems and people that play a lane in its processes (processes/content/), each with the skills its lane's tasks need. Schema: cat-harness/schemas/role-graph.ts.",
+  "name": "smart-trust-tools",
+  "roles": [
+    {
+      "id": "hcert-issuing-system",
+      "title": "HCERT issuing system",
+      "description": "The HCERT side of the VHL Sharer (smart-trust: Issuer): a clinic system or national portal that issues HCERT certificates, embedding the Kotlin or Rust library.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [
+        "hcert-select-payload",
+        "hcert-assemble-payload",
+        "hcert-build-cwt",
+        "hcert-encode-cbor",
+        "hcert-sign-cose",
+        "hcert-compress",
+        "hcert-encode-base45",
+        "hcert-prefix-context",
+        "hcert-trust-list"
+      ],
+      "persona": "Software, not a person: a clinic system or national portal that calls the library once per certificate. It holds the payload and the issuer identity, never the private key, and must get a clear error value rather than an exception when an input is wrong."
+    },
+    {
+      "id": "hcert-verifying-system",
+      "title": "HCERT verifying system",
+      "description": "The HCERT side of the VHL Receiver (smart-trust: Receiver): a clinic EMR, border system or CHW app that verifies, or triage-reads, an HCERT.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [
+        "hcert-verify",
+        "hcert-trust-list",
+        "hcert-encode-cbor",
+        "hcert-compress",
+        "hcert-encode-base45",
+        "hcert-prefix-context"
+      ],
+      "persona": "Software at the point of care or the border: an EMR, a border system or a CHW app, often offline, holding a trust list it refreshed earlier. It needs one verdict naming the step and reason, fast enough for a queue."
+    },
+    {
+      "id": "hcert-key-holder",
+      "title": "Signing key holder",
+      "description": "The HSM, KMS, Android Keystore or WebCrypto key of a Trust Network Participant that signs the bytes the issuing system prepares; the library never holds the private key.",
+      "actorKinds": [
+        "external"
+      ],
+      "skills": [
+        "hcert-sign-cose"
+      ],
+      "persona": "An HSM, a cloud KMS, an Android Keystore or WebCrypto key, run by a trust network participant. It signs bytes it is given and reveals nothing else; nothing of ours runs inside it."
+    },
+    {
+      "id": "vhl-sharer",
+      "title": "VHL sharer",
+      "description": "The IHE ITI VHL Sharer side: issues Verifiable Health Links and hosts their manifests.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [
+        "vhl-share",
+        "hcert-select-payload",
+        "hcert-assemble-payload",
+        "hcert-build-cwt",
+        "hcert-encode-cbor",
+        "hcert-sign-cose",
+        "hcert-compress",
+        "hcert-encode-base45",
+        "hcert-prefix-context"
+      ],
+      "persona": "A national portal or clinic that already holds the records and wants to let a holder share them abroad without handing over the documents themselves: it issues the link and serves the manifest."
+    },
+    {
+      "id": "vhl-receiver",
+      "title": "VHL receiver",
+      "description": "The IHE ITI VHL Receiver side: scans a VHL, retrieves the manifest and reads the documents.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [
+        "vhl-receive",
+        "hcert-verify",
+        "hcert-trust-list"
+      ],
+      "persona": "A clinician's system abroad, scanning a link a family hands over at the desk. It has a passcode from the holder, mutual TLS to the sharer, and minutes, not hours."
+    },
+    {
+      "id": "library-maintainer",
+      "title": "Library maintainer",
+      "description": "The person or agent who keeps the contract, its generated artefacts, the conformance tests and the published graph current.",
+      "actorKinds": [
+        "person",
+        "agent"
+      ],
+      "skills": [
+        "hcert-library-architecture",
+        "hcert-contract-maintenance",
+        "hcert-conformance-testing",
+        "hcert-kg-publication"
+      ],
+      "persona": "A developer or an agent keeping the contract, its generated views and the tests in step with the WHO and IHE specifications. Knows Kotlin and CBOR well, and reads the IG, not the code, to decide what is right."
+    },
+    {
+      "id": "vhl-holder",
+      "title": "VHL Holder",
+      "description": "IHE ITI VHL VHL Holder (smart-trust Holder): the person who holds certificates or a health link (a Verifiable Health Link, or a SMART Health Link: the same holder's work over the HL7 specification VHL profiles), presents them as a QR and consents to what a link shares. The library has no operation on this side; the skills are what the person does.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": [
+        "holder-present-credential",
+        "holder-consent-to-share"
+      ],
+      "persona": "A parent or traveller carrying the family's records on paper and one shared phone; no health training, little time, limited connectivity."
+    },
+    {
+      "id": "receiving-health-worker",
+      "title": "Receiving health worker",
+      "description": "The health worker who operates a receiving system (CHW app, clinic EHR, point-of-care viewer): scans the QR the holder shows and enters the passcode the holder says. The system verifies; the person never judges authenticity.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": [
+        "receiver-scan-credential"
+      ],
+      "persona": "Busy, often offline, scanning with the camera of whatever device the system runs on."
+    },
+    {
+      "id": "issuing-health-worker",
+      "title": "Issuing health worker",
+      "description": "The health worker of an issuing participant who hands the holder the credentials the issuing system made: prints them, one QR per certificate, or sends them to the holder's wallet.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": [
+        "hand-over-credential"
+      ],
+      "persona": "A clinician or clerk with a queue, handing over what the system printed; never holds the signing key."
+    }
+  ]
+}

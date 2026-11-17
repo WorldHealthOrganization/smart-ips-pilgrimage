@@ -1,0 +1,57 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy4",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "IHE VHL ITI-YY4 Provide VHL",
+  "contains": [
+    "library/ihe-iti-vhl-iti-yy4/sections/s001-input-pagecontent-iti-yy4-md",
+    "library/ihe-iti-vhl-iti-yy4/sections/s002-2-3-yy4-1-scope",
+    "library/ihe-iti-vhl-iti-yy4/sections/s003-2-3-yy4-2-actor-roles",
+    "library/ihe-iti-vhl-iti-yy4/sections/s004-2-3-yy4-3-referenced-standards",
+    "library/ihe-iti-vhl-iti-yy4/sections/s005-2-3-yy4-4-messages",
+    "library/ihe-iti-vhl-iti-yy4/sections/s006-2-3-yy4-4-1-provide-vhl-request-message",
+    "library/ihe-iti-vhl-iti-yy4/sections/s007-2-3-yy4-4-1-1-trigger-events",
+    "library/ihe-iti-vhl-iti-yy4/sections/s008-2-3-yy4-4-1-2-message-semantics",
+    "library/ihe-iti-vhl-iti-yy4/sections/s009-2-3-yy4-4-1-3-expected-actions-vhl-holder",
+    "library/ihe-iti-vhl-iti-yy4/sections/s010-2-3-yy4-4-1-4-expected-actions-vhl-receiver",
+    "library/ihe-iti-vhl-iti-yy4/sections/s011-2-3-yy4-4-2-provide-vhl-response-message",
+    "library/ihe-iti-vhl-iti-yy4/sections/s012-2-3-yy4-4-2-1-trigger-events",
+    "library/ihe-iti-vhl-iti-yy4/sections/s013-2-3-yy4-4-2-2-message-semantics",
+    "library/ihe-iti-vhl-iti-yy4/sections/s014-2-3-yy4-4-2-3-expected-actions",
+    "library/ihe-iti-vhl-iti-yy4/sections/s015-2-3-yy4-5-security-considerations",
+    "library/ihe-iti-vhl-iti-yy4/sections/s016-2-3-yy4-5-1-vhl-integrity-and-authenticity",
+    "library/ihe-iti-vhl-iti-yy4/sections/s017-2-3-yy4-5-2-vhl-confidentiality",
+    "library/ihe-iti-vhl-iti-yy4/sections/s018-2-3-yy4-5-3-replay-attacks",
+    "library/ihe-iti-vhl-iti-yy4/sections/s019-2-3-yy4-5-4-passcode-protection",
+    "library/ihe-iti-vhl-iti-yy4/sections/s020-2-3-yy4-5-5-trust-network-validation",
+    "library/ihe-iti-vhl-iti-yy4/sections/s021-2-3-yy4-5-6-qr-code-security",
+    "library/ihe-iti-vhl-iti-yy4/sections/s022-2-3-yy4-5-7-vc-enveloped-vhl-option-security"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-4.0",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-4.0",
+    "basis": "IHE/ITI.VHL LICENSE (Creative Commons Attribution 4.0 International) and sushi-config.yaml license: CC-BY-4.0 at the ingested commit. The text is held unmodified, with attribution."
+  },
+  "meta": {
+    "doc_id": "ihe-iti-vhl-iti-yy4",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "ITI-YY4.md",
+    "source_sha256": "a01169d66ede45021fae6ff65285439d75f64ee52a3f87852559dbc5e4bfc605",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

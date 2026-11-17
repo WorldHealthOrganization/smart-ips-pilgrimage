@@ -1,0 +1,99 @@
+{
+  "$schema": "test-plan/v1",
+  "id": "who-itb-agreement",
+  "title": "Agreement with the WHO Interoperability Test Bed (HCERT Tracks 1 to 3)",
+  "status": "draft",
+  "version": "1",
+  "description": "Runs each library over the test data of the three WHO-ITB HCERT tracks (references/who-itb, commit 883291d) and compares its results with what the ITB's gdhcn-helper reports at the same step. The ITB starts from a QR image. Reading the image is outside the libraries (STT-QR-005), so the tester decodes each image to its HC1 text once, with any QR reader, and the case starts from that text. The ITB steps after the library's part (Matchbox profile validation, StructureMap transforms, FHIRPath checks) are not repeated here; the case checks that the library hands over the same content the ITB transforms. The ITB verifies against the GDHCN DEV trust list, so the tester provides that list as DID documents (STT-SEL-006, the trust store's addDidDocument).",
+  "scope": {
+    "kind": "tool",
+    "versionRange": "*"
+  },
+  "requirements": [
+    "req:stt-tst-009"
+  ],
+  "testCases": [
+    {
+      "id": "track-1-vhl",
+      "description": "Track 1, HCERT VHL: QR to verified LAC IPS bundle (tc-vhl-001). ITB steps matched: Decode HC1, Extract metadata, Verify COSE signature, Extract SHL reference, Authorize short link (PIN), Fetch FHIR via manifest. Test data: WHO-ITB test-data/Track1_VHL_1234_2026.jpg; the PIN is 1234, as the file name says.",
+      "assertions": [
+        {
+          "id": "req:stt-tst-009#statement/decode",
+          "type": "required",
+          "expectation": "For each WHO-ITB track's QR text, the library's decoded COSE_Sign1 has the same protected header, payload and signature bytes as the gdhcn-helper's cose._raw."
+        },
+        {
+          "id": "req:stt-tst-009#statement/verify",
+          "type": "required",
+          "expectation": "For each track, the library verifies the certificate against the GDHCN trust list the ITB uses (DEV), reporting the same kid and issuer as the gdhcn-helper, and fails where the helper reports valid=false."
+        },
+        {
+          "id": "req:stt-tst-009#statement/vhl-link",
+          "type": "required",
+          "expectation": "For Track 1, the library reads the same VHL link (url, flags, key) from the HCERT, and with the track's PIN fetches the ITI-YY5 manifest and decrypts the IPS bundle the ITB retrieves."
+        }
+      ],
+      "feature": "test/features/track-1-vhl.feature"
+    },
+    {
+      "id": "track-2-icvp",
+      "description": "Track 2, HCERT ICVP: QR to ICVP-IPS conformance (tc-icvp-001). ITB steps matched: Decode HC1, Verify COSE signature, and the claim handed to the ICVPClaimtoIPS StructureMap. Test data: WHO-ITB test-data/Track2_ICVP_2026.jpg.",
+      "assertions": [
+        {
+          "id": "req:stt-tst-009#statement/decode",
+          "type": "required",
+          "expectation": "For each WHO-ITB track's QR text, the library's decoded COSE_Sign1 has the same protected header, payload and signature bytes as the gdhcn-helper's cose._raw."
+        },
+        {
+          "id": "req:stt-tst-009#statement/verify",
+          "type": "required",
+          "expectation": "For each track, the library verifies the certificate against the GDHCN trust list the ITB uses (DEV), reporting the same kid and issuer as the gdhcn-helper, and fails where the helper reports valid=false."
+        },
+        {
+          "id": "req:stt-tst-009#statement/icvp-claim",
+          "type": "required",
+          "expectation": "For Track 2, the library returns the ICVP claim byte for byte as the content the ITB passes to the ICVPClaimtoIPS StructureMap."
+        }
+      ],
+      "feature": "test/features/track-2-icvp.feature"
+    },
+    {
+      "id": "track-3-ph4h-meow",
+      "description": "Track 3, HCERT PH4H: QR to MeOW medication overview bundle (tc-ph4h-qr-001). ITB steps matched: Decode HC1, Verify COSE signature, and the claim handed to the MedicationOverviewMinToMedicationOverviewBundle StructureMap. Test data: WHO-ITB test-data/Track3_MeOW_2026.jpg.",
+      "assertions": [
+        {
+          "id": "req:stt-tst-009#statement/decode",
+          "type": "required",
+          "expectation": "For each WHO-ITB track's QR text, the library's decoded COSE_Sign1 has the same protected header, payload and signature bytes as the gdhcn-helper's cose._raw."
+        },
+        {
+          "id": "req:stt-tst-009#statement/verify",
+          "type": "required",
+          "expectation": "For each track, the library verifies the certificate against the GDHCN trust list the ITB uses (DEV), reporting the same kid and issuer as the gdhcn-helper, and fails where the helper reports valid=false."
+        },
+        {
+          "id": "req:stt-tst-009#statement/meow-claim",
+          "type": "required",
+          "expectation": "For Track 3, the library returns the PH4H medication overview claim byte for byte as the content the ITB passes to the MedicationOverviewMinToMedicationOverviewBundle StructureMap."
+        }
+      ],
+      "feature": "test/features/track-3-ph4h-meow.feature"
+    }
+  ],
+  "dependencies": [
+    {
+      "description": "The library has passed its own conformance plan first.",
+      "predecessor": "hcert-library-conformance"
+    },
+    {
+      "description": "The three WHO-ITB track images, decoded to HC1 text, and the gdhcn-helper's responses for them, held as fixed vectors in vectors/who-itb/ once WHO-ITB states a licence that allows it (bean OI-33). Until then, a tester runs the ITB (docker compose up) beside the library and compares."
+    },
+    {
+      "description": "The GDHCN DEV trust list DID documents for the participants that signed the track data, fetched by the tester; the library fetches nothing (STT-TRU-001, STT-GEN-012)."
+    }
+  ],
+  "exitCriteria": {
+    "decision": "processes/sdlc/decisions/test-certification.dmn#Decision_TestCertification",
+    "description": "The platform default. A case whose ITB data cannot be obtained is skipped with that reason, never passed."
+  }
+}

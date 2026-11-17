@@ -1,0 +1,66 @@
+{
+  "$comment": "The HL7 FHIR Validator and the FHIR packages it loads, pinned by sha256. tools/fhir-validate/fhir_validate.py downloads each to its cache only when absent, verifies the sha256 before every use and refuses on a mismatch or on an entry with no sha256, lays the packages into a fresh package cache and runs the validator with -no-http-access and -tx n/a, so nothing is resolved at run time. A bump is a release at least 14 days old (AGENTS.md).",
+  "validator": {
+    "name": "validator_cli.jar",
+    "version": "7.0.1",
+    "released": "2026-10-08",
+    "commit": "d8783284409ec009f2f96237498f1ea6f4204a6b",
+    "url": "https://github.com/hapifhir/org.hl7.fhir.core/releases/download/7.0.1/validator_cli.jar",
+    "size": 203945243,
+    "sha256": "1178b6a3a3fe98d9cd9545cadee505274967332466001d857e4d8bed7138a5bc",
+    "provenance": "Release asset of hapifhir/org.hl7.fhir.core tag 7.0.1, fetched 2026-10-23 (Last-Modified 2026-10-08, 15 days old). The tag names commit d8783284409e, the Git# the jar's banner prints."
+  },
+  "fhirVersion": "5.0.0",
+  "packages": [
+    {
+      "name": "hl7.fhir.r5.core",
+      "version": "5.0.0",
+      "why": "FHIR R5, the fhirVersion of every model in models/fhir.",
+      "url": "https://registry.npmjs.org/hl7.fhir.r5.core/-/hl7.fhir.r5.core-5.0.0.tgz",
+      "sha256": "09f22107bef64313545a50d2c127d20f81173c499a395672fae089bc23e72fab",
+      "integrity": "sha512-0TvJB1KKtokn/P2mRwcqEY8v8RN8IE/pQjvtlsPaJdYaDfYx4UBhuY4afAGeQjW01p9SNYPphxAFFkEsS6P05A==",
+      "provenance": "npm copy published by grahamegrieve (HL7 FHIR product director) on 2026-03-05; its package.json is the core package of 2023-03-26. packages.fhir.org was not reachable from the session that pinned it."
+    },
+    {
+      "name": "hl7.fhir.xver-extensions",
+      "version": "0.1.0",
+      "why": "Loaded by every validator run (CommonPackages.VER_XVER in 7.0.1).",
+      "url": "https://registry.npmjs.org/hl7.fhir.xver-extensions/-/hl7.fhir.xver-extensions-0.1.0.tgz",
+      "sha256": "83122134f299c16262591a498cada83fad5206177166ee46750afad8e36b251f",
+      "integrity": "sha512-0yCE0ol+j6kSLOnyKOS272Asr5Kx3f+yQn81fU5EOyLS15BTK2l1D6zP/fgNl5hgdV18S1t5Gg7i0HU5cnlDNQ==",
+      "provenance": "npm copy published by grahamegrieve on 2026-03-05. packages.fhir.org was not reachable from the session that pinned it."
+    },
+    {
+      "name": "hl7.terminology.r5",
+      "version": "6.2.0",
+      "why": "Loaded for an R5 run; the version is fixed in ValidationService (withThoVersion(\"6.2.0\")) in 7.0.1.",
+      "url": "https://packages.fhir.org/hl7.terminology.r5/6.2.0",
+      "sha256": "4b492a0721d96f8c848142b581b1c87b58d427c358ec4b04be059d1b13d0d894",
+      "provenance": "packages.fhir.org, fetched 2026-10-23; the package.json date is 2025-01-22, and the tarball's sha1 matches the registry's dist.shasum 9072ae190a8bf174de11f6beeba9b373e86a16a8."
+    },
+    {
+      "name": "hl7.fhir.uv.extensions.r5",
+      "version": "5.2.0",
+      "why": "Loaded for an R5 run; the version is fixed in ValidationService (withExtensionsVersion(\"5.2.0\")) in 7.0.1.",
+      "url": "https://packages.fhir.org/hl7.fhir.uv.extensions.r5/5.2.0",
+      "sha256": "e02fc6eff0f37c1611a35aa93ef9aaa3b55ab7371a5c96f4d2a5834106a13170",
+      "provenance": "packages.fhir.org, fetched 2026-10-23; the package.json date is 2025-02-10, and the tarball's sha1 matches the registry's dist.shasum 90d77a988dd6a75452961a187783714d02265a90."
+    },
+    {
+      "name": "hl7.terminology",
+      "version": "6.2.0",
+      "why": "ValidationService.loadIgsAndExtensions in 7.0.1 always loads the unversioned id hl7.terminology; with no network it takes the copy in the package cache. 6.2.0 is the release hl7.terminology.r5 6.2.0 was built with (R5).",
+      "url": "https://packages.fhir.org/hl7.terminology/6.2.0",
+      "sha256": "33812712a778100539b4f848a1d62c2a8e05357b550332ae8001eee56b34fde0",
+      "provenance": "packages.fhir.org, fetched 2026-10-23; the package.json date is 2025-01-22, and the tarball's sha1 matches the registry's dist.shasum ed12dcc3f9456de0538c6eb1a3ed6ac7db647795."
+    },
+    {
+      "name": "hl7.fhir.uv.extensions.r5",
+      "version": "5.1.0",
+      "why": "A dependency of hl7.terminology 6.2.0.",
+      "url": "https://packages.fhir.org/hl7.fhir.uv.extensions.r5/5.1.0",
+      "sha256": "493de27b4081903a69e182e29e6d30a19390c27d168c9fca95fbb04c1898292c",
+      "provenance": "packages.fhir.org, fetched 2026-10-23; the package.json date is 2024-04-27, and the tarball's sha1 matches the registry's dist.shasum 85c34e6967397967b954d4d2cd964390104af7b7."
+    }
+  ]
+}

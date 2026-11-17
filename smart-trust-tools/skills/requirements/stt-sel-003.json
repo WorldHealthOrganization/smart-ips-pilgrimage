@@ -1,0 +1,34 @@
+{
+  "id": "req:stt-sel-003",
+  "title": "Development-range subclaims need explicit opt-in",
+  "description": "Engineering consequence of QR Code Generation, 2.1 Subclaims defined in this guide; HCERT Specification, 3.2.7.1 Subclaims. QR Code Generation, 2.1 Subclaims defined in this guide: “Do not treat a negative subclaim as a production allocation.”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Development-range subclaims need explicit opt-in",
+      "conformance": "SHALL",
+      "requirement": "The registry SHALL classify subclaims >= 0 as WHO-reserved and negative subclaims as development range. The issuer SHALL refuse to issue a development-range subclaim unless the issuer policy explicitly allows it. The subclaim number used for a payload type SHALL be configuration, not a constant in a codec, so that DVC can move from -6 to an assigned number without an API break.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-SEL-003 passes in each implementation's suite (Kotlin: `STT-SEL-003 a development-range subclaim needs the explicit opt-in` (SelectPayloadTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s003-2-step-1-select-the-payload-type",
+    "library/who-smart-trust-hcert-spec/sections/s013-3-2-7-health-certificate-claim"
+  ]
+}

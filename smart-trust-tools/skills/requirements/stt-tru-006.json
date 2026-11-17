@@ -1,0 +1,40 @@
+{
+  "id": "req:stt-tru-006",
+  "title": "Trust list DID document proofs",
+  "description": "Engineering consequence of the GDHCN trust list as served (DID trustlist v2 documents carrying a JsonWebSignature2020 proof by WHO's signing DID) and of the owner's decision of 2026-10-23 to verify those proofs in the libraries. The signing profile is that of WorldHealthOrganization/tng-key-distribution (ld-signatures-java 1.11.0); vectors in vectors/gdhcn-dev-trustlist.",
+  "status": "proposed",
+  "reference": [
+    "vectors/gdhcn-dev-trustlist/XXR-DSC-did.doc.nq",
+    "vectors/gdhcn-dev-trustlist/root-did.json",
+    "vectors/smart-trust-af75be2/XXR-DSC-did.json",
+    "external-schemas/ietf-rfc8785",
+    "external-schemas/w3c-rdf-canon",
+    "external-schemas/w3c-ccg-jws-2020",
+    "external-schemas/ietf-rfc7518",
+    "external-schemas/w3c-did-core"
+  ],
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Trust list DID document proofs",
+      "conformance": "SHALL",
+      "requirement": "Both libraries SHALL verify a GDHCN trust list DID document's JsonWebSignature2020 proof against the did:web document of its verificationMethod, which the host supplies: the URDNA2015 canonical N-Quads of the document without its proof and of the proof options (the proof without jws, with the security v3 context) are each hashed with SHA-256, and the detached b64:false ES256 JWS is verified over ASCII(header) || '.' || SHA-256(options) || SHA-256(document), accepting a DER or a 64-byte r||s signature. Canonicalization SHALL use pinned copies of the contexts the signer uses (did/v1, jws-2020/v1, the tng-context for DEV, UAT or production, security v3) and SHALL fail closed on any term, key or value shape the profile does not model, so that an unmodelled term can never be silently dropped from the signed bytes. The trust store SHALL offer an add that refuses a document whose proof does not verify, adding nothing.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "Tests named after STT-TRU-006 pass in each implementation's suite: the vectors in vectors/gdhcn-dev-trustlist (XXR, XXR DSC, XXA and the 234-key root document) verify against WHO-signing-did.json, the XXR DSC document's canonical N-Quads equal the golden files byte for byte, and a changed byte in the document, the wrong signer, and an unmodelled term each fail with proof-invalid.",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "trust",
+    "derived"
+  ]
+}

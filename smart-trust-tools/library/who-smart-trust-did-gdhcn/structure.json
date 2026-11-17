@@ -1,0 +1,110 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-did-gdhcn",
+  "source": {
+    "file": "concepts_did_gdhcn.md",
+    "sha256": "3ff5591597ae8324e6dbef135f66a6a2feca46f15ea9b50949cd153ff14dcf4a",
+    "digest": "file",
+    "bytes": 13553,
+    "mtime": "2026-10-09T13:16:57Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/pagecontent/concepts_did_gdhcn.md",
+        "sha256": "3ff5591597ae8324e6dbef135f66a6a2feca46f15ea9b50949cd153ff14dcf4a",
+        "bytes": 13553,
+        "lines": 160,
+        "format": "markdown"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust",
+      "commit": "e277cce5dcb8d2134ef1625c3a38e27cdf19e835",
+      "ref": "main",
+      "committed": "2026-10-09T13:16:57Z",
+      "path": "input/pagecontent/concepts_did_gdhcn.md",
+      "published": "https://smart.who.int/trust/concepts_did_gdhcn.html",
+      "retrieved": "2026-10-20T19:45:00Z"
+    }
+  },
+  "metadata": {
+    "title": "GDHCN Trustlists (DID)"
+  },
+  "toc_source": "headings",
+  "sections": [
+    {
+      "id": "s001-gdhcn-trustlists",
+      "number": null,
+      "title": "GDHCN Trustlists",
+      "level": 4,
+      "file": "input/pagecontent/concepts_did_gdhcn.md",
+      "line_start": 1,
+      "line_end": 13,
+      "unit": "heading",
+      "n_chars": 1248,
+      "n_words": 121
+    },
+    {
+      "id": "s002-trustlists-2-0-0",
+      "number": null,
+      "title": "Trustlists 2.0.0",
+      "level": 5,
+      "file": "input/pagecontent/concepts_did_gdhcn.md",
+      "line_start": 14,
+      "line_end": 37,
+      "unit": "heading",
+      "n_chars": 2036,
+      "n_words": 187
+    },
+    {
+      "id": "s003-did-trustlists-structure",
+      "number": null,
+      "title": "DID trustlists structure",
+      "level": 6,
+      "file": "input/pagecontent/concepts_did_gdhcn.md",
+      "line_start": 38,
+      "line_end": 79,
+      "unit": "heading",
+      "n_chars": 4348,
+      "n_words": 499
+    },
+    {
+      "id": "s004-example-did-documents",
+      "number": null,
+      "title": "Example DID documents",
+      "level": 6,
+      "file": "input/pagecontent/concepts_did_gdhcn.md",
+      "line_start": 80,
+      "line_end": 146,
+      "unit": "heading",
+      "n_chars": 4483,
+      "n_words": 155
+    },
+    {
+      "id": "s005-environments-repositories",
+      "number": null,
+      "title": "Environments & Repositories",
+      "level": 6,
+      "file": "input/pagecontent/concepts_did_gdhcn.md",
+      "line_start": 147,
+      "line_end": 157,
+      "unit": "heading",
+      "n_chars": 1331,
+      "n_words": 46
+    },
+    {
+      "id": "s006-trustlist-specification-1-0-0",
+      "number": null,
+      "title": "Trustlist Specification 1.0.0",
+      "level": 5,
+      "file": "input/pagecontent/concepts_did_gdhcn.md",
+      "line_start": 158,
+      "line_end": 160,
+      "unit": "heading",
+      "n_chars": 94,
+      "n_words": 8
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

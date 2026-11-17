@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-qr-code-generation/sections/s018-12-5-size-at-each-stage",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "12.5 Size at each stage",
+  "contains": [
+    "library/who-smart-trust-qr-code-generation/blocks/prose-s018-12-5-size-at-each-stage"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-qr-code-generation",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-qr-code-generation",
+  "provenance": "ingested"
+}

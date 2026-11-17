@@ -1,0 +1,266 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-qr-code-generation",
+  "source": {
+    "file": "qr_code_generation.md",
+    "sha256": "03253100cd38b5c6f2ec0b167ee11742215a8bd4e5aea3d09495b8ce6068f052",
+    "digest": "file",
+    "bytes": 16032,
+    "mtime": "2026-10-22T10:51:06Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/pagecontent/qr_code_generation.md",
+        "sha256": "03253100cd38b5c6f2ec0b167ee11742215a8bd4e5aea3d09495b8ce6068f052",
+        "bytes": 16032,
+        "lines": 340,
+        "format": "markdown"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust",
+      "commit": "af75be20b75ab87efcfd1201ccd43020f487f660",
+      "ref": "main",
+      "committed": "2026-10-22T10:51:06Z",
+      "path": "input/pagecontent/qr_code_generation.md",
+      "published": "https://smart.who.int/trust/qr_code_generation.html",
+      "retrieved": "2026-10-22T16:40:00Z"
+    }
+  },
+  "metadata": {
+    "title": "QR Code Generation"
+  },
+  "toc_source": "headings",
+  "sections": [
+    {
+      "id": "s001-generating-a-qr-code",
+      "number": null,
+      "title": "Generating a QR Code",
+      "level": 3,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 1,
+      "line_end": 15,
+      "unit": "heading",
+      "n_chars": 735,
+      "n_words": 113
+    },
+    {
+      "id": "s002-1-the-pipeline-at-a-glance",
+      "number": null,
+      "title": "1. The pipeline at a glance",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 16,
+      "line_end": 31,
+      "unit": "heading",
+      "n_chars": 689,
+      "n_words": 109
+    },
+    {
+      "id": "s003-2-step-1-select-the-payload-type",
+      "number": null,
+      "title": "2. Step 1 — Select the payload type",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 32,
+      "line_end": 56,
+      "unit": "heading",
+      "n_chars": 1438,
+      "n_words": 213
+    },
+    {
+      "id": "s004-3-step-2-assemble-the-payload",
+      "number": null,
+      "title": "3. Step 2 — Assemble the payload",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 57,
+      "line_end": 85,
+      "unit": "heading",
+      "n_chars": 1541,
+      "n_words": 215
+    },
+    {
+      "id": "s005-4-step-3-build-the-cwt-claim-set",
+      "number": null,
+      "title": "4. Step 3 — Build the CWT claim set",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 86,
+      "line_end": 100,
+      "unit": "heading",
+      "n_chars": 765,
+      "n_words": 109
+    },
+    {
+      "id": "s006-5-step-4-serialise-as-cbor",
+      "number": null,
+      "title": "5. Step 4 — Serialise as CBOR",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 101,
+      "line_end": 110,
+      "unit": "heading",
+      "n_chars": 377,
+      "n_words": 61
+    },
+    {
+      "id": "s007-6-step-5-sign-as-a-cose-sign1",
+      "number": null,
+      "title": "6. Step 5 — Sign as a COSE_Sign1",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 111,
+      "line_end": 140,
+      "unit": "heading",
+      "n_chars": 1455,
+      "n_words": 229
+    },
+    {
+      "id": "s008-7-step-6-compress",
+      "number": null,
+      "title": "7. Step 6 — Compress",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 141,
+      "line_end": 147,
+      "unit": "heading",
+      "n_chars": 263,
+      "n_words": 29
+    },
+    {
+      "id": "s009-8-step-7-encode-as-base45",
+      "number": null,
+      "title": "8. Step 7 — Encode as Base45",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 148,
+      "line_end": 154,
+      "unit": "heading",
+      "n_chars": 287,
+      "n_words": 38
+    },
+    {
+      "id": "s010-9-step-8-prefix-the-context-identifier",
+      "number": null,
+      "title": "9. Step 8 — Prefix the context identifier",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 155,
+      "line_end": 161,
+      "unit": "heading",
+      "n_chars": 291,
+      "n_words": 45
+    },
+    {
+      "id": "s011-10-step-9-render-the-qr-code",
+      "number": null,
+      "title": "10. Step 9 — Render the QR code",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 162,
+      "line_end": 174,
+      "unit": "heading",
+      "n_chars": 583,
+      "n_words": 103
+    },
+    {
+      "id": "s012-11-verifying-the-same-steps-upwards",
+      "number": null,
+      "title": "11. Verifying: the same steps upwards",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 175,
+      "line_end": 198,
+      "unit": "heading",
+      "n_chars": 1274,
+      "n_words": 188
+    },
+    {
+      "id": "s013-12-worked-example-a-newborn-birth-dose-dvc",
+      "number": null,
+      "title": "12. Worked example — a newborn birth dose DVC",
+      "level": 4,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 199,
+      "line_end": 200,
+      "unit": "heading",
+      "n_chars": 50,
+      "n_words": 10
+    },
+    {
+      "id": "s014-12-1-scenario",
+      "number": null,
+      "title": "12.1 Scenario",
+      "level": 5,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 201,
+      "line_end": 223,
+      "unit": "heading",
+      "n_chars": 1226,
+      "n_words": 191
+    },
+    {
+      "id": "s015-12-2-host-country-schedule",
+      "number": null,
+      "title": "12.2 Host-country schedule",
+      "level": 5,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 224,
+      "line_end": 234,
+      "unit": "heading",
+      "n_chars": 499,
+      "n_words": 77
+    },
+    {
+      "id": "s016-12-3-issuer",
+      "number": null,
+      "title": "12.3 Issuer",
+      "level": 5,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 235,
+      "line_end": 249,
+      "unit": "heading",
+      "n_chars": 770,
+      "n_words": 130
+    },
+    {
+      "id": "s017-12-4-the-payload",
+      "number": null,
+      "title": "12.4 The payload",
+      "level": 5,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 250,
+      "line_end": 288,
+      "unit": "heading",
+      "n_chars": 987,
+      "n_words": 117
+    },
+    {
+      "id": "s018-12-5-size-at-each-stage",
+      "number": null,
+      "title": "12.5 Size at each stage",
+      "level": 5,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 289,
+      "line_end": 305,
+      "unit": "heading",
+      "n_chars": 603,
+      "n_words": 113
+    },
+    {
+      "id": "s019-12-6-the-certificates",
+      "number": null,
+      "title": "12.6 The certificates",
+      "level": 5,
+      "file": "input/pagecontent/qr_code_generation.md",
+      "line_start": 306,
+      "line_end": 340,
+      "unit": "heading",
+      "n_chars": 2112,
+      "n_words": 174
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

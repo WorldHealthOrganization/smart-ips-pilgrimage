@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc9421",
+  "authority": "IETF",
+  "title": "RFC 9421 HTTP Message Signatures",
+  "version": "RFC 9421",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc9421",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

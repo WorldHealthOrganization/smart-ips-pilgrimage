@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-hcert-spec/sections/s027-a-1-the-key-identifier-kid-s",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "A.1 The Key Identifier (`kid`s)",
+  "contains": [
+    "library/who-smart-trust-hcert-spec/blocks/prose-s027-a-1-the-key-identifier-kid-s"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-spec",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-spec",
+  "provenance": "ingested"
+}

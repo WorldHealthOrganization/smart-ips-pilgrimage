@@ -1,0 +1,12 @@
+{
+  "name": "smart-trust-tools-node-tools",
+  "private": true,
+  "description": "Pinned Node tools for the generators and the viewer site. Installed only with `npm ci --ignore-scripts` from package-lock.json, never with npx.",
+  "devDependencies": {
+    "@bytecodealliance/jco": "1.35.0",
+    "cytoscape": "3.30.2",
+    "fsh-sushi": "3.20.1",
+    "typedoc": "0.26.11",
+    "typescript": "5.6.3"
+  }
+}

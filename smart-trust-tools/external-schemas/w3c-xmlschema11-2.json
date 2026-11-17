@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "w3c-xmlschema11-2",
+  "authority": "W3C",
+  "title": "XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes",
+  "version": "1.1",
+  "specUrl": "https://www.w3.org/TR/xmlschema11-2/",
+  "namespaces": [],
+  "use": "reads",
+  "terms": []
+}

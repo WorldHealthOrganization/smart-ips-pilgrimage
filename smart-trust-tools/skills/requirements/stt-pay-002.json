@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-pay-002",
+  "title": "Typed DVCMinVaccineDetails model",
+  "description": "Restates QR Code Generation, 3. Step 2 — Assemble the payload; DVCMinVaccineDetails logical model (trust-phw). QR Code Generation, 3. Step 2 — Assemble the payload: “Populate the logical model you selected.”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-pay-001"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s004-3-step-2-assemble-the-payload",
+    "library/who-smart-trust-phw-dvcmin-vaccine-details"
+  ],
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Typed DVCMinVaccineDetails model",
+      "conformance": "SHALL",
+      "requirement": "The library SHALL provide the vx structure with vp 1..1, dv 1..1, cn 0..1, is 0..1 and bo 1..1.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-PAY-002 passes in each implementation's suite (Kotlin: `STT-PAY-001 STT-PAY-002 STT-PAY-005 a newborn's DVCMin, with no identity document, round-trips as typed fields` (AssemblePayloadTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}

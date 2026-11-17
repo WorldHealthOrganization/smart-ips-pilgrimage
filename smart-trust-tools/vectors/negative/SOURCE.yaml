@@ -1,0 +1,7 @@
+# Shared negative vectors (STT-TST-005).
+generator: tools/negative-vectors/make_negative_vectors.py
+derivedFrom: vectors/smart-trust-pr129/dvc-qr-example-XXA.json
+licence: derived from the WHO SMART Trust IG test data in vectors/smart-trust-pr129; see its SOURCE.yaml.
+loadedBy:
+  - tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt
+  - tools/hcert-kotlin/hcert-core/node-smoke.mjs

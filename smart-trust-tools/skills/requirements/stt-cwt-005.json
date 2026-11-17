@@ -1,0 +1,34 @@
+{
+  "id": "req:stt-cwt-005",
+  "title": "iss is an optional alpha-2 string",
+  "description": "Engineering consequence of HCERT Specification, 3.2.4 Issuer; QR Code Generation, 12.3 Test issuer. QR Code Generation, 12.3 Test issuer: “GDHCN participant codes are ISO 3166-1 alpha-3, while the CWT iss claim and the X.509 country attribute take the alpha-2 form”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "iss is an optional alpha-2 string",
+      "conformance": "SHALL",
+      "requirement": "iss SHALL be optional and SHALL be encoded as a text string. When present, the issuer SHALL require two upper-case letters, the alpha-2 form used in iss and in the DSC's X.509 C attribute.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-CWT-005 passes in each implementation's suite (Kotlin: `STT-CWT-005 iss is optional, and alpha-2 when present` (BuildCwtTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-hcert-spec/sections/s010-3-2-4-issuer",
+    "library/who-smart-trust-qr-code-generation/sections/s016-12-3-issuer"
+  ]
+}

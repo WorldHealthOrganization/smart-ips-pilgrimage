@@ -1,0 +1,20 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns/"
+    }
+  ],
+  "@id": "library/who-smart-trust-cwt-payload-model/blocks/prose-s001-input-fsh-models-cwt-payload-fsh",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "kind": "prose",
+  "title": "input/fsh/models/cwt_payload.fsh",
+  "text": "../sections/s001-input-fsh-models-cwt-payload-fsh.md",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-cwt-payload-model",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-cwt-payload-model",
+  "provenance": "ingested"
+}

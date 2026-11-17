@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-hcert-spec/sections/s023-6-1-hcert-signature-validity-time",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "6.1 HCERT Signature Validity Time",
+  "contains": [
+    "library/who-smart-trust-hcert-spec/blocks/prose-s023-6-1-hcert-signature-validity-time"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-spec",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-spec",
+  "provenance": "ingested"
+}

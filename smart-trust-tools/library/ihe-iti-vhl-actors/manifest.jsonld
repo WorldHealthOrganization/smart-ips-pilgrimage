@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-actors",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "IHE ITI VHL ActorDefinitions (FSH)",
+  "contains": [
+    "library/ihe-iti-vhl-actors/sections/s001-actors-fsh"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-4.0",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-4.0",
+    "basis": "IHE/ITI.VHL LICENSE (Creative Commons Attribution 4.0 International) and sushi-config.yaml license: CC-BY-4.0 at the ingested commit. The text is held unmodified, with attribution."
+  },
+  "meta": {
+    "doc_id": "ihe-iti-vhl-actors",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "actors.fsh",
+    "source_sha256": "ded951945702fe28b69a31f7bc3eacceb326bd9d6ba04ac92bbb978a49db1cfe",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

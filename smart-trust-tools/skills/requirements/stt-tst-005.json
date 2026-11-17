@@ -1,0 +1,38 @@
+{
+  "id": "req:stt-tst-005",
+  "title": "Language-neutral vector format",
+  "description": "Engineering consequence of DVC QR example, machine-readable summary (test participant XXA); Stakeholder directive: Kotlin library first, Rust library second.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-gen-006"
+  ],
+  "reference": [
+    "vectors/smart-trust-pr129/dvc-qr-example-XXA.json",
+    "memory/dir-languages",
+    "vectors/negative/negative-vectors.json"
+  ],
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Language-neutral vector format",
+      "conformance": "SHALL",
+      "requirement": "Conformance vectors SHALL be stored once, in a language-neutral format (JSON plus PEM), in this repository, and loaded by both test suites.",
+      "category": "test",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-TST-005 passes in each implementation's suite (Kotlin: `STT-TST-004 STT-TST-005 the shared negative vectors fail at the named step with the named reason` (ConformanceVectorsTest.kt); node-smoke.mjs).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "test",
+    "derived"
+  ]
+}

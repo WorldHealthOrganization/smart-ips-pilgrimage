@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc7517",
+  "authority": "IETF",
+  "title": "RFC 7517 JSON Web Key (JWK)",
+  "version": "RFC 7517",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc7517",
+  "namespaces": [],
+  "use": "reads",
+  "terms": [],
+  "note": "DID trustlist verificationMethod publicKeyJwk (x5c)."
+}

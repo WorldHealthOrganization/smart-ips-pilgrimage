@@ -1,0 +1,38 @@
+{
+  "id": "req:stt-iss-004",
+  "title": "Two-phase signing",
+  "description": "Engineering consequence of HCERT Specification, 6.2 Key Management; W3C Web Cryptography API; QR Code Generation, 6. Step 5 — Sign as a COSE_Sign1. QR Code Generation, 6. Step 5 — Sign as a COSE_Sign1: “Converting between the two is the single most common interoperability bug in HCERT implementations.”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-cos-006"
+  ],
+  "reference": [
+    "library/who-smart-trust-hcert-spec/sections/s024-6-2-key-management",
+    "external-schemas/w3c-webcrypto",
+    "library/who-smart-trust-qr-code-generation/sections/s007-6-step-5-sign-as-a-cose-sign1"
+  ],
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Two-phase signing",
+      "conformance": "SHALL",
+      "requirement": "Issuance SHALL be two-phase: prepare returns the exact bytes to sign (the Sig_structure), the caller signs them by any means, including asynchronous ones such as WebCrypto or a remote KMS, and finish assembles the certificate and returns the HC1 string and the COSE bytes. For ES256, finish SHALL accept r||s or DER and SHALL always emit r||s.",
+      "category": "api",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-ISS-004 passes in each implementation's suite (Kotlin: `STT-COS-004 STT-ISS-004 what is signed is the Signature1 structure prepare returns` (SignCoseTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "api",
+    "derived"
+  ]
+}

@@ -1,0 +1,206 @@
+name: Requirements graph, API contract and Kotlin library
+
+# Every dependency is pinned: actions by commit SHA, Python by hash
+# (toolchain/python/requirements.txt), Node tools by lockfile integrity
+# (toolchain/node/package-lock.json, installed with --ignore-scripts), Gradle by
+# verification metadata.
+permissions:
+  contents: read
+
+on:
+  push:
+    paths: ["skills/**", "library/**", "external-schemas/**", "references/**", "memory/**", "beans/**", "processes/**", "scenarios/**", "api/**", "models/**", "vectors/**", "test/**", "tools/**", "toolchain/**", "VERSION", "CHANGELOG.md", "index.lock.json", "package.json", "bun.lock", "bunfig.toml", ".github/workflows/requirements-kg.yml"]
+  pull_request:
+    paths: ["skills/**", "library/**", "external-schemas/**", "references/**", "memory/**", "beans/**", "processes/**", "scenarios/**", "api/**", "models/**", "vectors/**", "test/**", "tools/**", "toolchain/**", "VERSION", "CHANGELOG.md", "index.lock.json", "package.json", "bun.lock", "bunfig.toml", ".github/workflows/requirements-kg.yml"]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: "22"
+      - name: Python tools, hash-pinned
+        run: pip install --require-hashes --no-deps -r toolchain/python/requirements.txt
+      # The harness layers index.lock.json pins, laid down so the graph checks
+      # that import them run here (check:req-nodes, the Tool edges). bun is
+      # pinned to the version that resolved bun.lock.
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version: 1.4.2
+      # `bun run cat mount:lock` lives in cat-harness-tools, itself a mount, so
+      # on a fresh checkout its replayer is fetched first: the one file
+      # scripts/mount-from-lock.ts (it imports only node:*) at the commit the
+      # lock pins. It verifies every directory against the lock's treeDigest.
+      - name: Mount the harness layers from index.lock.json
+        run: |
+          set -euo pipefail
+          read -r repo sha < <(python3 -c 'import json; i = next(x for x in json.load(open("index.lock.json"))["instances"] if x["instance"] == "cat-harness-tools"); print(i["repository"], i["sha"])')
+          work="$(mktemp -d)"
+          git -C "$work" init -q
+          git -C "$work" fetch -q --depth 1 --filter=blob:none "https://github.com/${repo}.git" "$sha"
+          git -C "$work" checkout -q FETCH_HEAD -- scripts/mount-from-lock.ts
+          bun "$work/scripts/mount-from-lock.ts" --root . --no-install
+      # From the committed bun.lock (bunfig minimumReleaseAge); no lifecycle
+      # script runs, not even bun's default-trusted ones.
+      - name: Install the workspaces, frozen, without install scripts
+        run: bun install --frozen-lockfile --ignore-scripts
+      - name: Every mount is on disk and hashes to the lock
+        run: bun run cat mount:lock
+      # beans/ is kept on its state branch (cat/smart-trust-tools/beans), not
+      # on main; check:req-nodes and kg_nodes.py read its Requirements
+      # affected and Sources.
+      - name: Mount the graphs kept on state branches
+        run: bun run cat state:mount
+      - name: Every edge of the requirement graph names a node, Tool edges included
+        run: |
+          bun run check:req-nodes
+          python3 tools/build-site/kg_nodes.py --with-tools
+      - name: Validate WIT and check generated TypeScript is current
+        run: |
+          tools/gen-api-types/gen_api_types.sh
+          git diff --exit-code -- api/generated/ts
+      - name: The generated TypeScript view has the contract's shape, and every vector set its provenance
+        run: |
+          bun tools/gen-api-types/check.ts
+          bun tools/check-models/check-sources.ts
+      - name: Library test plan is current, and every case's feature file is linked
+        run: python3 tools/test-plan/make_test_plan.py --check
+      # The @itb: Scenarios bind WHO-ITB GITB test cases; they resolve against
+      # the suite at the commit references/who-itb.json cites, fetched by SHA.
+      - name: WHO-ITB test suites at the cited commit
+        run: |
+          set -euo pipefail
+          sha="$(python3 -c 'import json, re; print(re.search(r"/tree/([0-9a-f]{40})$", json.load(open("references/who-itb.json"))["URL"]).group(1))')"
+          git init -q "$RUNNER_TEMP/who-itb"
+          git -C "$RUNNER_TEMP/who-itb" fetch -q --depth 1 https://github.com/WorldHealthOrganization/WHO-ITB.git "$sha"
+          git -C "$RUNNER_TEMP/who-itb" checkout -q FETCH_HEAD
+      # The shared checker from the pinned cat-harness-tools: every test has a
+      # Scenario tagged @test:<file>::<scope>::<name>, every tag names a test,
+      # and every @itb: tag names a GITB test case. Run here by path, not as a
+      # package.json check:* script: a downstream index runs those by bare name,
+      # and check:test-gherkin is the harness's own (#58).
+      - name: Every test has a Gherkin Scenario, and every Scenario a test
+        run: bun cat-harness-tools/scripts/check-test-gherkin.ts --root . --itb "$RUNNER_TEMP/who-itb"
+      - name: Each system under test's bindings are current with its tests' tags
+        run: python3 tools/test-systems/make_test_systems.py --check
+      - name: Check derived payload models are current
+        run: python3 tools/lm-derive/lm_derive.py --check
+      - name: Validate vectors against CDDL and SHACL
+        run: python3 tools/check-models/check_models.py
+      - name: Shared negative vectors are current with the PR 129 vector
+        run: python3 tools/negative-vectors/make_negative_vectors.py --check
+      # VERSION is the one version source (STT-NFR-001); the kotlin job
+      # repeats this against the built POMs and package.json files.
+      - name: One version everywhere, with a changelog entry
+        run: node tools/release-packaging/check-version.mjs
+
+  kotlin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: "22"
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4.9.1
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@748248ddd2a24f49513d8f472f81c3a07d4d50e1 # v4.4.4
+        with:
+          gradle-version: "8.14.3"
+      - name: Kotlin skeleton is current with the WIT
+        run: python3 tools/wit2kotlin/wit2kotlin.py --check
+      # tools/hcert-kotlin/gradle/verification-metadata.xml pins the sha256 of every
+      # plugin and library Gradle resolves; an unlisted or changed artifact
+      # fails the build.
+      - name: Compile (JVM + JS) and run the hcert-core tests on the JVM
+        run: gradle -p tools/hcert-kotlin --no-daemon compileKotlinJvm compileKotlinJs :hcert-core:jvmTest :hcert-core:jvmTestCoverageCheck :hcert-core:compileProductionLibraryKotlinJs
+      - name: Run hcert-core on Node against the PR 129 vector
+        run: node tools/hcert-kotlin/hcert-core/node-smoke.mjs
+      # The same TypeScript suite the rust job runs on the component (STT-TST-007).
+      - name: Run the TypeScript conformance suite on the Kotlin/JS package
+        run: node tools/conformance-ts/run.mjs kotlin tools/hcert-kotlin/hcert-core/build/compileSync/js/main/productionLibrary/kotlin
+      # Each library verifies the other's certificates, ES256 and PS256, and both
+      # build the same bytes from the same request (STT-TST-003, STT-GEN-006).
+      # The component is built here too, from the same pinned toolchain and
+      # Cargo.lock as the rust job, so no artifact passes between jobs.
+      - name: Install the pinned Rust toolchain
+        working-directory: tools/hcert-rust
+        run: rustup show active-toolchain || rustup toolchain install
+      - name: Build the Rust WIT component for the cross check
+        run: tools/hcert-rust/build-component.sh "$RUNNER_TEMP/component"
+      - name: Each library verifies the other's certificates
+        run: node tools/conformance-ts/cross.mjs "$RUNNER_TEMP/component" tools/hcert-kotlin/hcert-core/build/compileSync/js/main/productionLibrary/kotlin
+      # Release packaging, dry runs only (STT-NFR-002, docs/RELEASING.md).
+      # Nothing is published from CI and no job holds a credential: an agent
+      # publishes, by the runbook.
+      - name: "Dry run: publish the Maven artefacts into a build-local repository"
+        run: gradle -p tools/hcert-kotlin --no-daemon publishDryRun
+      - name: "Dry run: assemble the npm packages"
+        run: node tools/release-packaging/assemble-npm.mjs --out "$RUNNER_TEMP/npm" --component "$RUNNER_TEMP/component" --kotlin-js tools/hcert-kotlin/hcert-core/build/compileSync/js/main/productionLibrary/kotlin
+      - name: The conformance suite on the files the npm packages would ship
+        run: |
+          node tools/conformance-ts/run.mjs rust "$RUNNER_TEMP/npm/hcert-component"
+          node tools/conformance-ts/run.mjs kotlin "$RUNNER_TEMP/npm/hcert-kotlin-js"
+      - name: "Dry run: npm pack"
+        run: |
+          (cd "$RUNNER_TEMP/npm/hcert-component" && npm pack --dry-run --ignore-scripts)
+          (cd "$RUNNER_TEMP/npm/hcert-kotlin-js" && npm pack --dry-run --ignore-scripts)
+      - name: The built POMs and package.json files carry VERSION
+        run: node tools/release-packaging/check-version.mjs "$RUNNER_TEMP/npm" tools/hcert-kotlin/build/maven-dry-run
+
+
+  rust:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/hcert-rust
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: "22"
+      # rust-toolchain.toml pins the compiler (1.97.0) and the wasm32 target;
+      # rustup on the runner installs exactly that. Cargo.lock pins every crate
+      # with its checksum, and --locked refuses to resolve anything new.
+      - name: Install the pinned toolchain
+        run: rustup show active-toolchain || rustup toolchain install
+      - name: Test the library, natively
+        run: cargo test --locked
+      - name: Test with the demos' QR encoder (feature qr)
+        run: cargo test --locked --features qr --test api
+      # The coverage floor (STT-TST-010): rustc's own instrumentation and the
+      # llvm-tools component rust-toolchain.toml pins; nothing to install.
+      - name: Coverage, against the recorded floor
+        run: ./coverage.sh --report
+      - name: Build the WebAssembly module, as the demos load it
+        run: cargo build --locked --release --features qr --target wasm32-unknown-unknown
+      - name: Run the WebAssembly module on Node, with WebCrypto keys
+        run: node js/smoke.mjs
+      # The WIT component (STT-GEN-005): wit-bindgen bindings for api/wit,
+      # componentised and transpiled by the pinned jco in toolchain/node.
+      - name: Build the WebAssembly component and transpile it with jco
+        run: ./build-component.sh "$RUNNER_TEMP/component"
+      - name: Drive every interface of the component on Node
+        run: node js/component/component-test.mjs "$RUNNER_TEMP/component"
+      # One suite for both libraries, type-checked against api/generated/ts
+      # (STT-TST-007); the kotlin job runs it on the Kotlin/JS package.
+      - name: Type-check the TypeScript conformance suite
+        run: ../../toolchain/node/node_modules/.bin/tsc -p ../conformance-ts/tsconfig.json
+      - name: Run the TypeScript conformance suite on the component
+        run: node ../conformance-ts/run.mjs rust "$RUNNER_TEMP/component"
+      # Dry run only (STT-NFR-002): the .crate an agent would publish, listed
+      # and built on its own; the tests stay in the repository (they read
+      # ../../vectors).
+      - name: "Dry run: cargo package"
+        run: |
+          cargo package --locked --list
+          cargo package --locked

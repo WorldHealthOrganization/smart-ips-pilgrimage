@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-hcert-spec/sections/s018-4-2-2-qr-2d-barcode",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "4.2.2 QR 2D Barcode",
+  "contains": [
+    "library/who-smart-trust-hcert-spec/blocks/prose-s018-4-2-2-qr-2d-barcode"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-spec",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-spec",
+  "provenance": "ingested"
+}

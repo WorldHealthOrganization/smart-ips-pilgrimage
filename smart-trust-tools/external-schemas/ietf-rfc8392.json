@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc8392",
+  "authority": "IETF",
+  "title": "RFC 8392 CBOR Web Token (CWT)",
+  "version": "RFC 8392",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc8392",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

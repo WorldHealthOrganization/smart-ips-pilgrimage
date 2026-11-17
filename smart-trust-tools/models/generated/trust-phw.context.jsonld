@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "DVCMin": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin"
+    },
+    "DVCMinPreQual": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinPreQual"
+    },
+    "DVCMinVaccineDetails": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails"
+    },
+    "DVCMinVaccineDetailsPreQual": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetailsPreQual"
+    },
+    "n": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin#n"
+    },
+    "dob": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin#dob"
+    },
+    "s": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin#s"
+    },
+    "nt": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin#nt"
+    },
+    "id": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin#id"
+    },
+    "dt": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin#dt"
+    },
+    "gn": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin#gn"
+    },
+    "vx": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin#vx",
+      "@context": {
+        "vp": {
+          "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#vp"
+        },
+        "dv": {
+          "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#dv"
+        },
+        "cn": {
+          "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#cn"
+        },
+        "is": {
+          "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#is"
+        },
+        "bo": {
+          "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails#bo"
+        }
+      }
+    },
+    "v": {
+      "@id": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin#v"
+    }
+  }
+}

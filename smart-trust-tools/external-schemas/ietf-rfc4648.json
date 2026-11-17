@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc4648",
+  "authority": "IETF",
+  "title": "RFC 4648 The Base16, Base32, and Base64 Data Encodings",
+  "version": "RFC 4648",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc4648",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

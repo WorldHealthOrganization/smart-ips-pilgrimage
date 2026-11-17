@@ -1,0 +1,94 @@
+package who:smart-trust@0.1.0;
+
+/// Types shared by every interface.
+///
+/// WIT has no recursive types, so arbitrary CBOR never crosses the API
+/// boundary as a tree: it crosses as encoded bytes (`cbor-bytes`). The typed
+/// payload (DVCMin) crosses as a record.
+interface types {
+    /// COSE algorithm. es256 = -7 (primary), ps256 = -37 (secondary).
+    /// Both MUST be implemented. [STT-COS-002]
+    enum cose-algorithm { es256, ps256 }
+
+    /// 8-byte key identifier: first 8 bytes of SHA-256 over the DER DSC.
+    /// [STT-KID-001]
+    type kid = list<u8>;
+
+    /// CWT NumericDate: integer seconds since the Unix epoch. [STT-CWT-002]
+    type numeric-date = s64;
+
+    /// Encoded CBOR data item.
+    type cbor-bytes = list<u8>;
+
+    /// An hcert subclaim number and what it carries. Negative numbers are
+    /// the development range. [STT-SEL-001, STT-SEL-003]
+    record subclaim {
+        key: s32,
+        title: string,
+        /// Canonical URL of the FHIR logical model, when there is one.
+        logical-model: option<string>,
+    }
+
+    /// Bounds applied while decoding untrusted input. [STT-CBR-003,
+    /// STT-ZIP-002]
+    record decode-limits {
+        max-input-chars: u32,
+        max-inflated-bytes: u32,
+        max-depth: u32,
+        max-items: u32,
+        max-string-bytes: u32,
+    }
+
+    enum severity { blocking, warning, information }
+
+    /// One payload validation finding. `path` names the element.
+    record validation-issue {
+        path: string,
+        code: string,
+        message: string,
+        severity: severity,
+    }
+
+    /// Verification steps, in the order they run. [STT-VER-001]
+    enum step {
+        prefix,
+        base45,
+        inflate,
+        cose,
+        header,
+        trust-lookup,
+        signature,
+        key-usage,
+        cwt,
+        time,
+        hcert,
+        payload,
+    }
+
+    /// Why verification stopped. [STT-VER-008]
+    enum failure-reason {
+        bad-prefix,
+        unsupported-context-version,
+        base45-invalid,
+        inflate-failed,
+        limit-exceeded,
+        cose-malformed,
+        header-invalid,
+        unsupported-algorithm,
+        kid-not-found,
+        signature-invalid,
+        key-usage-mismatch,
+        expired,
+        not-yet-valid,
+        hcert-missing,
+        multiple-subclaims,
+        payload-invalid,
+    }
+
+    /// A non-fatal observation made while verifying.
+    record diagnostic {
+        step: step,
+        severity: severity,
+        message: string,
+    }
+}

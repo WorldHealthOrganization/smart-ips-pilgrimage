@@ -1,0 +1,34 @@
+{
+  "id": "req:stt-pay-008",
+  "title": "Preserve unknown payload elements",
+  "description": "Engineering consequence of HCERT Specification, 3.2.7 Health Certificate Claim. HCERT Specification, 3.2.7 Health Certificate Claim: “Decoding applications SHOULD however be permissive and robust in these aspects”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Preserve unknown payload elements",
+      "conformance": "SHALL",
+      "requirement": "Decoding a typed payload SHALL keep unknown elements and SHALL NOT fail because of them, so that newer template versions (v) can still be read and displayed.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-PAY-008 passes in each implementation's suite (Kotlin: `STT-PAY-008 unknown payload elements are kept` (AssemblePayloadTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-hcert-spec/sections/s013-3-2-7-health-certificate-claim"
+  ]
+}

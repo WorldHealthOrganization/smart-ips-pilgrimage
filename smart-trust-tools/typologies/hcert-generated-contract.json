@@ -1,0 +1,15 @@
+{
+  "$schema": "folio-graph-typology/v1",
+  "kind": "hcert-generated-contract",
+  "title": "Generated contract views",
+  "perInstance": true,
+  "renderable": false,
+  "holds": "derived",
+  "summary": "Views of the WIT contract written by generators: the TypeScript declarations jco emits (api/generated/ts/). Never edited by hand.",
+  "validatorNotApplicable": "derived wholly from api/wit by gen-api-types; a finding against a file is a finding against the generator, and the CI drift check re-generates and diffs it.",
+  "avatar": {
+    "glyph": "M4 6h16M4 12h10M4 18h7M15 15h6v6h-6z",
+    "tone": 210,
+    "reads": "the contract with a box beside it: a view written from it"
+  }
+}

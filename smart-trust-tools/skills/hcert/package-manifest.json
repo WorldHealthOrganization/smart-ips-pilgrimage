@@ -1,0 +1,17 @@
+{
+  "name": "hcert",
+  "version": "0.1.0",
+  "description": "The HCERT pipeline of the WHO SMART Trust IG, step by step, as the Kotlin and Rust libraries implement it (QR Code Generation 1 to 11).",
+  "skills": [
+    "hcert-select-payload",
+    "hcert-assemble-payload",
+    "hcert-build-cwt",
+    "hcert-encode-cbor",
+    "hcert-sign-cose",
+    "hcert-compress",
+    "hcert-encode-base45",
+    "hcert-prefix-context",
+    "hcert-verify",
+    "hcert-trust-list"
+  ]
+}

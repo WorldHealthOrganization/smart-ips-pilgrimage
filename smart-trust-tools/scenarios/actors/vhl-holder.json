@@ -1,0 +1,20 @@
+{
+  "id": "vhl-holder",
+  "title": "VHL Holder",
+  "kind": "person",
+  "description": "IHE ITI VHL VHLHolder: the person (a parent, for a newborn) who holds the link or the certificate and hands it to a VHL Receiver. In smart-trust terms the Holder. The library has no Holder-side operation; what the person does is the wallet package's skills.",
+  "roles": [
+    "vhl-holder"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedBy": [
+      "https://profiles.ihe.net/ITI/VHL/ActorDefinition/VHLHolder",
+      "http://smart.who.int/trust/ActorDefinition/Holder"
+    ],
+    "reference": [
+      "library/ihe-iti-vhl-actors/sections/s001-actors-fsh",
+      "library/who-smart-trust-actors/sections/s001-actors-fsh"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+[req]
+distinguished_name = dn
+prompt = no
+[dn]
+C = XX
+O = TEST ONLY smart-trust-tools testkit
+CN = TEST ONLY DSC
+[ext]
+basicConstraints = critical,CA:FALSE
+keyUsage = critical,digitalSignature
+extendedKeyUsage = 1.3.6.1.4.1.1847.2021.1.2

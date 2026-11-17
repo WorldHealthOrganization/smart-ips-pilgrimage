@@ -1,0 +1,160 @@
+package who:smart-trust@0.1.0;
+
+/// End-to-end issuance (steps 3 to 8).
+///
+/// Signing is two-phase so that any key holder can sign without the core
+/// calling back into the host: prepare() returns the Sig_structure bytes,
+/// the caller signs them with an HSM, KMS, Android Keystore or WebCrypto,
+/// and finish() assembles the certificate. [STT-ISS-004, STT-COS-006]
+interface issuer {
+    use types.{cose-algorithm, kid, numeric-date, validation-issue};
+    use payloads.{payload};
+    use subclaims.{registry};
+
+    record validity {
+        iat: numeric-date,
+        /// Mandatory: exp is the only revocation mechanism. [STT-CWT-003]
+        exp: numeric-date,
+    }
+
+    record issue-request {
+        /// One or more payloads, each under its own subclaim in the hcert
+        /// claim, in subclaim-key order on the wire. [STT-SEL-004]
+        payloads: list<payload>,
+        /// CWT iss, alpha-2. [STT-CWT-005]
+        iss: option<string>,
+        validity: validity,
+        /// DSC whose key will sign; kid is derived from it. [STT-KID-001]
+        dsc-der: list<u8>,
+        alg: cose-algorithm,
+        /// Refuse negative subclaims unless true. [STT-SEL-003]
+        allow-development-subclaims: bool,
+    }
+
+    variant issue-error {
+        payload-invalid(list<validation-issue>),
+        /// The request carries no payload.
+        no-payload,
+        /// Two payloads map to the same subclaim. [STT-SEL-004]
+        duplicate-subclaim(s32),
+        development-subclaim-not-allowed(s32),
+        unknown-subclaim(s32),
+        /// iat before or exp after the DSC validity. [STT-CWT-004]
+        validity-outside-dsc,
+        bad-certificate(string),
+        bad-signature-format(string),
+    }
+
+    record issued-hcert {
+        /// QR-ready: QR Alphanumeric characters only. [STT-QR-001]
+        hc1: string,
+        /// Raw COSE_Sign1 for 8-bit-safe transports. [STT-GEN-009]
+        cose: list<u8>,
+    }
+
+    resource pending-signature {
+        /// Bytes to sign (CBOR Sig_structure). [STT-COS-004]
+        to-be-signed: func() -> list<u8>;
+        algorithm: func() -> cose-algorithm;
+        kid: func() -> kid;
+    }
+
+    /// Phase 1: validate, build CWT, CBOR and protected header.
+    prepare: func(req: issue-request, reg: borrow<registry>) -> result<pending-signature, issue-error>;
+
+    /// Phase 2: attach the signature. ES256 accepts r||s or DER and always
+    /// emits r||s. [STT-COS-005]
+    finish: func(pending: pending-signature, signature: list<u8>) -> result<issued-hcert, issue-error>;
+}
+
+/// Verification (QR Code Generation section 11): the steps in STT-VER-001
+/// order, each fixed by the IG rather than a policy switch. The hcert claim
+/// may carry several entries (HCERT 3.2.7) [STT-SEL-004]; trust-list presence
+/// is the DSC validity check [STT-VER-006]; EKU is checked against each
+/// entry's certificate type [STT-VER-004].
+interface verifier {
+    use types.{kid, numeric-date, decode-limits, cbor-bytes, step, failure-reason, diagnostic};
+    use payloads.{payload};
+    use trust.{trust-store, trusted-dsc};
+    use subclaims.{registry};
+
+    record verifier-options {
+        limits: decode-limits,
+        clock-skew-seconds: u32,
+        /// Refuse an hcert claim with more entries than this
+        /// (multiple-subclaims): a deployment's strict profile. None: any
+        /// number. [STT-SEL-004]
+        max-payloads: option<u32>,
+    }
+
+    /// One entry of the hcert claim. [STT-SEL-004]
+    record hcert-entry {
+        subclaim: s32,
+        /// Raw CBOR for a subclaim the registry does not know. [STT-SEL-002]
+        payload: payload,
+        /// False when the DSC's EKU does not permit this entry's
+        /// certificate type; the entry is returned, marked, and a
+        /// diagnostic says so. [STT-VER-004]
+        key-usage-authorised: bool,
+    }
+
+    record verified-hcert {
+        iss: option<string>,
+        iat: numeric-date,
+        exp: numeric-date,
+        /// The valid entries, in subclaim-key order. An entry whose payload
+        /// fails its model check is left out and reported as a diagnostic;
+        /// verification fails at payload only when none is left, and at
+        /// key-usage only when no entry is authorised. [STT-SEL-004]
+        entries: list<hcert-entry>,
+        /// The DSC that verified the signature.
+        dsc: trusted-dsc,
+        /// Unknown CWT claims, as (encoded key, encoded value).
+        /// [STT-CWT-006]
+        other-claims: list<tuple<cbor-bytes, cbor-bytes>>,
+        diagnostics: list<diagnostic>,
+    }
+
+    record verification-failure {
+        step: step,
+        reason: failure-reason,
+        detail: string,
+        diagnostics: list<diagnostic>,
+    }
+
+    /// Payload content is only reachable through `verified`.
+    /// [STT-VER-002, STT-VER-008]
+    variant verification-result {
+        verified(verified-hcert),
+        failed(verification-failure),
+    }
+
+    /// Decoded, NOT verified: no trust lookup, no signature check. For
+    /// display and triage where verification is impossible (an offline
+    /// household visit, journey J2); never a basis for trust. [STT-VER-011]
+    /// One entry of an unverified hcert claim.
+    record unverified-entry {
+        subclaim: s32,
+        /// The payload, when it decoded and met its model.
+        payload: option<payload>,
+    }
+
+    record unverified-hcert {
+        kid: option<kid>,
+        iss: option<string>,
+        iat: option<numeric-date>,
+        exp: option<numeric-date>,
+        /// Every entry of the hcert claim, in subclaim-key order.
+        entries: list<unverified-entry>,
+        diagnostics: list<diagnostic>,
+    }
+
+    /// `now` is passed in: no ambient clock. [STT-VER-005]
+    verify: func(hc1: string, store: borrow<trust-store>, reg: borrow<registry>, now: numeric-date, options: verifier-options) -> verification-result;
+
+    /// Same, for raw COSE_Sign1 bytes. [STT-GEN-009]
+    verify-cose: func(cose: list<u8>, store: borrow<trust-store>, reg: borrow<registry>, now: numeric-date, options: verifier-options) -> verification-result;
+
+    /// [STT-VER-011]
+    read-unverified: func(hc1: string, reg: borrow<registry>, limits: decode-limits) -> result<unverified-hcert, verification-failure>;
+}

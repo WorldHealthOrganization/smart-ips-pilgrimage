@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-iti-yy3/sections/s006-2-3-yy3-4-1-generate-vhl-request-message",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "2:3.YY3.4.1 Generate VHL Request Message",
+  "contains": [
+    "library/ihe-iti-vhl-iti-yy3/blocks/prose-s006-2-3-yy3-4-1-generate-vhl-request-message"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy3",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy3",
+  "provenance": "ingested"
+}

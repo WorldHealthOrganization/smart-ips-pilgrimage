@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-volume-1/sections/s006-1-xx-1-2-2-retrieve-trust-list-with-did-iti-yy2",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "1:XX.1.2.2 Retrieve Trust List with DID [ITI-YY2]",
+  "contains": [
+    "library/ihe-iti-vhl-volume-1/blocks/prose-s006-1-xx-1-2-2-retrieve-trust-list-with-did-iti-yy2"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "provenance": "ingested"
+}

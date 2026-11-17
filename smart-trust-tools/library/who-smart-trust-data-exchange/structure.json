@@ -1,0 +1,50 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-data-exchange",
+  "source": {
+    "file": "data_exchange.md",
+    "sha256": "7aaf6ff2081deb38ed84e904d0ba63f466a683faac81891f8d2303be83c3f197",
+    "digest": "file",
+    "bytes": 379,
+    "mtime": "2026-10-22T10:51:06Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/pagecontent/data_exchange.md",
+        "sha256": "7aaf6ff2081deb38ed84e904d0ba63f466a683faac81891f8d2303be83c3f197",
+        "bytes": 379,
+        "lines": 16,
+        "format": "markdown"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust",
+      "commit": "af75be20b75ab87efcfd1201ccd43020f487f660",
+      "ref": "main",
+      "committed": "2026-10-22T10:51:06Z",
+      "path": "input/pagecontent/data_exchange.md",
+      "published": "https://smart.who.int/trust/data_exchange.html",
+      "retrieved": "2026-10-22T16:40:00Z"
+    }
+  },
+  "metadata": {
+    "title": "Data Exchange"
+  },
+  "toc_source": "headings",
+  "sections": [
+    {
+      "id": "s001-data-models-and-exchange",
+      "number": null,
+      "title": "Data Models and Exchange",
+      "level": 2,
+      "file": "input/pagecontent/data_exchange.md",
+      "line_start": 2,
+      "line_end": 16,
+      "unit": "heading",
+      "n_chars": 377,
+      "n_words": 45
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

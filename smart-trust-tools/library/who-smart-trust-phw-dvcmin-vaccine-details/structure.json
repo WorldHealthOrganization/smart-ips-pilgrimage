@@ -1,0 +1,50 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-phw-dvcmin-vaccine-details",
+  "source": {
+    "file": "DVCMinVaccineDetails.fsh",
+    "sha256": "3452d47e209c1fbc754436c92ba1842bbf5e1589bd2cc8a5bf2569becb93923d",
+    "digest": "file",
+    "bytes": 1079,
+    "mtime": "2026-08-31T12:50:22Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/fsh/models/DVCMinVaccineDetails.fsh",
+        "sha256": "3452d47e209c1fbc754436c92ba1842bbf5e1589bd2cc8a5bf2569becb93923d",
+        "bytes": 1079,
+        "lines": 25,
+        "format": "verbatim"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust-phw",
+      "commit": "fd3b5480e5df8001890d31ecc9761051c17c2cc5",
+      "ref": "main",
+      "committed": "2026-08-31T12:50:22Z",
+      "path": "input/fsh/models/DVCMinVaccineDetails.fsh",
+      "published": "https://smart.who.int/trust-phw/StructureDefinition-DVCMinVaccineDetails.html",
+      "retrieved": "2026-10-20T19:45:00Z"
+    }
+  },
+  "metadata": {
+    "title": "DVCMinVaccineDetails logical model (FSH)"
+  },
+  "toc_source": "files",
+  "sections": [
+    {
+      "id": "s001-input-fsh-models-dvcminvaccinedetails-fsh",
+      "number": null,
+      "title": "input/fsh/models/DVCMinVaccineDetails.fsh",
+      "level": 1,
+      "file": "input/fsh/models/DVCMinVaccineDetails.fsh",
+      "line_start": 1,
+      "line_end": 25,
+      "unit": "file",
+      "n_chars": 1090,
+      "n_words": 142
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

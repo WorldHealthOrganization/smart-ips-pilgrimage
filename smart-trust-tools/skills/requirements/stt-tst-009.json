@@ -1,0 +1,57 @@
+{
+  "id": "req:stt-tst-009",
+  "title": "Agreement with the WHO Interoperability Test Bed",
+  "description": "Engineering consequence of the WHO-ITB HCERT test suites (Tracks 1 to 3), the conformance tests WHO runs for GDHCN trust network participants. A library that disagrees with the ITB on a track's decode or verification would fail participants the ITB passes.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-gen-006"
+  ],
+  "reference": [
+    "references/who-itb",
+    "memory/dir-languages"
+  ],
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Agreement with the WHO Interoperability Test Bed",
+      "conformance": "SHALL",
+      "requirement": "Each library SHALL reach the same result as the WHO-ITB gdhcn-helper on every WHO-ITB HCERT track's test data: the same COSE bytes, kid, issuer and signature verdict, and, for the VHL track, the same link, manifest and decrypted content. FHIR profile validation and StructureMap transforms stay with the ITB; the library's part ends at the payload claim it hands over.",
+      "category": "test",
+      "successCriteria": [
+        {
+          "key": "decode",
+          "criterion": "For each WHO-ITB track's QR text, the library's decoded COSE_Sign1 has the same protected header, payload and signature bytes as the gdhcn-helper's cose._raw.",
+          "verification": "test"
+        },
+        {
+          "key": "verify",
+          "criterion": "For each track, the library verifies the certificate against the GDHCN trust list the ITB uses (DEV), reporting the same kid and issuer as the gdhcn-helper, and fails where the helper reports valid=false.",
+          "verification": "test"
+        },
+        {
+          "key": "vhl-link",
+          "criterion": "For Track 1, the library reads the same VHL link (url, flags, key) from the HCERT, and with the track's PIN fetches the ITI-YY5 manifest and decrypts the IPS bundle the ITB retrieves.",
+          "verification": "test"
+        },
+        {
+          "key": "icvp-claim",
+          "criterion": "For Track 2, the library returns the ICVP claim byte for byte as the content the ITB passes to the ICVPClaimtoIPS StructureMap.",
+          "verification": "test"
+        },
+        {
+          "key": "meow-claim",
+          "criterion": "For Track 3, the library returns the PH4H medication overview claim byte for byte as the content the ITB passes to the MedicationOverviewMinToMedicationOverviewBundle StructureMap.",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "test",
+    "derived"
+  ]
+}

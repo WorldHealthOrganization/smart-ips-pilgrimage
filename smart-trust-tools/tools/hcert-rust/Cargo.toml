@@ -1,0 +1,75 @@
+# The HCERT library in Rust: the second implementation of the requirement set
+# (STT-GEN-005), for native targets and wasm32. Every dependency is a
+# RustCrypto crate STT-SEC-002 names, or miniz_oxide for DEFLATE and
+# unicode-normalization for NFC; versions are pinned in Cargo.lock, each a
+# release at least 14 days old (DEPENDENCIES.md). Build with --locked.
+[package]
+# crates.io has no namespaces: the name carries the repository's GitHub org
+# (tools/release-packaging/coordinates.mjs); the library is `hcert` ([lib]).
+name = "litlfred-hcert"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82"
+license = "Apache-2.0"
+description = "SMART Trust HCERT: issue and verify WHO GDHCN health certificates and Verifiable Health Links"
+repository = "https://github.com/litlfred/smart-trust-tools"
+homepage = "https://litlfred.github.io/smart-trust-tools/"
+readme = "README.md"
+keywords = ["hcert", "gdhcn", "health-certificate", "cose", "cwt"]
+categories = ["cryptography", "encoding", "wasm"]
+authors = ["Carl Leitner (litlfred)"]
+# The version must equal the repository's VERSION file
+# (tools/release-packaging/check-version.mjs). Only crates.io, and only by an
+# agent following docs/RELEASING.md; nothing here is published yet.
+publish = ["crates-io"]
+# The crate is the library and its documentation. The tests read the shared
+# vectors at ../../vectors and the demos and component scripts are the
+# repository's, so they stay out; they run from the repository (cargo test).
+# The `component` feature reads the WIT contract at ../../api/wit, so it builds
+# only from the repository; the component is distributed on npm instead
+# (@litlfred/hcert-component).
+include = ["/src/**/*.rs", "/README.md", "/DEPENDENCIES.md", "/LICENSE", "/Cargo.toml", "/Cargo.lock"]
+
+[lib]
+name = "hcert"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+p256 = { version = "=0.13.2", default-features = false, features = ["ecdsa", "pkcs8", "std"] }
+rsa = { version = "=0.9.10", default-features = false, features = ["std", "sha2"] }
+sha2 = { version = "=0.10.9", default-features = false, features = ["std", "oid"] }
+x509-cert = { version = "=0.2.5", default-features = false, features = ["std"] }
+aes-gcm = { version = "=0.10.3", default-features = false, features = ["aes", "alloc"] }
+getrandom = { version = "=0.2.17", default-features = false }
+miniz_oxide = { version = "=0.8.9", default-features = false, features = ["with-alloc"] }
+unicode-normalization = { version = "=0.1.25", default-features = false, features = ["std"] }
+# Demo only (feature `qr`): renders the HC1 string as a QR symbol for the
+# live demos. Not used by the library proper, which leaves rendering to the
+# host (STT-QR-001). Without default features it has no dependencies.
+qrcode = { version = "=0.14.1", default-features = false, features = ["svg"], optional = true }
+
+# The WebAssembly component (feature `component`): Rust bindings for the WIT
+# contract in api/wit, generated at build time by wit-bindgen's macro. Only
+# the component build enables it; native builds never compile it.
+wit-bindgen = { version = "=0.62.0", default-features = false, features = ["macros", "realloc"], optional = true }
+
+[features]
+qr = ["dep:qrcode"]
+component = ["dep:wit-bindgen"]
+
+# Verification needs no randomness and signing is the host's, so on wasm32
+# the entropy source is one that always fails, instead of a JavaScript import.
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "=0.2.17", features = ["custom"] }
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[dev-dependencies]
+# Already in the tree through p256 and rsa; the tests use it for an RNG to
+# sign PS256 with, and for no other purpose.
+rand_core = { version = "=0.6.4", default-features = false }

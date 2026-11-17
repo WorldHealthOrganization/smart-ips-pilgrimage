@@ -1,0 +1,34 @@
+{
+  "id": "req:stt-gen-012",
+  "title": "Synchronous core with no I/O",
+  "description": "Engineering consequence of WIT, WebAssembly Component Model IDL; QR Code Generation, 2.2 Choosing between a DVC and a VHL. QR Code Generation, 2.2 Choosing between a DVC and a VHL: “Works fully offline — Yes — verifier needs only the trust list”.",
+  "status": "proposed",
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Synchronous core with no I/O",
+      "conformance": "SHALL",
+      "requirement": "The pipeline core SHALL do no network or file I/O and SHALL NOT read an ambient clock. Trust material SHALL be loaded into a trust store by the host, and the current time SHALL be passed as an argument. Fetching, caching and refreshing trust lists SHALL live in separate, platform-specific modules.",
+      "category": "architecture",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-GEN-012 passes in each implementation's suite (Kotlin: `STT-GEN-012 STT-VHL-010 STT-VER-009 the core does no network, file or asynchronous I-O` (ArchitectureTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "architecture",
+    "derived"
+  ],
+  "reference": [
+    "external-schemas/bytecodealliance-wit",
+    "library/who-smart-trust-qr-code-generation/sections/s003-2-step-1-select-the-payload-type"
+  ]
+}

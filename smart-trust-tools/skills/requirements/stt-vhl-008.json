@@ -1,0 +1,39 @@
+{
+  "id": "req:stt-vhl-008",
+  "title": "Receiver authentication: HTTP Message Signatures",
+  "description": "Restates IHE VHL ITI-YY5, 2:3.YY5.4.1.3 HTTP Message Signatures; RFC 9421; RFC 9530; Stakeholder directive: Verifiable Health Links follow IHE VHL, CBOR map at key 5. IHE VHL ITI-YY5 Retrieve Manifest, 2:3.YY5.4.1.3 Authentication Option - HTTP Message Signatures: “Implementations MAY authenticate using HTTP Message Signatures per RFC 9421”. Stakeholder directive: Verifiable Health Links follow IHE VHL, CBOR map at key 5: “Trust - IHE VHL”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-vhl-005"
+  ],
+  "reference": [
+    "library/ihe-iti-vhl-iti-yy5/sections/s009-2-3-yy5-4-1-3-authentication-option-http-message",
+    "external-schemas/ietf-rfc9421",
+    "external-schemas/ietf-rfc9530",
+    "memory/dir-vhl"
+  ],
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Receiver authentication: HTTP Message Signatures",
+      "conformance": "SHALL",
+      "requirement": "For the ITI-YY5 HTTP Message Signatures option the library SHALL compute Content-Digest (RFC 9530, sha-256, Structured Field byte sequence) and the RFC 9421 signature base over @method, @path, @authority, content-type and content-digest with created, keyid and alg parameters, return the bytes for the host to sign with the receiver's key, and assemble the Signature-Input and Signature headers from the result. For ecdsa-p256-sha256 the signature SHALL be the 64-byte r||s; a DER signature SHALL be converted.",
+      "category": "security",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VHL-008 passes in each implementation's suite (Kotlin: `STT-VHL-008 the Content-Digest is RFC 9530` (VhlReceiveTest.kt); `STT-VHL-008 the RFC 9421 signature base has the IHE shape` (VhlReceiveTest.kt); `STT-VHL-008 a DER signature becomes the raw header value and verifies` (VhlReceiveTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "security",
+    "direct"
+  ]
+}

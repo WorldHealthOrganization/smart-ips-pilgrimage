@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-vhl-001",
+  "title": "VHL payload in the SMART Health Links payload format",
+  "description": "Restates SMART Health Links; IHE VHL ITI-YY3, 2:3.YY3.4.1.3 Expected Actions; VerifiableHealthLinkPayload logical model (trust-phw); Stakeholder directive: Verifiable Health Links follow IHE VHL, CBOR map at key 5. IHE VHL ITI-YY3 Generate VHL, 2:3.YY3.4.1.3 Expected Actions: “Create the VHL payload (using the SHL payload format)”. Stakeholder directive: Verifiable Health Links follow IHE VHL, CBOR map at key 5: “Single file - ignore”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "VHL payload in the SMART Health Links payload format",
+      "conformance": "SHALL",
+      "requirement": "The library SHALL model the VHL payload as the SMART Health Links payload format that IHE VHL reuses: url (required, https), key (required, 43 base64url characters encoding 32 bytes), exp (optional integer, epoch seconds), flag (optional; the letters L and P in alphabetical order), label (optional, at most 80 characters), v (optional integer, default 1) and extension.fhirBaseUrl (optional). Validation SHALL report each violation. The single-file U flag is out of scope and SHALL be reported as unsupported.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VHL-001 passes in each implementation's suite (Kotlin: `STT-VHL-001 the IHE ITI-YY3 example payload is valid, and each rule is enforced` (VhlShareTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ],
+  "reference": [
+    "external-schemas/hl7-smart-health-links",
+    "library/ihe-iti-vhl-iti-yy3/sections/s010-2-3-yy3-4-1-3-expected-actions",
+    "library/who-smart-trust-phw-health-link-payload",
+    "memory/dir-vhl"
+  ]
+}

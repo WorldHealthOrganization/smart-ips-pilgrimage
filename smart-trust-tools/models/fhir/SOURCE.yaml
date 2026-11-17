@@ -1,0 +1,18 @@
+# Provenance of the vendored FHIR inputs. Regenerate with tools/fetch-lms/fetch_lms.sh.
+logical_models:
+  repo: WorldHealthOrganization/smart-trust-phw
+  sha: fd3b5480e5df8001890d31ecc9761051c17c2cc5
+  files:
+    - input/fsh/models/DVCMin.fsh
+    - input/fsh/models/DVCMinVaccineDetails.fsh
+    - input/fsh/models/DVCMinPreQual.fsh
+    - input/fsh/models/DVCMinVaccineDetailsPreQual.fsh
+  aliases: input/fsh/*.fsh (Alias lines)
+  compiler: fsh-sushi 3.21.0 (FSHOnly, differential only)
+  published: http://smart.who.int/trust-phw/StructureDefinition-DVCMin.html
+primitives:
+  package: hl7.fhir.r5.core#5.0.0
+  note: >-
+    Regexes for FHIR primitive types, taken from the core package. FHIR
+    primitive regexes are implicitly anchored; the core package writes the
+    string regex with explicit ^...$, which tools/lm-derive/lm_derive.py strips.

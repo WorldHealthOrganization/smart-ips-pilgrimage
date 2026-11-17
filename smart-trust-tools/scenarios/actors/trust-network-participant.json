@@ -1,0 +1,18 @@
+{
+  "id": "trust-network-participant",
+  "title": "Trust Network Participant",
+  "kind": "external",
+  "description": "smart-trust TrustNetworkParticipant: a GDHCN participant whose Document Signer Certificate keys sign certificates and links, held in its own HSM, KMS or platform keystore. IHE ITI VHL has no separate actor for the key holder; it is part of the VHL Sharer's side.",
+  "roles": [
+    "hcert-key-holder"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedBy": [
+      "http://smart.who.int/trust/ActorDefinition/TrustNetworkParticipant"
+    ],
+    "reference": [
+      "library/who-smart-trust-actors/sections/s001-actors-fsh"
+    ]
+  }
+}

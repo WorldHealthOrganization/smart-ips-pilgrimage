@@ -1,0 +1,50 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-phw-aliases",
+  "source": {
+    "file": "Aliases.fsh",
+    "sha256": "141dba4e4d16b2d941f71b4aa2743a8cf8db6865b00ffd8f19e45bbee554b9c6",
+    "digest": "file",
+    "bytes": 2046,
+    "mtime": "2026-08-31T12:50:22Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/fsh/Aliases.fsh",
+        "sha256": "141dba4e4d16b2d941f71b4aa2743a8cf8db6865b00ffd8f19e45bbee554b9c6",
+        "bytes": 2046,
+        "lines": 38,
+        "format": "verbatim"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust-phw",
+      "commit": "fd3b5480e5df8001890d31ecc9761051c17c2cc5",
+      "ref": "main",
+      "committed": "2026-08-31T12:50:22Z",
+      "path": "input/fsh/Aliases.fsh",
+      "published": "https://github.com/WorldHealthOrganization/smart-trust-phw/blob/fd3b5480e5df8001890d31ecc9761051c17c2cc5/input/fsh/Aliases.fsh",
+      "retrieved": "2026-10-20T19:45:00Z"
+    }
+  },
+  "metadata": {
+    "title": "smart-trust-phw FSH aliases"
+  },
+  "toc_source": "files",
+  "sections": [
+    {
+      "id": "s001-input-fsh-aliases-fsh",
+      "number": null,
+      "title": "input/fsh/Aliases.fsh",
+      "level": 1,
+      "file": "input/fsh/Aliases.fsh",
+      "line_start": 1,
+      "line_end": 38,
+      "unit": "file",
+      "n_chars": 2057,
+      "n_words": 108
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

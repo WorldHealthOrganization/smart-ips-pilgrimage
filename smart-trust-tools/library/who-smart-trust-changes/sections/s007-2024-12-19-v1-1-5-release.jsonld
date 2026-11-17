@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-changes/sections/s007-2024-12-19-v1-1-5-release",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "2024-12-19 v1.1.5 - release",
+  "contains": [
+    "library/who-smart-trust-changes/blocks/prose-s007-2024-12-19-v1-1-5-release"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-changes",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-changes",
+  "provenance": "ingested"
+}

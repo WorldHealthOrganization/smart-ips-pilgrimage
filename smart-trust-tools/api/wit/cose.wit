@@ -1,0 +1,54 @@
+package who:smart-trust@0.1.0;
+
+/// Step 5: COSE_Sign1, key identifiers and signature formats.
+interface cose {
+    use types.{cose-algorithm, kid, decode-limits};
+
+    variant cose-error {
+        malformed(string),
+        /// Protected header failed type/length checks. [STT-VER-003]
+        header-invalid(string),
+        unsupported-algorithm(s32),
+        /// ES256 signature not exactly 64 bytes, or bad DER. [STT-COS-005]
+        bad-signature-format(string),
+        signature-invalid,
+        bad-certificate(string),
+    }
+
+    /// A parsed COSE_Sign1. `protected` is kept as received so the
+    /// Sig_structure is rebuilt from the original bytes. [STT-COS-004]
+    record sign1 {
+        protected: list<u8>,
+        payload: list<u8>,
+        signature: list<u8>,
+        alg: option<cose-algorithm>,
+        /// The protected kid if present, else the unprotected kid.
+        /// [STT-COS-003]
+        kid: option<kid>,
+        kid-in-protected: bool,
+        /// Whether the input carried CBOR tag 18. [STT-COS-001]
+        tagged: bool,
+    }
+
+    /// First 8 bytes of SHA-256 over the DER-encoded DSC. [STT-KID-001]
+    kid-from-dsc: func(dsc-der: list<u8>) -> kid;
+
+    enum base64-alphabet { standard, url-safe }
+
+    /// [STT-KID-003]
+    kid-to-base64: func(k: kid, alphabet: base64-alphabet) -> string;
+    kid-from-base64: func(text: string) -> result<kid, cose-error>;
+
+    parse-sign1: func(bytes: list<u8>, limits: decode-limits) -> result<sign1, cose-error>;
+
+    /// CBOR of ["Signature1", protected, h'', payload].
+    sig-structure: func(protected: list<u8>, payload: list<u8>) -> list<u8>;
+
+    /// Verify a parsed COSE_Sign1 against one DSC. Low level: does not
+    /// check EKU, time or trust. [STT-COS-002]
+    verify-sign1: func(s: sign1, dsc-der: list<u8>) -> result<_, cose-error>;
+
+    /// ASN.1 DER ECDSA-Sig-Value <-> fixed-width r||s. [STT-COS-005]
+    ecdsa-der-to-raw: func(der: list<u8>) -> result<list<u8>, cose-error>;
+    ecdsa-raw-to-der: func(raw: list<u8>) -> result<list<u8>, cose-error>;
+}

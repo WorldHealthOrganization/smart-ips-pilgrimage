@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc8152",
+  "authority": "IETF",
+  "title": "RFC 8152 COSE (obsoleted by RFC 9052)",
+  "version": "RFC 8152",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc8152",
+  "namespaces": [],
+  "use": "cites",
+  "terms": [],
+  "note": "Cited by the HCERT Specification; the library follows RFC 9052."
+}

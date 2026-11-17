@@ -1,0 +1,16 @@
+{
+  "$schema": "folio-graph-typology/v1",
+  "kind": "upstream-patches",
+  "title": "Upstream patches",
+  "perInstance": true,
+  "renderable": false,
+  "holds": "state",
+  "recordsWork": false,
+  "summary": "Changes proposed to repositories this project does not change in place, as git format-patch files: to IHE ITI VHL, for its maintainers to apply, each naming the open issue (bean) it resolves; and the QR Code Generation live-demo page for litlfred/smart-trust, made against WHO smart-trust PR 129's head.",
+  "validatorNotApplicable": "git format-patch output (mail-formatted diff text), not JSON. No check applies them: `git apply --check` needs the upstream tree at the commit each patch was made against, which this repository does not hold, so the maintainers' apply is the test.",
+  "avatar": {
+    "glyph": "M6 4v16M18 4v6a4 4 0 0 1-4 4H6M15 17l3 3 3-3",
+    "tone": 280,
+    "reads": "a branch merging back upstream"
+  }
+}

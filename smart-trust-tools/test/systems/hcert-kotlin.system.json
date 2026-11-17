@@ -1,0 +1,1654 @@
+{
+  "$schema": "system/v1",
+  "id": "hcert-kotlin",
+  "title": "SMART Trust HCERT library, Kotlin Multiplatform",
+  "kind": "tool",
+  "implements": [
+    "api/wit/worlds.wit#hcert"
+  ],
+  "actors": [
+    "issuer",
+    "verifier"
+  ],
+  "surfaces": [
+    {
+      "id": "library",
+      "kind": "library",
+      "entry": "tools/hcert-kotlin/hcert-core"
+    },
+    {
+      "id": "js-package",
+      "kind": "library",
+      "entry": "the Kotlin/JS production library, driven through api/generated/ts (WitJs.kt)"
+    }
+  ],
+  "targets": [
+    "jvm",
+    "node",
+    "android"
+  ],
+  "plans": [
+    "hcert-library-conformance"
+  ],
+  "suites": [
+    {
+      "glob": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/**/*.kt",
+      "lang": "kotlin",
+      "surface": "library",
+      "target": "jvm"
+    },
+    {
+      "glob": "tools/conformance-ts/suite.ts",
+      "lang": "ts",
+      "surface": "js-package",
+      "target": "node"
+    },
+    {
+      "glob": "tools/conformance-ts/cross.ts",
+      "lang": "ts",
+      "surface": "js-package",
+      "target": "node"
+    },
+    {
+      "glob": "tools/hcert-kotlin/hcert-core/node-smoke.mjs",
+      "lang": "script",
+      "surface": "js-package",
+      "target": "node"
+    },
+    {
+      "glob": "tools/hcert-kotlin/hcert-core/build.gradle.kts",
+      "lang": "script",
+      "surface": "library",
+      "target": "jvm"
+    },
+    {
+      "glob": "tools/check-models/check_models.py",
+      "lang": "script",
+      "surface": "*",
+      "target": "*"
+    },
+    {
+      "glob": "tools/conformance-ts/suite.ts",
+      "lang": "script",
+      "surface": "js-package",
+      "target": "node"
+    }
+  ],
+  "unbound": [
+    {
+      "target": "android",
+      "reason": "No test runs on an Android runtime yet (STT-GEN-004); the JVM tests cover the common code, not the platform crypto."
+    },
+    {
+      "assertion": "req:stt-gen-005#statement/rust-wasm",
+      "reason": "A criterion on the Rust library only."
+    },
+    {
+      "assertion": "req:stt-tst-010#statement/rust-floor",
+      "reason": "A criterion on the Rust library only."
+    },
+    {
+      "assertion": "req:stt-tst-003#statement/cross-verify",
+      "target": "jvm",
+      "reason": "Checked through the JavaScript package only, by design: tools/conformance-ts runs on Node, not on the JVM."
+    },
+    {
+      "assertion": "req:stt-tst-007#statement/ts-suite",
+      "target": "jvm",
+      "reason": "Checked through the JavaScript package only, by design: tools/conformance-ts runs on Node, not on the JVM."
+    },
+    {
+      "assertion": "req:stt-gen-011#statement/test",
+      "target": "jvm",
+      "reason": "STT-GEN-011 is the Kotlin/JS surface; it is checked on Node."
+    },
+    {
+      "assertion": "req:stt-tst-010#statement/kotlin-floor",
+      "target": "node",
+      "reason": "The floor is measured on the JVM test run (JaCoCo, jvmTestCoverageCheck); it is not measured on Node."
+    },
+    {
+      "assertion": "req:stt-gen-014#statement/test",
+      "target": "node",
+      "reason": "Checked on the generated sources (hcert-api/src/commonMain) by ArchitectureTest; the Node package is compiled from the same module."
+    },
+    {
+      "assertion": "req:stt-gen-010#statement/test",
+      "target": "node",
+      "reason": "Checked on the generated API sources (hcert-api/src/commonMain) by ArchitectureTest; the Node package is compiled from the same module."
+    },
+    {
+      "assertion": "req:stt-gen-012#statement/test",
+      "target": "node",
+      "reason": "Checked on the library's sources by ArchitectureTest, which reads commonMain, jvmMain and jsMain: every file the Node package is compiled from."
+    },
+    {
+      "assertion": "req:stt-iss-003#statement/test",
+      "target": "node",
+      "reason": "Checked on the library's sources by ArchitectureTest, which reads commonMain, jvmMain and jsMain: every file the Node package is compiled from."
+    },
+    {
+      "assertion": "req:stt-sec-001#statement/test",
+      "target": "node",
+      "reason": "Checked on the library's sources by ArchitectureTest, which reads commonMain, jvmMain and jsMain: every file the Node package is compiled from."
+    },
+    {
+      "assertion": "req:stt-sec-002#statement/test",
+      "target": "node",
+      "reason": "Checked on the library's sources by ArchitectureTest, which reads commonMain, jvmMain and jsMain: every file the Node package is compiled from."
+    },
+    {
+      "assertion": "req:stt-ver-009#statement/test",
+      "target": "node",
+      "reason": "Checked on the library's sources by ArchitectureTest, which reads commonMain, jvmMain and jsMain: every file the Node package is compiled from."
+    },
+    {
+      "assertion": "req:stt-vhl-010#statement/test",
+      "target": "node",
+      "reason": "Checked on the library's sources by ArchitectureTest, which reads commonMain, jvmMain and jsMain: every file the Node package is compiled from."
+    }
+  ],
+  "bindings": [
+    {
+      "assertion": "req:stt-b45-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-B45-001 STT-B45-002 Base45: RFC 9285 examples, and strict decoding"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-HC1-001 STT-B45-001 STT-ZIP-001 the PR 129 HC1 string decodes to the 295-byte COSE_Sign1"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/Base45Test.kt::STT-B45-001 the RFC 9285 section 4-3 examples"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-b45-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-B45-001 STT-B45-002 Base45: RFC 9285 examples, and strict decoding"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/Base45Test.kt::STT-B45-002 lower case, a dangling character and an out-of-range triple are refused"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cbr-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-CBR-001 deterministic re-encoding: RFC 8949 Appendix A, and the PR 129 CWT byte for byte"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-002 STT-CBR-001 deterministic re-encoding reproduces the issued CWT byte for byte"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/EncodeCborTest.kt::STT-CBR-001 RFC 8949 Appendix A numbers re-encode in their shortest form"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/EncodeCborTest.kt::STT-CBR-001 indefinite lengths re-encode as definite (RFC 8949 Appendix A)"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/EncodeCborTest.kt::STT-CBR-001 maps are encoded in deterministic key order, whatever order they were built in"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cbr-002#statement/test",
+      "tests": [
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/EncodeCborTest.kt::STT-CBR-002 text is NFC-normalised on encode, and a non-normalised string still decodes"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cbr-003#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-CBR-003 nesting beyond the limit is refused"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/EncodeCborTest.kt::STT-CBR-003 malformed indefinite-length items and out-of-range integers are refused with a typed error"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/EncodeCborTest.kt::STT-CBR-003 nesting beyond the limit is refused"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cbr-004#statement/test",
+      "tests": [
+        {
+          "surface": "*",
+          "target": "*",
+          "selector": "tools/check-models/check_models.py"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cos-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-COS-001 STT-COS-002 STT-COS-003 STT-KID-001 the COSE_Sign1 is tagged ES256 with the vector's kid in the protected header"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SignCoseTest.kt::STT-COS-001 STT-COS-003 a tagged COSE_Sign1 with alg and kid in the protected header"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cos-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-COS-001 STT-COS-002 STT-COS-003 STT-KID-001 the COSE_Sign1 is tagged ES256 with the vector's kid in the protected header"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-COS-004 STT-COS-002 verify-sign1 checks the Sig_structure against the DSC"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SignCoseTest.kt::STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cos-003#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-COS-001 STT-COS-002 STT-COS-003 STT-KID-001 the COSE_Sign1 is tagged ES256 with the vector's kid in the protected header"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SignCoseTest.kt::STT-COS-001 STT-COS-003 a tagged COSE_Sign1 with alg and kid in the protected header"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cos-004#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-COS-004 STT-COS-002 verify-sign1 checks the Sig_structure against the DSC"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SignCoseTest.kt::STT-COS-004 STT-ISS-004 what is signed is the Signature1 structure prepare returns"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cos-005#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-COS-005 ECDSA DER and r||s convert both ways"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-ISS-004 STT-COS-005 two-phase issuance with a host DER signature verifies"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SignCoseTest.kt::STT-COS-005 an ES256 signature is a fixed-width 64-byte r and s, whatever the signer returns"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cos-006#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-COS-006 finish refuses a signature from another key"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SignCoseTest.kt::STT-COS-006 the library holds no private key, and refuses a signature from another key"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cwt-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-CWT-001 STT-CWT-002 the claim set has integer keys and integer NumericDates"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/BuildCwtTest.kt::STT-CWT-001 STT-CWT-002 claim keys are integers and dates are integer NumericDates"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cwt-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-CWT-001 STT-CWT-002 the claim set has integer keys and integer NumericDates"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/BuildCwtTest.kt::STT-CWT-001 STT-CWT-002 claim keys are integers and dates are integer NumericDates"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cwt-003#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-CWT-003 an HCERT without exp is refused on issue and on verify"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/BuildCwtTest.kt::STT-CWT-003 an HCERT without exp is refused on issue and on verify"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cwt-004#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-SEL-003 STT-CWT-004 development subclaims need opting in; validity must sit inside the DSC"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/BuildCwtTest.kt::STT-CWT-004 the validity must fit inside the DSC's"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cwt-005#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-CWT-005 iss is optional, and two upper-case letters when present"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/BuildCwtTest.kt::STT-CWT-005 iss is optional, and alpha-2 when present"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-cwt-006#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-CWT-006 claims this version does not know are kept"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/BuildCwtTest.kt::STT-CWT-006 claims this version does not know are kept"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-gen-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-GEN-001 STT-GEN-009 ES256 and PS256 issue and verify, and the COSE bytes travel without the QR layers"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SignCoseTest.kt::STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-gen-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-GEN-002 every step is callable on its own, and the steps compose to the issued HC1"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ArchitectureTest.kt::STT-GEN-002 every step is callable on its own, and the steps compose to the pipeline"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-gen-003#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-PAY-009 STT-GEN-003 payloads under 1, 3, 4 and -7 pass through the core untouched"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/AssemblePayloadTest.kt::STT-PAY-009 STT-GEN-003 another payload passes through the core untouched"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-gen-004#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/hcert-kotlin/hcert-core/node-smoke.mjs"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ArchitectureTest.kt::STT-SEC-002 STT-GEN-004 cryptography comes from the platform, with no third-party runtime dependency"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-gen-006#statement/same-vectors",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/cross.ts::STT-TST-003-STT-GEN-006-issued-verifies-across-from-the-same-bytes[${key}]"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-006 STT-GEN-006 the signer's key controller, and DER signatures, are held to the unified profile"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-006 STT-GEN-006 the unified profile's document shapes, and what it refuses"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-gen-009#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-GEN-001 STT-GEN-009 ES256 and PS256 issue and verify, and the COSE bytes travel without the QR layers"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/PrefixContextTest.kt::STT-GEN-009 the COSE bytes travel without the QR layers too"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-gen-010#statement/test",
+      "tests": [
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ArchitectureTest.kt::STT-GEN-014 STT-GEN-010 the API is generated from the contract and names no WIT"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-gen-011#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/hcert-kotlin/hcert-core/node-smoke.mjs"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-gen-012#statement/test",
+      "tests": [
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ArchitectureTest.kt::STT-GEN-012 STT-VHL-010 STT-VER-009 the core does no network, file or asynchronous I-O"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-gen-014#statement/test",
+      "tests": [
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ArchitectureTest.kt::STT-GEN-014 STT-GEN-010 the API is generated from the contract and names no WIT"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-hc1-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-HC1-001 STT-B45-001 STT-ZIP-001 the PR 129 HC1 string decodes to the 295-byte COSE_Sign1"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-HC1-001 the context identifier is read and other versions refused"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/PrefixContextTest.kt::STT-HC1-001 HC1 is the only context, version 1 the only version"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-iss-003#statement/test",
+      "tests": [
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ArchitectureTest.kt::STT-ISS-003 no private key, and no test key, is in the library's sources"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-iss-004#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-ISS-004 STT-COS-005 two-phase issuance with a host DER signature verifies"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-SEL-004 STT-ISS-004 a certificate with a DVC and a VHL verifies with both entries"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SignCoseTest.kt::STT-COS-004 STT-ISS-004 what is signed is the Signature1 structure prepare returns"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-kid-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-COS-001 STT-COS-002 STT-COS-003 STT-KID-001 the COSE_Sign1 is tagged ES256 with the vector's kid in the protected header"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-001 STT-KID-001 the vector's kid is the DSC's"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-001 STT-KID-001 a DSC is found by its kid, the first 8 bytes of its SHA-256"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-kid-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TRU-005 STT-KID-002 PEM loads once; candidates by kid"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-006 STT-KID-002 a kid nobody trusts fails the trust lookup"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-kid-003#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-KID-003 kid base64, standard and URL-safe"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-KID-003 a kid reads and writes as standard and URL-safe base64"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-pay-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-PAY-001 STT-PAY-008 a DVCMin round-trips through CBOR"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/AssemblePayloadTest.kt::STT-PAY-001 STT-PAY-002 STT-PAY-005 a newborn's DVCMin, with no identity document, round-trips as typed fields"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-001 STT-PAY-001 both PR 129 certificates verify and decode as published"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-pay-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-PAY-002 STT-PAY-007 the logical model's rules are enforced"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/AssemblePayloadTest.kt::STT-PAY-001 STT-PAY-002 STT-PAY-005 a newborn's DVCMin, with no identity document, round-trips as typed fields"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-pay-003#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-PAY-003 one immunization event per DVC"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/AssemblePayloadTest.kt::STT-PAY-003 one immunization event per DVC"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-pay-004#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-PAY-004 STT-PAY-007 an invalid payload is refused, naming each rule"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/AssemblePayloadTest.kt::STT-PAY-004 STT-PAY-007 an invalid payload is refused, naming each rule"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-pay-005#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-PAY-005 a newborn's DVCMin has no identity document and names a guardian"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/AssemblePayloadTest.kt::STT-PAY-001 STT-PAY-002 STT-PAY-005 a newborn's DVCMin, with no identity document, round-trips as typed fields"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-pay-007#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-PAY-002 STT-PAY-007 the logical model's rules are enforced"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-PAY-004 STT-PAY-007 an invalid payload is refused, naming each rule"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/AssemblePayloadTest.kt::STT-PAY-004 STT-PAY-007 an invalid payload is refused, naming each rule"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-pay-008#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-PAY-001 STT-PAY-008 a DVCMin round-trips through CBOR"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/AssemblePayloadTest.kt::STT-PAY-008 unknown payload elements are kept"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-pay-009#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-PAY-009 STT-GEN-003 payloads under 1, 3, 4 and -7 pass through the core untouched"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/AssemblePayloadTest.kt::STT-PAY-009 STT-GEN-003 another payload passes through the core untouched"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-pay-010#statement/test",
+      "tests": [
+        {
+          "surface": "*",
+          "target": "*",
+          "selector": "tools/check-models/check_models.py"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-qr-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-QR-001 to-hc1 inverts from-hc1, in the Alphanumeric alphabet"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/PrefixContextTest.kt::STT-QR-001 the output is a QR-ready string in the Alphanumeric alphabet"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-sec-001#statement/test",
+      "tests": [
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ArchitectureTest.kt::STT-SEC-001 the core writes nothing to a log or console"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-SEC-001 a failure's message does not carry the payload"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-sec-002#statement/test",
+      "tests": [
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ArchitectureTest.kt::STT-SEC-002 STT-GEN-004 cryptography comes from the platform, with no third-party runtime dependency"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-sel-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-SEL-001 STT-SEL-002 the registry starts with the guide's subclaims, and is configuration"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-SEL-001 the registry holds the subclaims the guide defines"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-sel-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-SEL-001 STT-SEL-002 the registry starts with the guide's subclaims, and is configuration"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-SEL-002 a host registers its own subclaim and issues under it"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-sel-003#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-SEL-003 STT-CWT-004 development subclaims need opting in; validity must sit inside the DSC"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-SEL-003 DVC moves to an assigned subclaim without an API change"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-SEL-003 a development-range subclaim needs the explicit opt-in"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-sel-004#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-SEL-004 one entry per payload, in wire order; no payload and a duplicate subclaim are refused"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-SEL-004 STT-ISS-004 a certificate with a DVC and a VHL verifies with both entries"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-SEL-004 an invalid entry is left out and reported"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-SEL-004 an issued HCERT carries each payload under its own subclaim, in key order"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-SEL-004 issuance refuses no payload and a duplicate subclaim"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-SEL-004 maxPayloads refuses more entries than the profile allows"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-VER-004 STT-SEL-004 key usage is checked per entry"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-sel-006#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-SEL-006 trust domains come from the GDHCN code system"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-SEL-006 trust domains are read from the GDHCN code system, not a closed list"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tru-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TRU-001 STT-TRU-002 a DID trustlist v2 document's DSCs are held by the store and found by kid"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-001 STT-KID-001 a DSC is found by its kid, the first 8 bytes of its SHA-256"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-001 bad trust material is refused with a typed error and nothing is added"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tru-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TRU-001 STT-TRU-002 a DID trustlist v2 document's DSCs are held by the store and found by kid"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-002 a GDHCN DID trustlist v2 document loads its DSCs"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tru-005#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TRU-005 STT-KID-002 PEM loads once; candidates by kid"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-005 a static list of PEM certificates loads"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tru-006#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TRU-006 a DER signature re-encoded as 64-byte r||s verifies too"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TRU-006 the DEV trust list documents, the 234-key root among them, verify against WHO's signing DID"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TRU-006 the shared profile refuses each unmodelled or altered shape with proof-invalid"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TRU-006 the trust store adds a verified document, and nothing when the proof fails"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-006 STT-GEN-006 the signer's key controller, and DER signatures, are held to the unified profile"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-006 STT-GEN-006 the unified profile's document shapes, and what it refuses"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-006 a 64-byte r-s signature verifies as the DER one does, and so do 00-padded coordinates"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-006 a changed byte in an x5c, the wrong signer, an unmodelled term and a wrong JWS header fail proof-invalid"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-006 the DEV trust list documents, the 234-key root among them, verify against WHO's signing DID"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-006 the XXR DSC document's canonical N-Quads equal the golden files byte for byte"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-006 the signer document and the signature are checked before any key is trusted"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/TrustListTest.kt::STT-TRU-006 the trust store adds a document whose proof verifies, and nothing when it does not"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TST-001-STT-VER-001-PR-129-certificate-verifies-as-published[${name}]"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-001 STT-KID-001 the vector's kid is the DSC's"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-001 STT-PAY-001 both PR 129 certificates verify and decode as published"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TST-011 STT-TST-002 the merged guide's XXR certificates decode as published, at the published sizes"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-002 STT-CBR-001 deterministic re-encoding reproduces the issued CWT byte for byte"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-011 STT-TST-002 the merged guide's XXR certificates decode as published"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-003#statement/cross-verify",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/cross.ts::STT-TST-003-STT-GEN-006-issued-verifies-across-from-the-same-bytes[${key}]"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/cross.ts::STT-TST-003-signature-over-other-bytes-refused[${pair}]"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-004#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TST-004-STT-TST-005-STT-VER-008-negative-vector-stops-at-the-named-step[${key}]"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-004 STT-TST-005 the shared negative vectors fail at the named step with the named reason"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-005#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TST-004-STT-TST-005-STT-VER-008-negative-vector-stops-at-the-named-step[${key}]"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-004 STT-TST-005 the shared negative vectors fail at the named step with the named reason"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-006#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TST-006 seeded mutations of an HC1 string never throw out of verify"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/FuzzTest.kt::STT-TST-006 fuzzed Base45 never throws and never decodes more than its input"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/FuzzTest.kt::STT-TST-006 fuzzed CBOR never throws in the deterministic re-encoder"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/FuzzTest.kt::STT-TST-006 fuzzed COSE bytes never throw in the verifier"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/FuzzTest.kt::STT-TST-006 fuzzed COSE never throws in the Sign1 parser"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/FuzzTest.kt::STT-TST-006 fuzzed HC1 strings never throw in the QR layers or the verifier"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/FuzzTest.kt::STT-TST-006 fuzzed ZLIB never throws and never inflates past the limit"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-007#statement/ts-suite",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-008#statement/test",
+      "tests": [
+        {
+          "surface": "*",
+          "target": "*",
+          "selector": "tools/check-models/check_models.py"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-010#statement/kotlin-floor",
+      "tests": [
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/build.gradle.kts"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-011#statement/decode",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TST-011 STT-TST-002 the merged guide's XXR certificates decode as published, at the published sizes"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-011 STT-TST-002 the merged guide's XXR certificates decode as published"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-tst-011#statement/verify",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TST-011 the merged guide's XXR certificates verify against the DEV trust list's DSC"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ConformanceVectorsTest.kt::STT-TST-011 the merged guide's XXR certificates verify against the DEV trust list's DSC"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-ver-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TST-001-STT-VER-001-PR-129-certificate-verifies-as-published[${name}]"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-001 STT-VER-002 a tampered payload fails at the signature, before any payload is read"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-ver-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VER-002 a failure carries no payload, and an unverified read is its own named call"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-001 STT-VER-002 a tampered payload fails at the signature, before any payload is read"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-ver-003#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VER-003 a protected header with an unsupported alg, or a short kid, is refused before the signature"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SignCoseTest.kt::STT-VER-003 a protected header with an unsupported alg is refused"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-ver-004#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VER-004 key usage is checked per entry, and alone a DVC under a test-only DSC is refused"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/SelectPayloadTest.kt::STT-VER-004 STT-SEL-004 key usage is checked per entry"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-004 a DCC is a test, vaccination or recovery certificate by its own entry"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-004 a DSC whose key usage allows test certificates only cannot sign a vaccination"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-ver-005#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VER-005 time is the clock the caller passes, with the skew it allows"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-005 time is the clock the caller passes, with the skew it allows"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-ver-006#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VER-006 trust-list presence is the validity check; a DSC outside its X.509 period is reported"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-006 STT-KID-002 a kid nobody trusts fails the trust lookup"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-ver-007#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VER-007 each entry is decoded by its subclaim's codec, falling back to raw"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-007 the payload is dispatched to its logical model by subclaim"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-ver-008#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-TST-004-STT-TST-005-STT-VER-008-negative-vector-stops-at-the-named-step[${key}]"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-008 STT-VER-009 every failure is a value naming its step and reason, offline"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-ver-009#statement/test",
+      "tests": [
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ArchitectureTest.kt::STT-GEN-012 STT-VHL-010 STT-VER-009 the core does no network, file or asynchronous I-O"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-008 STT-VER-009 every failure is a value naming its step and reason, offline"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-ver-011#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VER-011 read-unverified decodes and says it is not verified"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VerifyTest.kt::STT-VER-011 an unverified read for triage is marked so"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-vhl-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VHL-001 STT-VHL-003 the IHE example payload is valid and round-trips through vhlink:/"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlShareTest.kt::STT-VHL-001 the IHE ITI-YY3 example payload is valid, and each rule is enforced"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-vhl-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VHL-002 a VHL is issued as a CBOR map at key 5 and verifies"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlShareTest.kt::STT-VHL-002 STT-VHL-003 a vhlink string at key 5 still verifies, and the map is smaller"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlShareTest.kt::STT-VHL-002 the payload is a CBOR map at HCERT key 5, and verifies"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-vhl-003#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VHL-001 STT-VHL-003 the IHE example payload is valid and round-trips through vhlink:/"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlShareTest.kt::STT-VHL-002 STT-VHL-003 a vhlink string at key 5 still verifies, and the map is smaller"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlShareTest.kt::STT-VHL-003 vhlink round-trips, and reads the IHE example link"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-vhl-004#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VHL-004 new keys are 32 random bytes, base64url"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlShareTest.kt::STT-VHL-004 a new key is 32 random bytes, base64url without padding"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-vhl-005#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VHL-005 the ITI-YY5 request is the exact body of the IHE example"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlReceiveTest.kt::STT-VHL-005 a List URL is searched, and the passcode follows the P flag"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlReceiveTest.kt::STT-VHL-005 the ITI-YY5 request is the exact body of the IHE example"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-vhl-006#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VHL-006 the IHE Case B manifest Bundle reads as documents"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlReceiveTest.kt::STT-VHL-006 a Case A manifest without includes hands back references"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlReceiveTest.kt::STT-VHL-006 the IHE Case B manifest Bundle reads as documents"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-vhl-007#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VHL-007 JWE dir/A256GCM: the node:crypto fixture decrypts, and a round trip refuses the wrong key"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlReceiveTest.kt::STT-VHL-007 a wrong key, a changed byte and another enc are refused"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlReceiveTest.kt::STT-VHL-007 decrypts what node crypto encrypted, with and without zip DEF"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlShareTest.kt::STT-VHL-007 a document is encrypted as compact JWE dir A256GCM"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-vhl-008#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VHL-008 RFC 9421 signature base, RFC 9530 digest, and a DER signature as the raw header value"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlReceiveTest.kt::STT-VHL-008 a DER signature becomes the raw header value and verifies"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlReceiveTest.kt::STT-VHL-008 the Content-Digest is RFC 9530"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlReceiveTest.kt::STT-VHL-008 the RFC 9421 signature base has the IHE shape"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-vhl-009#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-VHL-009 an expired link fails verification by its own exp"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/VhlReceiveTest.kt::STT-VHL-009 an expired link fails verification, by its own exp"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-vhl-010#statement/test",
+      "tests": [
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/ArchitectureTest.kt::STT-GEN-012 STT-VHL-010 STT-VER-009 the core does no network, file or asynchronous I-O"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-zip-001#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-HC1-001 STT-B45-001 STT-ZIP-001 the PR 129 HC1 string decodes to the 295-byte COSE_Sign1"
+        },
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-ZIP-001 STT-ZIP-002 ZLIB round-trips, and inflation stops at the limit"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/CompressTest.kt::STT-ZIP-001 what is compressed is the signed COSE_Sign1, as a ZLIB stream"
+        }
+      ]
+    },
+    {
+      "assertion": "req:stt-zip-002#statement/test",
+      "tests": [
+        {
+          "surface": "js-package",
+          "target": "node",
+          "selector": "tools/conformance-ts/suite.ts::STT-ZIP-001 STT-ZIP-002 ZLIB round-trips, and inflation stops at the limit"
+        },
+        {
+          "surface": "library",
+          "target": "jvm",
+          "selector": "tools/hcert-kotlin/hcert-core/src/jvmTest/kotlin/who/smart/trust/core/CompressTest.kt::STT-ZIP-002 a decompression bomb stops at the limit"
+        }
+      ]
+    }
+  ],
+  "uncovered": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "vhl-receiver",
+  "title": "VHL Receiver",
+  "kind": "system",
+  "description": "IHE ITI VHL VHLReceiver: the system that verifies a Verifiable Health Link, retrieves its manifest and reads the documents. In smart-trust terms the Receiver: it also verifies, or triage-reads, HCERT certificates.",
+  "roles": [
+    "hcert-verifying-system",
+    "vhl-receiver"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedBy": [
+      "https://profiles.ihe.net/ITI/VHL/ActorDefinition/VHLReceiver",
+      "http://smart.who.int/trust/ActorDefinition/Receiver"
+    ],
+    "reference": [
+      "library/ihe-iti-vhl-actors/sections/s001-actors-fsh",
+      "library/who-smart-trust-actors/sections/s001-actors-fsh"
+    ]
+  }
+}

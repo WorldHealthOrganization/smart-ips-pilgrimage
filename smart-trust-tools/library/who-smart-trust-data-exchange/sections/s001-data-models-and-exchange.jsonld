@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-data-exchange/sections/s001-data-models-and-exchange",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "Data Models and Exchange",
+  "contains": [
+    "library/who-smart-trust-data-exchange/blocks/prose-s001-data-models-and-exchange"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-data-exchange",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-data-exchange",
+  "provenance": "ingested"
+}

@@ -1,0 +1,35 @@
+# GDHCN DEV trust list DID documents and their signer, for verifying the
+# documents' JsonWebSignature2020 proofs. [STT-TRU-006]
+retrieved: 2026-10-23T07:58Z
+files:
+  root-did.json: https://tng-cdn-dev.who.int/v2/trustlist/did.json (234 keys)
+  XXR-did.json: https://tng-cdn-dev.who.int/v2/trustlist/-/XXR/did.json
+  XXR-DSC-did-2026-10-23.json: https://tng-cdn-dev.who.int/v2/trustlist/-/XXR/DSC/did.json
+  XXA-did.json: https://tng-cdn-dev.who.int/v2/trustlist/-/XXA/did.json
+  WHO-signing-did.json: >-
+    https://raw.githubusercontent.com/WorldHealthOrganization/tng-participants-dev/main/WHO/signing/DID/did.json,
+    the did:web document of the proofs' verificationMethod (one P-256
+    JsonWebKey2020, no x5c).
+  XXR-DSC-did.doc.nq: >-
+    The URDNA2015 canonical N-Quads of
+    vectors/smart-trust-af75be2/XXR-DSC-did.json without its proof (3208
+    bytes, sha256 68d4f58e...fcaa), computed by an independent scratch
+    verifier and confirmed by rdflib 7.6.0 and by the signature verifying.
+  XXR-DSC-did.proof-options.nq: >-
+    The canonical N-Quads of that document's proof options (proof without
+    jws, with @context https://w3id.org/security/v3): 555 bytes, sha256
+    a207aa03...526c.
+signer: >-
+  WorldHealthOrganization/tng-key-distribution 021a9d24e487b245bfd0db65452b21e5f19a5898
+  (DidTrustListService, JsonWebSignature2020LdSigner from
+  info.weboftrust:ld-signatures-java 1.11.0, URDNA2015 via titanium), with
+  its bundled contexts (sha256): did_v1.json 4f3eae55...8dad,
+  jws-2020_v1.json d648e05d...cd1e, v1-dev.jsonld f74a3614...88ad,
+  v1-uat.jsonld f7d2365a...7d25, v1.jsonld a6588682...6ccc; proof options
+  use ld-signatures' security-v3-unstable.jsonld (311be327...).
+notes: >-
+  The signatures are DER-encoded ECDSA (71-72 bytes), not the 64-byte r||s
+  RFC 7518 3.4 requires; the payload of the detached b64:false JWS is the 64
+  raw bytes SHA-256(proof options) || SHA-256(document). Test data from the
+  DEV environment; the documents are re-signed daily, so a later copy has a
+  different proof but the same document hash.

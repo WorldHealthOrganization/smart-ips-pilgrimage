@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-smart-trust-changes",
+  "type": "webpage",
+  "title": "Change Log",
+  "title-short": "Changes",
+  "publisher": "World Health Organization",
+  "URL": "https://smart.who.int/trust/changes.html",
+  "provenance": "authored",
+  "heldAt": "library/who-smart-trust-changes"
+}

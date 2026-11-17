@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-endpoints/sections/s003-trust-domains",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "Trust Domains",
+  "contains": [
+    "library/who-smart-trust-endpoints/blocks/prose-s003-trust-domains"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-endpoints",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-endpoints",
+  "provenance": "ingested"
+}

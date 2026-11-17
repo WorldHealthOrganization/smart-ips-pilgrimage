@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns#" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#"
+                  id="Definitions_Process_HcertVerification" targetNamespace="https://litlfred.github.io/smart-trust-tools/processes" exporter="smart-trust-tools" exporterVersion="1">
+  <bpmn:resource id="hcert-verifying-system" name="HCERT verifying system"/>
+  <bpmn:collaboration id="Collaboration_Process_HcertVerification">
+    <bpmn:participant id="Participant_Process_HcertVerification" name="Verify an HCERT QR code" processRef="Process_HcertVerification"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_HcertVerification" name="Verify an HCERT QR code" isExecutable="false">
+    <bpmn:documentation>QR Code Generation section 11 in the STT-VER-001 order. Every failure is a value naming its step and reason (STT-VER-008). A CHW device offline uses read-unverified instead, which stops before the trust lookup (STT-VER-011).</bpmn:documentation>
+    <bpmn:extensionElements><cat-harness.processes:policy enforcement="advisory"/><cat-harness.processes:log capture="off"/></bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_Process_HcertVerification">
+      <bpmn:lane id="Lane_Verifier" name="HCERT verifying system" partitionElementRef="hcert-verifying-system">
+        <bpmn:documentation>The HCERT side of the VHL Receiver (smart-trust: Receiver): a clinic EMR, border system or CHW app that verifies, or triage-reads, an HCERT.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Decode</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Parse</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Lookup</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Check</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start" name="An HC1 QR code is scanned"><bpmn:outgoing>Flow_1</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:serviceTask id="Task_Decode" name="Strip HC1:, Base45-decode and inflate"><bpmn:documentation>Strip HC1: (refusing any other context), Base45-decode strictly and inflate within a size limit.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-prefix-context"/></bpmn:extensionElements><bpmn:incoming>Flow_1</bpmn:incoming><bpmn:outgoing>Flow_2</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Parse" name="Parse COSE_Sign1 and validate the protected header"><bpmn:documentation>Parse the COSE_Sign1 within depth and size limits and check the protected header: a known alg, and a kid of 8 bytes.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-verify"/></bpmn:extensionElements><bpmn:incoming>Flow_2</bpmn:incoming><bpmn:outgoing>Flow_3</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Lookup" name="Find every trusted DSC with the kid"><bpmn:documentation>Find every DSC in the host's trust list whose kid matches; more than one may, and each is tried.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-trust-list"/></bpmn:extensionElements><bpmn:incoming>Flow_3</bpmn:incoming><bpmn:outgoing>Flow_4</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Check" name="Check signature, key usage, CWT and time; dispatch the payload"><bpmn:documentation>Verify the signature with each candidate, then the DSC's key usage for this payload type, the CWT's iat and exp against now, and dispatch the payload by subclaim. Every failure is a value naming its step and reason.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-verify"/></bpmn:extensionElements><bpmn:incoming>Flow_4</bpmn:incoming><bpmn:outgoing>Flow_5</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:endEvent id="End" name="Verification result"><bpmn:incoming>Flow_5</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1" sourceRef="Start" targetRef="Task_Decode"/>
+    <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_Decode" targetRef="Task_Parse"/>
+    <bpmn:sequenceFlow id="Flow_3" sourceRef="Task_Parse" targetRef="Task_Lookup"/>
+    <bpmn:sequenceFlow id="Flow_4" sourceRef="Task_Lookup" targetRef="Task_Check"/>
+    <bpmn:sequenceFlow id="Flow_5" sourceRef="Task_Check" targetRef="End"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_Process_HcertVerification">
+      <bpmndi:BPMNShape id="Participant_Process_HcertVerification_di" bpmnElement="Participant_Process_HcertVerification" isHorizontal="true"><dc:Bounds x="100" y="60" width="1240" height="180"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Verifier_di" bpmnElement="Lane_Verifier" isHorizontal="true"><dc:Bounds x="130" y="60" width="1210" height="180"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Start_di" bpmnElement="Start"><dc:Bounds x="202" y="132" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="160" y="174" width="120" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Decode_di" bpmnElement="Task_Decode"><dc:Bounds x="340" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Parse_di" bpmnElement="Task_Parse"><dc:Bounds x="530" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Lookup_di" bpmnElement="Task_Lookup"><dc:Bounds x="720" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Check_di" bpmnElement="Task_Check"><dc:Bounds x="910" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_di" bpmnElement="End"><dc:Bounds x="1152" y="132" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="1110" y="174" width="120" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1_di" bpmnElement="Flow_1"><di:waypoint x="238" y="150"/><di:waypoint x="340" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2_di" bpmnElement="Flow_2"><di:waypoint x="480" y="150"/><di:waypoint x="530" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_3_di" bpmnElement="Flow_3"><di:waypoint x="670" y="150"/><di:waypoint x="720" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_4_di" bpmnElement="Flow_4"><di:waypoint x="860" y="150"/><di:waypoint x="910" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_5_di" bpmnElement="Flow_5"><di:waypoint x="1050" y="150"/><di:waypoint x="1152" y="150"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

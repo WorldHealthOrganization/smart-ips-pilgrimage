@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-phw-health-link-payload/sections/s001-input-fsh-models-healthlinkpayload-fsh",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "input/fsh/models/HealthLinkPayload.fsh",
+  "contains": [
+    "library/who-smart-trust-phw-health-link-payload/blocks/prose-s001-input-fsh-models-healthlinkpayload-fsh"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-phw-health-link-payload",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-phw-health-link-payload",
+  "provenance": "ingested"
+}

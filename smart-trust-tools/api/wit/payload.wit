@@ -1,0 +1,86 @@
+package who:smart-trust@0.1.0;
+
+/// Subclaim registry. Its defaults are the WHO-listed subclaims; the
+/// subclaim a payload type is issued under is configuration, so DVC can
+/// move from -6 to an assigned number without an API break.
+/// [STT-SEL-001, STT-SEL-002, STT-SEL-003]
+interface subclaims {
+    use types.{subclaim};
+
+    /// Payload kinds that have a typed codec. Others travel as raw CBOR.
+    enum payload-kind { dvc-min, vhl }
+
+    resource registry {
+        /// Starts with the IG defaults: 1, 3, 4, 5, -6, -7; VHL is 5. [STT-SEL-001]
+        constructor();
+        lookup: func(key: s32) -> option<subclaim>;
+        register: func(s: subclaim);
+        all: func() -> list<subclaim>;
+        /// Which subclaim number carries the given payload kind.
+        subclaim-for: func(kind: payload-kind) -> option<s32>;
+        set-subclaim-for: func(kind: payload-kind, key: s32);
+    }
+}
+
+/// Step 2: the DVCMin payload (trust-phw DVCMin). [STT-PAY-010]
+interface dvc {
+    use types.{validation-issue, cbor-bytes, decode-limits};
+
+    /// DVCMinVaccineDetails. [STT-PAY-002]
+    record dvc-min-vaccine-details {
+        /// Vaccine product identifier.
+        vp: string,
+        /// Date of vaccination (FHIR date).
+        dv: string,
+        /// Supervising clinician.
+        cn: option<string>,
+        /// Issuing organization identifier.
+        is: option<string>,
+        /// Batch or lot number.
+        bo: string,
+    }
+
+    /// DVCMin. vx is 1..1: one immunization event per certificate.
+    /// [STT-PAY-001, STT-PAY-003, STT-PAY-005]
+    record dvc-min {
+        n: string,
+        dob: string,
+        s: string,
+        /// ISO 3166-1 alpha-3. [STT-PAY-007]
+        nt: string,
+        id: option<string>,
+        dt: option<string>,
+        gn: option<string>,
+        vx: dvc-min-vaccine-details,
+        v: string,
+        /// Elements this version does not know, kept as CBOR map entries
+        /// (key, encoded value). [STT-PAY-008]
+        extensions: list<tuple<string, cbor-bytes>>,
+    }
+
+    /// Cardinality, invariant (must-have-issuer-or-clinician-name) and nt
+    /// checks. [STT-PAY-004, STT-PAY-007]
+    validate: func(p: dvc-min) -> list<validation-issue>;
+
+    to-cbor: func(p: dvc-min) -> cbor-bytes;
+    from-cbor: func(cbor: cbor-bytes, limits: decode-limits) -> result<dvc-min, list<validation-issue>>;
+}
+
+/// What an hcert entry carries: a typed DVCMin or VHL payload, or any other
+/// subclaim as encoded CBOR. [STT-GEN-003, STT-PAY-009, STT-VHL-002]
+interface payloads {
+    use types.{cbor-bytes};
+    use dvc.{dvc-min};
+    use vhl.{vhl-payload};
+
+    record raw-payload {
+        subclaim: s32,
+        cbor: cbor-bytes,
+    }
+
+    variant payload {
+        dvc-min(dvc-min),
+        vhl(vhl-payload),
+        raw(raw-payload),
+    }
+}

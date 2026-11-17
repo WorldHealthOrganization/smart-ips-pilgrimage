@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-did-gdhcn/sections/s005-environments-repositories",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "Environments & Repositories",
+  "contains": [
+    "library/who-smart-trust-did-gdhcn/blocks/prose-s005-environments-repositories"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-did-gdhcn",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-did-gdhcn",
+  "provenance": "ingested"
+}

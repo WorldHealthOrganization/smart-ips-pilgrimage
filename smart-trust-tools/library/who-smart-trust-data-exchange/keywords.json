@@ -1,0 +1,50 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "who-smart-trust-data-exchange",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "concepts",
+      "score": 1.1237,
+      "evidence": []
+    },
+    {
+      "term": "architecture",
+      "score": 0.5974,
+      "evidence": []
+    },
+    {
+      "term": "spec",
+      "score": 0.5974,
+      "evidence": []
+    }
+  ],
+  "sections": {
+    "s001-data-models-and-exchange": [
+      {
+        "term": "concepts",
+        "score": 1.1237,
+        "evidence": []
+      },
+      {
+        "term": "models",
+        "score": 0.9551,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "exchange",
+        "score": 0.7934,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "req:stt-hc1-001",
+  "title": "HC1 prefix",
+  "description": "Restates QR Code Generation, 9. Step 8 — Prefix the context identifier; HCERT Specification, 4.2.2 QR 2D Barcode. QR Code Generation, 9. Step 8 — Prefix the context identifier: “A future backwards-incompatible revision will use a new identifier, incrementing through [1-9] and then [A-Z].”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "HC1 prefix",
+      "conformance": "SHALL",
+      "requirement": "The issuer SHALL prefix the Base45 string with \"HC1:\". The verifier SHALL require a context identifier matching HC[1-9A-Z]: and strip it. It SHALL report any identifier other than HC1 as an unsupported version, distinct from malformed input.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-HC1-001 passes in each implementation's suite (Kotlin: `STT-HC1-001 HC1 is the only context, version 1 the only version` (PrefixContextTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s010-9-step-8-prefix-the-context-identifier",
+    "library/who-smart-trust-hcert-spec/sections/s018-4-2-2-qr-2d-barcode"
+  ]
+}

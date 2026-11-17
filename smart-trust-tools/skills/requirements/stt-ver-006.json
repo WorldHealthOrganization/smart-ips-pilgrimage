@@ -1,0 +1,34 @@
+{
+  "id": "req:stt-ver-006",
+  "title": "Trust-list presence is the DSC validity check",
+  "description": "Restates HCERT Specification, 5.1 Simplified SCA/DSC. HCERT Specification, 5.1 Simplified SCA/DSC: “the primary validity mechanism is the presence of the certificate on the most recent version of that certificate list.”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-receiver",
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Trust-list presence is the DSC validity check",
+      "conformance": "SHALL",
+      "requirement": "The verifier SHALL NOT need CRL or OCSP access. A DSC is valid if it is on the current trust list. The verifier SHOULD also check the DSC's X.509 validity period against the injected clock.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VER-006 passes in each implementation's suite (Kotlin: `STT-VER-006 STT-KID-002 a kid nobody trusts fails the trust lookup` (VerifyTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ],
+  "reference": [
+    "library/who-smart-trust-hcert-spec/sections/s020-5-1-simplified-sca-dsc"
+  ]
+}

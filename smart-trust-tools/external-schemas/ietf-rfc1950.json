@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc1950",
+  "authority": "IETF",
+  "title": "RFC 1950 ZLIB Compressed Data Format",
+  "version": "RFC 1950",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc1950",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

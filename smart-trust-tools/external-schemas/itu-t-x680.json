@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "itu-t-x680",
+  "authority": "other",
+  "title": "ITU-T X.680 Abstract Syntax Notation One (ASN.1)",
+  "version": "X.680",
+  "specUrl": "https://www.itu.int/rec/T-REC-X.680",
+  "namespaces": [],
+  "use": "reads",
+  "terms": [],
+  "note": "ITU-T, freely available."
+}

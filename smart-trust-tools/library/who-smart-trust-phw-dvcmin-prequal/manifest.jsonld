@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-phw-dvcmin-prequal",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "DVCMinPreQual profile (FSH)",
+  "contains": [
+    "library/who-smart-trust-phw-dvcmin-prequal/sections/s001-input-fsh-models-dvcminprequal-fsh"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-NC-SA-3.0-IGO",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-NC-SA-3.0-IGO",
+    "basis": "WorldHealthOrganization/smart-trust-phw license.md at the ingested commit: all WHO-authored SMART Guidelines are under Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO. The text is held unmodified, with attribution, for non-commercial reference."
+  },
+  "meta": {
+    "doc_id": "who-smart-trust-phw-dvcmin-prequal",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "DVCMinPreQual.fsh",
+    "source_sha256": "4af8e9896e48d411ee6d3e3427898d90c4e467e90045a08c09602f3daf0ebbc7",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

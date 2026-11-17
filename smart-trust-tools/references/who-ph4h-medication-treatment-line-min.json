@@ -1,0 +1,9 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-ph4h-medication-treatment-line-min",
+  "type": "webpage",
+  "title": "MedicationTreatmentLineMin logical model (ph4h)",
+  "publisher": "World Health Organization",
+  "URL": "http://smart.who.int/ph4h/StructureDefinition-MedicationTreatmentLineMin.html",
+  "provenance": "authored"
+}

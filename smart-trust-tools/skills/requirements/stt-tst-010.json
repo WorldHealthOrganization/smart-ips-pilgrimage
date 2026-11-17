@@ -1,0 +1,46 @@
+{
+  "id": "req:stt-tst-010",
+  "title": "Coverage floor",
+  "description": "Engineering consequence of the test plan hcert-library-conformance: a named test per requirement shows that each requirement is exercised, not that each branch of the decoders is. Coverage measured in CI, with a floor that only rises, keeps new code from arriving untested.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-gen-006"
+  ],
+  "reference": [
+    "memory/dir-languages"
+  ],
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Coverage floor",
+      "conformance": "SHALL",
+      "requirement": "Each library's CI SHALL measure the coverage of its core by its own tests, line and branch coverage where its stable toolchain measures branches and line and region coverage where it does not, and SHALL fail when any measure falls below a recorded floor. A floor SHALL be raised as tests are added and SHALL NOT be lowered to let a change pass.",
+      "category": "test",
+      "successCriteria": [
+        {
+          "key": "kotlin-floor",
+          "criterion": "CI runs :hcert-core:jvmTestCoverageCheck (JaCoCo) and it fails below 90% line and 70% branch coverage of hcert-core's commonMain and jvmMain.",
+          "verification": "test"
+        },
+        {
+          "key": "rust-floor",
+          "criterion": "CI runs tools/hcert-rust/coverage.sh (rustc -C instrument-coverage with the toolchain's llvm-tools; stable rustc does not measure branches) and it fails below 85% line and 80% region coverage of the library's sources.",
+          "verification": "test"
+        },
+        {
+          "key": "never-lowered",
+          "criterion": "A reviewer finds no change that lowered a recorded floor.",
+          "verification": "review"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "test",
+    "derived"
+  ]
+}

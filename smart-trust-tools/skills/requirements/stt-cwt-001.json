@@ -1,0 +1,36 @@
+{
+  "id": "req:stt-cwt-001",
+  "title": "Integer claim keys",
+  "description": "Restates QR Code Generation, 4. Step 3 — Build the CWT claim set; QR Code Generation, 5. Step 4 — Serialise as CBOR; QR Code Generation, 12.4 The payload; HCERT Specification, 3.2.1 CWT Structure Overview. QR Code Generation, 4. Step 3 — Build the CWT claim set: “Place the payload under its subclaim, inside the hcert claim, inside a CWT claim set”. QR Code Generation, 5. Step 4 — Serialise as CBOR: “The JSON shown throughout this page and in the logical models is schema notation only”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Integer claim keys",
+      "conformance": "SHALL",
+      "requirement": "The CWT claim set SHALL use the integer keys 1 (iss), 6 (iat), 4 (exp) and -260 (hcert). The hcert map SHALL use integer subclaim keys. The quoted keys in the documentation (\"1\", \"-260\", \"-6\") are JSON notation only and SHALL NOT be emitted as text keys.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-CWT-001 passes in each implementation's suite (Kotlin: `STT-CWT-001 STT-CWT-002 claim keys are integers and dates are integer NumericDates` (BuildCwtTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s005-4-step-3-build-the-cwt-claim-set",
+    "library/who-smart-trust-qr-code-generation/sections/s006-5-step-4-serialise-as-cbor",
+    "library/who-smart-trust-qr-code-generation/sections/s017-12-4-the-payload",
+    "library/who-smart-trust-hcert-spec/sections/s007-3-2-1-cwt-structure-overview"
+  ]
+}

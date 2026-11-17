@@ -1,0 +1,50 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-phw-dvcmin-prequal",
+  "source": {
+    "file": "DVCMinPreQual.fsh",
+    "sha256": "4af8e9896e48d411ee6d3e3427898d90c4e467e90045a08c09602f3daf0ebbc7",
+    "digest": "file",
+    "bytes": 205,
+    "mtime": "2026-08-31T12:50:22Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/fsh/models/DVCMinPreQual.fsh",
+        "sha256": "4af8e9896e48d411ee6d3e3427898d90c4e467e90045a08c09602f3daf0ebbc7",
+        "bytes": 205,
+        "lines": 5,
+        "format": "verbatim"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust-phw",
+      "commit": "fd3b5480e5df8001890d31ecc9761051c17c2cc5",
+      "ref": "main",
+      "committed": "2026-08-31T12:50:22Z",
+      "path": "input/fsh/models/DVCMinPreQual.fsh",
+      "published": "https://smart.who.int/trust-phw/StructureDefinition-DVCMinPreQual.html",
+      "retrieved": "2026-10-20T19:45:00Z"
+    }
+  },
+  "metadata": {
+    "title": "DVCMinPreQual profile (FSH)"
+  },
+  "toc_source": "files",
+  "sections": [
+    {
+      "id": "s001-input-fsh-models-dvcminprequal-fsh",
+      "number": null,
+      "title": "input/fsh/models/DVCMinPreQual.fsh",
+      "level": 1,
+      "file": "input/fsh/models/DVCMinPreQual.fsh",
+      "line_start": 1,
+      "line_end": 5,
+      "unit": "file",
+      "n_chars": 216,
+      "n_words": 30
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

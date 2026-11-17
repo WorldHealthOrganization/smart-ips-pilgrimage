@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-iti-yy5/sections/s013-2-3-yy5-4-1-7-expected-actions-vhl-sharer",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "2:3.YY5.4.1.7 Expected Actions - VHL Sharer",
+  "contains": [
+    "library/ihe-iti-vhl-iti-yy5/blocks/prose-s013-2-3-yy5-4-1-7-expected-actions-vhl-sharer"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy5",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy5",
+  "provenance": "ingested"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-ver-011",
+  "title": "Unverified read for triage",
+  "description": "Stakeholder directive, in the context of Stakeholder directive: the library must carry the workshop user journeys; QR Code Generation, 11. Verifying a certificate. Stakeholder directive: the library must carry the workshop user journeys: “lightweight QR scan reads basic vaccine metadata without requiring full cryptographic verification at the household edge”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-ver-002"
+  ],
+  "reference": [
+    "memory/dir-journeys",
+    "library/who-smart-trust-qr-code-generation/sections/s012-11-verifying-the-same-steps-upwards"
+  ],
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Unverified read for triage",
+      "conformance": "SHALL",
+      "requirement": "The verifier SHALL offer an explicitly named unverified read (read-unverified) that decodes an HC1 string up to and including the payload without any trust lookup or signature check, for display and triage where verification is not possible, such as a community health worker offline at a household (journey J2). Its result type SHALL be distinct from a verified result, SHALL carry the kid, the claims and every hcert entry it found, and SHALL state that nothing in it is verified. It SHALL apply the same decode limits as verify.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VER-011 passes in each implementation's suite (Kotlin: `STT-VER-011 an unverified read for triage is marked so` (VerifyTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "directive"
+  ]
+}

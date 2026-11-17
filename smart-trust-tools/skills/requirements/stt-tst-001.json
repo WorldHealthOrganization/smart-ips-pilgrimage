@@ -1,0 +1,34 @@
+{
+  "id": "req:stt-tst-001",
+  "title": "PR 129 example as a conformance vector",
+  "description": "Engineering consequence of the DVC QR example as published on PR 129's branch (WHO 50bcb25, test participant XXA): its machine-readable summary and test DSC. The merged guide (af75be2) reissued the example under DEV participant XXR without publishing the DSC (STT-TST-011), so this pair remains the end-to-end verification vector.",
+  "status": "proposed",
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "PR 129 example as a conformance vector",
+      "conformance": "SHALL",
+      "requirement": "Both libraries SHALL verify the two HC1 strings in dvc-qr-example-XXA.json against dvc-qr-example-XXA-dsc.pem, with the clock fixed inside 2026-09-29T08:30Z to 2027-09-29T08:30Z. Each SHALL give kid WHM+BYqqZiE=, subclaim -6, and payloads equal to those in the JSON. The committed files SHALL be used as-is; they SHALL NOT be regenerated.",
+      "category": "test",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-TST-001 passes in each implementation's suite (Kotlin: `STT-TST-001 STT-KID-001 the vector's kid is the DSC's` (ConformanceVectorsTest.kt); `STT-TST-001 STT-PAY-001 both PR 129 certificates verify and decode as published` (ConformanceVectorsTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "test",
+    "derived"
+  ],
+  "reference": [
+    "vectors/smart-trust-pr129/dvc-qr-example-XXA.json",
+    "vectors/smart-trust-pr129/dvc-qr-example-XXA-dsc.pem"
+  ]
+}

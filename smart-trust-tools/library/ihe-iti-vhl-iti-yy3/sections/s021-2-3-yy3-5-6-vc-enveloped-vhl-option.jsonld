@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-iti-yy3/sections/s021-2-3-yy3-5-6-vc-enveloped-vhl-option",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "2:3.YY3.5.6 VC Enveloped VHL Option",
+  "contains": [
+    "library/ihe-iti-vhl-iti-yy3/blocks/prose-s021-2-3-yy3-5-6-vc-enveloped-vhl-option"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy3",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy3",
+  "provenance": "ingested"
+}

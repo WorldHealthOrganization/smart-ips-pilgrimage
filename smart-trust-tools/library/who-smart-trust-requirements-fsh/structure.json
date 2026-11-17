@@ -1,0 +1,50 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-requirements-fsh",
+  "source": {
+    "file": "requirements.fsh",
+    "sha256": "a67754e50dbdc2fa1fc3ba07d381b636a7659290df910cbe7acf6cd153de2de8",
+    "digest": "file",
+    "bytes": 14616,
+    "mtime": "2026-10-09T13:16:57Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/fsh/requirements/requirements.fsh",
+        "sha256": "a67754e50dbdc2fa1fc3ba07d381b636a7659290df910cbe7acf6cd153de2de8",
+        "bytes": 14616,
+        "lines": 394,
+        "format": "verbatim"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust",
+      "commit": "e277cce5dcb8d2134ef1625c3a38e27cdf19e835",
+      "ref": "main",
+      "committed": "2026-10-09T13:16:57Z",
+      "path": "input/fsh/requirements/requirements.fsh",
+      "published": "https://github.com/WorldHealthOrganization/smart-trust/blob/e277cce5dcb8d2134ef1625c3a38e27cdf19e835/input/fsh/requirements/requirements.fsh",
+      "retrieved": "2026-10-20T19:45:00Z"
+    }
+  },
+  "metadata": {
+    "title": "smart-trust FHIR Requirements (FSH)"
+  },
+  "toc_source": "files",
+  "sections": [
+    {
+      "id": "s001-input-fsh-requirements-requirements-fsh",
+      "number": null,
+      "title": "input/fsh/requirements/requirements.fsh",
+      "level": 1,
+      "file": "input/fsh/requirements/requirements.fsh",
+      "line_start": 1,
+      "line_end": 394,
+      "unit": "file",
+      "n_chars": 14625,
+      "n_words": 1889
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

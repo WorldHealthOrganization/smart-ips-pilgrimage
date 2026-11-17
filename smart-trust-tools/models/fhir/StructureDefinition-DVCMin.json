@@ -1,0 +1,242 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DVCMin",
+  "url": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin",
+  "version": "0.1.0",
+  "name": "DVCMin",
+  "title": "DVC HCERT Payload",
+  "status": "active",
+  "description": "Minimal DVC payload for use within an HCERT Payload",
+  "fhirVersion": "5.0.0",
+  "kind": "logical",
+  "abstract": true,
+  "type": "http://smart.who.int/trust-phw/StructureDefinition/DVCMin",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DVCMin",
+        "path": "DVCMin",
+        "short": "DVC HCERT Payload",
+        "definition": "Minimal DVC payload for use within an HCERT Payload"
+      },
+      {
+        "id": "DVCMin.n",
+        "path": "DVCMin.n",
+        "code": [
+          {
+            "code": "ICVP.A9.DE.1",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          },
+          {
+            "code": "87226-7",
+            "system": "http://loinc.org",
+            "display": "Legal name of patient - first and last"
+          }
+        ],
+        "short": "Name",
+        "definition": "Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DVCMin.dob",
+        "path": "DVCMin.dob",
+        "code": [
+          {
+            "code": "ICVP.A9.DE.2",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          },
+          {
+            "code": "21112-8",
+            "system": "http://loinc.org",
+            "display": "Birth date"
+          },
+          {
+            "code": "184099003",
+            "system": "http://snomed.info/sct",
+            "display": "Date of birth (observable entity)"
+          }
+        ],
+        "short": "Date of birth",
+        "definition": "Date of birth",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "DVCMin.s",
+        "path": "DVCMin.s",
+        "code": [
+          {
+            "code": "ICVP.A9.DE.3",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          }
+        ],
+        "short": "Sex",
+        "definition": "Sex",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/administrative-gender"
+        }
+      },
+      {
+        "id": "DVCMin.nt",
+        "path": "DVCMin.nt",
+        "code": [
+          {
+            "code": "ICVP.A9.DE.8",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          },
+          {
+            "code": "69433-1",
+            "system": "http://loinc.org",
+            "display": "Citizenship status"
+          },
+          {
+            "code": "223369002",
+            "system": "http://snomed.info/sct",
+            "display": "Country (geographic location)"
+          }
+        ],
+        "short": "Nationality",
+        "definition": "Nationality",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-3"
+        }
+      },
+      {
+        "id": "DVCMin.id",
+        "path": "DVCMin.id",
+        "code": [
+          {
+            "code": "ICVP.A9.DE.9",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          },
+          {
+            "code": "76435-7",
+            "system": "http://loinc.org",
+            "display": "Patient identifier"
+          },
+          {
+            "code": "900000000000474003",
+            "system": "http://snomed.info/sct",
+            "display": "Universally Unique Identifier (foundation metadata concept)"
+          }
+        ],
+        "short": "National Identification Document",
+        "definition": "National Identification Document",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DVCMin.dt",
+        "path": "DVCMin.dt",
+        "short": "National ID Document Type",
+        "definition": "National ID Document Type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0203"
+        }
+      },
+      {
+        "id": "DVCMin.gn",
+        "path": "DVCMin.gn",
+        "code": [
+          {
+            "code": "ICVP.A9.DE.10",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          },
+          {
+            "code": "79183-0",
+            "system": "http://loinc.org",
+            "display": "First name of Guardian or legally authorized representative"
+          },
+          {
+            "code": "394619001",
+            "system": "http://snomed.info/sct",
+            "display": "Guardian (person)"
+          }
+        ],
+        "short": "Parent or Guardian Name",
+        "definition": "Parent or Guardian Name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DVCMin.vx",
+        "path": "DVCMin.vx",
+        "short": "Vaccine Details",
+        "definition": "Vaccine Details",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails"
+          }
+        ]
+      },
+      {
+        "id": "DVCMin.v",
+        "path": "DVCMin.v",
+        "code": [
+          {
+            "code": "ICVP.D5.DE.27",
+            "system": "http://smart.who.int/trust-phw/CodeSystem/ICVP.Core"
+          }
+        ],
+        "short": "Version",
+        "definition": "Version of the certificate template",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+package who:smart-trust@0.1.0;
+
+/// Steps 4, 6, 7, 8: CBOR, ZLIB, Base45 and the HC1 context identifier.
+/// Pure functions: no crypto, no I/O, no clock.
+interface codec {
+    use types.{decode-limits, cbor-bytes};
+
+    variant codec-error {
+        /// Character outside the alphabet, dangling character or overflow.
+        /// [STT-B45-002]
+        base45-invalid(string),
+        inflate-failed(string),
+        /// A decode-limits bound was hit. [STT-CBR-003, STT-ZIP-002]
+        limit-exceeded(string),
+        cbor-malformed(string),
+        /// No `HC[1-9A-Z]:` context identifier. [STT-HC1-001]
+        bad-prefix,
+        /// A well-formed context identifier other than HC1, e.g. "HC2".
+        unsupported-context-version(string),
+    }
+
+    /// RFC 9285 Base45. [STT-B45-001]
+    base45-encode: func(data: list<u8>) -> string;
+    base45-decode: func(text: string) -> result<list<u8>, codec-error>;
+
+    /// ZLIB (RFC 1950) wrapping DEFLATE (RFC 1951). [STT-ZIP-001]
+    zlib-compress: func(data: list<u8>, level: u8) -> list<u8>;
+    zlib-inflate: func(data: list<u8>, max-out: u32) -> result<list<u8>, codec-error>;
+
+    /// Returns the context identifier version character (e.g. "1") and
+    /// the remainder after the colon. [STT-HC1-001]
+    detect-context: func(text: string) -> result<tuple<string, string>, codec-error>;
+
+    /// Steps 6 to 8: COSE bytes to "HC1:..." string. The result uses only
+    /// QR Alphanumeric characters. [STT-QR-001]
+    to-hc1: func(cose: list<u8>) -> string;
+    /// Steps 8 to 6 reversed: "HC1:..." string to COSE bytes.
+    from-hc1: func(text: string, limits: decode-limits) -> result<list<u8>, codec-error>;
+
+    /// Re-encode CBOR using RFC 8949 core deterministic encoding.
+    /// [STT-CBR-001]
+    cbor-deterministic: func(cbor: cbor-bytes, limits: decode-limits) -> result<cbor-bytes, codec-error>;
+}

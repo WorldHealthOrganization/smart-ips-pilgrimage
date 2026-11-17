@@ -1,0 +1,38 @@
+{
+  "id": "req:stt-gen-005",
+  "title": "Rust second, for WebAssembly",
+  "description": "Stakeholder directive, in the context of Stakeholder directive: Kotlin library first, Rust library second; Stakeholder directive: transpile targets and API-first; WIT, WebAssembly Component Model IDL; jco: JavaScript toolchain for WebAssembly components.",
+  "status": "proposed",
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Rust second, for WebAssembly",
+      "conformance": "SHALL",
+      "requirement": "The second implementation SHALL be a Rust library meeting this same requirement set. It SHALL build for wasm32 as a WebAssembly component implementing the WIT worlds in api/wit, and SHALL be transpiled with jco into an npm package usable from Node.js and browsers. A native crate SHALL also be published. The codec module SHOULD build without std (with alloc).",
+      "category": "non-functional",
+      "successCriteria": [
+        {
+          "key": "rust-wasm",
+          "criterion": "The Rust crate builds for wasm32 as a component implementing api/wit, its jco-transpiled npm package loads in Node.js and a browser, and it passes the shared vectors.",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "non-functional",
+    "directive",
+    "rust",
+    "target:rust"
+  ],
+  "reference": [
+    "memory/dir-languages",
+    "memory/dir-targets",
+    "external-schemas/bytecodealliance-wit",
+    "external-schemas/bytecodealliance-jco"
+  ]
+}

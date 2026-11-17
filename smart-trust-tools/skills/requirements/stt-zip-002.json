@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-zip-002",
+  "title": "Decompression bomb protection",
+  "description": "Engineering consequence of HCERT Specification, 6.3 Input Data Validation.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-zip-001"
+  ],
+  "reference": [
+    "library/who-smart-trust-hcert-spec/sections/s025-6-3-input-data-validation"
+  ],
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Decompression bomb protection",
+      "conformance": "SHALL",
+      "requirement": "Inflation SHALL stop with a typed error once the output exceeds a configurable limit (DecodeLimits.maxInflatedBytes).",
+      "category": "security",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-ZIP-002 passes in each implementation's suite (Kotlin: `STT-ZIP-002 a decompression bomb stops at the limit` (CompressTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "security",
+    "derived"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "$comment": "The FHIR logical-model elements, types and invariants lm-derive may leave unmapped, each with the reason it is acceptable. lm_derive.py refuses any problem not listed here (both modes, before writing), prints every listed one on each run with the fallback it gets, and refuses an entry that matches no problem. Each entry: model (StructureDefinition.name), element (the element path, or the model name for a model-level problem), kind (one of lm_derive.py's FALLBACK keys) and reason. Empty: the models at the commit models/fhir/SOURCE.yaml pins map completely.",
+  "entries": []
+}

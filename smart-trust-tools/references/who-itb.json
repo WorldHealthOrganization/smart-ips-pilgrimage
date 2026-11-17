@@ -1,0 +1,10 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-itb",
+  "type": "software",
+  "title": "WHO-ITB: Interoperability Test Bed with HCERT validation (GDHCN Trust Network)",
+  "publisher": "World Health Organization",
+  "URL": "https://github.com/WorldHealthOrganization/WHO-ITB/tree/883291d51e206719c1417cf95393a5cd8b20dc4b",
+  "note": "Read at commit 883291d51e206719c1417cf95393a5cd8b20dc4b (2026-07-21). Three GITB test suites: Track 1 HCERT VHL, QR to verified LAC IPS bundle; Track 2 HCERT ICVP, QR to ICVP-IPS conformance; Track 3 HCERT PH4H, QR to MeOW bundle. Each decodes an uploaded QR image through the gdhcn-helper service (decode/hcert, verify/signature against the GDHCN DEV trust list, extract/reference, shlink/authorize, shlink/fetch-fhir), then validates or transforms the FHIR content with Matchbox. Test data: test-data/Track1_VHL_1234_2026.jpg, Track2_ICVP_2026.jpg, Track3_MeOW_2026.jpg. The repository carries no licence file, so its test data is cited here, not copied.",
+  "provenance": "authored"
+}

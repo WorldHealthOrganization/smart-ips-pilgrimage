@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Receiver Scan Credential Input",
+  "type": "object",
+  "required": [
+    "shown",
+    "medium"
+  ],
+  "properties": {
+    "shown": {
+      "type": "string",
+      "description": "The QR as the holder shows it."
+    },
+    "medium": {
+      "enum": [
+        "paper",
+        "screen"
+      ]
+    },
+    "passcode": {
+      "type": "string",
+      "description": "For a passcode-protected health link: the passcode the holder says."
+    }
+  },
+  "additionalProperties": false
+}

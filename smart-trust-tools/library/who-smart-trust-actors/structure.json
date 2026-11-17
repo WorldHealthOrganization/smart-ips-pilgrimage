@@ -1,0 +1,50 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-actors",
+  "source": {
+    "file": "actors.fsh",
+    "sha256": "46fe7ca648eaa468b723d08cc3c21090f3d38fbca5203f058261953beedba3ef",
+    "digest": "file",
+    "bytes": 2226,
+    "mtime": "2026-10-09T13:16:57Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "actors.fsh",
+        "sha256": "46fe7ca648eaa468b723d08cc3c21090f3d38fbca5203f058261953beedba3ef",
+        "bytes": 2226,
+        "lines": 58,
+        "format": "verbatim"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust",
+      "commit": "e277cce5dcb8d2134ef1625c3a38e27cdf19e835",
+      "ref": "main",
+      "committed": "2026-10-09T13:16:57Z",
+      "path": "input/fsh/actors/actors.fsh",
+      "published": "https://github.com/WorldHealthOrganization/smart-trust/blob/e277cce5dcb8d2134ef1625c3a38e27cdf19e835/input/fsh/actors/actors.fsh",
+      "retrieved": "2026-10-21T07:00:00Z"
+    }
+  },
+  "metadata": {
+    "title": "smart-trust ActorDefinitions (FSH)"
+  },
+  "toc_source": "files",
+  "sections": [
+    {
+      "id": "s001-actors-fsh",
+      "number": null,
+      "title": "actors.fsh",
+      "level": 1,
+      "file": "actors.fsh",
+      "line_start": 1,
+      "line_end": 58,
+      "unit": "file",
+      "n_chars": 2237,
+      "n_words": 330
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

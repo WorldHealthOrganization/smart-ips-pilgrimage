@@ -1,0 +1,15 @@
+{
+  "$schema": "folio-graph-typology/v1",
+  "kind": "hcert-test-vectors",
+  "title": "HCERT test vectors",
+  "perInstance": true,
+  "renderable": false,
+  "holds": "context",
+  "summary": "Shared test material every implementation is checked against: the smart-trust PR 129 DVC example and its DSC, the merged guide's XXR certificates with the GDHCN DEV trust list's DID documents, the GDHCN Trust Domain code systems, the IHE ITI VHL Case B manifest, a JWE fixture made independently of the library, the shared negative vectors derived from PR 129, and the TEST-ONLY testkit keys. Each set carries a SOURCE.yaml naming its repository and commit, or the generator that wrote it.",
+  "validatorNotApplicable": "the upstream files are verbatim test material (JSON, N-Quads, PEM) with no $schema of their own and must not gain one; they are checked by use: check-models validates the PR 129 payload against the CDDL and SHACL, and the Kotlin, Rust and TypeScript suites verify the certificates and trust lists and decrypt the JWE. The one generated set, vectors/negative/, is re-derived by `make_negative_vectors.py --check` in CI, which fails when it is stale, and parsed by check-req-nodes against the Zod schema tools/negative-vectors/negative-vectors.schema.ts, applied by name since the file carries no `$schema`: each case's expected step and reason must be a case of the WIT failure taxonomy (api/wit/types.wit, enums step and failure-reason).",
+  "avatar": {
+    "glyph": "M5 4h14v16H5zM8 9h8M8 13h8M8 17h4M17 3v3",
+    "tone": 32,
+    "reads": "a sheet of expected values, pinned: material a test reads, never writes"
+  }
+}

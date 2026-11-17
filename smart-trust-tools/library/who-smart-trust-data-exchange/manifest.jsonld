@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-data-exchange",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "Data Exchange",
+  "contains": [
+    "library/who-smart-trust-data-exchange/sections/s001-data-models-and-exchange"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-NC-SA-3.0-IGO",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-NC-SA-3.0-IGO",
+    "basis": "WorldHealthOrganization/smart-trust LICENSE at the ingested commit: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO. Its own license.md page says Creative Commons Attribution 3.0 IGO instead (recorded as a bean). The text is held unmodified, with attribution, for non-commercial reference."
+  },
+  "meta": {
+    "doc_id": "who-smart-trust-data-exchange",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "data_exchange.md",
+    "source_sha256": "7aaf6ff2081deb38ed84e904d0ba63f466a683faac81891f8d2303be83c3f197",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

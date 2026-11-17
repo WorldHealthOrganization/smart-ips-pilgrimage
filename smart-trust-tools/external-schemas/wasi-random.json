@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "wasi-random",
+  "authority": "other",
+  "title": "WASI Random (wasi:random)",
+  "version": "0.2.6",
+  "specUrl": "https://github.com/WebAssembly/wasi-random/tree/v0.2.6",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": [],
+  "note": "W3C WebAssembly Community Group. The random interface the hcert-verifier and hcert-issuer worlds import; held unmodified in api/wit/deps/random/ (SOURCE.yaml pins the commit)."
+}

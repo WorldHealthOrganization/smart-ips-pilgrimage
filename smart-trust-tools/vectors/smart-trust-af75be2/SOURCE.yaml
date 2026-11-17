@@ -1,0 +1,35 @@
+# Conformance vector from the WHO SMART Trust IG as merged: QR Code Generation
+# 12, at the merge of PR 129, and XXR's DSC from the GDHCN DEV trust list.
+# [STT-TST-011, STT-TST-002]
+repo: WorldHealthOrganization/smart-trust
+pr: 129
+sha: af75be20b75ab87efcfd1201ccd43020f487f660
+files:
+  dvc-qr-example-XXR.json: >-
+    input/pagecontent/qr_code_generation.md, 12.6 The certificates (the two
+    HC1 strings, transcribed) and 12.4 (iss, payload). The sizes and the
+    decoded fields were then read from those strings; 12.5 states the
+    hepatitis B sizes (222, 307, 293, 444), which the tests check.
+  XXR-DSC-did.json: >-
+    https://tng-cdn-dev.who.int/v2/trustlist/-/XXR/DSC/did.json, the GDHCN DEV
+    trust list's DID document for XXR's Document Signing Certificates,
+    retrieved 2026-10-22T17:05Z, sha256
+    3f661f7d9f010c362c586324c5e52750c012d90f628889a6697e5f15e623bad2. One
+    verification method, kid kW/6VnwPRKI=, x5c [DSC, SCA]; its JWS proof is by
+    did:web:raw.githubusercontent.com:WorldHealthOrganization:tng-participants-dev:main:WHO:signing:DID
+    and is not checked here (the host supplies trusted documents, STT-TRU-001).
+  XXR-SCA-did.json: >-
+    https://tng-cdn-dev.who.int/v2/trustlist/-/XXR/SCA/did.json, retrieved at
+    the same time, sha256
+    d679086dc3166c2f5ef35144c73c97449542d904ee1a188ea33de6a855b663bb. Kept
+    beside the DSC document for chain inspection; the tests do not load it.
+licence: >-
+  CC BY-NC-SA 3.0 IGO, as library/who-smart-trust-qr-code-generation records.
+notes: >-
+  TEST DATA ONLY. Issued by GDHCN DEV participant XXR (iss XR) with a key
+  onboarded to the GDHCN DEV trust network. The DSC is published on the DEV
+  trust list, not in the guide; its DID document is held here, so both
+  certificates verify end to end offline. The guide names the DID
+  did:web:tng-cdn.who.int:v2:trustlist:-:XXR:DSC, but the document's own id
+  is did:web:tng-cdn-dev.who.int:... (bean OI-34). kid kW/6VnwPRKI=.
+  Issued 2026-10-22T08:30Z (iat), expiring 2027-10-22T08:30Z (exp).

@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-phw-dvcmin-prequal/sections/s001-input-fsh-models-dvcminprequal-fsh",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "input/fsh/models/DVCMinPreQual.fsh",
+  "contains": [
+    "library/who-smart-trust-phw-dvcmin-prequal/blocks/prose-s001-input-fsh-models-dvcminprequal-fsh"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-phw-dvcmin-prequal",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-phw-dvcmin-prequal",
+  "provenance": "ingested"
+}

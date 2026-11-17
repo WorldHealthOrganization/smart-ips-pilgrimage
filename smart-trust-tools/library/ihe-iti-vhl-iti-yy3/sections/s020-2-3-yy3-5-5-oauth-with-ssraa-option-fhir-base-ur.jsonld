@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-iti-yy3/sections/s020-2-3-yy3-5-5-oauth-with-ssraa-option-fhir-base-ur",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "2:3.YY3.5.5 OAuth with SSRAA Option — FHIR Base URL Extension",
+  "contains": [
+    "library/ihe-iti-vhl-iti-yy3/blocks/prose-s020-2-3-yy3-5-5-oauth-with-ssraa-option-fhir-base-ur"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy3",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy3",
+  "provenance": "ingested"
+}

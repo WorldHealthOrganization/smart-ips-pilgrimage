@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc7516",
+  "authority": "IETF",
+  "title": "RFC 7516 JSON Web Encryption (JWE)",
+  "version": "RFC 7516",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc7516",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

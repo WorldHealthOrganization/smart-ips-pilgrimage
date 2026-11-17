@@ -1,0 +1,9 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-icvp-ig",
+  "type": "webpage",
+  "title": "ICVP Implementation Guide",
+  "publisher": "World Health Organization",
+  "URL": "https://smart.who.int/icvp",
+  "provenance": "authored"
+}

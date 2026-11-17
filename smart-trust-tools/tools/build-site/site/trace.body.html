@@ -1,0 +1,47 @@
+<style>
+.trace-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 10px; }
+.trace-summary .card { display: grid; gap: 2px; padding: 12px 14px; }
+.trace-summary strong { font-family: var(--font-display); font-size: var(--step-2); font-variant-numeric: tabular-nums; }
+.trace-filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.trace-filters label { display: inline-flex; align-items: center; gap: 6px; font-size: var(--step--1); color: var(--fg-2); }
+#trace-table td:first-child { min-width: 220px; }
+#trace-table .rid { font-family: var(--font-mono); font-weight: 600; font-size: 0.78rem; }
+#trace-table .rtitle { display: block; color: var(--fg); }
+#trace-table tr:target td, #trace-table tr.flash td { background: var(--surface-2); }
+.gap { color: var(--fg-3); }
+.cov-list { display: grid; gap: 6px; }
+.cov-row { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 10px; font-size: var(--step--1); align-items: start; }
+@media (max-width: 640px) { .cov-row { grid-template-columns: 1fr; } }
+</style>
+<main class="page">
+  <section class="section prose">
+    <span class="eyebrow">Review view of the knowledge graph</span>
+    <h1>Traceability matrix</h1>
+    <p>One row per library requirement: what it satisfies in the smart-trust FHIR Requirements, which skills realize it
+    and which contract items (WIT, CDDL) cite it, how it is verified, and which open issues touch it. Requirement IDs open the graph
+    explorer.</p>
+  </section>
+  <section class="trace-summary" id="trace-summary" aria-label="Coverage summary"></section>
+  <section class="section">
+    <div class="trace-filters">
+      <input type="search" id="tf-search" placeholder="Search text or ID" aria-label="Search requirements">
+      <select id="tf-area" aria-label="Area"><option value="">All areas</option></select>
+      <select id="tf-conf" aria-label="Conformance"><option value="">Any conformance</option></select>
+      <select id="tf-cat" aria-label="Category"><option value="">Any category</option></select>
+      <label><input type="checkbox" id="tf-issues"> With open issues</label>
+      <label><input type="checkbox" id="tf-untested"> Not verified by a test</label>
+      <span class="small muted" id="tf-count"></span>
+    </div>
+    <div class="table-wrap">
+      <table id="trace-table">
+        <thead><tr><th>Requirement</th><th>smart-trust</th><th>Skills</th><th>Contract</th><th>Verified by</th><th>Issues</th><th>Sources</th></tr></thead>
+        <tbody><tr><td colspan="7" class="muted">Loading…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+  <section class="section">
+    <h2>smart-trust requirement coverage</h2>
+    <p class="small muted">Each statement of the smart-trust FHIR Requirements resources, and the library requirements that help satisfy it.</p>
+    <div class="cov-list card" id="trace-upstream"></div>
+  </section>
+</main>

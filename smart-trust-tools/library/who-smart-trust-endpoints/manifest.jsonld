@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-endpoints",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "who-smart-trust-endpoints",
+  "contains": [
+    "library/who-smart-trust-endpoints/sections/s001-endpoints",
+    "library/who-smart-trust-endpoints/sections/s002-operational-metadata",
+    "library/who-smart-trust-endpoints/sections/s003-trust-domains",
+    "library/who-smart-trust-endpoints/sections/s004-key-usage-codes",
+    "library/who-smart-trust-endpoints/sections/s005-participants",
+    "library/who-smart-trust-endpoints/sections/s006-trustlist-distribution-endpoints",
+    "library/who-smart-trust-endpoints/sections/s007-trust-network-gateway",
+    "library/who-smart-trust-endpoints/sections/s008-status-monitoring-dashboards"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-NC-SA-3.0-IGO",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-NC-SA-3.0-IGO",
+    "basis": "WorldHealthOrganization/smart-trust LICENSE at the ingested commit: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO. Its own license.md page says Creative Commons Attribution 3.0 IGO instead (recorded as a bean). The text is held unmodified, with attribution, for non-commercial reference."
+  },
+  "meta": {
+    "doc_id": "who-smart-trust-endpoints",
+    "title_source": "slug",
+    "source_file": "endpoints.md",
+    "source_sha256": "4f66b5e81e8e0a9da9f46f0f36b9e63fdb718f7f94633bd63002a3e82d4f697d",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

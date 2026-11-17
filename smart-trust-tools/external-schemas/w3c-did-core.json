@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "w3c-did-core",
+  "authority": "W3C",
+  "title": "Decentralized Identifiers (DIDs) v1.0",
+  "version": "1.0",
+  "specUrl": "https://www.w3.org/TR/did-core/",
+  "namespaces": [],
+  "use": "reads",
+  "terms": []
+}

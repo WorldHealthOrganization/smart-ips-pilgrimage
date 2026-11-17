@@ -1,0 +1,8 @@
+{
+  "note": "TEST ONLY. Made by make-jwe-fixture.mjs with node:crypto, not with the library.",
+  "key": "684iw4rvthq0bMAVTBBD7-uKlmUSCNnXDAiC0oxsEZU",
+  "plaintext": "{\"resourceType\":\"Bundle\",\"type\":\"document\",\"id\":\"ips-test-only\"}",
+  "contentType": "application/fhir+json",
+  "jwe": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiY3R5IjoiYXBwbGljYXRpb24vZmhpcitqc29uIn0..gBROhKyHRI7vUZSC.0kHhapScrCQfhRh2BdjC0U4NcAS_fDRoawTjUlzgNIXVViySydHUWfzI-A-H7TKaD22E6AK1A9dqfpdXbkwP3w.8VfUEIeq1CJcouSxijLW5A",
+  "jweZipDef": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiY3R5IjoiYXBwbGljYXRpb24vZmhpcitqc29uIiwiemlwIjoiREVGIn0..zu7Adgl88l_sN6lI.e0oOpK6Hd5CWmUcDgUWTh33xEvAfB8KQMdZflWCK4A_Ht0Sz5jggWrVNkfUq2lFoAC7PAZ__1ovumWevjw.RLSoQs9bKuUz7V9YUNKNDA"
+}

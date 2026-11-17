@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc9052",
+  "authority": "IETF",
+  "title": "RFC 9052 CBOR Object Signing and Encryption (COSE): Structures and Process",
+  "version": "RFC 9052",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc9052",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "req:stt-sel-004",
+  "title": "One or more payloads per HCERT",
+  "description": "Engineering consequence of QR Code Generation, 2. Step 1 — Select the payload type; QR Code Generation, 4. Step 3 — Build the CWT claim set; HCERT Specification, 3.2.7 Health Certificate Claim; the CWT payload logical model (-260 1..*). QR Code Generation, 2. Step 1 — Select the payload type: “Carrying exactly one is an implementation choice, not a constraint of the container, and it is the choice made throughout this page.”. HCERT Specification, 3.2.7 Health Certificate Claim: “Several different types of health certificate MAY exist under the same claim”. How a verifier treats several entries is the owner's decision of 2026-10-22 (bean OI-02), pending upstream text.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "One or more payloads per HCERT",
+      "conformance": "SHALL",
+      "requirement": "The issuer SHALL accept one or more payloads and emit an hcert (-260) map with one entry per payload, refusing a request with no payload (NoPayload) or two payloads under the same subclaim (DuplicateSubclaim). The verifier SHALL accept an hcert map with any number of entries and return each valid entry with its subclaim, in wire order. It SHALL fail with HcertMissing when there is none, and with MultipleSubclaims when there are more entries than the caller's optional maxPayloads allows. An entry whose payload fails its model check SHALL be left out of the result and reported as a diagnostic; verification SHALL fail with that entry's own reason only when no valid entry remains.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "Tests named after STT-SEL-004 pass in each implementation's suite (Kotlin: `STT-SEL-004 STT-ISS-004 a certificate with a DVC and a VHL verifies with both entries`, `STT-SEL-004 maxPayloads refuses more entries than the profile allows`, `STT-SEL-004 an invalid entry is left out and reported`, `STT-SEL-004 issuance refuses no payload and a duplicate subclaim` (SelectPayloadTest.kt)), and the cross-implementation DVC+VHL checks pass (tools/conformance-ts/cross.ts).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s003-2-step-1-select-the-payload-type",
+    "library/who-smart-trust-qr-code-generation/sections/s005-4-step-3-build-the-cwt-claim-set",
+    "library/who-smart-trust-hcert-spec/sections/s013-3-2-7-health-certificate-claim"
+  ]
+}

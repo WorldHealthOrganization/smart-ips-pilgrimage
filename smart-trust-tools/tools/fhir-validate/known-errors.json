@@ -1,0 +1,11 @@
+{
+  "$comment": "Errors the HL7 FHIR Validator reports in the logical models that are WHO's to fix upstream (models/fhir is compiled verbatim from WorldHealthOrganization/smart-trust-phw, see models/fhir/SOURCE.yaml). Each entry names the model file, a substring of the validator's message and the upstream issue. fhir_validate.py fails on any error not listed here, and on an entry the validator no longer reports.",
+  "errors": [
+    {
+      "file": "models/fhir/StructureDefinition-DVCMin.json",
+      "contains": "The valueSet reference http://hl7.org/fhir/administrative-gender on element DVCMin.s points to something that is not a value set (CodeSystem)",
+      "issue": "WorldHealthOrganization/smart-trust-phw#20",
+      "reason": "Aliases.fsh $GENDER names the CodeSystem; the binding needs the ValueSet http://hl7.org/fhir/ValueSet/administrative-gender. Fix proposed in WorldHealthOrganization/smart-trust-phw#21; when it is merged, re-run tools/fetch-lms/fetch_lms.sh at the new sha and remove this entry."
+    }
+  ]
+}

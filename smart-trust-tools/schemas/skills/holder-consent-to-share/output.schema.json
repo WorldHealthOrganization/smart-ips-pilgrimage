@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Holder Consent To Share Output",
+  "description": "The holder's consent, as the share request the sharer acts on (vhl-share for a VHL; for a SMART Health Link, its P flag and exp). An empty members list shares nothing and issues no link.",
+  "type": "object",
+  "required": [
+    "share"
+  ],
+  "properties": {
+    "share": {
+      "type": "object",
+      "required": [
+        "members",
+        "expiry"
+      ],
+      "properties": {
+        "members": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "member"
+            ],
+            "properties": {
+              "member": {
+                "type": "string"
+              },
+              "documents": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "The references chosen; absent means all of that member's documents."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "passcode": {
+          "type": "string",
+          "minLength": 1,
+          "writeOnly": true,
+          "description": "Handed to the sharer once to protect the manifest; never printed on the QR."
+        },
+        "expiry": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

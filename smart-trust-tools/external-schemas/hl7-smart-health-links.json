@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "hl7-smart-health-links",
+  "authority": "HL7",
+  "title": "SMART Health Cards and Links: SMART Health Links",
+  "version": "STU1",
+  "specUrl": "https://hl7.org/fhir/uv/smart-health-cards-and-links/links-specification.html",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

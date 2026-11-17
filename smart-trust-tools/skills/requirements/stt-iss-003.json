@@ -1,0 +1,33 @@
+{
+  "id": "req:stt-iss-003",
+  "title": "Test keys never in production artifacts",
+  "description": "Engineering consequence of QR Code Generation, 12.3 Issuer. QR Code Generation, 12.3 Issuer: “The private key is held in the build environment and never enters this repository”.",
+  "status": "proposed",
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Test keys never in production artifacts",
+      "conformance": "SHALL NOT",
+      "requirement": "Fixed test keys and test PKI (such as the XXA SCA and DSC) SHALL only ship in the testkit module. Production modules SHALL NOT contain or accept them by default.",
+      "category": "security",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-ISS-003 passes in each implementation's suite (Kotlin: `STT-ISS-003 no private key, and no test key, is in the library's sources` (ArchitectureTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "security",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s016-12-3-issuer"
+  ]
+}

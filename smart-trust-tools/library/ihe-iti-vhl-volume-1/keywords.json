@@ -1,0 +1,993 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "ihe-iti-vhl-volume-1",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "vhl option",
+      "score": 13.6499,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "vhl trust",
+      "score": 13.0343,
+      "evidence": []
+    },
+    {
+      "term": "vhl profile",
+      "score": 12.9793,
+      "evidence": []
+    },
+    {
+      "term": "request vhl",
+      "score": 12.5164,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "vhl assign",
+      "score": 12.3279,
+      "evidence": []
+    },
+    {
+      "term": "vhl documents",
+      "score": 11.4535,
+      "evidence": []
+    },
+    {
+      "term": "iti-yy iti",
+      "score": 11.2422,
+      "evidence": []
+    },
+    {
+      "term": "vhl receiver",
+      "score": 11.2326,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "vhl signature",
+      "score": 10.9731,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "trust material",
+      "score": 10.8013,
+      "evidence": []
+    },
+    {
+      "term": "pki material",
+      "score": 10.7875,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "vhl sharer",
+      "score": 10.6109,
+      "evidence": [
+        "heading"
+      ]
+    }
+  ],
+  "sections": {
+    "s001-input-pagecontent-volume-1-md": [
+      {
+        "term": "shl payload",
+        "score": 2.0847,
+        "evidence": []
+      },
+      {
+        "term": "vhl assign",
+        "score": 2.0649,
+        "evidence": []
+      },
+      {
+        "term": "shl sharer",
+        "score": 1.8402,
+        "evidence": []
+      },
+      {
+        "term": "pki material",
+        "score": 1.7894,
+        "evidence": []
+      },
+      {
+        "term": "health links",
+        "score": 1.4794,
+        "evidence": []
+      },
+      {
+        "term": "trust anchor",
+        "score": 1.4141,
+        "evidence": []
+      },
+      {
+        "term": "vhl holder",
+        "score": 1.3827,
+        "evidence": []
+      },
+      {
+        "term": "establish trust",
+        "score": 1.3794,
+        "evidence": []
+      }
+    ],
+    "s002-1-xx-1-actors-transactions-and-content-modules": [
+      {
+        "term": "transactions",
+        "score": 3.4322,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "responder iti",
+        "score": 2.7721,
+        "evidence": []
+      },
+      {
+        "term": "content modules",
+        "score": 2.6452,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "actors",
+        "score": 2.6136,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "linkretrievepki",
+        "score": 1.4489,
+        "evidence": []
+      },
+      {
+        "term": "linksubmitpki",
+        "score": 1.4489,
+        "evidence": []
+      },
+      {
+        "term": "pki exchange",
+        "score": 1.4012,
+        "evidence": []
+      },
+      {
+        "term": "linkgeneratevhl",
+        "score": 1.2309,
+        "evidence": []
+      }
+    ],
+    "s003-1-xx-1-1-actors": [
+      {
+        "term": "actors",
+        "score": 1.4755,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "canonical",
+        "score": 1.2309,
+        "evidence": []
+      },
+      {
+        "term": "site",
+        "score": 0.9146,
+        "evidence": []
+      }
+    ],
+    "s005-1-xx-1-2-1-submit-pki-material-with-did-iti-yy1": [
+      {
+        "term": "pki material",
+        "score": 3.8383,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "submit pki",
+        "score": 3.7774,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "material request",
+        "score": 1.4508,
+        "evidence": []
+      },
+      {
+        "term": "actors",
+        "score": 0.931,
+        "evidence": []
+      }
+    ],
+    "s006-1-xx-1-2-2-retrieve-trust-list-with-did-iti-yy2": [
+      {
+        "term": "retrieve trust",
+        "score": 2.5823,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "trust list",
+        "score": 2.1618,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "pki material",
+        "score": 1.9589,
+        "evidence": []
+      },
+      {
+        "term": "material retrieval",
+        "score": 1.7316,
+        "evidence": []
+      },
+      {
+        "term": "receiver actors",
+        "score": 1.4709,
+        "evidence": []
+      },
+      {
+        "term": "transaction",
+        "score": 0.9935,
+        "evidence": []
+      },
+      {
+        "term": "list request",
+        "score": 0.9295,
+        "evidence": []
+      }
+    ],
+    "s007-1-xx-1-2-3-generate-vhl-iti-yy3": [
+      {
+        "term": "generate",
+        "score": 1.3335,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "generation request",
+        "score": 1.0804,
+        "evidence": []
+      },
+      {
+        "term": "vhl generation",
+        "score": 0.9794,
+        "evidence": []
+      }
+    ],
+    "s008-1-xx-1-2-4-provide-vhl-iti-yy4": [
+      {
+        "term": "vhl",
+        "score": 0.9548,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "providing",
+        "score": 0.8709,
+        "evidence": []
+      },
+      {
+        "term": "device",
+        "score": 0.7569,
+        "evidence": []
+      }
+    ],
+    "s009-1-xx-1-2-5-retrieve-manifest-iti-yy5": [
+      {
+        "term": "capability statement",
+        "score": 1.9163,
+        "evidence": []
+      },
+      {
+        "term": "documentreference resources",
+        "score": 1.7136,
+        "evidence": []
+      },
+      {
+        "term": "documentreference option",
+        "score": 1.3409,
+        "evidence": []
+      },
+      {
+        "term": "list resource",
+        "score": 1.2938,
+        "evidence": []
+      },
+      {
+        "term": "returns",
+        "score": 1.043,
+        "evidence": []
+      },
+      {
+        "term": "retrieve",
+        "score": 0.8031,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s010-1-xx-2-actor-options": [
+      {
+        "term": "actor options",
+        "score": 4.0172,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "sign manifest",
+        "score": 1.0308,
+        "evidence": []
+      },
+      {
+        "term": "ssraa verifiable",
+        "score": 0.998,
+        "evidence": []
+      }
+    ],
+    "s011-1-xx-2-1-sign-manifest-request-option-vhl-receiv": [
+      {
+        "term": "sign manifest",
+        "score": 3.2533,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "manifest request",
+        "score": 2.6029,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "request option",
+        "score": 2.5673,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "vhl receiver",
+        "score": 1.5699,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s012-1-xx-2-2-include-documentreference-option-vhl-sh": [
+      {
+        "term": "documentreference option",
+        "score": 2.4137,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "vhl sharer",
+        "score": 1.6196,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "manifest url",
+        "score": 0.9406,
+        "evidence": []
+      },
+      {
+        "term": "supporting",
+        "score": 0.8069,
+        "evidence": []
+      }
+    ],
+    "s013-1-xx-2-3-verify-document-signature-option-vhl-re": [
+      {
+        "term": "verify document",
+        "score": 2.6054,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "document signature",
+        "score": 2.0105,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "key material",
+        "score": 1.3023,
+        "evidence": []
+      }
+    ],
+    "s014-1-xx-2-4-oauth-with-ssraa-option": [
+      {
+        "term": "ssraa option",
+        "score": 2.6915,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "oauth",
+        "score": 1.4613,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "http message",
+        "score": 0.9602,
+        "evidence": []
+      },
+      {
+        "term": "message signatures",
+        "score": 0.9097,
+        "evidence": []
+      }
+    ],
+    "s015-1-xx-2-5-verifiable-credential-option": [
+      {
+        "term": "verifiable credential",
+        "score": 2.3516,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "credential option",
+        "score": 2.2575,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "cryptographic proof",
+        "score": 1.4111,
+        "evidence": []
+      },
+      {
+        "term": "manifest url",
+        "score": 1.3785,
+        "evidence": []
+      },
+      {
+        "term": "linkvhlr key",
+        "score": 1.2215,
+        "evidence": []
+      },
+      {
+        "term": "trust network",
+        "score": 0.9656,
+        "evidence": []
+      },
+      {
+        "term": "ldp-vc",
+        "score": 0.8069,
+        "evidence": []
+      },
+      {
+        "term": "embedded",
+        "score": 0.7583,
+        "evidence": []
+      }
+    ],
+    "s016-1-xx-2-6-vc-enveloped-vhl-option-vhl-sharer": [
+      {
+        "term": "vhl option",
+        "score": 2.6294,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "enveloped vhl",
+        "score": 2.2383,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "alternative carrier",
+        "score": 1.7794,
+        "evidence": []
+      },
+      {
+        "term": "iti-yy section",
+        "score": 1.1084,
+        "evidence": []
+      },
+      {
+        "term": "w3c verifiable",
+        "score": 1.0731,
+        "evidence": []
+      },
+      {
+        "term": "verifiable credential",
+        "score": 0.974,
+        "evidence": []
+      },
+      {
+        "term": "vhl payload",
+        "score": 0.9643,
+        "evidence": []
+      },
+      {
+        "term": "hcert cwt",
+        "score": 0.9019,
+        "evidence": []
+      }
+    ],
+    "s017-1-xx-3-required-actor-groupings": [
+      {
+        "term": "actor groupings",
+        "score": 4.4159,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "required actor",
+        "score": 4.0435,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "iti mhd",
+        "score": 2.3409,
+        "evidence": []
+      },
+      {
+        "term": "iti atna",
+        "score": 2.3356,
+        "evidence": []
+      },
+      {
+        "term": "secure node",
+        "score": 2.2398,
+        "evidence": []
+      },
+      {
+        "term": "application iti",
+        "score": 2.2344,
+        "evidence": []
+      },
+      {
+        "term": "iti-yy iti",
+        "score": 1.8297,
+        "evidence": []
+      }
+    ],
+    "s019-1-xx-4-1-concepts": [
+      {
+        "term": "concepts",
+        "score": 1.1237,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "sharing",
+        "score": 0.685,
+        "evidence": []
+      },
+      {
+        "term": "access",
+        "score": 0.6065,
+        "evidence": []
+      }
+    ],
+    "s021-1-xx-4-2-1-use-case-1-who-global-digital-health-": [
+      {
+        "term": "case",
+        "score": 1.1435,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "certification",
+        "score": 1.0827,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "global",
+        "score": 0.8912,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s022-1-xx-4-2-1-1-hajj-pilgrimage-use-case-descriptio": [
+      {
+        "term": "pilgrimage",
+        "score": 1.1466,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "case",
+        "score": 1.1435,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "description",
+        "score": 0.6302,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s023-1-xx-4-2-1-2-pan-american-highway-for-health-use": [
+      {
+        "term": "case",
+        "score": 1.1435,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "description",
+        "score": 0.6302,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "markdownify",
+        "score": 0.4708,
+        "evidence": []
+      }
+    ],
+    "s024-1-xx-4-2-2-use-case-2-eu-vaccination-card": [
+      {
+        "term": "vaccination",
+        "score": 1.1974,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "card",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "case",
+        "score": 1.1435,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s025-1-xx-4-2-3-use-case-3-us-trusted-exchange-framew": [
+      {
+        "term": "case",
+        "score": 1.1435,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "common",
+        "score": 1.0033,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "exchange",
+        "score": 0.7934,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s026-1-xx-5-security-considerations": [
+      {
+        "term": "security considerations",
+        "score": 2.5499,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "together",
+        "score": 0.5414,
+        "evidence": []
+      },
+      {
+        "term": "established",
+        "score": 0.5091,
+        "evidence": []
+      }
+    ],
+    "s027-1-xx-5-1-trust-network-security": [
+      {
+        "term": "pki material",
+        "score": 1.239,
+        "evidence": []
+      },
+      {
+        "term": "establishment",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "trust",
+        "score": 0.8106,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s028-1-xx-5-2-secure-channel-requirements": [
+      {
+        "term": "secure channel",
+        "score": 2.4579,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "requirements",
+        "score": 0.6282,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "node",
+        "score": 0.5197,
+        "evidence": []
+      }
+    ],
+    "s029-1-xx-5-3-cryptographic-algorithm-selection": [
+      {
+        "term": "interoperability baseline",
+        "score": 2.5526,
+        "evidence": []
+      },
+      {
+        "term": "algorithm",
+        "score": 2.0324,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "cryptographic",
+        "score": 1.4284,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "deployment",
+        "score": 1.3311,
+        "evidence": []
+      },
+      {
+        "term": "guidance",
+        "score": 1.271,
+        "evidence": []
+      },
+      {
+        "term": "minimum key",
+        "score": 1.2636,
+        "evidence": []
+      },
+      {
+        "term": "consistent",
+        "score": 0.8709,
+        "evidence": []
+      },
+      {
+        "term": "illustrative",
+        "score": 0.8709,
+        "evidence": []
+      }
+    ],
+    "s030-1-xx-5-4-vhl-integrity-and-authorization": [
+      {
+        "term": "vhl",
+        "score": 0.8792,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "integrity",
+        "score": 0.6888,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "authorization",
+        "score": 0.626,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s031-1-xx-5-5-audit-requirements": [
+      {
+        "term": "audit",
+        "score": 1.6085,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "requirements",
+        "score": 0.9957,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "data access",
+        "score": 0.8809,
+        "evidence": []
+      }
+    ],
+    "s032-1-xx-5-6-privacy-considerations": [
+      {
+        "term": "privacy",
+        "score": 0.9551,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "considerations",
+        "score": 0.7934,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "consent",
+        "score": 0.777,
+        "evidence": []
+      }
+    ],
+    "s034-1-xx-6-1-atna-audit-trail-and-node-authenticatio": [
+      {
+        "term": "node",
+        "score": 2.0788,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "atna",
+        "score": 1.9631,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "secure channel",
+        "score": 1.508,
+        "evidence": []
+      }
+    ],
+    "s035-1-xx-6-2-pcf-privacy-consent-on-fhir": [
+      {
+        "term": "pcf consent",
+        "score": 6.836,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "privacy consent",
+        "score": 5.0285,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "consent creator",
+        "score": 2.6283,
+        "evidence": []
+      },
+      {
+        "term": "consent recipient",
+        "score": 2.4386,
+        "evidence": []
+      },
+      {
+        "term": "record consent",
+        "score": 2.3822,
+        "evidence": []
+      },
+      {
+        "term": "generated folder",
+        "score": 1.6412,
+        "evidence": []
+      },
+      {
+        "term": "grouped",
+        "score": 0.9352,
+        "evidence": []
+      }
+    ],
+    "s036-1-xx-6-3-mhd-mobile-health-document-sharing": [
+      {
+        "term": "mhd iti",
+        "score": 1.727,
+        "evidence": []
+      },
+      {
+        "term": "mobile",
+        "score": 1.0182,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "fhir search",
+        "score": 0.988,
+        "evidence": []
+      }
+    ],
+    "s038-1-xx-6-5-dsg-dsgj-document-digital-signature": [
+      {
+        "term": "digital signature",
+        "score": 2.3526,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "document digital",
+        "score": 2.2919,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "key material",
+        "score": 0.9312,
+        "evidence": []
+      }
+    ]
+  }
+}

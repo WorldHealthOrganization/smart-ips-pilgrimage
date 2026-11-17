@@ -1,0 +1,127 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 5,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://vhl-sharer.example.org/List/_search?_id=abc123def456&code=folder&status=current&patient.identifier=urn:oid:2.16.840.1.113883.2.4.6.3|PASSPORT123&_include=List:item"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://vhl-sharer.example.org/List/abc123def456",
+      "resource": {
+        "resourceType": "List",
+        "id": "abc123def456",
+        "status": "current",
+        "mode": "working",
+        "code": {
+          "coding": [
+            {
+              "system": "https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes",
+              "code": "folder"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+            "value": "PASSPORT123"
+          }
+        },
+        "date": "2024-01-15T10:30:00Z",
+        "entry": [
+          {
+            "item": {
+              "reference": "DocumentReference/doc001"
+            }
+          },
+          {
+            "item": {
+              "reference": "DocumentReference/doc002"
+            }
+          },
+          {
+            "item": {
+              "reference": "DocumentReference/doc003"
+            }
+          },
+          {
+            "item": {
+              "reference": "DocumentReference/doc004"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://vhl-sharer.example.org/DocumentReference/doc001",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "doc001",
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34133-9",
+              "display": "Summarization of Episode Note"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+            "value": "PASSPORT123"
+          }
+        },
+        "date": "2024-01-15T09:00:00Z",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "url": "https://vhl-sharer.example.org/Binary/doc001-content"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "https://vhl-sharer.example.org/DocumentReference/doc002",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "doc002"
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "https://vhl-sharer.example.org/DocumentReference/doc003",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "doc003"
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "https://vhl-sharer.example.org/DocumentReference/doc004",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "doc004"
+      },
+      "search": {
+        "mode": "include"
+      }
+    }
+  ]
+}

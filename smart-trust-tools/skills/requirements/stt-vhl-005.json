@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-vhl-005",
+  "title": "ITI-YY5 manifest request",
+  "description": "Restates IHE VHL ITI-YY5, 2:3.YY5.4.1.2 Message Semantics; Stakeholder directive: Verifiable Health Links follow IHE VHL, CBOR map at key 5. IHE VHL ITI-YY5 Retrieve Manifest, 2:3.YY5.4.1.2 Message Semantics: “The VHL Receiver performs an HTTP POST to the _search endpoint with the manifest URL parameters from the VHL payload”. Stakeholder directive: Verifiable Health Links follow IHE VHL, CBOR map at key 5: “Manifest -> go with IHE VHL”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-vhl-001"
+  ],
+  "reference": [
+    "library/ihe-iti-vhl-iti-yy5/sections/s008-2-3-yy5-4-1-2-message-semantics",
+    "memory/dir-vhl"
+  ],
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "ITI-YY5 manifest request",
+      "conformance": "SHALL",
+      "requirement": "The library SHALL build the ITI-YY5 Retrieve Manifest request from a VHL payload: POST to <base>/List/_search (accepting a manifest URL of either the List?... or the List/_search?... form), Content-Type application/x-www-form-urlencoded, body holding the manifest URL's search parameters (_id, code, status and patient.identifier required; _include=List:item optional) plus recipient (required), passcode (required when, and only when, the payload's flag has P) and embeddedLengthMax (optional). It SHALL refuse a payload whose URL lacks a required parameter. Sending the request is the host's.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VHL-005 passes in each implementation's suite (Kotlin: `STT-VHL-005 the ITI-YY5 request is the exact body of the IHE example` (VhlReceiveTest.kt); `STT-VHL-005 a List URL is searched, and the passcode follows the P flag` (VhlReceiveTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}

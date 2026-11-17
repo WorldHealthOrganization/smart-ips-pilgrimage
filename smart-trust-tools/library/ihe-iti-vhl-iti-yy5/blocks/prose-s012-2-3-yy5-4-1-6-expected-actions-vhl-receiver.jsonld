@@ -1,0 +1,20 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-iti-yy5/blocks/prose-s012-2-3-yy5-4-1-6-expected-actions-vhl-receiver",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "kind": "prose",
+  "title": "2:3.YY5.4.1.6 Expected Actions - VHL Receiver",
+  "text": "../sections/s012-2-3-yy5-4-1-6-expected-actions-vhl-receiver.md",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy5",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy5",
+  "provenance": "ingested"
+}

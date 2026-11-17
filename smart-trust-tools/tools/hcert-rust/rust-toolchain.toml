@@ -1,0 +1,6 @@
+# The toolchain the library is built and tested with, CI included.
+[toolchain]
+channel = "1.97.0"
+targets = ["wasm32-unknown-unknown"]
+profile = "minimal"
+components = ["clippy", "llvm-tools"]

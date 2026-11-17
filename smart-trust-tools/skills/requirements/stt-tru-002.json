@@ -1,0 +1,42 @@
+{
+  "id": "req:stt-tru-002",
+  "title": "GDHCN DID trustlist v2 documents",
+  "description": "Restates GDHCN Trustlists (DID), Trustlists 2.0.0; GDHCN Trustlists (DID), DID trustlists structure; GDHCN Trustlists (DID), Example DID documents; Endpoints, Trustlist Distribution Endpoints; W3C DID Core. GDHCN Trustlists (DID), DID trustlists structure: “Note that \"-\" character can be used as a wildcard on each sublevel of root.”. GDHCN Trustlists (DID), Example DID documents: “Specific keys use base64 encoded key id (kid) as identifier, It is represented as fragments (#) in verification method id”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-tru-001"
+  ],
+  "reference": [
+    "http://smart.who.int/trust/Requirements/RetrievePKIMaterialDID",
+    "library/who-smart-trust-did-gdhcn/sections/s002-trustlists-2-0-0",
+    "library/who-smart-trust-did-gdhcn/sections/s003-did-trustlists-structure",
+    "library/who-smart-trust-did-gdhcn/sections/s004-example-did-documents",
+    "library/who-smart-trust-endpoints/sections/s006-trustlist-distribution-endpoints",
+    "external-schemas/w3c-did-core"
+  ],
+  "actors": [
+    "trust-anchor",
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "GDHCN DID trustlist v2 documents",
+      "conformance": "SHALL",
+      "requirement": "The trust store SHALL load GDHCN DID trustlist v2 documents, embedded and reference variants, reading DSCs from verificationMethod publicKeyJwk (x5c) with the kid as the fragment. Fetching and caching the documents are the host's; checking their proofs is the host's choice, with the library's proof verification (STT-TRU-006) or its own.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-TRU-002 passes in each implementation's suite (Kotlin: `STT-TRU-002 a GDHCN DID trustlist v2 document loads its DSCs` (TrustListTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns#" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#"
+                  id="Definitions_Process_HcertIssuance" targetNamespace="https://litlfred.github.io/smart-trust-tools/processes" exporter="smart-trust-tools" exporterVersion="1">
+  <bpmn:resource id="hcert-issuing-system" name="HCERT issuing system"/>
+  <bpmn:resource id="hcert-key-holder" name="Signing key holder"/>
+  <bpmn:collaboration id="Collaboration_Process_HcertIssuance">
+    <bpmn:participant id="Participant_Process_HcertIssuance" name="Issue an HCERT QR code" processRef="Process_HcertIssuance"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_HcertIssuance" name="Issue an HCERT QR code" isExecutable="false">
+    <bpmn:documentation>QR Code Generation steps 1 to 9, as the library and its host divide them: the issuing system runs every step; the key holder only signs the bytes prepare returns, so the private key never enters the library (STT-ISS-004, STT-COS-006).</bpmn:documentation>
+    <bpmn:extensionElements><cat-harness.processes:policy enforcement="advisory"/><cat-harness.processes:log capture="off"/></bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_Process_HcertIssuance">
+      <bpmn:lane id="Lane_Issuer" name="HCERT issuing system" partitionElementRef="hcert-issuing-system">
+        <bpmn:documentation>The HCERT side of the VHL Sharer (smart-trust: Issuer): a clinic system or national portal that issues HCERT certificates, embedding the Kotlin or Rust library.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_SelectPayload</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_AssemblePayload</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_BuildCwt</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_EncodeCbor</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Prepare</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Finish</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Compress</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Base45</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Prefix</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Render</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Key" name="Signing key holder" partitionElementRef="hcert-key-holder">
+        <bpmn:documentation>The HSM, KMS, Android Keystore or WebCrypto key of a Trust Network Participant that signs the bytes the issuing system prepares; the library never holds the private key.</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_Sign</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start" name="A certificate is to be issued"><bpmn:outgoing>Flow_1</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:serviceTask id="Task_SelectPayload" name="Select the payload type and subclaim"><bpmn:documentation>Choose the logical model and the hcert subclaim for the use case from the registry QR Code Generation 2 defines: a DVC (key -6) when the certificate must verify offline, a VHL (key 5) when the records are larger than a QR code holds.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-select-payload"/></bpmn:extensionElements><bpmn:incoming>Flow_1</bpmn:incoming><bpmn:outgoing>Flow_2</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_AssemblePayload" name="Assemble and validate the payload"><bpmn:documentation>Build the payload and validate it against its logical model (DVCMin, or the VHL payload), keeping elements the library does not know.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-assemble-payload"/></bpmn:extensionElements><bpmn:incoming>Flow_2</bpmn:incoming><bpmn:outgoing>Flow_3</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_BuildCwt" name="Build the CWT claim set"><bpmn:documentation>Wrap the payload in a CWT claim set: iss, iat, exp inside the DSC's validity, and the payload at hcert (-260) under its subclaim.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-build-cwt"/></bpmn:extensionElements><bpmn:incoming>Flow_3</bpmn:incoming><bpmn:outgoing>Flow_4</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_EncodeCbor" name="Serialise as deterministic CBOR"><bpmn:documentation>Serialise the claim set as RFC 8949 deterministic CBOR, so the same claims always give the same bytes.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-encode-cbor"/></bpmn:extensionElements><bpmn:incoming>Flow_4</bpmn:incoming><bpmn:outgoing>Flow_5</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Prepare" name="Prepare the Sig_structure"><bpmn:documentation>Build the COSE Sig_structure from the protected header (alg, kid = SHA-256 of the DSC, first 8 bytes) and the payload, and hand its bytes out to be signed.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-sign-cose"/></bpmn:extensionElements><bpmn:incoming>Flow_5</bpmn:incoming><bpmn:outgoing>Flow_6</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Sign" name="Sign the bytes with the DSC key"><bpmn:documentation>The key holder signs the Sig_structure bytes with the DSC private key (ES256, or PS256) and returns the raw signature. The key never leaves it.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-sign-cose"/><cat-harness.processes:fulfilment kinds="external" reason="the signing key stays in the participant's HSM, KMS or platform keystore, which signs the Sig_structure bytes the library prepares (STT-COS-006); no system of ours performs it"/></bpmn:extensionElements><bpmn:incoming>Flow_6</bpmn:incoming><bpmn:outgoing>Flow_7</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Finish" name="Attach the signature as COSE_Sign1"><bpmn:documentation>Attach the returned signature to make the COSE_Sign1, checking it is the length the algorithm gives (64 bytes for ES256, r||s).</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-sign-cose"/></bpmn:extensionElements><bpmn:incoming>Flow_7</bpmn:incoming><bpmn:outgoing>Flow_8</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Compress" name="Compress with ZLIB"><bpmn:documentation>Compress the COSE_Sign1 with ZLIB/DEFLATE, after signing, never before.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-compress"/></bpmn:extensionElements><bpmn:incoming>Flow_8</bpmn:incoming><bpmn:outgoing>Flow_9</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Base45" name="Encode as Base45"><bpmn:documentation>Encode the compressed bytes as RFC 9285 Base45, the alphabet QR Alphanumeric mode stores compactly.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-encode-base45"/></bpmn:extensionElements><bpmn:incoming>Flow_9</bpmn:incoming><bpmn:outgoing>Flow_10</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Prefix" name="Prefix HC1:"><bpmn:documentation>Prefix the context identifier HC1: to make the QR-ready string.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-prefix-context"/></bpmn:extensionElements><bpmn:incoming>Flow_10</bpmn:incoming><bpmn:outgoing>Flow_11</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Render" name="Render the QR code (Alphanumeric, EC Q)"><bpmn:documentation>The application renders the HC1 string as a QR code in Alphanumeric mode, error correction Q, with its own QR encoder.</bpmn:documentation><bpmn:extensionElements><cat-harness.processes:no-skill reason="the application renders the QR-ready HC1 string with its own QR encoder; the library does not (STT-QR-001)"/></bpmn:extensionElements><bpmn:incoming>Flow_11</bpmn:incoming><bpmn:outgoing>Flow_12</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:endEvent id="End" name="QR-ready HC1 string"><bpmn:incoming>Flow_12</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1" sourceRef="Start" targetRef="Task_SelectPayload"/>
+    <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_SelectPayload" targetRef="Task_AssemblePayload"/>
+    <bpmn:sequenceFlow id="Flow_3" sourceRef="Task_AssemblePayload" targetRef="Task_BuildCwt"/>
+    <bpmn:sequenceFlow id="Flow_4" sourceRef="Task_BuildCwt" targetRef="Task_EncodeCbor"/>
+    <bpmn:sequenceFlow id="Flow_5" sourceRef="Task_EncodeCbor" targetRef="Task_Prepare"/>
+    <bpmn:sequenceFlow id="Flow_6" sourceRef="Task_Prepare" targetRef="Task_Sign"/>
+    <bpmn:sequenceFlow id="Flow_7" sourceRef="Task_Sign" targetRef="Task_Finish"/>
+    <bpmn:sequenceFlow id="Flow_8" sourceRef="Task_Finish" targetRef="Task_Compress"/>
+    <bpmn:sequenceFlow id="Flow_9" sourceRef="Task_Compress" targetRef="Task_Base45"/>
+    <bpmn:sequenceFlow id="Flow_10" sourceRef="Task_Base45" targetRef="Task_Prefix"/>
+    <bpmn:sequenceFlow id="Flow_11" sourceRef="Task_Prefix" targetRef="Task_Render"/>
+    <bpmn:sequenceFlow id="Flow_12" sourceRef="Task_Render" targetRef="End"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_Process_HcertIssuance">
+      <bpmndi:BPMNShape id="Participant_Process_HcertIssuance_di" bpmnElement="Participant_Process_HcertIssuance" isHorizontal="true"><dc:Bounds x="100" y="60" width="2570" height="360"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Issuer_di" bpmnElement="Lane_Issuer" isHorizontal="true"><dc:Bounds x="130" y="60" width="2540" height="180"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Key_di" bpmnElement="Lane_Key" isHorizontal="true"><dc:Bounds x="130" y="240" width="2540" height="180"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Start_di" bpmnElement="Start"><dc:Bounds x="202" y="132" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="160" y="174" width="120" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_SelectPayload_di" bpmnElement="Task_SelectPayload"><dc:Bounds x="340" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_AssemblePayload_di" bpmnElement="Task_AssemblePayload"><dc:Bounds x="530" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_BuildCwt_di" bpmnElement="Task_BuildCwt"><dc:Bounds x="720" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_EncodeCbor_di" bpmnElement="Task_EncodeCbor"><dc:Bounds x="910" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Prepare_di" bpmnElement="Task_Prepare"><dc:Bounds x="1100" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Sign_di" bpmnElement="Task_Sign"><dc:Bounds x="1290" y="290" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Finish_di" bpmnElement="Task_Finish"><dc:Bounds x="1480" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Compress_di" bpmnElement="Task_Compress"><dc:Bounds x="1670" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Base45_di" bpmnElement="Task_Base45"><dc:Bounds x="1860" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Prefix_di" bpmnElement="Task_Prefix"><dc:Bounds x="2050" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Render_di" bpmnElement="Task_Render"><dc:Bounds x="2240" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_di" bpmnElement="End"><dc:Bounds x="2482" y="132" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="2440" y="174" width="120" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1_di" bpmnElement="Flow_1"><di:waypoint x="238" y="150"/><di:waypoint x="340" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2_di" bpmnElement="Flow_2"><di:waypoint x="480" y="150"/><di:waypoint x="530" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_3_di" bpmnElement="Flow_3"><di:waypoint x="670" y="150"/><di:waypoint x="720" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_4_di" bpmnElement="Flow_4"><di:waypoint x="860" y="150"/><di:waypoint x="910" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_5_di" bpmnElement="Flow_5"><di:waypoint x="1050" y="150"/><di:waypoint x="1100" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_6_di" bpmnElement="Flow_6"><di:waypoint x="1240" y="150"/><di:waypoint x="1265" y="150"/><di:waypoint x="1265" y="330"/><di:waypoint x="1290" y="330"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_7_di" bpmnElement="Flow_7"><di:waypoint x="1430" y="330"/><di:waypoint x="1455" y="330"/><di:waypoint x="1455" y="150"/><di:waypoint x="1480" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_8_di" bpmnElement="Flow_8"><di:waypoint x="1620" y="150"/><di:waypoint x="1670" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_9_di" bpmnElement="Flow_9"><di:waypoint x="1810" y="150"/><di:waypoint x="1860" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_10_di" bpmnElement="Flow_10"><di:waypoint x="2000" y="150"/><di:waypoint x="2050" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_11_di" bpmnElement="Flow_11"><di:waypoint x="2190" y="150"/><di:waypoint x="2240" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_12_di" bpmnElement="Flow_12"><di:waypoint x="2380" y="150"/><di:waypoint x="2482" y="150"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

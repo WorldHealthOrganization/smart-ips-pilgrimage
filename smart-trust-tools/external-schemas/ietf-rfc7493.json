@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc7493",
+  "authority": "IETF",
+  "title": "RFC 7493 The I-JSON Message Format",
+  "version": "RFC 7493",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc7493",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "req:stt-sec-001",
+  "title": "No payload content in logs",
+  "description": "Engineering consequence of QR Code Generation, 2.2 Choosing between a DVC and a VHL; HCERT Specification, 6.1 HCERT Signature Validity Time. QR Code Generation, 2.2 Choosing between a DVC and a VHL: “All data is in the QR and is readable by anyone who scans it”.",
+  "status": "proposed",
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "No payload content in logs",
+      "conformance": "SHALL NOT",
+      "requirement": "The libraries SHALL NOT log payload content, HC1 strings or decoded claims at any default log level. A QR code holds readable personal data.",
+      "category": "security",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-SEC-001 passes in each implementation's suite (Kotlin: `STT-SEC-001 a failure's message does not carry the payload` (VerifyTest.kt); `STT-SEC-001 the core writes nothing to a log or console` (ArchitectureTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "security",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s003-2-step-1-select-the-payload-type",
+    "library/who-smart-trust-hcert-spec/sections/s023-6-1-hcert-signature-validity-time"
+  ]
+}

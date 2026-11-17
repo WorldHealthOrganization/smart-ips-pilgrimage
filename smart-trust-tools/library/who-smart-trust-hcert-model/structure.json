@@ -1,0 +1,50 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-hcert-model",
+  "source": {
+    "file": "hcert.fsh",
+    "sha256": "627928b8a1349e34def7b6560baa0c0822e4dbb6ec9f80b165632c72648a73f3",
+    "digest": "file",
+    "bytes": 1632,
+    "mtime": "2026-10-09T13:16:57Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/fsh/models/hcert.fsh",
+        "sha256": "627928b8a1349e34def7b6560baa0c0822e4dbb6ec9f80b165632c72648a73f3",
+        "bytes": 1632,
+        "lines": 28,
+        "format": "verbatim"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust",
+      "commit": "e277cce5dcb8d2134ef1625c3a38e27cdf19e835",
+      "ref": "main",
+      "committed": "2026-10-09T13:16:57Z",
+      "path": "input/fsh/models/hcert.fsh",
+      "published": "https://smart.who.int/trust/StructureDefinition-HCert.html",
+      "retrieved": "2026-10-20T19:45:00Z"
+    }
+  },
+  "metadata": {
+    "title": "HCert logical model (FSH)"
+  },
+  "toc_source": "files",
+  "sections": [
+    {
+      "id": "s001-input-fsh-models-hcert-fsh",
+      "number": null,
+      "title": "input/fsh/models/hcert.fsh",
+      "level": 1,
+      "file": "input/fsh/models/hcert.fsh",
+      "line_start": 1,
+      "line_end": 28,
+      "unit": "file",
+      "n_chars": 1642,
+      "n_words": 226
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

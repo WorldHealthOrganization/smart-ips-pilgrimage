@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "who-gdhcn-did-trustlist",
+  "authority": "other",
+  "title": "WHO GDHCN DID trustlist v2",
+  "version": "2.0.0",
+  "specUrl": "https://smart.who.int/trust/concepts_did_gdhcn.html",
+  "namespaces": [],
+  "use": "reads",
+  "terms": [],
+  "note": "WHO. Text held at library/who-smart-trust-did-gdhcn."
+}

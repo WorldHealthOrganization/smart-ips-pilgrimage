@@ -1,0 +1,16 @@
+{
+  "$schema": "folio-graph-typology/v1",
+  "kind": "hcert-contract",
+  "title": "HCERT library contract",
+  "perInstance": true,
+  "renderable": false,
+  "holds": "content",
+  "summary": "The API contract both HCERT libraries implement: the WIT package (api/wit/, who:smart-trust) and the CBOR wire format in CDDL (api/cddl/). One node per .wit or .cddl file; each cites the requirements it carries as [STT-…] tags in its comments.",
+  "validatorNotApplicable": "its nodes are WIT and CDDL source, not JSON a Zod schema could parse. WIT is parsed by jco in gen-api-types and by wit2kotlin (--check fails on a stale Kotlin skeleton); CDDL is checked against the PR 129 vector by check-models.",
+  "avatar": {
+    "glyph": "M4 6h16M4 12h10M4 18h7M17 14l3 3-3 3",
+    "tone": 210,
+    "reads": "lines of an interface with an arrow out: a contract other code implements"
+  },
+  "rationale": "A kind of its own because the contract is what the requirements constrain and the libraries realize: a requirement's [STT-…] tag in a WIT doc comment is the edge from contract to requirement, and the Kotlin skeleton and TypeScript view are derived from these files."
+}

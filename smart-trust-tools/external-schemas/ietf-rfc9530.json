@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc9530",
+  "authority": "IETF",
+  "title": "RFC 9530 Digest Fields",
+  "version": "RFC 9530",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc9530",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-volume-1/sections/s023-1-xx-4-2-1-2-pan-american-highway-for-health-use",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "1:XX.4.2.1.2 Pan-American Highway for Health Use Case Description",
+  "contains": [
+    "library/ihe-iti-vhl-volume-1/blocks/prose-s023-1-xx-4-2-1-2-pan-american-highway-for-health-use"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "provenance": "ingested"
+}

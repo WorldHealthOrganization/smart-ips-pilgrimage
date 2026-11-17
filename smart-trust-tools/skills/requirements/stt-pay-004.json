@@ -1,0 +1,36 @@
+{
+  "id": "req:stt-pay-004",
+  "title": "Issuer-or-clinician invariant",
+  "description": "Restates QR Code Generation, 3. Step 2 — Assemble the payload. QR Code Generation, 3. Step 2 — Assemble the payload: “At least one of is or cn must be present”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-pay-002"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s004-3-step-2-assemble-the-payload"
+  ],
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Issuer-or-clinician invariant",
+      "conformance": "SHALL",
+      "requirement": "Validation SHALL fail a DVCMin whose vx has neither is nor cn (invariant must-have-issuer-or-clinician-name). The issuer SHALL NOT sign a payload that fails validation.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-PAY-004 passes in each implementation's suite (Kotlin: `STT-PAY-004 STT-PAY-007 an invalid payload is refused, naming each rule` (AssemblePayloadTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}

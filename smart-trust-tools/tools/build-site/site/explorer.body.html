@@ -1,0 +1,98 @@
+<style>
+.explorer { display: grid; grid-template-columns: 250px minmax(0, 1fr) 360px; height: calc(100dvh - 54px - env(safe-area-inset-top, 0px)); min-height: 520px; }
+.ex-side, .ex-detail { background: var(--surface); overflow-y: auto; padding: 14px 14px 24px; display: grid; gap: 16px; align-content: start; }
+.ex-side { border-right: 1px solid var(--line); padding-left: max(14px, env(safe-area-inset-left, 0px)); }
+.ex-detail { border-left: 1px solid var(--line); padding-right: max(14px, env(safe-area-inset-right, 0px)); }
+.ex-canvas { position: relative; min-width: 0; background: var(--bg); display: grid; grid-template-rows: auto minmax(0, 1fr); }
+.ex-crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; padding: 10px 14px; border-bottom: 1px solid var(--line); background: var(--surface); font-size: var(--step--1); min-height: 44px; }
+.ex-crumbs button { border: 0; background: none; padding: 2px 4px; color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+.ex-crumbs .sep { color: var(--fg-3); }
+.ex-crumbs .here { font-weight: 650; color: var(--fg); }
+.ex-crumbs .hint { margin-left: auto; color: var(--fg-3); }
+.ex-stage { position: relative; min-height: 0; }
+#cy { position: absolute; inset: 0; }
+.ex-group { display: grid; gap: 6px; }
+.ex-side > *, .ex-group > * { min-width: 0; }
+.ex-group input, .ex-group select { width: 100%; }
+.fam-btn { display: grid; grid-template-columns: 16px 1fr auto; align-items: center; gap: 8px; text-align: left; width: 100%; }
+.fam-btn[aria-pressed="false"] { opacity: 0.55; background: var(--surface); color: var(--fg-2); border-color: var(--line); }
+.fam-btn[aria-pressed="true"] { background: var(--surface-2); color: var(--fg); border-color: var(--line); }
+.glyph { width: 14px; height: 14px; display: inline-block; flex: none; }
+.ex-status { position: absolute; left: 12px; bottom: 12px; pointer-events: none; }
+.ex-status span { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; font-size: 0.78rem; color: var(--fg-2); }
+.ex-zoom { position: absolute; right: 12px; top: 12px; display: grid; gap: 4px; }
+.ex-zoom button { width: 32px; height: 32px; padding: 0; font-size: 16px; }
+.detail-empty { color: var(--fg-2); font-size: var(--step--1); display: grid; gap: 10px; }
+.detail-empty ol { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+.d-head { display: grid; gap: 4px; }
+.d-kind { display: flex; align-items: center; gap: 6px; }
+.d-title { font-family: var(--font-display); font-size: var(--step-1); font-weight: 650; line-height: 1.25; }
+.d-statement { margin: 0; padding: 8px 10px; border-left: 3px solid var(--fam-requirement); background: var(--surface-2); border-radius: 0 var(--radius) var(--radius) 0; font-size: var(--step--1); }
+.d-sec { display: grid; gap: 6px; }
+.d-sec h4 { margin: 0; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-3); }
+.d-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: var(--step--1); }
+.d-list li { display: grid; gap: 2px; }
+.d-link { background: none; border: 0; padding: 0; color: var(--link); text-align: left; cursor: pointer; font-size: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.d-quote { color: var(--fg-2); font-style: italic; }
+.d-urls { font-size: 0.78rem; color: var(--fg-3); }
+.d-urls a { color: var(--fg-2); }
+.d-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.d-code { font-size: 0.75rem; }
+.shape-list li { display: grid; grid-template-columns: 16px 1fr; gap: 6px; align-items: center; }
+@media (max-width: 1000px) {
+  .explorer { grid-template-columns: 1fr; height: auto; }
+  .ex-side { border-right: 0; border-bottom: 1px solid var(--line); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .ex-canvas { height: 70vh; order: -1; }
+  .ex-detail { border-left: 0; border-top: 1px solid var(--line); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+}
+</style>
+<main class="explorer">
+  <aside class="ex-side" aria-label="Filters">
+    <div class="ex-group">
+      <label class="eyebrow" for="ex-search">Find a node</label>
+      <input type="search" id="ex-search" list="ex-ids" placeholder="STT-COS-005, kid, OI-17…" autocomplete="off">
+      <datalist id="ex-ids"></datalist>
+    </div>
+    <div class="ex-group">
+      <span class="eyebrow">View</span>
+      <div class="toolbar">
+        <button type="button" id="view-overview" aria-pressed="true">Overview</button>
+        <button type="button" id="view-full" aria-pressed="false">Full graph</button>
+      </div>
+    </div>
+    <div class="ex-group">
+      <label class="eyebrow" for="ex-area">Jump to a requirement area</label>
+      <select id="ex-area"><option value="">Choose an area…</option></select>
+    </div>
+    <div class="ex-group" id="ex-families">
+      <span class="eyebrow">Show</span>
+    </div>
+    <div class="ex-group">
+      <span class="eyebrow">Shapes</span>
+      <ul class="d-list small muted shape-list" id="ex-shapes"></ul>
+    </div>
+  </aside>
+  <div class="ex-canvas">
+    <nav class="ex-crumbs" id="ex-crumbs" aria-label="Where you are"></nav>
+    <div class="ex-stage">
+      <div id="cy" role="img" aria-label="Requirements knowledge graph. Use the search box or the traceability matrix for a text view."></div>
+      <div class="ex-zoom">
+        <button type="button" id="z-in" aria-label="Zoom in">+</button>
+        <button type="button" id="z-out" aria-label="Zoom out">−</button>
+        <button type="button" id="z-fit" aria-label="Fit graph" title="Fit">⤢</button>
+      </div>
+      <div class="ex-status"><span id="ex-count">Loading graph…</span></div>
+    </div>
+  </div>
+  <aside class="ex-detail" id="detail" aria-live="polite">
+    <div class="detail-empty">
+      <span class="eyebrow">How to read this</span>
+      <ol>
+        <li>The overview groups the graph: sources on the left, requirement areas next, then skills, WIT interfaces and open issues, then Tools, processes and roles, and the FHIR logical and payload models on the far right. Thicker links mean more connections.</li>
+        <li>Click any group to open it. You then see its members and everything directly connected to them, with full labels.</li>
+        <li>Click a node for its details: statement, source quotes, and links to the pinned source, the PR preview and the published IG. Double-click to centre on that node.</li>
+      </ol>
+      <p>Prefer a table? Open the <a href="trace.html">traceability matrix</a>.</p>
+    </div>
+  </aside>
+</main>

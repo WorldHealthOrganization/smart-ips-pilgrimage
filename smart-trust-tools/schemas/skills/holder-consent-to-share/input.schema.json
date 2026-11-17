@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Holder Consent To Share Input",
+  "type": "object",
+  "required": [
+    "offer"
+  ],
+  "properties": {
+    "offer": {
+      "type": "object",
+      "required": [
+        "members"
+      ],
+      "properties": {
+        "members": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "member",
+              "documents"
+            ],
+            "properties": {
+              "member": {
+                "type": "string"
+              },
+              "documents": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "type",
+                    "reference"
+                  ],
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "description": "What the document is: an IPS, a vaccination certificate."
+                    },
+                    "reference": {
+                      "type": "string",
+                      "description": "The FHIR reference or URL the sharer holds it at."
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "maxExpiry": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,35 @@
+{
+  "id": "req:stt-cos-003",
+  "title": "kid placement",
+  "description": "Restates QR Code Generation, 6. Step 5 — Sign as a COSE_Sign1; HCERT Specification, 3.2.3 Key Identifier. QR Code Generation, 6. Step 5 — Sign as a COSE_Sign1: “verifiers MUST accept both placements — but when it appears in both, the protected one wins.”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "kid placement",
+      "conformance": "SHALL",
+      "requirement": "The issuer SHALL put alg and kid in the protected header. The verifier SHALL accept a kid in either the protected or the unprotected header, and SHALL use the protected one when both are present.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-COS-003 passes in each implementation's suite (Kotlin: `STT-COS-001 STT-COS-003 a tagged COSE_Sign1 with alg and kid in the protected header` (SignCoseTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s007-6-step-5-sign-as-a-cose-sign1",
+    "library/who-smart-trust-hcert-spec/sections/s009-3-2-3-key-identifier"
+  ]
+}

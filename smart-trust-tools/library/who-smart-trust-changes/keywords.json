@@ -1,0 +1,237 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "who-smart-trust-changes",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "page added",
+      "score": 6.3079,
+      "evidence": []
+    },
+    {
+      "term": "application added",
+      "score": 5.5616,
+      "evidence": []
+    },
+    {
+      "term": "participant generation",
+      "score": 5.4477,
+      "evidence": []
+    },
+    {
+      "term": "model updated",
+      "score": 5.2726,
+      "evidence": []
+    },
+    {
+      "term": "checklist updated",
+      "score": 5.2547,
+      "evidence": []
+    },
+    {
+      "term": "updated gdhcn",
+      "score": 5.2295,
+      "evidence": []
+    },
+    {
+      "term": "lists updated",
+      "score": 4.752,
+      "evidence": []
+    },
+    {
+      "term": "release hcert",
+      "score": 4.6606,
+      "evidence": []
+    },
+    {
+      "term": "onboarding checklist",
+      "score": 3.2752,
+      "evidence": []
+    },
+    {
+      "term": "hcert logical",
+      "score": 2.9805,
+      "evidence": []
+    },
+    {
+      "term": "generation fixes",
+      "score": 2.9555,
+      "evidence": []
+    },
+    {
+      "term": "generation workflow",
+      "score": 2.764,
+      "evidence": []
+    }
+  ],
+  "sections": {
+    "s005-2024-03-22-v1-1-2-release": [
+      {
+        "term": "added",
+        "score": 0.8256,
+        "evidence": []
+      },
+      {
+        "term": "release",
+        "score": 0.7501,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "dashboard",
+        "score": 0.624,
+        "evidence": []
+      }
+    ],
+    "s006-2024-10-28-v1-1-4-release": [
+      {
+        "term": "updated",
+        "score": 0.8472,
+        "evidence": []
+      },
+      {
+        "term": "release",
+        "score": 0.7501,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "onboarding",
+        "score": 0.7192,
+        "evidence": []
+      }
+    ],
+    "s008-2025-04-02-v1-2-0-release": [
+      {
+        "term": "prod environments",
+        "score": 1.4698,
+        "evidence": []
+      },
+      {
+        "term": "added",
+        "score": 1.0671,
+        "evidence": []
+      },
+      {
+        "term": "trustlist",
+        "score": 0.823,
+        "evidence": []
+      }
+    ],
+    "s010-2026-02-11-v1-4-0-release": [
+      {
+        "term": "instructions",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "release",
+        "score": 0.7501,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "updated",
+        "score": 0.6714,
+        "evidence": []
+      }
+    ],
+    "s011-2026-04-27-v1-5-0-release": [
+      {
+        "term": "english",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "release",
+        "score": 0.7501,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "added",
+        "score": 0.6543,
+        "evidence": []
+      }
+    ],
+    "s012-2026-07-23-v1-6-0-release": [
+      {
+        "term": "participant generation",
+        "score": 1.2551,
+        "evidence": []
+      },
+      {
+        "term": "updates",
+        "score": 0.8709,
+        "evidence": []
+      },
+      {
+        "term": "fixed",
+        "score": 0.8075,
+        "evidence": []
+      }
+    ],
+    "s013-2026-07-29-v1-7-0-release": [
+      {
+        "term": "participant generation",
+        "score": 1.2551,
+        "evidence": []
+      },
+      {
+        "term": "fixed",
+        "score": 0.8075,
+        "evidence": []
+      },
+      {
+        "term": "release",
+        "score": 0.7501,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s016-2026-10-01-v1-7-3-release": [
+      {
+        "term": "gdhcn administrative",
+        "score": 1.7389,
+        "evidence": []
+      },
+      {
+        "term": "updated gdhcn",
+        "score": 1.6268,
+        "evidence": []
+      },
+      {
+        "term": "operational framework",
+        "score": 1.4721,
+        "evidence": []
+      }
+    ],
+    "s018-v1-7-5": [
+      {
+        "term": "logical model",
+        "score": 1.0029,
+        "evidence": []
+      },
+      {
+        "term": "worked",
+        "score": 0.8676,
+        "evidence": []
+      },
+      {
+        "term": "dvc",
+        "score": 0.7192,
+        "evidence": []
+      }
+    ]
+  }
+}

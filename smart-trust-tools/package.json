@@ -1,0 +1,38 @@
+{
+  "_comment": "smart-trust-tools takes the smart-hiv shape, as litlfred/smart-trust does: index.config.json pins the harness layers it needs (fhir-harness and the layers below it); they are laid down from index.lock.json and gitignored. Only the workspaces are declared here.",
+  "name": "@litlfred/smart-trust-tools",
+  "private": true,
+  "type": "module",
+  "_workspaces_comment": "The mounted code layers, as workspaces, as litlfred/smart-trust lists them: they import each other by package name and nothing publishes those packages. Each is a glob for the layer here or beside this instance (name[x] and ../name[x]), as the harness's own layers write them, so the install also works when this instance is itself mounted one level down in a downstream.",
+  "workspaces": [
+    "bootstrap-tool[s]",
+    "../bootstrap-tool[s]",
+    "cat-harnes[s]",
+    "../cat-harnes[s]",
+    "cat-harness-tool[s]",
+    "../cat-harness-tool[s]",
+    "folio-assistant-cor[e]",
+    "../folio-assistant-cor[e]",
+    "fhir-harnes[s]",
+    "../fhir-harnes[s]"
+  ],
+  "overrides": {
+    "expo": "57.0.26"
+  },
+  "_overrides_comment": "Copied from litlfred/smart-trust (2026-10-15): fhir-harness's fhirclient reaches expo through an optional dependency whose latest peer does not resolve; pinned to the version folio-assistant's bun.lock resolves.",
+  "_checkoutScripts_comment": "The gates a downstream index runs over this instance, each judging one or more of its own kinds (the @covers line of the script it runs, which audit:coverage reads). Written relative to the checkout root, as checkoutScripts are, and every checkout that runs the harness gates mounts this instance at smart-trust-tools/; this repository's own CI runs the same checks through each Tool's own command.",
+  "checkoutScripts": {
+    "check:hcert-payload-models": "bun smart-trust-tools/tools/lm-derive/check.ts",
+    "check:hcert-contract": "bun smart-trust-tools/tools/wit2kotlin/check.ts",
+    "check:hcert-generated-contract": "bun smart-trust-tools/tools/gen-api-types/check.ts",
+    "check:hcert-test-vectors": "bun smart-trust-tools/tools/check-models/check-sources.ts",
+    "check:hcert-upstream-patches": "bun smart-trust-tools/tools/check-upstream-patches/check.ts"
+  },
+  "scripts": {
+    "cat": "bun cat-harness-tools/scripts/run-script.ts",
+    "check:req-nodes": "bun tools/check-req-nodes/check.ts",
+    "site:fhir-validate": "python3 tools/fhir-validate/fhir_validate.py --site",
+    "site:viewers": "bash tools/build-site/site_viewers.sh",
+    "site:docs": "bash tools/build-site/site_docs.sh"
+  }
+}

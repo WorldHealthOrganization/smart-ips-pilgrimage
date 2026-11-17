@@ -1,0 +1,135 @@
+{
+  "$schema": "folio-code-list/v1",
+  "id": "requirement-area",
+  "title": "Requirement areas",
+  "description": "The areas the library requirements are grouped in, in reading order: the code is the middle segment of a requirement id (STT-<CODE>-nnn, written upper case there), and the steps follow WHO SMART Trust QR Code Generation. The requirements page, the explorer and the traceability matrix read the areas and their titles from here (kg_nodes.py).",
+  "source": {
+    "href": "https://smart.who.int/trust/qr_code_generation.html",
+    "note": "Steps 1 to 9 of QR Code Generation (smart-trust PR 129); the other areas group requirements by concern."
+  },
+  "codes": [
+    {
+      "code": "gen",
+      "label": "Scope, architecture and language strategy",
+      "definition": "What the libraries are for and how they are built: the full issuance and verification pipeline, each step callable on its own, a payload-agnostic core, Kotlin first and Rust second, and their targets."
+    },
+    {
+      "code": "sel",
+      "label": "Step 1: select payload type",
+      "definition": "QR Code Generation step 1: choosing the logical model and the hcert subclaim from the built-in, extensible registry.",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "pay",
+      "label": "Step 2: assemble payload",
+      "definition": "QR Code Generation step 2: building the payload and validating it against its logical model (DVCMin and its vaccine details, or the VHL payload).",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "cwt",
+      "label": "Step 3: CWT claim set",
+      "definition": "QR Code Generation step 3: wrapping the payload in a CWT claim set with integer keys, NumericDate times and an expiry inside the DSC's validity.",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "cbr",
+      "label": "Step 4: CBOR",
+      "definition": "QR Code Generation step 4: deterministic CBOR on encode, bounded decoding, and the wire format specified in CDDL.",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "cos",
+      "label": "Step 5: COSE_Sign1",
+      "definition": "QR Code Generation step 5: the COSE_Sign1 structure, ES256 and PS256, the protected header and the Sig_structure that is signed.",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "kid",
+      "label": "Key identifier",
+      "definition": "How the kid is derived from the DSC, where it is placed, its text forms, and that it is a lookup hint rather than a unique key.",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "zip",
+      "label": "Step 6: compression",
+      "definition": "QR Code Generation step 6: ZLIB/DEFLATE after signing, and protection against decompression bombs.",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "b45",
+      "label": "Step 7: Base45",
+      "definition": "QR Code Generation step 7: Base45 encoding per RFC 9285, decoded strictly.",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "hc1",
+      "label": "Step 8: context identifier",
+      "definition": "QR Code Generation step 8: the HC1: context identifier prefixed to the Base45 string, and refusing any other.",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "qr",
+      "label": "Step 9: QR code",
+      "definition": "QR Code Generation step 9: the library returns a QR-ready HC1 string and leaves QR encoding and camera scanning to the application.",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "ver",
+      "label": "Verification",
+      "definition": "Verifying an HCERT in order: decoding, header checks, trust lookup, signature, key usage, time and payload dispatch, with every failure a value naming its step and reason.",
+      "source": {
+        "href": "https://smart.who.int/trust/qr_code_generation.html"
+      }
+    },
+    {
+      "code": "tru",
+      "label": "Trust list",
+      "definition": "The trust store the host supplies: GDHCN DID trust list documents, static trust lists and the proofs on DID documents."
+    },
+    {
+      "code": "vhl",
+      "label": "Verifiable Health Link",
+      "definition": "Sharing and receiving a Verifiable Health Link: the SMART Health Links payload at HCERT key 5, the vhlink:/ form, key generation and manifest retrieval (IHE ITI VHL)."
+    },
+    {
+      "code": "iss",
+      "label": "Issuance",
+      "definition": "Issuance as a whole: two-phase signing, so the private key stays with the key holder, and test keys kept out of production artefacts."
+    },
+    {
+      "code": "sec",
+      "label": "Security",
+      "definition": "Security properties across the pipeline: no payload content in logs, and vetted cryptographic backends."
+    },
+    {
+      "code": "nfr",
+      "label": "Non-functional",
+      "definition": "Versioning, traceability to the specification, and how the libraries are distributed."
+    },
+    {
+      "code": "tst",
+      "label": "Conformance testing",
+      "definition": "Conformance vectors and tests: the PR 129 example, byte-exact CBOR, negative vectors and cross-implementation interoperability."
+    }
+  ]
+}

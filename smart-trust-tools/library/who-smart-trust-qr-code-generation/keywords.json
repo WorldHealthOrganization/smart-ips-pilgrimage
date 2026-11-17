@@ -1,0 +1,465 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "who-smart-trust-qr-code-generation",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "hepatitis vaccine",
+      "score": 5.6887,
+      "evidence": []
+    },
+    {
+      "term": "hepatitis birth",
+      "score": 5.5076,
+      "evidence": []
+    },
+    {
+      "term": "cbor payload",
+      "score": 5.5076,
+      "evidence": []
+    },
+    {
+      "term": "birth dose",
+      "score": 4.8471,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "birth visit",
+      "score": 4.8471,
+      "evidence": []
+    },
+    {
+      "term": "cwt claim",
+      "score": 4.1284,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "logical model",
+      "score": 4.0628,
+      "evidence": []
+    },
+    {
+      "term": "signing certificate",
+      "score": 4.0576,
+      "evidence": []
+    },
+    {
+      "term": "gdhcn dev",
+      "score": 3.7967,
+      "evidence": []
+    },
+    {
+      "term": "prequal product",
+      "score": 3.7192,
+      "evidence": []
+    },
+    {
+      "term": "gdhcn trust",
+      "score": 3.6136,
+      "evidence": []
+    },
+    {
+      "term": "health certificate",
+      "score": 3.5712,
+      "evidence": []
+    }
+  ],
+  "sections": {
+    "s001-generating-a-qr-code": [
+      {
+        "term": "generating",
+        "score": 1.0827,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "hcert specification",
+        "score": 0.9344,
+        "evidence": []
+      },
+      {
+        "term": "code",
+        "score": 0.9226,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s003-2-step-1-select-the-payload-type": [
+      {
+        "term": "payload",
+        "score": 1.2264,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "trust domains",
+        "score": 1.2128,
+        "evidence": []
+      },
+      {
+        "term": "step",
+        "score": 1.1485,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "subclaims",
+        "score": 1.1088,
+        "evidence": []
+      },
+      {
+        "term": "select",
+        "score": 1.0827,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "logical model",
+        "score": 1.0029,
+        "evidence": []
+      }
+    ],
+    "s004-3-step-2-assemble-the-payload": [
+      {
+        "term": "vaccine",
+        "score": 0.9178,
+        "evidence": []
+      },
+      {
+        "term": "product",
+        "score": 0.8771,
+        "evidence": []
+      },
+      {
+        "term": "administered",
+        "score": 0.8709,
+        "evidence": []
+      },
+      {
+        "term": "prequal",
+        "score": 0.8676,
+        "evidence": []
+      },
+      {
+        "term": "payload",
+        "score": 0.752,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s005-4-step-3-build-the-cwt-claim-set": [
+      {
+        "term": "cwt claim",
+        "score": 2.2178,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "validity period",
+        "score": 1.3301,
+        "evidence": []
+      },
+      {
+        "term": "build",
+        "score": 0.9416,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s006-5-step-4-serialise-as-cbor": [
+      {
+        "term": "cbor",
+        "score": 1.6331,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "serialise",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "step",
+        "score": 0.7246,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s007-6-step-5-sign-as-a-cose-sign1": [
+      {
+        "term": "sign",
+        "score": 1.6415,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "cose",
+        "score": 1.5507,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "der encoding",
+        "score": 1.545,
+        "evidence": []
+      },
+      {
+        "term": "bytes",
+        "score": 0.9792,
+        "evidence": []
+      },
+      {
+        "term": "secondary",
+        "score": 0.923,
+        "evidence": []
+      }
+    ],
+    "s009-8-step-7-encode-as-base45": [
+      {
+        "term": "encode",
+        "score": 1.5137,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "base",
+        "score": 1.4291,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "character",
+        "score": 0.8075,
+        "evidence": []
+      }
+    ],
+    "s010-9-step-8-prefix-the-context-identifier": [
+      {
+        "term": "prefix",
+        "score": 1.362,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "identifier",
+        "score": 0.9449,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "context",
+        "score": 0.7955,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s011-10-step-9-render-the-qr-code": [
+      {
+        "term": "rendered",
+        "score": 0.8069,
+        "evidence": []
+      },
+      {
+        "term": "code",
+        "score": 0.7311,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "step",
+        "score": 0.7246,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s012-11-verifying-the-same-steps-upwards": [
+      {
+        "term": "verifying",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "protected header",
+        "score": 1.1739,
+        "evidence": []
+      },
+      {
+        "term": "key usage",
+        "score": 1.0913,
+        "evidence": []
+      },
+      {
+        "term": "steps",
+        "score": 0.859,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "check",
+        "score": 0.8414,
+        "evidence": []
+      }
+    ],
+    "s014-12-1-scenario": [
+      {
+        "term": "scenario",
+        "score": 1.0827,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "newborn",
+        "score": 0.8709,
+        "evidence": []
+      },
+      {
+        "term": "schedule",
+        "score": 0.8581,
+        "evidence": []
+      },
+      {
+        "term": "paper",
+        "score": 0.6812,
+        "evidence": []
+      },
+      {
+        "term": "country",
+        "score": 0.6463,
+        "evidence": []
+      }
+    ],
+    "s015-12-2-host-country-schedule": [
+      {
+        "term": "schedule",
+        "score": 1.7161,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "birth",
+        "score": 1.2393,
+        "evidence": []
+      },
+      {
+        "term": "hours",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s016-12-3-issuer": [
+      {
+        "term": "gdhcn dev",
+        "score": 1.7422,
+        "evidence": []
+      },
+      {
+        "term": "dev trust",
+        "score": 1.2391,
+        "evidence": []
+      },
+      {
+        "term": "attribute",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "onboarded",
+        "score": 0.9592,
+        "evidence": []
+      }
+    ],
+    "s017-12-4-the-payload": [
+      {
+        "term": "prequal product",
+        "score": 1.9745,
+        "evidence": []
+      },
+      {
+        "term": "bcg",
+        "score": 0.8069,
+        "evidence": []
+      },
+      {
+        "term": "hepatitis",
+        "score": 0.7569,
+        "evidence": []
+      }
+    ],
+    "s018-12-5-size-at-each-stage": [
+      {
+        "term": "size",
+        "score": 1.3024,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "bytes",
+        "score": 1.1368,
+        "evidence": []
+      },
+      {
+        "term": "cryptography",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s019-12-6-the-certificates": [
+      {
+        "term": "signing certificate",
+        "score": 1.1833,
+        "evidence": []
+      },
+      {
+        "term": "trust list",
+        "score": 0.9064,
+        "evidence": []
+      },
+      {
+        "term": "endpoints",
+        "score": 0.7571,
+        "evidence": []
+      },
+      {
+        "term": "dev",
+        "score": 0.657,
+        "evidence": []
+      }
+    ]
+  }
+}

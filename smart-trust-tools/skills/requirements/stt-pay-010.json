@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-pay-010",
+  "title": "Payload models derived from FHIR logical models",
+  "description": "Stakeholder directive, in the context of Stakeholder directive: open standards for types and schemas; DVCMin logical model (trust-phw); DVCMinVaccineDetails logical model (trust-phw); W3C JSON-LD 1.1; W3C Shapes Constraint Language (SHACL). DVCMin logical model (trust-phw): “Minimal DVC payload for use within an HCERT Payload”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Payload models derived from FHIR logical models",
+      "conformance": "SHALL",
+      "requirement": "Payload schemas SHALL be derived mechanically from the published FHIR logical models, not written by hand: a JSON-LD 1.1 context that maps the payload's short element names to IRIs, SHACL shapes for cardinality, primitive patterns, invariants and bindings, and CDDL for the CBOR encoding. Inputs SHALL be pinned to a source commit. Typed payload codecs SHALL be checked against these derived schemas.",
+      "category": "architecture",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-PAY-010 passes in each implementation's suite (Kotlin: check_models.py).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "architecture",
+    "directive"
+  ],
+  "reference": [
+    "memory/dir-open-standards",
+    "library/who-smart-trust-phw-dvcmin",
+    "library/who-smart-trust-phw-dvcmin-vaccine-details",
+    "external-schemas/w3c-json-ld-1-1",
+    "external-schemas/w3c-shacl"
+  ]
+}

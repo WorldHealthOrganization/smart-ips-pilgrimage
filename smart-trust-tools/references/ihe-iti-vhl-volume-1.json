@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "ihe-iti-vhl-volume-1",
+  "type": "webpage",
+  "title": "IHE ITI Verifiable Health Link (VHL), Volume 1",
+  "title-short": "VHL Vol. 1",
+  "publisher": "IHE International",
+  "URL": "https://profiles.ihe.net/ITI/VHL/volume-1.html",
+  "provenance": "authored",
+  "heldAt": "library/ihe-iti-vhl-volume-1"
+}

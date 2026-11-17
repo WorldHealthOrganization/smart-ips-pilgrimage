@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "who-smart-trust-hcert",
+  "authority": "other",
+  "title": "WHO SMART Trust: Electronic Health Certificate (HCERT) Specification",
+  "version": "1.7.5 (ci-build, main e277cce)",
+  "specUrl": "https://smart.who.int/trust/hcert_spec.html",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": [],
+  "note": "WHO. Text held at library/who-smart-trust-hcert-spec."
+}

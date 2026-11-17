@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc8610",
+  "authority": "IETF",
+  "title": "RFC 8610 Concise Data Definition Language (CDDL)",
+  "version": "RFC 8610",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc8610",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

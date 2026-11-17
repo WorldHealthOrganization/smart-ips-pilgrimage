@@ -1,0 +1,38 @@
+{
+  "id": "req:stt-gen-011",
+  "title": "Same JavaScript surface from Kotlin/JS and Rust/WASM",
+  "description": "Engineering consequence of Stakeholder directive: transpile targets and API-first; jco: JavaScript toolchain for WebAssembly components.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-gen-006",
+    "req:stt-gen-010"
+  ],
+  "reference": [
+    "memory/dir-targets",
+    "external-schemas/bytecodealliance-jco"
+  ],
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Same JavaScript surface from Kotlin/JS and Rust/WASM",
+      "conformance": "SHALL",
+      "requirement": "The Node.js packages built from Kotlin/JS and from the Rust WebAssembly component SHALL expose the same TypeScript surface: the declarations jco generates from the WIT (api/generated/ts). The Kotlin/JS declarations SHALL type-check against it.",
+      "category": "architecture",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-GEN-011 passes in each implementation's suite (Kotlin: node-smoke.mjs).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "architecture",
+    "derived"
+  ]
+}

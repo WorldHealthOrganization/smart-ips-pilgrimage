@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-smart-trust-trust-domains",
+  "type": "webpage",
+  "title": "Trust Domains",
+  "title-short": "Domains",
+  "publisher": "World Health Organization",
+  "URL": "https://smart.who.int/trust/trust_domains.html",
+  "provenance": "authored",
+  "heldAt": "library/who-smart-trust-trust-domains"
+}

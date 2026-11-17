@@ -1,0 +1,9 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-trust-gdhcn-key-usage-vs",
+  "type": "webpage",
+  "title": "GDHCN Key Usage value set",
+  "publisher": "World Health Organization",
+  "URL": "https://smart.who.int/trust/ValueSet-KeyUsage.html",
+  "provenance": "authored"
+}

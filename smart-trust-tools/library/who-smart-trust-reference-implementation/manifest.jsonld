@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-reference-implementation",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "Reference Implementations",
+  "contains": [
+    "library/who-smart-trust-reference-implementation/sections/s001-trust-registry-network",
+    "library/who-smart-trust-reference-implementation/sections/s002-proof-of-concept",
+    "library/who-smart-trust-reference-implementation/sections/s003-implementation-toolkit-and-technical-specificati",
+    "library/who-smart-trust-reference-implementation/sections/s004-trust-network-gateway"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-NC-SA-3.0-IGO",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-NC-SA-3.0-IGO",
+    "basis": "WorldHealthOrganization/smart-trust LICENSE at the ingested commit: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO. Its own license.md page says Creative Commons Attribution 3.0 IGO instead (recorded as a bean). The text is held unmodified, with attribution, for non-commercial reference."
+  },
+  "meta": {
+    "doc_id": "who-smart-trust-reference-implementation",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "reference_implementation.md",
+    "source_sha256": "a7a07cd4378e7d2cbf20c29a7f74b942dee02e052197c04ee06af4c7479620ad",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

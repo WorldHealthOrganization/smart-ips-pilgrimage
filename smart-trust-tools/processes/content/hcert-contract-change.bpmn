@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns#" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#"
+                  id="Definitions_Process_HcertContractChange" targetNamespace="https://litlfred.github.io/smart-trust-tools/processes" exporter="smart-trust-tools" exporterVersion="1">
+  <bpmn:resource id="library-maintainer" name="Library maintainer"/>
+  <bpmn:collaboration id="Collaboration_Process_HcertContractChange">
+    <bpmn:participant id="Participant_Process_HcertContractChange" name="Change the library contract" processRef="Process_HcertContractChange"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_HcertContractChange" name="Change the library contract" isExecutable="false">
+    <bpmn:documentation>A WHO or IHE specification changed, or an open issue (bean) was resolved: the maintainer amends the requirements and the WIT or CDDL, regenerates what is derived from them, tests both implementations against the shared vectors, and publishes the graph. A person or an agent may do each step.</bpmn:documentation>
+    <bpmn:extensionElements><cat-harness.processes:policy enforcement="advisory"/><cat-harness.processes:log capture="off"/></bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_Process_HcertContractChange">
+      <bpmn:lane id="Lane_Maintainer" name="Library maintainer" partitionElementRef="library-maintainer">
+        <bpmn:documentation>The person or agent who keeps the contract, its generated artefacts, the conformance tests and the published graph current.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Requirements</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Contract</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Test</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Publish</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start" name="A source specification changed"><bpmn:outgoing>Flow_1</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:task id="Task_Requirements" name="Amend the requirements within the architecture rules"><bpmn:documentation>Change the req: nodes in skills/requirements/ within the architecture rules (one contract, a synchronous core with no I/O, open standards only), citing the changed source by reference.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-library-architecture"/></bpmn:extensionElements><bpmn:incoming>Flow_1</bpmn:incoming><bpmn:outgoing>Flow_2</bpmn:outgoing></bpmn:task>
+    <bpmn:task id="Task_Contract" name="Change the WIT or CDDL and regenerate its views"><bpmn:documentation>Change api/wit or api/cddl, then run wit2kotlin, gen-api-types and, if a logical model moved, fetch-lms and lm-derive. Nothing generated is edited by hand.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-contract-maintenance"/></bpmn:extensionElements><bpmn:incoming>Flow_2</bpmn:incoming><bpmn:outgoing>Flow_3</bpmn:outgoing></bpmn:task>
+    <bpmn:task id="Task_Test" name="Test against the shared vectors"><bpmn:documentation>Run check-models and the hcert-core tests on the JVM and Node against the shared vectors.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-conformance-testing"/></bpmn:extensionElements><bpmn:incoming>Flow_3</bpmn:incoming><bpmn:outgoing>Flow_4</bpmn:outgoing></bpmn:task>
+    <bpmn:task id="Task_Publish" name="Check the graph and publish the site"><bpmn:documentation>Run check-req-nodes, then publish gh-pages with stage-local: main to the root, a branch to STAGING.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-kg-publication"/></bpmn:extensionElements><bpmn:incoming>Flow_4</bpmn:incoming><bpmn:outgoing>Flow_5</bpmn:outgoing></bpmn:task>
+    <bpmn:endEvent id="End" name="Contract published"><bpmn:incoming>Flow_5</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1" sourceRef="Start" targetRef="Task_Requirements"/>
+    <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_Requirements" targetRef="Task_Contract"/>
+    <bpmn:sequenceFlow id="Flow_3" sourceRef="Task_Contract" targetRef="Task_Test"/>
+    <bpmn:sequenceFlow id="Flow_4" sourceRef="Task_Test" targetRef="Task_Publish"/>
+    <bpmn:sequenceFlow id="Flow_5" sourceRef="Task_Publish" targetRef="End"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_Process_HcertContractChange">
+      <bpmndi:BPMNShape id="Participant_Process_HcertContractChange_di" bpmnElement="Participant_Process_HcertContractChange" isHorizontal="true"><dc:Bounds x="100" y="60" width="1240" height="180"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Maintainer_di" bpmnElement="Lane_Maintainer" isHorizontal="true"><dc:Bounds x="130" y="60" width="1210" height="180"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Start_di" bpmnElement="Start"><dc:Bounds x="202" y="132" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="160" y="174" width="120" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Requirements_di" bpmnElement="Task_Requirements"><dc:Bounds x="340" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Contract_di" bpmnElement="Task_Contract"><dc:Bounds x="530" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Test_di" bpmnElement="Task_Test"><dc:Bounds x="720" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Publish_di" bpmnElement="Task_Publish"><dc:Bounds x="910" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_di" bpmnElement="End"><dc:Bounds x="1152" y="132" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="1110" y="174" width="120" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1_di" bpmnElement="Flow_1"><di:waypoint x="238" y="150"/><di:waypoint x="340" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2_di" bpmnElement="Flow_2"><di:waypoint x="480" y="150"/><di:waypoint x="530" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_3_di" bpmnElement="Flow_3"><di:waypoint x="670" y="150"/><di:waypoint x="720" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_4_di" bpmnElement="Flow_4"><di:waypoint x="860" y="150"/><di:waypoint x="910" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_5_di" bpmnElement="Flow_5"><di:waypoint x="1050" y="150"/><di:waypoint x="1152" y="150"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

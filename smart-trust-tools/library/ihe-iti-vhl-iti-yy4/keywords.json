@@ -1,0 +1,431 @@
+{
+  "$schema": "folio-keywords/v1",
+  "entry": "ihe-iti-vhl-iti-yy4",
+  "corpus": {
+    "library": "smart-trust-tools/library",
+    "sections": 151,
+    "terms": 1136,
+    "weighting": "log-entropy"
+  },
+  "document": [
+    {
+      "term": "vhl holder",
+      "score": 8.9999,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "vhl receiver",
+      "score": 8.9267,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "vhl payload",
+      "score": 8.7519,
+      "evidence": []
+    },
+    {
+      "term": "enveloped vhl",
+      "score": 8.463,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "extract vhl",
+      "score": 8.407,
+      "evidence": []
+    },
+    {
+      "term": "vhl sharer",
+      "score": 8.3824,
+      "evidence": []
+    },
+    {
+      "term": "validate vhl",
+      "score": 7.9576,
+      "evidence": []
+    },
+    {
+      "term": "vhl option",
+      "score": 7.6406,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "actions vhl",
+      "score": 7.5737,
+      "evidence": [
+        "heading"
+      ]
+    },
+    {
+      "term": "vhl transaction",
+      "score": 7.3879,
+      "evidence": []
+    },
+    {
+      "term": "code transmission",
+      "score": 5.1453,
+      "evidence": []
+    },
+    {
+      "term": "cwt signature",
+      "score": 4.8159,
+      "evidence": []
+    }
+  ],
+  "sections": {
+    "s002-2-3-yy4-1-scope": [
+      {
+        "term": "extension",
+        "score": 1.0363,
+        "evidence": []
+      },
+      {
+        "term": "vhl sharer",
+        "score": 0.9351,
+        "evidence": []
+      },
+      {
+        "term": "assign",
+        "score": 0.9296,
+        "evidence": []
+      },
+      {
+        "term": "url",
+        "score": 0.6748,
+        "evidence": []
+      }
+    ],
+    "s003-2-3-yy4-2-actor-roles": [
+      {
+        "term": "actor",
+        "score": 1.3296,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "roles",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "receives",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s004-2-3-yy4-3-referenced-standards": [
+      {
+        "term": "json web",
+        "score": 1.6382,
+        "evidence": []
+      },
+      {
+        "term": "web token",
+        "score": 1.619,
+        "evidence": []
+      },
+      {
+        "term": "compressed data",
+        "score": 0.9985,
+        "evidence": []
+      }
+    ],
+    "s007-2-3-yy4-4-1-1-trigger-events": [
+      {
+        "term": "vhl holder",
+        "score": 1.3402,
+        "evidence": []
+      },
+      {
+        "term": "trigger",
+        "score": 1.1948,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "vhl transaction",
+        "score": 1.1132,
+        "evidence": []
+      }
+    ],
+    "s008-2-3-yy4-4-1-2-message-semantics": [
+      {
+        "term": "enveloped vhl",
+        "score": 1.1191,
+        "evidence": []
+      },
+      {
+        "term": "vhl payload",
+        "score": 1.0627,
+        "evidence": []
+      },
+      {
+        "term": "conveyed",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "vhl sharer",
+        "score": 0.9585,
+        "evidence": []
+      },
+      {
+        "term": "verifiable credential",
+        "score": 0.8645,
+        "evidence": []
+      }
+    ],
+    "s009-2-3-yy4-4-1-3-expected-actions-vhl-holder": [
+      {
+        "term": "vhl holder",
+        "score": 2.7988,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "passcode out-of-band",
+        "score": 1.2998,
+        "evidence": []
+      },
+      {
+        "term": "enveloped vhl",
+        "score": 1.1783,
+        "evidence": []
+      },
+      {
+        "term": "flag present",
+        "score": 1.1712,
+        "evidence": []
+      },
+      {
+        "term": "vhl sharer",
+        "score": 1.0177,
+        "evidence": []
+      }
+    ],
+    "s010-2-3-yy4-4-1-4-expected-actions-vhl-receiver": [
+      {
+        "term": "vhl receiver",
+        "score": 3.8017,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "extract vhl",
+        "score": 2.6165,
+        "evidence": []
+      },
+      {
+        "term": "base decoding",
+        "score": 2.367,
+        "evidence": []
+      },
+      {
+        "term": "base decode",
+        "score": 2.337,
+        "evidence": []
+      },
+      {
+        "term": "validate vhl",
+        "score": 2.2749,
+        "evidence": []
+      },
+      {
+        "term": "cwt claims",
+        "score": 2.0645,
+        "evidence": []
+      },
+      {
+        "term": "vhl payload",
+        "score": 1.9285,
+        "evidence": []
+      },
+      {
+        "term": "payload format",
+        "score": 1.8938,
+        "evidence": []
+      }
+    ],
+    "s013-2-3-yy4-4-2-2-message-semantics": [
+      {
+        "term": "receipt",
+        "score": 1.2309,
+        "evidence": []
+      },
+      {
+        "term": "semantics",
+        "score": 0.7476,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "identifier",
+        "score": 0.6921,
+        "evidence": []
+      }
+    ],
+    "s014-2-3-yy4-4-2-3-expected-actions": [
+      {
+        "term": "acknowledgment",
+        "score": 0.9592,
+        "evidence": []
+      },
+      {
+        "term": "actions",
+        "score": 0.6865,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "expected",
+        "score": 0.6095,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s016-2-3-yy4-5-1-vhl-integrity-and-authenticity": [
+      {
+        "term": "authenticity",
+        "score": 0.9416,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "vhl",
+        "score": 0.7897,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "integrity",
+        "score": 0.6888,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ],
+    "s018-2-3-yy4-5-3-replay-attacks": [
+      {
+        "term": "replay",
+        "score": 1.6138,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "attacks",
+        "score": 1.0827,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "vhl sharers",
+        "score": 1.0798,
+        "evidence": []
+      }
+    ],
+    "s019-2-3-yy4-5-4-passcode-protection": [
+      {
+        "term": "passcode",
+        "score": 1.771,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "protection",
+        "score": 0.9416,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "communicated",
+        "score": 0.5414,
+        "evidence": []
+      }
+    ],
+    "s020-2-3-yy4-5-5-trust-network-validation": [
+      {
+        "term": "trust network",
+        "score": 1.4632,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "validation",
+        "score": 0.6019,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "kid",
+        "score": 0.5974,
+        "evidence": []
+      }
+    ],
+    "s021-2-3-yy4-5-6-qr-code-security": [
+      {
+        "term": "security",
+        "score": 0.8822,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "code",
+        "score": 0.7311,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "display",
+        "score": 0.7159,
+        "evidence": []
+      }
+    ],
+    "s022-2-3-yy4-5-7-vc-enveloped-vhl-option-security": [
+      {
+        "term": "vhl",
+        "score": 0.8792,
+        "evidence": [
+          "heading"
+        ]
+      },
+      {
+        "term": "vcs",
+        "score": 0.8771,
+        "evidence": []
+      },
+      {
+        "term": "enveloped",
+        "score": 0.6698,
+        "evidence": [
+          "heading"
+        ]
+      }
+    ]
+  }
+}

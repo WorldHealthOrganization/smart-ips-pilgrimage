@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc9285",
+  "authority": "IETF",
+  "title": "RFC 9285 The Base45 Data Encoding",
+  "version": "RFC 9285",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc9285",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "vhl-sharer",
+  "title": "VHL Sharer",
+  "kind": "system",
+  "description": "IHE ITI VHL VHLSharer: the system that issues a Verifiable Health Link and serves its manifest. In smart-trust terms the Issuer: it also issues HCERT certificates, signing them with a Document Signer Certificate.",
+  "roles": [
+    "hcert-issuing-system",
+    "vhl-sharer"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedBy": [
+      "https://profiles.ihe.net/ITI/VHL/ActorDefinition/VHLSharer",
+      "http://smart.who.int/trust/ActorDefinition/Issuer"
+    ],
+    "reference": [
+      "library/ihe-iti-vhl-actors/sections/s001-actors-fsh",
+      "library/who-smart-trust-actors/sections/s001-actors-fsh"
+    ]
+  }
+}

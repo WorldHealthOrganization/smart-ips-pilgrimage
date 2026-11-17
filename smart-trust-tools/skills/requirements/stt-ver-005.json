@@ -1,0 +1,35 @@
+{
+  "id": "req:stt-ver-005",
+  "title": "Time checks with an injected clock",
+  "description": "Restates QR Code Generation, 11. Verifying: the same steps upwards; HCERT Specification, 3.2.5 Expiration Time; HCERT Specification, 3.2.6 Issued At. QR Code Generation, 11. Verifying: the same steps upwards: “Decode the CBOR payload and check exp and iat against the current time.”. HCERT Specification, 3.2.5 Expiration Time: “after which a Verifier MUST reject the Payload as expired”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Time checks with an injected clock",
+      "conformance": "SHALL",
+      "requirement": "The verifier SHALL reject a certificate whose exp is in the past, and one whose iat is in the future beyond a configurable clock-skew tolerance. The current time SHALL be passed in by the caller (now), never read from an ambient clock.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VER-005 passes in each implementation's suite (Kotlin: `STT-VER-005 time is the clock the caller passes, with the skew it allows` (VerifyTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s012-11-verifying-the-same-steps-upwards",
+    "library/who-smart-trust-hcert-spec/sections/s011-3-2-5-expiration-time",
+    "library/who-smart-trust-hcert-spec/sections/s012-3-2-6-issued-at"
+  ]
+}

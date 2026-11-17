@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-pay-005",
+  "title": "Subjects with no identity document",
+  "description": "Restates QR Code Generation, 3. Step 2 — Assemble the payload; QR Code Generation, 12.1 Scenario. QR Code Generation, 3. Step 2 — Assemble the payload: “id is optional precisely because many certificate subjects have no identification document.”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-pay-001"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s004-3-step-2-assemble-the-payload",
+    "library/who-smart-trust-qr-code-generation/sections/s014-12-1-scenario"
+  ],
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Subjects with no identity document",
+      "conformance": "SHALL",
+      "requirement": "The DVCMin model SHALL allow id and dt to be absent and SHALL support gn (parent or guardian) for subjects such as newborns.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-PAY-005 passes in each implementation's suite (Kotlin: `STT-PAY-001 STT-PAY-002 STT-PAY-005 a newborn's DVCMin, with no identity document, round-trips as typed fields` (AssemblePayloadTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}

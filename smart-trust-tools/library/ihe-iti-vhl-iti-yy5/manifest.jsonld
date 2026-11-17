@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy5",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "IHE VHL ITI-YY5 Retrieve Manifest",
+  "contains": [
+    "library/ihe-iti-vhl-iti-yy5/sections/s001-input-pagecontent-iti-yy5-md",
+    "library/ihe-iti-vhl-iti-yy5/sections/s002-2-3-yy5-1-scope",
+    "library/ihe-iti-vhl-iti-yy5/sections/s003-2-3-yy5-2-actor-roles",
+    "library/ihe-iti-vhl-iti-yy5/sections/s004-2-3-yy5-3-referenced-standards",
+    "library/ihe-iti-vhl-iti-yy5/sections/s005-2-3-yy5-4-messages",
+    "library/ihe-iti-vhl-iti-yy5/sections/s006-2-3-yy5-4-1-retrieve-manifest-request-message",
+    "library/ihe-iti-vhl-iti-yy5/sections/s007-2-3-yy5-4-1-1-trigger-events",
+    "library/ihe-iti-vhl-iti-yy5/sections/s008-2-3-yy5-4-1-2-message-semantics",
+    "library/ihe-iti-vhl-iti-yy5/sections/s009-2-3-yy5-4-1-3-authentication-option-http-message",
+    "library/ihe-iti-vhl-iti-yy5/sections/s010-2-3-yy5-4-1-4-authentication-option-oauth-with-s",
+    "library/ihe-iti-vhl-iti-yy5/sections/s011-2-3-yy5-4-1-5-authentication-option-verifiable-c",
+    "library/ihe-iti-vhl-iti-yy5/sections/s012-2-3-yy5-4-1-6-expected-actions-vhl-receiver",
+    "library/ihe-iti-vhl-iti-yy5/sections/s013-2-3-yy5-4-1-7-expected-actions-vhl-sharer",
+    "library/ihe-iti-vhl-iti-yy5/sections/s014-2-3-yy5-4-2-retrieve-manifest-response-message",
+    "library/ihe-iti-vhl-iti-yy5/sections/s015-2-3-yy5-4-2-1-trigger-events",
+    "library/ihe-iti-vhl-iti-yy5/sections/s016-2-3-yy5-4-2-2-message-semantics",
+    "library/ihe-iti-vhl-iti-yy5/sections/s017-2-3-yy5-4-2-3-expected-actions",
+    "library/ihe-iti-vhl-iti-yy5/sections/s018-2-3-yy5-4-2-4-document-content-retrieval",
+    "library/ihe-iti-vhl-iti-yy5/sections/s019-2-3-yy5-4-2-5-document-encryption",
+    "library/ihe-iti-vhl-iti-yy5/sections/s020-2-3-yy5-5-security-considerations",
+    "library/ihe-iti-vhl-iti-yy5/sections/s021-2-3-yy5-5-1-transport-security",
+    "library/ihe-iti-vhl-iti-yy5/sections/s022-2-3-yy5-5-2-http-message-signatures",
+    "library/ihe-iti-vhl-iti-yy5/sections/s023-2-3-yy5-5-3-oauth-with-ssraa-option",
+    "library/ihe-iti-vhl-iti-yy5/sections/s024-2-3-yy5-5-4-vhl-authorization",
+    "library/ihe-iti-vhl-iti-yy5/sections/s025-2-3-yy5-5-5-trust-network-validation",
+    "library/ihe-iti-vhl-iti-yy5/sections/s026-2-3-yy5-5-6-audit-logging",
+    "library/ihe-iti-vhl-iti-yy5/sections/s027-2-3-yy5-5-7-rate-limiting",
+    "library/ihe-iti-vhl-iti-yy5/sections/s028-2-3-yy5-5-8-passcode-security",
+    "library/ihe-iti-vhl-iti-yy5/sections/s029-2-3-yy5-5-9-verifiable-credential-option"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-4.0",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-4.0",
+    "basis": "IHE/ITI.VHL LICENSE (Creative Commons Attribution 4.0 International) and sushi-config.yaml license: CC-BY-4.0 at the ingested commit. The text is held unmodified, with attribution."
+  },
+  "meta": {
+    "doc_id": "ihe-iti-vhl-iti-yy5",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "ITI-YY5.md",
+    "source_sha256": "55f019cb8d2a3f894d4930b9b969a61a1b031e6c73848fb9ab1bce277d94f8a0",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

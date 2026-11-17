@@ -1,0 +1,35 @@
+{
+  "id": "req:stt-ver-009",
+  "title": "Fully offline verification",
+  "description": "Engineering consequence of QR Code Generation, 2.2 Choosing between a DVC and a VHL; QR Code Generation, 12.1 Scenario. QR Code Generation, 2.2 Choosing between a DVC and a VHL: “Works fully offline — Yes — verifier needs only the trust list”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-receiver",
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Fully offline verification",
+      "conformance": "SHALL",
+      "requirement": "Given a cached or static trust list, verification SHALL need no network access.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VER-009 passes in each implementation's suite (Kotlin: `STT-VER-008 STT-VER-009 every failure is a value naming its step and reason, offline` (VerifyTest.kt); `STT-GEN-012 STT-VHL-010 STT-VER-009 the core does no network, file or asynchronous I-O` (ArchitectureTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s003-2-step-1-select-the-payload-type",
+    "library/who-smart-trust-qr-code-generation/sections/s014-12-1-scenario"
+  ]
+}

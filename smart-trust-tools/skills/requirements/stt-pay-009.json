@@ -1,0 +1,36 @@
+{
+  "id": "req:stt-pay-009",
+  "title": "Other payloads",
+  "description": "Engineering consequence of QR Code Generation, 2.1 Subclaims defined in this guide; HCert logical model; MedicationTreatmentLineMin logical model (ph4h); DDCC Implementation Guide.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Other payloads",
+      "conformance": "SHALL",
+      "requirement": "Subclaim 5 SHALL have a typed codec holding a URI string. Subclaims 1, 3, 4 and -7 SHALL at least be issuable and verifiable as raw CBOR payloads. Typed codecs for them MAY follow.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-PAY-009 passes in each implementation's suite (Kotlin: `STT-PAY-009 STT-GEN-003 another payload passes through the core untouched` (AssemblePayloadTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s003-2-step-1-select-the-payload-type",
+    "library/who-smart-trust-hcert-model",
+    "references/who-ph4h-medication-treatment-line-min",
+    "references/who-ddcc-ig"
+  ]
+}

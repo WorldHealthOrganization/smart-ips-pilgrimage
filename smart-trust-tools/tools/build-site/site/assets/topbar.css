@@ -1,0 +1,71 @@
+/* Design tokens and the viewer top bar. Shared by every site page (through
+   site.css) and by the TypeDoc reference, which loads only this file so its
+   own stylesheet keeps the rest of the page. */
+:root {
+  --bg: #f6f8f7;
+  --surface: #fcfcfb;
+  --surface-2: #eef2f0;
+  --line: #d5dedb;
+  --fg: #12201d;
+  --fg-2: #46564f;
+  --fg-3: #6b7a74;
+  --accent: #0b6e66;
+  --accent-ink: #ffffff;
+  --link: #0a5f84;
+  --code-bg: #eef2f0;
+  --tok-comment: #6b7a74;
+  --tok-key: #8a3a00;
+  --tok-name: #0a5f84;
+  --tok-str: #2f6b1f;
+  /* graph families (validated categorical slots 1-3, light) */
+  --fam-requirement: #2a78d6;
+  --fam-source: #eb6834;
+  --fam-realization: #1baf7a;
+  --fam-model: #8e5cd9;
+  --status-warning: #fab219;
+  --status-warning-ink: #6b4500;
+  --font-display: "Bricolage Grotesque", "Public Sans", system-ui, sans-serif;
+  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.125rem;
+  --step-2: 1.4rem;
+  --step-3: 1.9rem;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-fa-scheme="light"]) {
+    --bg: #0f1514; --surface: #151c1b; --surface-2: #1c2523; --line: #2c3a37;
+    --fg: #e4ece9; --fg-2: #b2c0bb; --fg-3: #8a9893;
+    --accent: #3cc4b2; --accent-ink: #062320; --link: #6cc3ea;
+    --code-bg: #1a2321; --tok-comment: #8a9893; --tok-key: #f0a56b; --tok-name: #6cc3ea; --tok-str: #9ad27f;
+    --fam-requirement: #3987e5; --fam-source: #d95926; --fam-realization: #199e70; --fam-model: #a37ae6;
+    --status-warning-ink: #fab219;
+    color-scheme: dark;
+  }
+}
+:root[data-fa-scheme="dark"] {
+  --bg: #0f1514; --surface: #151c1b; --surface-2: #1c2523; --line: #2c3a37;
+  --fg: #e4ece9; --fg-2: #b2c0bb; --fg-3: #8a9893;
+  --accent: #3cc4b2; --accent-ink: #062320; --link: #6cc3ea;
+  --code-bg: #1a2321; --tok-comment: #8a9893; --tok-key: #f0a56b; --tok-name: #6cc3ea; --tok-str: #9ad27f;
+  --fam-requirement: #3987e5; --fam-source: #d95926; --fam-realization: #199e70; --fam-model: #a37ae6;
+  --status-warning-ink: #fab219;
+  color-scheme: dark;
+}
+
+/* Top bar */
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--surface); border-bottom: 1px solid var(--line); }
+.topbar-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 20px; padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.brand { font-family: var(--font-display); font-weight: 700; font-size: var(--step-1); color: var(--fg); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+.brand-mark { width: 18px; height: 18px; display: inline-grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.brand-mark i { background: var(--accent); border-radius: 1px; }
+.brand-mark i:nth-child(2), .brand-mark i:nth-child(4), .brand-mark i:nth-child(9) { background: transparent; border: 1px solid var(--accent); }
+.nav { display: flex; flex-wrap: wrap; gap: 2px 4px; }
+.nav a { color: var(--fg-2); text-decoration: none; padding: 4px 9px; border-radius: 999px; font-size: var(--step--1); font-weight: 550; }
+.nav a:hover { background: var(--surface-2); color: var(--fg); }
+.nav a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); }
+/* In the TypeDoc pages, TypeDoc's own toolbar is the sticky one. */
+.topbar.in-typedoc { position: static; font-family: var(--font-body); line-height: 1.55; }
+.topbar.in-typedoc .nav a { text-decoration: none; }

@@ -1,0 +1,38 @@
+{
+  "id": "req:stt-b45-002",
+  "title": "Strict Base45 decoding",
+  "description": "Engineering consequence of RFC 9285 The Base45 Data Encoding; HCERT Specification, 6.3 Input Data Validation.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-b45-001"
+  ],
+  "reference": [
+    "external-schemas/ietf-rfc9285",
+    "library/who-smart-trust-hcert-spec/sections/s025-6-3-input-data-validation"
+  ],
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Strict Base45 decoding",
+      "conformance": "SHALL",
+      "requirement": "The decoder SHALL reject characters outside the 45-character alphabet, a dangling single character, and triplets or pairs whose value overflows (above 65535, or above 255 for a trailing pair).",
+      "category": "security",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-B45-002 passes in each implementation's suite (Kotlin: `STT-B45-002 lower case, a dangling character and an out-of-range triple are refused` (Base45Test.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "security",
+    "derived"
+  ]
+}

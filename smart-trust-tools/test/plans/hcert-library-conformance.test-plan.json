@@ -1,0 +1,973 @@
+{
+  "$schema": "test-plan/v1",
+  "id": "hcert-library-conformance",
+  "title": "SMART Trust HCERT and VHL library conformance",
+  "status": "draft",
+  "version": "1",
+  "description": "The plan any implementation of the library requirements runs: the Kotlin library (tools/hcert-kotlin) today, the Rust library when it exists. One case per skill; each assertion is a requirement statement's success criterion verified by test (req:<id>#<statement>/<criterion>), so a verdict on an assertion is a verdict on that criterion. Criteria verified by review or inspection are not in this plan: they are judged at release review. A case passes when every required assertion has a passing test named after its requirement in the implementation's suite, run in CI on every target (JVM and Node for Kotlin; native and wasm32 for Rust). The fixed data is the smart-trust PR 129 certificate, the negative vectors derived from it, the GDHCN trust domain code systems and the IHE VHL fixtures; the generated data is the seeded fuzzer's. CI also enforces a coverage floor (STT-TST-010). The WHO-ITB comparison is the separate plan who-itb-agreement, which runs after this one.",
+  "scope": {
+    "kind": "tool",
+    "versionRange": "*"
+  },
+  "requirements": [
+    "req:stt-b45-001",
+    "req:stt-b45-002",
+    "req:stt-cbr-001",
+    "req:stt-cbr-002",
+    "req:stt-cbr-003",
+    "req:stt-cbr-004",
+    "req:stt-cos-001",
+    "req:stt-cos-002",
+    "req:stt-cos-003",
+    "req:stt-cos-004",
+    "req:stt-cos-005",
+    "req:stt-cos-006",
+    "req:stt-cwt-001",
+    "req:stt-cwt-002",
+    "req:stt-cwt-003",
+    "req:stt-cwt-004",
+    "req:stt-cwt-005",
+    "req:stt-cwt-006",
+    "req:stt-gen-001",
+    "req:stt-gen-002",
+    "req:stt-gen-003",
+    "req:stt-gen-004",
+    "req:stt-gen-005",
+    "req:stt-gen-006",
+    "req:stt-gen-009",
+    "req:stt-gen-010",
+    "req:stt-gen-011",
+    "req:stt-gen-012",
+    "req:stt-gen-014",
+    "req:stt-hc1-001",
+    "req:stt-iss-003",
+    "req:stt-iss-004",
+    "req:stt-kid-001",
+    "req:stt-kid-002",
+    "req:stt-kid-003",
+    "req:stt-pay-001",
+    "req:stt-pay-002",
+    "req:stt-pay-003",
+    "req:stt-pay-004",
+    "req:stt-pay-005",
+    "req:stt-pay-007",
+    "req:stt-pay-008",
+    "req:stt-pay-009",
+    "req:stt-pay-010",
+    "req:stt-qr-001",
+    "req:stt-sec-001",
+    "req:stt-sec-002",
+    "req:stt-sel-001",
+    "req:stt-sel-002",
+    "req:stt-sel-003",
+    "req:stt-sel-004",
+    "req:stt-sel-006",
+    "req:stt-tru-001",
+    "req:stt-tru-002",
+    "req:stt-tru-005",
+    "req:stt-tru-006",
+    "req:stt-tst-001",
+    "req:stt-tst-002",
+    "req:stt-tst-003",
+    "req:stt-tst-004",
+    "req:stt-tst-005",
+    "req:stt-tst-006",
+    "req:stt-tst-007",
+    "req:stt-tst-008",
+    "req:stt-tst-010",
+    "req:stt-tst-011",
+    "req:stt-ver-001",
+    "req:stt-ver-002",
+    "req:stt-ver-003",
+    "req:stt-ver-004",
+    "req:stt-ver-005",
+    "req:stt-ver-006",
+    "req:stt-ver-007",
+    "req:stt-ver-008",
+    "req:stt-ver-009",
+    "req:stt-ver-011",
+    "req:stt-vhl-001",
+    "req:stt-vhl-002",
+    "req:stt-vhl-003",
+    "req:stt-vhl-004",
+    "req:stt-vhl-005",
+    "req:stt-vhl-006",
+    "req:stt-vhl-007",
+    "req:stt-vhl-008",
+    "req:stt-vhl-009",
+    "req:stt-vhl-010",
+    "req:stt-zip-001",
+    "req:stt-zip-002"
+  ],
+  "testCases": [
+    {
+      "id": "hcert-assemble-payload",
+      "description": "Step 2: build and validate the payload against its logical model (DVCMin, or a VHL payload), keeping unknown elements.",
+      "assertions": [
+        {
+          "id": "req:stt-gen-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-001 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-pay-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-001 passes in each implementation's suite (Kotlin: `STT-PAY-001 STT-PAY-002 STT-PAY-005 a newborn's DVCMin, with no identity document, round-trips as typed fields` (AssemblePayloadTest.kt); `STT-TST-001 STT-PAY-001 both PR 129 certificates verify and decode as published` (ConformanceVectorsTest.kt))."
+        },
+        {
+          "id": "req:stt-pay-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-002 passes in each implementation's suite (Kotlin: `STT-PAY-001 STT-PAY-002 STT-PAY-005 a newborn's DVCMin, with no identity document, round-trips as typed fields` (AssemblePayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-pay-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-003 passes in each implementation's suite (Kotlin: `STT-PAY-003 one immunization event per DVC` (AssemblePayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-pay-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-004 passes in each implementation's suite (Kotlin: `STT-PAY-004 STT-PAY-007 an invalid payload is refused, naming each rule` (AssemblePayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-pay-005#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-005 passes in each implementation's suite (Kotlin: `STT-PAY-001 STT-PAY-002 STT-PAY-005 a newborn's DVCMin, with no identity document, round-trips as typed fields` (AssemblePayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-pay-007#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-007 passes in each implementation's suite (Kotlin: `STT-PAY-004 STT-PAY-007 an invalid payload is refused, naming each rule` (AssemblePayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-pay-008#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-008 passes in each implementation's suite (Kotlin: `STT-PAY-008 unknown payload elements are kept` (AssemblePayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-pay-009#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-009 passes in each implementation's suite (Kotlin: `STT-PAY-009 STT-GEN-003 another payload passes through the core untouched` (AssemblePayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-pay-010#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-010 passes in each implementation's suite (Kotlin: check_models.py)."
+        }
+      ],
+      "testData": [],
+      "feature": "test/features/hcert-assemble-payload.feature"
+    },
+    {
+      "id": "hcert-build-cwt",
+      "description": "Step 3: wrap the payload in a CWT claim set (iss, iat, exp, hcert -260) inside the DSC's validity.",
+      "assertions": [
+        {
+          "id": "req:stt-cbr-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CBR-004 passes in each implementation's suite (Kotlin: check_models.py)."
+        },
+        {
+          "id": "req:stt-cwt-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CWT-001 passes in each implementation's suite (Kotlin: `STT-CWT-001 STT-CWT-002 claim keys are integers and dates are integer NumericDates` (BuildCwtTest.kt))."
+        },
+        {
+          "id": "req:stt-cwt-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CWT-002 passes in each implementation's suite (Kotlin: `STT-CWT-001 STT-CWT-002 claim keys are integers and dates are integer NumericDates` (BuildCwtTest.kt))."
+        },
+        {
+          "id": "req:stt-cwt-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CWT-003 passes in each implementation's suite (Kotlin: `STT-CWT-003 an HCERT without exp is refused on issue and on verify` (BuildCwtTest.kt))."
+        },
+        {
+          "id": "req:stt-cwt-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CWT-004 passes in each implementation's suite (Kotlin: `STT-CWT-004 the validity must fit inside the DSC's` (BuildCwtTest.kt))."
+        },
+        {
+          "id": "req:stt-cwt-005#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CWT-005 passes in each implementation's suite (Kotlin: `STT-CWT-005 iss is optional, and alpha-2 when present` (BuildCwtTest.kt))."
+        },
+        {
+          "id": "req:stt-cwt-006#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CWT-006 passes in each implementation's suite (Kotlin: `STT-CWT-006 claims this version does not know are kept` (BuildCwtTest.kt))."
+        },
+        {
+          "id": "req:stt-gen-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-001 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-sel-004#statement/test",
+          "type": "required",
+          "expectation": "Tests named after STT-SEL-004 pass in each implementation's suite (Kotlin: `STT-SEL-004 STT-ISS-004 a certificate with a DVC and a VHL verifies with both entries`, `STT-SEL-004 maxPayloads refuses more entries than the profile allows`, `STT-SEL-004 an invalid entry is left out and reported`, `STT-SEL-004 issuance refuses no payload and a duplicate subclaim` (SelectPayloadTest.kt)), and the cross-implementation DVC+VHL checks pass (tools/conformance-ts/cross.ts)."
+        }
+      ],
+      "testData": [],
+      "feature": "test/features/hcert-build-cwt.feature"
+    },
+    {
+      "id": "hcert-compress",
+      "description": "Step 6: ZLIB/DEFLATE after signing, and bounded inflation.",
+      "assertions": [
+        {
+          "id": "req:stt-gen-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-001 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-zip-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-ZIP-001 passes in each implementation's suite (Kotlin: `STT-ZIP-001 what is compressed is the signed COSE_Sign1, as a ZLIB stream` (CompressTest.kt))."
+        },
+        {
+          "id": "req:stt-zip-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-ZIP-002 passes in each implementation's suite (Kotlin: `STT-ZIP-002 a decompression bomb stops at the limit` (CompressTest.kt))."
+        }
+      ],
+      "testData": [
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA.json"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA-dsc.pem"
+        }
+      ],
+      "feature": "test/features/hcert-compress.feature"
+    },
+    {
+      "id": "hcert-encode-base45",
+      "description": "Step 7: RFC 9285 Base45, decoded strictly.",
+      "assertions": [
+        {
+          "id": "req:stt-b45-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-B45-001 passes in each implementation's suite (Kotlin: `STT-B45-001 the RFC 9285 section 4-3 examples` (Base45Test.kt))."
+        },
+        {
+          "id": "req:stt-b45-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-B45-002 passes in each implementation's suite (Kotlin: `STT-B45-002 lower case, a dangling character and an out-of-range triple are refused` (Base45Test.kt))."
+        },
+        {
+          "id": "req:stt-gen-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-001 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        }
+      ],
+      "testData": [
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA.json"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA-dsc.pem"
+        }
+      ],
+      "feature": "test/features/hcert-encode-base45.feature"
+    },
+    {
+      "id": "hcert-encode-cbor",
+      "description": "Step 4: serialise as RFC 8949 deterministic CBOR, and decode untrusted CBOR within limits.",
+      "assertions": [
+        {
+          "id": "req:stt-cbr-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CBR-001 passes in each implementation's suite (Kotlin: `STT-CBR-001 maps are encoded in deterministic key order, whatever order they were built in` (EncodeCborTest.kt); `STT-TST-002 STT-CBR-001 deterministic re-encoding reproduces the issued CWT byte for byte` (ConformanceVectorsTest.kt))."
+        },
+        {
+          "id": "req:stt-cbr-002#statement/test",
+          "type": "informative",
+          "expectation": "A test named after STT-CBR-002 passes in each implementation's suite (Kotlin: `STT-CBR-002 text is NFC-normalised on encode, and a non-normalised string still decodes` (EncodeCborTest.kt))."
+        },
+        {
+          "id": "req:stt-cbr-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CBR-003 passes in each implementation's suite (Kotlin: `STT-CBR-003 nesting beyond the limit is refused` (EncodeCborTest.kt))."
+        },
+        {
+          "id": "req:stt-cbr-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CBR-004 passes in each implementation's suite (Kotlin: check_models.py)."
+        },
+        {
+          "id": "req:stt-gen-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-001 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        }
+      ],
+      "testData": [
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA.json"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA-dsc.pem"
+        }
+      ],
+      "feature": "test/features/hcert-encode-cbor.feature"
+    },
+    {
+      "id": "hcert-prefix-context",
+      "description": "Steps 8 and 9: the HC1: context identifier, giving a QR-ready string the application renders with its own QR encoder.",
+      "assertions": [
+        {
+          "id": "req:stt-gen-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-001 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-hc1-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-HC1-001 passes in each implementation's suite (Kotlin: `STT-HC1-001 HC1 is the only context, version 1 the only version` (PrefixContextTest.kt))."
+        },
+        {
+          "id": "req:stt-qr-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-QR-001 passes in each implementation's suite (Kotlin: `STT-QR-001 the output is a QR-ready string in the Alphanumeric alphabet` (PrefixContextTest.kt))."
+        }
+      ],
+      "testData": [
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA.json"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA-dsc.pem"
+        }
+      ],
+      "feature": "test/features/hcert-prefix-context.feature"
+    },
+    {
+      "id": "hcert-select-payload",
+      "description": "Step 1: choose the logical model and hcert subclaim for a use case, from the registry the IG defines.",
+      "assertions": [
+        {
+          "id": "req:stt-gen-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-001 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-sel-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-SEL-001 passes in each implementation's suite (Kotlin: `STT-SEL-001 the registry holds the subclaims the guide defines` (SelectPayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-sel-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-SEL-002 passes in each implementation's suite (Kotlin: `STT-SEL-002 a host registers its own subclaim and issues under it` (SelectPayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-sel-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-SEL-003 passes in each implementation's suite (Kotlin: `STT-SEL-003 a development-range subclaim needs the explicit opt-in` (SelectPayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-sel-004#statement/test",
+          "type": "required",
+          "expectation": "Tests named after STT-SEL-004 pass in each implementation's suite (Kotlin: `STT-SEL-004 STT-ISS-004 a certificate with a DVC and a VHL verifies with both entries`, `STT-SEL-004 maxPayloads refuses more entries than the profile allows`, `STT-SEL-004 an invalid entry is left out and reported`, `STT-SEL-004 issuance refuses no payload and a duplicate subclaim` (SelectPayloadTest.kt)), and the cross-implementation DVC+VHL checks pass (tools/conformance-ts/cross.ts)."
+        },
+        {
+          "id": "req:stt-sel-006#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-SEL-006 passes in each implementation's suite (Kotlin: `STT-SEL-006 trust domains are read from the GDHCN code system, not a closed list` (TrustListTest.kt))."
+        }
+      ],
+      "testData": [],
+      "feature": "test/features/hcert-select-payload.feature"
+    },
+    {
+      "id": "hcert-sign-cose",
+      "description": "Step 5: sign as COSE_Sign1 (ES256 or PS256) in two phases, the private key staying with its holder.",
+      "assertions": [
+        {
+          "id": "req:stt-cbr-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CBR-004 passes in each implementation's suite (Kotlin: check_models.py)."
+        },
+        {
+          "id": "req:stt-cos-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-COS-001 passes in each implementation's suite (Kotlin: `STT-COS-001 STT-COS-003 a tagged COSE_Sign1 with alg and kid in the protected header` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-cos-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-COS-002 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-cos-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-COS-003 passes in each implementation's suite (Kotlin: `STT-COS-001 STT-COS-003 a tagged COSE_Sign1 with alg and kid in the protected header` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-cos-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-COS-004 passes in each implementation's suite (Kotlin: `STT-COS-004 STT-ISS-004 what is signed is the Signature1 structure prepare returns` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-cos-005#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-COS-005 passes in each implementation's suite (Kotlin: `STT-COS-005 an ES256 signature is a fixed-width 64-byte r and s, whatever the signer returns` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-cos-006#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-COS-006 passes in each implementation's suite (Kotlin: `STT-COS-006 the library holds no private key, and refuses a signature from another key` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-cwt-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CWT-004 passes in each implementation's suite (Kotlin: `STT-CWT-004 the validity must fit inside the DSC's` (BuildCwtTest.kt))."
+        },
+        {
+          "id": "req:stt-gen-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-001 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-gen-009#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-009 passes in each implementation's suite (Kotlin: `STT-GEN-009 the COSE bytes travel without the QR layers too` (PrefixContextTest.kt))."
+        },
+        {
+          "id": "req:stt-iss-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-ISS-004 passes in each implementation's suite (Kotlin: `STT-COS-004 STT-ISS-004 what is signed is the Signature1 structure prepare returns` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-kid-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-KID-001 passes in each implementation's suite (Kotlin: `STT-TRU-001 STT-KID-001 a DSC is found by its kid, the first 8 bytes of its SHA-256` (TrustListTest.kt); `STT-TST-001 STT-KID-001 the vector's kid is the DSC's` (ConformanceVectorsTest.kt))."
+        }
+      ],
+      "testData": [],
+      "feature": "test/features/hcert-sign-cose.feature"
+    },
+    {
+      "id": "hcert-trust-list",
+      "description": "Hold the trusted DSCs the host obtained (PEM, DER, GDHCN DID trustlist v2) and find every candidate for a kid.",
+      "assertions": [
+        {
+          "id": "req:stt-kid-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-KID-001 passes in each implementation's suite (Kotlin: `STT-TRU-001 STT-KID-001 a DSC is found by its kid, the first 8 bytes of its SHA-256` (TrustListTest.kt); `STT-TST-001 STT-KID-001 the vector's kid is the DSC's` (ConformanceVectorsTest.kt))."
+        },
+        {
+          "id": "req:stt-kid-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-KID-002 passes in each implementation's suite (Kotlin: `STT-VER-006 STT-KID-002 a kid nobody trusts fails the trust lookup` (VerifyTest.kt))."
+        },
+        {
+          "id": "req:stt-kid-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-KID-003 passes in each implementation's suite (Kotlin: `STT-KID-003 a kid reads and writes as standard and URL-safe base64` (TrustListTest.kt))."
+        },
+        {
+          "id": "req:stt-sel-006#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-SEL-006 passes in each implementation's suite (Kotlin: `STT-SEL-006 trust domains are read from the GDHCN code system, not a closed list` (TrustListTest.kt))."
+        },
+        {
+          "id": "req:stt-tru-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-TRU-001 passes in each implementation's suite (Kotlin: `STT-TRU-001 STT-KID-001 a DSC is found by its kid, the first 8 bytes of its SHA-256` (TrustListTest.kt))."
+        },
+        {
+          "id": "req:stt-tru-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-TRU-002 passes in each implementation's suite (Kotlin: `STT-TRU-002 a GDHCN DID trustlist v2 document loads its DSCs` (TrustListTest.kt))."
+        },
+        {
+          "id": "req:stt-tru-005#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-TRU-005 passes in each implementation's suite (Kotlin: `STT-TRU-005 a static list of PEM certificates loads` (TrustListTest.kt))."
+        },
+        {
+          "id": "req:stt-tru-006#statement/test",
+          "type": "required",
+          "expectation": "Tests named after STT-TRU-006 pass in each implementation's suite: the vectors in vectors/gdhcn-dev-trustlist (XXR, XXR DSC, XXA and the 234-key root document) verify against WHO-signing-did.json, the XXR DSC document's canonical N-Quads equal the golden files byte for byte, and a changed byte in the document, the wrong signer, and an unmodelled term each fail with proof-invalid."
+        },
+        {
+          "id": "req:stt-ver-006#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-006 passes in each implementation's suite (Kotlin: `STT-VER-006 STT-KID-002 a kid nobody trusts fails the trust lookup` (VerifyTest.kt))."
+        },
+        {
+          "id": "req:stt-ver-009#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-009 passes in each implementation's suite (Kotlin: `STT-VER-008 STT-VER-009 every failure is a value naming its step and reason, offline` (VerifyTest.kt); `STT-GEN-012 STT-VHL-010 STT-VER-009 the core does no network, file or asynchronous I-O` (ArchitectureTest.kt))."
+        }
+      ],
+      "testData": [
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA.json"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA-dsc.pem"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/gdhcn-trust-domains/CodeSystem-Domains.json"
+        }
+      ],
+      "feature": "test/features/hcert-trust-list.feature"
+    },
+    {
+      "id": "hcert-verify",
+      "description": "Verify an HC1 string or raw COSE: the steps upwards, trust lookup by kid, signature, key usage, time and payload; or read it explicitly unverified for triage.",
+      "assertions": [
+        {
+          "id": "req:stt-b45-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-B45-002 passes in each implementation's suite (Kotlin: `STT-B45-002 lower case, a dangling character and an out-of-range triple are refused` (Base45Test.kt))."
+        },
+        {
+          "id": "req:stt-cbr-002#statement/test",
+          "type": "informative",
+          "expectation": "A test named after STT-CBR-002 passes in each implementation's suite (Kotlin: `STT-CBR-002 text is NFC-normalised on encode, and a non-normalised string still decodes` (EncodeCborTest.kt))."
+        },
+        {
+          "id": "req:stt-cbr-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CBR-003 passes in each implementation's suite (Kotlin: `STT-CBR-003 nesting beyond the limit is refused` (EncodeCborTest.kt))."
+        },
+        {
+          "id": "req:stt-cos-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-COS-002 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-cos-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-COS-003 passes in each implementation's suite (Kotlin: `STT-COS-001 STT-COS-003 a tagged COSE_Sign1 with alg and kid in the protected header` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-cos-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-COS-004 passes in each implementation's suite (Kotlin: `STT-COS-004 STT-ISS-004 what is signed is the Signature1 structure prepare returns` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-cos-005#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-COS-005 passes in each implementation's suite (Kotlin: `STT-COS-005 an ES256 signature is a fixed-width 64-byte r and s, whatever the signer returns` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-cwt-006#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CWT-006 passes in each implementation's suite (Kotlin: `STT-CWT-006 claims this version does not know are kept` (BuildCwtTest.kt))."
+        },
+        {
+          "id": "req:stt-gen-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-001 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-gen-009#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-009 passes in each implementation's suite (Kotlin: `STT-GEN-009 the COSE bytes travel without the QR layers too` (PrefixContextTest.kt))."
+        },
+        {
+          "id": "req:stt-hc1-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-HC1-001 passes in each implementation's suite (Kotlin: `STT-HC1-001 HC1 is the only context, version 1 the only version` (PrefixContextTest.kt))."
+        },
+        {
+          "id": "req:stt-kid-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-KID-002 passes in each implementation's suite (Kotlin: `STT-VER-006 STT-KID-002 a kid nobody trusts fails the trust lookup` (VerifyTest.kt))."
+        },
+        {
+          "id": "req:stt-pay-008#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-008 passes in each implementation's suite (Kotlin: `STT-PAY-008 unknown payload elements are kept` (AssemblePayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-sel-004#statement/test",
+          "type": "required",
+          "expectation": "Tests named after STT-SEL-004 pass in each implementation's suite (Kotlin: `STT-SEL-004 STT-ISS-004 a certificate with a DVC and a VHL verifies with both entries`, `STT-SEL-004 maxPayloads refuses more entries than the profile allows`, `STT-SEL-004 an invalid entry is left out and reported`, `STT-SEL-004 issuance refuses no payload and a duplicate subclaim` (SelectPayloadTest.kt)), and the cross-implementation DVC+VHL checks pass (tools/conformance-ts/cross.ts)."
+        },
+        {
+          "id": "req:stt-ver-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-001 passes in each implementation's suite (Kotlin: `STT-VER-001 STT-VER-002 a tampered payload fails at the signature, before any payload is read` (VerifyTest.kt))."
+        },
+        {
+          "id": "req:stt-ver-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-002 passes in each implementation's suite (Kotlin: `STT-VER-001 STT-VER-002 a tampered payload fails at the signature, before any payload is read` (VerifyTest.kt))."
+        },
+        {
+          "id": "req:stt-ver-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-003 passes in each implementation's suite (Kotlin: `STT-VER-003 a protected header with an unsupported alg is refused` (SignCoseTest.kt))."
+        },
+        {
+          "id": "req:stt-ver-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-004 passes in each implementation's suite (Kotlin: `STT-VER-004 a DSC whose key usage allows test certificates only cannot sign a vaccination` (VerifyTest.kt); `STT-VER-004 a DCC is a test, vaccination or recovery certificate by its own entry`  (VerifyTest.kt); `STT-VER-004 STT-SEL-004 key usage is checked per entry`)."
+        },
+        {
+          "id": "req:stt-ver-005#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-005 passes in each implementation's suite (Kotlin: `STT-VER-005 time is the clock the caller passes, with the skew it allows` (VerifyTest.kt))."
+        },
+        {
+          "id": "req:stt-ver-006#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-006 passes in each implementation's suite (Kotlin: `STT-VER-006 STT-KID-002 a kid nobody trusts fails the trust lookup` (VerifyTest.kt))."
+        },
+        {
+          "id": "req:stt-ver-007#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-007 passes in each implementation's suite (Kotlin: `STT-VER-007 the payload is dispatched to its logical model by subclaim` (VerifyTest.kt))."
+        },
+        {
+          "id": "req:stt-ver-008#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-008 passes in each implementation's suite (Kotlin: `STT-VER-008 STT-VER-009 every failure is a value naming its step and reason, offline` (VerifyTest.kt))."
+        },
+        {
+          "id": "req:stt-ver-009#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-009 passes in each implementation's suite (Kotlin: `STT-VER-008 STT-VER-009 every failure is a value naming its step and reason, offline` (VerifyTest.kt); `STT-GEN-012 STT-VHL-010 STT-VER-009 the core does no network, file or asynchronous I-O` (ArchitectureTest.kt))."
+        },
+        {
+          "id": "req:stt-ver-011#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VER-011 passes in each implementation's suite (Kotlin: `STT-VER-011 an unverified read for triage is marked so` (VerifyTest.kt))."
+        },
+        {
+          "id": "req:stt-zip-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-ZIP-002 passes in each implementation's suite (Kotlin: `STT-ZIP-002 a decompression bomb stops at the limit` (CompressTest.kt))."
+        }
+      ],
+      "testData": [
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA.json"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA-dsc.pem"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/negative/negative-vectors.json"
+        }
+      ],
+      "feature": "test/features/hcert-verify.feature"
+    },
+    {
+      "id": "hcert-conformance-testing",
+      "description": "Test an implementation against the shared vectors: the PR 129 DVC example, negative vectors, cross-implementation checks and schema checks.",
+      "assertions": [
+        {
+          "id": "req:stt-tst-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-TST-001 passes in each implementation's suite (Kotlin: `STT-TST-001 STT-KID-001 the vector's kid is the DSC's` (ConformanceVectorsTest.kt); `STT-TST-001 STT-PAY-001 both PR 129 certificates verify and decode as published` (ConformanceVectorsTest.kt))."
+        },
+        {
+          "id": "req:stt-tst-002#statement/test",
+          "type": "required",
+          "expectation": "Tests named after STT-TST-002 pass in each implementation's suite (Kotlin: `STT-TST-002 STT-CBR-001 deterministic re-encoding reproduces the issued CWT byte for byte` and `STT-TST-011 STT-TST-002 the merged guide's XXR certificates decode as published` (ConformanceVectorsTest.kt))."
+        },
+        {
+          "id": "req:stt-tst-003#statement/cross-verify",
+          "type": "required",
+          "expectation": "Certificates issued by each library with ES256 and PS256 verify in the other library, built from byte-identical Sig_structure and COSE_Sign1 bytes (tools/conformance-ts/cross.ts)."
+        },
+        {
+          "id": "req:stt-tst-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-TST-004 passes in each implementation's suite (Kotlin: `STT-TST-004 STT-TST-005 the shared negative vectors fail at the named step with the named reason` (ConformanceVectorsTest.kt))."
+        },
+        {
+          "id": "req:stt-tst-005#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-TST-005 passes in each implementation's suite (Kotlin: `STT-TST-004 STT-TST-005 the shared negative vectors fail at the named step with the named reason` (ConformanceVectorsTest.kt); node-smoke.mjs)."
+        },
+        {
+          "id": "req:stt-tst-006#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-TST-006 passes in each implementation's suite (Kotlin: `STT-TST-006 fuzzed Base45 never throws and never decodes more than its input` (FuzzTest.kt); `STT-TST-006 fuzzed ZLIB never throws and never inflates past the limit` (FuzzTest.kt); `STT-TST-006 fuzzed CBOR never throws in the deterministic re-encoder` (FuzzTest.kt); `STT-TST-006 fuzzed COSE never throws in the Sign1 parser` (FuzzTest.kt) and 2 more)."
+        },
+        {
+          "id": "req:stt-tst-007#statement/ts-suite",
+          "type": "required",
+          "expectation": "One TypeScript suite, type-checked against api/generated/ts and driven by vectors/, passes against both the Kotlin/JS package and the jco-transpiled Rust component in CI."
+        },
+        {
+          "id": "req:stt-tst-008#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-TST-008 passes in each implementation's suite (Kotlin: check_models.py)."
+        },
+        {
+          "id": "req:stt-tst-010#statement/kotlin-floor",
+          "type": "required",
+          "expectation": "CI runs :hcert-core:jvmTestCoverageCheck (JaCoCo) and it fails below 90% line and 70% branch coverage of hcert-core's commonMain and jvmMain."
+        },
+        {
+          "id": "req:stt-tst-010#statement/rust-floor",
+          "type": "required",
+          "expectation": "CI runs tools/hcert-rust/coverage.sh (rustc -C instrument-coverage with the toolchain's llvm-tools; stable rustc does not measure branches) and it fails below 85% line and 80% region coverage of the library's sources."
+        },
+        {
+          "id": "req:stt-tst-011#statement/decode",
+          "type": "required",
+          "expectation": "A test named after STT-TST-011 passes in each implementation's suite (Kotlin: `STT-TST-011 STT-TST-002 the merged guide's XXR certificates decode as published` (ConformanceVectorsTest.kt)), and the TypeScript suite's check of the same name passes on both packages."
+        },
+        {
+          "id": "req:stt-tst-011#statement/verify",
+          "type": "required",
+          "expectation": "A test named after STT-TST-011 that loads vectors/smart-trust-af75be2/XXR-DSC-did.json passes in each implementation's suite (Kotlin: `STT-TST-011 the merged guide's XXR certificates verify against the DEV trust list's DSC` (ConformanceVectorsTest.kt)), and the TypeScript suite's check of the same name passes on both packages."
+        }
+      ],
+      "testData": [
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA.json"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/smart-trust-pr129/dvc-qr-example-XXA-dsc.pem"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/negative/negative-vectors.json"
+        },
+        {
+          "kind": "generated",
+          "template": "vectors/smart-trust-pr129/dvc-qr-example-XXA.json",
+          "generator": "seeded-mutation-fuzzer",
+          "params": {
+            "iterations": 1500,
+            "targets": [
+              "base45Decode",
+              "zlibInflate",
+              "cborDeterministic",
+              "parseSign1",
+              "verify",
+              "verifyCose"
+            ],
+            "mutations": [
+              "bit-flip",
+              "insert",
+              "delete",
+              "truncate",
+              "boundary-byte",
+              "duplicate-run"
+            ],
+            "timeBoundMs": 1000
+          },
+          "seed": "the target's name (Kotlin: String.hashCode of it)"
+        }
+      ],
+      "feature": "test/features/hcert-conformance-testing.feature"
+    },
+    {
+      "id": "hcert-contract-maintenance",
+      "description": "Keep the contract and everything generated from it current: the WIT, its TypeScript view and Kotlin skeleton, the CDDL, and the payload models derived from the FHIR logical models.",
+      "assertions": [
+        {
+          "id": "req:stt-gen-010#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-010 passes in each implementation's suite (Kotlin: `STT-GEN-014 STT-GEN-010 the API is generated from the contract and names no WIT` (ArchitectureTest.kt))."
+        },
+        {
+          "id": "req:stt-gen-014#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-014 passes in each implementation's suite (Kotlin: `STT-GEN-014 STT-GEN-010 the API is generated from the contract and names no WIT` (ArchitectureTest.kt))."
+        },
+        {
+          "id": "req:stt-cbr-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-CBR-004 passes in each implementation's suite (Kotlin: check_models.py)."
+        },
+        {
+          "id": "req:stt-pay-010#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-PAY-010 passes in each implementation's suite (Kotlin: check_models.py)."
+        }
+      ],
+      "testData": [],
+      "feature": "test/features/hcert-contract-maintenance.feature"
+    },
+    {
+      "id": "hcert-library-architecture",
+      "description": "The rules every implementation follows: Kotlin first, Rust second, one contract, a synchronous core with no I/O, open standards, no payload in logs.",
+      "assertions": [
+        {
+          "id": "req:stt-gen-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-002 passes in each implementation's suite (Kotlin: `STT-GEN-002 every step is callable on its own, and the steps compose to the pipeline` (ArchitectureTest.kt))."
+        },
+        {
+          "id": "req:stt-gen-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-003 passes in each implementation's suite (Kotlin: `STT-PAY-009 STT-GEN-003 another payload passes through the core untouched` (AssemblePayloadTest.kt))."
+        },
+        {
+          "id": "req:stt-gen-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-004 passes in each implementation's suite (Kotlin: node-smoke.mjs; `STT-SEC-002 STT-GEN-004 cryptography comes from the platform, with no third-party runtime dependency` (ArchitectureTest.kt))."
+        },
+        {
+          "id": "req:stt-gen-005#statement/rust-wasm",
+          "type": "required",
+          "expectation": "The Rust crate builds for wasm32 as a component implementing api/wit, its jco-transpiled npm package loads in Node.js and a browser, and it passes the shared vectors."
+        },
+        {
+          "id": "req:stt-gen-006#statement/same-vectors",
+          "type": "required",
+          "expectation": "The Kotlin and Rust suites load the same files in vectors/ and reach the same verdict, step and reason on every case."
+        },
+        {
+          "id": "req:stt-gen-011#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-011 passes in each implementation's suite (Kotlin: node-smoke.mjs)."
+        },
+        {
+          "id": "req:stt-gen-012#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-GEN-012 passes in each implementation's suite (Kotlin: `STT-GEN-012 STT-VHL-010 STT-VER-009 the core does no network, file or asynchronous I-O` (ArchitectureTest.kt))."
+        },
+        {
+          "id": "req:stt-iss-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-ISS-003 passes in each implementation's suite (Kotlin: `STT-ISS-003 no private key, and no test key, is in the library's sources` (ArchitectureTest.kt))."
+        },
+        {
+          "id": "req:stt-sec-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-SEC-001 passes in each implementation's suite (Kotlin: `STT-SEC-001 a failure's message does not carry the payload` (VerifyTest.kt); `STT-SEC-001 the core writes nothing to a log or console` (ArchitectureTest.kt))."
+        },
+        {
+          "id": "req:stt-sec-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-SEC-002 passes in each implementation's suite (Kotlin: `STT-SEC-002 STT-GEN-004 cryptography comes from the platform, with no third-party runtime dependency` (ArchitectureTest.kt))."
+        }
+      ],
+      "testData": [],
+      "feature": "test/features/hcert-library-architecture.feature"
+    },
+    {
+      "id": "vhl-receive",
+      "description": "Use a VHL: verify it, build the ITI-YY5 manifest request with its HTTP Message Signature, read the manifest Bundle and decrypt each document (journey J4.1). A plain SMART Health Link is received by the same steps, without the HCERT verification.",
+      "assertions": [
+        {
+          "id": "req:stt-vhl-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-002 passes in each implementation's suite (Kotlin: `STT-VHL-002 the payload is a CBOR map at HCERT key 5, and verifies` (VhlShareTest.kt); `STT-VHL-002 STT-VHL-003 a vhlink string at key 5 still verifies, and the map is smaller` (VhlShareTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-005#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-005 passes in each implementation's suite (Kotlin: `STT-VHL-005 the ITI-YY5 request is the exact body of the IHE example` (VhlReceiveTest.kt); `STT-VHL-005 a List URL is searched, and the passcode follows the P flag` (VhlReceiveTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-006#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-006 passes in each implementation's suite (Kotlin: `STT-VHL-006 the IHE Case B manifest Bundle reads as documents` (VhlReceiveTest.kt); `STT-VHL-006 a Case A manifest without includes hands back references` (VhlReceiveTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-007#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-007 passes in each implementation's suite (Kotlin: `STT-VHL-007 decrypts what node crypto encrypted, with and without zip DEF` (VhlReceiveTest.kt); `STT-VHL-007 a wrong key, a changed byte and another enc are refused` (VhlReceiveTest.kt); `STT-VHL-007 a document is encrypted as compact JWE dir A256GCM` (VhlShareTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-008#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-008 passes in each implementation's suite (Kotlin: `STT-VHL-008 the Content-Digest is RFC 9530` (VhlReceiveTest.kt); `STT-VHL-008 the RFC 9421 signature base has the IHE shape` (VhlReceiveTest.kt); `STT-VHL-008 a DER signature becomes the raw header value and verifies` (VhlReceiveTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-009#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-009 passes in each implementation's suite (Kotlin: `STT-VHL-009 an expired link fails verification, by its own exp` (VhlReceiveTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-010#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-010 passes in each implementation's suite (Kotlin: `STT-GEN-012 STT-VHL-010 STT-VER-009 the core does no network, file or asynchronous I-O` (ArchitectureTest.kt))."
+        }
+      ],
+      "testData": [
+        {
+          "kind": "fixed",
+          "path": "vectors/ihe-vhl/jwe-dir-a256gcm.json"
+        },
+        {
+          "kind": "fixed",
+          "path": "vectors/ihe-vhl/iti-yy5-manifest-case-b.json"
+        }
+      ],
+      "feature": "test/features/vhl-receive.feature"
+    },
+    {
+      "id": "vhl-share",
+      "description": "Issue a VHL: a key, documents encrypted as JWE dir / A256GCM, and the payload as a CBOR map at HCERT key 5 (journey J4.0). A plain SMART Health Link is issued by the same steps with its own carrier.",
+      "assertions": [
+        {
+          "id": "req:stt-vhl-001#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-001 passes in each implementation's suite (Kotlin: `STT-VHL-001 the IHE ITI-YY3 example payload is valid, and each rule is enforced` (VhlShareTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-002#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-002 passes in each implementation's suite (Kotlin: `STT-VHL-002 the payload is a CBOR map at HCERT key 5, and verifies` (VhlShareTest.kt); `STT-VHL-002 STT-VHL-003 a vhlink string at key 5 still verifies, and the map is smaller` (VhlShareTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-003#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-003 passes in each implementation's suite (Kotlin: `STT-VHL-002 STT-VHL-003 a vhlink string at key 5 still verifies, and the map is smaller` (VhlShareTest.kt); `STT-VHL-003 vhlink round-trips, and reads the IHE example link` (VhlShareTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-004#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-004 passes in each implementation's suite (Kotlin: `STT-VHL-004 a new key is 32 random bytes, base64url without padding` (VhlShareTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-007#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-007 passes in each implementation's suite (Kotlin: `STT-VHL-007 decrypts what node crypto encrypted, with and without zip DEF` (VhlReceiveTest.kt); `STT-VHL-007 a wrong key, a changed byte and another enc are refused` (VhlReceiveTest.kt); `STT-VHL-007 a document is encrypted as compact JWE dir A256GCM` (VhlShareTest.kt))."
+        },
+        {
+          "id": "req:stt-vhl-010#statement/test",
+          "type": "required",
+          "expectation": "A test named after STT-VHL-010 passes in each implementation's suite (Kotlin: `STT-GEN-012 STT-VHL-010 STT-VER-009 the core does no network, file or asynchronous I-O` (ArchitectureTest.kt))."
+        }
+      ],
+      "testData": [
+        {
+          "kind": "fixed",
+          "path": "vectors/ihe-vhl/jwe-dir-a256gcm.json"
+        }
+      ],
+      "feature": "test/features/vhl-share.feature"
+    }
+  ],
+  "dependencies": [
+    {
+      "description": "The implementation builds from pinned, verified dependencies only (tools/hcert-kotlin/gradle/verification-metadata.xml; Cargo.lock with cargo-vet for Rust) and needs no network at test time."
+    }
+  ],
+  "exitCriteria": {
+    "decision": "processes/sdlc/decisions/test-certification.dmn#Decision_TestCertification",
+    "description": "The platform default: the run completed, its data hashed, every case has a verdict, the untainted checker agrees, no required assertion failed and at least one passed."
+  }
+}

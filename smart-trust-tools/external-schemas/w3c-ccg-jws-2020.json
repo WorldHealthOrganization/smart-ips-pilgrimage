@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "w3c-ccg-jws-2020",
+  "authority": "W3C",
+  "title": "JSON Web Signature 2020 (JsonWebSignature2020 Linked Data Proof suite)",
+  "version": "CCG Report",
+  "specUrl": "https://w3c-ccg.github.io/lds-jws2020/",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": [],
+  "note": "A W3C Credentials Community Group report, not a W3C Recommendation."
+}

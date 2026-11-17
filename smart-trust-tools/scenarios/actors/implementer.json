@@ -1,0 +1,10 @@
+{
+  "id": "implementer",
+  "title": "Library implementer",
+  "kind": "person",
+  "description": "A developer, or an agent, who builds, extends or tests an implementation of the HCERT library against its contract and vectors. Not an actor of either guide: it is this project's own.",
+  "roles": [
+    "library-maintainer"
+  ],
+  "capabilities": []
+}

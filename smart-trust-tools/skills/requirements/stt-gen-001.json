@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-gen-001",
+  "title": "Issuance and verification of the full HCERT QR pipeline",
+  "description": "Engineering consequence of QR Code Generation, 1. The pipeline at a glance. QR Code Generation, 1. The pipeline at a glance: “Steps 3 to 9 never vary. A verifier runs the same list upwards.”.",
+  "status": "proposed",
+  "reference": [
+    "http://smart.who.int/trust/Requirements/IssuerVDHC#IssuerVDHC-generate",
+    "http://smart.who.int/trust/Requirements/IssuerVDHC#IssuerVDHC-sign",
+    "http://smart.who.int/trust/Requirements/UtilizeVDHC#UtilizeVDHC-validate-hash",
+    "library/who-smart-trust-qr-code-generation/sections/s002-1-the-pipeline-at-a-glance"
+  ],
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Issuance and verification of the full HCERT QR pipeline",
+      "conformance": "SHALL",
+      "requirement": "The library SHALL implement issuance (steps 1 to 9) and verification (QR Code Generation section 11) of HCERT QR codes.",
+      "category": "scope",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-GEN-001 passes in each implementation's suite (Kotlin: `STT-COS-002 STT-GEN-001 both ES256 and PS256 sign and verify` (SignCoseTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "scope",
+    "derived"
+  ]
+}

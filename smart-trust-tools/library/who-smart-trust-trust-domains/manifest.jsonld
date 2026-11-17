@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-trust-domains",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "Trust Domains",
+  "contains": [
+    "library/who-smart-trust-trust-domains/sections/s001-trust-domains",
+    "library/who-smart-trust-trust-domains/sections/s002-digital-documentation-of-covid-19-certificates-d",
+    "library/who-smart-trust-trust-domains/sections/s003-source-specifications",
+    "library/who-smart-trust-trust-domains/sections/s004-ph4h",
+    "library/who-smart-trust-trust-domains/sections/s005-ips-pilgrimage-ips-pilgrimage"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-NC-SA-3.0-IGO",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-NC-SA-3.0-IGO",
+    "basis": "WorldHealthOrganization/smart-trust LICENSE at the ingested commit: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO. Its own license.md page says Creative Commons Attribution 3.0 IGO instead (recorded as a bean). The text is held unmodified, with attribution, for non-commercial reference."
+  },
+  "meta": {
+    "doc_id": "who-smart-trust-trust-domains",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "trust_domains.md",
+    "source_sha256": "9c1fa90399b270e7d3973af429f673c465fa727525fc3c3d4a8b8588c34b0583",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

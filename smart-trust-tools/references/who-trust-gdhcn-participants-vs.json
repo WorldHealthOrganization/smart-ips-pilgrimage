@@ -1,0 +1,9 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-trust-gdhcn-participants-vs",
+  "type": "webpage",
+  "title": "GDHCN Participants value set",
+  "publisher": "World Health Organization",
+  "URL": "https://smart.who.int/trust/ValueSet-Participants.html",
+  "provenance": "authored"
+}

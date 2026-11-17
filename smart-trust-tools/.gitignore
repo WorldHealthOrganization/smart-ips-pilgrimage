@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+node_modules/
+/site/
+.gradle/
+build/
+tools/hcert-kotlin/.kotlin/
+# BEGIN index mounts (generated from index.config.json — do not edit)
+/fhir-harness/
+/folio-assistant-core/
+/cat-harness/
+/cat-harness-tools/
+/bootstrap/
+/bootstrap-tools/
+# END index mounts
+
+# written at publish by gen-landing-data
+/docs/_data/
+
+# agent surface written by mount:remote / mount:lock from the mounted layers
+/.agents/
+/.claude/commands/
+
+# state graphs kept on their own branches, mounted by `bun run cat state:mount`
+/beans/**
+/upstream/**

@@ -1,0 +1,8 @@
+# wasi:random@0.2.6, the random interface the hcert-verifier and hcert-issuer
+# worlds import so a host can supply secure random bytes (VHL keys, JWE IVs).
+# Copied unmodified. WASI is a W3C WebAssembly Community Group standard.
+repo: WebAssembly/wasi-random
+tag: v0.2.6
+commit: 4e946631f1665364202c67a04b11544d6a9bfe60
+file: wit/random.wit
+licence: Apache-2.0 WITH LLVM-exception

@@ -1,0 +1,9 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-ddcc-ig",
+  "type": "webpage",
+  "title": "DDCC Implementation Guide",
+  "publisher": "World Health Organization",
+  "URL": "https://smart.who.int/ddcc/",
+  "provenance": "authored"
+}

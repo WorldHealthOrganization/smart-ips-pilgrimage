@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-gen-002",
+  "title": "Every step callable on its own",
+  "description": "Engineering consequence of QR Code Generation, 1. The pipeline at a glance; QR Code Generation, Generating a QR Code. QR Code Generation, Generating a QR Code: “The first step below is therefore a selection step, and everything after it is mechanical.”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-gen-001"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s002-1-the-pipeline-at-a-glance",
+    "library/who-smart-trust-qr-code-generation/sections/s001-generating-a-qr-code"
+  ],
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Every step callable on its own",
+      "conformance": "SHALL",
+      "requirement": "Each pipeline step SHALL be exposed as a separate public operation (payload codec, CBOR, COSE sign/parse, ZLIB, Base45, HC1 prefix) as well as through the end-to-end issuer and verifier, so that integrators can substitute or inspect any stage.",
+      "category": "architecture",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-GEN-002 passes in each implementation's suite (Kotlin: `STT-GEN-002 every step is callable on its own, and the steps compose to the pipeline` (ArchitectureTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "architecture",
+    "derived"
+  ]
+}

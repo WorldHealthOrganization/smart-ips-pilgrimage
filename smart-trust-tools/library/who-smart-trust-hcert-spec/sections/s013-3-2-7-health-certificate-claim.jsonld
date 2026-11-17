@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-hcert-spec/sections/s013-3-2-7-health-certificate-claim",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "3.2.7 Health Certificate Claim",
+  "contains": [
+    "library/who-smart-trust-hcert-spec/blocks/prose-s013-3-2-7-health-certificate-claim"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-spec",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-hcert-spec",
+  "provenance": "ingested"
+}

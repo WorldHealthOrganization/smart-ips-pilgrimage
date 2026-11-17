@@ -1,0 +1,9 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-trust-phw-dvc-vaccines-vs",
+  "type": "webpage",
+  "title": "DVC - Vaccines value set (trust-phw)",
+  "publisher": "World Health Organization",
+  "URL": "http://smart.who.int/trust-phw/ValueSet-DVCVaccines.html",
+  "provenance": "authored"
+}

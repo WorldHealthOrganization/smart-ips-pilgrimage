@@ -1,0 +1,134 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-endpoints",
+  "source": {
+    "file": "endpoints.md",
+    "sha256": "4f66b5e81e8e0a9da9f46f0f36b9e63fdb718f7f94633bd63002a3e82d4f697d",
+    "digest": "file",
+    "bytes": 3783,
+    "mtime": "2026-10-09T13:16:57Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/pagecontent/endpoints.md",
+        "sha256": "4f66b5e81e8e0a9da9f46f0f36b9e63fdb718f7f94633bd63002a3e82d4f697d",
+        "bytes": 3783,
+        "lines": 67,
+        "format": "markdown"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust",
+      "commit": "e277cce5dcb8d2134ef1625c3a38e27cdf19e835",
+      "ref": "main",
+      "committed": "2026-10-09T13:16:57Z",
+      "path": "input/pagecontent/endpoints.md",
+      "published": "https://smart.who.int/trust/endpoints.html",
+      "retrieved": "2026-10-20T19:45:00Z"
+    }
+  },
+  "metadata": {
+    "title": "Endpoints"
+  },
+  "toc_source": "headings",
+  "sections": [
+    {
+      "id": "s001-endpoints",
+      "number": null,
+      "title": "Endpoints",
+      "level": 3,
+      "file": "input/pagecontent/endpoints.md",
+      "line_start": 1,
+      "line_end": 4,
+      "unit": "heading",
+      "n_chars": 110,
+      "n_words": 16
+    },
+    {
+      "id": "s002-operational-metadata",
+      "number": null,
+      "title": "Operational Metadata",
+      "level": 4,
+      "file": "input/pagecontent/endpoints.md",
+      "line_start": 5,
+      "line_end": 5,
+      "unit": "heading",
+      "n_chars": 25,
+      "n_words": 3
+    },
+    {
+      "id": "s003-trust-domains",
+      "number": null,
+      "title": "Trust Domains",
+      "level": 5,
+      "file": "input/pagecontent/endpoints.md",
+      "line_start": 6,
+      "line_end": 10,
+      "unit": "heading",
+      "n_chars": 129,
+      "n_words": 18
+    },
+    {
+      "id": "s004-key-usage-codes",
+      "number": null,
+      "title": "Key Usage Codes",
+      "level": 5,
+      "file": "input/pagecontent/endpoints.md",
+      "line_start": 11,
+      "line_end": 15,
+      "unit": "heading",
+      "n_chars": 124,
+      "n_words": 19
+    },
+    {
+      "id": "s005-participants",
+      "number": null,
+      "title": "Participants",
+      "level": 5,
+      "file": "input/pagecontent/endpoints.md",
+      "line_start": 16,
+      "line_end": 21,
+      "unit": "heading",
+      "n_chars": 148,
+      "n_words": 17
+    },
+    {
+      "id": "s006-trustlist-distribution-endpoints",
+      "number": null,
+      "title": "Trustlist Distribution Endpoints",
+      "level": 4,
+      "file": "input/pagecontent/endpoints.md",
+      "line_start": 22,
+      "line_end": 36,
+      "unit": "heading",
+      "n_chars": 1305,
+      "n_words": 77
+    },
+    {
+      "id": "s007-trust-network-gateway",
+      "number": null,
+      "title": "Trust Network Gateway",
+      "level": 4,
+      "file": "input/pagecontent/endpoints.md",
+      "line_start": 37,
+      "line_end": 50,
+      "unit": "heading",
+      "n_chars": 381,
+      "n_words": 47
+    },
+    {
+      "id": "s008-status-monitoring-dashboards",
+      "number": null,
+      "title": "Status Monitoring Dashboards",
+      "level": 4,
+      "file": "input/pagecontent/endpoints.md",
+      "line_start": 51,
+      "line_end": 67,
+      "unit": "heading",
+      "n_chars": 1538,
+      "n_words": 99
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

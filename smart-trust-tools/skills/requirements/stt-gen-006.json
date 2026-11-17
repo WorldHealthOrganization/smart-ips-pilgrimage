@@ -1,0 +1,42 @@
+{
+  "id": "req:stt-gen-006",
+  "title": "Kotlin and Rust behave the same",
+  "description": "Stakeholder directive, in the context of Stakeholder directive: Kotlin library first, Rust library second.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-gen-004",
+    "req:stt-gen-005"
+  ],
+  "reference": [
+    "memory/dir-languages"
+  ],
+  "actors": [
+    "implementer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Kotlin and Rust behave the same",
+      "conformance": "SHALL",
+      "requirement": "The Kotlin and Rust libraries SHALL expose the same conceptual operations, the same configuration knobs and the same failure taxonomy, with idiomatic naming in each language, and SHALL pass the same conformance vectors.",
+      "category": "architecture",
+      "successCriteria": [
+        {
+          "key": "same-vectors",
+          "criterion": "The Kotlin and Rust suites load the same files in vectors/ and reach the same verdict, step and reason on every case.",
+          "verification": "test"
+        },
+        {
+          "key": "same-surface",
+          "criterion": "A reviewer comparing the two public APIs against api/wit finds the same operations, options and failure taxonomy, named idiomatically.",
+          "verification": "review"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "architecture",
+    "directive"
+  ]
+}

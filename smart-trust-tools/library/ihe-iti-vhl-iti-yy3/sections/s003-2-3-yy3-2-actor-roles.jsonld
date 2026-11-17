@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-iti-yy3/sections/s003-2-3-yy3-2-actor-roles",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "2:3.YY3.2 Actor Roles",
+  "contains": [
+    "library/ihe-iti-vhl-iti-yy3/blocks/prose-s003-2-3-yy3-2-actor-roles"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy3",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-iti-yy3",
+  "provenance": "ingested"
+}

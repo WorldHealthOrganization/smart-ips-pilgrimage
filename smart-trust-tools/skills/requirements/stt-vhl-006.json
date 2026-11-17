@@ -1,0 +1,37 @@
+{
+  "id": "req:stt-vhl-006",
+  "title": "ITI-YY5 manifest response",
+  "description": "Restates IHE VHL ITI-YY5, 2:3.YY5.4.2.2 Message Semantics; IHE VHL ITI-YY5, 2:3.YY5.4.2.4 Document Content Retrieval. IHE VHL ITI-YY5 Retrieve Manifest, 2:3.YY5.4.2.2 Message Semantics: “the Retrieve Manifest response is — at the FHIR level — an MHD ITI-66 response message”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-vhl-005"
+  ],
+  "reference": [
+    "library/ihe-iti-vhl-iti-yy5/sections/s016-2-3-yy5-4-2-2-message-semantics",
+    "library/ihe-iti-vhl-iti-yy5/sections/s018-2-3-yy5-4-2-4-document-content-retrieval"
+  ],
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "ITI-YY5 manifest response",
+      "conformance": "SHALL",
+      "requirement": "The library SHALL read the ITI-YY5 response, a FHIR searchset Bundle: the List with search.mode match and, when the Include DocumentReference option was used, the DocumentReferences with search.mode include. For each document it SHALL return the attachment URL and the decrypted content type (attachment.contentType); for List items whose DocumentReference is not included it SHALL return the reference for the host to read.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VHL-006 passes in each implementation's suite (Kotlin: `STT-VHL-006 the IHE Case B manifest Bundle reads as documents` (VhlReceiveTest.kt); `STT-VHL-006 a Case A manifest without includes hands back references` (VhlReceiveTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}

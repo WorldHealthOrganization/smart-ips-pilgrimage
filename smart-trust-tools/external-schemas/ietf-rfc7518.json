@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "ietf-rfc7518",
+  "authority": "IETF",
+  "title": "RFC 7518 JSON Web Algorithms (JWA)",
+  "version": "RFC 7518",
+  "specUrl": "https://www.rfc-editor.org/rfc/rfc7518",
+  "namespaces": [],
+  "use": "conforms",
+  "terms": []
+}

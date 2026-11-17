@@ -1,0 +1,36 @@
+{
+  "id": "req:stt-sel-006",
+  "title": "Trust domain codes come from the value set",
+  "description": "Engineering consequence of QR Code Generation, 2.1 Subclaims defined in this guide; Trust Domains; GDHCN Trust Domain value set. QR Code Generation, 2.1 Subclaims defined in this guide: “The registered production trust domains are DDCC, IPS-PILGRIMAGE, PH4H and ICVP.”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Trust domain codes come from the value set",
+      "conformance": "SHALL",
+      "requirement": "Trust domain codes (currently DDCC, IPS-PILGRIMAGE, PH4H, ICVP) SHALL be treated as data loaded from, or checked against, the GDHCN Trust Domain value set. They SHALL NOT be a closed enum.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-SEL-006 passes in each implementation's suite (Kotlin: `STT-SEL-006 trust domains are read from the GDHCN code system, not a closed list` (TrustListTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s003-2-step-1-select-the-payload-type",
+    "library/who-smart-trust-trust-domains",
+    "references/who-trust-gdhcn-trust-domain-vs",
+    "vectors/gdhcn-trust-domains/CodeSystem-Domains.json"
+  ]
+}

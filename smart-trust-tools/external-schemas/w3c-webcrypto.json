@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "w3c-webcrypto",
+  "authority": "W3C",
+  "title": "Web Cryptography API",
+  "version": "W3C Recommendation",
+  "specUrl": "https://www.w3.org/TR/WebCryptoAPI/",
+  "namespaces": [],
+  "use": "cites",
+  "terms": []
+}

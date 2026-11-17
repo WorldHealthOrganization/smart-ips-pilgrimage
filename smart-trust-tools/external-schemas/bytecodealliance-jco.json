@@ -1,0 +1,12 @@
+{
+  "$schema": "folio-external-schema/v1",
+  "id": "bytecodealliance-jco",
+  "authority": "other",
+  "title": "jco, the JavaScript toolchain for WebAssembly components",
+  "version": "1.35.0",
+  "specUrl": "https://github.com/bytecodealliance/jco",
+  "namespaces": [],
+  "use": "reads",
+  "terms": [],
+  "note": "Bytecode Alliance; pinned in toolchain/node."
+}

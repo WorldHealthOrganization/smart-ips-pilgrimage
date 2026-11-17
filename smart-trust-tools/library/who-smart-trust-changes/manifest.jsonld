@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-changes",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "Change Log",
+  "contains": [
+    "library/who-smart-trust-changes/sections/s001-changes",
+    "library/who-smart-trust-changes/sections/s002-2024-01-29-v1-0-0-first-stable-release",
+    "library/who-smart-trust-changes/sections/s003-2024-02-01-v1-1-0",
+    "library/who-smart-trust-changes/sections/s004-2024-02-21-v1-1-1",
+    "library/who-smart-trust-changes/sections/s005-2024-03-22-v1-1-2-release",
+    "library/who-smart-trust-changes/sections/s006-2024-10-28-v1-1-4-release",
+    "library/who-smart-trust-changes/sections/s007-2024-12-19-v1-1-5-release",
+    "library/who-smart-trust-changes/sections/s008-2025-04-02-v1-2-0-release",
+    "library/who-smart-trust-changes/sections/s009-2025-10-27-v1-3-0-release",
+    "library/who-smart-trust-changes/sections/s010-2026-02-11-v1-4-0-release",
+    "library/who-smart-trust-changes/sections/s011-2026-04-27-v1-5-0-release",
+    "library/who-smart-trust-changes/sections/s012-2026-07-23-v1-6-0-release",
+    "library/who-smart-trust-changes/sections/s013-2026-07-29-v1-7-0-release",
+    "library/who-smart-trust-changes/sections/s014-2026-08-27-v1-7-1-release",
+    "library/who-smart-trust-changes/sections/s015-2026-09-03-v1-7-2-release",
+    "library/who-smart-trust-changes/sections/s016-2026-10-01-v1-7-3-release",
+    "library/who-smart-trust-changes/sections/s017-2026-10-09-v1-7-4-release",
+    "library/who-smart-trust-changes/sections/s018-v1-7-5"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust-tools/directory/library",
+  "license": "CC-BY-NC-SA-3.0-IGO",
+  "licenceRecord": {
+    "status": "stated",
+    "id": "CC-BY-NC-SA-3.0-IGO",
+    "basis": "WorldHealthOrganization/smart-trust LICENSE at the ingested commit: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO. Its own license.md page says Creative Commons Attribution 3.0 IGO instead (recorded as a bean). The text is held unmodified, with attribution, for non-commercial reference."
+  },
+  "meta": {
+    "doc_id": "who-smart-trust-changes",
+    "title_source": "text-heading",
+    "title_from": "structure.json metadata.title",
+    "source_file": "changes.md",
+    "source_sha256": "3984ebc0eac3c1ff13aa213f14b31dd1b7335e6fef908331876d0a324f4b7f2b",
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}

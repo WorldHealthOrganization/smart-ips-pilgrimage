@@ -1,0 +1,50 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-phw-dvcmin",
+  "source": {
+    "file": "DVCMin.fsh",
+    "sha256": "4e9458c303c44698e4e86b73ee096949a3048ebcbe0550892f82207230ddc355",
+    "digest": "file",
+    "bytes": 1504,
+    "mtime": "2026-08-31T12:50:22Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/fsh/models/DVCMin.fsh",
+        "sha256": "4e9458c303c44698e4e86b73ee096949a3048ebcbe0550892f82207230ddc355",
+        "bytes": 1504,
+        "lines": 33,
+        "format": "verbatim"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust-phw",
+      "commit": "fd3b5480e5df8001890d31ecc9761051c17c2cc5",
+      "ref": "main",
+      "committed": "2026-08-31T12:50:22Z",
+      "path": "input/fsh/models/DVCMin.fsh",
+      "published": "https://smart.who.int/trust-phw/StructureDefinition-DVCMin.html",
+      "retrieved": "2026-10-20T19:45:00Z"
+    }
+  },
+  "metadata": {
+    "title": "DVCMin logical model (FSH)"
+  },
+  "toc_source": "files",
+  "sections": [
+    {
+      "id": "s001-input-fsh-models-dvcmin-fsh",
+      "number": null,
+      "title": "input/fsh/models/DVCMin.fsh",
+      "level": 1,
+      "file": "input/fsh/models/DVCMin.fsh",
+      "line_start": 1,
+      "line_end": 33,
+      "unit": "file",
+      "n_chars": 1515,
+      "n_words": 206
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

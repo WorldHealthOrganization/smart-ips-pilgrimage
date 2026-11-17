@@ -1,0 +1,34 @@
+{
+  "id": "req:stt-ver-004",
+  "title": "EKU check against certificate type",
+  "description": "Engineering consequence of QR Code Generation, 11. Verifying: the same steps upwards; HCERT Specification, A.2 Extended Key Usage Identifiers. HCERT Specification, A.2 Extended Key Usage Identifiers: “If one or more are present, the verifiers SHALL verify the key usage against the stored HCERT.”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "EKU check against certificate type",
+      "conformance": "SHALL",
+      "requirement": "If the matching DSC has an Extended Key Usage extension with any of 1.3.6.1.4.1.1847.2021.1.1 (test), .1.2 (vaccinations) or .1.3 (recovery), the verifier SHALL check it against the certificate type of each hcert entry: DVC (-6) and DDCC VS (3) are vaccinations, DDCC TR (4) is test, and a DCC (1) is the type of its single v, t or r entry. An entry whose type the EKU does not permit SHALL be returned marked as not authorised (keyUsageAuthorised false), with a diagnostic; verification SHALL fail with KeyUsageMismatch only when no entry is authorised. A DSC with no such extension SHALL be accepted for any type.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VER-004 passes in each implementation's suite (Kotlin: `STT-VER-004 a DSC whose key usage allows test certificates only cannot sign a vaccination` (VerifyTest.kt); `STT-VER-004 a DCC is a test, vaccination or recovery certificate by its own entry`  (VerifyTest.kt); `STT-VER-004 STT-SEL-004 key usage is checked per entry`).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-qr-code-generation/sections/s012-11-verifying-the-same-steps-upwards",
+    "library/who-smart-trust-hcert-spec/sections/s028-a-2-extended-key-usage-identifiers"
+  ]
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns#" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#"
+                  id="Definitions_Process_VhlSharing" targetNamespace="https://litlfred.github.io/smart-trust-tools/processes" exporter="smart-trust-tools" exporterVersion="1">
+  <bpmn:resource id="vhl-sharer" name="VHL sharer"/>
+  <bpmn:resource id="vhl-receiver" name="VHL receiver"/>
+  <bpmn:collaboration id="Collaboration_Process_VhlSharing">
+    <bpmn:participant id="Participant_Process_VhlSharing" name="Share records by Verifiable Health Link" processRef="Process_VhlSharing"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_VhlSharing" name="Share records by Verifiable Health Link" isExecutable="false">
+    <bpmn:documentation>Journeys J4.0 and J4.1: the sharer issues one passcode-protected VHL per family member; a clinic abroad verifies it, retrieves the manifest over mutual TLS (the host's HTTP) and decrypts the documents (IHE ITI-YY3 to ITI-YY5).</bpmn:documentation>
+    <bpmn:extensionElements><cat-harness.processes:policy enforcement="advisory"/><cat-harness.processes:log capture="off"/></bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_Process_VhlSharing">
+      <bpmn:lane id="Lane_Sharer" name="VHL sharer" partitionElementRef="vhl-sharer">
+        <bpmn:documentation>The IHE ITI VHL Sharer side: issues Verifiable Health Links and hosts their manifests.</bpmn:documentation>
+        <bpmn:flowNodeRef>Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Key</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Link</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Receiver" name="VHL receiver" partitionElementRef="vhl-receiver">
+        <bpmn:documentation>The IHE ITI VHL Receiver side: scans a VHL, retrieves the manifest and reads the documents.</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_VerifyLink</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Request</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Read</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start" name="A holder chooses records to share"><bpmn:outgoing>Flow_1</bpmn:outgoing></bpmn:startEvent>
+    <bpmn:serviceTask id="Task_Key" name="Generate the link key and encrypt each document"><bpmn:documentation>Generate a 32-byte random key for the link and encrypt each document as JWE compact, dir / A256GCM.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="vhl-share"/></bpmn:extensionElements><bpmn:incoming>Flow_1</bpmn:incoming><bpmn:outgoing>Flow_2</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Link" name="Issue the VHL payload as an HCERT (key 5, CBOR map)"><bpmn:documentation>Issue the VHL payload (url, key, exp, flag, label) as a CBOR map at HCERT key 5, signed like any HCERT.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="vhl-share"/></bpmn:extensionElements><bpmn:incoming>Flow_2</bpmn:incoming><bpmn:outgoing>Flow_3</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_VerifyLink" name="Verify the VHL HCERT and its exp"><bpmn:documentation>Verify the VHL as an HCERT, and refuse a link whose exp has passed.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-verify"/></bpmn:extensionElements><bpmn:incoming>Flow_3</bpmn:incoming><bpmn:outgoing>Flow_4</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Request" name="Build and sign the ITI-YY5 manifest request"><bpmn:documentation>Build the ITI-YY5 request: POST &lt;url&gt;/List/_search with the form body (passcode only when the P flag is set), its Content-Digest and its RFC 9421 HTTP Message Signature. The host sends it over mutual TLS.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="vhl-receive"/></bpmn:extensionElements><bpmn:incoming>Flow_4</bpmn:incoming><bpmn:outgoing>Flow_5</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:serviceTask id="Task_Read" name="Read the manifest Bundle and decrypt each document"><bpmn:documentation>Read the searchset Bundle the sharer returns and decrypt each document with the link key, accepting zip DEF.</bpmn:documentation><bpmn:extensionElements><bootstrap.processes:skill ref="vhl-receive"/></bpmn:extensionElements><bpmn:incoming>Flow_5</bpmn:incoming><bpmn:outgoing>Flow_6</bpmn:outgoing></bpmn:serviceTask>
+    <bpmn:endEvent id="End" name="Documents read"><bpmn:incoming>Flow_6</bpmn:incoming></bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1" sourceRef="Start" targetRef="Task_Key"/>
+    <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_Key" targetRef="Task_Link"/>
+    <bpmn:sequenceFlow id="Flow_3" sourceRef="Task_Link" targetRef="Task_VerifyLink"/>
+    <bpmn:sequenceFlow id="Flow_4" sourceRef="Task_VerifyLink" targetRef="Task_Request"/>
+    <bpmn:sequenceFlow id="Flow_5" sourceRef="Task_Request" targetRef="Task_Read"/>
+    <bpmn:sequenceFlow id="Flow_6" sourceRef="Task_Read" targetRef="End"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_Process_VhlSharing">
+      <bpmndi:BPMNShape id="Participant_Process_VhlSharing_di" bpmnElement="Participant_Process_VhlSharing" isHorizontal="true"><dc:Bounds x="100" y="60" width="1430" height="360"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Sharer_di" bpmnElement="Lane_Sharer" isHorizontal="true"><dc:Bounds x="130" y="60" width="1400" height="180"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Receiver_di" bpmnElement="Lane_Receiver" isHorizontal="true"><dc:Bounds x="130" y="240" width="1400" height="180"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Start_di" bpmnElement="Start"><dc:Bounds x="202" y="132" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="160" y="174" width="120" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Key_di" bpmnElement="Task_Key"><dc:Bounds x="340" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Link_di" bpmnElement="Task_Link"><dc:Bounds x="530" y="110" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_VerifyLink_di" bpmnElement="Task_VerifyLink"><dc:Bounds x="720" y="290" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Request_di" bpmnElement="Task_Request"><dc:Bounds x="910" y="290" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_Read_di" bpmnElement="Task_Read"><dc:Bounds x="1100" y="290" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_di" bpmnElement="End"><dc:Bounds x="1342" y="312" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="1300" y="354" width="120" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1_di" bpmnElement="Flow_1"><di:waypoint x="238" y="150"/><di:waypoint x="340" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2_di" bpmnElement="Flow_2"><di:waypoint x="480" y="150"/><di:waypoint x="530" y="150"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_3_di" bpmnElement="Flow_3"><di:waypoint x="670" y="150"/><di:waypoint x="695" y="150"/><di:waypoint x="695" y="330"/><di:waypoint x="720" y="330"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_4_di" bpmnElement="Flow_4"><di:waypoint x="860" y="330"/><di:waypoint x="910" y="330"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_5_di" bpmnElement="Flow_5"><di:waypoint x="1050" y="330"/><di:waypoint x="1100" y="330"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_6_di" bpmnElement="Flow_6"><di:waypoint x="1240" y="330"/><di:waypoint x="1342" y="330"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,33 @@
+{
+  "id": "req:stt-cos-006",
+  "title": "No private keys required in-process",
+  "description": "Engineering consequence of HCERT Specification, 6.2 Key Management. HCERT Specification, 6.2 Key Management: “Use of HSMs for signing health certificates is highly encouraged.”.",
+  "status": "proposed",
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "No private keys required in-process",
+      "conformance": "SHALL",
+      "requirement": "The issuer SHALL NOT need access to private key material: issuance is prepare, then the caller signs the returned bytes by any means (HSM, KMS, PKCS#11, Android Keystore, WebCrypto), then finish (STT-ISS-004). A software ES256 and PS256 signer SHALL be provided for tests only, in the testkit module.",
+      "category": "security",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-COS-006 passes in each implementation's suite (Kotlin: `STT-COS-006 the library holds no private key, and refuses a signature from another key` (SignCoseTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "security",
+    "derived"
+  ],
+  "reference": [
+    "library/who-smart-trust-hcert-spec/sections/s024-6-2-key-management"
+  ]
+}

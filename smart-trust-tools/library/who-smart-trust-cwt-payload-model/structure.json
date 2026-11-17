@@ -1,0 +1,50 @@
+{
+  "_schema": "text-structure/v1",
+  "doc_id": "who-smart-trust-cwt-payload-model",
+  "source": {
+    "file": "cwt_payload.fsh",
+    "sha256": "14a0acab2e030e0e2abbd25969848afb9a366f9ecd58dadf1dd2f98f42859ee6",
+    "digest": "file",
+    "bytes": 598,
+    "mtime": "2026-10-22T10:51:06Z",
+    "mimetype_sniffed": "text/plain",
+    "mimetype_source": "content",
+    "files": [
+      {
+        "path": "input/fsh/models/cwt_payload.fsh",
+        "sha256": "14a0acab2e030e0e2abbd25969848afb9a366f9ecd58dadf1dd2f98f42859ee6",
+        "bytes": 598,
+        "lines": 15,
+        "format": "verbatim"
+      }
+    ],
+    "upstream": {
+      "repository": "https://github.com/WorldHealthOrganization/smart-trust",
+      "commit": "af75be20b75ab87efcfd1201ccd43020f487f660",
+      "ref": "main",
+      "committed": "2026-10-22T10:51:06Z",
+      "path": "input/fsh/models/cwt_payload.fsh",
+      "published": "https://smart.who.int/trust/StructureDefinition-CWTPayload.html",
+      "retrieved": "2026-10-22T16:40:00Z"
+    }
+  },
+  "metadata": {
+    "title": "CWTPayload logical model (FSH)"
+  },
+  "toc_source": "files",
+  "sections": [
+    {
+      "id": "s001-input-fsh-models-cwt-payload-fsh",
+      "number": null,
+      "title": "input/fsh/models/cwt_payload.fsh",
+      "level": 1,
+      "file": "input/fsh/models/cwt_payload.fsh",
+      "line_start": 1,
+      "line_end": 15,
+      "unit": "file",
+      "n_chars": 608,
+      "n_words": 80
+    }
+  ],
+  "structure_note": "Text is kept verbatim and NOT rendered: shortcodes, JSX components, HTML and link targets stay as the author wrote them. A Markdown file is divided by its own ATX headings outside fenced code; any other text file is one section, fenced verbatim. No division was inferred."
+}

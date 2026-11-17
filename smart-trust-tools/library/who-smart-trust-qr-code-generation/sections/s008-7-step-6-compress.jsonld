@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/who-smart-trust-qr-code-generation/sections/s008-7-step-6-compress",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "7. Step 6 — Compress",
+  "contains": [
+    "library/who-smart-trust-qr-code-generation/blocks/prose-s008-7-step-6-compress"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-qr-code-generation",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/who-smart-trust-qr-code-generation",
+  "provenance": "ingested"
+}

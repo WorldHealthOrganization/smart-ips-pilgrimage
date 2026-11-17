@@ -1,0 +1,11 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-smart-trust-hcert-spec",
+  "type": "webpage",
+  "title": "HCERT Specification",
+  "title-short": "HCERT",
+  "publisher": "World Health Organization",
+  "URL": "https://smart.who.int/trust/hcert_spec.html",
+  "provenance": "authored",
+  "heldAt": "library/who-smart-trust-hcert-spec"
+}

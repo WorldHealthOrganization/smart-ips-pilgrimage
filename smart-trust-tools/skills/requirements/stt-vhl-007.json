@@ -1,0 +1,40 @@
+{
+  "id": "req:stt-vhl-007",
+  "title": "Document encryption: JWE dir / A256GCM",
+  "description": "Restates IHE VHL ITI-YY5, 2:3.YY5.4.2.5 Document Encryption; RFC 7516; RFC 7518; Stakeholder directive: Verifiable Health Links follow IHE VHL, CBOR map at key 5. IHE VHL ITI-YY5 Retrieve Manifest, 2:3.YY5.4.2.5 Document Encryption: “VHL document binaries are encrypted following the SMART Health Links — Encrypting and Decrypting Files convention”. Stakeholder directive: Verifiable Health Links follow IHE VHL, CBOR map at key 5: “Encryption as VHL”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-vhl-001"
+  ],
+  "reference": [
+    "library/ihe-iti-vhl-iti-yy5/sections/s019-2-3-yy5-4-2-5-document-encryption",
+    "external-schemas/ietf-rfc7516",
+    "external-schemas/ietf-rfc7518",
+    "memory/dir-vhl"
+  ],
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Document encryption: JWE dir / A256GCM",
+      "conformance": "SHALL",
+      "requirement": "Document binaries SHALL be encrypted and decrypted as JWE Compact Serialization (RFC 7516) with alg dir and enc A256GCM (RFC 7518), the VHL key as the content key and the protected header as additional authenticated data, following SMART Health Links. Decryption SHALL refuse any other alg or enc, SHALL accept zip DEF, and SHALL fail on a bad tag. Encryption SHALL set cty to the document's content type.",
+      "category": "security",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VHL-007 passes in each implementation's suite (Kotlin: `STT-VHL-007 decrypts what node crypto encrypted, with and without zip DEF` (VhlReceiveTest.kt); `STT-VHL-007 a wrong key, a changed byte and another enc are refused` (VhlReceiveTest.kt); `STT-VHL-007 a document is encrypted as compact JWE dir A256GCM` (VhlShareTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "security",
+    "direct"
+  ]
+}

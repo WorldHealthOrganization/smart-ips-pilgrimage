@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust-tools/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "library/ihe-iti-vhl-volume-1/sections/s027-1-xx-5-1-trust-network-security",
+  "@type": [
+    "doco:Section"
+  ],
+  "title": "1:XX.5.1 Trust Network Security",
+  "contains": [
+    "library/ihe-iti-vhl-volume-1/blocks/prose-s027-1-xx-5-1-trust-network-security"
+  ],
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust-tools/source/ihe-iti-vhl-volume-1",
+  "provenance": "ingested"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "req:stt-tru-001",
+  "title": "Trust store",
+  "description": "Engineering consequence of HCERT Specification, Appendix A - Trust Management; QR Code Generation, 11. Verifying: the same steps upwards. HCERT Specification, Appendix A - Trust Management: “Ultimately, every Verifier needs to have a list of all public keys it is willing to trust”.",
+  "status": "proposed",
+  "reference": [
+    "http://smart.who.int/trust/Requirements/UtilizeVDHC#UtilizeVDHC-retreive-keys",
+    "http://smart.who.int/trust/Requirements/RetrievePKIMaterial",
+    "library/who-smart-trust-hcert-spec/sections/s026-appendix-a-trust-management",
+    "library/who-smart-trust-qr-code-generation/sections/s012-11-verifying-the-same-steps-upwards"
+  ],
+  "actors": [
+    "vhl-receiver",
+    "trust-anchor",
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Trust store",
+      "conformance": "SHALL",
+      "requirement": "Trust material SHALL be held in a trust store that the host fills with DSCs it has obtained, and that returns every trusted DSC matching a kid. The store SHALL do no network or file I/O (STT-GEN-012).",
+      "category": "api",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-TRU-001 passes in each implementation's suite (Kotlin: `STT-TRU-001 STT-KID-001 a DSC is found by its kid, the first 8 bytes of its SHA-256` (TrustListTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "api",
+    "derived"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "req:stt-sel-002",
+  "title": "Registry is extensible",
+  "description": "Engineering consequence of HCERT Specification, 3.2.7.1 Subclaims. HCERT Specification, 3.2.7.1 Subclaims: “subclaims for negative integer values are for development purposes and are free to use”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-sel-001"
+  ],
+  "reference": [
+    "library/who-smart-trust-hcert-spec/sections/s013-3-2-7-health-certificate-claim"
+  ],
+  "actors": [
+    "vhl-sharer"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "Registry is extensible",
+      "conformance": "SHALL",
+      "requirement": "Integrators SHALL be able to register more subclaims and their codecs, and override the defaults, at runtime, without forking the library.",
+      "category": "api",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-SEL-002 passes in each implementation's suite (Kotlin: `STT-SEL-002 a host registers its own subclaim and issues under it` (SelectPayloadTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "api",
+    "derived"
+  ]
+}

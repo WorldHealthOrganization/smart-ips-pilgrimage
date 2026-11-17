@@ -1,0 +1,38 @@
+{
+  "id": "req:stt-vhl-003",
+  "title": "vhlink:/ text form",
+  "description": "Restates IHE VHL ITI-YY3, 2:3.YY3.4.1.3 Expected Actions; RFC 4648. IHE VHL ITI-YY3 Generate VHL, 2:3.YY3.4.1.3 Expected Actions: “Prefixed with vhlink:/”.",
+  "status": "proposed",
+  "derivedFrom": [
+    "req:stt-vhl-001"
+  ],
+  "reference": [
+    "library/ihe-iti-vhl-iti-yy3/sections/s010-2-3-yy3-4-1-3-expected-actions",
+    "external-schemas/ietf-rfc4648"
+  ],
+  "actors": [
+    "vhl-sharer",
+    "vhl-receiver"
+  ],
+  "statements": [
+    {
+      "key": "statement",
+      "label": "vhlink:/ text form",
+      "conformance": "SHALL",
+      "requirement": "The library SHALL convert a VHL payload to and from its text form: the minified JSON, base64url-encoded without padding (RFC 4648), prefixed with vhlink:/.",
+      "category": "functional",
+      "successCriteria": [
+        {
+          "key": "test",
+          "criterion": "A test named after STT-VHL-003 passes in each implementation's suite (Kotlin: `STT-VHL-002 STT-VHL-003 a vhlink string at key 5 still verifies, and the map is smaller` (VhlShareTest.kt); `STT-VHL-003 vhlink round-trips, and reads the IHE example link` (VhlShareTest.kt)).",
+          "verification": "test"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "hcert-library",
+    "functional",
+    "direct"
+  ]
+}
