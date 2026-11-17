@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-1d10603bf37e5c1fbdddd2a493eff491",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-1d10603bf37e5c1fbdddd2a493eff491",
+  "schema:name": "P0 · Before the season — keys and codes are shared",
+  "schema:description": "Onesa's HIE publishes the public keys it signs health documents with to the WHO GDHCN trust network, and shares the national code systems its IPS uses with the WHO Terminology Service. Nothing about Kamal yet: this is what lets a Taifafeki clinic trust and read an Onesan record months later. Step A of the overview of key process flows.",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

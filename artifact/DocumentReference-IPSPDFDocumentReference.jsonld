@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "DocumentReference-IPSPDFDocumentReference",
+  "@type": "fhir:DocumentReference",
+  "dcterms:identifier": "DocumentReference/IPSPDFDocumentReference",
+  "dcterms:title": "IPSPDFDocumentReference",
+  "dcterms:type": "Other",
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../DocumentReference-IPSPDFDocumentReference.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/resources/DocumentReference/IPSPDFDocumentReference.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "7ee9b7f3054cdd2baee121f06a30d6e7e3393015"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.ips-pilgrimage",
+    "schema:version": "2.1.0",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/ips-pilgrimage"
+    }
+  },
+  "dcterms:conformsTo": [
+    {
+      "@id": "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+    }
+  ]
+}

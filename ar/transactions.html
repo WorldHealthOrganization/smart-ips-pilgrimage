@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<script type="application/json" id="fa-translation-meta">{"lang":"ar","translationStatus":"unverified","translationSource":"transactions.html","supportedLocales":["ar","zh","en","fr","ru","es"],"availableLocales":["en","ar","es","fr","ru","zh"]}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transactions — SMART Verifiable IPS for Pilgrimage</title>
+<link rel="canonical" href="../ar/transactions.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23276749'/%3E%3C/svg%3E">
+<meta name="folio-navbar" content="linked">
+<meta name="fa-visualiser-label" content="SMART Verifiable IPS for Pilgrimage">
+<link rel="stylesheet" href="../assets/page-layout.css" data-fa-page-layout>
+<script src="../assets/page-layout.js" defer data-fa-page-layout></script>
+<link rel="stylesheet" href="../assets/ig-artifact.css">
+<link rel="stylesheet" href="../assets/css/docs-ui.css" data-fa-folio-mount>
+<script src="../assets/navbar/row-2acuhncsmbg.js" defer></script><script src="../assets/js/docs-ui.js" defer data-fa-folio-mount></script>
+<style data-ig-version-chrome>.ig-topbar-head{flex:0 0 100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .9rem}.ig-topbar-head .ig-topbar-home{flex:none}.ig-topbar-ver{font-weight:400;font-size:.9em;opacity:.95;white-space:nowrap}.ig-topbar-flag{font-size:1.1em}.ig-version-banner{box-sizing:border-box;margin:0;padding:.5rem 1.5rem;background:#ffffa0;color:#222;border-bottom:1px solid #0a0008;font-size:.95rem;line-height:1.45}.ig-version-banner a{color:#1a4b8c;text-decoration:underline}html:not([data-fa-scheme="light"]) .ig-version-banner{background:#4a4520;color:#fff8d0;border-color:#8a7d2a}html:not([data-fa-scheme="light"]) .ig-version-banner a{color:#ffe680}.ig-metadata{border-collapse:collapse;margin:0 0 1rem;font-size:.95rem}.ig-metadata td{border:1px solid #c8c8c8;padding:.25rem .6rem;vertical-align:top}.ig-metadata code{overflow-wrap:anywhere}</style><link rel="stylesheet" href="../assets/css/navbar.css"><script src="../assets/navbar/rail-18omdrezsx1.js" defer></script><script src="../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../assets/css/navbar-row.css"><script src="../assets/js/navbar-row.js" defer></script><meta name="fa-pinned-data" content=".."></head>
+<body><script type="application/json" id="fa-navbar-row" data-fa-root=".." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="..">{"data":"rail-18omdrezsx1","here":"/ar/transactions.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../">SMART Verifiable IPS for Pilgrimage</a></nav>
+
+<div class="ig-topbar fa-page-bar" role="navigation" aria-label="SMART Verifiable IPS for Pilgrimage menu"><span class="ig-topbar-head"><a class="ig-topbar-home" href="../index.html">SMART Verifiable IPS for Pilgrimage</a><span class="ig-topbar-ver">2.1.0 - release</span></span><details class="ig-topbar-group"><summary>Home</summary><ul><li><a href="../index.html">Summary</a></li><li><a href="../changes.html">Changes</a></li><li><a href="../dependencies.html">Dependencies</a></li><li><a href="../en/folio-assistant-core/bibliography/">Bibliography</a></li><li><a href="../adapting.html">Adapting Guidelines for Country use</a></li></ul></details><details class="ig-topbar-group"><summary>Business Requirements</summary><ul><li><a href="../concepts.html">Concepts</a></li><li><a href="../personas.html">Generic Personas</a></li><li><a href="../scenarios.html">User Scenarios</a></li><li><a href="../business-processes.html">Business Processes</a></li><li><a href="../dictionary.html">Data Dictionary</a></li><li><a href="../decision-logic.html">Decision-support Logic</a></li><li><a href="../indicators.html">Indicator and Performance Metrics</a></li><li><a href="../functional-requirements.html">Functional Requirements</a></li><li><a href="../non-functional-requirements.html">Non-functional Requirements</a></li></ul></details><details class="ig-topbar-group"><summary>Data Models and Exchange</summary><ul><li><a href="../system-actors.html">System Actors</a></li><li><a href="../sequence-diagrams.html">Sequence Diagrams</a></li><li><a href="../transactions.html">Transactions</a></li><li><a href="../indicators-measures.html">Indicators and Measures</a></li><li><a href="../codings.html">Codings</a></li></ul></details><details class="ig-topbar-group"><summary>Deployment</summary><ul><li><a href="../security-privacy.html">Security and Privacy Considerations</a></li><li><a href="../testing.html">Testing</a></li><li><a href="../test-data.html">Test Data</a></li><li><a href="../reference-implementations.html">Reference Implementations</a></li><li><a href="../trust_domain.html">Trust Domains</a></li><li><a href="../downloads.html">Downloads</a></li></ul></details><details class="ig-topbar-group"><summary>Indices</summary><ul><li><a href="../artifacts.html">Artifact Index</a></li><li><a href="../maps.html">Mappings</a></li></ul></details><form class="ig-search" role="search" data-ig-search-index="../assets/ig-search.json"><label class="ig-search-label" for="search-input">Search SMART Verifiable IPS for Pilgrimage</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span><script src="../assets/ig-search.js" defer></script></div><p class="ig-version-banner" role="note">هذه الصفحة جزء من SMART Verifiable IPS for Pilgrimage (v2.1.0: release)، المستند إلى <a href="http://hl7.org/fhir/R4/">FHIR (HL7® FHIR® Standard) v4.0.1</a>. للاطلاع على القائمة الكاملة للإصدارات المتاحة، راجع <a href="http://smart.who.int/ips-pilgrimage/history.html">دليل الإصدارات المنشورة</a>.</p>
+<main class="ig-main main-content fa-page-main" id="main-content">
+<div class="ig-tr-notice fa-translation-warning" role="note" aria-label="Machine translation, not reviewed by a person"><div class="ig-tr-notice__lang" lang="ar" dir="rtl"><p class="ig-tr-notice__title"><span aria-hidden="true">⚠️</span> <strong>ترجمة آلية — لم يراجعها أي شخص</strong></p><p class="ig-tr-notice__body">تُرجمت هذه الصفحة آليًا. لم يراجع أي شخص هذه الترجمة أو يعتمدها، وقد تحتوي على أخطاء. الصفحة بلغة المصدر هي النص المرجعي. <a class="ig-tr-notice__source" href="../transactions.html">اقرأ النص الأصلي (بالإنجليزية)</a></p></div><p class="ig-tr-notice__en" lang="en" dir="ltr">Machine translation — not reviewed by a person. <a class="ig-tr-notice__source" href="../transactions.html">Read the original (English)</a></p></div>
+<p><span hidden="" data-fa-figure-images="ig"></span></p>
+
+<div class="ig-tr-unreviewed" data-tr-catalogue="transactions" data-tr-label="لم يراجعه أي شخص">
+
+  <p>هذه هي المعاملات المعرَّفة لـ ips-pilgrimage</p>
+
+  <h3 id="record-consent-request">تسجيل الموافقة من المحفظة - طلب</h3>
+
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-record-consent-request-preamble" data-tr-label="لم يراجعه أي شخص">
+
+    <p>تبدأ معاملة Record Consent Request Event من حلٍّ صحي في بلد المنشأ موجَّهةً إلى HIE بلد المنشأ. ويجب أن تتبع هذه المعاملة معاملة تسجيل الموافقة IHE PCF (ITI-108). وتؤدي المحفظة الصحية لبلد المنشأ دور الجهة الفاعلة Consent Record، وتؤدي HIE بلد المنشأ دور الجهة الفاعلة Consent Registry.</p>
+
+    <figure>
+<p class="ig-not-rendered"><strong>⟦not rendered: send_consent_request.svg⟧</strong> — the IG Publisher renders it from <code>input/images-source/send_consent_request.plantuml</code>; no renderer was given to this build.</p>
+
+</figure>
+
+  </div>
+  <h4 id="section">الأحداث المُطلِقة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-record-consent-request-trigger-events" data-tr-label="لم يراجعه أي شخص">
+
+    <ul>
+      <li>سُجِّل توجيه موافقة جديد بواسطة محفظة صحية رقمية.</li>
+    </ul>
+
+  </div>
+  <h4 id="section-1">دلالات الرسالة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-record-consent-request-message-semantics" data-tr-label="لم يراجعه أي شخص">
+
+    <h5 id="section-2">دلالات رسالة الطلب</h5>
+    <ul>
+      <li>
+        <p>تستخدم دلالات رسالة طلب Record Consent موردَ FHIR Consent مُرسَلًا في صورة طلب http من نوع PUT أو POST.</p>
+      </li>
+      <li>
+        <p>انظر <a href="https://profiles.ihe.net/ITI/PCF/ITI-108.html">https://profiles.ihe.net/ITI/PCF/ITI-108.html</a> لمزيد من التفاصيل.</p>
+      </li>
+      <li>
+        <p>وتحديدًا،</p>
+        <ul>
+          <li>Access Consent - إنشاء (ITI-108)</li>
+          <li>Access Consent - تحديث (ITI-108)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h5 id="section-3">دلالات رسالة الاستجابة</h5>
+    <ul>
+      <li>انظر قسمَي Create وUpdate في ITI 108. ويُشار إلى نجاح تفاعل الإنشاء/التحديث أو فشله برمز استجابة http (مثل 400، 200، إلخ).</li>
+    </ul>
+
+  </div>
+  <h4 id="section-4">الإجراءات المتوقعة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-record-consent-request-expected-actions-semantics" data-tr-label="لم يراجعه أي شخص">
+
+    <ul>
+      <li>تُخزَّن الموافقة في سجل الموافقات. يُرجى الاطلاع هنا على بيانات القدرات الخاصة بالجهة الفاعلة سجل الموافقات</li>
+    </ul>
+
+  </div>
+
+  <h3 id="issue-vhl-request">إصدار VHL - طلب</h3>
+
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-issue-verifiable-shl-request-preamble" data-tr-label="لم يراجعه أي شخص">
+
+    <p>تبدأ معاملة حدث طلب إصدار VHL من المحفظة الصحية لبلد المنشأ تجاه نظام HIE في بلد المنشأ.</p>
+
+    <figure>
+<p class="ig-not-rendered"><strong>⟦not rendered: issue_shl_request.svg⟧</strong> — the IG Publisher renders it from <code>input/images-source/issue_shl_request.plantuml</code>; no renderer was given to this build.</p>
+
+</figure>
+
+  </div>
+  <h4 id="section-5">الأحداث المُطلِقة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-issue-verifiable-shl-request-trigger-events" data-tr-label="لم يراجعه أي شخص">
+
+    <ul>
+      <li>تبدأ معاملة طلب إصدار VHL عندما تسجّل محفظة صحية رقمية نموذجَ ضبط للخصوصية يتضمن إعدادات الإفصاح والحد الزمني.</li>
+    </ul>
+
+  </div>
+  <h4 id="section-6">دلالات الرسالة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-issue-verifiable-shl-request-message-semantics" data-tr-label="لم يراجعه أي شخص">
+
+    <h5 id="section-7">دلالات رسالة الطلب</h5>
+    <ul>
+      <li>يجب أن تتضمن دلالات الرسالة لطلب إصدار VHL المعاملات اللازمة لإنشاء <a href="https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html#construct-a-smart-health-link-payload">حمولة رابط SMART الصحي</a>، وتحديدًا
+        <ul>
+          <li>مؤشر رمز المرور</li>
+          <li>وقت انتهاء الصلاحية</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h5 id="section-8">دلالات رسالة الاستجابة</h5>
+    <ul>
+      <li>يجب أن تتضمن استجابة طلب إصدار VHL قيمة CWT مُسلسَلة عبر صورة رمز QR، كما هو محدد في قسم الإجراءات المتوقعة.</li>
+    </ul>
+
+  </div>
+  <h4 id="section-9">الإجراءات المتوقعة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-issue-verifiable-shl-request-expected-actions-semantics" data-tr-label="لم يراجعه أي شخص">
+
+    <p>فيما يلي الإجراءات المتوقعة من <a href="system-actors.html#ochie">HIE البلد الأم</a> فور استلامه ضبط الخصوصية:</p>
+    <ul>
+      <li>ينشئ HIE البلد الأم <a href="https://profiles.ihe.net/ITI/MHD/StructureDefinition-IHE.MHD.Minimal.Folder.html">مجلدًا</a> للزائر يتضمن ما يلي الخاص بالزائر:
+        <ul>
+          <li>مستند IPS بصيغة FHIR أو PDF أو كلتيهما</li>
+          <li>مستند IPS موقَّع بوصفه كائن JSON من نوع DSG jws لكل مستند مدرج في المجلد</li>
+        </ul>
+      </li>
+      <li>يجب اتباع <a href="https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html">مواصفات SHL</a> لإنشاء رابط SMART الصحي، الذي يُغلَّف بعد ذلك في <a href="https://www.smart.who.int/trust/StructureDefinition-Hcert.html">بنية HCERT</a> ويُشارَك بوصفه <a href="https://www.smart.who.int/trust/StructureDefinition-CWT.html">بنية CWT</a>، باتباع الخطوات أدناه:
+        <ul>
+          <li>إنشاء موقع يشير إلى مراجع المستندات داخل المجلد الخاص بالزائر وفق الصيغة التالية: «{host}/List?_id={folder_id}&amp;_include=List:item» حيث يمثّل ‘folder_id’ معرّفًا فريدًا لمجلد المستندات الصحية الخاص بالزائر. ويجب استخدام ذلك بوصفه URL الرابط الصحي ضمن حمولة VHL</li>
+          <li>إنشاء <a href="https://smart.who.int/trust/StructureDefinition-SmartHealthLinkPayload.html">حمولة SHLink</a>
+            <ul>
+              <li>مُصغَّر</li>
+              <li>مُرمَّز بـ Base64url</li>
+              <li>مسبوق بالبادئة shlink:/</li>
+            </ul>
+          </li>
+          <li>بناء HCERT يتضمن SHL المُولَّد في الخطوة السابقة</li>
+          <li>بناء حمولة COSE التي تتضمن HCERT والتوقيع بالمفتاح الخاص باستخدام Kid</li>
+          <li>بناء CWT يتضمن الترويسة والحمولة والتوقيع</li>
+          <li>سَلسَلة CWT باستخدام Base64</li>
+          <li>توليد رمز QR</li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+
+  <h3 id="retrieve-VHL-manifest-request">استرجاع مستندات مجلد VHL - طلب</h3>
+
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-retrieve-MHD-folder-request-preamble" data-tr-label="لم يراجعه أي شخص">
+
+    <p>يبدأ EMR البلد المضيف معاملة حدث طلب استرجاع مستندات مجلد VHL لدى HIE البلد الأم.</p>
+
+    <figure>
+<p class="ig-not-rendered"><strong>⟦not rendered: retrieve_MHD_folder_request.svg⟧</strong> — the IG Publisher renders it from <code>input/images-source/retrieve_MHD_folder_request.plantuml</code>; no renderer was given to this build.</p>
+
+</figure>
+
+  </div>
+  <h4 id="section-10">الأحداث المُطلِقة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-retrieve-MHD-folder-request-trigger-events" data-tr-label="لم يراجعه أي شخص">
+
+    <ul>
+      <li>تبدأ معاملة طلب استرجاع مستندات مجلد VHL حين يستخرج EMR البلد المضيف حمولة VHL من رمز QR ممسوح، ويكون فكّ تشفير CWT قد أسفر عن حمولة HCERT تغلّف حمولة VHL بداخلها.</li>
+    </ul>
+
+  </div>
+  <h4 id="section-11">دلالات الرسالة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-retrieve-MHD-folder-request-message-semantics" data-tr-label="لم يراجعه أي شخص">
+
+    <h5 id="section-12">دلالات رسالة الطلب</h5>
+    <ul>
+      <li>يجب أن تكون دلالات رسالة طلب استرجاع مستندات مجلد VHL طلب POST كما هو محدد في <a href="https://build.fhir.org/ig/HL7/smart-health-cards-and-links/links-specification.html#smart-health-link-manifest-request">طلب بيان SMART Health Link</a>، مع رمز المرور المقدَّم في متن الطلب.</li>
+    </ul>
+
+    <h5 id="section-13">دلالات رسالة الاستجابة</h5>
+    <ul>
+      <li>يجب أن تتبع دلالات الرسالة نسخةً معدَّلة من رسالة استجابة Find Document References في <a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html#2367422-message-semantics">ITI-67</a>، وأن تُعيد في حالة نجاح الاستعلامات FHIR bundle يتضمن جميع documentReference المتاحة في مجلد VHL الخاص بالزائر. ويتمثل تعديل معاملة ITI-67 في أنه يجب على HIE بلد المنشأ احترام معلمة البحث _include بالقيمة List:item، لأن URL المُنشأ في حمولة VHL يكون بالتنسيق:
+        <blockquote>
+          <p>{host}/List?_id={folder_id}&amp;_include=List:item”</p>
+        </blockquote>
+      </li>
+    </ul>
+
+    <h5 id="emr--">مصادقة EMR البلد المضيف</h5>
+    <p>يقابل طلب استرجاع مستندات مجلد VHL معاملة Retrieve Manifest في الرابط الصحي القابل للتحقق (VHL) من IHE [ITI-YY5]. ويُستشهد بـ VHL هنا في الإصدار <a href="https://profiles.ihe.net/ITI/VHL/1.0.0-comment/">1.0.0-comment</a>، وهو اقتراع للتعليق العام، وليس منشورًا نهائيًا أو منشورًا للتنفيذ التجريبي؛ وقد يتغير نصه وأرقام أقسامه. وقد قُرئت الأقسام المستشهد بها أدناه من مصدر IHE/ITI.VHL (الإيداع <code class="language-plaintext highlighter-rouge">48201473</code>)، لا من صفحات الاقتراع المنشورة.</p>
+
+    <p>يسمّي VHL [ITI-YY5] ثلاثة خيارات تُجري بها الجهة المُستقبِلة في VHL (هنا، EMR البلد المضيف) المصادقة لدى الجهة المُشارِكة في VHL (هنا، HIE بلد المنشأ):</p>
+    <ul>
+      <li>توقيعات رسائل HTTP (RFC 9421)، ITI-YY5 §2:3.YY5.4.1.3؛</li>
+      <li>خيار OAuth with SSRAA، باستخدام دليل التنفيذ <a href="http://hl7.org/fhir/us/udap-security/">HL7 Security for Scalable Registration, Authentication, and Authorization (SSRAA)</a>، وهو ملف تعريف HL7 FHIR لـ UDAP، ITI-YY5 §2:3.YY5.4.1.4؛</li>
+      <li>خيار Verifiable Credential، ITI-YY5 §2:3.YY5.4.1.5.</li>
+    </ul>
+
+    <p>يُظهر هذا الدليل حاليًا EMR البلد المضيف وهو يُجري المصادقة لدى HIE بلد المنشأ باستخدام مصادقة العُقد mTLS ([ITI-19]) (انظر مخطط تسلسل لقاء الرعاية غير المخطط لها). ومصادقة العُقد mTLS ليست أحد خيارات مصادقة VHL الثلاثة. ولا يزال VHL يشترط نقلًا آمنًا: إذ يشترط ITI-YY5 §2:3.YY5.5.1 الامتثال لملف تعريف IHE ATNA لأمن النقل، ويشترط المجلد 1 من VHL §1:XX.3 أن تُجمَّع الجهة المُستقبِلة في VHL والجهة المُشارِكة في VHL مع ATNA Secure Node أو Secure Application. ولذلك لا تزال قناة TLS متوقَّعة، لكنها وحدها لا تستوفي أيًّا من خيارات مصادقة VHL.</p>
+
+    <p>يوصى بأن يُجري EMR البلد المضيف المصادقة باستخدام خيار OAuth with SSRAA. وعلى غرار نهج mTLS الحالي، يستند هذا الخيار إلى شهادات X.509: إذ تتسلسل شهادة EMR البلد المضيف إلى مرسى مقبول في نطاق الثقة <code class="language-plaintext highlighter-rouge">ips-pilgrimage</code>، فتتعرّف HIE بلد المنشأ على الجهة المُستقبِلة بتلك الثقة، لا بالبحث عن اتفاقية منفصلة. وبموجب هذا الخيار، يُستكمل اكتشاف SSRAA والتسجيل فيه قبل طلب رمز الوصول (ITI-YY5 §2:3.YY5.4.1.4). ولم يحدد هذا الدليل بعد كيفية نشر شهادة EMR البلد المضيف أو مفتاحه في نطاق الثقة <code class="language-plaintext highlighter-rouge">ips-pilgrimage</code>.</p>
+
+  </div>
+  <h4 id="section-14">الإجراءات المتوقعة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-retrieve-MHD-folder-request-expected-actions-semantics" data-tr-label="لم يراجعه أي شخص">
+
+    <ul>
+      <li>تتحقق OCHIE المتلقية من صلاحية طلب VHL وتستجيب بـ documentReference في صورة FHIR bundle بتنسيق Json.</li>
+      <li>تعمل OCHIE المتلقية بوصفها VHL Document Responder ويجب أن تمتثل لبيان القدرات الخاص بـ <a href="../artifact/CapabilityStatement-VHLDocumentResponder.html">VHL Document Responder</a></li>
+    </ul>
+
+    <h5 id="section-15">البتّ في الطلب: موافقات الزائر هي السياسة</h5>
+    <p>بالنسبة إلى الزيارة الدينية، لا توجد اتفاقية منفصلة لمشاركة البيانات يُرجَع إليها. فمورِدا <a href="../artifact/StructureDefinition-HajjConsent.html">HajjConsent</a> الخاصان بالزائر هما السياسة، وكلٌّ منهما يُلزم الطرف الذي يسمّيه:</p>
+    <ul>
+      <li>تتيح موافقة الإفراج في بلد المنشأ (على سبيل المثال <code class="language-plaintext highlighter-rouge">CONSENT-MYS</code>، أو <code class="language-plaintext highlighter-rouge">CONSENT-XXK</code> الخيالية في أمثلة هذا الدليل) لـ HIE بلد المنشأ الإفراج عن IPS للمتلقي المسمّى في <code class="language-plaintext highlighter-rouge">Consent.provision.actor</code> (الدور <code class="language-plaintext highlighter-rouge">IRCP</code>، متلقي المعلومات)، للغرض الوارد في <code class="language-plaintext highlighter-rouge">Consent.provision.purpose</code> (<code class="language-plaintext highlighter-rouge">TREAT</code>)، خلال <code class="language-plaintext highlighter-rouge">Consent.provision.period</code>. وتُنفِّذ HIE بلد المنشأ هذه الموافقة انطلاقًا من سجل الموافقات (Consent Registry) الخاص بها (كما سجّلته معاملة Record Consent، [ITI-108])، لا من النسخة المحمولة داخل IPS. فنسخة IPS تُوقَّع عند إصدار IPS، ولذلك لا يمكنها إظهار سحبٍ لاحق.</li>
+      <li>تحكم موافقة الاستخدام في البلد المضيف (<code class="language-plaintext highlighter-rouge">CONSENT-KSA</code>، أو <code class="language-plaintext highlighter-rouge">CONSENT-XXR</code> الخيالية في أمثلة هذا الدليل) استخدامَ وزارة الصحة في البلد المضيف لـ IPS بعد استلامه: للعلاج خلال الزيارة الدينية وأي رعاية متابعة، كما ينص نص الموافقة.</li>
+    </ul>
+
+    <p>تُحمَل هوية الموافقة التي يمثلها <code class="language-plaintext highlighter-rouge">Consent</code>، ونص الموافقة الذي عُرض على الحاج، في <code class="language-plaintext highlighter-rouge">Consent.policyRule</code>: وهو رمز من CodeSystem <a href="../artifact/CodeSystem-IPS.HAJJ.CONSENT.html">IPS.HAJJ.CONSENT</a>، مع ضبط <code class="language-plaintext highlighter-rouge">coding.version</code> على إصدار CodeSystem.</p>
+
+    <p>يُحدَّد EMR البلد المضيف بالثقة في نطاق الثقة <code class="language-plaintext highlighter-rouge">ips-pilgrimage</code> (انظر ملاحظة المصادقة في دلالات الرسائل). ولا تُفرج HIE بلد المنشأ عن المستندات إلا إذا كان رمز المرور صالحًا، ولم تنتهِ صلاحية VHL، وكانت موافقة الإفراج في بلد المنشأ سارية في سجلها، وطابقت الجهة المُستقبِلة المُتحقَّق منها <code class="language-plaintext highlighter-rouge">Consent.provision.actor</code>، وكان الغرض هو العلاج، ووقع الطلب ضمن <code class="language-plaintext highlighter-rouge">Consent.provision.period</code>. وإذا تعذّر إثبات أيٍّ من ذلك، فلا يُسمح بالطلب.</p>
+
+    <h5 id="section-16">حدث التدقيق</h5>
+    <p>تسجّل HIE بلد المنشأ حدث تدقيق بواسطة Record Audit Event [ITI-20] لكل طلب، سواء أُفرج عن المستندات أم رُفض. ويشترط المجلد 1 من VHL §1:XX.3 أن تُجمَّع الجهة المُشارِكة في VHL والجهة المُستقبِلة في VHL مع ATNA Secure Node أو Secure Application، وينص ITI-YY5 §2:3.YY5.5.6 على أنه ينبغي (SHOULD) لكلتيهما تسجيل طلبات الوصول إلى المستندات، وطريقة المصادقة المستخدمة، وهوية الجهة المُستقبِلة، ومعرِّف مجلد VHL، وقرار التفويض. وفي هذا الدليل، يجب أن يستشهد حدث التدقيق الذي تسجّله HIE بلد المنشأ أيضًا بما يلي:</p>
+    <ul>
+      <li>السياسة الحاكمة: موافقات الزائر، كلٌّ منها برمز <code class="language-plaintext highlighter-rouge">Consent.policyRule</code> الخاص بها وإصدار CodeSystem (على سبيل المثال <code class="language-plaintext highlighter-rouge">CONSENT-XXK</code> و<code class="language-plaintext highlighter-rouge">CONSENT-XXR</code> في أمثلة هذا الدليل، الإصدار 2.1.0)؛</li>
+      <li>قيمتا <code class="language-plaintext highlighter-rouge">id</code> و<code class="language-plaintext highlighter-rouge">meta.versionId</code> لكل Consent مقروءة من سجل الموافقات (Consent Registry) لأغراض القرار؛</li>
+      <li>الجهة المُستقبِلة، كما يحددها خيار مصادقة VHL المستخدم؛</li>
+      <li>غرض الاستخدام (<code class="language-plaintext highlighter-rouge">TREAT</code>)؛</li>
+      <li>المستندات المُفرَج عنها (DocumentReferences المُعادة)، أو الرفض.</li>
+    </ul>
+
+    <p>لا يستخدم هذا الدليل اتفاقية منفصلة لمشاركة البيانات للزيارة الدينية، ولذلك فإن الموافقات نفسها هي السياسة التي يستشهد بها حدث التدقيق. وينبغي لـ EMR البلد المضيف، بوصفه ATNA Secure Node أو Secure Application، أن يدقق أيضًا ما يستلمه.</p>
+
+  </div>
+
+  <h3 id="retrieve-IPS-request">استرجاع IPS - طلب</h3>
+
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-retrieve-IPS-request-preamble" data-tr-label="لم يراجعه أي شخص">
+
+    <p>تبدأ معاملة حدث طلب استرجاع IPS من السجل الطبي الإلكتروني (EMR) في البلد المضيف تجاه نظام HIE في بلد المنشأ.</p>
+
+    <figure>
+<p class="ig-not-rendered"><strong>⟦not rendered: retrieve_IPS_request.svg⟧</strong> — the IG Publisher renders it from <code>input/images-source/retrieve_IPS_request.plantuml</code>; no renderer was given to this build.</p>
+
+</figure>
+
+  </div>
+  <h4 id="section-17">الأحداث المُطلِقة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-retrieve-IPS-request-trigger-events" data-tr-label="لم يراجعه أي شخص">
+
+    <ul>
+      <li>تبدأ معاملة طلب استرجاع IPS عندما يكون السجل الطبي الإلكتروني (EMR) في البلد المضيف قد استخرج حزمة documentReference من داخل مجلد VHL، ويطلب الآن استرجاع IPS بصيغة JSON.</li>
+    </ul>
+
+  </div>
+  <h4 id="section-18">دلالات الرسالة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-retrieve-IPS-request-message-semantics" data-tr-label="لم يراجعه أي شخص">
+
+    <h5 id="section-19">دلالات الرسالة: الطلب</h5>
+    <ul>
+      <li>يجب أن تكون دلالات رسالة طلب استرجاع IPS طلبَ GET للحصول على IPS بصيغة json.
+        <ul>
+          <li>يجب أن يعمل السجل الطبي الإلكتروني (EMR) في البلد المضيف بوصفه مستهلكًا للوثائق (Document Consumer) وأن يتّبع <a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html">ITI-68</a>.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h5 id="section-20">دلالات الرسالة: الاستجابة</h5>
+    <ul>
+      <li>يجب أن تُرسِل دلالات رسالة الاستجابة لطلب استرجاع IPS ملخصَ IPS في صورة ملف Json.</li>
+    </ul>
+
+  </div>
+  <h4 id="section-21">الإجراءات المتوقعة</h4>
+  <div class="ig-tr-unreviewed" data-tr-catalogue="transaction-retrieve-IPS-request-expected-actions-semantics" data-tr-label="لم يراجعه أي شخص">
+
+    <ul>
+      <li>يستجيب المستلِم OCHIE بملخص IPS بصيغة Json.</li>
+    </ul>
+
+  </div>
+
+</div>
+
+<p class="ig-edit"><a data-fa-link="edit" data-src="input/pagecontent/transactions.md" data-repo="WorldHealthOrganization/smart-ips-pilgrimage" href="https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/edit/main/input/pagecontent/transactions.md">Edit this page on GitHub</a></p>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transactions.md", "repo": "WorldHealthOrganization/smart-ips-pilgrimage", "branch": "main", "path": "input/pagecontent/transactions.md", "lines": [{"t":"record consent from wallet - request","l":4},{"t":"Trigger Events","l":7},{"t":"Message Semantics","l":9},{"t":"Message Semantics Request","l":3,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-record-consent-request-message-semantics.md"},{"t":"Message Semantics Response","l":13,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-record-consent-request-message-semantics.md"},{"t":"Expected Actions","l":11},{"t":"issue VHL - request","l":16},{"t":"Trigger Events","l":19},{"t":"Message Semantics","l":21},{"t":"Message Semantics Request","l":4,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-issue-verifiable-shl-request-message-semantics.md"},{"t":"Message Semantics Response","l":10,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-issue-verifiable-shl-request-message-semantics.md"},{"t":"Expected Actions","l":23},{"t":"retrieve VHL folder docs - request","l":27},{"t":"Trigger Events","l":30},{"t":"Message Semantics","l":32},{"t":"Message Semantics Request","l":3,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-retrieve-MHD-folder-request-message-semantics.md"},{"t":"Message Semantics Response","l":7,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-retrieve-MHD-folder-request-message-semantics.md"},{"t":"Authentication of the Host Country EMR","l":12,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-retrieve-MHD-folder-request-message-semantics.md"},{"t":"Expected Actions","l":34},{"t":"Deciding the request: the pilgrim's consents are the policy","l":4,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md"},{"t":"Audit event","l":13,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md"},{"t":"retrieve IPS - request","l":37},{"t":"Trigger Events","l":40},{"t":"Message Semantics","l":42},{"t":"Message Semantics Request","l":3,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-retrieve-IPS-request-message-semantics.md"},{"t":"Message Semantics Response","l":7,"b":"https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/transaction-retrieve-IPS-request-message-semantics.md"},{"t":"Expected Actions","l":44}]}</script>
+
+<script src="../assets/ig-source-links.js"></script>
+
+
+<script>(function(){
+var f=document.querySelector("#main-content .pt-diagram[data-panel]");
+if(!f||window.__igTaskPanel)return;
+var p=f.getAttribute("data-panel")||"";
+if(!/^[A-Za-z0-9._-][A-Za-z0-9._/-]*[.]tasks[.]json$/.test(p)||p.indexOf("//")>=0)return;
+window.__igTaskPanel=1;
+var dir=p.replace(/[^/]*$/,"");
+var l=document.createElement("link");l.rel="stylesheet";l.href=dir+"task-panel.css";document.head.appendChild(l);
+var s=document.createElement("script");s.src=dir+"task-panel.js";document.body.appendChild(s);
+})();</script>
+<script>(function(){
+var main=document.getElementById("main-content");
+if(!main||main.querySelector(".igi-contents"))return;
+var rowsOf=function igContentsRows(hs) {
+  let top = 0;
+  for (const h of hs)
+    if (h.level >= 2 && h.level <= 4 && (top === 0 || h.level < top))
+      top = h.level;
+  if (top === 0)
+    return [];
+  const rows = [];
+  let count = 0;
+  for (const h of hs)
+    if (h.level === top) {
+      rows.push({ i: h.i, sub: [] });
+      count++;
+    } else if (h.level === top + 1) {
+      const last = rows[rows.length - 1];
+      if (last)
+        last.sub.push(h.i);
+      else
+        rows.push({ i: h.i, sub: [] });
+      count++;
+    }
+  return count < 2 ? [] : rows;
+};
+var hs=Array.prototype.filter.call(main.querySelectorAll("h2,h3,h4"),function(h){return !h.closest(".igi-contents,#ig-footer,.ig-edit,.ig-metadata")&&h.textContent.trim();});
+var rows=rowsOf(hs.map(function(h,i){return {level:+h.tagName.charAt(1),i:i};}));
+if(!rows.length)return;
+var used={};
+function slug(t){var b=t.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"section",s=b,i=1;while(used[s]||document.getElementById(s))s=b+"-"+(++i);used[s]=1;return s;}
+function item(h){if(!h.id)h.id=slug(h.textContent);var li=document.createElement("li"),a=document.createElement("a");a.href="#"+h.id;
+var c=h.cloneNode(true);Array.prototype.forEach.call(c.querySelectorAll(".anchor-heading,.fa-sec-box,svg,button"),function(n){n.remove();});
+a.textContent=c.textContent.replace(/\s+/g," ").trim();li.appendChild(a);return li;}
+var nav=document.createElement("nav");nav.className="igi-contents";nav.setAttribute("aria-label","Contents");
+var t=document.createElement("p");t.className="igi-contents-title";t.textContent="Contents";nav.appendChild(t);
+var ul=document.createElement("ul");
+rows.forEach(function(r){var li=item(hs[r.i]);if(r.sub.length){var sub=document.createElement("ul");sub.className="igi-contents-sub";r.sub.forEach(function(k){sub.appendChild(item(hs[k]));});li.appendChild(sub);}ul.appendChild(li);});
+nav.appendChild(ul);
+var h1=main.querySelector("h1"),meta=main.querySelector(":scope > .ig-metadata");
+var at=h1&&h1.parentNode===main?h1:meta||null;
+var bannerOf=function igIsBanner(e) {
+  if (e.display === "none" || /^(H[1-6]|SCRIPT|STYLE|NAV)$/i.test(e.tag))
+    return !1;
+  if (/(^|[\s_-])(hero|banner)([\s_-]|$)/i.test(e.cls))
+    return !0;
+  return !!e.bgImage && e.bgImage !== "none";
+};
+var b=null,first=hs[0];
+for(var n=main.firstElementChild;n&&n!==first&&!n.contains(first);n=n.nextElementSibling){var cs=getComputedStyle(n);
+if(bannerOf({tag:n.tagName,cls:n.getAttribute("class")||"",bgImage:cs.backgroundImage,display:cs.display}))b=n;}
+if(b&&(!at||at.compareDocumentPosition(b)&4))at=b;
+if(at)at.insertAdjacentElement("afterend",nav);else main.insertBefore(nav,main.firstChild);
+})();</script>
+</main>
+
+</body>
+</html>

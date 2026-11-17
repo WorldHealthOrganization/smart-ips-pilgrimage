@@ -1,0 +1,112 @@
+[
+  {
+    "id": "hl7-ips",
+    "type": "webpage",
+    "title": "International Patient Summary",
+    "author": [
+      {
+        "literal": "HL7 International"
+      }
+    ],
+    "URL": "https://build.fhir.org/ig/HL7/fhir-ips/"
+  },
+  {
+    "id": "hl7-smart-health-cards-and-links",
+    "type": "webpage",
+    "title": "Smart Health Links",
+    "author": [
+      {
+        "literal": "HL7 International"
+      }
+    ],
+    "URL": "https://build.fhir.org/ig/HL7/smart-health-cards-and-links/index.html"
+  },
+  {
+    "id": "openhie-architecture-specification",
+    "type": "webpage",
+    "title": "Open Health Information Exchange (OpenHIE) Specification and Architecture",
+    "author": [
+      {
+        "literal": "OpenHIE"
+      }
+    ],
+    "URL": "https://guides.ohie.org/arch-spec/architecture-specification/overview-of-the-architecture"
+  },
+  {
+    "id": "who-gdhcn",
+    "type": "webpage",
+    "title": "Global Digital Health Certification Network",
+    "author": [
+      {
+        "literal": "World Health Organization"
+      }
+    ],
+    "URL": "https://www.who.int/initiatives/global-digital-health-certification-network"
+  },
+  {
+    "id": "who-guideline-handbook",
+    "type": "book",
+    "title": "Handbook for guideline development",
+    "author": [
+      {
+        "literal": "World Health Organization"
+      }
+    ],
+    "URL": "https://www.who.int/publications/i/item/9789241548960",
+    "note": "Provides an overview of the WHO guideline development and publication process."
+  },
+  {
+    "id": "smart-ig-starter-kit-references",
+    "type": "webpage",
+    "title": "References section of the SMART IG starter kit",
+    "author": [
+      {
+        "literal": "World Health Organization"
+      }
+    ],
+    "URL": "https://worldhealthorganization.github.io/smart-ig-starter-kit/references.html#2",
+    "note": "Tutorials and reference materials for developers."
+  },
+  {
+    "id": "who-smart-guidelines",
+    "type": "webpage",
+    "title": "SMART Guidelines",
+    "author": [
+      {
+        "literal": "World Health Organization"
+      }
+    ],
+    "URL": "https://www.who.int/teams/digital-health-and-innovation/smart-guidelines",
+    "note": "Overviews the SMART Guidelines approach."
+  },
+  {
+    "id": "who-smart-trust",
+    "type": "webpage",
+    "title": "SMART Trust",
+    "author": [
+      {
+        "literal": "World Health Organization"
+      }
+    ],
+    "URL": "https://smart.who.int/smart-trust"
+  },
+  {
+    "id": "9789240010567-eng",
+    "type": "book",
+    "title": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
+    "author": [
+      {
+        "literal": "World Health Organization"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "ISBN": "9789240010567",
+    "URL": "https://www.who.int/publications/i/item/9789240010567"
+  }
+]

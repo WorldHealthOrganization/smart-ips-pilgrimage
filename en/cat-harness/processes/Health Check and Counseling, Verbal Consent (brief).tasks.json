@@ -1,0 +1,271 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_u5tyhjo",
+ "markers": [
+  {
+   "id": "Activity_0jf6sb5",
+   "name": "registration",
+   "left": 23.66,
+   "top": 20.67,
+   "box": {
+    "left": 18.28,
+    "top": 26.78,
+    "width": 2.06,
+    "height": 2.67
+   }
+  },
+  {
+   "id": "Activity_1akt4be",
+   "name": "arrive to clinic",
+   "left": 23.66,
+   "top": 43.89,
+   "box": {
+    "left": 18.28,
+    "top": 50,
+    "width": 2.06,
+    "height": 2.67
+   }
+  },
+  {
+   "id": "Activity_1gkedet",
+   "name": "inform patient ineligible for pilgrimage",
+   "left": 37.77,
+   "top": 20.67,
+   "box": {
+    "left": 32.39,
+    "top": 26.78,
+    "width": 2.06,
+    "height": 2.67
+   }
+  },
+  {
+   "id": "Activity_0g1r4b0",
+   "name": "leave clinic",
+   "left": 23.66,
+   "top": 62.78,
+   "box": {
+    "left": 18.28,
+    "top": 68.89,
+    "width": 2.06,
+    "height": 2.67
+   }
+  },
+  {
+   "id": "Activity_0x95bb2",
+   "name": "Review SHL",
+   "left": 54.63,
+   "top": 53.89,
+   "box": {
+    "left": 49.25,
+    "top": 60,
+    "width": 2.06,
+    "height": 2.67
+   }
+  },
+  {
+   "id": "Activity_0hhavs0",
+   "name": "configure SHL privacy settings on wallet",
+   "left": 77,
+   "top": 53.89,
+   "box": {
+    "left": 71.62,
+    "top": 60,
+    "width": 2.06,
+    "height": 2.67
+   }
+  },
+  {
+   "id": "Activity_04p41ni",
+   "name": "display SHL configuration form",
+   "left": 84.74,
+   "top": 82.78,
+   "box": {
+    "left": 79.36,
+    "top": 88.89,
+    "width": 2.06,
+    "height": 2.67
+   }
+  },
+  {
+   "id": "Activity_15hb31c",
+   "name": "login to wallet app",
+   "left": 92.48,
+   "top": 53.89,
+   "box": {
+    "left": 87.1,
+    "top": 60,
+    "width": 2.06,
+    "height": 2.67
+   }
+  },
+  {
+   "id": "Activity_0a2dk4l",
+   "name": "Counsel patient on consent and digital health wallet",
+   "left": 92.48,
+   "top": 5,
+   "box": {
+    "left": 87.1,
+    "top": 11.11,
+    "width": 2.06,
+    "height": 2.67
+   }
+  },
+  {
+   "id": "Activity_0220uyc",
+   "name": "display SHL",
+   "left": 54.63,
+   "top": 82.78,
+   "box": {
+    "left": 49.25,
+    "top": 88.89,
+    "width": 2.06,
+    "height": 2.67
+   }
+  },
+  {
+   "id": "Activity_0kdgdmi",
+   "name": "process privacy configuration form for SHL",
+   "left": 70.11,
+   "top": 82.78,
+   "box": {
+    "left": 64.74,
+    "top": 88.89,
+    "width": 2.06,
+    "height": 2.67
+   }
+  }
+ ],
+ "processHref": "Health Check and Counseling, Verbal Consent (brief).html",
+ "tasks": {
+  "Activity_0jf6sb5": {
+   "id": "Activity_0jf6sb5",
+   "name": "registration",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_0jf6sb5",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_0wgkuao",
+   "skills": [
+    {
+     "name": "complete-sdc-questionnaire",
+     "href": "../../../en/cat-harness/processes/skills/complete-sdc-questionnaire.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_1akt4be": {
+   "id": "Activity_1akt4be",
+   "name": "arrive to clinic",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_1akt4be",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_0wgkuao",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_1gkedet": {
+   "id": "Activity_1gkedet",
+   "name": "inform patient ineligible for pilgrimage",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_1gkedet",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_0wgkuao",
+   "skills": [
+    {
+     "name": "inform-client",
+     "href": "../../../en/cat-harness/processes/skills/inform-client.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_0g1r4b0": {
+   "id": "Activity_0g1r4b0",
+   "name": "leave clinic",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_0g1r4b0",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_0wgkuao",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0x95bb2": {
+   "id": "Activity_0x95bb2",
+   "name": "Review SHL",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_0x95bb2",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_0wgkuao",
+   "skills": [
+    {
+     "name": "holder-consent-to-share",
+     "href": "../../../en/cat-harness/processes/skills/holder-consent-to-share.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_0hhavs0": {
+   "id": "Activity_0hhavs0",
+   "name": "configure SHL privacy settings on wallet",
+   "type": "bpmn:UserTask",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_0hhavs0",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_0wgkuao",
+   "skills": [
+    {
+     "name": "holder-consent-to-share",
+     "href": "../../../en/cat-harness/processes/skills/holder-consent-to-share.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_04p41ni": {
+   "id": "Activity_04p41ni",
+   "name": "display SHL configuration form",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_04p41ni",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_1v5u79n",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_15hb31c": {
+   "id": "Activity_15hb31c",
+   "name": "login to wallet app",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_15hb31c",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_0wgkuao",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0a2dk4l": {
+   "id": "Activity_0a2dk4l",
+   "name": "Counsel patient on consent and digital health wallet",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_0a2dk4l",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_0wgkuao",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0220uyc": {
+   "id": "Activity_0220uyc",
+   "name": "display SHL",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_0220uyc",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_1v5u79n",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0kdgdmi": {
+   "id": "Activity_0kdgdmi",
+   "name": "process privacy configuration form for SHL",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Verbal Consent (brief).html#step-Activity_0kdgdmi",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Verbal Consent (brief).html#lane-Lane_1v5u79n",
+   "skills": [],
+   "binding": "unbound"
+  }
+ }
+}

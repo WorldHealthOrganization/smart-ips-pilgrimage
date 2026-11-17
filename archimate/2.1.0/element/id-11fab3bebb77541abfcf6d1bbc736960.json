@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-11fab3bebb77541abfcf6d1bbc736960",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-11fab3bebb77541abfcf6d1bbc736960",
+  "schema:name": "P6 · When he cannot show the code (break the glass)",
+  "schema:description": "On the day of Toreva Kamal collapses and is brought in unconscious. Salmah is not with him. Dr Hafiz of the Onesan medical team gives his pilgrimage registration number, and the facility reaches his summary through it. Described in this guide's user scenarios as a Phase 2 scenario.",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

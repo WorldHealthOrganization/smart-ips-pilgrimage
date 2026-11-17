@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/relationship/id-4fd225c7c0455c37a814842e641d7628",
+  "@type": "archimate:Serving",
+  "schema:identifier": "id-4fd225c7c0455c37a814842e641d7628",
+  "archimate:source": {
+    "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f7870cda62c85a4598b0e438eb6fc749"
+  },
+  "archimate:target": {
+    "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-11fab3bebb77541abfcf6d1bbc736960"
+  },
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

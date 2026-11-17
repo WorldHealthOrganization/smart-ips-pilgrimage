@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-df263ccda6a85124a7f7d54ed9c94d12",
+  "@type": "archimate:Diagram",
+  "schema:identifier": "id-df263ccda6a85124a7f7d54ed9c94d12",
+  "schema:name": "P1 · The health check and the choice to share",
+  "schema:description": "P1 · The health check and the choice to share: Three months before the pilgrimage, A GP clinic in Tanavu. The people assigned to this moment and the systems that serve it (user-scenarios/p1-health-check-and-consent.json).",
+  "schema:image": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-df263ccda6a85124a7f7d54ed9c94d12.svg",
+  "schema:about": [
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-51918bcf0f275064ba2787ee24648745"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-4f6f303b9e0a5620bf22b179e9e67a40"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f50c4d3693cf5f5185a6f6b3cd88e584"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-224b4a4a4d7850d3876481faae55c5c0"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f7870cda62c85a4598b0e438eb6fc749"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-dddf2e7324aa5f91904b80307fbd877a"
+    }
+  ],
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

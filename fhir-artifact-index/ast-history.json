@@ -1,0 +1,11 @@
+{
+  "$schema": "ig-ast-history/v1",
+  "repository": "WorldHealthOrganization/smart-ips-pilgrimage",
+  "versions": [
+    {
+      "commit": "c2793e1014ce186e7ed05df088c9a2289bd9e673",
+      "date": "2026-11-17T06:36:53+00:00",
+      "src": "7ee9b7f3"
+    }
+  ]
+}

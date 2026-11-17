@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-581423ff8bb15b5cb988ea85593f9c11",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-581423ff8bb15b5cb988ea85593f9c11",
+  "schema:name": "Accompanying Clinician from Origin Country",
+  "schema:description": "A doctor of the home country's pilgrimage medical team, travelling with the pilgrims.",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

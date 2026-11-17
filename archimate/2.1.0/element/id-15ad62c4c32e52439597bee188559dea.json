@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-15ad62c4c32e52439597bee188559dea",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-15ad62c4c32e52439597bee188559dea",
+  "schema:name": "P3 · Taken ill in Nalemi",
+  "schema:description": "On the second day in Nalemi, in the heat, Kamal feels dizzy and weak. Salmah brings him to the pilgrimage health facility. At registration he opens his wallet and shows Nurse Reem the QR code. Step 3 of the overview of key process flows.",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

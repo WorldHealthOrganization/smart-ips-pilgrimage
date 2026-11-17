@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/en/cat-harness/harness/smart-base/",
+  "url": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/en/cat-harness/harness/smart-base/",
+  "@type": "WebPage",
+  "name": "SMART Base on SMART Verifiable IPS for Pilgrimage",
+  "about": {
+    "@id": "https://litlfred.github.io/smart-base/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "smart-base",
+    "name": "SMART Base",
+    "description": "The WHO SMART Guidelines base layer — the ingested WHO digital-health corpus, the methodologies read out of it, and the editorial voices derived from it.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/smart-base",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/fhir-harness/"
+      },
+      {
+        "@id": "https://worldhealthorganization.github.io/who-iris/"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0"
+    },
+    "keywords": [
+      "dak"
+    ]
+  },
+  "isPartOf": {
+    "@id": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/",
+    "name": "SMART Verifiable IPS for Pilgrimage"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/#harness-smart-base",
+    "https://github.com/litlfred/smart-base/tree/9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0",
+    "https://github.com/litlfred/smart-base/blob/9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0/README.md",
+    "https://github.com/litlfred/smart-base/blob/9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0/AGENTS.md"
+  ]
+}

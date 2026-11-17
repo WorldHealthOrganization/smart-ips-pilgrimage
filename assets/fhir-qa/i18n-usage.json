@@ -1,0 +1,1454 @@
+{
+ "$schema": "ig-qa-i18n-usage/v1",
+ "locales": {
+  "ar": {
+   "counts": {
+    "publisher": 163,
+    "machine": 117,
+    "source": 19
+   },
+   "refused": [
+    {
+     "locale": "ar",
+     "messageId": "INV_FAILED",
+     "why": "placeholders [0] differ from the English [0,1]"
+    },
+    {
+     "locale": "ar",
+     "messageId": "CODESYSTEM_DESIGNATION_DISP_CLASH_LANG",
+     "why": "placeholders \"malformed\" differ from the English [0,1,2]"
+    },
+    {
+     "locale": "ar",
+     "messageId": "INV_FAILED_SOURCE",
+     "why": "placeholders [0,1] differ from the English [0,1,2]"
+    },
+    {
+     "locale": "ar",
+     "messageId": "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS",
+     "why": "placeholders \"malformed\" differ from the English [0,1,2]"
+    }
+   ],
+   "keys": {
+    "This_element_does_not_match_any_known_slice_|This element does not match any known slice {0} (this may not be a problem, but you should check that it''s not intended to match a slice)": {
+     "origin": "publisher",
+     "count": 89,
+     "links": [
+      "ar/qa.html#qa-m2-0",
+      "ar/qa.html#qa-m2-1",
+      "ar/qa.html#qa-m2-21",
+      "ar/qa.html#qa-m53-2",
+      "ar/qa.html#qa-m64-5"
+     ]
+    },
+    "text|The resource {0} should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see {1})": {
+     "origin": "machine",
+     "count": 57,
+     "links": [
+      "ar/qa.html#qa-m5-0",
+      "ar/qa.html#qa-m6-1",
+      "ar/qa.html#qa-m7-1",
+      "ar/qa.html#qa-m8-0",
+      "ar/qa.html#qa-m9-1"
+     ]
+    },
+    "CODESYSTEM_DESIGNATION_DISP_CLASH_LANG|The designation ''{0}'' has no use and is in the same language (''{2}''), so is not differentiated from the base display (''{1}'')": {
+     "origin": "machine",
+     "count": 33,
+     "links": [
+      "ar/qa.html#qa-m9-0",
+      "ar/qa.html#qa-m15-0",
+      "ar/qa.html#qa-m15-1",
+      "ar/qa.html#qa-m15-2",
+      "ar/qa.html#qa-m18-0"
+     ]
+    },
+    "Type_Specific_Checks_DT_URL_Resolve|No definition could be found for URL value ''{0}''": {
+     "origin": "publisher",
+     "count": 17,
+     "links": [
+      "ar/qa.html#qa-m2-3",
+      "ar/qa.html#qa-m2-4",
+      "ar/qa.html#qa-m2-5",
+      "ar/qa.html#qa-m2-8",
+      "ar/qa.html#qa-m2-10"
+     ]
+    },
+    "CODESYSTEM_CS_HL7_PRESENT_ELEMENT_SUPPL|CodeSystems SHOULD NOT have a stated value for the {0} element when they are a supplement": {
+     "origin": "publisher",
+     "count": 16,
+     "links": [
+      "ar/qa.html#qa-m6-0",
+      "ar/qa.html#qa-m7-0",
+      "ar/qa.html#qa-m12-0",
+      "ar/qa.html#qa-m13-0",
+      "ar/qa.html#qa-m17-0"
+     ]
+    },
+    "MSG_DRAFT_SRC_STATUS|Reference to draft {2} {0} from {3} {4} {1}": {
+     "origin": "machine",
+     "count": 10,
+     "links": [
+      "ar/qa.html#qa-m2-9",
+      "ar/qa.html#qa-m3-1",
+      "ar/qa.html#qa-m3-3",
+      "ar/qa.html#qa-m3-6",
+      "ar/qa.html#qa-m3-8"
+     ]
+    },
+    "Terminology_TX_NoValid_3_CC|None of the codings provided are in the value set {0}, and a coding is recommended to come from this value set (codes = {1})": {
+     "origin": "publisher",
+     "count": 9,
+     "links": [
+      "ar/qa.html#qa-m2-12",
+      "ar/qa.html#qa-m2-15",
+      "ar/qa.html#qa-m2-17",
+      "ar/qa.html#qa-m2-19",
+      "ar/qa.html#qa-m2-23"
+     ]
+    },
+    "text|The resource {0} could usefully have an OID assigned (OIDs are easy to assign - see {1})": {
+     "origin": "machine",
+     "count": 9,
+     "links": [
+      "ar/qa.html#qa-m4-1",
+      "ar/qa.html#qa-m64-90",
+      "ar/qa.html#qa-m83-1",
+      "ar/qa.html#qa-m84-0",
+      "ar/qa.html#qa-m85-0"
+     ]
+    },
+    "Terminology_TX_NoValid_14|The Coding provided ({2}) was not found in the value set {0}, and a code is recommended to come from this value set. {1}": {
+     "origin": "publisher",
+     "count": 6,
+     "links": [
+      "ar/qa.html#qa-m3-0",
+      "ar/qa.html#qa-m3-2",
+      "ar/qa.html#qa-m3-4",
+      "ar/qa.html#qa-m3-5",
+      "ar/qa.html#qa-m3-7"
+     ]
+    },
+    "untranslated|TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS": {
+     "origin": "source",
+     "count": 6,
+     "links": [
+      "ar/qa.html#qa-m86-1",
+      "ar/qa.html#qa-m86-2",
+      "ar/qa.html#qa-m86-3",
+      "ar/qa.html#qa-m88-0",
+      "ar/qa.html#qa-m88-1"
+     ]
+    },
+    "IG_DEPENDENCY_VERSION_WARNING_OLD|The ImplementationGuide uses package {0} released on {2}, but the most recent appropriate version is {1}. This reference is getting old and the more recent version should be considered": {
+     "origin": "publisher",
+     "count": 5,
+     "links": [
+      "ar/qa.html#qa-m64-0",
+      "ar/qa.html#qa-m64-1",
+      "ar/qa.html#qa-m64-2",
+      "ar/qa.html#qa-m64-3",
+      "ar/qa.html#qa-m64-4"
+     ]
+    },
+    "VALUESET_SHAREABLE_MISSING|Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.{0} is mandatory, but it is not present": {
+     "origin": "publisher",
+     "count": 5,
+     "links": [
+      "ar/qa.html#qa-m90-0",
+      "ar/qa.html#qa-m91-0",
+      "ar/qa.html#qa-m96-0",
+      "ar/qa.html#qa-m97-0",
+      "ar/qa.html#qa-m98-0"
+     ]
+    },
+    "Display_Name_for__should_be_one_of__instead_of_one|Wrong Display Name ''{4}'' for {1}#{2}. Valid display is {3} (for the language(s) ''{5}'')": {
+     "origin": "machine",
+     "count": 4,
+     "links": [
+      "ar/qa.html#qa-m2-6",
+      "ar/qa.html#qa-m2-7",
+      "ar/qa.html#qa-m53-4",
+      "ar/qa.html#qa-m53-5"
+     ]
+    },
+    "untranslated|INACTIVE_DISPLAY_FOUND": {
+     "origin": "source",
+     "count": 4,
+     "links": [
+      "ar/qa.html#qa-m2-13",
+      "ar/qa.html#qa-m2-20",
+      "ar/qa.html#qa-m55-2",
+      "ar/qa.html#qa-m66-0"
+     ]
+    },
+    "BUNDLE_SEARCH_ENTRY_WRONG_RESOURCE_TYPE_NO_MODE|This is not a matching resource type for the specified search (is a search mode needed?) ({0} expecting {1})": {
+     "origin": "publisher",
+     "count": 4,
+     "links": [
+      "ar/qa.html#qa-m3-9",
+      "ar/qa.html#qa-m3-10",
+      "ar/qa.html#qa-m3-11",
+      "ar/qa.html#qa-m3-12"
+     ]
+    },
+    "untranslated|text": {
+     "origin": "source",
+     "count": 3,
+     "links": [
+      "ar/qa.html#qa-m0-0",
+      "ar/qa.html#qa-m84-1",
+      "ar/qa.html#qa-m85-1"
+     ]
+    },
+    "text|No conformance term found in the text: {0}": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "ar/qa.html#qa-m0-1",
+      "ar/qa.html#qa-m0-2"
+     ]
+    },
+    "untranslated|INACTIVE_CONCEPT_FOUND": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "ar/qa.html#qa-m1-0",
+      "ar/qa.html#qa-m2-22"
+     ]
+    },
+    "untranslated|Validation_VAL_Profile_Minimum_SLICE": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "ar/qa.html#qa-m2-2",
+      "ar/qa.html#qa-m53-3"
+     ]
+    },
+    "untranslated|DEPRECATED_CONCEPT_FOUND": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "ar/qa.html#qa-m2-27",
+      "ar/qa.html#qa-m77-0"
+     ]
+    },
+    "MSG_EXPERIMENTAL|Reference to experimental {2} {0}": {
+     "origin": "publisher",
+     "count": 2,
+     "links": [
+      "ar/qa.html#qa-m2-28",
+      "ar/qa.html#qa-m2-29"
+     ]
+    },
+    "Bundle_BUNDLE_Entry_NotFound|Can''t find ''{0}'' in the bundle ({1})": {
+     "origin": "publisher",
+     "count": 2,
+     "links": [
+      "ar/qa.html#qa-m2-30",
+      "ar/qa.html#qa-m2-31"
+     ]
+    },
+    "SD_ED_EXPERIMENTAL_BINDING|The definition for the element ''{0}'' binds to the value set ''{1}'' which is experimental, but this structure is not labeled as experimental": {
+     "origin": "publisher",
+     "count": 2,
+     "links": [
+      "ar/qa.html#qa-m86-4",
+      "ar/qa.html#qa-m86-5"
+     ]
+    },
+    "SD_PATH_SLICING_DEPRECATED|The discriminator type ''{0}'' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)": {
+     "origin": "publisher",
+     "count": 2,
+     "links": [
+      "ar/qa.html#qa-m88-3",
+      "ar/qa.html#qa-m88-4"
+     ]
+    },
+    "Details_for__matching_against_Profile_|Details for {0} matching against profile {1}": {
+     "origin": "publisher",
+     "count": 1,
+     "links": [
+      "ar/qa.html#qa-m2-18"
+     ]
+    },
+    "BUNDLE_SEARCH_NO_MODE|SearchSet bundles should have search modes on the entries": {
+     "origin": "publisher",
+     "count": 1,
+     "links": [
+      "ar/qa.html#qa-m3-13"
+     ]
+    },
+    "INV_FAILED|Constraint failed: {0}: ''{1}''": {
+     "origin": "machine",
+     "count": 1,
+     "links": [
+      "ar/qa.html#qa-m4-0"
+     ]
+    },
+    "CODESYSTEM_CS_COUNT_SUPPLEMENT_WRONG|The code system supplement states the total number of concepts as {1}, but this is different to the underlying code system that states a value of {0}": {
+     "origin": "publisher",
+     "count": 1,
+     "links": [
+      "ar/qa.html#qa-m29-0"
+     ]
+    },
+    "INV_FAILED_SOURCE|Constraint failed: {0}: ''{1}'' (defined in {2})": {
+     "origin": "machine",
+     "count": 1,
+     "links": [
+      "ar/qa.html#qa-m83-0"
+     ]
+    },
+    "MSG_DEPENDS_ON_DEPRECATED_NOTE|The {0} {1} is deprecated with the note: ''{2}''": {
+     "origin": "publisher",
+     "count": 1,
+     "links": [
+      "ar/qa.html#qa-m86-0"
+     ]
+    }
+   }
+  },
+  "es": {
+   "counts": {
+    "publisher": 148,
+    "machine": 126,
+    "source": 25
+   },
+   "refused": [
+    {
+     "locale": "es",
+     "messageId": "Display_Name_for__should_be_one_of__instead_of_one",
+     "why": "placeholders [1,2,3,4] differ from the English [1,2,3,4,5]"
+    },
+    {
+     "locale": "es",
+     "messageId": "INV_FAILED",
+     "why": "placeholders [0] differ from the English [0,1]"
+    }
+   ],
+   "keys": {
+    "This_element_does_not_match_any_known_slice_|This element does not match any known slice {0} (this may not be a problem, but you should check that it''s not intended to match a slice)": {
+     "origin": "publisher",
+     "count": 89,
+     "links": [
+      "es/qa.html#qa-m2-0",
+      "es/qa.html#qa-m2-1",
+      "es/qa.html#qa-m2-21",
+      "es/qa.html#qa-m53-2",
+      "es/qa.html#qa-m64-5"
+     ]
+    },
+    "text|The resource {0} should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see {1})": {
+     "origin": "machine",
+     "count": 57,
+     "links": [
+      "es/qa.html#qa-m5-0",
+      "es/qa.html#qa-m6-1",
+      "es/qa.html#qa-m7-1",
+      "es/qa.html#qa-m8-0",
+      "es/qa.html#qa-m9-1"
+     ]
+    },
+    "CODESYSTEM_DESIGNATION_DISP_CLASH_LANG|The designation ''{0}'' has no use and is in the same language (''{2}''), so is not differentiated from the base display (''{1}'')": {
+     "origin": "machine",
+     "count": 33,
+     "links": [
+      "es/qa.html#qa-m9-0",
+      "es/qa.html#qa-m15-0",
+      "es/qa.html#qa-m15-1",
+      "es/qa.html#qa-m15-2",
+      "es/qa.html#qa-m18-0"
+     ]
+    },
+    "Type_Specific_Checks_DT_URL_Resolve|No definition could be found for URL value ''{0}''": {
+     "origin": "publisher",
+     "count": 17,
+     "links": [
+      "es/qa.html#qa-m2-3",
+      "es/qa.html#qa-m2-4",
+      "es/qa.html#qa-m2-5",
+      "es/qa.html#qa-m2-8",
+      "es/qa.html#qa-m2-10"
+     ]
+    },
+    "CODESYSTEM_CS_HL7_PRESENT_ELEMENT_SUPPL|CodeSystems SHOULD NOT have a stated value for the {0} element when they are a supplement": {
+     "origin": "publisher",
+     "count": 16,
+     "links": [
+      "es/qa.html#qa-m6-0",
+      "es/qa.html#qa-m7-0",
+      "es/qa.html#qa-m12-0",
+      "es/qa.html#qa-m13-0",
+      "es/qa.html#qa-m17-0"
+     ]
+    },
+    "MSG_DRAFT_SRC_STATUS|Reference to draft {2} {0} from {3} {4} {1}": {
+     "origin": "machine",
+     "count": 10,
+     "links": [
+      "es/qa.html#qa-m2-9",
+      "es/qa.html#qa-m3-1",
+      "es/qa.html#qa-m3-3",
+      "es/qa.html#qa-m3-6",
+      "es/qa.html#qa-m3-8"
+     ]
+    },
+    "Terminology_TX_NoValid_3_CC|None of the codings provided are in the value set {0}, and a coding is recommended to come from this value set (codes = {1})": {
+     "origin": "publisher",
+     "count": 9,
+     "links": [
+      "es/qa.html#qa-m2-12",
+      "es/qa.html#qa-m2-15",
+      "es/qa.html#qa-m2-17",
+      "es/qa.html#qa-m2-19",
+      "es/qa.html#qa-m2-23"
+     ]
+    },
+    "text|The resource {0} could usefully have an OID assigned (OIDs are easy to assign - see {1})": {
+     "origin": "machine",
+     "count": 9,
+     "links": [
+      "es/qa.html#qa-m4-1",
+      "es/qa.html#qa-m64-90",
+      "es/qa.html#qa-m83-1",
+      "es/qa.html#qa-m84-0",
+      "es/qa.html#qa-m85-0"
+     ]
+    },
+    "Terminology_TX_NoValid_14|The Coding provided ({2}) was not found in the value set {0}, and a code is recommended to come from this value set. {1}": {
+     "origin": "publisher",
+     "count": 6,
+     "links": [
+      "es/qa.html#qa-m3-0",
+      "es/qa.html#qa-m3-2",
+      "es/qa.html#qa-m3-4",
+      "es/qa.html#qa-m3-5",
+      "es/qa.html#qa-m3-7"
+     ]
+    },
+    "untranslated|TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS": {
+     "origin": "source",
+     "count": 6,
+     "links": [
+      "es/qa.html#qa-m86-1",
+      "es/qa.html#qa-m86-2",
+      "es/qa.html#qa-m86-3",
+      "es/qa.html#qa-m88-0",
+      "es/qa.html#qa-m88-1"
+     ]
+    },
+    "IG_DEPENDENCY_VERSION_WARNING_OLD|The ImplementationGuide uses package {0} released on {2}, but the most recent appropriate version is {1}. This reference is getting old and the more recent version should be considered": {
+     "origin": "machine",
+     "count": 5,
+     "links": [
+      "es/qa.html#qa-m64-0",
+      "es/qa.html#qa-m64-1",
+      "es/qa.html#qa-m64-2",
+      "es/qa.html#qa-m64-3",
+      "es/qa.html#qa-m64-4"
+     ]
+    },
+    "VALUESET_SHAREABLE_MISSING|Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.{0} is mandatory, but it is not present": {
+     "origin": "publisher",
+     "count": 5,
+     "links": [
+      "es/qa.html#qa-m90-0",
+      "es/qa.html#qa-m91-0",
+      "es/qa.html#qa-m96-0",
+      "es/qa.html#qa-m97-0",
+      "es/qa.html#qa-m98-0"
+     ]
+    },
+    "Display_Name_for__should_be_one_of__instead_of_one|Wrong Display Name ''{4}'' for {1}#{2}. Valid display is {3} (for the language(s) ''{5}'')": {
+     "origin": "machine",
+     "count": 4,
+     "links": [
+      "es/qa.html#qa-m2-6",
+      "es/qa.html#qa-m2-7",
+      "es/qa.html#qa-m53-4",
+      "es/qa.html#qa-m53-5"
+     ]
+    },
+    "untranslated|INACTIVE_DISPLAY_FOUND": {
+     "origin": "source",
+     "count": 4,
+     "links": [
+      "es/qa.html#qa-m2-13",
+      "es/qa.html#qa-m2-20",
+      "es/qa.html#qa-m55-2",
+      "es/qa.html#qa-m66-0"
+     ]
+    },
+    "BUNDLE_SEARCH_ENTRY_WRONG_RESOURCE_TYPE_NO_MODE|This is not a matching resource type for the specified search (is a search mode needed?) ({0} expecting {1})": {
+     "origin": "publisher",
+     "count": 4,
+     "links": [
+      "es/qa.html#qa-m3-9",
+      "es/qa.html#qa-m3-10",
+      "es/qa.html#qa-m3-11",
+      "es/qa.html#qa-m3-12"
+     ]
+    },
+    "untranslated|text": {
+     "origin": "source",
+     "count": 3,
+     "links": [
+      "es/qa.html#qa-m0-0",
+      "es/qa.html#qa-m84-1",
+      "es/qa.html#qa-m85-1"
+     ]
+    },
+    "text|No conformance term found in the text: {0}": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "es/qa.html#qa-m0-1",
+      "es/qa.html#qa-m0-2"
+     ]
+    },
+    "untranslated|INACTIVE_CONCEPT_FOUND": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "es/qa.html#qa-m1-0",
+      "es/qa.html#qa-m2-22"
+     ]
+    },
+    "untranslated|Validation_VAL_Profile_Minimum_SLICE": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "es/qa.html#qa-m2-2",
+      "es/qa.html#qa-m53-3"
+     ]
+    },
+    "untranslated|DEPRECATED_CONCEPT_FOUND": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "es/qa.html#qa-m2-27",
+      "es/qa.html#qa-m77-0"
+     ]
+    },
+    "MSG_EXPERIMENTAL|Reference to experimental {2} {0}": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "es/qa.html#qa-m2-28",
+      "es/qa.html#qa-m2-29"
+     ]
+    },
+    "untranslated|Bundle_BUNDLE_Entry_NotFound": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "es/qa.html#qa-m2-30",
+      "es/qa.html#qa-m2-31"
+     ]
+    },
+    "SD_ED_EXPERIMENTAL_BINDING|The definition for the element ''{0}'' binds to the value set ''{1}'' which is experimental, but this structure is not labeled as experimental": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "es/qa.html#qa-m86-4",
+      "es/qa.html#qa-m86-5"
+     ]
+    },
+    "untranslated|SD_PATH_SLICING_DEPRECATED": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "es/qa.html#qa-m88-3",
+      "es/qa.html#qa-m88-4"
+     ]
+    },
+    "Details_for__matching_against_Profile_|Details for {0} matching against profile {1}": {
+     "origin": "publisher",
+     "count": 1,
+     "links": [
+      "es/qa.html#qa-m2-18"
+     ]
+    },
+    "BUNDLE_SEARCH_NO_MODE|SearchSet bundles should have search modes on the entries": {
+     "origin": "publisher",
+     "count": 1,
+     "links": [
+      "es/qa.html#qa-m3-13"
+     ]
+    },
+    "INV_FAILED|Constraint failed: {0}: ''{1}''": {
+     "origin": "machine",
+     "count": 1,
+     "links": [
+      "es/qa.html#qa-m4-0"
+     ]
+    },
+    "untranslated|CODESYSTEM_CS_COUNT_SUPPLEMENT_WRONG": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "es/qa.html#qa-m29-0"
+     ]
+    },
+    "INV_FAILED_SOURCE|Constraint failed: {0}: ''{1}'' (defined in {2})": {
+     "origin": "machine",
+     "count": 1,
+     "links": [
+      "es/qa.html#qa-m83-0"
+     ]
+    },
+    "untranslated|MSG_DEPENDS_ON_DEPRECATED_NOTE": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "es/qa.html#qa-m86-0"
+     ]
+    }
+   }
+  },
+  "fr": {
+   "counts": {
+    "publisher": 0,
+    "machine": 248,
+    "source": 51
+   },
+   "refused": [],
+   "keys": {
+    "This_element_does_not_match_any_known_slice_|This element does not match any known slice {0} (this may not be a problem, but you should check that it''s not intended to match a slice)": {
+     "origin": "machine",
+     "count": 89,
+     "links": [
+      "fr/qa.html#qa-m2-0",
+      "fr/qa.html#qa-m2-1",
+      "fr/qa.html#qa-m2-21",
+      "fr/qa.html#qa-m53-2",
+      "fr/qa.html#qa-m64-5"
+     ]
+    },
+    "text|The resource {0} should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see {1})": {
+     "origin": "machine",
+     "count": 57,
+     "links": [
+      "fr/qa.html#qa-m5-0",
+      "fr/qa.html#qa-m6-1",
+      "fr/qa.html#qa-m7-1",
+      "fr/qa.html#qa-m8-0",
+      "fr/qa.html#qa-m9-1"
+     ]
+    },
+    "CODESYSTEM_DESIGNATION_DISP_CLASH_LANG|The designation ''{0}'' has no use and is in the same language (''{2}''), so is not differentiated from the base display (''{1}'')": {
+     "origin": "machine",
+     "count": 33,
+     "links": [
+      "fr/qa.html#qa-m9-0",
+      "fr/qa.html#qa-m15-0",
+      "fr/qa.html#qa-m15-1",
+      "fr/qa.html#qa-m15-2",
+      "fr/qa.html#qa-m18-0"
+     ]
+    },
+    "Type_Specific_Checks_DT_URL_Resolve|No definition could be found for URL value ''{0}''": {
+     "origin": "machine",
+     "count": 17,
+     "links": [
+      "fr/qa.html#qa-m2-3",
+      "fr/qa.html#qa-m2-4",
+      "fr/qa.html#qa-m2-5",
+      "fr/qa.html#qa-m2-8",
+      "fr/qa.html#qa-m2-10"
+     ]
+    },
+    "CODESYSTEM_CS_HL7_PRESENT_ELEMENT_SUPPL|CodeSystems SHOULD NOT have a stated value for the {0} element when they are a supplement": {
+     "origin": "machine",
+     "count": 16,
+     "links": [
+      "fr/qa.html#qa-m6-0",
+      "fr/qa.html#qa-m7-0",
+      "fr/qa.html#qa-m12-0",
+      "fr/qa.html#qa-m13-0",
+      "fr/qa.html#qa-m17-0"
+     ]
+    },
+    "MSG_DRAFT_SRC_STATUS|Reference to draft {2} {0} from {3} {4} {1}": {
+     "origin": "machine",
+     "count": 10,
+     "links": [
+      "fr/qa.html#qa-m2-9",
+      "fr/qa.html#qa-m3-1",
+      "fr/qa.html#qa-m3-3",
+      "fr/qa.html#qa-m3-6",
+      "fr/qa.html#qa-m3-8"
+     ]
+    },
+    "untranslated|Terminology_TX_NoValid_3_CC": {
+     "origin": "source",
+     "count": 9,
+     "links": [
+      "fr/qa.html#qa-m2-12",
+      "fr/qa.html#qa-m2-15",
+      "fr/qa.html#qa-m2-17",
+      "fr/qa.html#qa-m2-19",
+      "fr/qa.html#qa-m2-23"
+     ]
+    },
+    "text|The resource {0} could usefully have an OID assigned (OIDs are easy to assign - see {1})": {
+     "origin": "machine",
+     "count": 9,
+     "links": [
+      "fr/qa.html#qa-m4-1",
+      "fr/qa.html#qa-m64-90",
+      "fr/qa.html#qa-m83-1",
+      "fr/qa.html#qa-m84-0",
+      "fr/qa.html#qa-m85-0"
+     ]
+    },
+    "untranslated|text": {
+     "origin": "source",
+     "count": 8,
+     "links": [
+      "fr/qa.html#qa-m0-0",
+      "fr/qa.html#qa-m84-1",
+      "fr/qa.html#qa-m85-1",
+      "fr/qa.html#qa-m90-0",
+      "fr/qa.html#qa-m91-0"
+     ]
+    },
+    "untranslated|Terminology_TX_NoValid_14": {
+     "origin": "source",
+     "count": 6,
+     "links": [
+      "fr/qa.html#qa-m3-0",
+      "fr/qa.html#qa-m3-2",
+      "fr/qa.html#qa-m3-4",
+      "fr/qa.html#qa-m3-5",
+      "fr/qa.html#qa-m3-7"
+     ]
+    },
+    "untranslated|TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS": {
+     "origin": "source",
+     "count": 6,
+     "links": [
+      "fr/qa.html#qa-m86-1",
+      "fr/qa.html#qa-m86-2",
+      "fr/qa.html#qa-m86-3",
+      "fr/qa.html#qa-m88-0",
+      "fr/qa.html#qa-m88-1"
+     ]
+    },
+    "IG_DEPENDENCY_VERSION_WARNING_OLD|The ImplementationGuide uses package {0} released on {2}, but the most recent appropriate version is {1}. This reference is getting old and the more recent version should be considered": {
+     "origin": "machine",
+     "count": 5,
+     "links": [
+      "fr/qa.html#qa-m64-0",
+      "fr/qa.html#qa-m64-1",
+      "fr/qa.html#qa-m64-2",
+      "fr/qa.html#qa-m64-3",
+      "fr/qa.html#qa-m64-4"
+     ]
+    },
+    "Display_Name_for__should_be_one_of__instead_of_one|Wrong Display Name ''{4}'' for {1}#{2}. Valid display is {3} (for the language(s) ''{5}'')": {
+     "origin": "machine",
+     "count": 4,
+     "links": [
+      "fr/qa.html#qa-m2-6",
+      "fr/qa.html#qa-m2-7",
+      "fr/qa.html#qa-m53-4",
+      "fr/qa.html#qa-m53-5"
+     ]
+    },
+    "untranslated|INACTIVE_DISPLAY_FOUND": {
+     "origin": "source",
+     "count": 4,
+     "links": [
+      "fr/qa.html#qa-m2-13",
+      "fr/qa.html#qa-m2-20",
+      "fr/qa.html#qa-m55-2",
+      "fr/qa.html#qa-m66-0"
+     ]
+    },
+    "untranslated|BUNDLE_SEARCH_ENTRY_WRONG_RESOURCE_TYPE_NO_MODE": {
+     "origin": "source",
+     "count": 4,
+     "links": [
+      "fr/qa.html#qa-m3-9",
+      "fr/qa.html#qa-m3-10",
+      "fr/qa.html#qa-m3-11",
+      "fr/qa.html#qa-m3-12"
+     ]
+    },
+    "text|No conformance term found in the text: {0}": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "fr/qa.html#qa-m0-1",
+      "fr/qa.html#qa-m0-2"
+     ]
+    },
+    "untranslated|INACTIVE_CONCEPT_FOUND": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "fr/qa.html#qa-m1-0",
+      "fr/qa.html#qa-m2-22"
+     ]
+    },
+    "untranslated|Validation_VAL_Profile_Minimum_SLICE": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "fr/qa.html#qa-m2-2",
+      "fr/qa.html#qa-m53-3"
+     ]
+    },
+    "untranslated|DEPRECATED_CONCEPT_FOUND": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "fr/qa.html#qa-m2-27",
+      "fr/qa.html#qa-m77-0"
+     ]
+    },
+    "MSG_EXPERIMENTAL|Reference to experimental {2} {0}": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "fr/qa.html#qa-m2-28",
+      "fr/qa.html#qa-m2-29"
+     ]
+    },
+    "untranslated|Bundle_BUNDLE_Entry_NotFound": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "fr/qa.html#qa-m2-30",
+      "fr/qa.html#qa-m2-31"
+     ]
+    },
+    "SD_ED_EXPERIMENTAL_BINDING|The definition for the element ''{0}'' binds to the value set ''{1}'' which is experimental, but this structure is not labeled as experimental": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "fr/qa.html#qa-m86-4",
+      "fr/qa.html#qa-m86-5"
+     ]
+    },
+    "untranslated|SD_PATH_SLICING_DEPRECATED": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "fr/qa.html#qa-m88-3",
+      "fr/qa.html#qa-m88-4"
+     ]
+    },
+    "untranslated|Details_for__matching_against_Profile_": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "fr/qa.html#qa-m2-18"
+     ]
+    },
+    "untranslated|BUNDLE_SEARCH_NO_MODE": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "fr/qa.html#qa-m3-13"
+     ]
+    },
+    "INV_FAILED|Constraint failed: {0}: ''{1}''": {
+     "origin": "machine",
+     "count": 1,
+     "links": [
+      "fr/qa.html#qa-m4-0"
+     ]
+    },
+    "untranslated|CODESYSTEM_CS_COUNT_SUPPLEMENT_WRONG": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "fr/qa.html#qa-m29-0"
+     ]
+    },
+    "INV_FAILED_SOURCE|Constraint failed: {0}: ''{1}'' (defined in {2})": {
+     "origin": "machine",
+     "count": 1,
+     "links": [
+      "fr/qa.html#qa-m83-0"
+     ]
+    },
+    "untranslated|MSG_DEPENDS_ON_DEPRECATED_NOTE": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "fr/qa.html#qa-m86-0"
+     ]
+    }
+   }
+  },
+  "ru": {
+   "counts": {
+    "publisher": 209,
+    "machine": 80,
+    "source": 10
+   },
+   "refused": [],
+   "keys": {
+    "This_element_does_not_match_any_known_slice_|This element does not match any known slice {0} (this may not be a problem, but you should check that it''s not intended to match a slice)": {
+     "origin": "publisher",
+     "count": 89,
+     "links": [
+      "ru/qa.html#qa-m2-0",
+      "ru/qa.html#qa-m2-1",
+      "ru/qa.html#qa-m2-21",
+      "ru/qa.html#qa-m53-2",
+      "ru/qa.html#qa-m64-5"
+     ]
+    },
+    "text|The resource {0} should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see {1})": {
+     "origin": "machine",
+     "count": 57,
+     "links": [
+      "ru/qa.html#qa-m5-0",
+      "ru/qa.html#qa-m6-1",
+      "ru/qa.html#qa-m7-1",
+      "ru/qa.html#qa-m8-0",
+      "ru/qa.html#qa-m9-1"
+     ]
+    },
+    "CODESYSTEM_DESIGNATION_DISP_CLASH_LANG|The designation ''{0}'' has no use and is in the same language (''{2}''), so is not differentiated from the base display (''{1}'')": {
+     "origin": "publisher",
+     "count": 33,
+     "links": [
+      "ru/qa.html#qa-m9-0",
+      "ru/qa.html#qa-m15-0",
+      "ru/qa.html#qa-m15-1",
+      "ru/qa.html#qa-m15-2",
+      "ru/qa.html#qa-m18-0"
+     ]
+    },
+    "Type_Specific_Checks_DT_URL_Resolve|No definition could be found for URL value ''{0}''": {
+     "origin": "publisher",
+     "count": 17,
+     "links": [
+      "ru/qa.html#qa-m2-3",
+      "ru/qa.html#qa-m2-4",
+      "ru/qa.html#qa-m2-5",
+      "ru/qa.html#qa-m2-8",
+      "ru/qa.html#qa-m2-10"
+     ]
+    },
+    "CODESYSTEM_CS_HL7_PRESENT_ELEMENT_SUPPL|CodeSystems SHOULD NOT have a stated value for the {0} element when they are a supplement": {
+     "origin": "publisher",
+     "count": 16,
+     "links": [
+      "ru/qa.html#qa-m6-0",
+      "ru/qa.html#qa-m7-0",
+      "ru/qa.html#qa-m12-0",
+      "ru/qa.html#qa-m13-0",
+      "ru/qa.html#qa-m17-0"
+     ]
+    },
+    "MSG_DRAFT_SRC_STATUS|Reference to draft {2} {0} from {3} {4} {1}": {
+     "origin": "machine",
+     "count": 10,
+     "links": [
+      "ru/qa.html#qa-m2-9",
+      "ru/qa.html#qa-m3-1",
+      "ru/qa.html#qa-m3-3",
+      "ru/qa.html#qa-m3-6",
+      "ru/qa.html#qa-m3-8"
+     ]
+    },
+    "Terminology_TX_NoValid_3_CC|None of the codings provided are in the value set {0}, and a coding is recommended to come from this value set (codes = {1})": {
+     "origin": "publisher",
+     "count": 9,
+     "links": [
+      "ru/qa.html#qa-m2-12",
+      "ru/qa.html#qa-m2-15",
+      "ru/qa.html#qa-m2-17",
+      "ru/qa.html#qa-m2-19",
+      "ru/qa.html#qa-m2-23"
+     ]
+    },
+    "text|The resource {0} could usefully have an OID assigned (OIDs are easy to assign - see {1})": {
+     "origin": "machine",
+     "count": 9,
+     "links": [
+      "ru/qa.html#qa-m4-1",
+      "ru/qa.html#qa-m64-90",
+      "ru/qa.html#qa-m83-1",
+      "ru/qa.html#qa-m84-0",
+      "ru/qa.html#qa-m85-0"
+     ]
+    },
+    "Terminology_TX_NoValid_14|The Coding provided ({2}) was not found in the value set {0}, and a code is recommended to come from this value set. {1}": {
+     "origin": "publisher",
+     "count": 6,
+     "links": [
+      "ru/qa.html#qa-m3-0",
+      "ru/qa.html#qa-m3-2",
+      "ru/qa.html#qa-m3-4",
+      "ru/qa.html#qa-m3-5",
+      "ru/qa.html#qa-m3-7"
+     ]
+    },
+    "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS|There are multiple different potential matches for the url ''{0}''. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version ''{1}'', found versions: {2}. Suggested fix: change the canonical reference from ''{0}'' to ''{0}|{1}''": {
+     "origin": "publisher",
+     "count": 6,
+     "links": [
+      "ru/qa.html#qa-m86-1",
+      "ru/qa.html#qa-m86-2",
+      "ru/qa.html#qa-m86-3",
+      "ru/qa.html#qa-m88-0",
+      "ru/qa.html#qa-m88-1"
+     ]
+    },
+    "IG_DEPENDENCY_VERSION_WARNING_OLD|The ImplementationGuide uses package {0} released on {2}, but the most recent appropriate version is {1}. This reference is getting old and the more recent version should be considered": {
+     "origin": "publisher",
+     "count": 5,
+     "links": [
+      "ru/qa.html#qa-m64-0",
+      "ru/qa.html#qa-m64-1",
+      "ru/qa.html#qa-m64-2",
+      "ru/qa.html#qa-m64-3",
+      "ru/qa.html#qa-m64-4"
+     ]
+    },
+    "VALUESET_SHAREABLE_MISSING|Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.{0} is mandatory, but it is not present": {
+     "origin": "publisher",
+     "count": 5,
+     "links": [
+      "ru/qa.html#qa-m90-0",
+      "ru/qa.html#qa-m91-0",
+      "ru/qa.html#qa-m96-0",
+      "ru/qa.html#qa-m97-0",
+      "ru/qa.html#qa-m98-0"
+     ]
+    },
+    "Display_Name_for__should_be_one_of__instead_of_one|Wrong Display Name ''{4}'' for {1}#{2}. Valid display is {3} (for the language(s) ''{5}'')": {
+     "origin": "publisher",
+     "count": 4,
+     "links": [
+      "ru/qa.html#qa-m2-6",
+      "ru/qa.html#qa-m2-7",
+      "ru/qa.html#qa-m53-4",
+      "ru/qa.html#qa-m53-5"
+     ]
+    },
+    "untranslated|INACTIVE_DISPLAY_FOUND": {
+     "origin": "source",
+     "count": 4,
+     "links": [
+      "ru/qa.html#qa-m2-13",
+      "ru/qa.html#qa-m2-20",
+      "ru/qa.html#qa-m55-2",
+      "ru/qa.html#qa-m66-0"
+     ]
+    },
+    "BUNDLE_SEARCH_ENTRY_WRONG_RESOURCE_TYPE_NO_MODE|This is not a matching resource type for the specified search (is a search mode needed?) ({0} expecting {1})": {
+     "origin": "publisher",
+     "count": 4,
+     "links": [
+      "ru/qa.html#qa-m3-9",
+      "ru/qa.html#qa-m3-10",
+      "ru/qa.html#qa-m3-11",
+      "ru/qa.html#qa-m3-12"
+     ]
+    },
+    "untranslated|text": {
+     "origin": "source",
+     "count": 3,
+     "links": [
+      "ru/qa.html#qa-m0-0",
+      "ru/qa.html#qa-m84-1",
+      "ru/qa.html#qa-m85-1"
+     ]
+    },
+    "text|No conformance term found in the text: {0}": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "ru/qa.html#qa-m0-1",
+      "ru/qa.html#qa-m0-2"
+     ]
+    },
+    "INACTIVE_CONCEPT_FOUND|The concept ''{1}'' has a status of {0} and its use should be reviewed": {
+     "origin": "publisher",
+     "count": 2,
+     "links": [
+      "ru/qa.html#qa-m1-0",
+      "ru/qa.html#qa-m2-22"
+     ]
+    },
+    "Validation_VAL_Profile_Minimum_SLICE_one|Slice ''{3}'': a matching slice is required, but not found (from {1}). Note that other slices are allowed in addition to this required slice": {
+     "origin": "publisher",
+     "count": 2,
+     "links": [
+      "ru/qa.html#qa-m2-2",
+      "ru/qa.html#qa-m53-3"
+     ]
+    },
+    "untranslated|DEPRECATED_CONCEPT_FOUND": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "ru/qa.html#qa-m2-27",
+      "ru/qa.html#qa-m77-0"
+     ]
+    },
+    "MSG_EXPERIMENTAL|Reference to experimental {2} {0}": {
+     "origin": "publisher",
+     "count": 2,
+     "links": [
+      "ru/qa.html#qa-m2-28",
+      "ru/qa.html#qa-m2-29"
+     ]
+    },
+    "Bundle_BUNDLE_Entry_NotFound|Can''t find ''{0}'' in the bundle ({1})": {
+     "origin": "publisher",
+     "count": 2,
+     "links": [
+      "ru/qa.html#qa-m2-30",
+      "ru/qa.html#qa-m2-31"
+     ]
+    },
+    "SD_ED_EXPERIMENTAL_BINDING|The definition for the element ''{0}'' binds to the value set ''{1}'' which is experimental, but this structure is not labeled as experimental": {
+     "origin": "publisher",
+     "count": 2,
+     "links": [
+      "ru/qa.html#qa-m86-4",
+      "ru/qa.html#qa-m86-5"
+     ]
+    },
+    "SD_PATH_SLICING_DEPRECATED|The discriminator type ''{0}'' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)": {
+     "origin": "publisher",
+     "count": 2,
+     "links": [
+      "ru/qa.html#qa-m88-3",
+      "ru/qa.html#qa-m88-4"
+     ]
+    },
+    "Details_for__matching_against_Profile_|Details for {0} matching against profile {1}": {
+     "origin": "publisher",
+     "count": 1,
+     "links": [
+      "ru/qa.html#qa-m2-18"
+     ]
+    },
+    "BUNDLE_SEARCH_NO_MODE|SearchSet bundles should have search modes on the entries": {
+     "origin": "publisher",
+     "count": 1,
+     "links": [
+      "ru/qa.html#qa-m3-13"
+     ]
+    },
+    "INV_FAILED|Constraint failed: {0}: ''{1}''": {
+     "origin": "machine",
+     "count": 1,
+     "links": [
+      "ru/qa.html#qa-m4-0"
+     ]
+    },
+    "CODESYSTEM_CS_COUNT_SUPPLEMENT_WRONG|The code system supplement states the total number of concepts as {1}, but this is different to the underlying code system that states a value of {0}": {
+     "origin": "publisher",
+     "count": 1,
+     "links": [
+      "ru/qa.html#qa-m29-0"
+     ]
+    },
+    "INV_FAILED_SOURCE|Constraint failed: {0}: ''{1}'' (defined in {2})": {
+     "origin": "machine",
+     "count": 1,
+     "links": [
+      "ru/qa.html#qa-m83-0"
+     ]
+    },
+    "untranslated|MSG_DEPENDS_ON_DEPRECATED_NOTE": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "ru/qa.html#qa-m86-0"
+     ]
+    }
+   }
+  },
+  "zh": {
+   "counts": {
+    "publisher": 0,
+    "machine": 248,
+    "source": 51
+   },
+   "refused": [],
+   "keys": {
+    "This_element_does_not_match_any_known_slice_|This element does not match any known slice {0} (this may not be a problem, but you should check that it''s not intended to match a slice)": {
+     "origin": "machine",
+     "count": 89,
+     "links": [
+      "zh/qa.html#qa-m2-0",
+      "zh/qa.html#qa-m2-1",
+      "zh/qa.html#qa-m2-21",
+      "zh/qa.html#qa-m53-2",
+      "zh/qa.html#qa-m64-5"
+     ]
+    },
+    "text|The resource {0} should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see {1})": {
+     "origin": "machine",
+     "count": 57,
+     "links": [
+      "zh/qa.html#qa-m5-0",
+      "zh/qa.html#qa-m6-1",
+      "zh/qa.html#qa-m7-1",
+      "zh/qa.html#qa-m8-0",
+      "zh/qa.html#qa-m9-1"
+     ]
+    },
+    "CODESYSTEM_DESIGNATION_DISP_CLASH_LANG|The designation ''{0}'' has no use and is in the same language (''{2}''), so is not differentiated from the base display (''{1}'')": {
+     "origin": "machine",
+     "count": 33,
+     "links": [
+      "zh/qa.html#qa-m9-0",
+      "zh/qa.html#qa-m15-0",
+      "zh/qa.html#qa-m15-1",
+      "zh/qa.html#qa-m15-2",
+      "zh/qa.html#qa-m18-0"
+     ]
+    },
+    "Type_Specific_Checks_DT_URL_Resolve|No definition could be found for URL value ''{0}''": {
+     "origin": "machine",
+     "count": 17,
+     "links": [
+      "zh/qa.html#qa-m2-3",
+      "zh/qa.html#qa-m2-4",
+      "zh/qa.html#qa-m2-5",
+      "zh/qa.html#qa-m2-8",
+      "zh/qa.html#qa-m2-10"
+     ]
+    },
+    "CODESYSTEM_CS_HL7_PRESENT_ELEMENT_SUPPL|CodeSystems SHOULD NOT have a stated value for the {0} element when they are a supplement": {
+     "origin": "machine",
+     "count": 16,
+     "links": [
+      "zh/qa.html#qa-m6-0",
+      "zh/qa.html#qa-m7-0",
+      "zh/qa.html#qa-m12-0",
+      "zh/qa.html#qa-m13-0",
+      "zh/qa.html#qa-m17-0"
+     ]
+    },
+    "MSG_DRAFT_SRC_STATUS|Reference to draft {2} {0} from {3} {4} {1}": {
+     "origin": "machine",
+     "count": 10,
+     "links": [
+      "zh/qa.html#qa-m2-9",
+      "zh/qa.html#qa-m3-1",
+      "zh/qa.html#qa-m3-3",
+      "zh/qa.html#qa-m3-6",
+      "zh/qa.html#qa-m3-8"
+     ]
+    },
+    "untranslated|Terminology_TX_NoValid_3_CC": {
+     "origin": "source",
+     "count": 9,
+     "links": [
+      "zh/qa.html#qa-m2-12",
+      "zh/qa.html#qa-m2-15",
+      "zh/qa.html#qa-m2-17",
+      "zh/qa.html#qa-m2-19",
+      "zh/qa.html#qa-m2-23"
+     ]
+    },
+    "text|The resource {0} could usefully have an OID assigned (OIDs are easy to assign - see {1})": {
+     "origin": "machine",
+     "count": 9,
+     "links": [
+      "zh/qa.html#qa-m4-1",
+      "zh/qa.html#qa-m64-90",
+      "zh/qa.html#qa-m83-1",
+      "zh/qa.html#qa-m84-0",
+      "zh/qa.html#qa-m85-0"
+     ]
+    },
+    "untranslated|text": {
+     "origin": "source",
+     "count": 8,
+     "links": [
+      "zh/qa.html#qa-m0-0",
+      "zh/qa.html#qa-m84-1",
+      "zh/qa.html#qa-m85-1",
+      "zh/qa.html#qa-m90-0",
+      "zh/qa.html#qa-m91-0"
+     ]
+    },
+    "untranslated|Terminology_TX_NoValid_14": {
+     "origin": "source",
+     "count": 6,
+     "links": [
+      "zh/qa.html#qa-m3-0",
+      "zh/qa.html#qa-m3-2",
+      "zh/qa.html#qa-m3-4",
+      "zh/qa.html#qa-m3-5",
+      "zh/qa.html#qa-m3-7"
+     ]
+    },
+    "untranslated|TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS": {
+     "origin": "source",
+     "count": 6,
+     "links": [
+      "zh/qa.html#qa-m86-1",
+      "zh/qa.html#qa-m86-2",
+      "zh/qa.html#qa-m86-3",
+      "zh/qa.html#qa-m88-0",
+      "zh/qa.html#qa-m88-1"
+     ]
+    },
+    "IG_DEPENDENCY_VERSION_WARNING_OLD|The ImplementationGuide uses package {0} released on {2}, but the most recent appropriate version is {1}. This reference is getting old and the more recent version should be considered": {
+     "origin": "machine",
+     "count": 5,
+     "links": [
+      "zh/qa.html#qa-m64-0",
+      "zh/qa.html#qa-m64-1",
+      "zh/qa.html#qa-m64-2",
+      "zh/qa.html#qa-m64-3",
+      "zh/qa.html#qa-m64-4"
+     ]
+    },
+    "Display_Name_for__should_be_one_of__instead_of_one|Wrong Display Name ''{4}'' for {1}#{2}. Valid display is {3} (for the language(s) ''{5}'')": {
+     "origin": "machine",
+     "count": 4,
+     "links": [
+      "zh/qa.html#qa-m2-6",
+      "zh/qa.html#qa-m2-7",
+      "zh/qa.html#qa-m53-4",
+      "zh/qa.html#qa-m53-5"
+     ]
+    },
+    "untranslated|INACTIVE_DISPLAY_FOUND": {
+     "origin": "source",
+     "count": 4,
+     "links": [
+      "zh/qa.html#qa-m2-13",
+      "zh/qa.html#qa-m2-20",
+      "zh/qa.html#qa-m55-2",
+      "zh/qa.html#qa-m66-0"
+     ]
+    },
+    "untranslated|BUNDLE_SEARCH_ENTRY_WRONG_RESOURCE_TYPE_NO_MODE": {
+     "origin": "source",
+     "count": 4,
+     "links": [
+      "zh/qa.html#qa-m3-9",
+      "zh/qa.html#qa-m3-10",
+      "zh/qa.html#qa-m3-11",
+      "zh/qa.html#qa-m3-12"
+     ]
+    },
+    "text|No conformance term found in the text: {0}": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "zh/qa.html#qa-m0-1",
+      "zh/qa.html#qa-m0-2"
+     ]
+    },
+    "untranslated|INACTIVE_CONCEPT_FOUND": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "zh/qa.html#qa-m1-0",
+      "zh/qa.html#qa-m2-22"
+     ]
+    },
+    "untranslated|Validation_VAL_Profile_Minimum_SLICE": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "zh/qa.html#qa-m2-2",
+      "zh/qa.html#qa-m53-3"
+     ]
+    },
+    "untranslated|DEPRECATED_CONCEPT_FOUND": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "zh/qa.html#qa-m2-27",
+      "zh/qa.html#qa-m77-0"
+     ]
+    },
+    "MSG_EXPERIMENTAL|Reference to experimental {2} {0}": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "zh/qa.html#qa-m2-28",
+      "zh/qa.html#qa-m2-29"
+     ]
+    },
+    "untranslated|Bundle_BUNDLE_Entry_NotFound": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "zh/qa.html#qa-m2-30",
+      "zh/qa.html#qa-m2-31"
+     ]
+    },
+    "SD_ED_EXPERIMENTAL_BINDING|The definition for the element ''{0}'' binds to the value set ''{1}'' which is experimental, but this structure is not labeled as experimental": {
+     "origin": "machine",
+     "count": 2,
+     "links": [
+      "zh/qa.html#qa-m86-4",
+      "zh/qa.html#qa-m86-5"
+     ]
+    },
+    "untranslated|SD_PATH_SLICING_DEPRECATED": {
+     "origin": "source",
+     "count": 2,
+     "links": [
+      "zh/qa.html#qa-m88-3",
+      "zh/qa.html#qa-m88-4"
+     ]
+    },
+    "untranslated|Details_for__matching_against_Profile_": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "zh/qa.html#qa-m2-18"
+     ]
+    },
+    "untranslated|BUNDLE_SEARCH_NO_MODE": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "zh/qa.html#qa-m3-13"
+     ]
+    },
+    "INV_FAILED|Constraint failed: {0}: ''{1}''": {
+     "origin": "machine",
+     "count": 1,
+     "links": [
+      "zh/qa.html#qa-m4-0"
+     ]
+    },
+    "untranslated|CODESYSTEM_CS_COUNT_SUPPLEMENT_WRONG": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "zh/qa.html#qa-m29-0"
+     ]
+    },
+    "INV_FAILED_SOURCE|Constraint failed: {0}: ''{1}'' (defined in {2})": {
+     "origin": "machine",
+     "count": 1,
+     "links": [
+      "zh/qa.html#qa-m83-0"
+     ]
+    },
+    "untranslated|MSG_DEPENDS_ON_DEPRECATED_NOTE": {
+     "origin": "source",
+     "count": 1,
+     "links": [
+      "zh/qa.html#qa-m86-0"
+     ]
+    }
+   }
+  }
+ }
+}

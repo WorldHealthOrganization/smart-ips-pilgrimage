@@ -1,0 +1,7 @@
+{
+  "$schema": "fhir-artifact-index-ref/v1",
+  "index": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/fhir-artifact-index/index.json",
+  "base": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/",
+  "repository": "WorldHealthOrganization/smart-ips-pilgrimage",
+  "commit": "c2793e1014ce186e7ed05df088c9a2289bd9e673"
+}

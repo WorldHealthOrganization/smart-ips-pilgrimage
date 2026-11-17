@@ -1,0 +1,1534 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-index-jsonld/v1",
+  "@id": "index.jsonld",
+  "@type": "fhir:ImplementationGuide",
+  "dcterms:identifier": "smart.who.int.ips-pilgrimage",
+  "schema:version": "2.1.0",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/ips-pilgrimage"
+  },
+  "dcterms:title": "SMART Verifiable IPS for Pilgrimage",
+  "schema:numberOfItems": 98,
+  "schema:hasPart": [
+    {
+      "@id": "AllergyIntolerance-72884cad-ebe6-4f43-a51a-2f978275f131",
+      "@type": "fhir:AllergyIntolerance",
+      "dcterms:identifier": "AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f131",
+      "dcterms:title": "72884cad-ebe6-4f43-a51a-2f978275f131",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "373270004",
+          "schema:name": "Substance with penicillin structure and antibacterial mechanism of action (substance)",
+          "schema:inDefinedTermSet": {
+            "@id": "http://snomed.info/sct"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../AllergyIntolerance-72884cad-ebe6-4f43-a51a-2f978275f131.json"
+      }
+    },
+    {
+      "@id": "Bundle-MyIPS",
+      "@type": "fhir:Bundle",
+      "dcterms:identifier": "Bundle/MyIPS",
+      "dcterms:title": "MyIPS",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Bundle-MyIPS.json"
+      }
+    },
+    {
+      "@id": "Bundle-PilgrimFolderSearchSetExtended",
+      "@type": "fhir:Bundle",
+      "dcterms:identifier": "Bundle/PilgrimFolderSearchSetExtended",
+      "dcterms:title": "PilgrimFolderSearchSetExtended",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Bundle-PilgrimFolderSearchSetExtended.json"
+      }
+    },
+    {
+      "@id": "Composition-ExampleComposition",
+      "@type": "fhir:Composition",
+      "dcterms:identifier": "Composition/ExampleComposition",
+      "dcterms:title": "Patient Summary as of December 11, 2017 14:30",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPSComposition"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Composition-ExampleComposition.json"
+      }
+    },
+    {
+      "@id": "Condition-c4597aa2-688a-401b-a658-70acc6de28c5",
+      "@type": "fhir:Condition",
+      "dcterms:identifier": "Condition/c4597aa2-688a-401b-a658-70acc6de28c5",
+      "dcterms:title": "c4597aa2-688a-401b-a658-70acc6de28c5",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "254837009",
+          "schema:name": "Malignant tumor of breast",
+          "schema:inDefinedTermSet": {
+            "@id": "http://snomed.info/sct"
+          }
+        },
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "8500/3",
+          "schema:name": "Infiltrating duct carcinoma, NOS",
+          "schema:inDefinedTermSet": {
+            "@id": "http://terminology.hl7.org/CodeSystem/icd-o-3"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Condition-c4597aa2-688a-401b-a658-70acc6de28c5.json"
+      }
+    },
+    {
+      "@id": "Condition-c64139e7-f02d-409c-bf34-75e8bf23bc89",
+      "@type": "fhir:Condition",
+      "dcterms:identifier": "Condition/c64139e7-f02d-409c-bf34-75e8bf23bc89",
+      "dcterms:title": "c64139e7-f02d-409c-bf34-75e8bf23bc89",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "198436008",
+          "schema:name": "Menopausal flushing (finding)",
+          "schema:inDefinedTermSet": {
+            "@id": "http://snomed.info/sct"
+          }
+        },
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "N95.1",
+          "schema:name": "Menopausal and female climacteric states",
+          "schema:inDefinedTermSet": {
+            "@id": "http://hl7.org/fhir/sid/icd-10"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Condition-c64139e7-f02d-409c-bf34-75e8bf23bc89.json"
+      }
+    },
+    {
+      "@id": "Consent-6ba64cfe-b224-4d40-87bf-4d8122e65e62",
+      "@type": "fhir:Consent",
+      "dcterms:identifier": "Consent/6ba64cfe-b224-4d40-87bf-4d8122e65e62",
+      "dcterms:title": "6ba64cfe-b224-4d40-87bf-4d8122e65e62",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Consent-6ba64cfe-b224-4d40-87bf-4d8122e65e62.json"
+      }
+    },
+    {
+      "@id": "Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c6",
+      "@type": "fhir:Consent",
+      "dcterms:identifier": "Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c6",
+      "dcterms:title": "c7781f44-6df8-4a8b-9e06-0b34263a47c6",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c6.json"
+      }
+    },
+    {
+      "@id": "DocumentReference-FHIRIPSDocumentReference",
+      "@type": "fhir:DocumentReference",
+      "dcterms:identifier": "DocumentReference/FHIRIPSDocumentReference",
+      "dcterms:title": "FHIRIPSDocumentReference",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../DocumentReference-FHIRIPSDocumentReference.json"
+      }
+    },
+    {
+      "@id": "DocumentReference-FHIRIPSSignedDocumentReference",
+      "@type": "fhir:DocumentReference",
+      "dcterms:identifier": "DocumentReference/FHIRIPSSignedDocumentReference",
+      "dcterms:title": "FHIRIPSSignedDocumentReference",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../DocumentReference-FHIRIPSSignedDocumentReference.json"
+      }
+    },
+    {
+      "@id": "DocumentReference-IPSPDFDocumentReference",
+      "@type": "fhir:DocumentReference",
+      "dcterms:identifier": "DocumentReference/IPSPDFDocumentReference",
+      "dcterms:title": "IPSPDFDocumentReference",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../DocumentReference-IPSPDFDocumentReference.json"
+      }
+    },
+    {
+      "@id": "DocumentReference-IPSSignedPDFDocumentReference",
+      "@type": "fhir:DocumentReference",
+      "dcterms:identifier": "DocumentReference/IPSSignedPDFDocumentReference",
+      "dcterms:title": "IPSSignedPDFDocumentReference",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../DocumentReference-IPSSignedPDFDocumentReference.json"
+      }
+    },
+    {
+      "@id": "DocumentReference-ex-documentreference",
+      "@type": "fhir:DocumentReference",
+      "dcterms:identifier": "DocumentReference/ex-documentreference",
+      "dcterms:title": "ex-documentreference",
+      "dcterms:description": "The captured signed document",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../DocumentReference-ex-documentreference.json"
+      }
+    },
+    {
+      "@id": "DocumentReference-ex-documentreference1",
+      "@type": "fhir:DocumentReference",
+      "dcterms:identifier": "DocumentReference/ex-documentreference1",
+      "dcterms:title": "ex-documentreference1",
+      "dcterms:description": "The captured signed document",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../DocumentReference-ex-documentreference1.json"
+      }
+    },
+    {
+      "@id": "List-PilgrimFolder",
+      "@type": "fhir:List",
+      "dcterms:identifier": "List/PilgrimFolder",
+      "dcterms:title": "PilgrimFolder",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder"
+        }
+      ],
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "folder",
+          "schema:inDefinedTermSet": {
+            "@id": "https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../List-PilgrimFolder.json"
+      }
+    },
+    {
+      "@id": "Medication-8adc0999-9468-4ac9-9557-680fa133d625",
+      "@type": "fhir:Medication",
+      "dcterms:identifier": "Medication/8adc0999-9468-4ac9-9557-680fa133d625",
+      "dcterms:title": "8adc0999-9468-4ac9-9557-680fa133d625",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "412588001",
+          "schema:name": "Cimicifuga racemosa extract (substance)",
+          "schema:inDefinedTermSet": {
+            "@id": "http://snomed.info/sct"
+          }
+        },
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "G02CX04",
+          "schema:name": "Cimicifugae rhizoma",
+          "schema:inDefinedTermSet": {
+            "@id": "http://www.whocc.no/atc"
+          }
+        },
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:name": "Black Cohosh Extract herbal supplement"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Medication-8adc0999-9468-4ac9-9557-680fa133d625.json"
+      }
+    },
+    {
+      "@id": "Medication-976d0804-cae0-45ae-afe3-a19f3ceba6bb",
+      "@type": "fhir:Medication",
+      "dcterms:identifier": "Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bb",
+      "dcterms:title": "976d0804-cae0-45ae-afe3-a19f3ceba6bb",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "108774000",
+          "schema:name": "Product containing anastrozole (medicinal product)",
+          "schema:inDefinedTermSet": {
+            "@id": "http://snomed.info/sct"
+          }
+        },
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "L02BG03",
+          "schema:name": "anastrozole",
+          "schema:inDefinedTermSet": {
+            "@id": "http://www.whocc.no/atc"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Medication-976d0804-cae0-45ae-afe3-a19f3ceba6bb.json"
+      }
+    },
+    {
+      "@id": "MedicationStatement-47524493-846a-4a26-bae2-4ab03e60f02d",
+      "@type": "fhir:MedicationStatement",
+      "dcterms:identifier": "MedicationStatement/47524493-846a-4a26-bae2-4ab03e60f02d",
+      "dcterms:title": "47524493-846a-4a26-bae2-4ab03e60f02d",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../MedicationStatement-47524493-846a-4a26-bae2-4ab03e60f02d.json"
+      }
+    },
+    {
+      "@id": "MedicationStatement-c220e36c-eb67-4fc4-9ba1-2fabc52acec5",
+      "@type": "fhir:MedicationStatement",
+      "dcterms:identifier": "MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec5",
+      "dcterms:title": "c220e36c-eb67-4fc4-9ba1-2fabc52acec5",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../MedicationStatement-c220e36c-eb67-4fc4-9ba1-2fabc52acec5.json"
+      }
+    },
+    {
+      "@id": "Observation-2639657a-c19a-48e2-82cc-471e13b8ad93",
+      "@type": "fhir:Observation",
+      "dcterms:identifier": "Observation/2639657a-c19a-48e2-82cc-471e13b8ad93",
+      "dcterms:title": "2639657a-c19a-48e2-82cc-471e13b8ad93",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:name": "Blood typing"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Observation-2639657a-c19a-48e2-82cc-471e13b8ad93.json"
+      }
+    },
+    {
+      "@id": "Observation-26bee0a9-5997-4557-ab9d-c6adbb05b571",
+      "@type": "fhir:Observation",
+      "dcterms:identifier": "Observation/26bee0a9-5997-4557-ab9d-c6adbb05b571",
+      "dcterms:title": "26bee0a9-5997-4557-ab9d-c6adbb05b571",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "42803-7",
+          "schema:name": "Bacteria identified in Isolate",
+          "schema:inDefinedTermSet": {
+            "@id": "http://loinc.org"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Observation-26bee0a9-5997-4557-ab9d-c6adbb05b571.json"
+      }
+    },
+    {
+      "@id": "Observation-6e39ccf3-f997-4a2b-8f28-b4b71c778c79",
+      "@type": "fhir:Observation",
+      "dcterms:identifier": "Observation/6e39ccf3-f997-4a2b-8f28-b4b71c778c79",
+      "dcterms:title": "6e39ccf3-f997-4a2b-8f28-b4b71c778c79",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "945-6",
+          "schema:name": "C Ab [Presence] in Serum or Plasma",
+          "schema:inDefinedTermSet": {
+            "@id": "http://loinc.org"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Observation-6e39ccf3-f997-4a2b-8f28-b4b71c778c79.json"
+      }
+    },
+    {
+      "@id": "Observation-a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3",
+      "@type": "fhir:Observation",
+      "dcterms:identifier": "Observation/a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3",
+      "dcterms:title": "a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "1156-9",
+          "schema:name": "little c Ab [Presence] in Serum or Plasma",
+          "schema:inDefinedTermSet": {
+            "@id": "http://loinc.org"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Observation-a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3.json"
+      }
+    },
+    {
+      "@id": "Observation-aa11a2be-3e36-4be7-b58a-6fc3dace2740",
+      "@type": "fhir:Observation",
+      "dcterms:identifier": "Observation/aa11a2be-3e36-4be7-b58a-6fc3dace2740",
+      "dcterms:title": "aa11a2be-3e36-4be7-b58a-6fc3dace2740",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "882-1",
+          "schema:name": "ABO and Rh group [Type] in Blood",
+          "schema:inDefinedTermSet": {
+            "@id": "http://loinc.org"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Observation-aa11a2be-3e36-4be7-b58a-6fc3dace2740.json"
+      }
+    },
+    {
+      "@id": "Observation-b4916505-a06b-460c-9be8-011609282456",
+      "@type": "fhir:Observation",
+      "dcterms:identifier": "Observation/b4916505-a06b-460c-9be8-011609282456",
+      "dcterms:title": "b4916505-a06b-460c-9be8-011609282456",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "1018-1",
+          "schema:name": "E Ab [Presence] in Serum or Plasma",
+          "schema:inDefinedTermSet": {
+            "@id": "http://loinc.org"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Observation-b4916505-a06b-460c-9be8-011609282456.json"
+      }
+    },
+    {
+      "@id": "Observation-cc354e00-a419-47ea-8b6c-1768b2a01645",
+      "@type": "fhir:Observation",
+      "dcterms:identifier": "Observation/cc354e00-a419-47ea-8b6c-1768b2a01645",
+      "dcterms:title": "cc354e00-a419-47ea-8b6c-1768b2a01645",
+      "dcterms:type": "Other",
+      "dcterms:subject": [
+        {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "17856-6",
+          "schema:name": "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
+          "schema:inDefinedTermSet": {
+            "@id": "http://loinc.org"
+          }
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Observation-cc354e00-a419-47ea-8b6c-1768b2a01645.json"
+      }
+    },
+    {
+      "@id": "Organization-45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6",
+      "@type": "fhir:Organization",
+      "dcterms:identifier": "Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6",
+      "dcterms:title": "45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6",
+      "dcterms:description": "Laboratoire de charme",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Organization-45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6.json"
+      }
+    },
+    {
+      "@id": "Organization-890751f4-2924-4636-bab7-efffc7f3cf14",
+      "@type": "fhir:Organization",
+      "dcterms:identifier": "Organization/890751f4-2924-4636-bab7-efffc7f3cf14",
+      "dcterms:title": "890751f4-2924-4636-bab7-efffc7f3cf14",
+      "dcterms:description": "Anorg Aniza Tion BV / The best custodian ever",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Organization-890751f4-2924-4636-bab7-efffc7f3cf14.json"
+      }
+    },
+    {
+      "@id": "Organization-ExampleHostMoH",
+      "@type": "fhir:Organization",
+      "dcterms:identifier": "Organization/ExampleHostMoH",
+      "dcterms:title": "ExampleHostMoH",
+      "dcterms:description": "Ministry of Health Taifafeki (example)",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Organization-ExampleHostMoH.json"
+      }
+    },
+    {
+      "@id": "Organization-ExampleOriginHIE",
+      "@type": "fhir:Organization",
+      "dcterms:identifier": "Organization/ExampleOriginHIE",
+      "dcterms:title": "ExampleOriginHIE",
+      "dcterms:description": "Ministry of Health Onesa Health Information Exchange (example)",
+      "dcterms:type": "Other",
+      "dcterms:conformsTo": [
+        {
+          "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization"
+        }
+      ],
+      "schema:contentUrl": {
+        "@id": "../Organization-ExampleOriginHIE.json"
+      }
+    },
+    {
+      "@id": "Patient-2b90dd2b-2dab-4c75-9bb9-a355e07401e7",
+      "@type": "fhir:Patient",
+      "dcterms:identifier": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e7",
+      "dcterms:title": "2b90dd2b-2dab-4c75-9bb9-a355e07401e7",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Patient-2b90dd2b-2dab-4c75-9bb9-a355e07401e7.json"
+      }
+    },
+    {
+      "@id": "Practitioner-1c616b24-3895-48c4-9a02-9a64110351ee",
+      "@type": "fhir:Practitioner",
+      "dcterms:identifier": "Practitioner/1c616b24-3895-48c4-9a02-9a64110351ee",
+      "dcterms:title": "1c616b24-3895-48c4-9a02-9a64110351ee",
+      "dcterms:type": "Other",
+      "schema:contentUrl": {
+        "@id": "../Practitioner-1c616b24-3895-48c4-9a02-9a64110351ee.json"
+      }
+    },
+    {
+      "@id": "Questionnaire-Questionnaire-ConnectathonSubmission",
+      "@type": "fhir:Questionnaire",
+      "dcterms:identifier": "Questionnaire/Questionnaire-ConnectathonSubmission",
+      "dcterms:title": "Connectathon Submission",
+      "dcterms:description": "Connectathon Submission",
+      "dcterms:type": "Other",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/Questionnaire/Questionnaire-ConnectathonSubmission"
+      },
+      "schema:contentUrl": {
+        "@id": "../Questionnaire-Questionnaire-ConnectathonSubmission.json"
+      }
+    },
+    {
+      "@id": "CapabilityStatement-VHLDocumentResponder",
+      "@type": "fhir:CapabilityStatement",
+      "dcterms:identifier": "CapabilityStatement/VHLDocumentResponder",
+      "dcterms:title": "VHL Document Responder (server)",
+      "schema:name": "VHL DocumentResponder",
+      "dcterms:description": "VHL Document Responder (server) - Search DocumentReferences in a List.",
+      "dcterms:type": "Behavior: Capability Statements",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CapabilityStatement/VHLDocumentResponder"
+      },
+      "schema:contentUrl": {
+        "@id": "../CapabilityStatement-VHLDocumentResponder.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-BrowserCs",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/BrowserCs",
+      "dcterms:title": "Browser",
+      "dcterms:description": "Browser",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-BrowserCs.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-BrowserCs-ar",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/BrowserCs-ar",
+      "dcterms:title": "المتصفح",
+      "schema:name": "BrowserCsAr",
+      "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز BrowserCs: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-BrowserCs-ar.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-BrowserCs-es",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/BrowserCs-es",
+      "dcterms:title": "BrowserCs (es designations, unofficial)",
+      "schema:name": "BrowserCsEs",
+      "dcterms:description": "Unofficial Spanish designations for BrowserCs: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-BrowserCs-es.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-BrowserCs-fr",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/BrowserCs-fr",
+      "dcterms:title": "Navigateur",
+      "schema:name": "BrowserCsFr",
+      "dcterms:description": "French (fr) supplement to BrowserCs. Unofficial agent translation.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-BrowserCs-fr.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-BrowserCs-ru",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/BrowserCs-ru",
+      "dcterms:title": "BrowserCs (ru designations, unofficial)",
+      "schema:name": "BrowserCsRu",
+      "dcterms:description": "Unofficial Russian designations for BrowserCs: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-BrowserCs-ru.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-BrowserCs-zh",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/BrowserCs-zh",
+      "dcterms:title": "BrowserCs — Chinese (zh) supplement",
+      "schema:name": "BrowserCsZh",
+      "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the BrowserCs code system, drafted by an agent and not signed off by a human.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-BrowserCs-zh.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-DistributionModelCs",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/DistributionModelCs",
+      "dcterms:title": "Distribution Model",
+      "dcterms:description": "Distribution Model",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DistributionModelCs.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-DistributionModelCs-ar",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/DistributionModelCs-ar",
+      "dcterms:title": "نموذج التوزيع",
+      "schema:name": "DistributionModelCsAr",
+      "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز DistributionModelCs: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DistributionModelCs-ar.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-DistributionModelCs-es",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/DistributionModelCs-es",
+      "dcterms:title": "DistributionModelCs (es designations, unofficial)",
+      "schema:name": "DistributionModelCsEs",
+      "dcterms:description": "Unofficial Spanish designations for DistributionModelCs: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DistributionModelCs-es.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-DistributionModelCs-fr",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/DistributionModelCs-fr",
+      "dcterms:title": "Modèle de distribution",
+      "schema:name": "DistributionModelCsFr",
+      "dcterms:description": "French (fr) supplement to DistributionModelCs. Unofficial agent translation.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DistributionModelCs-fr.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-DistributionModelCs-ru",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/DistributionModelCs-ru",
+      "dcterms:title": "DistributionModelCs (ru designations, unofficial)",
+      "schema:name": "DistributionModelCsRu",
+      "dcterms:description": "Unofficial Russian designations for DistributionModelCs: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DistributionModelCs-ru.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-DistributionModelCs-zh",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/DistributionModelCs-zh",
+      "dcterms:title": "DistributionModelCs — Chinese (zh) supplement",
+      "schema:name": "DistributionModelCsZh",
+      "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the DistributionModelCs code system, drafted by an agent and not signed off by a human.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/DistributionModelCs-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-DistributionModelCs-zh.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS-HAJJ-ACTOR-es",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS-HAJJ-ACTOR-es",
+      "dcterms:title": "IPS.HAJJ.ACTOR (es designations, unofficial)",
+      "schema:name": "IPSHAJJACTOREs",
+      "dcterms:description": "Unofficial Spanish designations for IPS.HAJJ.ACTOR: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-ACTOR-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS-HAJJ-ACTOR-es.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS-HAJJ-ACTOR-ru",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS-HAJJ-ACTOR-ru",
+      "dcterms:title": "IPS.HAJJ.ACTOR (ru designations, unofficial)",
+      "schema:name": "IPSHAJJACTORRu",
+      "dcterms:description": "Unofficial Russian designations for IPS.HAJJ.ACTOR: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-ACTOR-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS-HAJJ-ACTOR-ru.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS-HAJJ-CONSENT-es",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS-HAJJ-CONSENT-es",
+      "dcterms:title": "IPS.HAJJ.CONSENT (es designations, unofficial)",
+      "schema:name": "IPSHAJJCONSENTEs",
+      "dcterms:description": "Unofficial Spanish designations for IPS.HAJJ.CONSENT: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-CONSENT-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS-HAJJ-CONSENT-es.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS-HAJJ-CONSENT-ru",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS-HAJJ-CONSENT-ru",
+      "dcterms:title": "IPS.HAJJ.CONSENT (ru designations, unofficial)",
+      "schema:name": "IPSHAJJCONSENTRu",
+      "dcterms:description": "Unofficial Russian designations for IPS.HAJJ.CONSENT: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-CONSENT-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS-HAJJ-CONSENT-ru.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS-HAJJ-TRANSACTION-es",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS-HAJJ-TRANSACTION-es",
+      "dcterms:title": "IPS.HAJJ.TRANSACTION (es designations, unofficial)",
+      "schema:name": "IPSHAJJTRANSACTIONEs",
+      "dcterms:description": "Unofficial Spanish designations for IPS.HAJJ.TRANSACTION: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-TRANSACTION-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS-HAJJ-TRANSACTION-es.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS-HAJJ-TRANSACTION-ru",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS-HAJJ-TRANSACTION-ru",
+      "dcterms:title": "IPS.HAJJ.TRANSACTION (ru designations, unofficial)",
+      "schema:name": "IPSHAJJTRANSACTIONRu",
+      "dcterms:description": "Unofficial Russian designations for IPS.HAJJ.TRANSACTION: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS-HAJJ-TRANSACTION-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS-HAJJ-TRANSACTION-ru.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.ACTOR",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.ACTOR",
+      "dcterms:title": "IPS.HAJJ.ACTOR CodeSystem",
+      "schema:name": "IPS_HAJJ_ACTOR",
+      "dcterms:description": "CodeSystem for IPS.HAJJ.ACTOR CodeSystem for utilization of IPS during the pilgrimage",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.ACTOR.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.ACTOR-ar",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.ACTOR-ar",
+      "dcterms:title": "نظام الرموز IPS.HAJJ.ACTOR",
+      "schema:name": "IPSHAJJACTORAr",
+      "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز IPS.HAJJ.ACTOR: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.ACTOR-ar.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.ACTOR-fr",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.ACTOR-fr",
+      "dcterms:title": "Système de codes IPS.HAJJ.ACTOR",
+      "schema:name": "IPSHAJJACTORFr",
+      "dcterms:description": "French (fr) supplement to IPS.HAJJ.ACTOR. Unofficial agent translation.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.ACTOR-fr.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.ACTOR-zh",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.ACTOR-zh",
+      "dcterms:title": "IPS.HAJJ.ACTOR — Chinese (zh) supplement",
+      "schema:name": "IPSHAJJACTORZh",
+      "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the IPS.HAJJ.ACTOR code system, drafted by an agent and not signed off by a human.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.ACTOR-zh.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.CONSENT",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.CONSENT",
+      "dcterms:title": "IPS.HAJJ.CONSENT CodeSystem",
+      "schema:name": "IPS_HAJJ_CONSENT",
+      "dcterms:description": "CodeSystem for IPS.HAJJ.CONSENT CodeSystem for utilization of IPS during the pilgrimage",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.CONSENT.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.CONSENT-ar",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.CONSENT-ar",
+      "dcterms:title": "نظام الرموز IPS.HAJJ.CONSENT",
+      "schema:name": "IPSHAJJCONSENTAr",
+      "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز IPS.HAJJ.CONSENT: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.CONSENT-ar.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.CONSENT-fr",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.CONSENT-fr",
+      "dcterms:title": "Système de codes IPS.HAJJ.CONSENT",
+      "schema:name": "IPSHAJJCONSENTFr",
+      "dcterms:description": "French (fr) supplement to IPS.HAJJ.CONSENT. Unofficial agent translation.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.CONSENT-fr.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.CONSENT-zh",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.CONSENT-zh",
+      "dcterms:title": "IPS.HAJJ.CONSENT — Chinese (zh) supplement",
+      "schema:name": "IPSHAJJCONSENTZh",
+      "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the IPS.HAJJ.CONSENT code system, drafted by an agent and not signed off by a human.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.CONSENT-zh.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.TRANSACTION",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.TRANSACTION",
+      "dcterms:title": "IPS.HAJJ.TRANSACTION CodeSystem",
+      "schema:name": "IPS_HAJJ_TRANSACTION",
+      "dcterms:description": "CodeSystem for IPS.HAJJ.TRANSACTION CodeSystem for utilization of IPS during the pilgrimage",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.TRANSACTION.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.TRANSACTION-ar",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.TRANSACTION-ar",
+      "dcterms:title": "نظام الرموز IPS.HAJJ.TRANSACTION",
+      "schema:name": "IPSHAJJTRANSACTIONAr",
+      "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز IPS.HAJJ.TRANSACTION: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.TRANSACTION-ar.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.TRANSACTION-fr",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.TRANSACTION-fr",
+      "dcterms:title": "Système de codes IPS.HAJJ.TRANSACTION",
+      "schema:name": "IPSHAJJTRANSACTIONFr",
+      "dcterms:description": "French (fr) supplement to IPS.HAJJ.TRANSACTION. Unofficial agent translation.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.TRANSACTION-fr.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-IPS.HAJJ.TRANSACTION-zh",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/IPS.HAJJ.TRANSACTION-zh",
+      "dcterms:title": "IPS.HAJJ.TRANSACTION — Chinese (zh) supplement",
+      "schema:name": "IPSHAJJTRANSACTIONZh",
+      "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the IPS.HAJJ.TRANSACTION code system, drafted by an agent and not signed off by a human.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.TRANSACTION-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-IPS.HAJJ.TRANSACTION-zh.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LanguageCs",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LanguageCs",
+      "dcterms:title": "Language",
+      "dcterms:description": "Language",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LanguageCs.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LanguageCs-ar",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LanguageCs-ar",
+      "dcterms:title": "اللغة",
+      "schema:name": "LanguageCsAr",
+      "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز LanguageCs: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LanguageCs-ar.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LanguageCs-es",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LanguageCs-es",
+      "dcterms:title": "LanguageCs (es designations, unofficial)",
+      "schema:name": "LanguageCsEs",
+      "dcterms:description": "Unofficial Spanish designations for LanguageCs: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LanguageCs-es.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LanguageCs-fr",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LanguageCs-fr",
+      "dcterms:title": "Langue",
+      "schema:name": "LanguageCsFr",
+      "dcterms:description": "French (fr) supplement to LanguageCs. Unofficial agent translation.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LanguageCs-fr.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LanguageCs-ru",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LanguageCs-ru",
+      "dcterms:title": "LanguageCs (ru designations, unofficial)",
+      "schema:name": "LanguageCsRu",
+      "dcterms:description": "Unofficial Russian designations for LanguageCs: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LanguageCs-ru.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LanguageCs-zh",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LanguageCs-zh",
+      "dcterms:title": "LanguageCs — Chinese (zh) supplement",
+      "schema:name": "LanguageCsZh",
+      "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the LanguageCs code system, drafted by an agent and not signed off by a human.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LanguageCs-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LanguageCs-zh.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LicensingModelCs",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LicensingModelCs",
+      "dcterms:title": "Licensing Model",
+      "dcterms:description": "Licensing Model",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LicensingModelCs.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LicensingModelCs-ar",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LicensingModelCs-ar",
+      "dcterms:title": "نموذج الترخيص",
+      "schema:name": "LicensingModelCsAr",
+      "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز LicensingModelCs: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LicensingModelCs-ar.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LicensingModelCs-es",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LicensingModelCs-es",
+      "dcterms:title": "LicensingModelCs (es designations, unofficial)",
+      "schema:name": "LicensingModelCsEs",
+      "dcterms:description": "Unofficial Spanish designations for LicensingModelCs: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LicensingModelCs-es.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LicensingModelCs-fr",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LicensingModelCs-fr",
+      "dcterms:title": "Modèle de licence",
+      "schema:name": "LicensingModelCsFr",
+      "dcterms:description": "French (fr) supplement to LicensingModelCs. Unofficial agent translation.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LicensingModelCs-fr.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LicensingModelCs-ru",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LicensingModelCs-ru",
+      "dcterms:title": "LicensingModelCs (ru designations, unofficial)",
+      "schema:name": "LicensingModelCsRu",
+      "dcterms:description": "Unofficial Russian designations for LicensingModelCs: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LicensingModelCs-ru.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-LicensingModelCs-zh",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/LicensingModelCs-zh",
+      "dcterms:title": "LicensingModelCs — Chinese (zh) supplement",
+      "schema:name": "LicensingModelCsZh",
+      "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the LicensingModelCs code system, drafted by an agent and not signed off by a human.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/LicensingModelCs-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-LicensingModelCs-zh.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-OperatingSystemCs",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/OperatingSystemCs",
+      "dcterms:title": "Operating System",
+      "dcterms:description": "Operating System",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-OperatingSystemCs.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-OperatingSystemCs-ar",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/OperatingSystemCs-ar",
+      "dcterms:title": "نظام التشغيل",
+      "schema:name": "OperatingSystemCsAr",
+      "dcterms:description": "ملحق باللغة العربية (ar) لنظام الرموز OperatingSystemCs: تسميات كل مفهوم. ترجمة غير رسمية أعدّها وكيل آلي، دون مراجعة بشرية.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-ar"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-OperatingSystemCs-ar.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-OperatingSystemCs-es",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/OperatingSystemCs-es",
+      "dcterms:title": "OperatingSystemCs (es designations, unofficial)",
+      "schema:name": "OperatingSystemCsEs",
+      "dcterms:description": "Unofficial Spanish designations for OperatingSystemCs: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-es"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-OperatingSystemCs-es.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-OperatingSystemCs-fr",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/OperatingSystemCs-fr",
+      "dcterms:title": "Système d’exploitation",
+      "schema:name": "OperatingSystemCsFr",
+      "dcterms:description": "French (fr) supplement to OperatingSystemCs. Unofficial agent translation.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-fr"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-OperatingSystemCs-fr.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-OperatingSystemCs-ru",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/OperatingSystemCs-ru",
+      "dcterms:title": "OperatingSystemCs (ru designations, unofficial)",
+      "schema:name": "OperatingSystemCsRu",
+      "dcterms:description": "Unofficial Russian designations for OperatingSystemCs: an agent translation that no person has signed off.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-ru"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-OperatingSystemCs-ru.json"
+      }
+    },
+    {
+      "@id": "CodeSystem-OperatingSystemCs-zh",
+      "@type": "fhir:CodeSystem",
+      "dcterms:identifier": "CodeSystem/OperatingSystemCs-zh",
+      "dcterms:title": "OperatingSystemCs — Chinese (zh) supplement",
+      "schema:name": "OperatingSystemCsZh",
+      "dcterms:description": "Unofficial Simplified Chinese (zh) display designations for the OperatingSystemCs code system, drafted by an agent and not signed off by a human.",
+      "dcterms:type": "Terminology: Code Systems",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/CodeSystem/OperatingSystemCs-zh"
+      },
+      "schema:contentUrl": {
+        "@id": "../CodeSystem-OperatingSystemCs-zh.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-ConsentPeriod",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/ConsentPeriod",
+      "dcterms:title": "ConsentPeriod",
+      "dcterms:description": "Consent Period extension for use in Consent resources prior to R5.",
+      "dcterms:type": "Structures: Extension Definitions",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentPeriod"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-ConsentPeriod.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-ConsentVerifiedBy",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/ConsentVerifiedBy",
+      "dcterms:title": "ConsentVerifiedBy",
+      "dcterms:description": "Consent VerfifiedBy extension for use in Consent resources prior to R5.",
+      "dcterms:type": "Structures: Extension Definitions",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-ConsentVerifiedBy.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-HajjConsent",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/HajjConsent",
+      "dcterms:title": "HajjConsent",
+      "dcterms:description": "A profile of the consent resource to track consent of a pilgrim to participate\n\nFHIR R5 upgrade notes (need this implemented as a structure map):\n * make cardinality of decision 1.. and should stop using it in lieu of verification.verified\n * use verification.verifiedBy instead of Consent.organization\n * the period extenion should be replaced by Consent.period\n * the Consent.patient should be replaced by Consent.subject\n * Consent.verification.verifiedBy should be used instead of Consent.organization\n",
+      "dcterms:type": "Structures: Resource Profiles",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-HajjConsent.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-HajjIPS",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/HajjIPS",
+      "dcterms:title": "Bundle - IPS for Pilgrimage",
+      "dcterms:description": "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide for Pilgrimage.",
+      "dcterms:type": "Structures: Resource Profiles",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-HajjIPS.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-HajjIPSComposition",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/HajjIPSComposition",
+      "dcterms:title": "Composition (IPS) for Pilgrimage",
+      "dcterms:description": "Clinical document used to represent the International Patient Summary (IPS) data set for Pilgrimage",
+      "dcterms:type": "Structures: Resource Profiles",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPSComposition"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-HajjIPSComposition.json"
+      }
+    },
+    {
+      "@id": "StructureDefinition-HajjOrganization",
+      "@type": "fhir:StructureDefinition",
+      "dcterms:identifier": "StructureDefinition/HajjOrganization",
+      "dcterms:title": "HajjOrganization",
+      "dcterms:description": "A profile of the consent resource to track consent of a pilgrim to participate",
+      "dcterms:type": "Structures: Resource Profiles",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization"
+      },
+      "schema:contentUrl": {
+        "@id": "../StructureDefinition-HajjOrganization.json"
+      }
+    },
+    {
+      "@id": "ValueSet-Browser",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/Browser",
+      "dcterms:title": "Browser",
+      "dcterms:description": "Browser",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/ValueSet/Browser"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-Browser.json"
+      }
+    },
+    {
+      "@id": "ValueSet-DistributionModel",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/DistributionModel",
+      "dcterms:title": "Distribution Model",
+      "dcterms:description": "Distribution Model",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/ValueSet/DistributionModel"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-DistributionModel.json"
+      }
+    },
+    {
+      "@id": "ValueSet-IPS.HAJJ.ACTOR",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/IPS.HAJJ.ACTOR",
+      "dcterms:title": "IPS.HAJJ.ACTOR ValueSet of actor",
+      "schema:name": "IPS_HAJJ_ACTOR",
+      "dcterms:description": "ValueSet of codes for actor for the pilgrimage",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-IPS.HAJJ.ACTOR.json"
+      }
+    },
+    {
+      "@id": "ValueSet-IPS.HAJJ.ACTOR.SYSTEM",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/IPS.HAJJ.ACTOR.SYSTEM",
+      "dcterms:title": "IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor",
+      "schema:name": "IPS_HAJJ_ACTOR_SYSTEM",
+      "dcterms:description": "ValueSet of codes for system actors for the pilgrimage",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR.SYSTEM"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-IPS.HAJJ.ACTOR.SYSTEM.json"
+      }
+    },
+    {
+      "@id": "ValueSet-IPS.HAJJ.CONSENT",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/IPS.HAJJ.CONSENT",
+      "dcterms:title": "IPS.HAJJ.CONSENT ValueSet of consent policies",
+      "schema:name": "IPS_HAJJ_CONSENT",
+      "dcterms:description": "ValueSet of codes for consent policies for pilgrims",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-IPS.HAJJ.CONSENT.json"
+      }
+    },
+    {
+      "@id": "ValueSet-IPS.HAJJ.TRANSACTION",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/IPS.HAJJ.TRANSACTION",
+      "dcterms:title": "IPS.HAJJ.TRANSACTION ValueSet of transaction",
+      "schema:name": "IPS_HAJJ_TRANSACTION",
+      "dcterms:description": "ValueSet of codes for transaction for the pilgrimage",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.TRANSACTION"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-IPS.HAJJ.TRANSACTION.json"
+      }
+    },
+    {
+      "@id": "ValueSet-Language",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/Language",
+      "dcterms:title": "Language",
+      "dcterms:description": "Language",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/ValueSet/Language"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-Language.json"
+      }
+    },
+    {
+      "@id": "ValueSet-LicensingModel",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/LicensingModel",
+      "dcterms:title": "Licensing Model",
+      "dcterms:description": "Licensing Model",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/ValueSet/LicensingModel"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-LicensingModel.json"
+      }
+    },
+    {
+      "@id": "ValueSet-OperatingSystem",
+      "@type": "fhir:ValueSet",
+      "dcterms:identifier": "ValueSet/OperatingSystem",
+      "dcterms:title": "Operating System",
+      "dcterms:description": "Operating System",
+      "dcterms:type": "Terminology: Value Sets",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/ValueSet/OperatingSystem"
+      },
+      "schema:contentUrl": {
+        "@id": "../ValueSet-OperatingSystem.json"
+      }
+    },
+    {
+      "@id": "ImplementationGuide-smart.who.int.ips-pilgrimage",
+      "@type": "fhir:ImplementationGuide",
+      "dcterms:identifier": "ImplementationGuide/smart.who.int.ips-pilgrimage",
+      "dcterms:title": "SMART Verifiable IPS for Pilgrimage",
+      "schema:name": "SMART_WHO_INT_IPS_Pilgrimage",
+      "dcterms:description": "An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage",
+      "schema:sameAs": {
+        "@id": "http://smart.who.int/ips-pilgrimage/ImplementationGuide/smart.who.int.ips-pilgrimage"
+      },
+      "schema:contentUrl": {
+        "@id": "../ImplementationGuide-smart.who.int.ips-pilgrimage.json"
+      }
+    }
+  ]
+}

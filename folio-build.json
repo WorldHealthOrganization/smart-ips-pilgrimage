@@ -1,0 +1,18 @@
+{
+  "$schema": "folio-site-build/v1",
+  "instance": "smart-ips-pilgrimage",
+  "platform": {
+    "commit": "1b18760f71c69bd391bf0d6c28c79c36603b6939"
+  },
+  "source": {
+    "repo": "WorldHealthOrganization/smart-ips-pilgrimage",
+    "ref": "main",
+    "commit": "7ee9b7f3054cdd2baee121f06a30d6e7e3393015"
+  },
+  "builtAt": "2026-11-17T07:07:27.003Z",
+  "ast": {
+    "commit": "7ee9b7f3054cdd2baee121f06a30d6e7e3393015",
+    "verdict": "valid",
+    "kind": "full"
+  }
+}

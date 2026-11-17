@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/relationship/id-f2707348c7415861bd4ca8f783d67edb",
+  "@type": "archimate:Flow",
+  "schema:identifier": "id-f2707348c7415861bd4ca8f783d67edb",
+  "schema:name": "5. EMR retrieves IPS from Home country HIE",
+  "schema:description": "Step 5 of the overview of key process flows.",
+  "archimate:source": {
+    "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f7870cda62c85a4598b0e438eb6fc749"
+  },
+  "archimate:target": {
+    "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-40903feadde952e19b2211b3de0ac125"
+  },
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

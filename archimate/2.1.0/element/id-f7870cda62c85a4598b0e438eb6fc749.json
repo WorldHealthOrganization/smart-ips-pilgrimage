@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f7870cda62c85a4598b0e438eb6fc749",
+  "@type": "archimate:ApplicationComponent",
+  "schema:identifier": "id-f7870cda62c85a4598b0e438eb6fc749",
+  "schema:name": "Origin Country HIE",
+  "schema:description": "The home country's health information exchange: assembles and signs the IPS, issues the VHL and answers the host's requests for it.",
+  "schema:category": "Application",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

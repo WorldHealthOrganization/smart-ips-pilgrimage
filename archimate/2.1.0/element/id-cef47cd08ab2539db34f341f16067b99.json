@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-cef47cd08ab2539db34f341f16067b99",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-cef47cd08ab2539db34f341f16067b99",
+  "schema:name": "P5 · His record is read and he is treated",
+  "schema:description": "The EMR follows the link to Onesa's HIE and retrieves Kamal's summary. Dr Faisal sees the insulin and the penicillin allergy before he treats him for heat exhaustion and low blood sugar. The EMR keeps a rendered copy of the summary with the record of the visit. Step 5 of the overview of key process flows.",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

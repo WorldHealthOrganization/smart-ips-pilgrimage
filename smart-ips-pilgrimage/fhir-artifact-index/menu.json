@@ -1,0 +1,148 @@
+{
+  "$schema": "folio-ig-menu/v1",
+  "id": "smart.who.int.ips-pilgrimage",
+  "canonical": "http://smart.who.int/ips-pilgrimage",
+  "version": "2.1.0",
+  "source": {
+    "kind": "sushi-config",
+    "of": "https://github.com/WorldHealthOrganization/smart-ips-pilgrimage",
+    "ref": "7ee9b7f3054cdd2baee121f06a30d6e7e3393015",
+    "path": "sushi-config.yaml",
+    "readAt": "2026-11-17"
+  },
+  "groups": [
+    {
+      "label": "Home",
+      "items": [
+        {
+          "label": "Summary",
+          "href": "index.html"
+        },
+        {
+          "label": "Changes",
+          "href": "changes.html"
+        },
+        {
+          "label": "Dependencies",
+          "href": "dependencies.html"
+        },
+        {
+          "label": "Bibliography",
+          "href": "en/folio-assistant-core/bibliography/"
+        },
+        {
+          "label": "Adapting Guidelines for Country use",
+          "href": "adapting.html"
+        }
+      ]
+    },
+    {
+      "label": "Business Requirements",
+      "items": [
+        {
+          "label": "Concepts",
+          "href": "concepts.html"
+        },
+        {
+          "label": "Generic Personas",
+          "href": "personas.html"
+        },
+        {
+          "label": "User Scenarios",
+          "href": "scenarios.html"
+        },
+        {
+          "label": "Business Processes",
+          "href": "business-processes.html"
+        },
+        {
+          "label": "Data Dictionary",
+          "href": "dictionary.html"
+        },
+        {
+          "label": "Decision-support Logic",
+          "href": "decision-logic.html"
+        },
+        {
+          "label": "Indicator and Performance Metrics",
+          "href": "indicators.html"
+        },
+        {
+          "label": "Functional Requirements",
+          "href": "functional-requirements.html"
+        },
+        {
+          "label": "Non-functional Requirements",
+          "href": "non-functional-requirements.html"
+        }
+      ]
+    },
+    {
+      "label": "Data Models and Exchange",
+      "items": [
+        {
+          "label": "System Actors",
+          "href": "system-actors.html"
+        },
+        {
+          "label": "Sequence Diagrams",
+          "href": "sequence-diagrams.html"
+        },
+        {
+          "label": "Transactions",
+          "href": "transactions.html"
+        },
+        {
+          "label": "Indicators and Measures",
+          "href": "indicators-measures.html"
+        },
+        {
+          "label": "Codings",
+          "href": "codings.html"
+        }
+      ]
+    },
+    {
+      "label": "Deployment",
+      "items": [
+        {
+          "label": "Security and Privacy Considerations",
+          "href": "security-privacy.html"
+        },
+        {
+          "label": "Testing",
+          "href": "testing.html"
+        },
+        {
+          "label": "Test Data",
+          "href": "test-data.html"
+        },
+        {
+          "label": "Reference Implementations",
+          "href": "reference-implementations.html"
+        },
+        {
+          "label": "Trust Domains",
+          "href": "trust_domain.html"
+        },
+        {
+          "label": "Downloads",
+          "href": "downloads.html"
+        }
+      ]
+    },
+    {
+      "label": "Indices",
+      "items": [
+        {
+          "label": "Artifact Index",
+          "href": "artifacts.html"
+        },
+        {
+          "label": "Mappings",
+          "href": "maps.html"
+        }
+      ]
+    }
+  ]
+}

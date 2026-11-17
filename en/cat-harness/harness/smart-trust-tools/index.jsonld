@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/en/cat-harness/harness/smart-trust-tools/",
+  "url": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/en/cat-harness/harness/smart-trust-tools/",
+  "@type": "WebPage",
+  "name": "SMART Trust HCERT library tools on SMART Verifiable IPS for Pilgrimage",
+  "about": {
+    "@id": "https://litlfred.github.io/smart-trust-tools/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "smart-trust-tools",
+    "name": "SMART Trust HCERT library tools",
+    "description": "Requirements, API contract (WIT), wire format (CDDL), payload models and the Kotlin library for HCERT and Verifiable Health Links, derived from the WHO SMART Trust implementation guide and IHE ITI VHL.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/smart-trust-tools",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/fhir-harness/"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "04386ccc907025dbaa6b2cf974e42255febbb2fa"
+    }
+  },
+  "isPartOf": {
+    "@id": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/",
+    "name": "SMART Verifiable IPS for Pilgrimage"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/smart-trust-tools/",
+    "https://github.com/litlfred/smart-trust-tools/tree/04386ccc907025dbaa6b2cf974e42255febbb2fa",
+    "https://github.com/litlfred/smart-trust-tools/blob/04386ccc907025dbaa6b2cf974e42255febbb2fa/README.md",
+    "https://github.com/litlfred/smart-trust-tools/blob/04386ccc907025dbaa6b2cf974e42255febbb2fa/AGENTS.md"
+  ]
+}

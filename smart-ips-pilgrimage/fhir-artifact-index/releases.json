@@ -1,0 +1,33 @@
+{
+  "$schema": "ig-releases/v1",
+  "repository": "WorldHealthOrganization/smart-ips-pilgrimage",
+  "readAt": "2026-11-17",
+  "releases": [
+    {
+      "tag": "v2.0.3",
+      "name": "v2.0.3",
+      "url": "https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/releases/tag/v2.0.3",
+      "publishedAt": "2025-05-27T10:47:09Z",
+      "prerelease": false,
+      "commitish": "2.0.3",
+      "assets": []
+    },
+    {
+      "tag": "v2.0.2",
+      "name": "v2.0.2",
+      "url": "https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/releases/tag/v2.0.2",
+      "publishedAt": "2025-02-13T15:58:47Z",
+      "prerelease": false,
+      "commitish": "2.0.2",
+      "assets": []
+    },
+    {
+      "tag": "v1.0.0",
+      "url": "https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/releases/tag/v1.0.0",
+      "publishedAt": "2024-04-25T17:18:31Z",
+      "prerelease": true,
+      "commitish": "main",
+      "assets": []
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+TY  - ELEC
+ID  - hl7-ips
+AU  - HL7 International
+TI  - International Patient Summary
+UR  - https://build.fhir.org/ig/HL7/fhir-ips/
+ER  - 
+
+TY  - ELEC
+ID  - hl7-smart-health-cards-and-links
+AU  - HL7 International
+TI  - Smart Health Links
+UR  - https://build.fhir.org/ig/HL7/smart-health-cards-and-links/index.html
+ER  - 
+
+TY  - ELEC
+ID  - openhie-architecture-specification
+AU  - OpenHIE
+TI  - Open Health Information Exchange (OpenHIE) Specification and Architecture
+UR  - https://guides.ohie.org/arch-spec/architecture-specification/overview-of-the-architecture
+ER  - 
+
+TY  - ELEC
+ID  - who-gdhcn
+AU  - World Health Organization
+TI  - Global Digital Health Certification Network
+UR  - https://www.who.int/initiatives/global-digital-health-certification-network
+ER  - 
+
+TY  - BOOK
+ID  - who-guideline-handbook
+AU  - World Health Organization
+TI  - Handbook for guideline development
+UR  - https://www.who.int/publications/i/item/9789241548960
+ER  - 
+
+TY  - ELEC
+ID  - smart-ig-starter-kit-references
+AU  - World Health Organization
+TI  - References section of the SMART IG starter kit
+UR  - https://worldhealthorganization.github.io/smart-ig-starter-kit/references.html#2
+ER  - 
+
+TY  - ELEC
+ID  - who-smart-guidelines
+AU  - World Health Organization
+TI  - SMART Guidelines
+UR  - https://www.who.int/teams/digital-health-and-innovation/smart-guidelines
+ER  - 
+
+TY  - ELEC
+ID  - who-smart-trust
+AU  - World Health Organization
+TI  - SMART Trust
+UR  - https://smart.who.int/smart-trust
+ER  - 
+
+TY  - BOOK
+ID  - 9789240010567-eng
+AU  - World Health Organization
+TI  - Digital implementation investment guide (DIIG): integrating digital interventions into health programmes
+PY  - 2020
+DA  - 2020
+SN  - 9789240010567
+UR  - https://www.who.int/publications/i/item/9789240010567
+ER  - 

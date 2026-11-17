@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMART Trust HCERT library tools — cat-harness-declaration</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b1b1b; --bg:#fdfdfb; --muted:#5b5b5b; --line:#d6d6d0; --link:#0b5cad; --panel:#f3f4f2; }
+  @media (prefers-color-scheme: dark) { :root:not([data-fa-scheme="light"]) { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --panel:#1f2124; } }
+  :root[data-fa-scheme="dark"] { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --panel:#1f2124; }
+  :root[data-fa-scheme="light"] { color-scheme: light; } :root[data-fa-scheme="dark"] { color-scheme: dark; }
+  body { margin:0; font:1rem/1.5 system-ui,sans-serif; color:var(--fg); background:var(--bg); }
+  main { max-width:80rem; margin:0 auto; padding:1.5rem 1.5rem 4rem; min-width:0; overflow-wrap:anywhere; }
+  h1 { font-size:1.35rem; margin:0 0 .25rem; } h2 { font-size:1.05rem; margin:1.5rem 0 .5rem; }
+  a { color:var(--link); } a:focus-visible, select:focus-visible { outline:3px solid var(--link); outline-offset:2px; }
+  .m { color:var(--muted); font-size:.9rem; }
+  .tiles { display:flex; flex-wrap:wrap; gap:.5rem; margin:.5rem 0; padding:0; list-style:none; }
+  .tiles li { border:1px solid var(--line); border-radius:.4rem; padding:.35rem .7rem; }
+  .tiles b { font-size:1.2rem; margin-right:.3rem; }
+  .clip { width:100%; overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; }
+  th, td { text-align:left; vertical-align:top; padding:.35rem .5rem; border-bottom:1px solid var(--line); }
+  th { background:var(--panel); white-space:nowrap; }
+  /* Only the node's path and long text may break mid-word; a status or a date
+     broken across lines ("in_pr ogres s") is unreadable. */
+  td { overflow-wrap:normal; } td.p, td.t { overflow-wrap:anywhere; } td.s { white-space:nowrap; }
+  dl { display:grid; grid-template-columns:minmax(8rem,14rem) 1fr; gap:.25rem 1rem; }
+  dt { font-weight:600; } dd { margin:0; }
+  pre { background:var(--panel); padding:.75rem; overflow-x:auto; font-size:.85rem; }
+  label { margin-right:1rem; }
+  @media (max-width:40rem) { dl { grid-template-columns:1fr; } }
+</style>
+<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-12h838p0wx0.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><style data-folio-narrow-viewport>
+/* Narrow viewports: nothing may widen the PAGE — bean `2r2n`.
+ *
+ * At 390 px, 105 of 249 built pages scrolled sideways (measured 2026-09-24).
+ * The rule here is the bean's: wide content scrolls INSIDE ITS OWN BOX with a
+ * visible cue, and the page itself never pans.
+ *
+ * ONE FILE, TWO WAYS IN. Themed pages link it from `_includes/head_custom.html`.
+ * The standalone viewer pages carry no theme stylesheet at all, so
+ * `withViewerNav` in `scripts/viewer-page.ts` inlines this same file when it
+ * adds the rail. A copy of these rules in each place would be two answers to
+ * "what does a table do at 390 px", free to drift apart.
+ *
+ * Every selector here is written to be safe on both kinds of page: no
+ * `.main-content` scope (a standalone page has none), the navbar excluded by
+ * name, and the theme's own `.table-wrapper` left alone, since it already does
+ * this job for Markdown tables. */
+
+@media (max-width: 799.98px) {
+  /* A table the theme did not wrap: raw HTML from a generator, or one built at
+   * runtime. `display: block` makes the table its own scroll box. Its cells
+   * still lay out as a table inside the anonymous table box. */
+  table:not(.table-wrapper > table):not(.fa-nav table) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* THE CUE: the edge that has more content past it fades out. The fade is a
+   * MASK over the table's own pixels, driven by its own scroll position, so
+   * it needs no knowledge of the page's background. A painted cover (the
+   * usual `background-attachment: local` trick) does: the first version used
+   * `Canvas`, and on a page that is dark under a LIGHT scheme it laid a white
+   * band over the first column.
+   *
+   * A table that does not overflow has an inactive scroll timeline, so the
+   * animation has no effect and both fades stay at their initial 0: no cue
+   * where there is nothing to scroll to. A browser without scroll-driven
+   * animations shows no fade, and the table still scrolls. */
+  @supports (animation-timeline: scroll()) {
+    table:not(.table-wrapper > table):not(.fa-nav table) {
+      mask-image: linear-gradient(to right,
+        transparent 0, #000 var(--fa-cue-l),
+        #000 calc(100% - var(--fa-cue-r)), transparent 100%);
+      animation: fa-scroll-cue linear both;
+      animation-timeline: scroll(self inline);
+    }
+  }
+
+  /* A code block scrolls in its own box, which is what `pre` is for. Mermaid
+   * SOURCE sits in a `pre` until the renderer replaces it, and at 390 px a
+   * diagram's source line is longer than the screen. */
+  pre {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Prose that has no break opportunity: a long path in inline code, or a
+   * glossary definition naming one. Breaking the string is better than
+   * widening the page it sits on. */
+  :not(pre) > code,
+  dd {
+    overflow-wrap: anywhere;
+  }
+}
+
+@property --fa-cue-l { syntax: "<length>"; inherits: false; initial-value: 0px; }
+@property --fa-cue-r { syntax: "<length>"; inherits: false; initial-value: 0px; }
+
+@keyframes fa-scroll-cue {
+  0%   { --fa-cue-l: 0px;    --fa-cue-r: 2.5rem; }
+  12%  { --fa-cue-l: 2.5rem; }
+  88%  { --fa-cue-r: 2.5rem; }
+  100% { --fa-cue-l: 2.5rem; --fa-cue-r: 0px; }
+}
+
+</style>
+<script type="application/json" id="fa-translation-meta">{"lang":"en","translationStatus":"","translationSource":"","supportedLocales":["ar","zh","en","fr","ru","es"],"availableLocales":[]}</script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><link rel="stylesheet" href="../../../../../assets/ig-artifact.css"><style data-ig-version-chrome>.ig-topbar-head{flex:0 0 100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .9rem}.ig-topbar-head .ig-topbar-home{flex:none}.ig-topbar-ver{font-weight:400;font-size:.9em;opacity:.95;white-space:nowrap}.ig-topbar-flag{font-size:1.1em}.ig-version-banner{box-sizing:border-box;margin:0;padding:.5rem 1.5rem;background:#ffffa0;color:#222;border-bottom:1px solid #0a0008;font-size:.95rem;line-height:1.45}.ig-version-banner a{color:#1a4b8c;text-decoration:underline}html:not([data-fa-scheme="light"]) .ig-version-banner{background:#4a4520;color:#fff8d0;border-color:#8a7d2a}html:not([data-fa-scheme="light"]) .ig-version-banner a{color:#ffe680}.ig-metadata{border-collapse:collapse;margin:0 0 1rem;font-size:.95rem}.ig-metadata td{border:1px solid #c8c8c8;padding:.25rem .6rem;vertical-align:top}.ig-metadata code{overflow-wrap:anywhere}</style></head>
+<body data-fa-node-kind-page>
+<header class="ig-search-top fa-page-bar"><a class="ig-search-home" href="../../../../../index.html">SMART Verifiable IPS for Pilgrimage</a><span class="ig-topbar-ver">2.1.0 - release</span><form class="ig-search" role="search" data-ig-search-index="../../../../../assets/ig-search.json"><label class="ig-search-label" for="search-input">Search SMART Verifiable IPS for Pilgrimage</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span></header><p class="ig-version-banner" role="note">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.1.0: release) based on <a href="http://hl7.org/fhir/R4/">FHIR (HL7® FHIR® Standard) v4.0.1</a>. For a full list of available versions, see the <a href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a>.</p><script type="application/json" id="fa-rail" data-fa-root="../../../../.." data-fa-to-root="../../../../..">{"data":"rail-12h838p0wx0","here":"/en/cat-harness/cat-harness-declaration/smart-trust-tools/smart-trust-tools/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">folio-assistant</a></nav>
+<main>
+<h1 id="nk-title">SMART Trust HCERT library tools</h1>
+<p class="m">A <a href="../../">cat-harness-declaration</a> node held by <a href="../">smart-trust-tools</a>, at <code>smart-trust-tools/smart-trust-tools.json</code>.</p>
+
+<h2 id="fields">Fields</h2>
+<dl>
+<dt>$schema</dt><dd>cat-harness-declaration/1.0.0</dd>
+<dt>name</dt><dd>smart-trust-tools</dd>
+<dt>version</dt><dd>0.1.0</dd>
+<dt>repository</dt><dd>litlfred/smart-trust-tools</dd>
+<dt>iriBase</dt><dd>https://litlfred.github.io/smart-trust-tools/</dd>
+<dt>title</dt><dd>SMART Trust HCERT library tools</dd>
+<dt>description</dt><dd>Requirements, API contract (WIT), wire format (CDDL), payload models and the Kotlin library for HCERT and Verifiable Health Links, derived from the WHO SMART Trust implementation guide and IHE ITI VHL.</dd>
+<dt>avatar</dt><dd><pre>{
+  &quot;glyph&quot;: &quot;M7 11V8a5 5 0 0110 0v3M5 11h14v10H5zM12 15v2&quot;,
+  &quot;tone&quot;: 160,
+  &quot;reads&quot;: &quot;a padlock — signed, verifiable health credentials&quot;
+}</pre></dd>
+<dt>_avatar_comment</dt><dd>A padlock in a neutral green: the libraries sign and verify health credentials, and the mark claims no organisation&#39;s colour or emblem.</dd>
+<dt>needs</dt><dd><pre>[
+  &quot;fhir-harness&quot;
+]</pre></dd>
+<dt>mountApprovers</dt><dd><pre>[
+  &quot;litlfred&quot;
+]</pre></dd>
+<dt>assets</dt><dd><pre>[
+  {
+    &quot;id&quot;: &quot;agent-instructions&quot;,
+    &quot;src&quot;: &quot;AGENTS.md&quot;,
+    &quot;role&quot;: &quot;agent-instructions&quot;,
+    &quot;title&quot;: &quot;AGENTS.md — smart-trust-tools&quot;,
+    &quot;description&quot;: &quot;Cold start for work here: what is source, what is generated and by which tool, and where the library requirements come from.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;instance-readme&quot;,
+    &quot;src&quot;: &quot;README.md&quot;,
+    &quot;role&quot;: &quot;instance-readme&quot;,
+    &quot;title&quot;: &quot;SMART Trust HCERT library tools&quot;,
+    &quot;description&quot;: &quot;Requirements, API contract, wire format and payload models for the Kotlin and Rust HCERT libraries, and where they are published.&quot;
+  }
+]</pre></dd>
+<dt>directories</dt><dd><pre>[
+  {
+    &quot;id&quot;: &quot;stt-skills&quot;,
+    &quot;path&quot;: &quot;skills/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;skills&quot;
+    ],
+    &quot;description&quot;: &quot;The library requirements, one bootstrap req: node per requirement under skills/requirements/, and the skills that satisfy them in four packages: hcert (the pipeline of QR Code Generation, one skill per step, plus verification and the trust list), vhl (sharing and receiving a Verifiable Health Link), wallet (what the holder, and the health workers who hand a credential over and scan it, do with it) and hcert-library (architecture, contract maintenance, conformance testing, publishing the graph).&quot;
+  },
+  {
+    &quot;id&quot;: &quot;library&quot;,
+    &quot;path&quot;: &quot;library/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;library&quot;
+    ],
+    &quot;description&quot;: &quot;The L1 sources the requirements cite, ingested section by section at a pinned commit: WHO SMART Trust pages (QR Code Generation from PR 129, HCERT specification, GDHCN DID trust lists, endpoints, trust domains, change log), its FSH (HCert, CWTPayload, the FHIR Requirements, the ActorDefinitions) and reference script, smart-trust-phw&#39;s DVCMin and Health Link payload models, and IHE ITI VHL Volume 1 with ITI-YY3, YY4 and YY5 and its ActorDefinitions. Each entry has a licence.json.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;external-schemas&quot;,
+    &quot;path&quot;: &quot;external-schemas/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;external-schema&quot;
+    ],
+    &quot;description&quot;: &quot;The open standards the requirements and the contract conform to or cite: IETF RFCs (CBOR, COSE, CWT, CDDL, Base45, ZLIB, JOSE, HTTP Message Signatures, Digest Fields), W3C (DID Core, JSON-LD, SHACL, WebCrypto), HL7 FHIR R5 and SMART Health Links, ITU-T X.680, WIT and jco, WHO SMART Trust and IHE ITI VHL.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;references&quot;,
+    &quot;path&quot;: &quot;references/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;references&quot;
+    ],
+    &quot;description&quot;: &quot;Other WHO SMART guides and value sets the requirements cite (DDCC, ICVP, PH4H, the GDHCN value sets), as CSL-JSON references; and one reference per library entry the viewers label, held at it (heldAt), whose CSL title-short is the entry&#39;s short label.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;smart-trust-tools-docs&quot;,
+    &quot;path&quot;: &quot;docs/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;docs&quot;
+    ],
+    &quot;description&quot;: &quot;The site&#39;s authored pages: index.md, the home page the site build places (index.config.json site.build.home), journeys.md (what the library must do at each step of user journeys J1 to J4, and whether it does) and RELEASING.md (how an agent publishes the libraries); the site_docs step copies the other pages into the site source.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;memory&quot;,
+    &quot;path&quot;: &quot;memory/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;memory&quot;
+    ],
+    &quot;description&quot;: &quot;Owner directives the requirements cite in reference: languages (Kotlin first, Rust second), targets, open standards only, the user journeys, and the VHL decisions of 2026-10-20.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;stt-code-lists&quot;,
+    &quot;path&quot;: &quot;code-lists/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;code-list&quot;
+    ],
+    &quot;description&quot;: &quot;This instance&#39;s code lists, one folio-code-list/v1 file per list: requirement-area, the areas the requirements are grouped in (the middle segment of STT-&lt;AREA&gt;-nnn), in reading order, with their titles, which the viewers read.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;beans&quot;,
+    &quot;path&quot;: &quot;beans/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;beans&quot;
+    ],
+    &quot;source&quot;: {
+      &quot;kind&quot;: &quot;branch&quot;,
+      &quot;branch&quot;: &quot;cat/smart-trust-tools/beans&quot;,
+      &quot;keyedBy&quot;: &quot;tip&quot;
+    },
+    &quot;description&quot;: &quot;The open issues of this project, one bean each under beans/defs/, each naming the requirements it affects and the sources it concerns; tagged upstream when the fix belongs in a WHO or IHE repository. Kept on the state branch cat/smart-trust-tools/beans, not on main: `bun run cat state:mount` puts it on disk.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;processes&quot;,
+    &quot;path&quot;: &quot;processes/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;processes&quot;
+    ],
+    &quot;description&quot;: &quot;BPMN diagrams in the content concern group: issuing an HCERT QR code, verifying one, and sharing records by Verifiable Health Link. Lanes are roles from scenarios/roles.json; tasks name skills.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;scenarios&quot;,
+    &quot;path&quot;: &quot;scenarios/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;scenarios&quot;
+    ],
+    &quot;description&quot;: &quot;The actors this instance&#39;s requirements name, by the IHE ITI VHL names first (VHL Sharer, VHL Receiver, VHL Holder, Trust Anchor), then smart-trust&#39;s Trust Network Participant and this project&#39;s implementer, each naming its ActorDefinitions; and the roles that play a lane in its processes, each with the skills its tasks need.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;tools&quot;,
+    &quot;path&quot;: &quot;tools/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;tools&quot;
+    ],
+    &quot;description&quot;: &quot;One Tool per folder (tools/&lt;id&gt;/&lt;id&gt;.ts), with its code beside it: hcert-kotlin (the Kotlin library) and hcert-rust (the Rust library); wit2kotlin, gen-api-types, fetch-lms and lm-derive, which write the contract&#39;s and the models&#39; views; check-models, check-req-nodes, check-upstream-patches, fhir-validate, conformance-ts, test-plan, negative-vectors and vhl-jwe-fixture, which check them or make what the checks read; release-packaging; and build-site. tools/index.ts loads them.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;toolchain&quot;,
+    &quot;path&quot;: &quot;toolchain/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;code&quot;
+    ],
+    &quot;description&quot;: &quot;The pinned Node (package-lock.json, installed with npm ci --ignore-scripts) and Python (hash-pinned requirements.txt) toolchains several Tools share, and node_tools.sh, which installs the Node one.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;smart-trust-tools-typologies&quot;,
+    &quot;path&quot;: &quot;typologies/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;typologies&quot;
+    ],
+    &quot;description&quot;: &quot;The kinds this instance owns, for its own schemas: hcert-contract, hcert-generated-contract, hcert-test-vectors, fhir-logical-models, payload-models and upstream-patches.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;hcert-contract-wit&quot;,
+    &quot;path&quot;: &quot;api/wit/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;hcert-contract&quot;
+    ],
+    &quot;description&quot;: &quot;The WIT package who:smart-trust that both libraries implement; doc comments cite requirements as [STT-...] tags.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;hcert-contract-cddl&quot;,
+    &quot;path&quot;: &quot;api/cddl/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;hcert-contract&quot;
+    ],
+    &quot;description&quot;: &quot;The HCERT envelope in CDDL (RFC 8610): the CWT claims, hcert subclaims and the VHL payload map at key 5.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;hcert-contract-ts&quot;,
+    &quot;path&quot;: &quot;api/generated/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;hcert-generated-contract&quot;
+    ],
+    &quot;description&quot;: &quot;The TypeScript view of the WIT contract, written by gen-api-types (jco).&quot;
+  },
+  {
+    &quot;id&quot;: &quot;fhir-logical-models&quot;,
+    &quot;path&quot;: &quot;models/fhir/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;fhir-logical-models&quot;
+    ],
+    &quot;description&quot;: &quot;The DVCMin logical models as FHIR R5 StructureDefinitions at the smart-trust-phw commit SOURCE.yaml pins, and the R5 primitive patterns.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;payload-models&quot;,
+    &quot;path&quot;: &quot;models/generated/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;payload-models&quot;
+    ],
+    &quot;derivedFrom&quot;: [
+      &quot;fhir-logical-models&quot;
+    ],
+    &quot;writer&quot;: [
+      &quot;smart-trust-tools/tools/lm-derive/lm_derive.py&quot;
+    ],
+    &quot;description&quot;: &quot;The JSON-LD context, SHACL shapes and CDDL rules lm-derive writes from the logical models.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;hcert-test-vectors&quot;,
+    &quot;path&quot;: &quot;vectors/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;hcert-test-vectors&quot;
+    ],
+    &quot;description&quot;: &quot;The smart-trust PR 129 DVC example and DSC, the merged guide&#39;s XXR certificates with the GDHCN DEV trust list&#39;s DID documents, the GDHCN Trust Domain code systems, the IHE ITI VHL Case B manifest, the independent JWE fixture, the shared negative vectors and the TEST-ONLY testkit keys.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;upstream-patches&quot;,
+    &quot;path&quot;: &quot;upstream/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;upstream-patches&quot;
+    ],
+    &quot;source&quot;: {
+      &quot;kind&quot;: &quot;branch&quot;,
+      &quot;branch&quot;: &quot;cat/smart-trust-tools/upstream-patches&quot;,
+      &quot;keyedBy&quot;: &quot;tip&quot;
+    },
+    &quot;description&quot;: &quot;Patches proposed to IHE ITI VHL, for its maintainers to apply, and the QR Code Generation live-demo patch for litlfred/smart-trust. Kept on the state branch cat/smart-trust-tools/upstream-patches, not on main: `bun run cat state:mount` puts it on disk.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;test-plans&quot;,
+    &quot;path&quot;: &quot;test/plans/&quot;,
+    &quot;description&quot;: &quot;Test plans for the libraries: one test-plan/v1 document per plan (cat-harness schemas/test-plan.ts, shaped after FHIR R5 TestPlan). Each assertion id is a requirement statement&#39;s success criterion, req:&lt;id&gt;#&lt;statement&gt;/&lt;criterion&gt;. hcert-library-conformance is the plan any implementation (Kotlin, Rust) runs; who-itb-agreement compares a library with the WHO Interoperability Test Bed&#39;s HCERT tracks.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;test-plan&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;stt-skill-contracts&quot;,
+    &quot;path&quot;: &quot;schemas/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;schemas&quot;
+    ],
+    &quot;description&quot;: &quot;Each skill&#39;s input and output contracts, `schemas/skills/&lt;skill&gt;/{input,output}.schema.json` (JSON Schema draft-07), named by the skill&#39;s `input:` and `output:` front matter. The wallet package&#39;s three are the first.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;glossary&quot;,
+    &quot;path&quot;: &quot;glossary/&quot;,
+    &quot;description&quot;: &quot;SMART Trust Tools&#39; generated glossary (`glossary/generated/smart-trust-tools/`): candidate `folio-glossary/v1` schemes extracted from this layer&#39;s tools, skills and BPMN activities by core&#39;s `glossary:page`. A scheme is keyed by (instance, scheme), and each layer holds its own glossary.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;glossary&quot;
+    ]
+  }
+]</pre></dd>
+<dt>enableSubgraphs</dt><dd><pre>[
+  &quot;folio-assistant-core.collab&quot;,
+  &quot;fhir-harness.collab&quot;
+]</pre></dd>
+</dl>
+</main>
+<script src="../../../../../assets/ig-search.js" defer></script>
+</body>
+</html>

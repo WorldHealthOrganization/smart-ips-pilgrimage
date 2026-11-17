@@ -1,0 +1,126 @@
+{
+  "@context": {
+    "@base": "https://litlfred.github.io/folio/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "bibo": "http://purl.org/ontology/bibo/",
+    "fabio": "http://purl.org/spar/fabio/",
+    "dcterms:source": {
+      "@type": "@id"
+    },
+    "dcterms:hasVersion": {
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "references/hl7-ips",
+      "@type": [
+        "fabio:Work",
+        "bibo:Webpage"
+      ],
+      "dcterms:title": "International Patient Summary",
+      "dcterms:creator": [
+        "HL7 International"
+      ],
+      "dcterms:identifier": "https://build.fhir.org/ig/HL7/fhir-ips/"
+    },
+    {
+      "@id": "references/hl7-smart-health-cards-and-links",
+      "@type": [
+        "fabio:Work",
+        "bibo:Webpage"
+      ],
+      "dcterms:title": "Smart Health Links",
+      "dcterms:creator": [
+        "HL7 International"
+      ],
+      "dcterms:identifier": "https://build.fhir.org/ig/HL7/smart-health-cards-and-links/index.html"
+    },
+    {
+      "@id": "references/openhie-architecture-specification",
+      "@type": [
+        "fabio:Work",
+        "bibo:Webpage"
+      ],
+      "dcterms:title": "Open Health Information Exchange (OpenHIE) Specification and Architecture",
+      "dcterms:creator": [
+        "OpenHIE"
+      ],
+      "dcterms:identifier": "https://guides.ohie.org/arch-spec/architecture-specification/overview-of-the-architecture"
+    },
+    {
+      "@id": "references/who-gdhcn",
+      "@type": [
+        "fabio:Work",
+        "bibo:Webpage"
+      ],
+      "dcterms:title": "Global Digital Health Certification Network",
+      "dcterms:creator": [
+        "World Health Organization"
+      ],
+      "dcterms:identifier": "https://www.who.int/initiatives/global-digital-health-certification-network"
+    },
+    {
+      "@id": "references/who-guideline-handbook",
+      "@type": [
+        "fabio:Work",
+        "bibo:Book"
+      ],
+      "dcterms:title": "Handbook for guideline development",
+      "dcterms:creator": [
+        "World Health Organization"
+      ],
+      "dcterms:identifier": "https://www.who.int/publications/i/item/9789241548960"
+    },
+    {
+      "@id": "references/smart-ig-starter-kit-references",
+      "@type": [
+        "fabio:Work",
+        "bibo:Webpage"
+      ],
+      "dcterms:title": "References section of the SMART IG starter kit",
+      "dcterms:creator": [
+        "World Health Organization"
+      ],
+      "dcterms:identifier": "https://worldhealthorganization.github.io/smart-ig-starter-kit/references.html#2"
+    },
+    {
+      "@id": "references/who-smart-guidelines",
+      "@type": [
+        "fabio:Work",
+        "bibo:Webpage"
+      ],
+      "dcterms:title": "SMART Guidelines",
+      "dcterms:creator": [
+        "World Health Organization"
+      ],
+      "dcterms:identifier": "https://www.who.int/teams/digital-health-and-innovation/smart-guidelines"
+    },
+    {
+      "@id": "references/who-smart-trust",
+      "@type": [
+        "fabio:Work",
+        "bibo:Webpage"
+      ],
+      "dcterms:title": "SMART Trust",
+      "dcterms:creator": [
+        "World Health Organization"
+      ],
+      "dcterms:identifier": "https://smart.who.int/smart-trust"
+    },
+    {
+      "@id": "references/9789240010567-eng",
+      "@type": [
+        "fabio:Work",
+        "bibo:Book"
+      ],
+      "dcterms:title": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
+      "dcterms:creator": [
+        "World Health Organization"
+      ],
+      "dcterms:issued": "2020",
+      "bibo:isbn": "9789240010567",
+      "dcterms:identifier": "https://www.who.int/publications/i/item/9789240010567"
+    }
+  ]
+}

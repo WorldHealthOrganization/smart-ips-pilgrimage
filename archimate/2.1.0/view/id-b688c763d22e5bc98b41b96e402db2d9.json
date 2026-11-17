@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-b688c763d22e5bc98b41b96e402db2d9",
+  "@type": "archimate:Diagram",
+  "schema:identifier": "id-b688c763d22e5bc98b41b96e402db2d9",
+  "schema:name": "P2 · His summary is assembled and signed",
+  "schema:description": "P2 · His summary is assembled and signed: Before departure, Onesa's HIE; Kamal's home. The people assigned to this moment and the systems that serve it (user-scenarios/p2-summary-signed.json).",
+  "schema:image": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-b688c763d22e5bc98b41b96e402db2d9.svg",
+  "schema:about": [
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-51918bcf0f275064ba2787ee24648745"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f7870cda62c85a4598b0e438eb6fc749"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-224b4a4a4d7850d3876481faae55c5c0"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-abe54aba83bf5d3fb7555a45a6d55e33"
+    }
+  ],
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

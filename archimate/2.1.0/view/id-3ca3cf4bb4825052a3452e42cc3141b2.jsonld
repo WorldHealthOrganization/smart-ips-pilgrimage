@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-3ca3cf4bb4825052a3452e42cc3141b2",
+  "@type": "archimate:Diagram",
+  "schema:identifier": "id-3ca3cf4bb4825052a3452e42cc3141b2",
+  "schema:name": "P5 · His record is read and he is treated",
+  "schema:description": "P5 · His record is read and he is treated: Second day in Nalemi, Treatment bay, pilgrimage health facility, Nalemi. The people assigned to this moment and the systems that serve it (user-scenarios/p5-record-read-and-treated.json).",
+  "schema:image": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-3ca3cf4bb4825052a3452e42cc3141b2.svg",
+  "schema:about": [
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-45dd1671e2f355b8aff8c696d817f271"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-51918bcf0f275064ba2787ee24648745"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f50c4d3693cf5f5185a6f6b3cd88e584"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-40903feadde952e19b2211b3de0ac125"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f7870cda62c85a4598b0e438eb6fc749"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-cef47cd08ab2539db34f341f16067b99"
+    }
+  ],
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

@@ -1,0 +1,511 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_zeaq4zo",
+ "markers": [
+  {
+   "id": "Activity_1jht4ag",
+   "name": "registration",
+   "left": 12.04,
+   "top": 15.63,
+   "box": {
+    "left": 9.3,
+    "top": 20.25,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_1n6cwq1",
+   "name": "arrive to clinic",
+   "left": 12.04,
+   "top": 33.19,
+   "box": {
+    "left": 9.3,
+    "top": 37.82,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_0gm5pkg",
+   "name": "inform patient ineligible for pilgrimage",
+   "left": 19.22,
+   "top": 15.63,
+   "box": {
+    "left": 16.48,
+    "top": 20.25,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "display-shl",
+   "name": "display SHL",
+   "left": 24.91,
+   "top": 62.61,
+   "box": {
+    "left": 22.18,
+    "top": 67.23,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "generate-shl",
+   "name": "generate Verifiable SHL",
+   "left": 24.91,
+   "top": 81.09,
+   "box": {
+    "left": 22.18,
+    "top": 85.71,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_09jhr1u",
+   "name": "leave clinic",
+   "left": 12.04,
+   "top": 47.48,
+   "box": {
+    "left": 9.3,
+    "top": 52.1,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_0kvk608",
+   "name": "display SHL configuration form",
+   "left": 45.05,
+   "top": 62.61,
+   "box": {
+    "left": 42.32,
+    "top": 67.23,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "shl-config-send",
+   "name": "process privacy configuration form for SHL",
+   "left": 37.61,
+   "top": 62.61,
+   "box": {
+    "left": 34.87,
+    "top": 67.23,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "shl-config-receive",
+   "name": "receive SHL privacy configuration",
+   "left": 37.61,
+   "top": 81.09,
+   "box": {
+    "left": 34.87,
+    "top": 85.71,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_1i7ra1n",
+   "name": "receive record consent response",
+   "left": 52.5,
+   "top": 62.61,
+   "box": {
+    "left": 49.76,
+    "top": 67.23,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_04bcbu9",
+   "name": "send record consent response",
+   "left": 52.5,
+   "top": 81.09,
+   "box": {
+    "left": 49.76,
+    "top": 85.71,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_1snfpmi",
+   "name": "Counsel patient on consent and digital health wallet",
+   "left": 72.64,
+   "top": 3.78,
+   "box": {
+    "left": 69.9,
+    "top": 8.4,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_09oy5wb",
+   "name": "display consent form",
+   "left": 91.9,
+   "top": 62.61,
+   "box": {
+    "left": 89.16,
+    "top": 67.23,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "consent-wallet-send",
+   "name": "send Consent",
+   "left": 66.07,
+   "top": 62.61,
+   "box": {
+    "left": 63.33,
+    "top": 67.23,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "consent-wallet-receive",
+   "name": "Receive consent",
+   "left": 66.07,
+   "top": 81.09,
+   "box": {
+    "left": 63.33,
+    "top": 85.71,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_0ibmc50",
+   "name": "store consent directives",
+   "left": 59.5,
+   "top": 81.09,
+   "box": {
+    "left": 56.76,
+    "top": 85.71,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_1hhzmu2",
+   "name": "generate SHL & configure access to IPS via SHL",
+   "left": 31.48,
+   "top": 81.09,
+   "box": {
+    "left": 28.74,
+    "top": 85.71,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_1816554",
+   "name": "Review SHL",
+   "left": 24.91,
+   "top": 43.28,
+   "box": {
+    "left": 22.18,
+    "top": 47.9,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "shl-configure-privacy-settings",
+   "name": "configure SHL privacy settings on wallet",
+   "left": 41.11,
+   "top": 43.28,
+   "box": {
+    "left": 38.38,
+    "top": 47.9,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "Activity_0lhorix",
+   "name": "login to wallet app",
+   "left": 91.9,
+   "top": 35.71,
+   "box": {
+    "left": 89.16,
+    "top": 40.34,
+    "width": 1.05,
+    "height": 2.02
+   }
+  },
+  {
+   "id": "consent-wallet-questionnaire",
+   "name": "fill consent form for sharing IPS during the pilgrimage on wallet",
+   "left": 84.89,
+   "top": 34.87,
+   "box": {
+    "left": 82.16,
+    "top": 39.5,
+    "width": 1.05,
+    "height": 2.02
+   }
+  }
+ ],
+ "processHref": "Health Check and Counseling, Explicit Consent on Wallet.html",
+ "tasks": {
+  "Activity_1jht4ag": {
+   "id": "Activity_1jht4ag",
+   "name": "registration",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_1jht4ag",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-person",
+   "skills": [
+    {
+     "name": "complete-sdc-questionnaire",
+     "href": "../../../en/cat-harness/processes/skills/complete-sdc-questionnaire.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_1n6cwq1": {
+   "id": "Activity_1n6cwq1",
+   "name": "arrive to clinic",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_1n6cwq1",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-person",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0gm5pkg": {
+   "id": "Activity_0gm5pkg",
+   "name": "inform patient ineligible for pilgrimage",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_0gm5pkg",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-person",
+   "skills": [
+    {
+     "name": "inform-client",
+     "href": "../../../en/cat-harness/processes/skills/inform-client.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "display-shl": {
+   "id": "display-shl",
+   "name": "display SHL",
+   "type": "bpmn:ReceiveTask",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-display-shl",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "generate-shl": {
+   "id": "generate-shl",
+   "name": "generate Verifiable SHL",
+   "type": "bpmn:SendTask",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-generate-shl",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [
+    {
+     "name": "vhl-share",
+     "href": "../../../en/cat-harness/processes/skills/vhl-share.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_09jhr1u": {
+   "id": "Activity_09jhr1u",
+   "name": "leave clinic",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_09jhr1u",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-person",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0kvk608": {
+   "id": "Activity_0kvk608",
+   "name": "display SHL configuration form",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_0kvk608",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "shl-config-send": {
+   "id": "shl-config-send",
+   "name": "process privacy configuration form for SHL",
+   "type": "bpmn:SendTask",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-shl-config-send",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "shl-config-receive": {
+   "id": "shl-config-receive",
+   "name": "receive SHL privacy configuration",
+   "type": "bpmn:ReceiveTask",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-shl-config-receive",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_1i7ra1n": {
+   "id": "Activity_1i7ra1n",
+   "name": "receive record consent response",
+   "type": "bpmn:ReceiveTask",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_1i7ra1n",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_04bcbu9": {
+   "id": "Activity_04bcbu9",
+   "name": "send record consent response",
+   "type": "bpmn:SendTask",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_04bcbu9",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_1snfpmi": {
+   "id": "Activity_1snfpmi",
+   "name": "Counsel patient on consent and digital health wallet",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_1snfpmi",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-person",
+   "skills": [
+    {
+     "name": "inform-client",
+     "href": "../../../en/cat-harness/processes/skills/inform-client.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_09oy5wb": {
+   "id": "Activity_09oy5wb",
+   "name": "display consent form",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_09oy5wb",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "consent-wallet-send": {
+   "id": "consent-wallet-send",
+   "name": "send Consent",
+   "type": "bpmn:SendTask",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-consent-wallet-send",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "consent-wallet-receive": {
+   "id": "consent-wallet-receive",
+   "name": "Receive consent",
+   "type": "bpmn:ReceiveTask",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-consent-wallet-receive",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0ibmc50": {
+   "id": "Activity_0ibmc50",
+   "name": "store consent directives",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_0ibmc50",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_1hhzmu2": {
+   "id": "Activity_1hhzmu2",
+   "name": "generate SHL & configure access to IPS via SHL",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_1hhzmu2",
+   "lane": "System Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-system",
+   "skills": [
+    {
+     "name": "vhl-share",
+     "href": "../../../en/cat-harness/processes/skills/vhl-share.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_1816554": {
+   "id": "Activity_1816554",
+   "name": "Review SHL",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_1816554",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-person",
+   "skills": [
+    {
+     "name": "holder-consent-to-share",
+     "href": "../../../en/cat-harness/processes/skills/holder-consent-to-share.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "shl-configure-privacy-settings": {
+   "id": "shl-configure-privacy-settings",
+   "name": "configure SHL privacy settings on wallet",
+   "type": "bpmn:UserTask",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-shl-configure-privacy-settings",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-person",
+   "skills": [
+    {
+     "name": "holder-consent-to-share",
+     "href": "../../../en/cat-harness/processes/skills/holder-consent-to-share.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_0lhorix": {
+   "id": "Activity_0lhorix",
+   "name": "login to wallet app",
+   "type": "bpmn:Task",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-Activity_0lhorix",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-person",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "consent-wallet-questionnaire": {
+   "id": "consent-wallet-questionnaire",
+   "name": "fill consent form for sharing IPS during the pilgrimage on wallet",
+   "type": "bpmn:UserTask",
+   "stepHref": "Health Check and Counseling, Explicit Consent on Wallet.html#step-consent-wallet-questionnaire",
+   "lane": "Human Actor",
+   "laneHref": "Health Check and Counseling, Explicit Consent on Wallet.html#lane-person",
+   "skills": [
+    {
+     "name": "holder-consent-to-share",
+     "href": "../../../en/cat-harness/processes/skills/holder-consent-to-share.html"
+    }
+   ],
+   "binding": "unbound"
+  }
+ }
+}

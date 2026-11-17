@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-4f6f303b9e0a5620bf22b179e9e67a40",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-4f6f303b9e0a5620bf22b179e9e67a40",
+  "schema:name": "Counsellor",
+  "schema:description": "The empanelled clinician at home who does the pre-pilgrimage health examination and counsels the pilgrim on consent and the wallet.",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

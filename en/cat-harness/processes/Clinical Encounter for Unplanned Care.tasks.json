@@ -1,0 +1,413 @@
+{
+ "$schema": "process-task-panel/v1",
+ "process": "Process_ya4zy3o",
+ "markers": [
+  {
+   "id": "Activity_00h86kk",
+   "name": "registration",
+   "left": 13.97,
+   "top": 5.79,
+   "box": {
+    "left": 10.8,
+    "top": 10.61,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_0yvvi0a",
+   "name": "arrive to clinic at host country",
+   "left": 13.97,
+   "top": 24.12,
+   "box": {
+    "left": 10.8,
+    "top": 28.95,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_11ndkqo",
+   "name": "Shows QR image on health wallet app",
+   "left": 21.09,
+   "top": 24.12,
+   "box": {
+    "left": 17.91,
+    "top": 28.95,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_1gga1fr",
+   "name": "display health document",
+   "left": 82.57,
+   "top": 49.56,
+   "box": {
+    "left": 79.4,
+    "top": 54.39,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_0nu4v95",
+   "name": "verify QR code signature",
+   "left": 43.95,
+   "top": 49.56,
+   "box": {
+    "left": 40.78,
+    "top": 54.39,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_0isufb9",
+   "name": "Scan QR code image",
+   "left": 30.74,
+   "top": 36.4,
+   "box": {
+    "left": 27.57,
+    "top": 41.23,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_0sfhcs9",
+   "name": "uses bar code scanner",
+   "left": 30.74,
+   "top": 8.33,
+   "box": {
+    "left": 27.57,
+    "top": 13.16,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_0untwjs",
+   "name": "loads QR code image",
+   "left": 26.68,
+   "top": 67.11,
+   "box": {
+    "left": 23.5,
+    "top": 71.93,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_0qcvetn",
+   "name": "Retrieve serialized CWT",
+   "left": 35.82,
+   "top": 49.56,
+   "box": {
+    "left": 32.65,
+    "top": 54.39,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_1i8bqw0",
+   "name": "retrieve health document (IPS) request",
+   "left": 52.08,
+   "top": 49.56,
+   "box": {
+    "left": 48.91,
+    "top": 54.39,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_1hznkm2",
+   "name": "receive health document (IPS) request",
+   "left": 52.08,
+   "top": 86.4,
+   "box": {
+    "left": 48.91,
+    "top": 91.23,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_1iodyqb",
+   "name": "send IPS document",
+   "left": 62.25,
+   "top": 86.4,
+   "box": {
+    "left": 59.07,
+    "top": 91.23,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_0wou2yo",
+   "name": "verify health document (IPS) signature",
+   "left": 61.74,
+   "top": 49.56,
+   "box": {
+    "left": 58.56,
+    "top": 54.39,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_123d2ts",
+   "name": "save a local copy of health document",
+   "left": 70.88,
+   "top": 49.56,
+   "box": {
+    "left": 67.71,
+    "top": 54.39,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_1n8jcmb",
+   "name": "provide care",
+   "left": 82.57,
+   "top": 5.79,
+   "box": {
+    "left": 79.4,
+    "top": 10.61,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_055rq1n",
+   "name": "update local record of care",
+   "left": 90.19,
+   "top": 5.79,
+   "box": {
+    "left": 87.02,
+    "top": 10.61,
+    "width": 1.22,
+    "height": 2.11
+   }
+  },
+  {
+   "id": "Activity_0ihvpj7",
+   "name": "leave clinic",
+   "left": 90.19,
+   "top": 24.12,
+   "box": {
+    "left": 87.02,
+    "top": 28.95,
+    "width": 1.22,
+    "height": 2.11
+   }
+  }
+ ],
+ "processHref": "Clinical Encounter for Unplanned Care.html",
+ "tasks": {
+  "Activity_00h86kk": {
+   "id": "Activity_00h86kk",
+   "name": "registration",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_00h86kk",
+   "lane": "Human Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_04aqo2l",
+   "skills": [
+    {
+     "name": "complete-sdc-questionnaire",
+     "href": "../../../en/cat-harness/processes/skills/complete-sdc-questionnaire.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_0yvvi0a": {
+   "id": "Activity_0yvvi0a",
+   "name": "arrive to clinic at host country",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_0yvvi0a",
+   "lane": "Human Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_04aqo2l",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_11ndkqo": {
+   "id": "Activity_11ndkqo",
+   "name": "Shows QR image on health wallet app",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_11ndkqo",
+   "lane": "Human Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_04aqo2l",
+   "skills": [
+    {
+     "name": "holder-present-credential",
+     "href": "../../../en/cat-harness/processes/skills/holder-present-credential.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_1gga1fr": {
+   "id": "Activity_1gga1fr",
+   "name": "display health document",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_1gga1fr",
+   "lane": "System Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_1r1k26w",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0nu4v95": {
+   "id": "Activity_0nu4v95",
+   "name": "verify QR code signature",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_0nu4v95",
+   "lane": "System Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_1r1k26w",
+   "skills": [
+    {
+     "name": "hcert-verify",
+     "href": "../../../en/cat-harness/processes/skills/hcert-verify.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_0isufb9": {
+   "id": "Activity_0isufb9",
+   "name": "Scan QR code image",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_0isufb9",
+   "lane": "System Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_1r1k26w",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0sfhcs9": {
+   "id": "Activity_0sfhcs9",
+   "name": "uses bar code scanner",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_0sfhcs9",
+   "lane": "Human Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_04aqo2l",
+   "skills": [
+    {
+     "name": "receiver-scan-credential",
+     "href": "../../../en/cat-harness/processes/skills/receiver-scan-credential.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_0untwjs": {
+   "id": "Activity_0untwjs",
+   "name": "loads QR code image",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_0untwjs",
+   "lane": "System Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_1r1k26w",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0qcvetn": {
+   "id": "Activity_0qcvetn",
+   "name": "Retrieve serialized CWT",
+   "type": "bpmn:ReceiveTask",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_0qcvetn",
+   "lane": "System Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_1r1k26w",
+   "skills": [
+    {
+     "name": "hcert-verify",
+     "href": "../../../en/cat-harness/processes/skills/hcert-verify.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_1i8bqw0": {
+   "id": "Activity_1i8bqw0",
+   "name": "retrieve health document (IPS) request",
+   "type": "bpmn:SendTask",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_1i8bqw0",
+   "lane": "System Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_1r1k26w",
+   "skills": [
+    {
+     "name": "vhl-receive",
+     "href": "../../../en/cat-harness/processes/skills/vhl-receive.html"
+    }
+   ],
+   "binding": "unbound"
+  },
+  "Activity_1hznkm2": {
+   "id": "Activity_1hznkm2",
+   "name": "receive health document (IPS) request",
+   "type": "bpmn:ReceiveTask",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_1hznkm2",
+   "lane": "System Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_1r1k26w",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_1iodyqb": {
+   "id": "Activity_1iodyqb",
+   "name": "send IPS document",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_1iodyqb",
+   "lane": "System Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_1r1k26w",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0wou2yo": {
+   "id": "Activity_0wou2yo",
+   "name": "verify health document (IPS) signature",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_0wou2yo",
+   "lane": "System Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_1r1k26w",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_123d2ts": {
+   "id": "Activity_123d2ts",
+   "name": "save a local copy of health document",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_123d2ts",
+   "lane": "System Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_1r1k26w",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_1n8jcmb": {
+   "id": "Activity_1n8jcmb",
+   "name": "provide care",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_1n8jcmb",
+   "lane": "Human Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_04aqo2l",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_055rq1n": {
+   "id": "Activity_055rq1n",
+   "name": "update local record of care",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_055rq1n",
+   "lane": "Human Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_04aqo2l",
+   "skills": [],
+   "binding": "unbound"
+  },
+  "Activity_0ihvpj7": {
+   "id": "Activity_0ihvpj7",
+   "name": "leave clinic",
+   "type": "bpmn:Task",
+   "stepHref": "Clinical Encounter for Unplanned Care.html#step-Activity_0ihvpj7",
+   "lane": "Human Actor",
+   "laneHref": "Clinical Encounter for Unplanned Care.html#lane-Lane_04aqo2l",
+   "skills": [],
+   "binding": "unbound"
+  }
+ }
+}

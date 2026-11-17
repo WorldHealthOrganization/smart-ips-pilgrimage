@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f50c4d3693cf5f5185a6f6b3cd88e584",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-f50c4d3693cf5f5185a6f6b3cd88e584",
+  "schema:name": "Accompanying family member",
+  "schema:description": "A relative travelling with the pilgrim who speaks for them when they cannot. Not yet a persona of this guide.",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

@@ -1,0 +1,209 @@
+{
+  "$schema": "archimate-sequences/v1",
+  "model": "2.1.0",
+  "name": "SMART Verifiable IPS for Pilgrimage",
+  "sequences": [
+    {
+      "id": "id-59a6185ff9f2580db475ac98b7e1e854",
+      "title": "Overview of key process flows",
+      "source": "view",
+      "viewId": "id-59a6185ff9f2580db475ac98b7e1e854",
+      "participants": [
+        {
+          "id": "id-224b4a4a4d7850d3876481faae55c5c0",
+          "name": "Origin Country Wallet",
+          "type": "ApplicationComponent",
+          "elementId": "id-224b4a4a4d7850d3876481faae55c5c0"
+        },
+        {
+          "id": "id-f7870cda62c85a4598b0e438eb6fc749",
+          "name": "Origin Country HIE",
+          "type": "ApplicationComponent",
+          "elementId": "id-f7870cda62c85a4598b0e438eb6fc749"
+        },
+        {
+          "id": "id-40903feadde952e19b2211b3de0ac125",
+          "name": "Host Country EMR",
+          "type": "ApplicationComponent",
+          "elementId": "id-40903feadde952e19b2211b3de0ac125"
+        },
+        {
+          "id": "id-d68d7507e4ae5c9ba47d3da53b0bd70d",
+          "name": "WHO GDHCN",
+          "type": "ApplicationComponent",
+          "elementId": "id-d68d7507e4ae5c9ba47d3da53b0bd70d"
+        },
+        {
+          "id": "id-45dd1671e2f355b8aff8c696d817f271",
+          "name": "Host Country Health Worker",
+          "type": "BusinessRole",
+          "elementId": "id-45dd1671e2f355b8aff8c696d817f271"
+        },
+        {
+          "id": "id-51918bcf0f275064ba2787ee24648745",
+          "name": "Pilgrim",
+          "type": "BusinessRole",
+          "elementId": "id-51918bcf0f275064ba2787ee24648745"
+        }
+      ],
+      "messages": [
+        {
+          "from": "id-224b4a4a4d7850d3876481faae55c5c0",
+          "to": "id-f7870cda62c85a4598b0e438eb6fc749",
+          "label": "2. IPS generated from patient care history in Home country",
+          "kind": "flow",
+          "relationshipId": "id-da561081976b5cec82fc740af4c22f1b"
+        },
+        {
+          "from": "id-f7870cda62c85a4598b0e438eb6fc749",
+          "to": "id-40903feadde952e19b2211b3de0ac125",
+          "label": "5. EMR retrieves IPS from Home country HIE",
+          "kind": "flow",
+          "relationshipId": "id-f2707348c7415861bd4ca8f783d67edb"
+        },
+        {
+          "from": "id-f7870cda62c85a4598b0e438eb6fc749",
+          "to": "id-d68d7507e4ae5c9ba47d3da53b0bd70d",
+          "label": "A. IPS verification keys published to GDHCN",
+          "kind": "flow",
+          "relationshipId": "id-e7d35f5c324b50e7b3911864a638758b"
+        },
+        {
+          "from": "id-45dd1671e2f355b8aff8c696d817f271",
+          "to": "id-40903feadde952e19b2211b3de0ac125",
+          "label": "4. Health worker scans IPS QR code in their EMR",
+          "kind": "flow",
+          "relationshipId": "id-7b84fc225d57536cae1cd0f420b6e79a"
+        },
+        {
+          "from": "id-51918bcf0f275064ba2787ee24648745",
+          "to": "id-224b4a4a4d7850d3876481faae55c5c0",
+          "label": "1. Pilgrim configures access to IPS via QR code on national health wallet",
+          "kind": "flow",
+          "relationshipId": "id-fbec3c2105315b969ba184a6b7fc788e"
+        },
+        {
+          "from": "id-51918bcf0f275064ba2787ee24648745",
+          "to": "id-45dd1671e2f355b8aff8c696d817f271",
+          "label": "3. Pilgrim seeks care and shows IPS QR code to health worker",
+          "kind": "flow",
+          "relationshipId": "id-45b29af321725ce185c24ebbc736d599"
+        },
+        {
+          "from": "id-d68d7507e4ae5c9ba47d3da53b0bd70d",
+          "to": "id-40903feadde952e19b2211b3de0ac125",
+          "label": "B. Verification keys retrieved by EMR to ensure provenance of IPS",
+          "kind": "flow",
+          "relationshipId": "id-d389bdc780885c619fdd9571a219a7ba"
+        }
+      ]
+    },
+    {
+      "id": "id-7316d840d1115721a94c96499199a557",
+      "title": "The pilgrim's journey",
+      "source": "view",
+      "viewId": "id-7316d840d1115721a94c96499199a557",
+      "participants": [
+        {
+          "id": "id-1d10603bf37e5c1fbdddd2a493eff491",
+          "name": "P0 · Before the season — keys and codes are shared",
+          "type": "BusinessProcess",
+          "elementId": "id-1d10603bf37e5c1fbdddd2a493eff491"
+        },
+        {
+          "id": "id-dddf2e7324aa5f91904b80307fbd877a",
+          "name": "P1 · The health check and the choice to share",
+          "type": "BusinessProcess",
+          "elementId": "id-dddf2e7324aa5f91904b80307fbd877a"
+        },
+        {
+          "id": "id-abe54aba83bf5d3fb7555a45a6d55e33",
+          "name": "P2 · His summary is assembled and signed",
+          "type": "BusinessProcess",
+          "elementId": "id-abe54aba83bf5d3fb7555a45a6d55e33"
+        },
+        {
+          "id": "id-15ad62c4c32e52439597bee188559dea",
+          "name": "P3 · Taken ill in Nalemi",
+          "type": "BusinessProcess",
+          "elementId": "id-15ad62c4c32e52439597bee188559dea"
+        },
+        {
+          "id": "id-8ada823571f4597ea07ae7870ddca86d",
+          "name": "P4 · Scanned and checked",
+          "type": "BusinessProcess",
+          "elementId": "id-8ada823571f4597ea07ae7870ddca86d"
+        },
+        {
+          "id": "id-cef47cd08ab2539db34f341f16067b99",
+          "name": "P5 · His record is read and he is treated",
+          "type": "BusinessProcess",
+          "elementId": "id-cef47cd08ab2539db34f341f16067b99"
+        },
+        {
+          "id": "id-11fab3bebb77541abfcf6d1bbc736960",
+          "name": "P6 · When he cannot show the code (break the glass)",
+          "type": "BusinessProcess",
+          "elementId": "id-11fab3bebb77541abfcf6d1bbc736960"
+        },
+        {
+          "id": "id-475445e1cb0850db9f1a4d7084af5259",
+          "name": "P7 · Back home",
+          "type": "BusinessProcess",
+          "elementId": "id-475445e1cb0850db9f1a4d7084af5259"
+        }
+      ],
+      "messages": [
+        {
+          "from": "id-1d10603bf37e5c1fbdddd2a493eff491",
+          "to": "id-dddf2e7324aa5f91904b80307fbd877a",
+          "label": "triggers P1 · The health check and the choice to share",
+          "kind": "triggering",
+          "relationshipId": "id-48d953416688586695612abf264b6335"
+        },
+        {
+          "from": "id-dddf2e7324aa5f91904b80307fbd877a",
+          "to": "id-abe54aba83bf5d3fb7555a45a6d55e33",
+          "label": "triggers P2 · His summary is assembled and signed",
+          "kind": "triggering",
+          "relationshipId": "id-0715e3feef01516985960f2d754239e3"
+        },
+        {
+          "from": "id-abe54aba83bf5d3fb7555a45a6d55e33",
+          "to": "id-15ad62c4c32e52439597bee188559dea",
+          "label": "triggers P3 · Taken ill in Nalemi",
+          "kind": "triggering",
+          "relationshipId": "id-4d04ec822be95089bed923260c04f054"
+        },
+        {
+          "from": "id-15ad62c4c32e52439597bee188559dea",
+          "to": "id-8ada823571f4597ea07ae7870ddca86d",
+          "label": "triggers P4 · Scanned and checked",
+          "kind": "triggering",
+          "relationshipId": "id-5910618c880a5af9af8d9523bc622d56"
+        },
+        {
+          "from": "id-8ada823571f4597ea07ae7870ddca86d",
+          "to": "id-cef47cd08ab2539db34f341f16067b99",
+          "label": "triggers P5 · His record is read and he is treated",
+          "kind": "triggering",
+          "relationshipId": "id-13c1a93b962e5f69953f74b215470a1e"
+        },
+        {
+          "from": "id-cef47cd08ab2539db34f341f16067b99",
+          "to": "id-11fab3bebb77541abfcf6d1bbc736960",
+          "label": "triggers P6 · When he cannot show the code (break the glass)",
+          "kind": "triggering",
+          "relationshipId": "id-bd27223fcaed5c449b13500df5502e30"
+        },
+        {
+          "from": "id-11fab3bebb77541abfcf6d1bbc736960",
+          "to": "id-475445e1cb0850db9f1a4d7084af5259",
+          "label": "triggers P7 · Back home",
+          "kind": "triggering",
+          "relationshipId": "id-5377b0b1221e58b499425e6cbe2946ef"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMART Verifiable IPS for Pilgrimage — cat-harness-declaration</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b1b1b; --bg:#fdfdfb; --muted:#5b5b5b; --line:#d6d6d0; --link:#0b5cad; --panel:#f3f4f2; }
+  @media (prefers-color-scheme: dark) { :root:not([data-fa-scheme="light"]) { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --panel:#1f2124; } }
+  :root[data-fa-scheme="dark"] { --fg:#e8e8e6; --bg:#161616; --muted:#a8a8a4; --line:#3a3a38; --link:#7db4ff; --panel:#1f2124; }
+  :root[data-fa-scheme="light"] { color-scheme: light; } :root[data-fa-scheme="dark"] { color-scheme: dark; }
+  body { margin:0; font:1rem/1.5 system-ui,sans-serif; color:var(--fg); background:var(--bg); }
+  main { max-width:80rem; margin:0 auto; padding:1.5rem 1.5rem 4rem; min-width:0; overflow-wrap:anywhere; }
+  h1 { font-size:1.35rem; margin:0 0 .25rem; } h2 { font-size:1.05rem; margin:1.5rem 0 .5rem; }
+  a { color:var(--link); } a:focus-visible, select:focus-visible { outline:3px solid var(--link); outline-offset:2px; }
+  .m { color:var(--muted); font-size:.9rem; }
+  .tiles { display:flex; flex-wrap:wrap; gap:.5rem; margin:.5rem 0; padding:0; list-style:none; }
+  .tiles li { border:1px solid var(--line); border-radius:.4rem; padding:.35rem .7rem; }
+  .tiles b { font-size:1.2rem; margin-right:.3rem; }
+  .clip { width:100%; overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; }
+  th, td { text-align:left; vertical-align:top; padding:.35rem .5rem; border-bottom:1px solid var(--line); }
+  th { background:var(--panel); white-space:nowrap; }
+  /* Only the node's path and long text may break mid-word; a status or a date
+     broken across lines ("in_pr ogres s") is unreadable. */
+  td { overflow-wrap:normal; } td.p, td.t { overflow-wrap:anywhere; } td.s { white-space:nowrap; }
+  dl { display:grid; grid-template-columns:minmax(8rem,14rem) 1fr; gap:.25rem 1rem; }
+  dt { font-weight:600; } dd { margin:0; }
+  pre { background:var(--panel); padding:.75rem; overflow-x:auto; font-size:.85rem; }
+  label { margin-right:1rem; }
+  @media (max-width:40rem) { dl { grid-template-columns:1fr; } }
+</style>
+<link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-1xu8dv6vn7v.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><style data-folio-narrow-viewport>
+/* Narrow viewports: nothing may widen the PAGE — bean `2r2n`.
+ *
+ * At 390 px, 105 of 249 built pages scrolled sideways (measured 2026-09-24).
+ * The rule here is the bean's: wide content scrolls INSIDE ITS OWN BOX with a
+ * visible cue, and the page itself never pans.
+ *
+ * ONE FILE, TWO WAYS IN. Themed pages link it from `_includes/head_custom.html`.
+ * The standalone viewer pages carry no theme stylesheet at all, so
+ * `withViewerNav` in `scripts/viewer-page.ts` inlines this same file when it
+ * adds the rail. A copy of these rules in each place would be two answers to
+ * "what does a table do at 390 px", free to drift apart.
+ *
+ * Every selector here is written to be safe on both kinds of page: no
+ * `.main-content` scope (a standalone page has none), the navbar excluded by
+ * name, and the theme's own `.table-wrapper` left alone, since it already does
+ * this job for Markdown tables. */
+
+@media (max-width: 799.98px) {
+  /* A table the theme did not wrap: raw HTML from a generator, or one built at
+   * runtime. `display: block` makes the table its own scroll box. Its cells
+   * still lay out as a table inside the anonymous table box. */
+  table:not(.table-wrapper > table):not(.fa-nav table) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* THE CUE: the edge that has more content past it fades out. The fade is a
+   * MASK over the table's own pixels, driven by its own scroll position, so
+   * it needs no knowledge of the page's background. A painted cover (the
+   * usual `background-attachment: local` trick) does: the first version used
+   * `Canvas`, and on a page that is dark under a LIGHT scheme it laid a white
+   * band over the first column.
+   *
+   * A table that does not overflow has an inactive scroll timeline, so the
+   * animation has no effect and both fades stay at their initial 0: no cue
+   * where there is nothing to scroll to. A browser without scroll-driven
+   * animations shows no fade, and the table still scrolls. */
+  @supports (animation-timeline: scroll()) {
+    table:not(.table-wrapper > table):not(.fa-nav table) {
+      mask-image: linear-gradient(to right,
+        transparent 0, #000 var(--fa-cue-l),
+        #000 calc(100% - var(--fa-cue-r)), transparent 100%);
+      animation: fa-scroll-cue linear both;
+      animation-timeline: scroll(self inline);
+    }
+  }
+
+  /* A code block scrolls in its own box, which is what `pre` is for. Mermaid
+   * SOURCE sits in a `pre` until the renderer replaces it, and at 390 px a
+   * diagram's source line is longer than the screen. */
+  pre {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Prose that has no break opportunity: a long path in inline code, or a
+   * glossary definition naming one. Breaking the string is better than
+   * widening the page it sits on. */
+  :not(pre) > code,
+  dd {
+    overflow-wrap: anywhere;
+  }
+}
+
+@property --fa-cue-l { syntax: "<length>"; inherits: false; initial-value: 0px; }
+@property --fa-cue-r { syntax: "<length>"; inherits: false; initial-value: 0px; }
+
+@keyframes fa-scroll-cue {
+  0%   { --fa-cue-l: 0px;    --fa-cue-r: 2.5rem; }
+  12%  { --fa-cue-l: 2.5rem; }
+  88%  { --fa-cue-r: 2.5rem; }
+  100% { --fa-cue-l: 2.5rem; --fa-cue-r: 0px; }
+}
+
+</style>
+<script type="application/json" id="fa-translation-meta">{"lang":"en","translationStatus":"","translationSource":"","supportedLocales":["ar","zh","en","fr","ru","es"],"availableLocales":[]}</script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><link rel="stylesheet" href="../../../../../assets/ig-artifact.css"><style data-ig-version-chrome>.ig-topbar-head{flex:0 0 100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .9rem}.ig-topbar-head .ig-topbar-home{flex:none}.ig-topbar-ver{font-weight:400;font-size:.9em;opacity:.95;white-space:nowrap}.ig-topbar-flag{font-size:1.1em}.ig-version-banner{box-sizing:border-box;margin:0;padding:.5rem 1.5rem;background:#ffffa0;color:#222;border-bottom:1px solid #0a0008;font-size:.95rem;line-height:1.45}.ig-version-banner a{color:#1a4b8c;text-decoration:underline}html:not([data-fa-scheme="light"]) .ig-version-banner{background:#4a4520;color:#fff8d0;border-color:#8a7d2a}html:not([data-fa-scheme="light"]) .ig-version-banner a{color:#ffe680}.ig-metadata{border-collapse:collapse;margin:0 0 1rem;font-size:.95rem}.ig-metadata td{border:1px solid #c8c8c8;padding:.25rem .6rem;vertical-align:top}.ig-metadata code{overflow-wrap:anywhere}</style></head>
+<body data-fa-node-kind-page>
+<header class="ig-search-top fa-page-bar"><a class="ig-search-home" href="../../../../../index.html">SMART Verifiable IPS for Pilgrimage</a><span class="ig-topbar-ver">2.1.0 - release</span><form class="ig-search" role="search" data-ig-search-index="../../../../../assets/ig-search.json"><label class="ig-search-label" for="search-input">Search SMART Verifiable IPS for Pilgrimage</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span></header><p class="ig-version-banner" role="note">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.1.0: release) based on <a href="http://hl7.org/fhir/R4/">FHIR (HL7® FHIR® Standard) v4.0.1</a>. For a full list of available versions, see the <a href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a>.</p><script type="application/json" id="fa-rail" data-fa-root="../../../../.." data-fa-to-root="../../../../..">{"data":"rail-1xu8dv6vn7v","here":"/en/cat-harness/cat-harness-declaration/smart-ips-pilgrimage/smart-ips-pilgrimage/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">folio-assistant</a></nav>
+<main>
+<h1 id="nk-title">SMART Verifiable IPS for Pilgrimage</h1>
+<p class="m">A <a href="../../">cat-harness-declaration</a> node held by <a href="../">smart-ips-pilgrimage</a>, at <code>smart-ips-pilgrimage.json</code>.</p>
+
+<h2 id="fields">Fields</h2>
+<dl>
+<dt>$schema</dt><dd>cat-harness-declaration/1.0.0</dd>
+<dt>name</dt><dd>smart-ips-pilgrimage</dd>
+<dt>version</dt><dd>2.1.0</dd>
+<dt>repository</dt><dd>litlfred/smart-ips-pilgrimage</dd>
+<dt>iriBase</dt><dd>https://litlfred.github.io/smart-ips-pilgrimage/</dd>
+<dt>title</dt><dd>SMART Verifiable IPS for Pilgrimage</dd>
+<dt>description</dt><dd>The WHO SMART Guidelines Verifiable IPS for Pilgrimage implementation guide (FHIR IG source under input/): GDHCN and IPS for verifiable health documents during pilgrimage, as a harnessed instance of smart-base.</dd>
+<dt>needs</dt><dd><pre>[
+  &quot;smart-base&quot;,
+  &quot;smart-trust-tools&quot;
+]</pre></dd>
+<dt>assets</dt><dd><pre>[
+  {
+    &quot;id&quot;: &quot;agent-instructions&quot;,
+    &quot;src&quot;: &quot;AGENTS.md&quot;,
+    &quot;role&quot;: &quot;agent-instructions&quot;,
+    &quot;title&quot;: &quot;AGENTS.md — smart-ips-pilgrimage&quot;,
+    &quot;description&quot;: &quot;Cold start for work here, and its one rule: fhir-artifact-index/ and document-kinds/ are generated at publish from the IG&#39;s AST, never authored by hand.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;instance-readme&quot;,
+    &quot;src&quot;: &quot;README.md&quot;,
+    &quot;role&quot;: &quot;instance-readme&quot;,
+    &quot;title&quot;: &quot;SMART Verifiable IPS for Pilgrimage&quot;,
+    &quot;description&quot;: &quot;The SMART Verifiable IPS for Pilgrimage implementation guide: where it is published and where its issues are managed.&quot;
+  }
+]</pre></dd>
+<dt>directories</dt><dd><pre>[
+  {
+    &quot;id&quot;: &quot;smart-ips-pilgrimage-ast&quot;,
+    &quot;path&quot;: &quot;fhir-ast/&quot;,
+    &quot;description&quot;: &quot;SMART Verifiable IPS for Pilgrimage&#39;s IG Publisher AST, INGESTED here although the IG&#39;s source is not (owner, 2026-10-04: an IG&#39;s semi-static KG may stay remote, and its AST is still ingested into the folio). Read from the branch family cat/fhir-harness/fhir-ast/ on the IG&#39;s own repository (litlfred/smart-ips-pilgrimage), one branch per IG package id; this IG&#39;s member is cat/fhir-harness/fhir-ast/smart.who.int.ips-pilgrimage. Restored by fhir-harness/scripts/ig-cache.sh; absent from the checkout by design. Bean nr5p.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;ig-ast&quot;
+    ],
+    &quot;storage&quot;: {
+      &quot;branchPrefix&quot;: &quot;cat/fhir-harness/fhir-ast/&quot;,
+      &quot;keyedBy&quot;: &quot;family&quot;,
+      &quot;keyFrom&quot;: &quot;the IG&#39;s package id&quot;,
+      &quot;repository&quot;: &quot;litlfred/smart-ips-pilgrimage&quot;,
+      &quot;tool&quot;: &quot;ig-cache&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;smart-ips-pilgrimage-artifact-index&quot;,
+    &quot;path&quot;: &quot;fhir-artifact-index/&quot;,
+    &quot;description&quot;: &quot;The artefact index for smart-ips-pilgrimage. `index.json`, `menu.json`, `releases.json` and `package.tgz` are NOT COMMITTED: fhir-harness&#39;s `ig-index:build` writes them at publish from the IG&#39;s AST (`builtAtPublish`, fhir-harness#124). Only the README stays committed. Bean nr5p.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;fhir-artifact-index&quot;
+    ],
+    &quot;readOnly&quot;: true,
+    &quot;readOnlyBasis&quot;: &quot;Built from the IG&#39;s own AST, and GENERATED -- fhir-harness&#39;s `ig-index:build` writes this index at publish, a person does not edit or commit it (fhir-harness#124). A hand edit here silently changes what this repository claims upstream published, and `check:materialized-fixity` is what catches one that happened.&quot;,
+    &quot;served&quot;: true
+  },
+  {
+    &quot;id&quot;: &quot;smart-ips-pilgrimage-document-kinds&quot;,
+    &quot;path&quot;: &quot;document-kinds/&quot;,
+    &quot;description&quot;: &quot;How this IG realises the document kinds of the layers it needs: today `dak.coverage.smart-ips-pilgrimage.json`, the DAK view of `fhir-artifact-index/`, which places each artefact in one of the ten DAK components by its FHIR resource type and lists what no rule places. GENERATED at publish by the DAK layer&#39;s `gen-document-kinds.ts` (`bun run cat smart-base:document-kinds`; declared `builtAtPublish`, because the index it reads is built at publish too, fhir-harness#124) into this directory, and not committed, because the report is about this IG (folio-assistant#2598). Bean nr5p.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;document-kinds&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;smart-ips-pilgrimage-docs&quot;,
+    &quot;path&quot;: &quot;docs/&quot;,
+    &quot;instanceRoot&quot;: true,
+    &quot;description&quot;: &quot;The reader-facing pages, generated from `fhir-artifact-index/index.json` by `smart-ips-pilgrimage:pages` (`fhir-harness/scripts/gen-ig-pages.ts`). These are the artefact pages of smart-ips-pilgrimage&#39;s IG site (`igSite`, bean `mftp`): they build into smart-ips-pilgrimage&#39;s own IG site at `/smart-ips-pilgrimage/` under the IG&#39;s menu. Generated at publish, never authored or committed.&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;docs&quot;,
+      &quot;ig-pages&quot;
+    ],
+    &quot;derivedFrom&quot;: [
+      &quot;smart-ips-pilgrimage-artifact-index&quot;,
+      &quot;smart-base-themes&quot;
+    ],
+    &quot;writer&quot;: [
+      &quot;fhir-harness/scripts/gen-ig-pages.ts&quot;,
+      &quot;fhir-harness/scripts/templates/ig-pages/&quot;
+    ],
+    &quot;igSite&quot;: true,
+    &quot;tile&quot;: {
+      &quot;icon&quot;: &quot;docs&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;references&quot;,
+    &quot;path&quot;: &quot;references/&quot;,
+    &quot;description&quot;: &quot;smart-ips-pilgrimage&#39;s bibliography: one folio-reference/v1 CSL-JSON entry per cited work, `&lt;key&gt;.json`. The IG is one document with one bibliography page, the KG Bibliography the site publishes (`en/folio-assistant-core/bibliography/`, the IG menu&#39;s Bibliography item); the IG pages hold no reference lists of their own, and each in-text citation links to its entry there as `en/folio-assistant-core/bibliography/references/&lt;key&gt;/`. smart-base&#39;s `check:ig-citations` fails on a citation with no entry, a page reference list, or a reference-section link to a work this directory does not hold&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;references&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;business-processes&quot;,
+    &quot;path&quot;: &quot;input/business-processes/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;business-processes&quot;
+    ],
+    &quot;description&quot;: &quot;The guide&#39;s business processes (BPMN 2.0), the IG source the IG Publisher renders; the processes viewer draws them for this instance, and the journeys&#39; steps name their tasks (realisedBy). The .svg beside three of them are drawings by bootstrap-tools&#39; render-bpmn, for the journeys viewer to highlight a step&#39;s tasks. Each leaf lane binds its role (partitionElementRef, scenarios/roles.json) and the tasks a person performs name their skill (&lt;bootstrap.processes:skill&gt;); they stay here, in the IG&#39;s layout, rather than moving to a harness processes/ directory, because the IG Publisher and the journeys&#39; realisedBy read them here.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;scenarios&quot;,
+    &quot;path&quot;: &quot;scenarios/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;scenarios&quot;
+    ],
+    &quot;description&quot;: &quot;The people and systems of the pilgrim&#39;s journey (actors/, each person with a meta.persona) and the roles they play (roles.json), named after this guide&#39;s personas and system actors. Every person is fictional.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;user-scenarios&quot;,
+    &quot;path&quot;: &quot;user-scenarios/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;user-scenario&quot;
+    ],
+    &quot;description&quot;: &quot;The pilgrim&#39;s journey (the home page, input/pagecontent/index.md) as user scenarios: the parent journey the-pilgrims-hajj and one sub-journey per moment P0 to P7, partOf the parent and following each other in order. Each step&#39;s picture is input/images/pilgrim/&lt;p&gt;.webp.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;code-lists&quot;,
+    &quot;path&quot;: &quot;code-lists/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;code-list&quot;
+    ],
+    &quot;description&quot;: &quot;The record-trust ladder the journeys&#39; steps name: how far Kamal&#39;s health summary can be trusted abroad, moment by moment.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;archimate&quot;,
+    &quot;path&quot;: &quot;archimate/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;archimate&quot;
+    ],
+    &quot;description&quot;: &quot;The guide as ArchiMate (cat-harness&#39;s archimate subgraph): the people and systems of scenarios/roles.json, the journey moments P0 to P7 of user-scenarios/ with who takes part in each, and the home page&#39;s overview of key process flows (input/images/workflow.png) as a view with every box where the figure draws it. Built by archimate/build.py from those sources (`check:archimate` fails when the committed model is stale); the archimate-pages visualiser draws every view as SVG, and archimate/pretty.py draws the overview again in the original figure&#39;s style (input/includes/workflow-pretty.svg), one pictogram per role; the pages toggle between the two.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;device-screens&quot;,
+    &quot;path&quot;: &quot;device-screens/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;device-screen&quot;
+    ],
+    &quot;description&quot;: &quot;What each person sees on their own device at a step of the pilgrim&#39;s journeys, from the owner&#39;s illustrations: Kamal&#39;s consent and his signed QR code, the scanner and the facility screen at registration in Nalemi, Dr Faisal&#39;s tablet, Dr Hafiz&#39;s break-the-glass phone and Dr Aisyah&#39;s computer at home. device-screen nodes (the harness&#39;s kind), drawn by the journeys viewer in the workshop&#39;s Device Demo. Every person is fictional.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;smart-ips-pilgrimage-findings&quot;,
+    &quot;path&quot;: &quot;findings/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;docs&quot;
+    ],
+    &quot;description&quot;: &quot;Authored review material about this instance&#39;s pages, kept apart from `docs/`, which `smart-ips-pilgrimage:pages` wholly generates at publish. `wireframes/` holds the as-is wireframe of this instance&#39;s `journeys` visualiser with its findings (`check:wireframes` reads the `wireframes/` of every declared `docs` directory), as smart-base&#39;s `findings/` does for its own.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;workshops&quot;,
+    &quot;path&quot;: &quot;workshops/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;workshop&quot;
+    ],
+    &quot;description&quot;: &quot;The policy question each moment of the pilgrim&#39;s journey raises, as a workshop for origin- and host-country policy makers.&quot;
+  },
+  {
+    &quot;id&quot;: &quot;smart-ips-pilgrimage-translations&quot;,
+    &quot;path&quot;: &quot;translations/&quot;,
+    &quot;graphTypologies&quot;: [
+      &quot;translation-sources&quot;
+    ],
+    &quot;description&quot;: &quot;The gettext side of this IG&#39;s text, one directory per target locale (ar, es, fr, ru, zh; the source is en): .pot templates extracted by input/scripts/translation-pot.ts (the harness&#39;s own extractors) from the narrative pages in input/pagecontent/ and the BPMN in input/business-processes/, and the .po catalogues translated from them, each with a translation-node/v1 manifest. Agent translations are unofficial (official: false, generatedBy agent) until a person signs them off. FHIR resources are not here: they use CodeSystem supplements in input/fsh/translations/&lt;locale&gt;.fsh.&quot;
+  }
+]</pre></dd>
+<dt>visualisers</dt><dd><pre>[
+  {
+    &quot;id&quot;: &quot;archimate&quot;,
+    &quot;renderedBy&quot;: &quot;archimate-pages&quot;,
+    &quot;covers&quot;: [
+      &quot;archimate&quot;
+    ],
+    &quot;writer&quot;: [
+      &quot;cat-harness-tools/archimate/scripts/gen-archimate-pages.ts&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;journeys&quot;,
+    &quot;renderedBy&quot;: &quot;journeys-viewer&quot;,
+    &quot;coversKinds&quot;: [
+      &quot;user-scenario&quot;,
+      &quot;workshop&quot;,
+      &quot;device-screen&quot;
+    ],
+    &quot;subgraphs&quot;: &quot;instance&quot;
+  }
+]</pre></dd>
+<dt>avatar</dt><dd><pre>{
+  &quot;glyph&quot;: &quot;M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4zM8 12l3 3 5-6&quot;,
+  &quot;tone&quot;: 199,
+  &quot;reads&quot;: &quot;a shield with a check mark: a verified health document for travel, in WHO blue&quot;
+}</pre></dd>
+<dt>_avatar_comment</dt><dd>A shield with a check mark: verifiable IPS documents for pilgrimage, in WHO blue (tone 199, matching smart-base and smart-trust).</dd>
+<dt>_builtAtPublish_comment</dt><dd>Owner, 2026-10-14 (B1; schemas/built-at-publish.ts in cat-harness). The artefact index, DAK coverage report, JSON-LD @context, and IG pages are computed at the checkout&#39;s pins at publish and never committed.</dd>
+<dt>builtAtPublish</dt><dd><pre>[
+  {
+    &quot;path&quot;: &quot;fhir-artifact-index/index.json&quot;,
+    &quot;writer&quot;: [
+      &quot;ig-index:build&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the IG&#39;s artefact index: built by fhir-harness&#39;s ig-index:build from the IG&#39;s AST (restored from the IG repository&#39;s AST cache) and its own sushi-config.yaml, so it moves when the IG&#39;s default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)&quot;
+  },
+  {
+    &quot;path&quot;: &quot;fhir-artifact-index/menu.json&quot;,
+    &quot;writer&quot;: [
+      &quot;ig-index:build&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the IG&#39;s menu: built by fhir-harness&#39;s ig-index:build from the IG&#39;s AST (restored from the IG repository&#39;s AST cache) and its own sushi-config.yaml, so it moves when the IG&#39;s default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)&quot;
+  },
+  {
+    &quot;path&quot;: &quot;fhir-artifact-index/releases.json&quot;,
+    &quot;writer&quot;: [
+      &quot;ig-index:build&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the IG&#39;s release list: built by fhir-harness&#39;s ig-index:build from the IG&#39;s AST (restored from the IG repository&#39;s AST cache) and its own sushi-config.yaml, so it moves when the IG&#39;s default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)&quot;
+  },
+  {
+    &quot;path&quot;: &quot;fhir-artifact-index/package.tgz&quot;,
+    &quot;writer&quot;: [
+      &quot;ig-index:build&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the Publisher-shaped package the JSON view pages read each resource from: built by fhir-harness&#39;s ig-index:build from the IG&#39;s AST (restored from the IG repository&#39;s AST cache) and its own sushi-config.yaml, so it moves when the IG&#39;s default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)&quot;
+  },
+  {
+    &quot;path&quot;: &quot;document-kinds/dak.coverage.smart-ips-pilgrimage.json&quot;,
+    &quot;writer&quot;: [
+      &quot;smart-base:document-kinds&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;directory&quot;: &quot;smart-ips-pilgrimage-document-kinds&quot;,
+    &quot;reason&quot;: &quot;the DAK view of this IG&#39;s artefact index, which is itself built at publish (fhir-artifact-index/index.json above), so the report moves with the index and is built after it (fhir-harness#124)&quot;
+  },
+  {
+    &quot;path&quot;: &quot;ns/context/v1.jsonld&quot;,
+    &quot;writer&quot;: [
+      &quot;jsonld:contexts&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the prefixes and content-context terms its documents use, flattened with the jsonldPrefixes of the layers it needs at the checkout&#39;s pins&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/&quot;,
+    &quot;writer&quot;: [
+      &quot;smart-ips-pilgrimage:pages&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;directory&quot;: &quot;smart-ips-pilgrimage-docs&quot;,
+    &quot;reason&quot;: &quot;the artefact pages gen-ig-pages renders from this instance&#39;s artefact index with the IG-page templates and the smart-base themes and chrome, all read at the checkout&#39;s pins&quot;
+  }
+]</pre></dd>
+<dt>enableSubgraphs</dt><dd><pre>[
+  &quot;folio-assistant-core.collab&quot;,
+  &quot;smart-base.collab&quot;,
+  &quot;fhir-harness.collab&quot;,
+  &quot;smart-base.L2-collab&quot;,
+  &quot;smart-base.L3-collab&quot;
+]</pre></dd>
+</dl>
+</main>
+<script src="../../../../../assets/ig-search.js" defer></script>
+</body>
+</html>

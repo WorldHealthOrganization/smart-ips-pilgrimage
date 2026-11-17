@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-ec1e2850947b5da3aecf6c84ae69b421",
+  "@type": "archimate:Location",
+  "schema:identifier": "id-ec1e2850947b5da3aecf6c84ae69b421",
+  "schema:name": "Home Country",
+  "schema:description": "Where the figure's Home Country side is.",
+  "schema:category": "Other",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

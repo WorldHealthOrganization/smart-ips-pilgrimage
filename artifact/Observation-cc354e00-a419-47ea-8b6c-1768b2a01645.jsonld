@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Observation-cc354e00-a419-47ea-8b6c-1768b2a01645",
+  "@type": "fhir:Observation",
+  "dcterms:identifier": "Observation/cc354e00-a419-47ea-8b6c-1768b2a01645",
+  "dcterms:title": "cc354e00-a419-47ea-8b6c-1768b2a01645",
+  "dcterms:type": "Other",
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../Observation-cc354e00-a419-47ea-8b6c-1768b2a01645.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/resources/Observation/cc354e00-a419-47ea-8b6c-1768b2a01645.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "7ee9b7f3054cdd2baee121f06a30d6e7e3393015"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.ips-pilgrimage",
+    "schema:version": "2.1.0",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/ips-pilgrimage"
+    }
+  },
+  "dcterms:subject": [
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "17856-6",
+      "schema:name": "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
+      "schema:inDefinedTermSet": {
+        "@id": "http://loinc.org"
+      }
+    }
+  ]
+}

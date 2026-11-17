@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-51918bcf0f275064ba2787ee24648745",
+  "@type": "archimate:BusinessRole",
+  "schema:identifier": "id-51918bcf0f275064ba2787ee24648745",
+  "schema:name": "Pilgrim",
+  "schema:description": "The person making the pilgrimage who holds the health wallet and decides who may see their patient summary.",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

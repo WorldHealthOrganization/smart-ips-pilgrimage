@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/ips-pilgrimage/ValueSet-Browser.schema.json",
+  "title": "Browser Schema",
+  "description": "JSON Schema for Browser ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "Firefox",
+        "Chrome",
+        "MicrosoftEdge",
+        "InternetExplorer",
+        "Safari",
+        "Other"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the Browser ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/ips-pilgrimage/ValueSet-Browser.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/ips-pilgrimage/ValueSet-Browser.displays.json",
+  "fhir:valueSet": "http://smart.who.int/ips-pilgrimage/ValueSet/Browser",
+  "fhir:version": "2.1.0",
+  "fhir:expansionTimestamp": "2026-11-17T06:35:33+00:00"
+}

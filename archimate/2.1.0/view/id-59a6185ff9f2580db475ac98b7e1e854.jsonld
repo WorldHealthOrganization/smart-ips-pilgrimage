@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-59a6185ff9f2580db475ac98b7e1e854",
+  "@type": "archimate:Diagram",
+  "schema:identifier": "id-59a6185ff9f2580db475ac98b7e1e854",
+  "schema:name": "Overview of key process flows",
+  "schema:description": "The overview of key process flows from the home page (input/images/workflow.png), with every box where the figure draws it: Home Country on the left, Host Country on the right, the pilgrim at the top between them and WHO GDHCN at the bottom. Each numbered flow is named as the figure prints it and links its moment of the pilgrim's journey and its transaction.",
+  "schema:image": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-59a6185ff9f2580db475ac98b7e1e854.svg",
+  "schema:about": [
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-ec1e2850947b5da3aecf6c84ae69b421"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-224b4a4a4d7850d3876481faae55c5c0"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f7870cda62c85a4598b0e438eb6fc749"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-07352920645e595eb523417ce62ac2a0"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-45dd1671e2f355b8aff8c696d817f271"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-40903feadde952e19b2211b3de0ac125"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-51918bcf0f275064ba2787ee24648745"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-d68d7507e4ae5c9ba47d3da53b0bd70d"
+    }
+  ],
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

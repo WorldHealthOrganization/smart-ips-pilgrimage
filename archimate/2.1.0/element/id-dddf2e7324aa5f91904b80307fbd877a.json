@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-dddf2e7324aa5f91904b80307fbd877a",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-dddf2e7324aa5f91904b80307fbd877a",
+  "schema:name": "P1 · The health check and the choice to share",
+  "schema:description": "Three months before the pilgrimage, Kamal has the mandatory pre-pilgrimage health examination with Dr Aisyah. He is fit to travel. She explains what the Pilgrimage Health Record is, who can see it, and for how long. Kamal agrees on his wallet to share his patient summary with Taifafeki health workers during the pilgrimage, and sets how the link to it is protected. Step 1 of the overview of key process flows.",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

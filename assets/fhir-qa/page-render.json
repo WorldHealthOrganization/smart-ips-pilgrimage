@@ -1,0 +1,50 @@
+{
+ "$schema": "fhir-harness/page-render-qa/v1",
+ "generatedAt": "2026-11-17T07:07:46.075Z",
+ "scanned": 176,
+ "unfinished": [],
+ "findings": [
+  {
+   "page": "qa.html",
+   "markup": [
+    "code"
+   ],
+   "excerpt": "There are multiple different potential matches for the url '[http://terminology.hl7.org/ValueSet/v3-PurposeOfUse]'. It m"
+  },
+  {
+   "page": "qa.html",
+   "markup": [
+    "code"
+   ],
+   "excerpt": "There are multiple different potential matches for the url '[http://terminology.hl7.org/ValueSet/v3-PurposeOfUse]'. It m"
+  },
+  {
+   "page": "qa.html",
+   "markup": [
+    "code"
+   ],
+   "excerpt": "There are multiple different potential matches for the url '[http://terminology.hl7.org/ValueSet/v3-PurposeOfUse]'. It m"
+  },
+  {
+   "page": "qa.html",
+   "markup": [
+    "code"
+   ],
+   "excerpt": "There are multiple different potential matches for the url '[http://hl7.org/fhir/StructureDefinition/composition-clinica"
+  },
+  {
+   "page": "qa.html",
+   "markup": [
+    "code"
+   ],
+   "excerpt": "There are multiple different potential matches for the url '[http://terminology.hl7.org/ValueSet/v3-ActCode]'. It might "
+  },
+  {
+   "page": "qa.html",
+   "markup": [
+    "code"
+   ],
+   "excerpt": "There are multiple different potential matches for the url '[http://terminology.hl7.org/ValueSet/v3-ActCode]'. It might "
+  }
+ ]
+}

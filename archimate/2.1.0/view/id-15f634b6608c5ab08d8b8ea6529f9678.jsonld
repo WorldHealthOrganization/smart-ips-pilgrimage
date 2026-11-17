@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-15f634b6608c5ab08d8b8ea6529f9678",
+  "@type": "archimate:Diagram",
+  "schema:identifier": "id-15f634b6608c5ab08d8b8ea6529f9678",
+  "schema:name": "P0 · Before the season — keys and codes are shared",
+  "schema:description": "P0 · Before the season — keys and codes are shared: Before the pilgrimage season, Lomaru and WHO GDHCN. The people assigned to this moment and the systems that serve it (user-scenarios/p0-keys-and-codes-shared.json).",
+  "schema:image": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-15f634b6608c5ab08d8b8ea6529f9678.svg",
+  "schema:about": [
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f7870cda62c85a4598b0e438eb6fc749"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-d68d7507e4ae5c9ba47d3da53b0bd70d"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-1d10603bf37e5c1fbdddd2a493eff491"
+    }
+  ],
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

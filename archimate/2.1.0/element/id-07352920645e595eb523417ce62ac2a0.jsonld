@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-07352920645e595eb523417ce62ac2a0",
+  "@type": "archimate:Location",
+  "schema:identifier": "id-07352920645e595eb523417ce62ac2a0",
+  "schema:name": "Host Country",
+  "schema:description": "Where the figure's Host Country side is.",
+  "schema:category": "Other",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

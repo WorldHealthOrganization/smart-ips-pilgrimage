@@ -1,0 +1,200 @@
+{
+  "$schema": "archimate-metamodel/v1",
+  "model": "2.1.0",
+  "name": "SMART Verifiable IPS for Pilgrimage",
+  "archimateVersion": "3.2",
+  "types": [
+    {
+      "type": "BusinessProcess",
+      "layer": "Business",
+      "elements": 9,
+      "ids": [
+        "id-414683b3c3765c788d76bd48fb6cff82",
+        "id-1d10603bf37e5c1fbdddd2a493eff491",
+        "id-dddf2e7324aa5f91904b80307fbd877a",
+        "id-abe54aba83bf5d3fb7555a45a6d55e33",
+        "id-15ad62c4c32e52439597bee188559dea",
+        "id-8ada823571f4597ea07ae7870ddca86d",
+        "id-cef47cd08ab2539db34f341f16067b99",
+        "id-11fab3bebb77541abfcf6d1bbc736960",
+        "id-475445e1cb0850db9f1a4d7084af5259"
+      ]
+    },
+    {
+      "type": "BusinessRole",
+      "layer": "Business",
+      "elements": 5,
+      "ids": [
+        "id-51918bcf0f275064ba2787ee24648745",
+        "id-f50c4d3693cf5f5185a6f6b3cd88e584",
+        "id-4f6f303b9e0a5620bf22b179e9e67a40",
+        "id-581423ff8bb15b5cb988ea85593f9c11",
+        "id-45dd1671e2f355b8aff8c696d817f271"
+      ]
+    },
+    {
+      "type": "ApplicationComponent",
+      "layer": "Application",
+      "elements": 4,
+      "ids": [
+        "id-224b4a4a4d7850d3876481faae55c5c0",
+        "id-f7870cda62c85a4598b0e438eb6fc749",
+        "id-40903feadde952e19b2211b3de0ac125",
+        "id-d68d7507e4ae5c9ba47d3da53b0bd70d"
+      ]
+    },
+    {
+      "type": "Location",
+      "layer": "Other",
+      "elements": 2,
+      "ids": [
+        "id-ec1e2850947b5da3aecf6c84ae69b421",
+        "id-07352920645e595eb523417ce62ac2a0"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "source": "BusinessRole",
+      "relationship": "Assignment",
+      "target": "BusinessProcess",
+      "count": 19,
+      "allowed": true,
+      "relationships": [
+        "id-ee29ae47c6ed524b8388561e4d190ff2",
+        "id-e71267561b8d5007a5d76cd470223cec",
+        "id-7133368480c95a47aaff3d8839a42575",
+        "id-9c5606bcf0f9521d803fab1e74a6aefa",
+        "id-14c12c2665a35c9ea5e153f688f3bbef",
+        "id-056b42be4e1953ac940c05c24f14c39c",
+        "id-ebc0a6129e23520a95572e7409e196e5",
+        "id-2e6311d54cb35cc5b8d06718015123e4",
+        "id-60dbca579fb052cbb04a9476e4ca4780",
+        "id-92456537fa1455dfb69012bcb79ad5b0",
+        "id-602579b3e57a50439acd386189447106",
+        "id-f05732937aaf5a36a78f4a1c43e73ef9",
+        "id-1f32a50f0dd75d2ba7ee09ae8594e6c7",
+        "id-ccd7e0e1d94d50189f533f1e2596c8c3",
+        "id-95b560f01706536f88b67f9afa676498",
+        "id-83d3a8da9e7e5977af004c69182f5df5",
+        "id-fad731270f2258f6b5c29a2003a2e661",
+        "id-d1ee3cfa0af35d23b649a7519467d933",
+        "id-584988f5dcf152d0aa37505b87cf5d97"
+      ]
+    },
+    {
+      "source": "ApplicationComponent",
+      "relationship": "Serving",
+      "target": "BusinessProcess",
+      "count": 13,
+      "allowed": true,
+      "relationships": [
+        "id-dc35324459b657cb857afceb144f4734",
+        "id-9338be255d2f538c9f6989b042c99d7d",
+        "id-fdcef007c1775a4b8ac77da62c420d57",
+        "id-9b74646e84165e82aad46d2ec3cf6fda",
+        "id-58e5de99fd1750418b2e94b358ff8051",
+        "id-4be8bece331e57b19b64209dcde969a8",
+        "id-061330703c005f58a3eaf51b38ef945d",
+        "id-441dc64af10456ecad61087e506cc646",
+        "id-cc8c1ca822865b4d8186b53b074af6e9",
+        "id-e3763afad0dd500a880609d0566c3a92",
+        "id-7ef7ff8533ba59c7ac694b03b4dc69ac",
+        "id-076c91642a6452d6a81803dce67dcbb8",
+        "id-4fd225c7c0455c37a814842e641d7628"
+      ]
+    },
+    {
+      "source": "BusinessProcess",
+      "relationship": "Composition",
+      "target": "BusinessProcess",
+      "count": 8,
+      "allowed": true,
+      "relationships": [
+        "id-8cb810745cc751359a0aa62d6d6dfdec",
+        "id-9ef2d2f020205a0fa42b89768e64cf65",
+        "id-0fe7ee4e084552d5b9231930442614cf",
+        "id-8d0490af6e085728805e25816df3d097",
+        "id-b7dabed251f15810b359f47c5deabe3b",
+        "id-1c2479c48bd15813805713c27585faeb",
+        "id-fd05130e837252c389921103328c56d4",
+        "id-e585f7a9a1a15aecaba992fb6af993ad"
+      ]
+    },
+    {
+      "source": "BusinessProcess",
+      "relationship": "Triggering",
+      "target": "BusinessProcess",
+      "count": 7,
+      "allowed": true,
+      "relationships": [
+        "id-48d953416688586695612abf264b6335",
+        "id-0715e3feef01516985960f2d754239e3",
+        "id-4d04ec822be95089bed923260c04f054",
+        "id-5910618c880a5af9af8d9523bc622d56",
+        "id-13c1a93b962e5f69953f74b215470a1e",
+        "id-bd27223fcaed5c449b13500df5502e30",
+        "id-5377b0b1221e58b499425e6cbe2946ef"
+      ]
+    },
+    {
+      "source": "ApplicationComponent",
+      "relationship": "Flow",
+      "target": "ApplicationComponent",
+      "count": 4,
+      "allowed": true,
+      "relationships": [
+        "id-da561081976b5cec82fc740af4c22f1b",
+        "id-f2707348c7415861bd4ca8f783d67edb",
+        "id-e7d35f5c324b50e7b3911864a638758b",
+        "id-d389bdc780885c619fdd9571a219a7ba"
+      ]
+    },
+    {
+      "source": "Location",
+      "relationship": "Aggregation",
+      "target": "ApplicationComponent",
+      "count": 3,
+      "allowed": true,
+      "relationships": [
+        "id-25f3efb1b6865900b4afea4fc853f176",
+        "id-99d7e0ba66475376924c817ac12c8eb8",
+        "id-52e8af8a293b50d9ada663f89a04a40b"
+      ]
+    },
+    {
+      "source": "BusinessRole",
+      "relationship": "Flow",
+      "target": "ApplicationComponent",
+      "count": 2,
+      "allowed": true,
+      "relationships": [
+        "id-fbec3c2105315b969ba184a6b7fc788e",
+        "id-7b84fc225d57536cae1cd0f420b6e79a"
+      ]
+    },
+    {
+      "source": "BusinessRole",
+      "relationship": "Flow",
+      "target": "BusinessRole",
+      "count": 1,
+      "allowed": true,
+      "relationships": [
+        "id-45b29af321725ce185c24ebbc736d599"
+      ]
+    },
+    {
+      "source": "Location",
+      "relationship": "Aggregation",
+      "target": "BusinessRole",
+      "count": 1,
+      "allowed": true,
+      "relationships": [
+        "id-3fa8ba0a72cc57a1a591f25741344c56"
+      ]
+    }
+  ],
+  "placeholders": [],
+  "placeholderRelationships": [],
+  "notAllowed": 0
+}

@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-414683b3c3765c788d76bd48fb6cff82",
+  "@type": "archimate:BusinessProcess",
+  "schema:identifier": "id-414683b3c3765c788d76bd48fb6cff82",
+  "schema:name": "The pilgrim's journey",
+  "schema:description": "This guide's user scenarios told as one pilgrim's story, moment by moment along the overview of key process flows (steps 1–5 and A–B): Kamal, 61, from Tanavu, goes on pilgrimage for the first time. Each moment (P0 to P7) is a sub-journey: who takes part, what happens, what in this guide specifies it, what it does not yet specify, and the policy question it raises. Kamal comes from Onesa and goes on pilgrimage in Taifafeki, two fictional countries; the steps follow the guide's real reference implementation as a policy precedent. Every person is fictional. Told on the guide's home page, input/pagecontent/index.md.",
+  "schema:category": "Business",
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

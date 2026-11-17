@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/relationship/id-7b84fc225d57536cae1cd0f420b6e79a",
+  "@type": "archimate:Flow",
+  "schema:identifier": "id-7b84fc225d57536cae1cd0f420b6e79a",
+  "schema:name": "4. Health worker scans IPS QR code in their EMR",
+  "schema:description": "Step 4 of the overview of key process flows.",
+  "archimate:source": {
+    "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-45dd1671e2f355b8aff8c696d817f271"
+  },
+  "archimate:target": {
+    "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-40903feadde952e19b2211b3de0ac125"
+  },
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

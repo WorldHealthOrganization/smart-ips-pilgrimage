@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.TRANSACTION.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/ips-pilgrimage/CodeSystem-IPS.HAJJ.TRANSACTION"
+  },
+  "@id": "http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.TRANSACTION.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-17T06:36:40.069898092Z",
+  "@graph": [
+    {
+      "id": "#keys-put",
+      "name": "Publish Verification Keys"
+    },
+    {
+      "id": "#keys-get",
+      "name": "Retrieve Verification Keys"
+    },
+    {
+      "id": "#doc-sign",
+      "name": "Sign IPS"
+    },
+    {
+      "id": "#doc-get",
+      "name": "Retrieve IPS"
+    },
+    {
+      "id": "#shl-sign",
+      "name": "Sign Smart Health Link"
+    },
+    {
+      "id": "#shl-doc-view",
+      "name": "Access SHL Document Viewer"
+    },
+    {
+      "id": "#shl-get-manifest",
+      "name": "Retrieve SHL Document Manifest"
+    },
+    {
+      "id": "#consent-post-counseling",
+      "name": "Record Consent - Post-Counseling"
+    },
+    {
+      "id": "#consent-wallet",
+      "name": "Record Consent - Digital Health Wallet"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/en/cat-harness/harness/smart-ips-pilgrimage/",
+  "url": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/en/cat-harness/harness/smart-ips-pilgrimage/",
+  "@type": "WebPage",
+  "name": "SMART Verifiable IPS for Pilgrimage on SMART Verifiable IPS for Pilgrimage",
+  "about": {
+    "@id": "https://litlfred.github.io/smart-ips-pilgrimage/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "smart-ips-pilgrimage",
+    "name": "SMART Verifiable IPS for Pilgrimage",
+    "description": "The WHO SMART Guidelines Verifiable IPS for Pilgrimage implementation guide (FHIR IG source under input/): GDHCN and IPS for verifiable health documents during pilgrimage, as a harnessed instance of smart-base.",
+    "version": "2.1.0",
+    "codeRepository": "https://github.com/litlfred/smart-ips-pilgrimage",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/smart-base/"
+      },
+      {
+        "@id": "https://litlfred.github.io/smart-trust-tools/"
+      }
+    ]
+  },
+  "isPartOf": {
+    "@id": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/",
+    "name": "SMART Verifiable IPS for Pilgrimage"
+  },
+  "significantLink": [
+    "https://github.com/litlfred/smart-ips-pilgrimage/tree/7ee9b7f3054cdd2baee121f06a30d6e7e3393015",
+    "https://github.com/litlfred/smart-ips-pilgrimage/blob/7ee9b7f3054cdd2baee121f06a30d6e7e3393015/README.md",
+    "https://github.com/litlfred/smart-ips-pilgrimage/blob/7ee9b7f3054cdd2baee121f06a30d6e7e3393015/AGENTS.md"
+  ]
+}

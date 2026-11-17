@@ -1,0 +1,396 @@
+{
+  "@context": {
+    "schema": "https://schema.org/"
+  },
+  "@id": "assets/ig-api-hub.json",
+  "@type": "schema:WebAPI",
+  "schema:name": "DAK API",
+  "schema:documentation": "openapi/",
+  "schema:hasPart": [
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Browser.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-Browser.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Browser.html",
+        "schema:identifier": "ValueSet/Browser"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Browser.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-Browser.jsonld",
+      "schema:url": "artifact/ValueSet-Browser.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Browser.html",
+        "schema:identifier": "ValueSet/Browser"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Browser.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-Browser.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Browser.html",
+        "schema:identifier": "ValueSet/Browser"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Browser.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-Browser.schema.json",
+      "schema:url": "artifact/ValueSet-Browser.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Browser.html",
+        "schema:identifier": "ValueSet/Browser"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-DistributionModel.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-DistributionModel.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-DistributionModel.html",
+        "schema:identifier": "ValueSet/DistributionModel"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-DistributionModel.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-DistributionModel.jsonld",
+      "schema:url": "artifact/ValueSet-DistributionModel.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-DistributionModel.html",
+        "schema:identifier": "ValueSet/DistributionModel"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-DistributionModel.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-DistributionModel.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-DistributionModel.html",
+        "schema:identifier": "ValueSet/DistributionModel"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-DistributionModel.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-DistributionModel.schema.json",
+      "schema:url": "artifact/ValueSet-DistributionModel.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-DistributionModel.html",
+        "schema:identifier": "ValueSet/DistributionModel"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.ACTOR.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.ACTOR.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.ACTOR.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.ACTOR"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.ACTOR.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.ACTOR.jsonld",
+      "schema:url": "artifact/ValueSet-IPS.HAJJ.ACTOR.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.ACTOR.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.ACTOR"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.ACTOR.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.ACTOR.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.ACTOR.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.ACTOR"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.ACTOR.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.ACTOR.schema.json",
+      "schema:url": "artifact/ValueSet-IPS.HAJJ.ACTOR.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.ACTOR.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.ACTOR"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.ACTOR.SYSTEM.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.ACTOR.SYSTEM"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.ACTOR.SYSTEM.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.jsonld",
+      "schema:url": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.ACTOR.SYSTEM"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.ACTOR.SYSTEM.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.ACTOR.SYSTEM"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.ACTOR.SYSTEM.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.schema.json",
+      "schema:url": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.ACTOR.SYSTEM"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.CONSENT.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.CONSENT.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.CONSENT.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.CONSENT"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.CONSENT.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.CONSENT.jsonld",
+      "schema:url": "artifact/ValueSet-IPS.HAJJ.CONSENT.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.CONSENT.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.CONSENT"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.CONSENT.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.CONSENT.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.CONSENT.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.CONSENT"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.CONSENT.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.CONSENT.schema.json",
+      "schema:url": "artifact/ValueSet-IPS.HAJJ.CONSENT.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.CONSENT.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.CONSENT"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.TRANSACTION.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.TRANSACTION.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.TRANSACTION"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.TRANSACTION.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.TRANSACTION.jsonld",
+      "schema:url": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.TRANSACTION"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.TRANSACTION.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.TRANSACTION.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.TRANSACTION"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-IPS.HAJJ.TRANSACTION.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-IPS.HAJJ.TRANSACTION.schema.json",
+      "schema:url": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.html",
+        "schema:identifier": "ValueSet/IPS.HAJJ.TRANSACTION"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Language.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-Language.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Language.html",
+        "schema:identifier": "ValueSet/Language"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Language.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-Language.jsonld",
+      "schema:url": "artifact/ValueSet-Language.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Language.html",
+        "schema:identifier": "ValueSet/Language"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Language.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-Language.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Language.html",
+        "schema:identifier": "ValueSet/Language"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-Language.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-Language.schema.json",
+      "schema:url": "artifact/ValueSet-Language.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-Language.html",
+        "schema:identifier": "ValueSet/Language"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-LicensingModel.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-LicensingModel.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-LicensingModel.html",
+        "schema:identifier": "ValueSet/LicensingModel"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-LicensingModel.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-LicensingModel.jsonld",
+      "schema:url": "artifact/ValueSet-LicensingModel.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-LicensingModel.html",
+        "schema:identifier": "ValueSet/LicensingModel"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-LicensingModel.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-LicensingModel.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-LicensingModel.html",
+        "schema:identifier": "ValueSet/LicensingModel"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-LicensingModel.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-LicensingModel.schema.json",
+      "schema:url": "artifact/ValueSet-LicensingModel.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-LicensingModel.html",
+        "schema:identifier": "ValueSet/LicensingModel"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-OperatingSystem.displays.json",
+      "schema:additionalType": "Displays",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-OperatingSystem.displays.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-OperatingSystem.html",
+        "schema:identifier": "ValueSet/OperatingSystem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-OperatingSystem.jsonld",
+      "schema:additionalType": "JSON-LD",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-OperatingSystem.jsonld",
+      "schema:url": "artifact/ValueSet-OperatingSystem.jsonld.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-OperatingSystem.html",
+        "schema:identifier": "ValueSet/OperatingSystem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-OperatingSystem.openapi.json",
+      "schema:additionalType": "OpenAPI",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-OperatingSystem.openapi.json",
+      "schema:about": {
+        "@id": "artifact/ValueSet-OperatingSystem.html",
+        "schema:identifier": "ValueSet/OperatingSystem"
+      }
+    },
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSet-OperatingSystem.schema.json",
+      "schema:additionalType": "JSON Schema",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/sidecars/ValueSet-OperatingSystem.schema.json",
+      "schema:url": "artifact/ValueSet-OperatingSystem.schema.json.html",
+      "schema:about": {
+        "@id": "artifact/ValueSet-OperatingSystem.html",
+        "schema:identifier": "ValueSet/OperatingSystem"
+      }
+    }
+  ],
+  "schema:workExample": [
+    {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "ValueSets.schema.json",
+      "schema:contentUrl": "https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/c2793e1014ce186e7ed05df088c9a2289bd9e673/ig-api/site/ValueSets.schema.json"
+    }
+  ]
+}

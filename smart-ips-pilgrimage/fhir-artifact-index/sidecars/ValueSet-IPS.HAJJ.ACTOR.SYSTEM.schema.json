@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.schema.json",
+  "title": "IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor Schema",
+  "description": "JSON Schema for IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "ochie",
+        "ochw",
+        "hcemr",
+        "scanner"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.displays.json",
+  "fhir:valueSet": "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR.SYSTEM",
+  "fhir:version": "2.1.0",
+  "fhir:expansionTimestamp": "2026-11-17T06:35:34+00:00"
+}

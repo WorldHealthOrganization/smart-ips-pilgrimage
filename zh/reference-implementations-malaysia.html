@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh" dir="ltr">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<script type="application/json" id="fa-translation-meta">{"lang":"zh","translationStatus":"unverified","translationSource":"reference-implementations-malaysia.html","supportedLocales":["ar","zh","en","fr","ru","es"],"availableLocales":["en","ar","es","fr","ru","zh"]}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>reference-implementations-malaysia — SMART Verifiable IPS for Pilgrimage</title>
+<link rel="canonical" href="../zh/reference-implementations-malaysia.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23276749'/%3E%3C/svg%3E">
+<meta name="folio-navbar" content="linked">
+<meta name="fa-visualiser-label" content="SMART Verifiable IPS for Pilgrimage">
+<link rel="stylesheet" href="../assets/page-layout.css" data-fa-page-layout>
+<script src="../assets/page-layout.js" defer data-fa-page-layout></script>
+<link rel="stylesheet" href="../assets/ig-artifact.css">
+<link rel="stylesheet" href="../assets/css/docs-ui.css" data-fa-folio-mount>
+<script src="../assets/navbar/row-2acuhncsmbg.js" defer></script><script src="../assets/js/docs-ui.js" defer data-fa-folio-mount></script>
+<style data-ig-version-chrome>.ig-topbar-head{flex:0 0 100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .9rem}.ig-topbar-head .ig-topbar-home{flex:none}.ig-topbar-ver{font-weight:400;font-size:.9em;opacity:.95;white-space:nowrap}.ig-topbar-flag{font-size:1.1em}.ig-version-banner{box-sizing:border-box;margin:0;padding:.5rem 1.5rem;background:#ffffa0;color:#222;border-bottom:1px solid #0a0008;font-size:.95rem;line-height:1.45}.ig-version-banner a{color:#1a4b8c;text-decoration:underline}html:not([data-fa-scheme="light"]) .ig-version-banner{background:#4a4520;color:#fff8d0;border-color:#8a7d2a}html:not([data-fa-scheme="light"]) .ig-version-banner a{color:#ffe680}.ig-metadata{border-collapse:collapse;margin:0 0 1rem;font-size:.95rem}.ig-metadata td{border:1px solid #c8c8c8;padding:.25rem .6rem;vertical-align:top}.ig-metadata code{overflow-wrap:anywhere}</style><link rel="stylesheet" href="../assets/css/navbar.css"><script src="../assets/navbar/rail-18omdrezsx1.js" defer></script><script src="../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../assets/css/navbar-row.css"><script src="../assets/js/navbar-row.js" defer></script><meta name="fa-pinned-data" content=".."></head>
+<body><script type="application/json" id="fa-navbar-row" data-fa-root=".." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="..">{"data":"rail-18omdrezsx1","here":"/zh/reference-implementations-malaysia.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../">SMART Verifiable IPS for Pilgrimage</a></nav>
+
+<div class="ig-topbar fa-page-bar" role="navigation" aria-label="SMART Verifiable IPS for Pilgrimage menu"><span class="ig-topbar-head"><a class="ig-topbar-home" href="../index.html">SMART Verifiable IPS for Pilgrimage</a><span class="ig-topbar-ver">2.1.0 - release</span></span><details class="ig-topbar-group"><summary>Home</summary><ul><li><a href="../index.html">Summary</a></li><li><a href="../changes.html">Changes</a></li><li><a href="../dependencies.html">Dependencies</a></li><li><a href="../en/folio-assistant-core/bibliography/">Bibliography</a></li><li><a href="../adapting.html">Adapting Guidelines for Country use</a></li></ul></details><details class="ig-topbar-group"><summary>Business Requirements</summary><ul><li><a href="../concepts.html">Concepts</a></li><li><a href="../personas.html">Generic Personas</a></li><li><a href="../scenarios.html">User Scenarios</a></li><li><a href="../business-processes.html">Business Processes</a></li><li><a href="../dictionary.html">Data Dictionary</a></li><li><a href="../decision-logic.html">Decision-support Logic</a></li><li><a href="../indicators.html">Indicator and Performance Metrics</a></li><li><a href="../functional-requirements.html">Functional Requirements</a></li><li><a href="../non-functional-requirements.html">Non-functional Requirements</a></li></ul></details><details class="ig-topbar-group"><summary>Data Models and Exchange</summary><ul><li><a href="../system-actors.html">System Actors</a></li><li><a href="../sequence-diagrams.html">Sequence Diagrams</a></li><li><a href="../transactions.html">Transactions</a></li><li><a href="../indicators-measures.html">Indicators and Measures</a></li><li><a href="../codings.html">Codings</a></li></ul></details><details class="ig-topbar-group"><summary>Deployment</summary><ul><li><a href="../security-privacy.html">Security and Privacy Considerations</a></li><li><a href="../testing.html">Testing</a></li><li><a href="../test-data.html">Test Data</a></li><li><a href="../reference-implementations.html">Reference Implementations</a></li><li><a href="../trust_domain.html">Trust Domains</a></li><li><a href="../downloads.html">Downloads</a></li></ul></details><details class="ig-topbar-group"><summary>Indices</summary><ul><li><a href="../artifacts.html">Artifact Index</a></li><li><a href="../maps.html">Mappings</a></li></ul></details><form class="ig-search" role="search" data-ig-search-index="../assets/ig-search.json"><label class="ig-search-label" for="search-input">Search SMART Verifiable IPS for Pilgrimage</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span><script src="../assets/ig-search.js" defer></script></div><p class="ig-version-banner" role="note">本页面是 SMART Verifiable IPS for Pilgrimage（v2.1.0: release）的一部分，基于 <a href="http://hl7.org/fhir/R4/">FHIR (HL7® FHIR® Standard) v4.0.1</a>。 如需所有可用版本的完整列表，请参阅<a href="http://smart.who.int/ips-pilgrimage/history.html">已发布版本目录</a>。</p>
+<main class="ig-main main-content fa-page-main" id="main-content">
+<div class="ig-tr-notice fa-translation-warning" role="note" aria-label="Machine translation, not reviewed by a person"><div class="ig-tr-notice__lang" lang="zh" dir="ltr"><p class="ig-tr-notice__title"><span aria-hidden="true">⚠️</span> <strong>机器翻译——未经人工审校</strong></p><p class="ig-tr-notice__body">本页面为自动翻译。尚无任何人审校或裁定此译文，可能存在错误。以源语言页面为准。 <a class="ig-tr-notice__source" href="../reference-implementations-malaysia.html">阅读原文（英文）</a></p></div><p class="ig-tr-notice__en" lang="en" dir="ltr">Machine translation — not reviewed by a person. <a class="ig-tr-notice__source" href="../reference-implementations-malaysia.html">Read the original (English)</a></p></div>
+<p><span hidden="" data-fa-figure-images="ig"></span></p>
+
+<div class="ig-tr-unreviewed" data-tr-catalogue="reference-implementations-malaysia" data-tr-label="未经人工审校">
+
+  <h3 id="mysejahtera-">马来西亚在 MySejahtera 应用上的参考实现</h3>
+
+  <p>签发国：马来西亚 签发应用：MySejahtera</p>
+
+  <p>接收国：沙特阿拉伯王国 接收应用：Care Ware（电子病历，EMR）</p>
+
+  <h4 id="section">目标</h4>
+
+  <p>本实施的主要目标是使前往沙特阿拉伯参加今年朝觐（Hajj）的马来西亚朝觐者能够在 MySejahtera 应用上，以全球数字健康认证网络（GDHCN）上的智能健康证书二维码（QR）形式携带其健康记录。如发生意外医疗情况，沙特阿拉伯的医疗专业人员可以扫描该二维码，访问病史，并对患者进行适当治疗。</p>
+
+  <h4 id="section-1">项目概述</h4>
+
+  <p>马来西亚的这一项目是马来西亚卫生部（MOH）与 Tabung Haji（TH）的合作成果。其目的是确保马来西亚朝觐（Hajj）朝觐者在朝觐期间能够无缝访问其健康记录，让他们在沙特阿拉伯逗留期间安心并获得更好的医疗支持。</p>
+
+  <h4 id="section-2">健康记录：</h4>
+
+  <p>本实施中的健康记录基于为马来西亚朝觐者开展的朝觐（Hajj）朝觐者健康检查项目。这些检查由马来西亚各地的 MOH 卫生机构以及 Tabung Haji 指定的私人全科医生（GPs）进行。</p>
+
+  <p>朝觐（Hajj）健康检查是为马来西亚朝觐者进行的全面体检。该检查是一项强制性要求，旨在确保朝觐者适合出行，并识别朝觐期间需要管理的任何潜在健康状况。检查包括一般健康评估、疫苗接种以及传染病筛查。这些检查的数据记录在名为 MyVAS 的符合 FHIR 的电子病历（EMR）系统中，并通过 MySejahtera 应用即时提供给朝觐者。</p>
+
+  <h4 id="section-3">本次推广的注意事项</h4>
+
+  <p>标准通行码且不设时间有效期：</p>
+  <ul>
+    <li>为便于在朝觐（Hajj）期间更快地在卫生机构完成登记，KSA 团队要求为所有马来西亚朝觐 IPS 设置统一的标准通行码。</li>
+    <li>今年朝觐（Hajj）的智能健康证书二维码（QR）将不设时间有效期</li>
+  </ul>
+
+  <h4 id="section-4">用户旅程和实施步骤：</h4>
+
+  <p>签发方面（马来西亚使用 MySejahtera）：</p>
+  <ol>
+    <li>获取同意：</li>
+  </ol>
+
+  <p>a. 用户同意生成健康证书二维码（QR code）。</p>
+
+  <p>b. 存储同意详情，包括同意在 GDHCN 上以 IPS 形式与 KSA 官员共享健康记录</p>
+
+  <ol>
+    <li>设置通行码：</li>
+  </ol>
+
+  <p>a. 为今年朝觐（Hajj）的所有马来西亚 IPS 设置统一的标准通行码</p>
+
+  <p>b. 无需用户输入</p>
+
+  <ol>
+    <li>生成智能健康链接（VHL）：</li>
+  </ol>
+
+  <p>a. 根据用户偏好将 VHL 创建为清单 URL，支持 JSON 和 PDF 内容类型。</p>
+
+  <ol>
+    <li>将 VHL 嵌入 HCert：</li>
+  </ol>
+
+  <p>a. 按照世卫组织（WHO）的 smart trust 规范，将 VHL 嵌入健康证书（HCert）中。</p>
+
+  <ol>
+    <li>准备 COSE 消息：</li>
+  </ol>
+
+  <p>a. 将 HCert 插入 COSE 消息，使用 GDHCN 密钥签名，并在头部中添加密钥 ID（KID）。</p>
+
+  <ol>
+    <li>生成 CWT：</li>
+  </ol>
+
+  <p>a. 将 COSE 消息封装为 CBOR Web 令牌（CWT）。</p>
+
+  <ol>
+    <li>序列化 CWT 并生成二维码（QR Code）：</li>
+  </ol>
+
+  <p>a. 对 CWT 进行 base64 编码并转换为二维码（QR code）</p>
+
+  <p>接收方面（沙特阿拉伯使用 Care Ware）：</p>
+
+  <ol>
+    <li>扫描并解码二维码（QR Code）：</li>
+  </ol>
+
+  <p>a. 扫描二维码（QR code），获得 base64 编码的 CWT。</p>
+
+  <ol>
+    <li>提取 COSE 消息并验证签名：</li>
+  </ol>
+
+  <p>a. 从 CWT 中提取 COSE 消息。b. 使用 GDHCN 公共登记库中马来西亚的公钥验证 COSE 签名。马来西亚的国家代码为“MY”</p>
+
+  <ol>
+    <li>解码 HCert 并提取 VHL：</li>
+  </ol>
+
+  <p>a. 对 HCert 进行 base64 解码。b. 从 HCert 载荷中提取 VHL JSON。</p>
+
+  <ol>
+    <li>检索并解码 VHL 清单：</li>
+  </ol>
+
+  <p>a. 向 VHL 清单 URL 发送 POST 请求，以检索 base64 编码的 VHL 清单 JSON。b. 对 VHL 清单 JSON 进行 base64 解码。</p>
+
+  <ol>
+    <li>检索 IPS：</li>
+  </ol>
+
+  <p>a. 以首选文件类型（PDF）发出获取 IPS 的 GET 请求。b. 使用 HCert 响应中的加密密钥解密 IPS JSON 文件。</p>
+
+  <ol>
+    <li>下载并保存 IPS：</li>
+  </ol>
+
+  <p>a. 下载并保存 IPS PDF 文件，供卫生工作者后续使用。</p>
+
+  <h3 id="section-5">背景信息</h3>
+
+  <h4 id="mysejahtera">关于 MySejahtera</h4>
+
+  <p>MySejahtera 是马来西亚的国家公共卫生应用，由马来西亚卫生部（MOH）开发和管理。它最初是为管理 COVID-19 疫情而开发的，允许用户进行健康自我评估、监测自身健康状况，并接收与 COVID-19 相关的最新动态和信息。</p>
+
+  <p>如今，MySejahtera 是获取公共医疗服务的数字入口。MySejahtera 已将多项国家卫生项目数字化，例如面向儿童的国家免疫规划（NIP）、国家健康筛查计划（NHSI），以及涵盖焦虑、抑郁和自杀念头等领域的心理健康自我评估工具。</p>
+
+  <h4 id="moh">关于马来西亚卫生部（MOH）</h4>
+
+  <p>马来西亚卫生部（MOH）是负责马来西亚卫生系统的政府部门。MOH 致力于通过全面的卫生服务、提高健康意识以及确保获得优质医疗服务来改善民众健康。该部在实施卫生政策、开展健康检查以及合作推进国际卫生倡议方面发挥着关键作用。</p>
+
+  <h4 id="tabung-haji">关于 Tabung Haji</h4>
+
+  <p>Tabung Haji 即马来西亚朝觐基金局，是一家与政府关联的金融机构，负责管理马来西亚有意进行朝觐（Hajj）的穆斯林的储蓄。它为朝觐者提供全面的服务，包括储蓄计划、培训、后勤以及朝觐期间的医疗服务。Tabung Haji 与 MOH 密切合作，确保朝觐者的福祉，特别是在健康相关事务方面。</p>
+
+  <h4 id="section-6">摘要</h4>
+
+  <p>本实施指南为面向马来西亚朝觐（Hajj）朝觐者推广智能健康证书二维码（QR）系统提供了详细的步骤和注意事项。通过利用 MySejahtera 应用、马来西亚卫生部和 Tabung Haji，该倡议旨在改善朝觐者在沙特阿拉伯的就医体验。使用标准化的健康记录和二维码，确保医疗服务提供者能够快速获取基本医疗信息，从而在朝觐期间提供及时、有效的医疗护理。</p>
+
+  <p>这份扩展指南应能帮助各方透彻了解该项目、其利益相关方以及所涉及的技术步骤，使各方更容易有效地实施和使用该系统。</p>
+
+  <h4 id="mysejahtera--1">MySejahtera 截图：：用户流程</h4>
+
+  <p>首页卡片，朝觐常见问题（FAQ）/宣传</p>
+
+  <p><img src="../MySejahtera_userflow.png" alt="MySejahtera User Flow" /></p>
+
+  <p>同意、生成二维码（QR）并预览 IPS</p>
+
+  <p><img src="MySejahtera_qr.png" alt="Consent, generating QR and previewing IPS" /></p>
+
+</div>
+
+<p class="ig-edit"><a data-fa-link="edit" data-src="input/pagecontent/reference-implementations-malaysia.md" data-repo="WorldHealthOrganization/smart-ips-pilgrimage" href="https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/edit/main/input/pagecontent/reference-implementations-malaysia.md">Edit this page on GitHub</a></p>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/WorldHealthOrganization/smart-ips-pilgrimage/blob/main/input/pagecontent/reference-implementations-malaysia.md", "repo": "WorldHealthOrganization/smart-ips-pilgrimage", "branch": "main", "path": "input/pagecontent/reference-implementations-malaysia.md", "lines": [{"t":"Reference implementation by Malaysia on MySejahtera App","l":1},{"t":"Objective","l":9},{"t":"Project Overview","l":13},{"t":"Health Records:","l":17},{"t":"Considerations for this Rollout","l":24},{"t":"User Journey and implementation steps:","l":30},{"t":"Background Information","l":96},{"t":"About MySejahtera","l":98},{"t":"About the Ministry of Health (MOH) Malaysia","l":104},{"t":"About Tabung Haji","l":108},{"t":"Summary","l":113},{"t":"Snapshots from MySejahtera: :  User flow","l":119}]}</script>
+
+<script src="../assets/ig-source-links.js"></script>
+
+
+<script>(function(){
+var f=document.querySelector("#main-content .pt-diagram[data-panel]");
+if(!f||window.__igTaskPanel)return;
+var p=f.getAttribute("data-panel")||"";
+if(!/^[A-Za-z0-9._-][A-Za-z0-9._/-]*[.]tasks[.]json$/.test(p)||p.indexOf("//")>=0)return;
+window.__igTaskPanel=1;
+var dir=p.replace(/[^/]*$/,"");
+var l=document.createElement("link");l.rel="stylesheet";l.href=dir+"task-panel.css";document.head.appendChild(l);
+var s=document.createElement("script");s.src=dir+"task-panel.js";document.body.appendChild(s);
+})();</script>
+<script>(function(){
+var main=document.getElementById("main-content");
+if(!main||main.querySelector(".igi-contents"))return;
+var rowsOf=function igContentsRows(hs) {
+  let top = 0;
+  for (const h of hs)
+    if (h.level >= 2 && h.level <= 4 && (top === 0 || h.level < top))
+      top = h.level;
+  if (top === 0)
+    return [];
+  const rows = [];
+  let count = 0;
+  for (const h of hs)
+    if (h.level === top) {
+      rows.push({ i: h.i, sub: [] });
+      count++;
+    } else if (h.level === top + 1) {
+      const last = rows[rows.length - 1];
+      if (last)
+        last.sub.push(h.i);
+      else
+        rows.push({ i: h.i, sub: [] });
+      count++;
+    }
+  return count < 2 ? [] : rows;
+};
+var hs=Array.prototype.filter.call(main.querySelectorAll("h2,h3,h4"),function(h){return !h.closest(".igi-contents,#ig-footer,.ig-edit,.ig-metadata")&&h.textContent.trim();});
+var rows=rowsOf(hs.map(function(h,i){return {level:+h.tagName.charAt(1),i:i};}));
+if(!rows.length)return;
+var used={};
+function slug(t){var b=t.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"section",s=b,i=1;while(used[s]||document.getElementById(s))s=b+"-"+(++i);used[s]=1;return s;}
+function item(h){if(!h.id)h.id=slug(h.textContent);var li=document.createElement("li"),a=document.createElement("a");a.href="#"+h.id;
+var c=h.cloneNode(true);Array.prototype.forEach.call(c.querySelectorAll(".anchor-heading,.fa-sec-box,svg,button"),function(n){n.remove();});
+a.textContent=c.textContent.replace(/\s+/g," ").trim();li.appendChild(a);return li;}
+var nav=document.createElement("nav");nav.className="igi-contents";nav.setAttribute("aria-label","Contents");
+var t=document.createElement("p");t.className="igi-contents-title";t.textContent="Contents";nav.appendChild(t);
+var ul=document.createElement("ul");
+rows.forEach(function(r){var li=item(hs[r.i]);if(r.sub.length){var sub=document.createElement("ul");sub.className="igi-contents-sub";r.sub.forEach(function(k){sub.appendChild(item(hs[k]));});li.appendChild(sub);}ul.appendChild(li);});
+nav.appendChild(ul);
+var h1=main.querySelector("h1"),meta=main.querySelector(":scope > .ig-metadata");
+var at=h1&&h1.parentNode===main?h1:meta||null;
+var bannerOf=function igIsBanner(e) {
+  if (e.display === "none" || /^(H[1-6]|SCRIPT|STYLE|NAV)$/i.test(e.tag))
+    return !1;
+  if (/(^|[\s_-])(hero|banner)([\s_-]|$)/i.test(e.cls))
+    return !0;
+  return !!e.bgImage && e.bgImage !== "none";
+};
+var b=null,first=hs[0];
+for(var n=main.firstElementChild;n&&n!==first&&!n.contains(first);n=n.nextElementSibling){var cs=getComputedStyle(n);
+if(bannerOf({tag:n.tagName,cls:n.getAttribute("class")||"",bgImage:cs.backgroundImage,display:cs.display}))b=n;}
+if(b&&(!at||at.compareDocumentPosition(b)&4))at=b;
+if(at)at.insertAdjacentElement("afterend",nav);else main.insertBefore(nav,main.firstChild);
+})();</script>
+</main>
+
+</body>
+</html>

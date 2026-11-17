@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "archimate": "http://www.opengroup.org/xsd/archimate/3.0/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-6f0be5e38c6751418605ca6603c02064",
+  "@type": "archimate:Diagram",
+  "schema:identifier": "id-6f0be5e38c6751418605ca6603c02064",
+  "schema:name": "P7 · Back home",
+  "schema:description": "P7 · Back home: After the season, A GP clinic in Tanavu. The people assigned to this moment and the systems that serve it (user-scenarios/p7-back-home.json).",
+  "schema:image": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/view/id-6f0be5e38c6751418605ca6603c02064.svg",
+  "schema:about": [
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-51918bcf0f275064ba2787ee24648745"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-4f6f303b9e0a5620bf22b179e9e67a40"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-f50c4d3693cf5f5185a6f6b3cd88e584"
+    },
+    {
+      "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-475445e1cb0850db9f1a4d7084af5259"
+    }
+  ],
+  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+}

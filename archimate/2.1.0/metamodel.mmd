@@ -1,0 +1,19 @@
+classDiagram
+  %% SMART Verifiable IPS for Pilgrimage: metamodel in use, derived by archimate-metamodel. Do not edit.
+  class BusinessProcess["Business Process"]
+  <<Business>> BusinessProcess
+  class BusinessRole["Business Role"]
+  <<Business>> BusinessRole
+  class ApplicationComponent["Application Component"]
+  <<Application>> ApplicationComponent
+  class Location["Location"]
+  <<Other>> Location
+  BusinessRole --> BusinessProcess : assigned to ×19
+  ApplicationComponent --> BusinessProcess : serves ×13
+  BusinessProcess *-- BusinessProcess : composed of ×8
+  BusinessProcess --> BusinessProcess : triggers ×7
+  ApplicationComponent ..> ApplicationComponent : flows to ×4
+  Location o-- ApplicationComponent : aggregates ×3
+  BusinessRole ..> ApplicationComponent : flows to ×2
+  BusinessRole ..> BusinessRole : flows to ×1
+  Location o-- BusinessRole : aggregates ×1

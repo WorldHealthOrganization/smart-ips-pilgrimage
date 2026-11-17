@@ -1,0 +1,1234 @@
+{
+ "$schema": "site-link-report/v1",
+ "pages": 4628,
+ "unresolved": [],
+ "selfAddress": [],
+ "content": [
+  {
+   "page": "actor-pilgrim.html",
+   "href": "Questionnaire-consent-wallet-questionnaire.html"
+  },
+  {
+   "page": "actor-pilgrim.html",
+   "href": "Questionnaire-shl-configure-privacy-settings.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-ar.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-es.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-fr.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-ru.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-zh.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-ar.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-es.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-fr.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-ru.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-zh.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-ACTOR-es.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-ACTOR-ru.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-CONSENT-es.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-CONSENT-ru.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-TRANSACTION-es.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-TRANSACTION-ru.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-ar.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-fr.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-zh.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-ar.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-fr.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-zh.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-ar.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-fr.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-zh.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-ar.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-es.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-fr.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-ru.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-zh.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-ar.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-es.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-fr.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-ru.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-zh.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-ar.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-es.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-fr.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-ru.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-zh.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/ValueSet-Browser.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/ValueSet-DistributionModel.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.ACTOR.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.CONSENT.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/ValueSet-Language.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/ValueSet-LicensingModel.html"
+  },
+  {
+   "page": "ar/codings.html",
+   "href": "artifact/ValueSet-OperatingSystem.html"
+  },
+  {
+   "page": "ar/reference-implementations-malaysia.html",
+   "href": "MySejahtera_qr.png"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "favicon.ico"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "main.dd0ec5f4ab3ef14c.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "polyfills.741ec81967e9c9c3.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "runtime.821ff28674267dd4.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "scripts.5c83cbb4dbb11a83.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "styles.29b9bdb6e634f66b.css"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/index.html",
+   "href": "webcomponents/webcomponents-loader.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "favicon.ico"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "main.dd0ec5f4ab3ef14c.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "polyfills.741ec81967e9c9c3.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "runtime.821ff28674267dd4.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "scripts.5c83cbb4dbb11a83.js"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "styles.29b9bdb6e634f66b.css"
+  },
+  {
+   "page": "assets/formbuilder/12.9.0/window-open.html",
+   "href": "webcomponents/webcomponents-loader.js"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-ar.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-es.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-fr.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-ru.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-zh.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-ar.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-es.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-fr.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-ru.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-zh.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-ACTOR-es.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-ACTOR-ru.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-CONSENT-es.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-CONSENT-ru.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-TRANSACTION-es.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-TRANSACTION-ru.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-ar.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-fr.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-zh.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-ar.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-fr.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-zh.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-ar.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-fr.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-zh.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-ar.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-es.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-fr.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-ru.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-zh.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-ar.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-es.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-fr.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-ru.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-zh.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-ar.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-es.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-fr.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-ru.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-zh.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/ValueSet-Browser.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/ValueSet-DistributionModel.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.ACTOR.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.CONSENT.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/ValueSet-Language.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/ValueSet-LicensingModel.html"
+  },
+  {
+   "page": "es/codings.html",
+   "href": "artifact/ValueSet-OperatingSystem.html"
+  },
+  {
+   "page": "es/reference-implementations-malaysia.html",
+   "href": "MySejahtera_qr.png"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-ar.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-es.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-fr.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-ru.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-zh.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-ar.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-es.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-fr.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-ru.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-zh.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-ACTOR-es.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-ACTOR-ru.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-CONSENT-es.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-CONSENT-ru.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-TRANSACTION-es.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-TRANSACTION-ru.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-ar.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-fr.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-zh.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-ar.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-fr.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-zh.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-ar.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-fr.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-zh.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-ar.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-es.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-fr.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-ru.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-zh.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-ar.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-es.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-fr.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-ru.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-zh.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-ar.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-es.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-fr.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-ru.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-zh.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/ValueSet-Browser.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/ValueSet-DistributionModel.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.ACTOR.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.CONSENT.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/ValueSet-Language.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/ValueSet-LicensingModel.html"
+  },
+  {
+   "page": "fr/codings.html",
+   "href": "artifact/ValueSet-OperatingSystem.html"
+  },
+  {
+   "page": "fr/reference-implementations-malaysia.html",
+   "href": "MySejahtera_qr.png"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-ar.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-es.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-fr.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-ru.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-zh.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-ar.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-es.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-fr.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-ru.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-zh.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-ACTOR-es.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-ACTOR-ru.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-CONSENT-es.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-CONSENT-ru.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-TRANSACTION-es.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-TRANSACTION-ru.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-ar.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-fr.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-zh.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-ar.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-fr.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-zh.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-ar.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-fr.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-zh.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-ar.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-es.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-fr.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-ru.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-zh.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-ar.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-es.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-fr.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-ru.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-zh.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-ar.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-es.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-fr.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-ru.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-zh.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/ValueSet-Browser.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/ValueSet-DistributionModel.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.ACTOR.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.CONSENT.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/ValueSet-Language.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/ValueSet-LicensingModel.html"
+  },
+  {
+   "page": "ru/codings.html",
+   "href": "artifact/ValueSet-OperatingSystem.html"
+  },
+  {
+   "page": "ru/reference-implementations-malaysia.html",
+   "href": "MySejahtera_qr.png"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-ar.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-es.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-fr.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-ru.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs-zh.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-BrowserCs.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-ar.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-es.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-fr.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-ru.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs-zh.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-DistributionModelCs.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-ACTOR-es.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-ACTOR-ru.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-CONSENT-es.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-CONSENT-ru.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-TRANSACTION-es.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS-HAJJ-TRANSACTION-ru.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-ar.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-fr.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR-zh.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.ACTOR.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-ar.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-fr.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT-zh.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.CONSENT.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-ar.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-fr.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION-zh.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-IPS.HAJJ.TRANSACTION.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-ar.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-es.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-fr.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-ru.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs-zh.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LanguageCs.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-ar.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-es.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-fr.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-ru.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs-zh.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-LicensingModelCs.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-ar.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-es.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-fr.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-ru.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs-zh.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/CodeSystem-OperatingSystemCs.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/ValueSet-Browser.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/ValueSet-DistributionModel.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.ACTOR.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.CONSENT.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/ValueSet-IPS.HAJJ.TRANSACTION.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/ValueSet-Language.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/ValueSet-LicensingModel.html"
+  },
+  {
+   "page": "zh/codings.html",
+   "href": "artifact/ValueSet-OperatingSystem.html"
+  },
+  {
+   "page": "zh/reference-implementations-malaysia.html",
+   "href": "MySejahtera_qr.png"
+  }
+ ],
+ "diagrams": 39,
+ "inDiagrams": []
+}
