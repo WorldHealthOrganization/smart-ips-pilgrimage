@@ -1,7 +1,7 @@
 Instance: ExampleComposition
 InstanceOf: HajjIPSComposition
-Title : "Hajj IPS Composition"
-Description: "Hajj IPS Composition Example"
+Title : "Pilgrimage IPS Composition"
+Description: "Pilgrimage IPS Composition Example"
 Usage: #example
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "3f69e0a5-2177-4540-baab-7a5d0877428f"
@@ -61,8 +61,9 @@ Usage: #example
 * section[sectionAdvanceDirectives].title = "Advance Directives"
 * section[sectionAdvanceDirectives].code = $loinc#42348-3
 * section[sectionAdvanceDirectives].text.status = #generated
-* section[sectionAdvanceDirectives].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent MYS for pilgrimage</div>"
-* section[sectionAdvanceDirectives].entry = Reference(c7781f44-6df8-4a8b-9e06-0b34263a47c6)
+* section[sectionAdvanceDirectives].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">pilgrimage consents: CONSENT-XXK (the origin country may release the IPS) and CONSENT-XXR (the host Ministry of Health may use it for treatment)</div>"
+* section[sectionAdvanceDirectives].entry[0] = Reference(c7781f44-6df8-4a8b-9e06-0b34263a47c6)
+* section[sectionAdvanceDirectives].entry[+] = Reference(6ba64cfe-b224-4d40-87bf-4d8122e65e62)
 Instance: Martha
 InstanceOf: Patient
 Description: "Example Patient"

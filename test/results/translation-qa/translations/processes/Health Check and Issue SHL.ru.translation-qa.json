@@ -1,0 +1,87 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:ru/processes/Health Check and Issue SHL",
+  "locale": "ru",
+  "paths": {
+    "pot": "translations/ru/processes/Health Check and Issue SHL.pot"
+  },
+  "po": "translations/ru/processes/Health Check and Issue SHL.po",
+  "source_hashes": {
+    "pot": "0cb79add6ae8",
+    "po": "1ba7e754d10b"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "0cb79add6ae8",
+          "po": "1ba7e754d10b"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "545b2b32b84eae0bed18f0801aa1685f794b55be",
+        "metrics": {
+          "translated": 55,
+          "total": 55,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "0cb79add6ae8",
+          "po": "1ba7e754d10b"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "545b2b32b84eae0bed18f0801aa1685f794b55be",
+        "metrics": {
+          "checked": 55,
+          "missing": 0,
+          "missing_strict": 0,
+          "missing_acronyms": 0,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        }
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "0cb79add6ae8",
+          "po": "1ba7e754d10b"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "545b2b32b84eae0bed18f0801aa1685f794b55be",
+        "metrics": {
+          "echoed": 0,
+          "translated": 55
+        }
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

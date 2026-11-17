@@ -1,6 +1,6 @@
 ValueSet:     IPS.HAJJ.ACTOR.SYSTEM
 Title:        "IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor"
-Description:  "ValueSet of codes for system actors for Hajj"
+Description:  "ValueSet of codes for system actors for the pilgrimage"
 
 * ^status = #active
 * ^experimental = true

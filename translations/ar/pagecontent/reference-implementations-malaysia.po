@@ -1,0 +1,262 @@
+# Arabic translation of pagecontent/reference-implementations-malaysia
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.190Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/reference-implementations-malaysia.md:41
+msgid "a. A standard passcode is set for all Malaysian IPS for this year’s Hajj"
+msgstr "أ. تُعيَّن رمز مرور موحَّد لجميع ملخصات المرضى الدولية (IPS) الماليزية لحج هذا العام"
+
+#: input/pagecontent/reference-implementations-malaysia.md:73
+msgid "a. COSE message is extracted from the CWT. b. COSE signature is verified using Malaysia’s public key from the GDHCN public registry. Malaysia’s country code is “MY”"
+msgstr "أ. تُستخرَج رسالة COSE من رمز CWT. ب. يُتحقَّق من توقيع COSE باستخدام المفتاح العمومي لماليزيا من السجل العمومي لـ GDHCN. ورمز البلد لماليزيا هو «MY»"
+
+#: input/pagecontent/reference-implementations-malaysia.md:59
+msgid "a. COSE message is wrapped into a CBOR Web Token (CWT)."
+msgstr "أ. تُغلَّف رسالة COSE ضمن رمز ويب CBOR ‏(CWT)."
+
+#: input/pagecontent/reference-implementations-malaysia.md:63
+msgid "a. CWT is base64 encoded and converted into a QR code"
+msgstr "أ. يُرمَّز CWT بترميز base64 ويُحوَّل إلى رمز QR"
+
+#: input/pagecontent/reference-implementations-malaysia.md:88
+msgid "a. GET request is made for the IPS in the preferred file type (PDF). b. IPS JSON file is decrypted using the encryption key from the HCert response."
+msgstr "أ. يُرسَل طلب GET للحصول على ملخص المريض الدولي (IPS) بنوع الملف المفضَّل (PDF). ب. يُفَكّ تشفير ملف IPS بصيغة JSON باستخدام مفتاح التشفير الوارد في استجابة HCert."
+
+#: input/pagecontent/reference-implementations-malaysia.md:78
+msgid "a. HCert is decoded from base64. b. VHL JSON is extracted from the HCert payload."
+msgstr "أ. يُفَكّ ترميز HCert من base64. ب. يُستخرَج JSON الخاص بـ VHL من حمولة HCert."
+
+#: input/pagecontent/reference-implementations-malaysia.md:55
+msgid "a. HCert is inserted into the COSE message, signed with GDHCN key, and the Key ID (KID) is added to the header."
+msgstr "أ. تُدرَج HCert في رسالة COSE، وتُوقَّع بمفتاح GDHCN، ويُضاف معرِّف المفتاح (KID) إلى الترويسة."
+
+#: input/pagecontent/reference-implementations-malaysia.md:93
+msgid "a. IPS PDF file is downloaded and saved for further use by healthcare workers."
+msgstr "أ. يُنزَّل ملف IPS بصيغة PDF ويُحفَظ لاستخدامه لاحقًا من قِبل العاملين الصحيين."
+
+#: input/pagecontent/reference-implementations-malaysia.md:83
+msgid "a. POST request is sent to the VHL manifest URL to retrieve the base64 encoded VHL manifest JSON. b. VHL manifest JSON is decoded from base64."
+msgstr "أ. يُرسَل طلب POST إلى عنوان URL لبيان VHL لاسترجاع JSON بيان VHL المرمَّز بـ base64. ب. يُفَكّ ترميز JSON بيان VHL من base64."
+
+#: input/pagecontent/reference-implementations-malaysia.md:69
+msgid "a. QR code is scanned and the base64 encoded CWT is obtained."
+msgstr "أ. يُمسَح رمز QR ويُحصَل على CWT المرمَّز بـ base64."
+
+#: input/pagecontent/reference-implementations-malaysia.md:35
+msgid "a. Users provide consent to generate the Health Certificate QR code."
+msgstr "أ. يقدّم المستخدمون موافقتهم على إنشاء رمز QR للشهادة الصحية."
+
+#: input/pagecontent/reference-implementations-malaysia.md:47
+msgid "a. VHL is created as a manifest URL based on user preferences and supports JSON and PDF content types."
+msgstr "أ. يُنشأ VHL في صورة عنوان URL لبيان (manifest) وفقًا لتفضيلات المستخدم، ويدعم نوعَي المحتوى JSON وPDF."
+
+#: input/pagecontent/reference-implementations-malaysia.md:51
+msgid "a. VHL is embedded into a Health Certificate (HCert) following WHO's smart trust specification."
+msgstr "أ. يُضمَّن VHL في شهادة صحية (HCert) وفقًا لمواصفة الثقة الذكية (smart trust) الصادرة عن منظمة الصحة العالمية (WHO)."
+
+#: input/pagecontent/reference-implementations-malaysia.md:98
+msgid "About MySejahtera"
+msgstr "نبذة عن MySejahtera"
+
+#: input/pagecontent/reference-implementations-malaysia.md:108
+msgid "About Tabung Haji"
+msgstr "نبذة عن Tabung Haji"
+
+#: input/pagecontent/reference-implementations-malaysia.md:104
+msgid "About the Ministry of Health (MOH) Malaysia"
+msgstr "نبذة عن وزارة الصحة (MOH) في ماليزيا"
+
+#: input/pagecontent/reference-implementations-malaysia.md:37
+msgid "b. Consent details are stored, including acceptance to share health records as IPS on GDHCN to KSA officials"
+msgstr "ب. تُخزَّن تفاصيل الموافقة، بما في ذلك قبول مشاركة السجلات الصحية بصيغة IPS عبر GDHCN مع مسؤولي المملكة العربية السعودية (KSA)"
+
+#: input/pagecontent/reference-implementations-malaysia.md:43
+msgid "b. No user input required"
+msgstr "ب. لا يلزم أي إدخال من المستخدم"
+
+#: input/pagecontent/reference-implementations-malaysia.md:96
+msgid "Background Information"
+msgstr "معلومات أساسية"
+
+#: input/pagecontent/reference-implementations-malaysia.md:122
+msgid "Card on the home page, FAQ/Awareness on the pilgrimage"
+msgstr "بطاقة في الصفحة الرئيسية، وأسئلة شائعة/توعية بشأن الحج"
+
+#: input/pagecontent/reference-implementations-malaysia.md:127
+msgid "Consent, Generating QR and previewing the IPS"
+msgstr "الموافقة، وإنشاء رمز QR، ومعاينة IPS"
+
+#: input/pagecontent/reference-implementations-malaysia.md:24
+msgid "Considerations for this Rollout"
+msgstr "اعتبارات هذا الطرح"
+
+#: input/pagecontent/reference-implementations-malaysia.md:76
+msgid "Decode HCert and Extract VHL:"
+msgstr "فكّ ترميز HCert واستخراج VHL:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:91
+msgid "Download and Save IPS:"
+msgstr "تنزيل IPS وحفظه:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:49
+msgid "Embed VHL into HCert:"
+msgstr "تضمين VHL في HCert:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:71
+msgid "Extract COSE Message and Verify Signature:"
+msgstr "استخراج رسالة COSE والتحقق من التوقيع:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:32
+msgid "For Issuance (Malaysia using MySejahtera):"
+msgstr "للإصدار (ماليزيا باستخدام MySejahtera):"
+
+#: input/pagecontent/reference-implementations-malaysia.md:65
+msgid "For Receiving (Saudi Arabia using Care Ware):"
+msgstr "للاستقبال (المملكة العربية السعودية باستخدام Care Ware):"
+
+#: input/pagecontent/reference-implementations-malaysia.md:57
+msgid "Generate CWT:"
+msgstr "إنشاء CWT:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:45
+msgid "Generate Smart Health Link (VHL):"
+msgstr "إنشاء رابط صحي ذكي (VHL):"
+
+#: input/pagecontent/reference-implementations-malaysia.md:17
+msgid "Health Records:"
+msgstr "السجلات الصحية:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:3
+msgid "Issuing Country: Malaysia Issuing Application: MySejahtera"
+msgstr "البلد المُصدِر: ماليزيا؛ التطبيق المُصدِر: MySejahtera"
+
+#: input/pagecontent/reference-implementations-malaysia.md:100
+msgid "MySejahtera is the national public health app of Malaysia, developed and managed by the Ministry of Health (MOH), Malaysia. It was initially developed to manage the COVID-19 outbreak, allowing users to perform health self-assessments, monitor their health status, and receive updates and information related to COVID-19."
+msgstr "MySejahtera هو التطبيق الوطني للصحة العامة في ماليزيا، وقد طوّرته وتديره وزارة الصحة (MOH) في ماليزيا. وقد طُوِّر في الأصل لإدارة فاشية COVID-19، إذ أتاح للمستخدمين إجراء تقييمات ذاتية لصحتهم، ورصد حالتهم الصحية، وتلقّي المستجدات والمعلومات المتعلقة بـ COVID-19."
+
+#: input/pagecontent/reference-implementations-malaysia.md:28
+msgid "No time validity will be added to the Smart Health Certificate QR for this year’s Hajj"
+msgstr "لن تُضاف أي مدة صلاحية زمنية إلى رمز QR لشهادة الصحة الذكية لحج هذا العام"
+
+#: input/pagecontent/reference-implementations-malaysia.md:102
+msgid "Now, MySejahtera serves as the digital front door for accessing public healthcare services. MySejahtera has digitalized several national health programs like National Immunization Program (NIP) for children, the National Health Screening Initiative(NHSI), Self-Assessment tools for mental health, covering areas such as anxiety, depression, and suicidal thoughts."
+msgstr "واليوم، يؤدي MySejahtera دور البوابة الرقمية للوصول إلى خدمات الرعاية الصحية العامة. وقد رقمن MySejahtera عدة برامج صحية وطنية، مثل البرنامج الوطني للتمنيع (NIP) للأطفال، والمبادرة الوطنية للفحص الصحي (NHSI)، وأدوات التقييم الذاتي للصحة النفسية التي تشمل مجالات مثل القلق والاكتئاب والأفكار الانتحارية."
+
+#: input/pagecontent/reference-implementations-malaysia.md:9
+msgid "Objective"
+msgstr "الهدف"
+
+#: input/pagecontent/reference-implementations-malaysia.md:33
+msgid "Obtain Consent:"
+msgstr "الحصول على الموافقة:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:53
+msgid "Prepare COSE Message:"
+msgstr "إعداد رسالة COSE:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:13
+msgid "Project Overview"
+msgstr "نظرة عامة على المشروع"
+
+#: input/pagecontent/reference-implementations-malaysia.md:6
+msgid "Receiving Country: Kingdom of Saudi Arabia Receiving Application: Care Ware (EMR)"
+msgstr "البلد المستقبِل: المملكة العربية السعودية؛ التطبيق المستقبِل: Care Ware ‏(EMR)"
+
+#: input/pagecontent/reference-implementations-malaysia.md:1
+msgid "Reference implementation by Malaysia on MySejahtera App"
+msgstr "التنفيذ المرجعي لماليزيا على تطبيق MySejahtera"
+
+#: input/pagecontent/reference-implementations-malaysia.md:81
+msgid "Retrieve and Decode VHL Manifest:"
+msgstr "استرجاع بيان VHL وفكّ ترميزه:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:86
+msgid "Retrieve IPS:"
+msgstr "استرجاع IPS:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:67
+msgid "Scan and Decode QR Code:"
+msgstr "مسح رمز QR وفكّ ترميزه:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:61
+msgid "Serialize CWT and Generate QR Code:"
+msgstr "تسلسل CWT وإنشاء رمز QR:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:39
+msgid "Set Passcode:"
+msgstr "تعيين رمز المرور:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:119
+msgid "Snapshots from MySejahtera: :  User flow"
+msgstr "لقطات من MySejahtera: :  مسار المستخدم"
+
+#: input/pagecontent/reference-implementations-malaysia.md:26
+msgid "Standard Passcode and No Time Validity:"
+msgstr "رمز مرور موحَّد ودون مدة صلاحية زمنية:"
+
+#: input/pagecontent/reference-implementations-malaysia.md:113
+msgid "Summary"
+msgstr "الملخص"
+
+#: input/pagecontent/reference-implementations-malaysia.md:110
+msgid "Tabung Haji is the Malaysian Hajj Pilgrims Fund Board, a government-linked financial institution that manages the savings of Muslims in Malaysia intending to perform the Hajj pilgrimage. It provides comprehensive services to pilgrims, including savings schemes, training, logistics, and healthcare services during the Hajj. Tabung Haji works closely with MOH to ensure the well-being of pilgrims, particularly in health-related matters."
+msgstr "Tabung Haji هو مجلس صندوق الحجاج الماليزي، وهو مؤسسة مالية مرتبطة بالحكومة تدير مدخرات المسلمين في ماليزيا الذين يعتزمون أداء فريضة الحج. ويقدّم خدمات شاملة للحجاج، تشمل برامج الادخار والتدريب والخدمات اللوجستية وخدمات الرعاية الصحية خلال الحج. ويعمل Tabung Haji بشكل وثيق مع وزارة الصحة (MOH) لضمان رفاه الحجاج، ولا سيما في المسائل المتعلقة بالصحة."
+
+#: input/pagecontent/reference-implementations-malaysia.md:21
+msgid "The Hajj Health Examination is a comprehensive medical check-up conducted for Malaysian Hajj pilgrims. This examination is a mandatory requirement to ensure that pilgrims are fit for the journey and to identify any underlying health conditions that need to be managed during the Hajj. The examination includes general health assessments, vaccinations, and screenings for infectious diseases. The data from these examinations are recorded in a FHIR compliant electronic medical record (EMR) system called MyVAS and made accessible to pilgrims instantaneously through the MySejahtera app."
+msgstr "الفحص الصحي للحج هو فحص طبي شامل يُجرى للحجاج الماليزيين. ويُعدّ هذا الفحص شرطًا إلزاميًا لضمان لياقة الحجاج للرحلة وللكشف عن أي حالات صحية كامنة يلزم التعامل معها أثناء الحج. ويشمل الفحص تقييمات صحية عامة، والتطعيمات، والتحرّي عن الأمراض المُعدية. وتُسجَّل بيانات هذه الفحوص في نظام سجل طبي إلكتروني (EMR) متوافق مع FHIR يُسمّى MyVAS، وتُتاح للحجاج فورًا عبر تطبيق MySejahtera."
+
+#: input/pagecontent/reference-implementations-malaysia.md:19
+msgid "The health records in this implementation are based on the Hajj Pilgrims Health Examination program conducted for Malaysian Hajj pilgrims. These examinations are conducted by the MOH health facilities and empanelled private general practitioners (GPs) by Tabung Haji across Malaysia."
+msgstr "تستند السجلات الصحية في هذا التنفيذ إلى برنامج الفحص الصحي للحجاج الذي يُجرى للحجاج الماليزيين. وتُجري هذه الفحوصَ المرافقُ الصحية التابعة لوزارة الصحة (MOH) والممارسون العامون من القطاع الخاص المعتمدون لدى Tabung Haji في جميع أنحاء ماليزيا."
+
+#: input/pagecontent/reference-implementations-malaysia.md:106
+msgid "The Ministry of Health Malaysia (MOH) is the government ministry responsible for the health system in Malaysia. MOH is dedicated to improving the health of the population through comprehensive health services, promotion of health awareness, and ensuring access to quality healthcare. The ministry plays a crucial role in implementing health policies, conducting health examinations, and collaborating on international health initiatives."
+msgstr "وزارة الصحة الماليزية (MOH) هي الوزارة الحكومية المسؤولة عن النظام الصحي في ماليزيا. وتكرّس الوزارة جهودها لتحسين صحة السكان من خلال خدمات صحية شاملة، وتعزيز الوعي الصحي، وضمان الوصول إلى رعاية صحية جيدة. وتؤدي الوزارة دورًا محوريًا في تنفيذ السياسات الصحية، وإجراء الفحوص الصحية، والتعاون في المبادرات الصحية الدولية."
+
+#: input/pagecontent/reference-implementations-malaysia.md:11
+msgid "The primary objective of this implementation is to enable Malaysian pilgrims traveling to Saudi Arabia for this year’s Hajj to carry their health records on the MySejahtera app as a Smart Health Certificate QR on the Global Digital Health Certification Network (GDHCN). In the event of an unexpected medical episode, healthcare professionals in Saudi Arabia can scan the QR code, access the medical history, and treat the patients appropriately."
+msgstr "يتمثل الهدف الرئيسي لهذا التنفيذ في تمكين الحجاج الماليزيين المسافرين إلى المملكة العربية السعودية لحج هذا العام من حمل سجلاتهم الصحية على تطبيق MySejahtera في صورة رمز QR لشهادة الصحة الذكية عبر GDHCN ‏(الشبكة العالمية لإصدار الشهادات الصحية الرقمية). وفي حال وقوع حدث طبي غير متوقَّع، يمكن للمهنيين الصحيين في المملكة العربية السعودية مسح رمز QR، والاطلاع على التاريخ الطبي، وعلاج المرضى على النحو المناسب."
+
+#: input/pagecontent/reference-implementations-malaysia.md:117
+msgid "This expanded guide should provide a thorough understanding of the project, its stakeholders, and the technical steps involved, making it easier for all parties to implement and utilize the system effectively."
+msgstr "ينبغي أن يوفّر هذا الدليل الموسَّع فهمًا شاملًا للمشروع وأصحاب المصلحة فيه والخطوات التقنية المعنية، مما ييسّر على جميع الأطراف تنفيذ النظام واستخدامه بفعالية."
+
+#: input/pagecontent/reference-implementations-malaysia.md:115
+msgid "This implementation guide provides detailed steps and considerations for rolling out the Smart Health Certificate QR system for Malaysian Hajj pilgrims. By leveraging the MySejahtera app, the Ministry of Health Malaysia, and Tabung Haji, this initiative aims to enhance the healthcare experience for pilgrims in Saudi Arabia. The use of standardized health records and QR codes ensures that healthcare providers can quickly access essential medical information, facilitating timely and effective medical care during the Hajj."
+msgstr "يقدّم دليل التنفيذ هذا خطوات واعتبارات تفصيلية لطرح نظام رمز QR لشهادة الصحة الذكية للحجاج الماليزيين. ومن خلال الاستفادة من تطبيق MySejahtera ووزارة الصحة الماليزية وTabung Haji، تهدف هذه المبادرة إلى تحسين تجربة الرعاية الصحية للحجاج في المملكة العربية السعودية. ويضمن استخدام السجلات الصحية الموحَّدة ورموز QR تمكّن مقدّمي الرعاية الصحية من الوصول السريع إلى المعلومات الطبية الأساسية، بما ييسّر تقديم رعاية طبية فعّالة وفي الوقت المناسب خلال الحج."
+
+#: input/pagecontent/reference-implementations-malaysia.md:15
+msgid "This project in Malaysia is a collaborative effort by the Ministry of Health (MOH), Malaysia, and Tabung Haji (TH). The aim is to ensure that Malaysian Hajj pilgrims have seamless access to their health records during their pilgrimage, providing peace of mind and better healthcare support during their stay in Saudi Arabia."
+msgstr "هذا المشروع في ماليزيا جهد تعاوني بين وزارة الصحة (MOH) في ماليزيا وTabung Haji ‏(TH). ويهدف إلى ضمان وصول الحجاج الماليزيين بسلاسة إلى سجلاتهم الصحية أثناء رحلة الحج، بما يوفّر لهم الطمأنينة ودعمًا أفضل للرعاية الصحية خلال إقامتهم في المملكة العربية السعودية."
+
+#: input/pagecontent/reference-implementations-malaysia.md:27
+msgid "To facilitate faster check-in at health facilities during the Hajj, the KSA team requested a standard passcode for all Malaysian IPS for Hajj."
+msgstr "لتسهيل تسجيل الدخول بشكل أسرع في المرافق الصحية خلال الحج، طلب فريق المملكة العربية السعودية (KSA) رمز مرور موحَّدًا لجميع ملخصات IPS الماليزية الخاصة بالحج."
+
+#: input/pagecontent/reference-implementations-malaysia.md:30
+msgid "User Journey and implementation steps:"
+msgstr "رحلة المستخدم وخطوات التنفيذ:"

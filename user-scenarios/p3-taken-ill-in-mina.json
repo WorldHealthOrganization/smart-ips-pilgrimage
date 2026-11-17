@@ -1,0 +1,130 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "p3-taken-ill-in-mina",
+  "title": "P3 · Taken ill in Nalemi",
+  "description": "On the second day in Nalemi, in the heat, Kamal feels dizzy and weak. Salmah brings him to the pilgrimage health facility. At registration he opens his wallet and shows Nurse Reem the QR code. Step 3 of the overview of key process flows.",
+  "personas": [
+    "kamal",
+    "salmah",
+    "nurse-reem",
+    "kamal-wallet"
+  ],
+  "partOf": "the-pilgrims-hajj",
+  "follows": "p2-summary-signed",
+  "when": "Second day in Nalemi",
+  "where": "A pilgrimage health facility in Nalemi",
+  "country": "Taifafeki",
+  "trustLadder": "record-trust",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Wide banner, aspect ratio 11:4. Bright natural daylight, soft pastel palette with clear colour accents. Faces in gentle three-quarter view with expressive, kind features. Technology shown as simple, oversized icons: a phone with a QR code, a shield with a check mark, a small speech bubble with a symbol. No readable text, no logos, no real brands, no flags with text. All people are fictional.",
+    "cast": [
+      {
+        "actor": "kamal",
+        "description": "Onesan man, 61, slim, short grey hair, kind face. Batik shirt in Onesa. In Taifafeki, two white pilgrim's garments (unstitched towelling cloth, right shoulder bare when in pilgrim's dress), a small waist pouch and one phone."
+      },
+      {
+        "actor": "salmah",
+        "description": "His wife, about 58. White modest pilgrimage outfit and white telekung-style hijab in Taifafeki; pastel baju kurung and tudung in Onesa."
+      },
+      {
+        "actor": "nurse-reem",
+        "description": "Taifafeki nurse, 30s, navy scrubs, white headscarf."
+      }
+    ],
+    "notes": [
+      "Pilgrim's white garments (two white unstitched sheets) is for men only; women wear ordinary modest clothing, usually white, face and hands uncovered.",
+      "Keep the shrine and other holy sites far in the background or out of frame.",
+      "Keep medical signs text-free so generators don't invent wrong Arabic.",
+      "The picture carries no text: the step title and the caption are page text."
+    ]
+  },
+  "steps": [
+    {
+      "id": "P3",
+      "title": "Taken ill in Nalemi",
+      "headline": "Dizzy in the heat of Nalemi, Kamal is brought to the pilgrimage health facility by Salmah and shows his QR code at registration.",
+      "when": "Second day in Nalemi",
+      "where": "A pilgrimage health facility in Nalemi",
+      "touchpoint": "Registration desk; wallet QR code",
+      "narrative": "On the second day in Nalemi, in the heat, Kamal feels dizzy and weak. Salmah brings him to the pilgrimage health facility. At registration he opens his wallet and shows Nurse Reem the QR code. Step 3 of the overview of key process flows.",
+      "lead": "kamal",
+      "experiences": [
+        {
+          "actor": "kamal",
+          "doing": "Feels dizzy and weak in the heat; opens his wallet at registration and shows the QR code.",
+          "feeling": "“I feel faint. Show them the phone.”",
+          "emotion": -2
+        },
+        {
+          "actor": "salmah",
+          "doing": "Brings him to the facility and helps him find the QR code.",
+          "feeling": "“Thank God we are close to a clinic.”",
+          "emotion": -1
+        },
+        {
+          "actor": "nurse-reem",
+          "doing": "Welcomes them at registration and asks for the QR code.",
+          "feeling": "“A QR code — good, that will be quick.”",
+          "emotion": 0
+        },
+        {
+          "actor": "kamal-wallet",
+          "doing": "Shows the VHL QR code."
+        }
+      ],
+      "painPoint": "A pilgrim who is unwell, far from home, among millions, in a language that is not his own.",
+      "enabler": "The QR code is on the phone he already carries, and works without him explaining anything.",
+      "policy": "What should happen when a pilgrim arrives with no phone, a flat battery, or no QR code?",
+      "handoff": {
+        "summary": "The QR code is shown at registration",
+        "from": "kamal-wallet",
+        "to": "mina-facility-emr",
+        "carrier": "QR code on screen",
+        "payload": "VHL",
+        "offline": true
+      },
+      "realisedBy": [
+        {
+          "process": "input/business-processes/Clinical Encounter for Unplanned Care.bpmn",
+          "tasks": [
+            "Event_1grma6k",
+            "Activity_0yvvi0a",
+            "Activity_00h86kk",
+            "Activity_11ndkqo"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "label": "Business process: Clinical Encounter for Unplanned Care",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/business-processes.html",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/pilgrim/p3.webp",
+        "alt": "In the white tents of Nalemi under a hot sun, Kamal in pilgrim's white garments holds his forehead, dizzy; Salmah supports his arm and Nurse Reem welcomes them at the health facility.",
+        "prompt": "The white tent city of Nalemi at midday: rows of white tents under a hazy hot sky with heat shimmer. Kamal, in white pilgrim's white garments, looks dizzy and pale, one hand at his forehead. Salmah supports his arm and walks him toward a clean pilgrimage health facility, a white building with a plain medical sign and no text, where Nurse Reem waits at the registration desk. A small sun icon with heat waves floats nearby."
+      },
+      "record": {
+        "state": "presented",
+        "description": "He shows the QR code at registration",
+        "heldWhere": "Kamal's phone"
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "tent",
+      "label": "Taken ill in Nalemi"
+    },
+    {
+      "icon": "phone",
+      "label": "Shows his QR code"
+    },
+    {
+      "icon": "hospital",
+      "label": "Registration"
+    }
+  ]
+}

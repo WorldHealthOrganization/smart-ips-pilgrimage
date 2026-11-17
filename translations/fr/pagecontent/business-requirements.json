@@ -1,0 +1,22 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "French translation of input/pagecontent/business-requirements.md. Agent translation, unofficial: no human has adjudicated it. Coverage 9/9.",
+  "label": "trans:fr/pagecontent/business-requirements",
+  "locale": "fr",
+  "sourceFile": "input/pagecontent/business-requirements.md",
+  "sourceHash": "ee54eb59c273",
+  "potFile": "translations/fr/pagecontent/business-requirements.pot",
+  "poFile": "translations/fr/pagecontent/business-requirements.po",
+  "status": {
+    "locale": "fr",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T11:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage fr session)"
+  },
+  "coverage": {
+    "translated": 9,
+    "total": 9,
+    "pct": 100
+  }
+}

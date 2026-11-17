@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of user-scenarios/the-pilgrims-hajj.json. Agent translation, unofficial: no human has adjudicated it. Coverage 9/9.",
+  "label": "trans:es/user-scenarios/the-pilgrims-hajj",
+  "locale": "es",
+  "sourceFile": "user-scenarios/the-pilgrims-hajj.json",
+  "sourceHash": "399420edd94f",
+  "potFile": "translations/es/user-scenarios/the-pilgrims-hajj.pot",
+  "poFile": "translations/es/user-scenarios/the-pilgrims-hajj.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 9,
+    "total": 9,
+    "pct": 100
+  }
+}

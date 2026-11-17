@@ -3,7 +3,7 @@
 title Health Assessment, Consent Counselling,  and Issuance of Smart Health Link
 !include ./style.iuml
 
-actor "Hajj Counselor" as C
+actor "Pilgrimage Counselor" as C
 actor "Pilgrim from\nOrigin Country" as P
 participant "Origin Country\nHealth Wallet" as HW
 participant "Origin Country HIE" as OCHIE
@@ -16,7 +16,7 @@ group Asessment
 end
 
 group Counseling and Consent
-  	C -> P : explain utilization of digital health wallet\nduring Hajj including consent policy 
+  	C -> P : explain utilization of digital health wallet\nduring the pilgrimage including consent policy 
 end
 
 group Issue Verifiable Health Link

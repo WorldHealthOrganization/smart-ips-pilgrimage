@@ -1,6 +1,6 @@
 CodeSystem: IPS.HAJJ.ACTOR
 Title:        "IPS.HAJJ.ACTOR CodeSystem"
-Description:  "CodeSystem for IPS.HAJJ.ACTOR CodeSystem for utilization of IPS during Hajj"
+Description:  "CodeSystem for IPS.HAJJ.ACTOR CodeSystem for utilization of IPS during the pilgrimage"
 
 * ^experimental = true
 * ^caseSensitive = false

@@ -1,0 +1,28 @@
+<!-- Translated (es) by input/scripts/workflow-figure.ts from workflow-figure.html; do not edit.
+ The overview of key process flows, two ways, with a toggle. Both are drawn from the ArchiMate view "Overview of key process flows"
+     (archimate/2.1.0/smart-ips-pilgrimage.archimate, id-59a6185ff9f2580db475ac98b7e1e854, built by archimate/build.py in the layout of
+     input/images/workflow.png):
+     - "As drawn": archimate/pretty.py, in the original figure's style; each pictogram is a role of scenarios/roles.json and opens
+       its IG actor or persona, each numbered circle opens its journey moment;
+     - "ArchiMate": the archimate-pages visualiser's drawing, shown as an image (the IG content QA gate refuses embedded objects); the picture
+       links to the SVG itself, where each box opens its ArchiMate element. -->
+<style>
+.wf-fig .wf-pane{display:none}
+.wf-fig input{position:absolute;opacity:0}
+.wf-fig label{display:inline-block;padding:4px 12px;margin:0 4px 8px 0;border:1px solid #4472C4;border-radius:14px;color:#2F5597;cursor:pointer;font-size:.9em}
+#wf-as-drawn:checked ~ .wf-pane-drawn, #wf-archimate:checked ~ .wf-pane-archimate{display:block}
+#wf-as-drawn:checked ~ label[for=wf-as-drawn], #wf-archimate:checked ~ label[for=wf-archimate]{background:#4472C4;color:#fff}
+</style>
+<figure class="wf-fig" style="margin:0">
+<input type="radio" name="wf-view" id="wf-as-drawn" checked="checked"/>
+<input type="radio" name="wf-view" id="wf-archimate"/>
+<label for="wf-as-drawn">Como se dibujó</label>
+<label for="wf-archimate">ArchiMate</label>
+<div class="wf-pane wf-pane-drawn">{% include workflow-pretty-es.svg %}</div>
+<div class="wf-pane wf-pane-archimate">
+<a href="../archimate/2.1.0/view/id-59a6185ff9f2580db475ac98b7e1e854.svg" title="Abrir la vista ArchiMate por separado, donde cada recuadro enlaza con su elemento ArchiMate">
+<img src="../archimate/2.1.0/view/id-59a6185ff9f2580db475ac98b7e1e854.svg" alt="Panorama general de los flujos de proceso clave, vista ArchiMate" style="width:100%;height:auto"/>
+</a>
+</div>
+<figcaption style="font-size:.85em">Panorama general de los flujos de proceso clave, a partir del <a href="../en/smart-ips-pilgrimage/archimate/2.1.0/view/overview-of-key-process-flows/">modelo ArchiMate</a> de esta guía. Cada imagen es un rol de la guía (su actor o persona), y cada flujo numerado es un momento del <a href="../index.html">recorrido del peregrino</a>.</figcaption>
+</figure>

@@ -1,0 +1,87 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:ar/pagecontent/sequence-diagrams",
+  "locale": "ar",
+  "paths": {
+    "pot": "translations/ar/pagecontent/sequence-diagrams.pot"
+  },
+  "po": "translations/ar/pagecontent/sequence-diagrams.po",
+  "source_hashes": {
+    "pot": "b09053121e8c",
+    "po": "fa447feedd4d"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "b09053121e8c",
+          "po": "fa447feedd4d"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "25bf109948126a02d77fb7ebd5c469ee98fd5934",
+        "metrics": {
+          "translated": 6,
+          "total": 6,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "b09053121e8c",
+          "po": "fa447feedd4d"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "25bf109948126a02d77fb7ebd5c469ee98fd5934",
+        "metrics": {
+          "checked": 6,
+          "missing": 0,
+          "missing_strict": 0,
+          "missing_acronyms": 0,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        }
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "b09053121e8c",
+          "po": "fa447feedd4d"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "25bf109948126a02d77fb7ebd5c469ee98fd5934",
+        "metrics": {
+          "echoed": 0,
+          "translated": 6
+        }
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of input/business-processes/Health Check and Issue SHL.bpmn. Agent translation, unofficial: no human has adjudicated it. Coverage 55/55.",
+  "label": "trans:es/processes/Health Check and Issue SHL",
+  "locale": "es",
+  "sourceFile": "input/business-processes/Health Check and Issue SHL.bpmn",
+  "sourceHash": "3bc4cf736907",
+  "potFile": "translations/es/processes/Health Check and Issue SHL.pot",
+  "poFile": "translations/es/processes/Health Check and Issue SHL.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 55,
+    "total": 55,
+    "pct": 100
+  }
+}

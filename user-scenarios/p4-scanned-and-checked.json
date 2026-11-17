@@ -1,0 +1,145 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "p4-scanned-and-checked",
+  "title": "P4 · Scanned and checked",
+  "description": "Nurse Reem scans the code in the facility's EMR and enters the passcode. The EMR checks the signature with Onesa's public key, fetched from GDHCN: the record really comes from Onesa's HIE and has not been changed. Step 4 and step B of the overview of key process flows.",
+  "personas": [
+    "nurse-reem",
+    "kamal",
+    "salmah",
+    "mina-facility-emr",
+    "who-gdhcn"
+  ],
+  "partOf": "the-pilgrims-hajj",
+  "follows": "p3-taken-ill-in-mina",
+  "when": "Second day in Nalemi",
+  "where": "Registration, pilgrimage health facility, Nalemi",
+  "country": "Taifafeki",
+  "trustLadder": "record-trust",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Wide banner, aspect ratio 11:4. Bright natural daylight, soft pastel palette with clear colour accents. Faces in gentle three-quarter view with expressive, kind features. Technology shown as simple, oversized icons: a phone with a QR code, a shield with a check mark, a small speech bubble with a symbol. No readable text, no logos, no real brands, no flags with text. All people are fictional.",
+    "cast": [
+      {
+        "actor": "kamal",
+        "description": "Onesan man, 61, slim, short grey hair, kind face. Batik shirt in Onesa. In Taifafeki, two white pilgrim's garments (unstitched towelling cloth, right shoulder bare when in pilgrim's dress), a small waist pouch and one phone."
+      },
+      {
+        "actor": "salmah",
+        "description": "His wife, about 58. White modest pilgrimage outfit and white telekung-style hijab in Taifafeki; pastel baju kurung and tudung in Onesa."
+      },
+      {
+        "actor": "nurse-reem",
+        "description": "Taifafeki nurse, 30s, navy scrubs, white headscarf."
+      }
+    ],
+    "notes": [
+      "Pilgrim's white garments (two white unstitched sheets) is for men only; women wear ordinary modest clothing, usually white, face and hands uncovered.",
+      "Keep the shrine and other holy sites far in the background or out of frame.",
+      "Keep medical signs text-free so generators don't invent wrong Arabic.",
+      "The picture carries no text: the step title and the caption are page text."
+    ]
+  },
+  "steps": [
+    {
+      "id": "P4",
+      "title": "Scanned and checked",
+      "headline": "Nurse Reem scans the code and enters the passcode; the EMR checks the signature with Onesa's key from GDHCN.",
+      "when": "Second day in Nalemi",
+      "where": "Registration, pilgrimage health facility, Nalemi",
+      "touchpoint": "Facility EMR with bar code scanner",
+      "narrative": "Nurse Reem scans the code in the facility's EMR and enters the passcode. The EMR checks the signature with Onesa's public key, fetched from GDHCN: the record really comes from Onesa's HIE and has not been changed. Step 4 and step B of the overview of key process flows.",
+      "lead": "nurse-reem",
+      "experiences": [
+        {
+          "actor": "nurse-reem",
+          "doing": "Scans the QR code into the EMR and enters the passcode; sees the signature verified.",
+          "feeling": "“Verified: it really comes from Onesa.”",
+          "emotion": 1
+        },
+        {
+          "actor": "kamal",
+          "doing": "Sits and waits while the code is scanned.",
+          "feeling": "“I hope it works.”",
+          "emotion": -1
+        },
+        {
+          "actor": "salmah",
+          "doing": "Tells Nurse Reem the passcode.",
+          "feeling": "“They knew what to do with it.”",
+          "emotion": 0
+        },
+        {
+          "actor": "mina-facility-emr",
+          "doing": "Decodes the QR code and verifies its signature with Onesa's public key."
+        },
+        {
+          "actor": "who-gdhcn",
+          "doing": "Supplies Onesa's public key."
+        }
+      ],
+      "painPoint": "Without a signature check, the clinic cannot tell a genuine record from a forged or altered one.",
+      "enabler": "The EMR verifies the signature against a key it got from the trust network, with no call to Onesa needed.",
+      "policy": "What protection should the passcode give — and is a passcode shared by every pilgrim of a country a passcode at all?",
+      "handoff": {
+        "summary": "The VHL is verified",
+        "from": "who-gdhcn",
+        "to": "mina-facility-emr",
+        "carrier": "GDHCN trust list",
+        "payload": "Onesa's public key",
+        "offline": false
+      },
+      "realisedBy": [
+        {
+          "process": "input/business-processes/Clinical Encounter for Unplanned Care.bpmn",
+          "tasks": [
+            "Activity_0sfhcs9",
+            "Activity_0isufb9",
+            "Activity_0untwjs",
+            "Activity_0qcvetn",
+            "Activity_0nu4v95"
+          ]
+        }
+      ],
+      "gaps": [
+        "Not yet consistent: the concepts page says the default passcode is the pilgrim's birth date; the reference implementation sets one standard passcode for all its pilgrims for the season.",
+        "The Clinical Encounter for Unplanned Care diagram draws no separate task for entering the passcode."
+      ],
+      "references": [
+        {
+          "label": "Business process: Clinical Encounter for Unplanned Care (scan QR code, add passcode, verify QR code signature)",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/business-processes.html",
+          "rel": "specified by"
+        },
+        {
+          "label": "Reference implementation: the receiving steps",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/reference-implementations-malaysia.html",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/pilgrim/p4.webp",
+        "alt": "Nurse Reem scans the QR code on Kamal's phone; the facility screen shows a passcode and a green shield, while a key comes back from the trust-network globe.",
+        "prompt": "At the registration desk, Nurse Reem holds a scanner to the QR code on Kamal's phone; Kamal sits in white pilgrim's white garments with Salmah beside him. On the facility screen, a passcode keypad icon, then a large shield with a green check mark. A dotted line runs up from the screen to a small floating globe icon (GDHCN), with a key icon returning down it. Reem looks attentive and calm."
+      },
+      "record": {
+        "state": "verified",
+        "description": "The signature is checked against GDHCN's trust list",
+        "heldWhere": "The Nalemi facility's EMR"
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "qr",
+      "label": "Scanned"
+    },
+    {
+      "icon": "globe",
+      "label": "Key from GDHCN"
+    },
+    {
+      "icon": "shield-check",
+      "label": "Signature verified"
+    }
+  ]
+}

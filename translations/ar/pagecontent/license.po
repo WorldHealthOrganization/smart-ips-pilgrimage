@@ -1,0 +1,98 @@
+# Arabic translation of pagecontent/license
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.181Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/license.md:39
+msgid "© 2023 World Health Organization"
+msgstr "© 2023 منظمة الصحة العالمية"
+
+#: input/pagecontent/license.md:11
+msgid "Adapt — remix, transform, and build upon the material for any purpose, even commercially."
+msgstr "التكييف — إعادة مزج المادة وتحويلها والبناء عليها لأي غرض، حتى لو كان تجاريًا."
+
+#: input/pagecontent/license.md:19
+msgid "Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use."
+msgstr "النسبة — يجب عليك إسناد الفضل على نحو مناسب، وتوفير رابط إلى الترخيص، والإشارة إلى ما إذا أُجريت تغييرات. ويمكنك القيام بذلك بأي طريقة معقولة، ولكن ليس بأي طريقة توحي بأن المرخِّص يؤيدك أو يؤيد استخدامك."
+
+#: input/pagecontent/license.md:5
+msgid "Creative Commons Attribution 3.0 IGO license (CC BY 3.0 IGO)"
+msgstr "ترخيص المشاع الإبداعي نَسب المُصنَّف 3.0 للمنظمات الحكومية الدولية (CC BY 3.0 IGO)"
+
+#: input/pagecontent/license.md:31
+msgid "Disclaimer"
+msgstr "إخلاء المسؤولية"
+
+#: input/pagecontent/license.md:21
+msgid "No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits."
+msgstr "لا قيود إضافية — لا يجوز لك تطبيق شروط قانونية أو تدابير تقنية تقيّد الآخرين قانونيًا من القيام بأي شيء يسمح به الترخيص."
+
+#: input/pagecontent/license.md:27
+msgid "No warranties are given. The license may not give you all the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material."
+msgstr "لا تُقدَّم أي ضمانات. وقد لا يمنحك الترخيص جميع الأذونات اللازمة للاستخدام الذي تعتزمه. فعلى سبيل المثال، قد تحدّ حقوق أخرى، مثل حقوق الدعاية أو الخصوصية أو الحقوق المعنوية، من كيفية استخدامك للمادة."
+
+#: input/pagecontent/license.md:23
+msgid "Notices:"
+msgstr "ملاحظات:"
+
+#: input/pagecontent/license.md:9
+msgid "Share — copy and redistribute the material in any medium or format"
+msgstr "المشاركة — نسخ المادة وإعادة توزيعها بأي وسيط أو صيغة"
+
+#: input/pagecontent/license.md:33
+msgid "The designations employed and the presentation of material on this map do not imply the expression of any opinion whatsoever on the part of Creative Commons or its partner organizations concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries."
+msgstr "لا تعني التسميات المستخدمة وطريقة عرض المادة في هذه الخريطة التعبير عن أي رأي كان من جانب منظمة المشاع الإبداعي (Creative Commons) أو المنظمات الشريكة لها بشأن الوضع القانوني لأي بلد أو إقليم أو مدينة أو منطقة أو لسلطاتها، أو بشأن تعيين تخومها أو حدودها."
+
+#: input/pagecontent/license.md:15
+msgid "The licensor cannot revoke these freedoms as long as you follow the license terms."
+msgstr "لا يمكن للمرخِّص إلغاء هذه الحريات ما دمت تلتزم بشروط الترخيص."
+
+#: input/pagecontent/license.md:29
+msgid "This is a human-readable summary of (and not a substitute for) the <a0>license</a0>."
+msgstr "هذا ملخص قابل للقراءة البشرية (وليس بديلًا عن) <a0>الترخيص</a0>."
+
+#: input/pagecontent/license.md:13
+msgid "This license is acceptable for Free Cultural Works."
+msgstr "هذا الترخيص مقبول للأعمال الثقافية الحرة."
+
+#: input/pagecontent/license.md:35
+msgid "This work is licensed under the Creative Commons Attribution 3.0 IGO license (CC BY 3.0 IGO)"
+msgstr "هذا العمل مرخَّص بموجب ترخيص المشاع الإبداعي نَسب المُصنَّف 3.0 للمنظمات الحكومية الدولية (CC BY 3.0 IGO)"
+
+#: input/pagecontent/license.md:37
+msgid "To view a copy of this license, visit <a0>https://creativecommons.org/licenses/by/3.0/igo/</a0>"
+msgstr "للاطلاع على نسخة من هذا الترخيص، تفضّل بزيارة <a0>https://creativecommons.org/licenses/by/3.0/igo/</a0>"
+
+#: input/pagecontent/license.md:17
+msgid "Under the following terms:"
+msgstr "بموجب الشروط التالية:"
+
+#: input/pagecontent/license.md:7
+msgid "You are free to:"
+msgstr "يحق لك:"
+
+#: input/pagecontent/license.md:25
+msgid "You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation."
+msgstr "لا يلزمك الامتثال للترخيص فيما يخص عناصر المادة الواقعة في الملك العام أو حيثما يكون استخدامك مسموحًا به بموجب استثناء أو قيد معمول به."

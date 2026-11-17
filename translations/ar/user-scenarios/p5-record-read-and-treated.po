@@ -1,0 +1,200 @@
+# Arabic translation of user scenario p5-record-read-and-treated
+#
+# UNOFFICIAL — drafted by an agent from the template beside it. No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# requirement ids, placeholders, numbers and URLs are kept as written;
+# persona names are fictional and kept as written. Modern Standard Arabic,
+# right-to-left. msgctxt is the scenario field path.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: p5-record-read-and-treated\n"
+"POT-Creation-Date: 2026-11-10T20:12:07.196Z\n"
+"PO-Revision-Date: 2026-11-07\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: user-scenarios/p5-record-read-and-treated.json:17
+msgctxt "country"
+msgid "Taifafeki"
+msgstr "Taifafeki"
+
+#: user-scenarios/p5-record-read-and-treated.json:5
+msgctxt "description"
+msgid "The EMR follows the link to Onesa's HIE and retrieves Kamal's summary. Dr Faisal sees the insulin and the penicillin allergy before he treats him for heat exhaustion and low blood sugar. The EMR keeps a rendered copy of the summary with the record of the visit. Step 5 of the overview of key process flows."
+msgstr "يتتبّع EMR الرابط إلى HIE الخاص بـ Onesa ويسترجع ملخص Kamal. ويرى د. Faisal الإنسولين والحساسية من البنسلين قبل أن يعالجه من الإنهاك الحراري وانخفاض سكر الدم. ويحتفظ EMR بنسخة معروضة من الملخص مع سجل الزيارة. الخطوة 5 من النظرة العامة على تدفقات العمليات الرئيسية."
+
+#: user-scenarios/p5-record-read-and-treated.json:154
+msgctxt "scene.label"
+msgid "His summary"
+msgstr "ملخصه"
+
+#: user-scenarios/p5-record-read-and-treated.json:150
+msgctxt "scene.label"
+msgid "Link to Onesa's HIE"
+msgstr "رابط إلى HIE الخاص بـ Onesa"
+
+#: user-scenarios/p5-record-read-and-treated.json:158
+msgctxt "scene.label"
+msgid "Treated safely"
+msgstr "علاج آمن"
+
+#: user-scenarios/p5-record-read-and-treated.json:81
+msgctxt "step.enabler"
+msgid "The summary is fetched from home through the link, under the consent Kamal gave, and kept as a rendered copy with the visit."
+msgstr "يُجلب الملخص من البلد الأم عبر الرابط، بموجب الموافقة التي قدّمها Kamal، ويُحتفظ به نسخةً معروضة مع الزيارة."
+
+#: user-scenarios/p5-record-read-and-treated.json:77
+msgctxt "step.experiences.doing"
+msgid "Checks the request against Kamal's consent and returns the folder and the IPS."
+msgstr "يطابق الطلب مع موافقة Kamal ويُعيد المجلد وIPS."
+
+#: user-scenarios/p5-record-read-and-treated.json:55
+msgctxt "step.experiences.doing"
+msgid "Reads the summary, sees the insulin and the penicillin allergy, and treats heat exhaustion and low blood sugar."
+msgstr "يقرأ الملخص، ويرى الإنسولين والحساسية من البنسلين، ويعالج الإنهاك الحراري وانخفاض سكر الدم."
+
+#: user-scenarios/p5-record-read-and-treated.json:61
+msgctxt "step.experiences.doing"
+msgid "Recovers on a drip."
+msgstr "يتعافى على محلول وريدي."
+
+#: user-scenarios/p5-record-read-and-treated.json:73
+msgctxt "step.experiences.doing"
+msgid "Retrieves the VHL folder and the IPS from Onesa's HIE, verifies the IPS, and keeps a rendered copy with the visit."
+msgstr "يسترجع مجلد VHL وIPS من HIE الخاص بـ Onesa، ويتحقق من IPS، ويحتفظ بنسخة معروضة مع الزيارة."
+
+#: user-scenarios/p5-record-read-and-treated.json:67
+msgctxt "step.experiences.doing"
+msgid "Sits beside him, relieved."
+msgstr "تجلس بجانبه، مرتاحة."
+
+#: user-scenarios/p5-record-read-and-treated.json:62
+msgctxt "step.experiences.feeling"
+msgid "“I did not have to explain a thing.”"
+msgstr "«لم يكن عليّ أن أشرح أي شيء.»"
+
+#: user-scenarios/p5-record-read-and-treated.json:56
+msgctxt "step.experiences.feeling"
+msgid "“Insulin, and allergic to penicillin. Glad I know before I start.”"
+msgstr "«إنسولين، وحساسية من البنسلين. يسعدني أنني عرفت قبل أن أبدأ.»"
+
+#: user-scenarios/p5-record-read-and-treated.json:68
+msgctxt "step.experiences.feeling"
+msgid "“They knew about his sugar straight away.”"
+msgstr "«عرفوا بأمر السكر لديه على الفور.»"
+
+#: user-scenarios/p5-record-read-and-treated.json:111
+msgctxt "step.gaps"
+msgid "The summary is in the language it was written in; nothing says how a Taifafeki clinician reads a summary written in Onesan."
+msgstr "الملخص مكتوب باللغة التي حُرِّر بها؛ ولا شيء يبيّن كيف يقرأ ممارس سريري من Taifafeki ملخصًا مكتوبًا بلغة Onesa."
+
+#: user-scenarios/p5-record-read-and-treated.json:87
+msgctxt "step.handoff.carrier"
+msgid "HTTPS (VHL retrieval) across the border"
+msgstr "HTTPS (استرجاع VHL) عبر الحدود"
+
+#: user-scenarios/p5-record-read-and-treated.json:88
+msgctxt "step.handoff.payload"
+msgid "VHL folder (List) and the IPS Bundle"
+msgstr "مجلد VHL ‏(List) و`Bundle` الخاص بـ IPS"
+
+#: user-scenarios/p5-record-read-and-treated.json:84
+msgctxt "step.handoff.summary"
+msgid "Kamal is treated, and a rendered copy is kept with the visit"
+msgstr "يُعالَج Kamal، ويُحتفظ بنسخة معروضة مع الزيارة"
+
+#: user-scenarios/p5-record-read-and-treated.json:46
+msgctxt "step.headline"
+msgid "The EMR retrieves Kamal's summary from Onesa; Dr Faisal sees the insulin and the penicillin allergy before he treats him."
+msgstr "يسترجع EMR ملخص Kamal من Onesa؛ فيرى الدكتور Faisal الأنسولين والحساسية من البنسلين قبل أن يعالجه."
+
+#: user-scenarios/p5-record-read-and-treated.json:137
+msgctxt "step.illustration.alt"
+msgid "Kamal lies recovering on a bed with a drip, Salmah beside him; Dr Faisal shows a tablet with an insulin pen, a crossed-out penicillin capsule and a heart, read from the record kept in Onesa."
+msgstr "يرقد Kamal متعافيًا على سرير موصولًا بمحلول وريدي، وإلى جانبه Salmah؛ ويعرض د. Faisal جهازًا لوحيًا عليه قلم إنسولين وكبسولة بنسلين مشطوبة وقلب، مقروءة من السجل المحفوظ في Onesa."
+
+#: user-scenarios/p5-record-read-and-treated.json:5
+msgctxt "step.narrative"
+msgid "The EMR follows the link to Onesa's HIE and retrieves Kamal's summary. Dr Faisal sees the insulin and the penicillin allergy before he treats him for heat exhaustion and low blood sugar. The EMR keeps a rendered copy of the summary with the record of the visit. Step 5 of the overview of key process flows."
+msgstr "يتتبّع EMR الرابط إلى HIE الخاص بـ Onesa ويسترجع ملخص Kamal. ويرى د. Faisal الإنسولين والحساسية من البنسلين قبل أن يعالجه من الإنهاك الحراري وانخفاض سكر الدم. ويحتفظ EMR بنسخة معروضة من الملخص مع سجل الزيارة. الخطوة 5 من النظرة العامة على تدفقات العمليات الرئيسية."
+
+#: user-scenarios/p5-record-read-and-treated.json:80
+msgctxt "step.painPoint"
+msgid "Treating without knowing the insulin or the penicillin allergy risks a dangerous mistake."
+msgstr "العلاج دون معرفة الإنسولين أو الحساسية من البنسلين ينطوي على خطر ارتكاب خطأ جسيم."
+
+#: user-scenarios/p5-record-read-and-treated.json:82
+msgctxt "step.policy"
+msgid "Does Onesa learn that Kamal's record was opened in Taifafeki, and by whom?"
+msgstr "هل تعلم Onesa أن سجل Kamal قد فُتح في Taifafeki، ومَن فتحه؟"
+
+#: user-scenarios/p5-record-read-and-treated.json:142
+msgctxt "step.record.description"
+msgid "Dr Faisal reads it and treats him; a rendered copy stays with the visit"
+msgstr "يقرؤه د. Faisal ويعالجه؛ وتبقى نسخة معروضة مع الزيارة"
+
+#: user-scenarios/p5-record-read-and-treated.json:143
+msgctxt "step.record.heldWhere"
+msgid "The Nalemi facility's EMR"
+msgstr "EMR المرفق الصحي في Nalemi"
+
+#: user-scenarios/p5-record-read-and-treated.json:125
+msgctxt "step.references.label"
+msgid "Host Country EMR: keeps a rendered copy"
+msgstr "EMR البلد المضيف: يحتفظ بنسخة معروضة"
+
+#: user-scenarios/p5-record-read-and-treated.json:130
+msgctxt "step.references.label"
+msgid "Test case: View IPS content"
+msgstr "حالة اختبار: عرض محتوى IPS"
+
+#: user-scenarios/p5-record-read-and-treated.json:120
+msgctxt "step.references.label"
+msgid "Transaction: retrieve IPS"
+msgstr "المعاملة: استرجاع IPS"
+
+#: user-scenarios/p5-record-read-and-treated.json:115
+msgctxt "step.references.label"
+msgid "Transaction: retrieve VHL folder"
+msgstr "المعاملة: استرجاع مجلد VHL"
+
+#: user-scenarios/p5-record-read-and-treated.json:4
+msgctxt "step.title"
+msgid "His record is read and he is treated"
+msgstr "قراءة سجله وتلقّيه العلاج"
+
+#: user-scenarios/p5-record-read-and-treated.json:49
+msgctxt "step.touchpoint"
+msgid "Facility EMR"
+msgstr "EMR المرفق الصحي"
+
+#: user-scenarios/p5-record-read-and-treated.json:15
+msgctxt "step.when"
+msgid "Second day in Nalemi"
+msgstr "اليوم الثاني في Nalemi"
+
+#: user-scenarios/p5-record-read-and-treated.json:16
+msgctxt "step.where"
+msgid "Treatment bay, pilgrimage health facility, Nalemi"
+msgstr "حجرة العلاج، المرفق الصحي للزيارة الدينية، Nalemi"
+
+#: user-scenarios/p5-record-read-and-treated.json:4
+msgctxt "title"
+msgid "P5 · His record is read and he is treated"
+msgstr "P5 · قراءة سجله وعلاجه"
+
+#: user-scenarios/p5-record-read-and-treated.json:15
+msgctxt "when"
+msgid "Second day in Nalemi"
+msgstr "اليوم الثاني في Nalemi"
+
+#: user-scenarios/p5-record-read-and-treated.json:16
+msgctxt "where"
+msgid "Treatment bay, pilgrimage health facility, Nalemi"
+msgstr "حجرة العلاج، المرفق الصحي للزيارة الدينية، Nalemi"

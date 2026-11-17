@@ -1,0 +1,88 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:es/pagecontent/adapting",
+  "locale": "es",
+  "paths": {
+    "pot": "translations/es/pagecontent/adapting.pot"
+  },
+  "po": "translations/es/pagecontent/adapting.po",
+  "source_hashes": {
+    "pot": "3410c24285b5",
+    "po": "a99532483fdf"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "3410c24285b5",
+          "po": "a99532483fdf"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "4d23e65a44f6414371130eb3dc924020fd3a2767",
+        "metrics": {
+          "translated": 7,
+          "total": 7,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "3410c24285b5",
+          "po": "a99532483fdf"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "4d23e65a44f6414371130eb3dc924020fd3a2767",
+        "metrics": {
+          "checked": 7,
+          "missing": 0,
+          "missing_strict": 0,
+          "missing_acronyms": 0,
+          "glossary_broken": 0,
+          "glossary_resolved": 5
+        },
+        "notes": "5 further acronym(s) are absent verbatim and the glossary accounts for each: WHO — rendered as \"OMS\", as the glossary pins it; WHO — rendered as \"OMS\", as the glossary pins it; WHO — rendered as \"OMS\", as the glossary pins it; WHO — rendered as \"OMS\", as the glossary pins it; WHO — rendered as \"OMS\", as the glossary pins it."
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "3410c24285b5",
+          "po": "a99532483fdf"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "4d23e65a44f6414371130eb3dc924020fd3a2767",
+        "metrics": {
+          "echoed": 0,
+          "translated": 7
+        }
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

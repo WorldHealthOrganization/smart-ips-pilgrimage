@@ -5,7 +5,7 @@ hide footbox
 
 title Overall Sequence Diagram for Religious Pilgrimage and IPS
 
-actor "Hajj Counselor" as C
+actor "Pilgrimage Counselor" as C
 actor "Pilgrim from\nOrigin Country" as P
 participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE

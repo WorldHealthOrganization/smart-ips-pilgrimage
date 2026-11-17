@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn. Agent translation, unofficial: no human has adjudicated it. Coverage 29/29.",
+  "label": "trans:es/processes/Clinical Encounter for Unplanned Care (brief)",
+  "locale": "es",
+  "sourceFile": "input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn",
+  "sourceHash": "420a05dc5fb4",
+  "potFile": "translations/es/processes/Clinical Encounter for Unplanned Care (brief).pot",
+  "poFile": "translations/es/processes/Clinical Encounter for Unplanned Care (brief).po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 29,
+    "total": 29,
+    "pct": 100
+  }
+}

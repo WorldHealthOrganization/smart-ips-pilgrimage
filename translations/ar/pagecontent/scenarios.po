@@ -1,0 +1,125 @@
+# Arabic translation of pagecontent/scenarios
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.194Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/scenarios.md:10
+msgid "As examples, the scenarios identify: key data elements that need to be recorded and/or calculated; decision-support logic that can be automated in the system; key functional and non-functional requirements that should be included in the system, and adolescent-specific considerations that should be accounted for."
+msgstr "على سبيل المثال، تحدد السيناريوهات: عناصر البيانات الرئيسية التي يلزم تسجيلها و/أو حسابها؛ ومنطق دعم القرار الذي يمكن أتمتته في النظام؛ والمتطلبات الوظيفية وغير الوظيفية الرئيسية التي ينبغي تضمينها في النظام؛ والاعتبارات الخاصة بالمراهقين التي ينبغي مراعاتها."
+
+#: input/pagecontent/scenarios.md:42
+msgid "Break The Glass Clinical Encounter"
+msgstr "اللقاء السريري بكسر الزجاج"
+
+#: input/pagecontent/scenarios.md:37
+msgid "Clinical Encounter for Unplanned Care"
+msgstr "اللقاء السريري للرعاية غير المخطط لها"
+
+#: input/pagecontent/scenarios.md:17
+msgid "Described in the <a0>SMART Trust</a0> framework of the GDHCN where by a GDHCN Participant provides public keys to the WHO GDHCN Trust Network Gateway that can be used for signing health documents, in particular the <a1>International Patient Summary (IPS)</a1>.  The Trust Domain that will be used for this set of scenarios is ips-pilgrimage"
+msgstr "موصوف في إطار <a0>SMART Trust</a0> التابع لـ GDHCN، حيث يقدّم مشارك في GDHCN مفاتيح عمومية إلى بوابة شبكة الثقة GDHCN التابعة لمنظمة الصحة العالمية (WHO) يمكن استخدامها لتوقيع المستندات الصحية، ولا سيما <a1>ملخص المريض الدولي (IPS)</a1>. ونطاق الثقة الذي سيُستخدم لهذه المجموعة من السيناريوهات هو ips-pilgrimage"
+
+#: input/pagecontent/scenarios.md:6
+msgid "How to interpret user scenarios"
+msgstr "كيفية تفسير سيناريوهات المستخدم"
+
+#: input/pagecontent/scenarios.md:26
+msgid "IHE profile <a0>Sharing Value Sets and Concept Maps (SVCM)</a0> (Recommended)"
+msgstr "ملف تعريف IHE <a0>مشاركة مجموعات القيم وخرائط المفاهيم (SVCM)</a0> (موصى به)"
+
+#: input/pagecontent/scenarios.md:33
+msgid "Issuance of Health Document at Origin Country"
+msgstr "إصدار المستند الصحي في بلد المنشأ"
+
+#: input/pagecontent/scenarios.md:14
+msgid "National HIE"
+msgstr "منصة HIE الوطنية"
+
+#: input/pagecontent/scenarios.md:29
+msgid "Once shared to the WHO Terminology Service, these terminologies should be retrievable from the Host Country EMR via the IHE SCVM profile."
+msgstr "بعد مشاركة هذه المصطلحات مع خدمة المصطلحات التابعة لمنظمة الصحة العالمية (WHO)، ينبغي أن يكون من الممكن استرجاعها من EMR البلد المضيف عبر ملف تعريف IHE SCVM."
+
+#: input/pagecontent/scenarios.md:12
+msgid "Publication of National Public Keys for Verification"
+msgstr "نشر المفاتيح العمومية الوطنية لأغراض التحقق"
+
+#: input/pagecontent/scenarios.md:21
+msgid "Publication of National Terminologies"
+msgstr "نشر المصطلحات الوطنية"
+
+#: input/pagecontent/scenarios.md:13
+msgid "Services"
+msgstr "الخدمات"
+
+#: input/pagecontent/scenarios.md:27
+msgid "Sharing of tabular data"
+msgstr "مشاركة البيانات الجدولية"
+
+#: input/pagecontent/scenarios.md:4
+msgid "The user scenarios are only illustrative and are intended to give an idea of a typical workflow."
+msgstr "سيناريوهات المستخدم توضيحية فقط، ويُقصد بها إعطاء فكرة عن سير عمل نموذجي."
+
+#: input/pagecontent/scenarios.md:25
+msgid "These terminologies should be shared from the National HIE to the WHO Terminology Service."
+msgstr "ينبغي مشاركة هذه المصطلحات من منصة HIE الوطنية مع خدمة المصطلحات التابعة لمنظمة الصحة العالمية (WHO)."
+
+#: input/pagecontent/scenarios.md:39
+msgid "This is a \"Phase 1\" scenario in which a Pilgrim in a Host Country has need to seek care from a Host Country Health Worker. The pilgrim mediates exchange by showing the QR code issued by their Origin Country.  The Host Country EMR uses the QR code to access the National IHE to retrieve the patient summary (IPS)."
+msgstr "هذا سيناريو من «المرحلة 1» يحتاج فيه زائر في البلد المضيف إلى طلب الرعاية من عامل صحي في البلد المضيف. ويتوسط الزائر في التبادل بإبراز رمز QR الصادر عن بلد منشئه. ويستخدم EMR البلد المضيف رمز QR للوصول إلى IHE الوطني لاسترجاع ملخص المريض (IPS)."
+
+#: input/pagecontent/scenarios.md:34
+msgid "This is a \"Phase 1\" scenario in which the Origin Country conducts a health assessment for the Pilgrim, obtains consent for eligible pilgrims and issues QR Codes (Smart Health Link) that embeds their patient summary as a IPS. The QR code might be issues on a national health wallet or printed QR code."
+msgstr "هذا سيناريو من «المرحلة 1» يُجري فيه بلد المنشأ تقييمًا صحيًا للزائر، ويحصل على موافقة الزوار المؤهَّلين، ويُصدر رموز QR (رابط صحي ذكي) تتضمن ملخص المريض الخاص بهم في صورة IPS. وقد يُصدَر رمز QR في محفظة صحية وطنية أو رمزَ QR مطبوعًا."
+
+#: input/pagecontent/scenarios.md:44
+msgid "This is a \"Phase 2\" scenario in which a Pilgrim in a Host Country is not conscious and must receive emergency care.  The Host Country Health Worker accesses the patient summary via the Pilgrimage Registration Number.   Prior to this emergency care encounter, the Pilgrim would have registered their consent to provide access to their record either through the National Health Wallet App or through the National Pilgrimage Authority."
+msgstr "هذا سيناريو من «المرحلة 2» يكون فيه زائر في البلد المضيف فاقدًا للوعي ويجب أن يتلقى رعاية طارئة. ويصل العامل الصحي في البلد المضيف إلى ملخص المريض عبر رقم تسجيل الزيارة الدينية. وقبل لقاء الرعاية الطارئة هذا، يكون الزائر قد سجّل موافقته على إتاحة الوصول إلى سجله إما عبر تطبيق المحفظة الصحية الوطنية أو عبر الهيئة الوطنية للزيارة الدينية."
+
+#: input/pagecontent/scenarios.md:22
+msgid "This process for sharing National Code Systems and Value Sets that are utilized in a National HIE's profile of the IPS.  Standardized code systems should be utilized wherever possible but this recognizes that National Code Systems may be necessary, particularly for coding of medication terminologies.  The primary goal, at least in the first phases of sharing the terminologies is not semantic interoperability between a National HIE and Host Country EMR, rather it is  to support the Host Country Health Worker to review the IPS."
+msgstr "هذه العملية مخصصة لمشاركة أنظمة الترميز ومجموعات القيم الوطنية المستخدمة في ملف تعريف IPS لدى منصة HIE وطنية. وينبغي استخدام أنظمة الترميز الموحدة حيثما أمكن، غير أن هذا يقرّ بأن أنظمة الترميز الوطنية قد تكون ضرورية، ولا سيما لترميز مصطلحات الأدوية. والهدف الأساسي، على الأقل في المراحل الأولى من مشاركة المصطلحات، ليس قابلية التشغيل البيني الدلالية بين منصة HIE وطنية وEMR البلد المضيف، بل دعم العامل الصحي في البلد المضيف في مراجعة IPS."
+
+#: input/pagecontent/scenarios.md:31
+msgid "This process is a both a pre-condition for the user scenario 3.0, 4.0 and 5.0 as well as a routine process at any point relevant terminologies are updated."
+msgstr "هذه العملية شرط مسبق لسيناريوهات المستخدم 3.0 و4.0 و5.0، وهي كذلك عملية روتينية في أي وقت تُحدَّث فيه المصطلحات ذات الصلة."
+
+#: input/pagecontent/scenarios.md:19
+msgid "This process is a both a pre-condition for the user scenario 3.0, 4.0, and 5.0 as well as a routine process at any point relevant encryption key material is updated."
+msgstr "هذه العملية شرط مسبق لسيناريوهات المستخدم 3.0 و4.0 و5.0، وهي كذلك عملية روتينية في أي وقت تُحدَّث فيه مواد مفاتيح التشفير ذات الصلة."
+
+#: input/pagecontent/scenarios.md:8
+msgid "User scenarios can be helpful tools not only to better understand the context in which a digital tool would operate, but also for some insights into what key data elements would need to be recorded and accounted for in the database. Additionally, the context in which the tool would operate, illuminated by the user scenarios, provides insight into some functional and non-functional requirements that the system would also need."
+msgstr "يمكن أن تكون سيناريوهات المستخدم أدوات مفيدة لا لفهم السياق الذي ستعمل فيه الأداة الرقمية فهمًا أفضل فحسب، بل أيضًا لاستخلاص بعض الرؤى بشأن عناصر البيانات الرئيسية التي يلزم تسجيلها ومراعاتها في قاعدة البيانات. وفضلًا عن ذلك، فإن السياق الذي ستعمل فيه الأداة، كما تُبرزه سيناريوهات المستخدم، يقدّم رؤى بشأن بعض المتطلبات الوظيفية وغير الوظيفية التي سيحتاج إليها النظام أيضًا."
+
+#: input/pagecontent/scenarios.md:15
+msgid "WHO GDHCN"
+msgstr "GDHCN التابعة لمنظمة الصحة العالمية (WHO)"
+
+#: input/pagecontent/scenarios.md:1
+msgid "The scenarios below, told as one pilgrim's story: <a0>the home page</a0> follows a fictional Onesan pilgrim through every step of the key process flows, with the question each step raises."
+msgstr "السيناريوهات أدناه مرويّةً بوصفها قصة زائر واحد: تتبع <a0>الصفحة الرئيسية</a0> زائرًا خياليًا من Onesa عبر كل خطوة من تدفقات العمليات الرئيسية، مع السؤال الذي تثيره كل خطوة."
+
+#~ msgid "The scenarios below, told as one pilgrim's story: <a0>The Pilgrim's Journey</a0> follows a fictional Malaysian pilgrim through every step of the key process flows, with the question each step raises."
+#~ msgstr "السيناريوهات أدناه مرويّةً بوصفها قصة حاج واحد: تتبع <a0>رحلة الحاج</a0> حاجًا ماليزيًا خياليًا عبر كل خطوة من تدفقات العمليات الرئيسية، مع السؤال الذي تثيره كل خطوة."

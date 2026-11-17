@@ -1,0 +1,94 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:fr/pagecontent/system-actors",
+  "locale": "fr",
+  "paths": {
+    "pot": "translations/fr/pagecontent/system-actors.pot"
+  },
+  "po": "translations/fr/pagecontent/system-actors.po",
+  "source_hashes": {
+    "pot": "d41d3367e5ab",
+    "po": "8e46da676053"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "d41d3367e5ab",
+          "po": "8e46da676053"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "translated": 4,
+          "total": 4,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "d41d3367e5ab",
+          "po": "8e46da676053"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "severity": "minor",
+        "evidence": [
+          {
+            "text": "EMR — absent from: \"DME du pays d'accueil {#hcemr}\""
+          }
+        ],
+        "metrics": {
+          "checked": 4,
+          "missing": 1,
+          "missing_strict": 0,
+          "missing_acronyms": 1,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        },
+        "notes": "1 acronym(s) from the source do not appear verbatim in the translation and no glossary entry speaks for them. That is right for one the target language localises — WHO is OMS in French — and wrong for one silently dropped, and this check cannot tell the two apart. Add them to translations/fr/glossary.po: a pinned msgstr says what the term must become, and a \"#, localised\" flag says it is rendered in the target language without pinning how."
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "d41d3367e5ab",
+          "po": "8e46da676053"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "echoed": 0,
+          "translated": 4
+        }
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

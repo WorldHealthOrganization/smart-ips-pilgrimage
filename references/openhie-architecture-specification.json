@@ -1,0 +1,13 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "openhie-architecture-specification",
+  "type": "webpage",
+  "title": "Open Health Information Exchange (OpenHIE) Specification and Architecture",
+  "author": [
+    {
+      "literal": "OpenHIE"
+    }
+  ],
+  "URL": "https://guides.ohie.org/arch-spec/architecture-specification/overview-of-the-architecture",
+  "provenance": "authored"
+}

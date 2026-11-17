@@ -1,0 +1,86 @@
+# Arabic translation of pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.200Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:9
+msgid "Base64urlencoded"
+msgstr "مُرمَّز بـ Base64url"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:12
+msgid "Build COSE Payload including the HCERT and sign with private key using Kid"
+msgstr "بناء حمولة COSE التي تتضمن HCERT والتوقيع بالمفتاح الخاص باستخدام Kid"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:13
+msgid "Build CWT with header payload and signature"
+msgstr "بناء CWT يتضمن الترويسة والحمولة والتوقيع"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:11
+msgid "Build HCERT containing SHL generated in previous step"
+msgstr "بناء HCERT يتضمن SHL المُولَّد في الخطوة السابقة"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:7
+msgid "Construct <a0>SHLink Payload</a0>"
+msgstr "إنشاء <a0>حمولة SHLink</a0>"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:6
+msgid "Establish a location that points to the document references within the folder for the pilgrim in the following syntax: \"{host}/List?_id={folder_id}&_include=List:item\" where 'folder_id' is a unique ID for the folder of health documents for the pilfrim. This shall be used as the Health Link URL within the VHL Payload"
+msgstr "إنشاء موقع يشير إلى مراجع المستندات داخل المجلد الخاص بالزائر وفق الصيغة التالية: «{host}/List?_id={folder_id}&_include=List:item» حيث يمثّل 'folder_id' معرّفًا فريدًا لمجلد المستندات الصحية الخاص بالزائر. ويجب استخدام ذلك بوصفه URL الرابط الصحي ضمن حمولة VHL"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:15
+msgid "Generate QR code"
+msgstr "توليد رمز QR"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:3
+msgid "IPS document in FHIR or PDF or both"
+msgstr "مستند IPS بصيغة FHIR أو PDF أو كلتيهما"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:8
+msgid "Minified"
+msgstr "مُصغَّر"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:10
+msgid "Prefixed with shlink:/"
+msgstr "مسبوق بالبادئة shlink:/"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:14
+msgid "Serialize the CWT and using Base64"
+msgstr "سَلسَلة CWT باستخدام Base64"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:4
+msgid "Signed IPS document as DSG jws JSON object for each document included in the folder"
+msgstr "مستند IPS موقَّع بوصفه كائن JSON من نوع DSG jws لكل مستند مدرج في المجلد"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:5
+msgid "The <a0>SHL specifications</a0>shall be followed to create a SMART Health Link which is then wrapped in <a1>HCERT structure</a1> and shared as a <a2>CWT structure</a2>, by following the below steps:"
+msgstr "يجب اتباع <a0>مواصفات SHL</a0> لإنشاء رابط SMART الصحي، الذي يُغلَّف بعد ذلك في <a1>بنية HCERT</a1> ويُشارَك بوصفه <a2>بنية CWT</a2>، باتباع الخطوات أدناه:"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:1
+msgid "The following are the expected actions for the <a0>Origin Country HIE</a0> once it receives the privacy configuration:"
+msgstr "فيما يلي الإجراءات المتوقعة من <a0>HIE البلد الأم</a0> فور استلامه ضبط الخصوصية:"
+
+#: input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md:2
+msgid "The Origin Country HIE creates a <a0>Folder</a0> for the pilgrim that includes the pilgrim's"
+msgstr "ينشئ HIE البلد الأم <a0>مجلدًا</a0> للزائر يتضمن ما يلي الخاص بالزائر:"

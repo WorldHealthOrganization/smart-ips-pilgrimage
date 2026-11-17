@@ -1,0 +1,38 @@
+{
+  "$schema": "folio-code-list/v1",
+  "id": "record-trust",
+  "title": "How far a pilgrim's health summary can be trusted abroad",
+  "description": "The ordered states of Kamal's International Patient Summary along the pilgrim's journey, from held at home to read and used in the host country. Each state includes the ones before it. The journeys viewer draws it as the trust ladder (\"Follow the record\").",
+  "codes": [
+    {
+      "code": "held-at-home",
+      "label": "Held at home",
+      "definition": "In Onesa's health information exchange; nothing is shared."
+    },
+    {
+      "code": "consented",
+      "label": "Consented",
+      "definition": "Kamal has agreed to share his summary for the pilgrimage."
+    },
+    {
+      "code": "signed",
+      "label": "Signed",
+      "definition": "Assembled, signed with a key GDHCN trusts, and in his wallet as a QR code."
+    },
+    {
+      "code": "presented",
+      "label": "Presented",
+      "definition": "The QR code is shown to a health worker abroad."
+    },
+    {
+      "code": "verified",
+      "label": "Verified",
+      "definition": "The signature is checked against the GDHCN trust list."
+    },
+    {
+      "code": "read-and-used",
+      "label": "Read and used",
+      "definition": "A clinician abroad reads the summary and treats him; a rendered copy stays with the visit."
+    }
+  ]
+}

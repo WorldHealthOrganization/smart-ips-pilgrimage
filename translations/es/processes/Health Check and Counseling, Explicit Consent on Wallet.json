@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn. Agent translation, unofficial: no human has adjudicated it. Coverage 50/50.",
+  "label": "trans:es/processes/Health Check and Counseling, Explicit Consent on Wallet",
+  "locale": "es",
+  "sourceFile": "input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn",
+  "sourceHash": "efea0e315788",
+  "potFile": "translations/es/processes/Health Check and Counseling, Explicit Consent on Wallet.pot",
+  "poFile": "translations/es/processes/Health Check and Counseling, Explicit Consent on Wallet.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 50,
+    "total": 50,
+    "pct": 100
+  }
+}

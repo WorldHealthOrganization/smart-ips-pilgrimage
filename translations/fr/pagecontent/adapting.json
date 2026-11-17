@@ -1,0 +1,22 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "French translation of input/pagecontent/adapting.md. Agent translation, unofficial: no human has adjudicated it. Coverage 7/7.",
+  "label": "trans:fr/pagecontent/adapting",
+  "locale": "fr",
+  "sourceFile": "input/pagecontent/adapting.md",
+  "sourceHash": "2669127febd8",
+  "potFile": "translations/fr/pagecontent/adapting.pot",
+  "poFile": "translations/fr/pagecontent/adapting.po",
+  "status": {
+    "locale": "fr",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T11:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage fr session)"
+  },
+  "coverage": {
+    "translated": 7,
+    "total": 7,
+    "pct": 100
+  }
+}

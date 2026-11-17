@@ -1,0 +1,89 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:zh/user-scenarios/p1-health-check-and-consent",
+  "locale": "zh",
+  "paths": {
+    "pot": "translations/zh/user-scenarios/p1-health-check-and-consent.pot"
+  },
+  "po": "translations/zh/user-scenarios/p1-health-check-and-consent.po",
+  "source_hashes": {
+    "pot": "abe38c6f66bf",
+    "po": "147223c871d1"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "abe38c6f66bf",
+          "po": "147223c871d1"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "fef037cae8b9e33554de0d5e6b43dffcef72bcf1",
+        "metrics": {
+          "translated": 35,
+          "total": 35,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "abe38c6f66bf",
+          "po": "147223c871d1"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "fef037cae8b9e33554de0d5e6b43dffcef72bcf1",
+        "metrics": {
+          "checked": 35,
+          "missing": 0,
+          "missing_strict": 0,
+          "missing_acronyms": 0,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        }
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "abe38c6f66bf",
+          "po": "147223c871d1"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "fef037cae8b9e33554de0d5e6b43dffcef72bcf1",
+        "severity": "minor",
+        "metrics": {
+          "echoed": 1,
+          "translated": 35
+        },
+        "notes": "1 string(s) are byte-identical to the source. That is right for a proper noun and wrong for a sentence, which is why this warns rather than fails."
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

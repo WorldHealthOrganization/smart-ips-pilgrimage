@@ -1,0 +1,48 @@
+{
+  "$schema": "device-screen/0.1.0",
+  "id": "P2",
+  "title": "His signed summary, as a QR code",
+  "description": "The green shield: Onesa's HIE signs Kamal's summary and puts the link to it in his wallet as a QR code.",
+  "device": "phone",
+  "owner": "kamal",
+  "steps": [
+    {
+      "scenario": "p2-summary-signed",
+      "step": "P2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "app": "National health wallet",
+      "subtitle": "Kamal • Pilgrimage Health Record",
+      "icon": "phone",
+      "brand": "#0d9488"
+    },
+    {
+      "type": "qr",
+      "title": "Pilgrimage Health Record",
+      "holder": "Kamal",
+      "holderNote": "Tanavu, Onesa",
+      "label": "International Patient Summary",
+      "payload": "https://vhl.hie.onesa.example/manifest/kamal-pilgrimage-2026?exp=1798761600#key=7c1e9a44b20f5d3e",
+      "badge": {
+        "text": "Signed by Onesa • GDHCN",
+        "tone": "success",
+        "icon": "shield-check"
+      },
+      "caption": "The code holds only a link and a key. The summary stays in Onesa."
+    },
+    {
+      "type": "statusBadge",
+      "status": "verified",
+      "text": "Signed and ready to show",
+      "detail": "His conditions, medicines and allergy, signed with Onesa's key registered with GDHCN."
+    },
+    {
+      "type": "note",
+      "icon": "wifi-off",
+      "text": "Works offline: the code is on the phone, ready at registration."
+    }
+  ]
+}

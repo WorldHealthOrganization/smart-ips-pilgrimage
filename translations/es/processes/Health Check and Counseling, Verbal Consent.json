@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of input/business-processes/Health Check and Counseling, Verbal Consent.bpmn. Agent translation, unofficial: no human has adjudicated it. Coverage 37/37.",
+  "label": "trans:es/processes/Health Check and Counseling, Verbal Consent",
+  "locale": "es",
+  "sourceFile": "input/business-processes/Health Check and Counseling, Verbal Consent.bpmn",
+  "sourceHash": "9f0841761bb4",
+  "potFile": "translations/es/processes/Health Check and Counseling, Verbal Consent.pot",
+  "poFile": "translations/es/processes/Health Check and Counseling, Verbal Consent.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 37,
+    "total": 37,
+    "pct": 100
+  }
+}

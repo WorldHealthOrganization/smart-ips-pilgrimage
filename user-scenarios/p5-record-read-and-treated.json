@@ -1,0 +1,161 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "p5-record-read-and-treated",
+  "title": "P5 · His record is read and he is treated",
+  "description": "The EMR follows the link to Onesa's HIE and retrieves Kamal's summary. Dr Faisal sees the insulin and the penicillin allergy before he treats him for heat exhaustion and low blood sugar. The EMR keeps a rendered copy of the summary with the record of the visit. Step 5 of the overview of key process flows.",
+  "personas": [
+    "dr-faisal",
+    "kamal",
+    "salmah",
+    "mina-facility-emr",
+    "onesa-hie"
+  ],
+  "partOf": "the-pilgrims-hajj",
+  "follows": "p4-scanned-and-checked",
+  "when": "Second day in Nalemi",
+  "where": "Treatment bay, pilgrimage health facility, Nalemi",
+  "country": "Taifafeki",
+  "trustLadder": "record-trust",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Wide banner, aspect ratio 11:4. Bright natural daylight, soft pastel palette with clear colour accents. Faces in gentle three-quarter view with expressive, kind features. Technology shown as simple, oversized icons: a phone with a QR code, a shield with a check mark, a small speech bubble with a symbol. No readable text, no logos, no real brands, no flags with text. All people are fictional.",
+    "cast": [
+      {
+        "actor": "kamal",
+        "description": "Onesan man, 61, slim, short grey hair, kind face. Batik shirt in Onesa. In Taifafeki, two white pilgrim's garments (unstitched towelling cloth, right shoulder bare when in pilgrim's dress), a small waist pouch and one phone."
+      },
+      {
+        "actor": "salmah",
+        "description": "His wife, about 58. White modest pilgrimage outfit and white telekung-style hijab in Taifafeki; pastel baju kurung and tudung in Onesa."
+      },
+      {
+        "actor": "dr-faisal",
+        "description": "Taifafeki emergency doctor, 40s, short beard, white coat over a thobe."
+      }
+    ],
+    "notes": [
+      "Pilgrim's white garments (two white unstitched sheets) is for men only; women wear ordinary modest clothing, usually white, face and hands uncovered.",
+      "Keep the shrine and other holy sites far in the background or out of frame.",
+      "Keep medical signs text-free so generators don't invent wrong Arabic.",
+      "The picture carries no text: the step title and the caption are page text."
+    ]
+  },
+  "steps": [
+    {
+      "id": "P5",
+      "title": "His record is read and he is treated",
+      "headline": "The EMR retrieves Kamal's summary from Onesa; Dr Faisal sees the insulin and the penicillin allergy before he treats him.",
+      "when": "Second day in Nalemi",
+      "where": "Treatment bay, pilgrimage health facility, Nalemi",
+      "touchpoint": "Facility EMR",
+      "narrative": "The EMR follows the link to Onesa's HIE and retrieves Kamal's summary. Dr Faisal sees the insulin and the penicillin allergy before he treats him for heat exhaustion and low blood sugar. The EMR keeps a rendered copy of the summary with the record of the visit. Step 5 of the overview of key process flows.",
+      "lead": "dr-faisal",
+      "experiences": [
+        {
+          "actor": "dr-faisal",
+          "doing": "Reads the summary, sees the insulin and the penicillin allergy, and treats heat exhaustion and low blood sugar.",
+          "feeling": "“Insulin, and allergic to penicillin. Glad I know before I start.”",
+          "emotion": 2
+        },
+        {
+          "actor": "kamal",
+          "doing": "Recovers on a drip.",
+          "feeling": "“I did not have to explain a thing.”",
+          "emotion": 1
+        },
+        {
+          "actor": "salmah",
+          "doing": "Sits beside him, relieved.",
+          "feeling": "“They knew about his sugar straight away.”",
+          "emotion": 2
+        },
+        {
+          "actor": "mina-facility-emr",
+          "doing": "Retrieves the VHL folder and the IPS from Onesa's HIE, verifies the IPS, and keeps a rendered copy with the visit."
+        },
+        {
+          "actor": "onesa-hie",
+          "doing": "Checks the request against Kamal's consent and returns the folder and the IPS."
+        }
+      ],
+      "painPoint": "Treating without knowing the insulin or the penicillin allergy risks a dangerous mistake.",
+      "enabler": "The summary is fetched from home through the link, under the consent Kamal gave, and kept as a rendered copy with the visit.",
+      "policy": "Does Onesa learn that Kamal's record was opened in Taifafeki, and by whom?",
+      "handoff": {
+        "summary": "Kamal is treated, and a rendered copy is kept with the visit",
+        "from": "onesa-hie",
+        "to": "mina-facility-emr",
+        "carrier": "HTTPS (VHL retrieval) across the border",
+        "payload": "VHL folder (List) and the IPS Bundle",
+        "offline": false
+      },
+      "realisedBy": [
+        {
+          "process": "input/business-processes/Clinical Encounter for Unplanned Care.bpmn",
+          "tasks": [
+            "Activity_1i8bqw0",
+            "Activity_1hznkm2",
+            "Activity_1iodyqb",
+            "Activity_0wou2yo",
+            "Activity_1gga1fr",
+            "Activity_123d2ts",
+            "Activity_1n8jcmb",
+            "Activity_055rq1n"
+          ]
+        }
+      ],
+      "examples": [
+        "Bundle/MyIPS",
+        "List/PilgrimFolder"
+      ],
+      "gaps": [
+        "The summary is in the language it was written in; nothing says how a Taifafeki clinician reads a summary written in Onesan."
+      ],
+      "references": [
+        {
+          "label": "Transaction: retrieve VHL folder",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/transactions.html#retrieve-VHL-manifest-request",
+          "rel": "specified by"
+        },
+        {
+          "label": "Transaction: retrieve IPS",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/transactions.html#retrieve-IPS-request",
+          "rel": "specified by"
+        },
+        {
+          "label": "Host Country EMR: keeps a rendered copy",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/system-actors.html#hcemr",
+          "rel": "specified by"
+        },
+        {
+          "label": "Test case: View IPS content",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/testing.html",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/pilgrim/p5.webp",
+        "alt": "Kamal lies recovering on a bed with a drip, Salmah beside him; Dr Faisal shows a tablet with an insulin pen, a crossed-out penicillin capsule and a heart, read from the record kept in Onesa.",
+        "prompt": "A treatment bay. Kamal lies on a bed in white pilgrim's white garments with an IV drip, recovering; Salmah sits beside him, relieved. Dr Faisal looks at a tablet showing three large icons: an insulin pen, a red crossed-out penicillin capsule, and a heart. A thin dotted line runs from the tablet off-frame to a small Onesan-roofed building icon in a cloud bubble: the record is viewed from home, not copied. Dr Faisal looks confident."
+      },
+      "record": {
+        "state": "read-and-used",
+        "description": "Dr Faisal reads it and treats him; a rendered copy stays with the visit",
+        "heldWhere": "The Nalemi facility's EMR"
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "link",
+      "label": "Link to Onesa's HIE"
+    },
+    {
+      "icon": "paper",
+      "label": "His summary"
+    },
+    {
+      "icon": "stethoscope",
+      "label": "Treated safely"
+    }
+  ]
+}

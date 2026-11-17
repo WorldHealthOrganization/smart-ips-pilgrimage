@@ -1,6 +1,6 @@
 CodeSystem: IPS.HAJJ.TRANSACTION
 Title:        "IPS.HAJJ.TRANSACTION CodeSystem"
-Description:  "CodeSystem for IPS.HAJJ.TRANSACTION CodeSystem for utilization of IPS during Hajj"
+Description:  "CodeSystem for IPS.HAJJ.TRANSACTION CodeSystem for utilization of IPS during the pilgrimage"
 
 * ^experimental = true
 * ^caseSensitive = false

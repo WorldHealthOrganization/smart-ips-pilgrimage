@@ -1,0 +1,179 @@
+# Arabic translation of processes/Clinical Encounter for Unplanned Care (brief)
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Clinical Encounter for Unplanned Care (brief)\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.216Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:164
+#. Diagram label
+msgid "Add passcode"
+msgstr "إضافة رمز المرور"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:131
+#. Diagram label
+msgid "arrive to clinic at host country"
+msgstr "الوصول إلى العيادة في البلد المضيف"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:15
+#. Diagram label
+msgid "Clinical Encounter for Unplanned Care (brief)"
+msgstr "لقاء سريري لرعاية غير مخطَّط لها (مختصر)"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:180
+#. Diagram label
+msgid "display health document"
+msgstr "عرض الوثيقة الصحية"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:135
+#. Diagram label
+msgid "displays QR code"
+msgstr "يعرض رمز QR"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:4
+#. Diagram element documentation
+msgid "Documents the health check and SHL consent and issuance process"
+msgstr "يوثّق عملية الفحص الصحي والموافقة على SHL وإصداره"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:184
+#. Diagram label
+msgid "End"
+msgstr "النهاية"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:3
+#. Diagram label
+msgid "Health Check and Issue SHL"
+msgstr "الفحص الصحي وإصدار SHL"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:44
+#. Diagram label
+msgid "Health Check and SHL Issuance, Wallet Consent"
+msgstr "الفحص الصحي وإصدار SHL، الموافقة عبر المحفظة"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:60
+#. Diagram label
+msgid "Host Country EMR"
+msgstr "السجل الطبي الإلكتروني (EMR) في البلد المضيف"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:95
+#. Diagram label
+msgid "Host Country Health Worker"
+msgstr "العامل الصحي في البلد المضيف"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:79
+#. Diagram label
+msgid "Human Actor"
+msgstr "جهة فاعلة بشرية"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:187
+#. Diagram label
+msgid "leave clinic"
+msgstr "مغادرة العيادة"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:109
+#. Diagram label
+msgid "Pilgrim"
+msgstr "الزائر"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:195
+#. Diagram label
+msgid "provide care"
+msgstr "تقديم الرعاية"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:127
+#. Diagram label
+msgid "registration"
+msgstr "التسجيل"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:160
+#. Diagram label
+msgid "retrieve health document (IPS) from Origin Country HIE"
+msgstr "استرجاع الوثيقة الصحية (IPS) من نظام HIE في بلد المنشأ"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:176
+#. Diagram label
+msgid "save a local copy of health document"
+msgstr "حفظ نسخة محلية من الوثيقة الصحية"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:139
+#. Diagram label
+msgid "scans QR code"
+msgstr "يمسح رمز QR"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:156
+#. Diagram label
+msgid "Start"
+msgstr "البداية"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:52
+#. Diagram label
+msgid "System Actor"
+msgstr "جهة فاعلة نظامية"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:61
+#. Diagram element documentation
+msgid "The pilgrim's origin country's digital health wallet"
+msgstr "المحفظة الصحية الرقمية لبلد منشأ الزائر"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:16
+#. Diagram element documentation
+msgid "This is the documentation for the overall business process - Element documentation"
+msgstr "هذا هو توثيق عملية العمل الإجمالية - توثيق العنصر"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:45
+#. Diagram element documentation
+msgid "This is the documentation for the overall business process - process documentation"
+msgstr "هذا هو توثيق عملية العمل الإجمالية - توثيق العملية"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:191
+#. Diagram label
+msgid "update local record of care"
+msgstr "تحديث السجل المحلي للرعاية"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:172
+#. Diagram label
+msgid "verify health document (IPS) signature"
+msgstr "التحقق من توقيع الوثيقة الصحية (IPS)"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:168
+#. Diagram label
+msgid "verify QR code signature"
+msgstr "التحقق من توقيع رمز QR"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:99
+#. Diagram element documentation
+msgid "Counselor from origin country supporting pilgrim during inital health screening"
+msgstr "مرشد من بلد المنشأ يدعم الزائر خلال الفحص الصحي الأولي"
+
+#: input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn:113
+#. Diagram element documentation
+msgid "The pilgrim"
+msgstr "الزائر"
+
+#. Diagram element documentation
+#~ msgid "Counselor from origin country supporting Hajj pilgrim during inital health screening"
+#~ msgstr "مرشد من بلد المنشأ يدعم الحاج خلال الفحص الصحي الأولي"
+
+#. Diagram element documentation
+#~ msgid "The Hajj pilgrim"
+#~ msgstr "الحاج"

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>As-is wireframe: one journey (P5)</title>
+<link rel="stylesheet" href="../wireframe.css">
+<style>
+  .top { border-bottom: 2px solid var(--ink); background: var(--fill); }
+  .top .in { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding: 10px 24px; font-size: 14px; }
+  .top .site { font-weight: 700; font-size: 16px; }
+  .top .search { flex: 1 1 14rem; border: 1px solid var(--line); padding: 4px 8px; color: var(--mute); max-width: 22rem; }
+  .shell { display: grid; grid-template-columns: 56px 1fr; max-width: 1280px; margin: 0 auto; }
+  aside.rail { border-right: 1px solid var(--line); padding: 12px 8px; font-size: 13px; text-align: center; }
+  aside.rail div { padding: 6px 0; }
+  article { padding: 16px 32px 32px; min-width: 0; }
+  .crumb { font-size: 14px; }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-top: 16px; }
+  h1 { font-size: 34px; font-weight: 700; margin: 6px 0 12px; line-height: 1.2; }
+  h2 { font-size: 22px; font-weight: 700; margin: 28px 0 8px; }
+  .lede { max-width: 48rem; }
+  .facts { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 12px 0; }
+  .facts .k { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--mute); }
+  .facts .v { font-weight: 600; }
+  .people { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .person { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: flex; gap: 10px; min-width: 0; }
+  .person .who { font-weight: 700; }
+  .person i { font-size: 13px; }
+  .av { flex: none; display: inline-flex; width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--ink); font-size: 11px; font-weight: 700; align-items: center; justify-content: center; }
+  .nav3 { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; margin: 16px 0; font-size: 14px; }
+  .map { border: 1px solid var(--line); border-radius: 8px; overflow-x: auto; }
+  .map table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  .map th, .map td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .map th { background: var(--fill); width: 14rem; font-weight: 600; }
+  .scale { display: flex; gap: 14px; font-size: 13px; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+  @media (max-width: 700px) {
+    .shell { grid-template-columns: 40px 1fr; }
+    .top .in { padding: 10px 16px; }
+    article { padding: 8px 14px 24px; }
+    h1 { font-size: 28px; }
+    .facts { flex-direction: column; }
+    .people { grid-template-columns: 1fr; }
+    .map th { width: 7rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wf-meta">As-is wireframe · journeys · one journey · covers: smart-ips-pilgrimage/journeys (en/smart-ips-pilgrimage/journeys/smart-ips-pilgrimage/p5-record-read-and-treated/) · drawn 2026-11-05 from the branch build at cat-harness 38c6c59, cat-harness-tools 4a21e1e</div>
+<div class="top"><div class="in"><span class="site">SMART Verifiable IPS for Pilgrimage</span><span class="wf-btn">▾ Folio</span><span class="search">Search pages and artefacts</span><span>🌐</span></div></div>
+<div class="shell">
+<aside class="rail" aria-label="Harness rail"><div>⌂</div><div>▢</div><div>◎</div><div>§</div><div>▥</div><div>▤</div></aside>
+<article>
+  <div class="crumb"><u>Journeys</u> › <u>smart-ips-pilgrimage</u> › <u>The pilgrim's journey</u> › P5</div>
+  <div class="eyebrow">Journey · P5 · SMART Verifiable IPS for Pilgrimage</div>
+  <h1>P5 · His record is read and he is treated</h1>
+  <p class="lede">The EMR follows the link to Onesa's HIE and retrieves Kamal's summary. Dr Faisal sees the insulin and the penicillin allergy before he treats him for heat exhaustion and low blood sugar. The EMR keeps a rendered copy of the summary with the record of the visit.</p>
+  <div class="facts">
+    <div><div class="k">When</div><div class="v">Second day in Nalemi</div></div>
+    <div><div class="k">Where</div><div class="v">Treatment bay, pilgrimage health facility, Nalemi</div></div>
+    <div><div class="k">Country</div><div class="v">Taifafeki</div></div>
+    <div><div class="k">Steps</div><div class="v">1</div></div>
+  </div>
+  <div class="people">
+    <div class="person"><span class="av">DF</span><div><div class="who">Dr Faisal</div><div class="wf-mute">Emergency physician · Taifafeki</div><i>Treat safely, knowing the pilgrim's medicines and allergies.</i></div></div>
+    <div class="person"><span class="av">K</span><div><div class="who">Kamal</div><div class="wf-mute">Pilgrim · first pilgrimage · Onesa</div><i>Make the pilgrimage safely, and be treated properly if he is taken ill far from home.</i></div></div>
+    <div class="person"><span class="av">S</span><div><div class="who">Salmah</div><div class="wf-mute">Accompanying family member · Onesa</div><i>Keep Kamal well, and speak for him when he cannot.</i></div></div>
+    <div class="person"><span class="av">TM</span><div><div class="who">The Nalemi facility's EMR</div></div></div>
+    <div class="person"><span class="av">MH</span><div><div class="who">Onesa's health information exchange</div></div></div>
+  </div>
+  <div class="nav3"><u>← follows P4 · Scanned and checked</u><u>↑ part of The pilgrim's journey</u><u>followed by P6 · When he cannot show the code (break the glass) →</u></div>
+
+  <h2>Journey map</h2>
+  <p class="wf-mute">A column per step and a lane per person. The curve shows how each person feels; a step's column links to its detail below.</p>
+  <div class="map">
+    <table aria-label="Journey map">
+      <tr><th>Step</th><td><b>P5</b> · His record is read and he is treated<br><span class="wf-mute">Second day in Nalemi · Treatment bay</span></td></tr>
+      <tr><th>DF · Dr Faisal</th><td>Reads the summary, sees the insulin and the penicillin allergy, and treats heat exhaustion and low blood sugar.<br><i>"Glad I know before I start."</i></td></tr>
+      <tr><th>K · Kamal</th><td>Recovers on a drip.<br><i>"I did not have to explain a thing."</i></td></tr>
+      <tr><th>S · Salmah</th><td>Sits beside him, relieved.</td></tr>
+      <tr><th>TM · Facility EMR</th><td>Retrieves the VHL folder and the IPS from Onesa's HIE, verifies the IPS, and keeps a rendered copy with the visit.</td></tr>
+      <tr><th>MH · Onesa's HIE</th><td>Checks the request against Kamal's consent and returns the folder and the IPS.</td></tr>
+      <tr><th>How they feel</th><td><div class="scale"><span>😄 +2</span><span>😐 0</span><span>😣 −2</span></div></td></tr>
+      <tr><th>Pain point</th><td>Treating without knowing the insulin or the penicillin allergy risks a dangerous mistake.</td></tr>
+      <tr><th>What makes it work</th><td>The summary is fetched from home through the link, under the consent Kamal gave.</td></tr>
+      <tr><th>The record</th><td>—</td></tr>
+      <tr><th>Hand-off</th><td>Kamal is treated, and a rendered copy is kept with the visit · HTTPS (VHL retrieval) across the border, online</td></tr>
+    </table>
+  </div>
+
+  <h2>Step by step</h2>
+  <div class="tabs"><span class="wf-btn">Print (A3)</span></div>
+  <div class="wf-box">P5 · His record is read and he is treated: the step's BPMN drawing with its tasks highlighted, its user stories, requirements, FHIR examples (Bundle/MyIPS, List/PilgrimFolder) and, under it, the workshop's questions for the room.</div>
+</article>
+</div>
+</body>
+</html>

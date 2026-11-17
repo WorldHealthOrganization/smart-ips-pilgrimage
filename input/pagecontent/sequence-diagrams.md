@@ -26,7 +26,7 @@ This page includes sequence diagrams that describe interactions between actors a
 </figure>
 
 
-<h3 id="unplanned_care_encounter">Agreed IPS workflow for 'Clinical Encounter for Unplanned Care' between KSA and Origin countries</h3>
+<h3 id="unplanned_care_encounter">Agreed IPS workflow for 'Clinical Encounter for Unplanned Care' between the Host and Origin countries</h3>
 <figure>
  {% include unplanned_care_encounter_hie.svg %}
 </figure>

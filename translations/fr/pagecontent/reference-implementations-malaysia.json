@@ -1,0 +1,22 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "French translation of input/pagecontent/reference-implementations-malaysia.md. Agent translation, unofficial: no human has adjudicated it. Coverage 59/59.",
+  "label": "trans:fr/pagecontent/reference-implementations-malaysia",
+  "locale": "fr",
+  "sourceFile": "input/pagecontent/reference-implementations-malaysia.md",
+  "sourceHash": "3d80b8306d61",
+  "potFile": "translations/fr/pagecontent/reference-implementations-malaysia.pot",
+  "poFile": "translations/fr/pagecontent/reference-implementations-malaysia.po",
+  "status": {
+    "locale": "fr",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T11:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage fr session)"
+  },
+  "coverage": {
+    "translated": 59,
+    "total": 59,
+    "pct": 100
+  }
+}

@@ -1,0 +1,111 @@
+# Arabic translation of pagecontent/trust_domain_policy
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.212Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/trust_domain_policy.md:33
+msgid "checks that each named policy is in this ValueSet;"
+msgstr "تتحقق من أن كل سياسة مسمّاة موجودة في ValueSet هذه؛"
+
+#: input/pagecontent/trust_domain_policy.md:35
+msgid "decides as the <a0>GDHCN Trust Network: Personal Health Wallet</a0> process I describes."
+msgstr "تقرر وفق ما تصفه العملية I من <a0>شبكة الثقة التابعة لـ GDHCN: المحفظة الصحية الشخصية</a0>."
+
+#: input/pagecontent/trust_domain_policy.md:37
+#, python-brace-format
+msgid "Naming a policy only narrows the consents that apply, and it never overrides a prohibition. A credential with no {code0} is decided on all the pilgrim's applicable consents."
+msgstr "تسمية سياسة ما لا تؤدي إلا إلى تضييق نطاق الموافقات المنطبقة، ولا تتجاوز أبدًا أي حظر. ويُبتّ في بيانات الاعتماد التي لا تحتوي على {code0} استنادًا إلى جميع موافقات الزائر المنطبقة."
+
+#: input/pagecontent/trust_domain_policy.md:7
+msgid "Naming the consent a VHL Receiver acts under"
+msgstr "تسمية الموافقة التي تعمل الجهة المُستقبِلة في VHL بموجبها"
+
+#: input/pagecontent/trust_domain_policy.md:3
+msgid "Terms of use"
+msgstr "شروط الاستخدام"
+
+#: input/pagecontent/trust_domain_policy.md:5
+msgid "The <a0>IPS.HAJJ.CONSENT ValueSet</a0> is this Trust Domain's terms of use: the policies a participant may say it acts under. It is recorded on the <a1>IPS-PILGRIMAGE Trust Domain</a1> in the GDHCN Trust IG. The GDHCN Administrative and Operational Framework 1.2 has no annex for this Trust Domain yet, so that record is drafted from this IG."
+msgstr "تمثل <a0>ValueSet IPS.HAJJ.CONSENT</a0> شروط الاستخدام لنطاق الثقة هذا: أي السياسات التي يجوز للمشارك أن يعلن أنه يعمل بموجبها. وهي مسجّلة في <a1>نطاق الثقة IPS-PILGRIMAGE</a1> ضمن GDHCN Trust IG. ولا يتضمن الإطار الإداري والتشغيلي لـ GDHCN 1.2 بعدُ ملحقًا لنطاق الثقة هذا، ولذلك صيغ هذا السجل استنادًا إلى هذا IG."
+
+#: input/pagecontent/trust_domain_policy.md:31
+msgid "The VHL Sharer then:"
+msgstr "ثم تقوم الجهة المُشارِكة في VHL بما يلي:"
+
+#: input/pagecontent/trust_domain_policy.md:9
+#, python-brace-format
+msgid "Under the Verifiable Credential Option of IHE ITI VHL (ITI-YY5), a VHL Receiver retrieves the manifest with a credential it issues itself. It can name the consent policy it acts under in that credential's W3C VC 2.0 {code0}, with one <a0>Trust Domain policy</a0> entry per policy:"
+msgstr "بموجب خيار Verifiable Credential في IHE ITI VHL (ITI-YY5)، تسترجع الجهة المُستقبِلة في VHL البيان باستخدام بيانات اعتماد تُصدرها بنفسها. ويمكنها أن تسمّي سياسة الموافقة التي تعمل بموجبها في {code0} الخاص ببيانات الاعتماد تلك وفق W3C VC 2.0، بإدخال واحد من <a0>سياسة نطاق الثقة</a0> لكل سياسة:"
+
+#: input/pagecontent/trust_domain_policy.md:7
+msgid "Explicit and implied consent"
+msgstr "الموافقة الصريحة والموافقة الضمنية"
+
+#: input/pagecontent/trust_domain_policy.md:9
+msgid "This guide follows the consent model of the <a0>GDHCN Trust Network: Personal Health Wallet</a0> guide, which is built on IHE Privacy Consent on FHIR (PCF) 1.1.0:"
+msgstr "يتّبع هذا الدليل نموذج الموافقة الوارد في دليل <a0>GDHCN Trust Network: Personal Health Wallet</a0>، المبني على IHE Privacy Consent on FHIR (PCF) 1.1.0:"
+
+#: input/pagecontent/trust_domain_policy.md:14
+msgid "Consent directives travel with the document. The pilgrim's IPS (<a0>HajjIPS</a0>) carries the pilgrimage consents it is shared under, as consent entries, and lists them in its Advance Directives section. The Personal Health Wallet guide's process M (\"Add Consent Directives to a Shared or Issued Document\") describes the steps. The copy in the IPS is evidence for the receiver. The origin HIE enforces the copy in its own Consent Registry, because a signed IPS cannot show a later withdrawal."
+msgstr "تنتقل توجيهات الموافقة مع المستند. فملخص IPS الخاص بالزائر (<a0>HajjIPS</a0>) يحمل موافقات الزيارة الدينية التي يُشارَك بموجبها، بوصفها مُدخلات موافقة، ويُدرجها في قسم التوجيهات المسبقة (Advance Directives). وتصف العمليةُ M في دليل Personal Health Wallet («Add Consent Directives to a Shared or Issued Document») الخطوات. والنسخة الموجودة في ملخص IPS بيّنةٌ للجهة المُستقبِلة. أما منصة HIE في بلد المنشأ فتُنفِّذ النسخةَ المحفوظة في سجل الموافقات الخاص بها، لأن ملخص IPS الموقَّع لا يمكنه أن يُظهر سحبًا لاحقًا للموافقة."
+
+#: input/pagecontent/trust_domain_policy.md:11
+#, python-brace-format
+msgid "Explicit consent. The pilgrim agrees by their own act: on their wallet, or to the counsellor, who records it. Each <a0>pilgrimage consent</a0> is an explicit consent, an opt-in: its {code0} includes the HL7 v3 ActConsentDirective code {code1}. It names its {code2} code and the code system version in {code3}, and its {code4} is the evidence: the consent text the pilgrim was shown, with their recorded act. The Personal Health Wallet guide's process L (\"Record Explicit Consent\") describes the steps. Both the verbal consent and the consent on the wallet in this guide's business processes are explicit consents."
+msgstr "الموافقة الصريحة. يوافق الزائر بفعلٍ منه: على محفظته، أو أمام المستشار الذي يسجّلها. وكل <a0>موافقة للزيارة الدينية</a0> هي موافقة صريحة، أي اشتراك اختياري (opt-in): إذ يتضمّن {code0} الخاص بها رمز HL7 v3 ActConsentDirective ‏{code1}. وتُسمّي رمز {code2} الخاص بها وإصدار نظام الرموز في {code3}، ويكون {code4} الخاص بها هو البيّنة: نص الموافقة الذي عُرض على الزائر، مع الفعل المسجَّل منه. وتصف العمليةُ L في دليل Personal Health Wallet («Record Explicit Consent») الخطوات. وكلٌّ من الموافقة الشفهية والموافقة على المحفظة في عمليات العمل الواردة في هذا الدليل موافقةٌ صريحة."
+
+#: input/pagecontent/trust_domain_policy.md:12
+#, python-brace-format
+msgid "Implied consent. The pilgrim does nothing, and the Trust Domain's default policy applies (HL7 ActConsentDirective {code0}). This Trust Domain is opt-in: its default is the IHE PCF implicit policy {code1}. With no pilgrimage consent, the IPS is not shared."
+msgstr "الموافقة الضمنية. لا يفعل الزائر شيئًا، فتُطبَّق السياسة الافتراضية لنطاق الثقة (HL7 ActConsentDirective ‏{code0}). ونطاق الثقة هذا قائم على الاشتراك الاختياري (opt-in): فسياسته الافتراضية هي السياسة الضمنية في IHE PCF ‏{code1}. ومن دون موافقة للزيارة الدينية، لا يُشارَك ملخص IPS."
+
+#: input/pagecontent/trust_domain_policy.md:43
+#, python-brace-format
+msgid "matches it against the {code0} of the pilgrim's pilgrimage consents (system and code);"
+msgstr "تطابقها مع {code0} في موافقات الزيارة الدينية الخاصة بالزائر (النظام والرمز)؛"
+
+#: input/pagecontent/trust_domain_policy.md:1
+#, python-brace-format
+msgid "This Trust Domain enables data exchange mediated by the pilgrim, on the basis of the pilgrim's consent. The consents are recorded in the <a0>IPS.HAJJ.CONSENT CodeSystem</a0>, and each <a1>pilgrimage consent</a1> in a pilgrim's IPS names one of them in {code0}."
+msgstr "يتيح نطاق الثقة هذا تبادل البيانات بوساطة الزائر، على أساس موافقته. وتُسجَّل الموافقات في <a0>CodeSystem IPS.HAJJ.CONSENT</a0>، وكل <a1>موافقة للزيارة الدينية</a1> في IPS الخاص بالزائر تسمّي إحداها في {code0}."
+
+#~ #, python-brace-format
+#~ msgid "matches it against the {code0} of the pilgrim's Hajj consents (system and code);"
+#~ msgstr "تطابقها مع {code0} في موافقات الحج الخاصة بالحاج (النظام والرمز)؛"
+
+#~ #, python-brace-format
+#~ msgid "This Trust Domain enables data exchange mediated by the pilgrim, on the basis of the pilgrim's consent. The consents are recorded in the <a0>IPS.HAJJ.CONSENT CodeSystem</a0>, and each <a1>Hajj consent</a1> in a pilgrim's IPS names one of them in {code0}."
+#~ msgstr "يتيح نطاق الثقة هذا تبادل البيانات بوساطة الحاج، على أساس موافقته. وتُسجَّل الموافقات في <a0>CodeSystem IPS.HAJJ.CONSENT</a0>، وكل <a1>موافقة حج</a1> في IPS الخاص بالحاج تسمّي إحداها في {code0}."
+
+#~ msgid "Consent directives travel with the document. The pilgrim's IPS (<a0>HajjIPS</a0>) carries the Hajj consents it is shared under, as consent entries, and lists them in its Advance Directives section. The Personal Health Wallet guide's process M (\"Add Consent Directives to a Shared or Issued Document\") describes the steps. The copy in the IPS is evidence for the receiver. The origin HIE enforces the copy in its own Consent Registry, because a signed IPS cannot show a later withdrawal."
+#~ msgstr "تنتقل توجيهات الموافقة مع المستند. فملخص IPS الخاص بالحاج (<a0>HajjIPS</a0>) يحمل موافقات الحج التي يُشارَك بموجبها، بوصفها مُدخلات موافقة، ويُدرجها في قسم التوجيهات المسبقة (Advance Directives). وتصف العمليةُ M في دليل Personal Health Wallet («Add Consent Directives to a Shared or Issued Document») الخطوات. والنسخة الموجودة في ملخص IPS بيّنةٌ للجهة المُستقبِلة. أما منصة HIE في بلد المنشأ فتُنفِّذ النسخةَ المحفوظة في سجل الموافقات الخاص بها، لأن ملخص IPS الموقَّع لا يمكنه أن يُظهر سحبًا لاحقًا للموافقة."
+
+#~ #, python-brace-format
+#~ msgid "Explicit consent. The pilgrim agrees by their own act: on their wallet, or to the counsellor, who records it. Each <a0>Hajj consent</a0> is an explicit consent, an opt-in: its {code0} includes the HL7 v3 ActConsentDirective code {code1}. It names its {code2} code and the code system version in {code3}, and its {code4} is the evidence: the consent text the pilgrim was shown, with their recorded act. The Personal Health Wallet guide's process L (\"Record Explicit Consent\") describes the steps. Both the verbal consent and the consent on the wallet in this guide's business processes are explicit consents."
+#~ msgstr "الموافقة الصريحة. يوافق الحاج بفعلٍ منه: على محفظته، أو أمام المستشار الذي يسجّلها. وكل <a0>موافقة حج</a0> هي موافقة صريحة، أي اشتراك اختياري (opt-in): إذ يتضمّن {code0} الخاص بها رمز HL7 v3 ActConsentDirective ‏{code1}. وتُسمّي رمز {code2} الخاص بها وإصدار نظام الرموز في {code3}، ويكون {code4} الخاص بها هو البيّنة: نص الموافقة الذي عُرض على الحاج، مع الفعل المسجَّل منه. وتصف العمليةُ L في دليل Personal Health Wallet («Record Explicit Consent») الخطوات. وكلٌّ من الموافقة الشفهية والموافقة على المحفظة في عمليات العمل الواردة في هذا الدليل موافقةٌ صريحة."
+
+#~ #, python-brace-format
+#~ msgid "Implied consent. The pilgrim does nothing, and the Trust Domain's default policy applies (HL7 ActConsentDirective {code0}). This Trust Domain is opt-in: its default is the IHE PCF implicit policy {code1}. With no Hajj consent, the IPS is not shared."
+#~ msgstr "الموافقة الضمنية. لا يفعل الحاج شيئًا، فتُطبَّق السياسة الافتراضية لنطاق الثقة (HL7 ActConsentDirective ‏{code0}). ونطاق الثقة هذا قائم على الاشتراك الاختياري (opt-in): فسياسته الافتراضية هي السياسة الضمنية في IHE PCF ‏{code1}. ومن دون موافقة حج، لا يُشارَك ملخص IPS."

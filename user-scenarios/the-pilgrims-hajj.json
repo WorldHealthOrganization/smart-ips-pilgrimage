@@ -1,0 +1,41 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "the-pilgrims-hajj",
+  "title": "The pilgrim's journey",
+  "description": "This guide's user scenarios told as one pilgrim's story, moment by moment along the overview of key process flows (steps 1–5 and A–B): Kamal, 61, from Tanavu, goes on pilgrimage for the first time. Each moment (P0 to P7) is a sub-journey: who takes part, what happens, what in this guide specifies it, what it does not yet specify, and the policy question it raises. Kamal comes from Onesa and goes on pilgrimage in Taifafeki, two fictional countries; the steps follow the guide's real reference implementation as a policy precedent. Every person is fictional. Told on the guide's home page, input/pagecontent/index.md.",
+  "personas": [
+    "kamal",
+    "salmah",
+    "dr-aisyah",
+    "dr-hafiz",
+    "nurse-reem",
+    "dr-faisal",
+    "kamal-wallet",
+    "onesa-hie",
+    "mina-facility-emr",
+    "who-gdhcn"
+  ],
+  "when": "One pilgrimage season",
+  "where": "Onesa and Taifafeki",
+  "country": "Cross-Border",
+  "trustLadder": "record-trust",
+  "references": [
+    {
+      "label": "The pilgrim's journey (guide page)",
+      "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/index.html"
+    },
+    {
+      "label": "Overview of key process flows",
+      "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/business-processes.html"
+    },
+    {
+      "label": "User scenarios",
+      "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/scenarios.html"
+    },
+    {
+      "label": "Reference implementation",
+      "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/reference-implementations-malaysia.html"
+    }
+  ],
+  "steps": []
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "device-screen/0.1.0",
+  "id": "P6",
+  "title": "Break the glass: only a registration number",
+  "description": "The open padlock: Dr Hafiz has only Kamal's registration number, and the facility reaches his summary through it.",
+  "device": "phone",
+  "owner": "dr-hafiz",
+  "steps": [
+    {
+      "scenario": "p6-break-the-glass",
+      "step": "P6"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "app": "Onesan pilgrimage medical team",
+      "subtitle": "Dr Hafiz • Toreva",
+      "icon": "health-worker",
+      "brand": "#b91c1c"
+    },
+    {
+      "type": "fields",
+      "title": "Pilgrimage registration number",
+      "icon": "hash",
+      "rows": [
+        {
+          "label": "Pilgrim",
+          "value": "XXK-PILG-2026-04517",
+          "mono": true
+        }
+      ]
+    },
+    {
+      "type": "statusBadge",
+      "status": "emergency",
+      "text": "Emergency access",
+      "detail": "Kamal is unconscious and cannot show his code; Salmah is not with him. His summary is reached by registration number, because he opted in on his wallet."
+    },
+    {
+      "type": "alert",
+      "severity": "danger",
+      "icon": "unlock",
+      "title": "Break the glass",
+      "text": "Opened without the code or the passcode. The access is logged and reported to Onesa."
+    },
+    {
+      "type": "actions",
+      "buttons": [
+        {
+          "label": "Give the number to the facility",
+          "style": "danger",
+          "icon": "send"
+        }
+      ]
+    }
+  ],
+  "try": "Ask the room who may break the glass, and who is told afterwards"
+}

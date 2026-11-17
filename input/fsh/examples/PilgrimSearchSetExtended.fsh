@@ -1,7 +1,7 @@
 Instance: PilgrimFolderSearchSetExtended
 InstanceOf: Bundle
 Title: "Example Folder for Pilgrim (Extended)"
-Description: "Example Hajj Pilgrimage Minimal Folder Search Set"     
+Description: "Example Pilgrimage Minimal Folder Search Set"     
 Usage: #example
 * type = #searchset
 * link.relation = "self"

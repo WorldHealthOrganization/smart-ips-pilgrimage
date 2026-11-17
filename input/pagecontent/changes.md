@@ -10,7 +10,7 @@ This page provides a list of changes to the Implementation Guide since its initi
 
  <a name="2.0.0"> </a>
   <p>
-    <b>v2.0.0 -  Second stable release of IPS Pilgrimage for 2025 Hajj</b> 
+    <b>v2.0.0 -  Second stable release of IPS Pilgrimage for the 2025 pilgrimage season</b> 
   </p>
   <ul>
     <li>Added IHE MHD as dependency to utilize more of MHD style manifests</li>

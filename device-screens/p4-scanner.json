@@ -1,0 +1,39 @@
+{
+  "$schema": "device-screen/0.1.0",
+  "id": "P4-scanner",
+  "title": "Nurse Reem scans the code",
+  "description": "The scanner at the desk reads the code on Kamal's phone and hands it to the EMR.",
+  "device": "scanner",
+  "owner": "nurse-reem",
+  "steps": [
+    {
+      "scenario": "p4-scanned-and-checked",
+      "step": "P4"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "app": "Registration scanner",
+      "subtitle": "Pilgrimage health facility, Nalemi",
+      "icon": "scan"
+    },
+    {
+      "type": "qr",
+      "mode": "scan",
+      "payload": "https://vhl.hie.onesa.example/manifest/kamal-pilgrimage-2026?exp=1798761600#key=7c1e9a44b20f5d3e",
+      "label": "Reading…",
+      "badge": {
+        "text": "Read",
+        "tone": "success",
+        "icon": "check"
+      }
+    },
+    {
+      "type": "statusBadge",
+      "status": "info",
+      "text": "Verifiable Health Link read",
+      "detail": "Issued in Onesa. Sent to the EMR to check its signature."
+    }
+  ]
+}

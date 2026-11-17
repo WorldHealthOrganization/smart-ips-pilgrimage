@@ -1,0 +1,25 @@
+{
+  "id": "salmah",
+  "title": "Salmah (Kamal's wife)",
+  "kind": "person",
+  "description": "Persona: Kamal's wife, travelling with him, who speaks for him when he cannot. An accompanying family member, not yet a persona of this guide. Fictional.",
+  "roles": [
+    "accompanying-family-member"
+  ],
+  "capabilities": [],
+  "meta": {
+    "persona": {
+      "name": "Salmah",
+      "role": "Accompanying family member",
+      "country": "Onesa",
+      "goal": "Keep Kamal well, and speak for him when he cannot.",
+      "needs": [
+        "To know what to show a clinic, and how",
+        "To be reached when Kamal is brought in without her"
+      ],
+      "frustrations": [
+        "Not being with him when something happens"
+      ]
+    }
+  }
+}

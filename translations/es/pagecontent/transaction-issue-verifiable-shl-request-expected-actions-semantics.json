@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md. Agent translation, unofficial: no human has adjudicated it. Coverage 15/15.",
+  "label": "trans:es/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics",
+  "locale": "es",
+  "sourceFile": "input/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.md",
+  "sourceHash": "b78f55f3755d",
+  "potFile": "translations/es/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.pot",
+  "poFile": "translations/es/pagecontent/transaction-issue-verifiable-shl-request-expected-actions-semantics.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 15,
+    "total": 15,
+    "pct": 100
+  }
+}

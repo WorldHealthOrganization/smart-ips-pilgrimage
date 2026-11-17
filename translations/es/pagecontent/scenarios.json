@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of input/pagecontent/scenarios.md. Agent translation, unofficial: no human has adjudicated it. Coverage 24/24.",
+  "label": "trans:es/pagecontent/scenarios",
+  "locale": "es",
+  "sourceFile": "input/pagecontent/scenarios.md",
+  "sourceHash": "bd37f3a73229",
+  "potFile": "translations/es/pagecontent/scenarios.pot",
+  "poFile": "translations/es/pagecontent/scenarios.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 24,
+    "total": 24,
+    "pct": 100
+  }
+}

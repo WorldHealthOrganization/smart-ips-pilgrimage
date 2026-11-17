@@ -87,7 +87,7 @@ cat << EOF >> input/pagecontent/actors.md
 Type: (person)
 
 
-Description: Counselor from origin country supporting Hajj pilgrim during inital health screening
+Description: Counselor from origin country supporting pilgrim during inital health screening
 {% include actor-counselor.md %}
 
 

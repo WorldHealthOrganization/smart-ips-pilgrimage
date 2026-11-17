@@ -1,0 +1,94 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "p0-keys-and-codes-shared",
+  "title": "P0 · Before the season — keys and codes are shared",
+  "description": "Onesa's HIE publishes the public keys it signs health documents with to the WHO GDHCN trust network, and shares the national code systems its IPS uses with the WHO Terminology Service. Nothing about Kamal yet: this is what lets a Taifafeki clinic trust and read an Onesan record months later. Step A of the overview of key process flows.",
+  "personas": [
+    "onesa-hie",
+    "who-gdhcn"
+  ],
+  "partOf": "the-pilgrims-hajj",
+  "when": "Before the pilgrimage season",
+  "where": "Lomaru and WHO GDHCN",
+  "country": "Onesa",
+  "trustLadder": "record-trust",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Wide banner, aspect ratio 11:4. Bright natural daylight, soft pastel palette with clear colour accents. Faces in gentle three-quarter view with expressive, kind features. Technology shown as simple, oversized icons: a phone with a QR code, a shield with a check mark, a small speech bubble with a symbol. No readable text, no logos, no real brands, no flags with text. All people are fictional.",
+    "cast": [],
+    "notes": [
+      "Pilgrim's white garments (two white unstitched sheets) is for men only; women wear ordinary modest clothing, usually white, face and hands uncovered.",
+      "Keep the shrine and other holy sites far in the background or out of frame.",
+      "Keep medical signs text-free so generators don't invent wrong Arabic.",
+      "The picture carries no text: the step title and the caption are page text."
+    ]
+  },
+  "steps": [
+    {
+      "id": "P0",
+      "title": "Keys and codes are shared",
+      "headline": "Before anyone travels, Onesa's signing keys and code systems reach the trust network, so a Taifafeki clinic can trust and read an Onesan record months later.",
+      "when": "Before the pilgrimage season",
+      "where": "Lomaru and WHO GDHCN",
+      "narrative": "Onesa's HIE publishes the public keys it signs health documents with to the WHO GDHCN trust network, and shares the national code systems its IPS uses with the WHO Terminology Service. Nothing about Kamal yet: this is what lets a Taifafeki clinic trust and read an Onesan record months later. Step A of the overview of key process flows.",
+      "lead": "onesa-hie",
+      "experiences": [
+        {
+          "actor": "onesa-hie",
+          "doing": "Publishes the public keys it signs health documents with to GDHCN, and shares its national code systems with the WHO Terminology Service."
+        },
+        {
+          "actor": "who-gdhcn",
+          "doing": "Lists Onesa's keys alongside those of every other participant, including Taifafeki."
+        }
+      ],
+      "painPoint": "Without published keys, a Taifafeki clinic has no way to tell a genuine Onesan record from a forged one.",
+      "enabler": "Both countries take part in one trust network, so each trusts the other's keys without a bilateral agreement.",
+      "policy": "Which Onesan institution signs health documents on behalf of the health sector, and who in Taifafeki decides to accept that signature?",
+      "handoff": {
+        "summary": "Onesa's keys and code systems are known to the trust network",
+        "carrier": "GDHCN trust network",
+        "payload": "Public signing keys (DSCs); national code systems",
+        "offline": false
+      },
+      "gaps": [
+        "No business process or transaction for publishing keys or terminologies."
+      ],
+      "references": [
+        {
+          "label": "SMART Trust framework (by reference)",
+          "href": "https://smart.who.int/trust",
+          "rel": "specified by"
+        },
+        {
+          "label": "User scenarios: the first two sections",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/scenarios.html",
+          "rel": "described in"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/pilgrim/p0.webp",
+        "alt": "Two cards far apart, the flag of Onesa (home country) and the flag of Taifafeki (host country), each with a health cross; a golden key travels from Onesa to a blue globe of linked dots between them, and code books to the Taifafeki side.",
+        "prompt": "Two government buildings far apart: an Onesan government building with tiered roof lines on the left, a modern Taifafeki ministry building on the right. Between them floats a glowing globe network node representing WHO GDHCN, a simple blue globe with linked dots. From the Onesan building a golden key icon travels along a dotted arc to the globe, and a small stack of code-book icons travels to a second node marked with a book symbol. No people; calm and abstract; early-morning light."
+      },
+      "record": {
+        "state": "held-at-home",
+        "description": "Kamal's record stays in Onesa's HIE; only keys and code systems are shared",
+        "heldWhere": "Onesa's HIE"
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "key",
+      "label": "Onesa's signing keys"
+    },
+    {
+      "icon": "globe",
+      "label": "WHO GDHCN trust list"
+    },
+    {
+      "icon": "shield-check",
+      "label": "Trusted abroad"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "hl7-smart-health-cards-and-links",
+  "type": "webpage",
+  "title": "Smart Health Links",
+  "author": [
+    {
+      "literal": "HL7 International"
+    }
+  ],
+  "URL": "https://build.fhir.org/ig/HL7/smart-health-cards-and-links/index.html",
+  "provenance": "authored"
+}

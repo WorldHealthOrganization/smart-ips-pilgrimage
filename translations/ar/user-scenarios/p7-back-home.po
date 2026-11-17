@@ -1,0 +1,155 @@
+# Arabic translation of user scenario p7-back-home
+#
+# UNOFFICIAL — drafted by an agent from the template beside it. No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# requirement ids, placeholders, numbers and URLs are kept as written;
+# persona names are fictional and kept as written. Modern Standard Arabic,
+# right-to-left. msgctxt is the scenario field path.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: p7-back-home\n"
+"POT-Creation-Date: 2026-11-10T20:12:07.198Z\n"
+"PO-Revision-Date: 2026-11-07\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: user-scenarios/p7-back-home.json:15
+msgctxt "country"
+msgid "Onesa"
+msgstr "Onesa"
+
+#: user-scenarios/p7-back-home.json:5
+msgctxt "description"
+msgid "Kamal comes home. His GP in Tanavu does not know he was treated in Nalemi. After the story this guide tells."
+msgstr "يعود Kamal إلى بلده. ولا يعلم طبيبه العام (GP) في Tanavu أنه تلقّى العلاج في Nalemi. بعد القصة التي يرويها هذا الدليل."
+
+#: user-scenarios/p7-back-home.json:78
+msgctxt "scene.label"
+msgid "Back in Tanavu"
+msgstr "العودة إلى Tanavu"
+
+#: user-scenarios/p7-back-home.json:91
+msgctxt "scene.label"
+msgid "Flies home"
+msgstr "الرحلة الجوية إلى البلد الأم"
+
+#: user-scenarios/p7-back-home.json:99
+msgctxt "scene.label"
+msgid "GP not told"
+msgstr "الطبيب العام (GP) لم يُبلَّغ"
+
+#: user-scenarios/p7-back-home.json:71
+msgctxt "step.enabler"
+msgid "Nothing yet: the guide does not specify a return path."
+msgstr "لا شيء حتى الآن: لا يحدد الدليل مسارًا للعودة."
+
+#: user-scenarios/p7-back-home.json:65
+msgctxt "step.experiences.doing"
+msgid "Fills in what he does not remember."
+msgstr "تُكمل ما لا يتذكره."
+
+#: user-scenarios/p7-back-home.json:53
+msgctxt "step.experiences.doing"
+msgid "Sees Kamal back home, with nothing in her record of his care in Taifafeki."
+msgstr "ترى Kamal بعد عودته إلى بلده، ولا شيء في سجلها عن الرعاية التي تلقّاها في Taifafeki."
+
+#: user-scenarios/p7-back-home.json:59
+msgctxt "step.experiences.doing"
+msgid "Tells her, as best he remembers, what happened."
+msgstr "يخبرها، قدر ما يتذكر، بما حدث."
+
+#: user-scenarios/p7-back-home.json:66
+msgctxt "step.experiences.feeling"
+msgid "“Someone should have sent it to her.”"
+msgstr "«كان ينبغي لأحدٍ أن يرسله إليها.»"
+
+#: user-scenarios/p7-back-home.json:60
+msgctxt "step.experiences.feeling"
+msgid "“They gave me a drip… I don't remember what else.”"
+msgstr "«أعطوني محلولًا وريديًا… لا أتذكر ماذا أيضًا.»"
+
+#: user-scenarios/p7-back-home.json:54
+msgctxt "step.experiences.feeling"
+msgid "“Treated in Nalemi? Nothing came back to me.”"
+msgstr "«تلقّى العلاج في Nalemi؟ لم يصلني شيء.»"
+
+#: user-scenarios/p7-back-home.json:74
+msgctxt "step.gaps"
+msgid "Nothing returns the record of care in Taifafeki, or a log of who opened his summary, to Onesa."
+msgstr "لا شيء يُعيد سجل الرعاية في Taifafeki، أو سجلًا بمن فتح ملخصه، إلى Onesa."
+
+#: user-scenarios/p7-back-home.json:44
+msgctxt "step.headline"
+msgid "Kamal is home and well, but his GP does not know he was treated in Nalemi."
+msgstr "عاد Kamal إلى وطنه وهو بخير، لكن طبيبه العام لا يعلم أنه تلقّى العلاج في Nalemi."
+
+#: user-scenarios/p7-back-home.json:78
+msgctxt "step.illustration.alt"
+msgid "Back in Tanavu, Kamal in a white kopiah and Salmah sit with Dr Aisyah, who looks at her computer with a question mark: the record of his care in Taifafeki has not come home."
+msgstr "بعد العودة إلى Tanavu، يجلس Kamal مرتديًا طاقية بيضاء، ومعه Salmah، مع د. Aisyah التي تنظر إلى حاسوبها وعليه علامة استفهام: فسجل رعايته في Taifafeki لم يعد إلى البلد الأم."
+
+#: user-scenarios/p7-back-home.json:5
+msgctxt "step.narrative"
+msgid "Kamal comes home. His GP in Tanavu does not know he was treated in Nalemi. After the story this guide tells."
+msgstr "يعود Kamal إلى بلده. ولا يعلم طبيبه العام (GP) في Tanavu أنه تلقّى العلاج في Nalemi. بعد القصة التي يرويها هذا الدليل."
+
+#: user-scenarios/p7-back-home.json:70
+msgctxt "step.painPoint"
+msgid "The record of care abroad, and who opened his summary, never comes home."
+msgstr "سجل الرعاية في الخارج، ومَن فتح ملخصه، لا يعودان أبدًا إلى البلد الأم."
+
+#: user-scenarios/p7-back-home.json:72
+msgctxt "step.policy"
+msgid "Should the host country send a summary of care back to the home country — and with whose consent?"
+msgstr "هل ينبغي للبلد المضيف أن يرسل ملخصًا للرعاية إلى البلد الأم — وبموافقة مَن؟"
+
+#: user-scenarios/p7-back-home.json:83
+msgctxt "step.record.description"
+msgid "Home again; his GP does not yet know he was treated"
+msgstr "عاد إلى البلد الأم؛ ولا يعلم طبيبه العام (GP) بعدُ أنه تلقّى العلاج"
+
+#: user-scenarios/p7-back-home.json:84
+msgctxt "step.record.heldWhere"
+msgid "Onesa's HIE"
+msgstr "HIE الخاص بـ Onesa"
+
+#: user-scenarios/p7-back-home.json:4
+msgctxt "step.title"
+msgid "Back home"
+msgstr "العودة إلى الوطن"
+
+#: user-scenarios/p7-back-home.json:47
+msgctxt "step.touchpoint"
+msgid "GP follow-up"
+msgstr "متابعة لدى الطبيب العام (GP)"
+
+#: user-scenarios/p7-back-home.json:13
+msgctxt "step.when"
+msgid "After the season"
+msgstr "بعد الموسم"
+
+#: user-scenarios/p7-back-home.json:14
+msgctxt "step.where"
+msgid "A GP clinic in Tanavu"
+msgstr "عيادة طبيب عام في Tanavu"
+
+#: user-scenarios/p7-back-home.json:4
+msgctxt "title"
+msgid "P7 · Back home"
+msgstr "P7 · العودة إلى البلد الأم"
+
+#: user-scenarios/p7-back-home.json:13
+msgctxt "when"
+msgid "After the season"
+msgstr "بعد الموسم"
+
+#: user-scenarios/p7-back-home.json:14
+msgctxt "where"
+msgid "A GP clinic in Tanavu"
+msgstr "عيادة طبيب عام في Tanavu"

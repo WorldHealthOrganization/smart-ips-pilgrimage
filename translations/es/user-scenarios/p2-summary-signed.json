@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of user-scenarios/p2-summary-signed.json. Agent translation, unofficial: no human has adjudicated it. Coverage 30/30.",
+  "label": "trans:es/user-scenarios/p2-summary-signed",
+  "locale": "es",
+  "sourceFile": "user-scenarios/p2-summary-signed.json",
+  "sourceHash": "efd0a4f74612",
+  "potFile": "translations/es/user-scenarios/p2-summary-signed.pot",
+  "poFile": "translations/es/user-scenarios/p2-summary-signed.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 30,
+    "total": 30,
+    "pct": 100
+  }
+}

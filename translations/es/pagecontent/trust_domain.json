@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of input/pagecontent/trust_domain.md. Agent translation, unofficial: no human has adjudicated it. Coverage 3/3.",
+  "label": "trans:es/pagecontent/trust_domain",
+  "locale": "es",
+  "sourceFile": "input/pagecontent/trust_domain.md",
+  "sourceHash": "cd03e2d61b77",
+  "potFile": "translations/es/pagecontent/trust_domain.pot",
+  "poFile": "translations/es/pagecontent/trust_domain.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 3,
+    "total": 3,
+    "pct": 100
+  }
+}

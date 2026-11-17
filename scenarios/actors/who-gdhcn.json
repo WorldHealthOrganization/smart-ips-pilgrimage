@@ -1,0 +1,15 @@
+{
+  "id": "who-gdhcn",
+  "title": "WHO GDHCN",
+  "kind": "system",
+  "description": "The WHO Global Digital Health Certification Network: the trust network Onesa and Taifafeki both take part in, which distributes the public keys health documents are signed with.",
+  "roles": [
+    "trust-network"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedIn": [
+      "https://worldhealthorganization.github.io/smart-ips-pilgrimage/concepts.html"
+    ]
+  }
+}

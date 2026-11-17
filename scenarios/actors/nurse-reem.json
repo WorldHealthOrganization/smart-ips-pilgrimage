@@ -1,0 +1,26 @@
+{
+  "id": "nurse-reem",
+  "title": "Nurse Reem (registration, Nalemi)",
+  "kind": "person",
+  "description": "Persona: the registration nurse at a pilgrimage health facility in Nalemi; a Host Country Health Worker. Fictional.",
+  "roles": [
+    "host-health-worker"
+  ],
+  "capabilities": [],
+  "meta": {
+    "persona": {
+      "name": "Nurse Reem",
+      "role": "Registration nurse",
+      "country": "Taifafeki",
+      "goal": "Register every pilgrim quickly, with a record she can trust.",
+      "needs": [
+        "A QR code that scans and verifies first time",
+        "One passcode rule she can explain"
+      ],
+      "frustrations": [
+        "Pilgrims with no phone, a flat battery or no QR code",
+        "Passcodes that differ by country"
+      ]
+    }
+  }
+}

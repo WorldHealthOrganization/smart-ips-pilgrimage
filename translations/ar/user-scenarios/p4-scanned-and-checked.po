@@ -1,0 +1,195 @@
+# Arabic translation of user scenario p4-scanned-and-checked
+#
+# UNOFFICIAL — drafted by an agent from the template beside it. No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# requirement ids, placeholders, numbers and URLs are kept as written;
+# persona names are fictional and kept as written. Modern Standard Arabic,
+# right-to-left. msgctxt is the scenario field path.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: p4-scanned-and-checked\n"
+"POT-Creation-Date: 2026-11-12T11:57:11.966Z\n"
+"PO-Revision-Date: 2026-11-07\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: user-scenarios/p4-scanned-and-checked.json:17
+msgctxt "country"
+msgid "Taifafeki"
+msgstr "Taifafeki"
+
+#: user-scenarios/p4-scanned-and-checked.json:5
+msgctxt "description"
+msgid "Nurse Reem scans the code in the facility's EMR and enters the passcode. The EMR checks the signature with Onesa's public key, fetched from GDHCN: the record really comes from Onesa's HIE and has not been changed. Step 4 and step B of the overview of key process flows."
+msgstr "تمسح الممرضة Reem الرمز في EMR المرفق الصحي وتُدخل رمز المرور. ويتحقق EMR من التوقيع باستخدام المفتاح العمومي لـ Onesa، الذي جُلب من GDHCN: فالسجل صادر فعلًا عن HIE الخاص بـ Onesa ولم يُغيَّر. الخطوة 4 والخطوة B من النظرة العامة على تدفقات العمليات الرئيسية."
+
+#: user-scenarios/p4-scanned-and-checked.json:138
+msgctxt "scene.label"
+msgid "Key from GDHCN"
+msgstr "مفتاح من GDHCN"
+
+#: user-scenarios/p4-scanned-and-checked.json:4
+msgctxt "scene.label"
+msgid "Scanned"
+msgstr "تم المسح"
+
+#: user-scenarios/p4-scanned-and-checked.json:142
+msgctxt "scene.label"
+msgid "Signature verified"
+msgstr "تم التحقق من التوقيع"
+
+#: user-scenarios/p4-scanned-and-checked.json:81
+msgctxt "step.enabler"
+msgid "The EMR verifies the signature against a key it got from the trust network, with no call to Onesa needed."
+msgstr "يتحقق EMR من التوقيع مقابل مفتاح حصل عليه من شبكة الثقة، دون الحاجة إلى أي اتصال بـ Onesa."
+
+#: user-scenarios/p4-scanned-and-checked.json:73
+msgctxt "step.experiences.doing"
+msgid "Decodes the QR code and verifies its signature with Onesa's public key."
+msgstr "يفك ترميز رمز QR ويتحقق من توقيعه بالمفتاح العمومي لـ Onesa."
+
+#: user-scenarios/p4-scanned-and-checked.json:55
+msgctxt "step.experiences.doing"
+msgid "Scans the QR code into the EMR and enters the passcode; sees the signature verified."
+msgstr "تمسح رمز QR إلى EMR وتُدخل رمز المرور؛ وترى أن التوقيع قد تُحقِّق منه."
+
+#: user-scenarios/p4-scanned-and-checked.json:61
+msgctxt "step.experiences.doing"
+msgid "Sits and waits while the code is scanned."
+msgstr "يجلس وينتظر بينما يُمسح الرمز."
+
+#: user-scenarios/p4-scanned-and-checked.json:77
+msgctxt "step.experiences.doing"
+msgid "Supplies Onesa's public key."
+msgstr "يوفّر المفتاح العمومي لـ Onesa."
+
+#: user-scenarios/p4-scanned-and-checked.json:67
+msgctxt "step.experiences.doing"
+msgid "Tells Nurse Reem the passcode."
+msgstr "يُخبر الممرضة Reem برمز المرور."
+
+#: user-scenarios/p4-scanned-and-checked.json:62
+msgctxt "step.experiences.feeling"
+msgid "“I hope it works.”"
+msgstr "«آمل أن ينجح الأمر.»"
+
+#: user-scenarios/p4-scanned-and-checked.json:68
+msgctxt "step.experiences.feeling"
+msgid "“They knew what to do with it.”"
+msgstr "«لقد عرفوا ما يفعلون به.»"
+
+#: user-scenarios/p4-scanned-and-checked.json:56
+msgctxt "step.experiences.feeling"
+msgid "“Verified: it really comes from Onesa.”"
+msgstr "«تم التحقق: إنه صادر فعلًا من Onesa.»"
+
+#: user-scenarios/p4-scanned-and-checked.json:104
+msgctxt "step.gaps"
+msgid "Not yet consistent: the concepts page says the default passcode is the pilgrim's birth date; the reference implementation sets one standard passcode for all its pilgrims for the season."
+msgstr "غير متسق بعد: تذكر صفحة المفاهيم أن رمز المرور الافتراضي هو تاريخ ميلاد الزائر؛ بينما يحدد التنفيذ المرجعي رمز مرور قياسيًا واحدًا لجميع زائريه طوال الموسم."
+
+#: user-scenarios/p4-scanned-and-checked.json:105
+msgctxt "step.gaps"
+msgid "The Clinical Encounter for Unplanned Care diagram draws no separate task for entering the passcode."
+msgstr "لا يرسم مخطط اللقاء السريري في إطار الرعاية غير المخطط لها مهمة مستقلة لإدخال رمز المرور."
+
+#: user-scenarios/p4-scanned-and-checked.json:87
+msgctxt "step.handoff.carrier"
+msgid "GDHCN trust list"
+msgstr "قائمة الثقة في GDHCN"
+
+#: user-scenarios/p4-scanned-and-checked.json:5
+msgctxt "step.handoff.payload"
+msgid "Onesa's public key"
+msgstr "المفتاح العمومي لـ Onesa"
+
+#: user-scenarios/p4-scanned-and-checked.json:84
+msgctxt "step.handoff.summary"
+msgid "The VHL is verified"
+msgstr "تم التحقق من VHL"
+
+#: user-scenarios/p4-scanned-and-checked.json:46
+msgctxt "step.headline"
+msgid "Nurse Reem scans the code and enters the passcode; the EMR checks the signature with Onesa's key from GDHCN."
+msgstr "تمسح الممرضة Reem الرمز وتُدخل رمز المرور؛ ويتحقق EMR من التوقيع بمفتاح Onesa المأخوذ من GDHCN."
+
+#: user-scenarios/p4-scanned-and-checked.json:121
+msgctxt "step.illustration.alt"
+msgid "Nurse Reem scans the QR code on Kamal's phone; the facility screen shows a passcode and a green shield, while a key comes back from the trust-network globe."
+msgstr "تمسح الممرضة Reem رمز QR على هاتف Kamal؛ وتعرض شاشة المرفق الصحي رمز مرور ودرعًا أخضر، بينما يعود مفتاح من كرة شبكة الثقة الأرضية."
+
+#: user-scenarios/p4-scanned-and-checked.json:5
+msgctxt "step.narrative"
+msgid "Nurse Reem scans the code in the facility's EMR and enters the passcode. The EMR checks the signature with Onesa's public key, fetched from GDHCN: the record really comes from Onesa's HIE and has not been changed. Step 4 and step B of the overview of key process flows."
+msgstr "تمسح الممرضة Reem الرمز في EMR المرفق الصحي وتُدخل رمز المرور. ويتحقق EMR من التوقيع باستخدام المفتاح العمومي لـ Onesa، الذي جُلب من GDHCN: فالسجل صادر فعلًا عن HIE الخاص بـ Onesa ولم يُغيَّر. الخطوة 4 والخطوة B من النظرة العامة على تدفقات العمليات الرئيسية."
+
+#: user-scenarios/p4-scanned-and-checked.json:80
+msgctxt "step.painPoint"
+msgid "Without a signature check, the clinic cannot tell a genuine record from a forged or altered one."
+msgstr "من دون التحقق من التوقيع، لا تستطيع العيادة التمييز بين سجل حقيقي وآخر مزوَّر أو مُعدَّل."
+
+#: user-scenarios/p4-scanned-and-checked.json:82
+msgctxt "step.policy"
+msgid "What protection should the passcode give — and is a passcode shared by every pilgrim of a country a passcode at all?"
+msgstr "ما الحماية التي ينبغي أن يوفرها رمز المرور — وهل رمز المرور الذي يتشاركه جميع زوار بلد ما يُعدّ رمز مرور أصلًا؟"
+
+#: user-scenarios/p4-scanned-and-checked.json:126
+msgctxt "step.record.description"
+msgid "The signature is checked against GDHCN's trust list"
+msgstr "يُتحقَّق من التوقيع مقابل قائمة الثقة في GDHCN"
+
+#: user-scenarios/p4-scanned-and-checked.json:127
+msgctxt "step.record.heldWhere"
+msgid "The Nalemi facility's EMR"
+msgstr "EMR المرفق الصحي في Nalemi"
+
+#: user-scenarios/p4-scanned-and-checked.json:109
+msgctxt "step.references.label"
+msgid "Business process: Clinical Encounter for Unplanned Care (scan QR code, add passcode, verify QR code signature)"
+msgstr "عملية العمل: اللقاء السريري في إطار الرعاية غير المخطط لها (مسح رمز QR، إضافة رمز المرور، التحقق من توقيع رمز QR)"
+
+#: user-scenarios/p4-scanned-and-checked.json:114
+msgctxt "step.references.label"
+msgid "Reference implementation: the receiving steps"
+msgstr "التنفيذ المرجعي: خطوات الاستقبال"
+
+#: user-scenarios/p4-scanned-and-checked.json:4
+msgctxt "step.title"
+msgid "Scanned and checked"
+msgstr "المسح والتحقق"
+
+#: user-scenarios/p4-scanned-and-checked.json:49
+msgctxt "step.touchpoint"
+msgid "Facility EMR with bar code scanner"
+msgstr "EMR المرفق الصحي مع ماسح الرموز الشريطية"
+
+#: user-scenarios/p4-scanned-and-checked.json:15
+msgctxt "step.when"
+msgid "Second day in Nalemi"
+msgstr "اليوم الثاني في Nalemi"
+
+#: user-scenarios/p4-scanned-and-checked.json:16
+msgctxt "step.where"
+msgid "Registration, pilgrimage health facility, Nalemi"
+msgstr "التسجيل، المرفق الصحي للزيارة الدينية، Nalemi"
+
+#: user-scenarios/p4-scanned-and-checked.json:4
+msgctxt "title"
+msgid "P4 · Scanned and checked"
+msgstr "P4 · المسح والتحقق"
+
+#: user-scenarios/p4-scanned-and-checked.json:15
+msgctxt "when"
+msgid "Second day in Nalemi"
+msgstr "اليوم الثاني في Nalemi"
+
+#: user-scenarios/p4-scanned-and-checked.json:16
+msgctxt "where"
+msgid "Registration, pilgrimage health facility, Nalemi"
+msgstr "التسجيل، المرفق الصحي للزيارة الدينية، Nalemi"

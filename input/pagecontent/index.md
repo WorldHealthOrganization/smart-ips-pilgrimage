@@ -1,5 +1,6 @@
-This Implementation Guide is intended to support the utilization of variable International Patient Summary (IPS)  documents during pilgrimage leveraging  [WHO Global Digital Health Certification Network (GDHCN)](https://www.who.int/initiatives/global-digital-health-certification-network) global public health infrastructure.
+{% lang-fragment journey-hero.html %}
 
+This Implementation Guide is intended to support the utilization of verifiable International Patient Summary (IPS) documents during pilgrimage, leveraging [WHO Global Digital Health Certification Network (GDHCN)](https://www.who.int/initiatives/global-digital-health-certification-network) global public health infrastructure.
 
 <div style="float: left;">
 This implementation guide and set of artifacts are still undergoing development. 
@@ -7,6 +8,57 @@ This implementation guide and set of artifacts are still undergoing development.
 {:.stu-note}
 
 <br clear="all"/>
+### Eight moments that matter
+
+<div markdown="0">{% lang-fragment journey-cards.html %}</div>
+<br clear="all"/>
+
+The [user scenarios](scenarios.html) of this guide told as one pilgrim's story,
+step by step along the [overview of key process flows](business-processes.html)
+(the numbered steps 1–5 and A–B of the figure below). Click a picture to walk
+through that moment in the [journeys viewer](en/smart-ips-pilgrimage/journeys/smart-ips-pilgrimage/the-pilgrims-hajj/),
+which names who takes part, what in this guide specifies it, and the policy
+question it raises.
+
+<div class="stu-note" markdown="1">
+**Every person in this story, and both countries, are fictional.** Kamal comes
+from **Onesa** (code `XXK`) and goes on pilgrimage in **Taifafeki** (code `XXR`): two
+fictional countries shared with the [SMART Trust demo](https://github.com/litlfred/smart-trust-demo/tree/main/scenarios/countries),
+whose codes are ISO 3166-1 user-assigned codes, so they never name a real country.
+The steps follow this guide's real
+[Malaysian reference implementation](reference-implementations-malaysia.html),
+Malaysia's Hajj Health Card, as a policy precedent.
+</div>
+
+<div style="width:100%" markdown="0">{% lang-fragment workflow-figure.html %}</div>
+
+Each numbered flow in the figure names its moment above, and each moment has its own [ArchiMate view](en/smart-ips-pilgrimage/archimate/2.1.0/view/the-pilgrims-journey/).
+
+### The people
+
+| Person | Who they are | Generic persona |
+|---|---|---|
+| **Kamal** | 61, from Tanavu, Onesa, going on pilgrimage for the first time. Has type 2 diabetes and high blood pressure; takes insulin and two tablets a day; allergic to penicillin. Carries one phone. | [Pilgrim](personas.html) |
+| **Salmah** | Kamal's wife, travelling with him. Speaks for him when he cannot. | Accompanying family member (not yet a persona here) |
+| **Dr Aisyah** | General practitioner in Tanavu, empanelled by the national pilgrimage authority for pre-pilgrimage health examinations. | [Counsellor](personas.html) |
+| **Dr Hafiz** | Doctor of the Onesan pilgrimage medical team, travelling with the pilgrims. | [Accompanying Clinician from Origin Country](personas.html) |
+| **Nurse Reem** | Registration nurse at a pilgrimage health facility in Nalemi. | [Host Country Health Worker](personas.html) |
+| **Dr Faisal** | Emergency physician at the same facility. | [Host Country Health Worker](personas.html) |
+
+And the systems: Kamal's **national health wallet** ([Origin Country Wallet](system-actors.html#ochw)),
+Onesa's **health information exchange** ([Origin Country HIE](system-actors.html#ochie)),
+the facility's **EMR** ([Host Country EMR](system-actors.html#hcemr)), and **WHO GDHCN**,
+the trust network both countries take part in.
+
+### What the story shows the guide still needs
+
+1. Business processes for P0 (keys and terminologies), P2 (assembling the IPS) and P6 (break the glass).
+2. The two pilgrim forms named in P1, and a page for the pilgrim and counsellor actors: their actor files exist but no page includes them.
+3. One passcode policy (P4), stated once.
+4. An account of access back to the home country (P5, P7), and of language (P5).
+5. Example patients that are pilgrims: today's examples are a resident of the Netherlands.
+6. The data dictionary, decision logic, indicators and functional requirements, which are still placeholders.
+
 ### Summary 
 
 This implementation guide includes a machine-readable representation of WHO guidelines for verifiable IPS during pilgrimage. It explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of IPS during pilgrimage usage scenario.  This Implementation Guide leverages the <a href="https://www.who.int/initiatives/global-digital-health-certification-network">WHO Global Digital Health Certification Network (GDHCN)</a>.
@@ -14,13 +66,10 @@ This implementation guide includes a machine-readable representation of WHO guid
 
 The guide is part of the <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">WHO SMART Guidelines approach</a> to support countries to integrate WHO global health and data recommendations into digital systems accurately and consistently. It defines a series of FHIR Resources, Profiles, Extensions, and Terminology.
 
-Supporting guidance, recommendations, resources, and standards are included in the <a href="references.html">References</a> and <a href="dependencies.html">Dependencies</a>.
+Supporting guidance, recommendations, resources, and standards are included in the <a href="en/folio-assistant-core/bibliography/">Bibliography</a> and <a href="dependencies.html">Dependencies</a>.
 
 Eligible Participants may request to join through the <a href ="Letter_of_Application_IPS_Pilgrimage_1.0.docx">The Letter of Application</a>
 <br/>
-
-<img src="workflow.png" alt="Overview of key clinical process flows" style="width:60%"/>
-<br clear="all"/>
 
 ### About this implementation guide
 

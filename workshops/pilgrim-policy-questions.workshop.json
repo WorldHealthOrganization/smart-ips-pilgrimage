@@ -1,0 +1,190 @@
+{
+  "$schema": "workshop/0.1.0",
+  "id": "pilgrim-policy-questions",
+  "title": "The pilgrim's journey: the policy questions",
+  "description": "The policy question each moment of the pilgrim's journey (P0 to P7) raises, one per moment, as questions for a room of origin- and host-country policy makers. A question is a question: the room names who holds the answer today, it does not decide it.",
+  "audience": "Ministry of Health and pilgrimage-authority policy makers of an origin country and the host country",
+  "scenarios": [
+    "p0-keys-and-codes-shared",
+    "p1-health-check-and-consent",
+    "p2-summary-signed",
+    "p3-taken-ill-in-mina",
+    "p4-scanned-and-checked",
+    "p5-record-read-and-treated",
+    "p6-break-the-glass",
+    "p7-back-home"
+  ],
+  "modules": [
+    {
+      "id": "M1",
+      "title": "What the journey asks of policy",
+      "carries": "For each moment: who answers this question in our country today, and is it written down?",
+      "objectives": [
+        "Name, for each moment, who holds the answer today",
+        "Say which questions need the origin and host country to agree"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "scenario": "p0-keys-and-codes-shared",
+      "step": "P0",
+      "askTheRoom": "Which Onesan institution signs health documents on behalf of the health sector, and who in Taifafeki decides to accept that signature?",
+      "questions": [
+        {
+          "module": "M1",
+          "text": "Which Onesan institution signs health documents on behalf of the health sector, and who in Taifafeki decides to accept that signature?"
+        }
+      ]
+    },
+    {
+      "scenario": "p1-health-check-and-consent",
+      "step": "P1",
+      "askTheRoom": "Is consent given once for the whole pilgrimage season, per facility, or per encounter — and can Kamal withdraw it while abroad?",
+      "questions": [
+        {
+          "module": "M1",
+          "text": "Is consent given once for the whole pilgrimage season, per facility, or per encounter — and can Kamal withdraw it while abroad?"
+        }
+      ]
+    },
+    {
+      "scenario": "p2-summary-signed",
+      "step": "P2",
+      "askTheRoom": "What must the summary contain for a pilgrim — and who decides what is left out?",
+      "questions": [
+        {
+          "module": "M1",
+          "text": "What must the summary contain for a pilgrim — and who decides what is left out?"
+        }
+      ]
+    },
+    {
+      "scenario": "p3-taken-ill-in-mina",
+      "step": "P3",
+      "askTheRoom": "What should happen when a pilgrim arrives with no phone, a flat battery, or no QR code?",
+      "questions": [
+        {
+          "module": "M1",
+          "text": "What should happen when a pilgrim arrives with no phone, a flat battery, or no QR code?"
+        }
+      ]
+    },
+    {
+      "scenario": "p4-scanned-and-checked",
+      "step": "P4",
+      "askTheRoom": "What protection should the passcode give — and is a passcode shared by every pilgrim of a country a passcode at all?",
+      "questions": [
+        {
+          "module": "M1",
+          "text": "What protection should the passcode give — and is a passcode shared by every pilgrim of a country a passcode at all?"
+        }
+      ]
+    },
+    {
+      "scenario": "p5-record-read-and-treated",
+      "step": "P5",
+      "askTheRoom": "Does Onesa learn that Kamal's record was opened in Taifafeki, and by whom?",
+      "questions": [
+        {
+          "module": "M1",
+          "text": "Does Onesa learn that Kamal's record was opened in Taifafeki, and by whom?"
+        }
+      ]
+    },
+    {
+      "scenario": "p6-break-the-glass",
+      "step": "P6",
+      "askTheRoom": "Who may open an unconscious pilgrim's record, on what legal basis, and how is it accounted for afterwards?",
+      "questions": [
+        {
+          "module": "M1",
+          "text": "Who may open an unconscious pilgrim's record, on what legal basis, and how is it accounted for afterwards?"
+        }
+      ]
+    },
+    {
+      "scenario": "p7-back-home",
+      "step": "P7",
+      "askTheRoom": "Should the host country send a summary of care back to the home country — and with whose consent?",
+      "questions": [
+        {
+          "module": "M1",
+          "text": "Should the host country send a summary of care back to the home country — and with whose consent?"
+        }
+      ]
+    }
+  ],
+  "discussion": [
+    {
+      "id": "trust-and-signature",
+      "module": "M1",
+      "theme": "Trust",
+      "question": "Who signs on behalf of the health sector, and who accepts a foreign signature?",
+      "steps": [
+        "p0-keys-and-codes-shared#P0",
+        "p4-scanned-and-checked#P4"
+      ]
+    },
+    {
+      "id": "consent-and-access",
+      "module": "M1",
+      "theme": "Consent and access",
+      "question": "What did the pilgrim agree to, and how is every access to the record accounted for, emergency access included?",
+      "steps": [
+        "p1-health-check-and-consent#P1",
+        "p5-record-read-and-treated#P5",
+        "p6-break-the-glass#P6",
+        "p7-back-home#P7"
+      ]
+    }
+  ],
+  "presentation": {
+    "name": "Pilgrim IPS",
+    "badge": "Interactive Spec",
+    "tagline": "International Patient Summary (IPS) • WHO GDHCN • Verifiable Health Links (VHL)",
+    "subject": "Verifiable IPS for pilgrimage",
+    "scope": "Onesa ⇄ Taifafeki",
+    "story": "Kamal, 61, falls ill in Nalemi on his first pilgrimage, and a Taifafeki doctor reads his medicines and allergies from his Onesan health summary, checked as genuine through WHO GDHCN.",
+    "lede": "One pilgrim and the people around him, eight moments, one pilgrimage season. Follow the people first; the technology is what makes each hand-off possible.",
+    "recordOf": "kamal",
+    "presenterNote": "Lead with people, not screens: introduce the cast, walk the eight moments, then open the guide only when the room asks \"how does that work?\"",
+    "about": {
+      "title": "This walkthrough is the story of a FHIR implementation guide",
+      "text": "The same journey is specified in the SMART Verifiable IPS for Pilgrimage guide: personas, business processes, the overview of key process flows, and its ArchiMate model."
+    },
+    "links": [
+      {
+        "label": "The IG",
+        "href": "https://litlfred.github.io/smart-ips-pilgrimage/",
+        "frame": "FHIR IG"
+      },
+      {
+        "label": "The pilgrim's journey",
+        "href": "https://litlfred.github.io/smart-ips-pilgrimage/index.html"
+      },
+      {
+        "label": "Business processes",
+        "href": "https://litlfred.github.io/smart-ips-pilgrimage/business-processes.html"
+      },
+      {
+        "label": "ArchiMate",
+        "href": "https://litlfred.github.io/smart-ips-pilgrimage/en/smart-ips-pilgrimage/archimate/2.1.0/view/overview-of-key-process-flows/"
+      }
+    ],
+    "ig": {
+      "href": "",
+      "processes": "business-processes.html",
+      "example": "artifact/{type}-{id}.html",
+      "profile": "artifact/StructureDefinition-{id}.html"
+    },
+    "views": [
+      {
+        "model": "2.1.0",
+        "view": "id-59a6185ff9f2580db475ac98b7e1e854",
+        "label": "Key process flows"
+      }
+    ],
+    "closingQuestion": "The technology works. What do the origin and host countries need to agree on to make it real?"
+  }
+}

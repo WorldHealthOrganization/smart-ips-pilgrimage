@@ -1,0 +1,15 @@
+{
+  "id": "onesa-hie",
+  "title": "Onesa's health information exchange",
+  "kind": "system",
+  "description": "Onesa's HIE: publishes its signing keys to GDHCN, assembles Kamal's IPS, signs it, issues the VHL and answers the host EMR's requests. Plays the guide's Origin Country HIE.",
+  "roles": [
+    "origin-hie"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedIn": [
+      "https://worldhealthorganization.github.io/smart-ips-pilgrimage/system-actors.html#ochie"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+# Arabic translation of pagecontent/business-processes
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.166Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/business-processes.md:26
+msgid "# Process Name Process ID Personas Objectives      Title  ID used to reference this process throughout the DAK  Individuals interacting to complete the process  A concrete statement describing what the process seeks to achieve    1.0 Publication of National Public Keys for Verification  IPS.PILGRIMAGE.1.0  WHO GDHCN National HIE Host Country EMR  Distribute keys used to verify patient records   2.0 Publication of National Terminologies  IPS.PILGRIMAGE.2.0  WHO TSNational HIEHost Country EMRHost Country HIE  Distribute national terminologies (e.g. medical products) used in national profiles of the IPS    3.0 Issuance of Health Document at Origin Country IPS.PILGRIMAGE.3.0 PilgrimCounselorHealth Wallet AppNational HIE Retrieve a Pilgrim's patient summary for a unplanned clinical encounter   4.0 Clinical Encounter for Unplanned Care IPS.PILGRIMAGE.4.0 Host Country Health workerPilgrimHost Country EMRNational HIE Retrieve a Pilgrim's patient summary for a unplanned clinical encounter   5.0 Break The Glass Clinical Encounter (not in scope for phase 1)  IPS.PILGRIMAGE.5.0 National Pilgrimage AuthorityHost Country Health WorkerPilgrimHost Country EMRNational HIE Retrieve a Pilgrim's patient summary for an emergency unplanned clinical encounter   6.0 Retrieve IPS post the pilgrimage for Investigation (not in scope) IPS.PILGRIMAGE.6.0 National Pilgrimage AuthorityHost Country EMR Retrieve a Pilgrim's patient summary post the pilgrimage for investigating legal matters"
+msgstr "# اسم العملية معرّف العملية الشخصيات الافتراضية الأهداف      العنوان  المعرّف المستخدم للإشارة إلى هذه العملية في جميع أنحاء DAK  الأفراد المتفاعلون لإتمام العملية  بيان محدد يصف ما تسعى العملية إلى تحقيقه    1.0 نشر المفاتيح العمومية الوطنية لأغراض التحقق  IPS.PILGRIMAGE.1.0  GDHCN التابعة لمنظمة الصحة العالمية (WHO)، HIE الوطني، EMR البلد المضيف  توزيع المفاتيح المستخدمة للتحقق من سجلات المرضى   2.0 نشر المصطلحات الوطنية  IPS.PILGRIMAGE.2.0  TS التابعة لمنظمة الصحة العالمية (WHO)، HIE الوطني، EMR البلد المضيف، HIE البلد المضيف  توزيع المصطلحات الوطنية (مثل المنتجات الطبية) المستخدمة في الملفات التعريفية الوطنية لـ IPS    3.0 إصدار المستند الصحي في البلد الأم IPS.PILGRIMAGE.3.0 الزائر، المستشار، تطبيق المحفظة الصحية، HIE الوطني استرجاع ملخص المريض الخاص بالزائر للقاء سريري غير مخطط له   4.0 لقاء سريري لرعاية غير مخطط لها IPS.PILGRIMAGE.4.0 العامل الصحي في البلد المضيف، الزائر، EMR البلد المضيف، HIE الوطني استرجاع ملخص المريض الخاص بالزائر للقاء سريري غير مخطط له   5.0 لقاء سريري في حالة كسر الزجاج (خارج نطاق المرحلة 1)  IPS.PILGRIMAGE.5.0 السلطة الوطنية للزيارة الدينية، العامل الصحي في البلد المضيف، الزائر، EMR البلد المضيف، HIE الوطني استرجاع ملخص المريض الخاص بالزائر للقاء سريري طارئ غير مخطط له   6.0 استرجاع IPS بعد الزيارة الدينية لأغراض التحقيق (خارج النطاق) IPS.PILGRIMAGE.6.0 السلطة الوطنية للزيارة الدينية، EMR البلد المضيف استرجاع ملخص المريض الخاص بالزائر بعد الزيارة الدينية للتحقيق في المسائل القانونية"
+
+#: input/pagecontent/business-processes.md:3
+msgid "A business process, or process, is a set of related activities or tasks performed together to achieve the objectives of the health programme area, such as registration, counselling, referrals. Workflows are a visual representation of the progression of activities (tasks, events, interactions) that are performed within the business process. The workflow provides a “story” for the business process being diagrammed and is used to enhance communication and collaboration among users, stakeholders and engineers."
+msgstr "عملية العمل، أو العملية، هي مجموعة من الأنشطة أو المهام المترابطة التي تُنفَّذ معًا لتحقيق أهداف مجال البرنامج الصحي، مثل التسجيل والإرشاد والإحالات. وسير العمل تمثيل مرئي لتسلسل الأنشطة (المهام والأحداث والتفاعلات) التي تُنفَّذ ضمن عملية العمل. ويقدّم سير العمل «قصة» لعملية العمل الممثَّلة في المخطط، ويُستخدم لتعزيز التواصل والتعاون بين المستخدمين وأصحاب المصلحة والمهندسين."
+
+#: input/pagecontent/business-processes.md:132
+msgid "Clinical Encounter for Unplanned Care"
+msgstr "لقاء سريري لرعاية غير مخطط لها"
+
+#: input/pagecontent/business-processes.md:126
+msgid "Health Check and Counseling, Explicit Consent (brief)"
+msgstr "الفحص الصحي والإرشاد، موافقة صريحة (موجز)"
+
+#: input/pagecontent/business-processes.md:120
+msgid "Health Check and Counseling, Verbal Consent (brief)"
+msgstr "الفحص الصحي والإرشاد، موافقة شفهية (موجز)"
+
+#: input/pagecontent/business-processes.md:118
+msgid "Issuance of Health Document at Origin Country"
+msgstr "إصدار المستند الصحي في البلد الأم"
+
+#: input/pagecontent/business-processes.md:22
+msgid "Overview of Key Business Processes"
+msgstr "نظرة عامة على عمليات العمل الرئيسية"
+
+#: input/pagecontent/business-processes.md:14
+msgid "Overview of key process flows"
+msgstr "نظرة عامة على مسارات العمليات الرئيسية"
+
+#: input/pagecontent/business-processes.md:101
+msgid "Publication of National Public Keys for Verification"
+msgstr "نشر المفاتيح العمومية الوطنية لأغراض التحقق"
+
+#: input/pagecontent/business-processes.md:110
+msgid "Publication of National Terminologies"
+msgstr "نشر المصطلحات الوطنية"
+
+#: input/pagecontent/business-processes.md:15
+msgid "The diagram here denotes the key process flows at a high level, which are further described in details as various business processes."
+msgstr "يبيّن المخطط هنا مسارات العمليات الرئيسية على مستوى عالٍ، وتُوصَف بمزيد من التفصيل في صورة عمليات عمل مختلفة."
+
+#: input/pagecontent/business-processes.md:24
+msgid "The following table describes the workflows of the included processes."
+msgstr "يصف الجدول التالي سير العمل الخاص بالعمليات المشمولة."
+
+#: input/pagecontent/business-processes.md:11
+msgid "The Trust Domain for IPS Pilgrimage focuses on key business processes that are part of providing care for pilgrims during a pilgrimage."
+msgstr "يركّز نطاق الثقة الخاص بـ IPS للزيارة الدينية على عمليات العمل الرئيسية التي تُعدّ جزءًا من تقديم الرعاية للزوار خلال الزيارة الدينية."
+
+#: input/pagecontent/business-processes.md:97
+msgid "The workflows that follow depict processes that have been generalized across different contexts and may not reflect the variability and nuances across different settings. The simplicity of the workflow may not adequately illustrate the nonlinear steps that may occur."
+msgstr "تصوّر مسارات العمل التالية عمليات جرى تعميمها عبر سياقات مختلفة، وقد لا تعكس التباين والفروق الدقيقة بين البيئات المختلفة. وقد لا تُبيّن بساطة سير العمل على نحو كافٍ الخطوات غير الخطية التي قد تحدث."
+
+#: input/pagecontent/business-processes.md:1
+msgid "This page describes the business processes."
+msgstr "تصف هذه الصفحة عمليات العمل."
+
+#: input/pagecontent/business-processes.md:103
+#: input/pagecontent/business-processes.md:112
+msgid "TO DO: Insert diagram"
+msgstr "قيد الإنجاز: إدراج المخطط"
+
+#: input/pagecontent/business-processes.md:96
+msgid "Workflows"
+msgstr "مسارات العمل"

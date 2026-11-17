@@ -1,0 +1,70 @@
+# Arabic translation of pagecontent/dependencies
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.174Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/dependencies.md:5
+msgid "<a0>Audit Trail and Node Authentication (ATNA) Profile</a0>"
+msgstr "<a0>ملف تعريف سجل التدقيق ومصادقة العُقد (ATNA)</a0>"
+
+#: input/pagecontent/dependencies.md:15
+msgid "<a0>Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) IPS Implementation Guide, published by HL7 International - Patient Care Work Group</a0>"
+msgstr "<a0>دليل تنفيذ IPS لموارد التشغيل البيني السريع للرعاية الصحية (FHIR) من Health Level 7 ‏(HL7)، الصادر عن HL7 International - فريق عمل رعاية المرضى</a0>"
+
+#: input/pagecontent/dependencies.md:11
+msgid "<a0>Mobile access to Health Documents (MHD)</a0>"
+msgstr "<a0>الوصول المتنقل إلى الوثائق الصحية (MHD)</a0>"
+
+#: input/pagecontent/dependencies.md:9
+msgid "<a0>Mobile Care Services Discovery (mCSD) Profile</a0>"
+msgstr "<a0>ملف تعريف اكتشاف خدمات الرعاية المتنقلة (mCSD)</a0>"
+
+#: input/pagecontent/dependencies.md:13
+msgid "<a0>Privacy Consent on FHIR (PCF)</a0>"
+msgstr "<a0>موافقة الخصوصية على FHIR ‏(PCF)</a0>"
+
+#: input/pagecontent/dependencies.md:7
+msgid "<a0>Sharing Valuesets and Concept Maps (SVCM) Profile</a0>"
+msgstr "<a0>ملف تعريف مشاركة مجموعات القيم وخرائط المفاهيم (SVCM)</a0>"
+
+#: input/pagecontent/dependencies.md:21
+msgid "<a0>WHO Family of International Classifications</a0>"
+msgstr "<a0>أسرة التصنيفات الدولية لمنظمة الصحة العالمية (WHO)</a0>"
+
+#: input/pagecontent/dependencies.md:19
+msgid "<a0>WHO International Classification of Diseases 11th Revision (ICD-11)</a0>"
+msgstr "<a0>المراجعة الحادية عشرة للتصنيف الدولي للأمراض (ICD-11) لمنظمة الصحة العالمية (WHO)</a0>"
+
+#: input/pagecontent/dependencies.md:3
+msgid "Integrating the Healthcare Enterprise (IHE):"
+msgstr "تكامل مؤسسات الرعاية الصحية (IHE):"
+
+#: input/pagecontent/dependencies.md:1
+msgid "The following standards and profiles are referenced in this implementation guide:"
+msgstr "المعايير وملفات التعريف التالية مُشار إليها في دليل التنفيذ هذا:"
+
+#: input/pagecontent/dependencies.md:17
+msgid "World Health Organization (WHO):"
+msgstr "منظمة الصحة العالمية (WHO):"

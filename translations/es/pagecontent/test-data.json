@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of input/pagecontent/test-data.md. Agent translation, unofficial: no human has adjudicated it. Coverage 2/2.",
+  "label": "trans:es/pagecontent/test-data",
+  "locale": "es",
+  "sourceFile": "input/pagecontent/test-data.md",
+  "sourceHash": "206394d2268f",
+  "potFile": "translations/es/pagecontent/test-data.pot",
+  "poFile": "translations/es/pagecontent/test-data.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 2,
+    "total": 2,
+    "pct": 100
+  }
+}

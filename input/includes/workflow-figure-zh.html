@@ -1,0 +1,28 @@
+<!-- Translated (zh) by input/scripts/workflow-figure.ts from workflow-figure.html; do not edit.
+ The overview of key process flows, two ways, with a toggle. Both are drawn from the ArchiMate view "Overview of key process flows"
+     (archimate/2.1.0/smart-ips-pilgrimage.archimate, id-59a6185ff9f2580db475ac98b7e1e854, built by archimate/build.py in the layout of
+     input/images/workflow.png):
+     - "As drawn": archimate/pretty.py, in the original figure's style; each pictogram is a role of scenarios/roles.json and opens
+       its IG actor or persona, each numbered circle opens its journey moment;
+     - "ArchiMate": the archimate-pages visualiser's drawing, shown as an image (the IG content QA gate refuses embedded objects); the picture
+       links to the SVG itself, where each box opens its ArchiMate element. -->
+<style>
+.wf-fig .wf-pane{display:none}
+.wf-fig input{position:absolute;opacity:0}
+.wf-fig label{display:inline-block;padding:4px 12px;margin:0 4px 8px 0;border:1px solid #4472C4;border-radius:14px;color:#2F5597;cursor:pointer;font-size:.9em}
+#wf-as-drawn:checked ~ .wf-pane-drawn, #wf-archimate:checked ~ .wf-pane-archimate{display:block}
+#wf-as-drawn:checked ~ label[for=wf-as-drawn], #wf-archimate:checked ~ label[for=wf-archimate]{background:#4472C4;color:#fff}
+</style>
+<figure class="wf-fig" style="margin:0">
+<input type="radio" name="wf-view" id="wf-as-drawn" checked="checked"/>
+<input type="radio" name="wf-view" id="wf-archimate"/>
+<label for="wf-as-drawn">原始绘图</label>
+<label for="wf-archimate">ArchiMate</label>
+<div class="wf-pane wf-pane-drawn">{% include workflow-pretty-zh.svg %}</div>
+<div class="wf-pane wf-pane-archimate">
+<a href="../archimate/2.1.0/view/id-59a6185ff9f2580db475ac98b7e1e854.svg" title="单独打开 ArchiMate 视图，其中每个方框都链接到其 ArchiMate 元素">
+<img src="../archimate/2.1.0/view/id-59a6185ff9f2580db475ac98b7e1e854.svg" alt="关键流程概览，ArchiMate 视图" style="width:100%;height:auto"/>
+</a>
+</div>
+<figcaption style="font-size:.85em">关键流程概览，取自本指南的<a href="../en/smart-ips-pilgrimage/archimate/2.1.0/view/overview-of-key-process-flows/">ArchiMate 模型</a>。每个图像是指南中的一个角色（其参与者或人物角色），每个编号流程是<a href="../index.html">朝圣者旅程</a>中的一个时刻。</figcaption>
+</figure>

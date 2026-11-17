@@ -1,6 +1,6 @@
 @startuml
 
-title Agreed IPS workflow for 'Clinical Encounter for Unplanned Care' between KSA and Indonesia/Malaysia
+title Agreed IPS workflow for 'Clinical Encounter for Unplanned Care' between the Host and Origin countries
 !include ./style.iuml
 actor "Pilgrim from\nOrigin Country" as P
 actor "Accompanying Clinician\nfrom\nOrigin Country" as C
@@ -11,7 +11,7 @@ actor "Health Worker\nin Host Country" as HW
 participant "Bar code scanner" as Scanner
 
 autonumber "<b>00:</b>"
-HCEMR -> HCEMR: Upload pilgrims demographic information few weeks before Hajj
+HCEMR -> HCEMR: Upload pilgrims demographic information few weeks before the pilgrimage
 P --> HW: travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via VHL)
 HW --> HCEMR: identifies pilgrim with demographics and registers patient with pilgrimage number
 HW --> Scanner: uses scanner to scan QR code

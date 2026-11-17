@@ -1,0 +1,98 @@
+{
+  "$schema": "device-screen/0.1.0",
+  "id": "P4-emr",
+  "title": "Passcode entered, signature verified",
+  "description": "The facility screen: passcode dots, a green shield, and a key that came from the trust network's globe.",
+  "device": "desktop",
+  "owner": "nurse-reem",
+  "steps": [
+    {
+      "scenario": "p4-scanned-and-checked",
+      "step": "P4"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "app": "Nalemi facility EMR — Registration",
+      "subtitle": "Nurse Reem",
+      "icon": "hospital",
+      "brand": "#0369a1",
+      "status": {
+        "text": "Trust list current",
+        "tone": "success",
+        "icon": "globe"
+      }
+    },
+    {
+      "type": "personCard",
+      "actor": "kamal",
+      "banner": true,
+      "subtitle": "Pilgrim from Onesa • brought in by Salmah",
+      "chips": [
+        {
+          "text": "Dizzy, in the heat",
+          "tone": "warning"
+        }
+      ]
+    },
+    {
+      "type": "passcode",
+      "label": "Passcode, told by Salmah",
+      "digits": "2718",
+      "shown": false,
+      "entry": true,
+      "note": "Entered; the link opens only with it"
+    },
+    {
+      "type": "fields",
+      "title": "The code read",
+      "icon": "qr",
+      "rows": [
+        {
+          "label": "Issued by",
+          "value": "Onesa's health information exchange"
+        },
+        {
+          "label": "Holds",
+          "value": "A link to Kamal's patient summary, and its key"
+        }
+      ]
+    },
+    {
+      "type": "statusBadge",
+      "column": "side",
+      "status": "verified",
+      "text": "Signature verified",
+      "verdict": "GENUINE",
+      "fields": [
+        {
+          "label": "Signed by",
+          "value": "Onesa (HIE)"
+        },
+        {
+          "label": "Key",
+          "value": "From the GDHCN trust list"
+        }
+      ],
+      "detail": "The record really comes from Onesa's HIE and has not been changed."
+    },
+    {
+      "type": "note",
+      "column": "side",
+      "icon": "key",
+      "text": "Onesa's public key, looked up in the GDHCN trust list (the globe): no call to Onesa was needed to check it."
+    },
+    {
+      "type": "actions",
+      "buttons": [
+        {
+          "label": "Retrieve the summary",
+          "style": "primary",
+          "icon": "globe"
+        }
+      ]
+    }
+  ],
+  "try": "Ask the room where the key came from, and who decided to trust it"
+}

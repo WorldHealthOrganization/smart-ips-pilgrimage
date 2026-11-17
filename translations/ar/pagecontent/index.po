@@ -1,0 +1,299 @@
+# Arabic translation of pagecontent/index
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.177Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/index.md:39
+msgid "<a0>CPG ActivityDefinitions</a0>"
+msgstr "<a0>CPG ActivityDefinitions</a0>"
+
+#: input/pagecontent/index.md:38
+msgid "<a0>IPS Immunization</a0>"
+msgstr "<a0>IPS Immunization</a0>"
+
+#: input/pagecontent/index.md:37
+msgid "<a0>IPS Patient</a0>"
+msgstr "<a0>IPS Patient</a0>"
+
+#: input/pagecontent/index.md:36
+msgid "<a0>MHD Folder</a0>"
+msgstr "<a0>MHD Folder</a0>"
+
+#: input/pagecontent/index.md:42
+msgid "A complete offline copy of this implementation guide can be found on the <a0>Downloads</a0> page."
+msgstr "يمكن العثور على نسخة كاملة غير متصلة من دليل التنفيذ هذا في صفحة <a0>التنزيلات</a0>."
+
+#: input/pagecontent/index.md:31
+msgid "Business Requirements - contains the requirements for this implementation guide including the definition of key concepts, use cases, and a data dictionary."
+msgstr "متطلبات العمل - تتضمن متطلبات دليل التنفيذ هذا، بما في ذلك تعريف المفاهيم الرئيسية وحالات الاستخدام وقاموس البيانات."
+
+#: input/pagecontent/index.md:32
+msgid "Data Models and Exchange - contains the data models and data exchange protocols with actors and transactions defined."
+msgstr "نماذج البيانات وتبادلها - تتضمن نماذج البيانات وبروتوكولات تبادل البيانات مع تعريف الجهات الفاعلة والمعاملات."
+
+#: input/pagecontent/index.md:33
+msgid "Deployment Guidance  - contains relevant technical specifications and guidance, testing resources, reference implementation materials, and supporting guidance for adaptation to local contexts."
+msgstr "إرشادات النشر - تتضمن المواصفات والإرشادات التقنية ذات الصلة، وموارد الاختبار، ومواد التنفيذ المرجعي، والإرشادات الداعمة للتكييف مع السياقات المحلية."
+
+#: input/pagecontent/index.md:19
+msgid "Eligible Participants may request to join through the The Letter of Application"
+msgstr "يجوز للمشاركين المؤهَّلين طلب الانضمام عبر خطاب الطلب"
+
+#: input/pagecontent/index.md:41
+msgid "For a complete listing of the artifacts defined in this implementation guide, refer to the <a0>Artifact Index</a0>."
+msgstr "للاطلاع على قائمة كاملة بالمكوّنات المعرَّفة في دليل التنفيذ هذا، يُرجى الرجوع إلى <a0>فهرس المكوّنات</a0>."
+
+#: input/pagecontent/index.md:30
+msgid "Home - contains references to the guidance, guidelines, policies and recommendations underpinning this implementation guide."
+msgstr "الصفحة الرئيسية - تتضمن مراجع إلى الإرشادات والمبادئ التوجيهية والسياسات والتوصيات التي يستند إليها دليل التنفيذ هذا."
+
+#: input/pagecontent/index.md:17
+msgid "Supporting guidance, recommendations, resources, and standards are included in the Bibliography and Dependencies."
+msgstr "تُدرَج الإرشادات والتوصيات والموارد والمعايير الداعمة في قائمة المراجع والتبعيات."
+
+#: input/pagecontent/index.md:15
+msgid "The guide is part of the WHO SMART Guidelines approach to support countries to integrate WHO global health and data recommendations into digital systems accurately and consistently. It defines a series of FHIR Resources, Profiles, Extensions, and Terminology."
+msgstr "يُعدّ هذا الدليل جزءًا من نهج إرشادات SMART لمنظمة الصحة العالمية (WHO) لدعم البلدان في دمج توصيات منظمة الصحة العالمية العالمية بشأن الصحة والبيانات في الأنظمة الرقمية بدقة واتساق. ويعرّف سلسلة من موارد FHIR وملفات التعريف (Profiles) والامتدادات والمصطلحات."
+
+#: input/pagecontent/index.md:35
+msgid "This guide assumes use of the following resources:"
+msgstr "يفترض هذا الدليل استخدام الموارد التالية:"
+
+#: input/pagecontent/index.md:43
+msgid "This guide utilizes the <a0>International Patient Summary(IPS)</a0> as a base for defining immunizations and expects that most data captured will be presented in conformance with the resources defined as part of that implementation guide."
+msgstr "يستخدم هذا الدليل <a0>ملخص المريض الدولي (IPS)</a0> أساسًا لتعريف التمنيعات، ويتوقع أن تُعرَض معظم البيانات المُجمَّعة بما يتوافق مع الموارد المعرَّفة ضمن دليل التنفيذ ذلك."
+
+#: input/pagecontent/index.md:4
+msgid "This implementation guide and set of artifacts are still undergoing development."
+msgstr "لا يزال دليل التنفيذ هذا ومجموعة مكوّناته قيد التطوير."
+
+#: input/pagecontent/index.md:12
+msgid "This implementation guide includes a machine-readable representation of WHO guidelines for verifiable IPS during pilgrimage. It explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of IPS during pilgrimage usage scenario.  This Implementation Guide leverages the WHO Global Digital Health Certification Network (GDHCN)."
+msgstr "يتضمن دليل التنفيذ هذا تمثيلًا قابلًا للقراءة آليًا لإرشادات منظمة الصحة العالمية (WHO) بشأن ملخص IPS القابل للتحقق أثناء الزيارة الدينية. ويرمّز صراحةً منطقًا قابلًا للتشغيل البيني حاسوبيًا، بما في ذلك نماذج البيانات والمصطلحات وتعبيرات المنطق، بلغة قابلة للحوسبة لدعم تنفيذ سيناريو استخدام IPS أثناء الزيارة الدينية. ويستفيد دليل التنفيذ هذا من GDHCN ‏(الشبكة العالمية لإصدار الشهادات الصحية الرقمية) التابعة لمنظمة الصحة العالمية."
+
+#: input/pagecontent/index.md:29
+msgid "This implementation guide is broken into the following levels of <a0>knowledge representation</a0>:"
+msgstr "ينقسم دليل التنفيذ هذا إلى المستويات التالية من <a0>تمثيل المعرفة</a0>:"
+
+#: input/pagecontent/index.md:44
+msgid "This Implementation Guide makes use of <a0>Clinical Quality Language</a0> for the decision support artifacts including the PlanDefinitions and Measures. They are used to express how a calculation should occur and can be used with a CQL engine in order to process the decision or indicator directly from the applicable FHIR resources. Links to this specification, the FHIR Clinical Practice Guidelines Specification, and other helpful resources can be found in the Support dropdown."
+msgstr "يستخدم دليل التنفيذ هذا <a0>لغة الجودة السريرية (Clinical Quality Language)</a0> لمكوّنات دعم القرار، بما في ذلك PlanDefinitions وMeasures. وتُستخدم للتعبير عن كيفية إجراء الحساب، ويمكن استخدامها مع محرك CQL لمعالجة القرار أو المؤشر مباشرةً من موارد FHIR المعنية. ويمكن العثور على روابط إلى هذه المواصفة، ومواصفة الإرشادات السريرية للممارسة في FHIR، وموارد مفيدة أخرى في القائمة المنسدلة «الدعم»."
+
+#: input/pagecontent/index.md:44
+msgid "<a0>Accompanying Clinician from Origin Country</a0>"
+msgstr "<a0>الممارس السريري المرافق من بلد المنشأ</a0>"
+
+#: input/pagecontent/index.md:43
+msgid "<a0>Counsellor</a0>"
+msgstr "<a0>المستشار</a0>"
+
+#: input/pagecontent/index.md:45
+#: input/pagecontent/index.md:46
+msgid "<a0>Host Country Health Worker</a0>"
+msgstr "<a0>العامل الصحي في البلد المضيف</a0>"
+
+#: input/pagecontent/index.md:41
+msgid "<a0>Pilgrim</a0>"
+msgstr "<a0>الزائر</a0>"
+
+#: input/pagecontent/index.md:41
+msgid "61, from Tanavu, Onesa, going on pilgrimage for the first time. Has type 2 diabetes and high blood pressure; takes insulin and two tablets a day; allergic to penicillin. Carries one phone."
+msgstr "61 عامًا، من Tanavu في Onesa، يؤدي الزيارة الدينية لأول مرة. مصاب بداء السكري من النوع 2 وارتفاع ضغط الدم؛ يتناول الإنسولين وقرصين يوميًا؛ لديه حساسية من البنسلين. يحمل هاتفًا واحدًا."
+
+#: input/pagecontent/index.md:74
+msgid "About this implementation guide"
+msgstr "نبذة عن دليل التنفيذ هذا"
+
+#: input/pagecontent/index.md:42
+msgid "Accompanying family member (not yet a persona here)"
+msgstr "فرد مرافق من الأسرة (ليس شخصية افتراضية هنا بعد)"
+
+#: input/pagecontent/index.md:58
+msgid "An account of access back to the home country (P5, P7), and of language (P5)."
+msgstr "بيان لكيفية إعادة الوصول إلى البلد الأم (P5، P7)، وللغة (P5)."
+
+#: input/pagecontent/index.md:48
+msgid "And the systems: Kamal's national health wallet (<a0>Origin Country Wallet</a0>), Onesa's health information exchange (<a1>Origin Country HIE</a1>), the facility's EMR (<a2>Host Country EMR</a2>), and WHO GDHCN, the trust network both countries take part in."
+msgstr "والأنظمة: المحفظة الصحية الوطنية الخاصة بـ Kamal ‏(<a0>محفظة البلد الأم</a0>)، وتبادل المعلومات الصحية في Onesa ‏(<a1>HIE البلد الأم</a1>)، والسجل الطبي الإلكتروني للمرفق (<a2>EMR البلد المضيف</a2>)، وGDHCN التابعة لمنظمة الصحة العالمية (WHO)، وهي شبكة الثقة التي يشارك فيها البلدان كلاهما."
+
+#: input/pagecontent/index.md:55
+msgid "Business processes for P0 (keys and terminologies), P2 (assembling the IPS) and P6 (break the glass)."
+msgstr "عمليات العمل الخاصة بـ P0 (المفاتيح والمصطلحات)، وP2 (تجميع IPS)، وP6 (كسر الزجاج)."
+
+#: input/pagecontent/index.md:101
+msgid "Cross-version analysis"
+msgstr "تحليل التوافق بين الإصدارات"
+
+#: input/pagecontent/index.md:104
+msgid "Dependencies"
+msgstr "التبعيات"
+
+#: input/pagecontent/index.md:95
+msgid "Disclaimer"
+msgstr "إخلاء المسؤولية"
+
+#: input/pagecontent/index.md:44
+msgid "Doctor of the Onesan pilgrimage medical team, travelling with the pilgrims."
+msgstr "طبيب في الفريق الطبي للزيارة الدينية من Onesa، يسافر مع الزوار."
+
+#: input/pagecontent/index.md:43
+msgid "Dr Aisyah"
+msgstr "الدكتورة Aisyah"
+
+#: input/pagecontent/index.md:46
+msgid "Dr Faisal"
+msgstr "الدكتور Faisal"
+
+#: input/pagecontent/index.md:44
+msgid "Dr Hafiz"
+msgstr "الدكتور Hafiz"
+
+#: input/pagecontent/index.md:35
+msgid "Each numbered flow in the figure names its moment above, and each moment has its own <a0>ArchiMate view</a0>."
+msgstr "كل تدفق مرقَّم في الشكل يحمل اسم اللحظة المقابلة له أعلاه، ولكل لحظة <a0>عرض ArchiMate</a0> خاص بها."
+
+#: input/pagecontent/index.md:11
+msgid "Eight moments that matter"
+msgstr "ثماني لحظات مهمة"
+
+#: input/pagecontent/index.md:46
+msgid "Emergency physician at the same facility."
+msgstr "طبيب طوارئ في المرفق نفسه."
+
+#: input/pagecontent/index.md:23
+#, python-brace-format
+msgid "Every person in this story, and both countries, are fictional. Kamal comes from Onesa (code {code0}) and goes on pilgrimage in Taifafeki (code {code1}): two fictional countries shared with the <a0>SMART Trust demo</a0>, whose codes are ISO 3166-1 user-assigned codes, so they never name a real country. The steps follow this guide's real <a1>Malaysian reference implementation</a1>, Malaysia's Hajj Health Card, as a policy precedent."
+msgstr "كل شخص في هذه القصة، وكلا البلدين، من نسج الخيال. يأتي Kamal من Onesa (الرمز {code0}) ويؤدي الزيارة الدينية في Taifafeki (الرمز {code1}): وهما بلدان خياليان مشتركان مع <a0>عرض SMART Trust التوضيحي</a0>، ورمزاهما من رموز ISO 3166-1 المخصَّصة للمستخدمين، فلا يشيران أبدًا إلى بلد حقيقي. وتتبع الخطوات <a1>التنفيذ المرجعي الماليزي</a1> الحقيقي لهذا الدليل، أي بطاقة الحج الصحية في ماليزيا، بوصفه سابقةً في السياسات."
+
+#: input/pagecontent/index.md:59
+msgid "Example patients that are pilgrims: today's examples are a resident of the Netherlands."
+msgstr "أمثلة لمرضى من الزوار: أمثلة اليوم لمقيم في هولندا."
+
+#: input/pagecontent/index.md:43
+msgid "General practitioner in Tanavu, empanelled by the national pilgrimage authority for pre-pilgrimage health examinations."
+msgstr "طبيب عام في Tanavu، معتمَد من الهيئة الوطنية للزيارة الدينية لإجراء الفحوص الصحية السابقة للزيارة الدينية."
+
+#: input/pagecontent/index.md:39
+msgid "Generic persona"
+msgstr "شخصية افتراضية عامة"
+
+#: input/pagecontent/index.md:107
+msgid "Globals"
+msgstr "المتغيرات العامة"
+
+#: input/pagecontent/index.md:98
+msgid "IP statements"
+msgstr "بيانات الملكية الفكرية"
+
+#: input/pagecontent/index.md:41
+msgid "Kamal"
+msgstr "Kamal"
+
+#: input/pagecontent/index.md:42
+msgid "Kamal's wife, travelling with him. Speaks for him when he cannot."
+msgstr "زوجة Kamal، تسافر معه. وتتحدث نيابةً عنه حين لا يستطيع."
+
+#: input/pagecontent/index.md:45
+msgid "Nurse Reem"
+msgstr "الممرضة Reem"
+
+#: input/pagecontent/index.md:57
+msgid "One passcode policy (P4), stated once."
+msgstr "سياسة واحدة لرمز المرور (P4)، تُذكر مرة واحدة."
+
+#: input/pagecontent/index.md:39
+msgid "Person"
+msgstr "شخص"
+
+#: input/pagecontent/index.md:45
+msgid "Registration nurse at a pilgrimage health facility in Nalemi."
+msgstr "ممرضة تسجيل في مرفق صحي للزيارة الدينية في Nalemi."
+
+#: input/pagecontent/index.md:42
+msgid "Salmah"
+msgstr "Salmah"
+
+#: input/pagecontent/index.md:62
+msgid "Summary"
+msgstr "الملخص"
+
+#: input/pagecontent/index.md:16
+msgid "The <a0>user scenarios</a0> of this guide told as one pilgrim's story, step by step along the <a1>overview of key process flows</a1> (the numbered steps 1–5 and A–B of the figure below). Click a picture to walk through that moment in the <a2>journeys viewer</a2>, which names who takes part, what in this guide specifies it, and the policy question it raises."
+msgstr "<a0>سيناريوهات المستخدم</a0> في هذا الدليل مرويّةً بوصفها قصة زائر واحد، خطوةً بخطوة على امتداد <a1>نظرة عامة على تدفقات العمليات الرئيسية</a1> (الخطوات المرقَّمة 1–5 وA–B في الشكل أدناه). انقر على صورة لتتبّع تلك اللحظة في <a2>عارض الرحلات</a2>، الذي يسمّي المشاركين فيها، وما يحدّدها في هذا الدليل، وسؤال السياسات الذي تثيره."
+
+#: input/pagecontent/index.md:60
+msgid "The data dictionary, decision logic, indicators and functional requirements, which are still placeholders."
+msgstr "قاموس البيانات، ومنطق القرار، والمؤشرات، والمتطلبات الوظيفية، وهي لا تزال عناصر نائبة."
+
+#: input/pagecontent/index.md:37
+msgid "The people"
+msgstr "الأشخاص"
+
+#: input/pagecontent/index.md:96
+msgid "The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences."
+msgstr "المواصفة الموثَّقة هنا مواصفة عمل تجريبية، ولا يجوز استخدامها لأي أغراض تنفيذية. وتُقدَّم هذه المسودة دون أي ضمان لاكتمالها أو اتساقها، ويحل النشر الرسمي محل هذه المسودة. ولا يمكن استنتاج أي مسؤولية من استخدام هذه المواصفة أو إساءة استخدامها أو من عواقب ذلك."
+
+#: input/pagecontent/index.md:56
+msgid "The two pilgrim forms named in P1, and a page for the pilgrim and counsellor actors: their actor files exist but no page includes them."
+msgstr "الاستمارتان الخاصتان بالزائر المذكورتان في P1، وصفحة لجهتَي الزائر والمستشار الفاعلتين: ملفاتهما موجودة لكن لا تتضمنها أي صفحة."
+
+#: input/pagecontent/index.md:3
+msgid "This Implementation Guide is intended to support the utilization of verifiable International Patient Summary (IPS) documents during pilgrimage, leveraging <a0>WHO Global Digital Health Certification Network (GDHCN)</a0> global public health infrastructure."
+msgstr "يهدف دليل التنفيذ هذا إلى دعم استخدام وثائق ملخص المريض الدولي (IPS) القابلة للتحقق أثناء الزيارة الدينية، بالاستفادة من البنية التحتية العالمية للصحة العامة <a0>GDHCN ‏(الشبكة العالمية لإصدار الشهادات الصحية الرقمية) التابعة لمنظمة الصحة العالمية (WHO)</a0>."
+
+#: input/pagecontent/index.md:53
+msgid "What the story shows the guide still needs"
+msgstr "ما تُظهره القصة مما لا يزال الدليل يحتاج إليه"
+
+#: input/pagecontent/index.md:39
+msgid "Who they are"
+msgstr "مَن هم"
+
+#~ msgid "## Globals"
+#~ msgstr "## المتغيرات العامة"
+
+#~ msgid "### About this implementation guide"
+#~ msgstr "### نبذة عن دليل التنفيذ هذا"
+
+#~ msgid "### Cross-version analysis"
+#~ msgstr "### تحليل التوافق بين الإصدارات"
+
+#~ msgid "### Dependencies"
+#~ msgstr "### التبعيات"
+
+#~ msgid "### Disclaimer The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences."
+#~ msgstr "### إخلاء المسؤولية المواصفة الموثَّقة هنا مواصفة عمل تجريبية، ولا يجوز استخدامها لأي أغراض تنفيذية. وتُقدَّم هذه المسودة دون أي ضمان لاكتمالها أو اتساقها، ويحل النشر الرسمي محل هذه المسودة. ولا يمكن استنتاج أي مسؤولية من استخدام هذه المواصفة أو إساءة استخدامها أو من عواقب ذلك."
+
+#~ msgid "### IP statements"
+#~ msgstr "### بيانات الملكية الفكرية"
+
+#~ msgid "### Summary"
+#~ msgstr "### الملخص"
+
+#~ msgid "Follow one pilgrim through these steps in <a0>The Pilgrim's Journey</a0>."
+#~ msgstr "تابِع حاجًا واحدًا عبر هذه الخطوات في <a0>رحلة الحاج</a0>."
+
+#~ msgid "This Implementation Guide is intended to support the utilization of variable International Patient Summary (IPS)  documents during pilgrimage leveraging  <a0>WHO Global Digital Health Certification Network (GDHCN)</a0> global public health infrastructure."
+#~ msgstr "يهدف دليل التنفيذ هذا إلى دعم استخدام وثائق ملخص المريض الدولي (IPS) المتغيرة أثناء الحج، بالاستفادة من البنية التحتية العالمية للصحة العامة <a0>GDHCN ‏(الشبكة العالمية لإصدار الشهادات الصحية الرقمية) التابعة لمنظمة الصحة العالمية (WHO)</a0>."

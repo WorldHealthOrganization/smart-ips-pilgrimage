@@ -1,0 +1,12 @@
+{
+  "$schema": "ig-content-qa/v1",
+  "contentDigest": "sha256:b33bc388be342982f06726b55ff26676865ef2b2fabbe2b1c32a5839e98f03d5",
+  "items": 3242,
+  "reviewedAt": "2026-11-13T17:57:57.917Z",
+  "reviewer": {
+    "kind": "agent",
+    "name": "claude-zh-translator",
+    "session": "https://claude.ai/code/session_01VQDpPfUjHWydLzHga4WUVV"
+  },
+  "findings": []
+}

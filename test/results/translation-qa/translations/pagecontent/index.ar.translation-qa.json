@@ -1,0 +1,96 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:ar/pagecontent/index",
+  "locale": "ar",
+  "paths": {
+    "pot": "translations/ar/pagecontent/index.pot"
+  },
+  "po": "translations/ar/pagecontent/index.po",
+  "source_hashes": {
+    "pot": "5b8a21827a1b",
+    "po": "bce6a5244fa1"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "5b8a21827a1b",
+          "po": "bce6a5244fa1"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "25bf109948126a02d77fb7ebd5c469ee98fd5934",
+        "metrics": {
+          "translated": 61,
+          "total": 61,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "5b8a21827a1b",
+          "po": "bce6a5244fa1"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "25bf109948126a02d77fb7ebd5c469ee98fd5934",
+        "severity": "minor",
+        "evidence": [
+          {
+            "text": "IP — absent from: \"بيانات الملكية الفكرية\""
+          }
+        ],
+        "metrics": {
+          "checked": 61,
+          "missing": 1,
+          "missing_strict": 0,
+          "missing_acronyms": 1,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        },
+        "notes": "1 acronym(s) from the source do not appear verbatim in the translation and no glossary entry speaks for them. That is right for one the target language localises — WHO is OMS in French — and wrong for one silently dropped, and this check cannot tell the two apart. Add them to translations/ar/glossary.po: a pinned msgstr says what the term must become, and a \"#, localised\" flag says it is rendered in the target language without pinning how."
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "5b8a21827a1b",
+          "po": "bce6a5244fa1"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "25bf109948126a02d77fb7ebd5c469ee98fd5934",
+        "severity": "minor",
+        "metrics": {
+          "echoed": 6,
+          "translated": 61
+        },
+        "notes": "6 string(s) are byte-identical to the source. That is right for a proper noun and wrong for a sentence, which is why this warns rather than fails."
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

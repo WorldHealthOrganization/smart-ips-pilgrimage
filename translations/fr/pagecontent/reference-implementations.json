@@ -1,0 +1,22 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "French translation of input/pagecontent/reference-implementations.md. Agent translation, unofficial: no human has adjudicated it. Coverage 6/6.",
+  "label": "trans:fr/pagecontent/reference-implementations",
+  "locale": "fr",
+  "sourceFile": "input/pagecontent/reference-implementations.md",
+  "sourceHash": "cd5d091d995d",
+  "potFile": "translations/fr/pagecontent/reference-implementations.pot",
+  "poFile": "translations/fr/pagecontent/reference-implementations.po",
+  "status": {
+    "locale": "fr",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T11:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage fr session)"
+  },
+  "coverage": {
+    "translated": 6,
+    "total": 6,
+    "pct": 100
+  }
+}

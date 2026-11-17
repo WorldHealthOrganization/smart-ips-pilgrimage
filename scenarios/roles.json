@@ -1,0 +1,123 @@
+{
+  "_comment": "Roles that the people and systems of the pilgrim's journey (user-scenarios/) play, named after this guide's personas and system actors (input/pagecontent/personas.md, system-actors.md). Schema: cat-harness-tools/schemas/process/role-graph.ts. Every person is fictional. Each role's skills are what its lane's tasks in input/business-processes/ name: smart-base's point-of-care skills (registration, counselling, the health assessment) and smart-trust-tools' wallet skills (presenting and scanning a health link's QR, consenting to what an SHL shares).",
+  "name": "smart-ips-pilgrimage",
+  "roles": [
+    {
+      "id": "pilgrim",
+      "title": "Pilgrim",
+      "description": "The person making the pilgrimage who holds the health wallet and decides who may see their patient summary.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": [
+        "holder-consent-to-share",
+        "holder-present-credential"
+      ],
+      "otherNames": [
+        "Pilgrim (IG persona)"
+      ]
+    },
+    {
+      "id": "accompanying-family-member",
+      "title": "Accompanying family member",
+      "description": "A relative travelling with the pilgrim who speaks for them when they cannot. Not yet a persona of this guide.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": []
+    },
+    {
+      "id": "counsellor",
+      "title": "Counsellor",
+      "description": "The empanelled clinician at home who does the pre-pilgrimage health examination and counsels the pilgrim on consent and the wallet.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": [
+        "complete-sdc-questionnaire",
+        "inform-client",
+        "review-decision-support-guidance"
+      ],
+      "otherNames": [
+        "Counsellor (IG persona)"
+      ]
+    },
+    {
+      "id": "accompanying-clinician",
+      "title": "Accompanying clinician from origin country",
+      "description": "A doctor of the home country's pilgrimage medical team, travelling with the pilgrims.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Accompanying Clinician from Origin Country (IG persona)"
+      ]
+    },
+    {
+      "id": "host-health-worker",
+      "title": "Host country health worker",
+      "description": "A nurse or doctor at a health facility in the host country who registers and treats the pilgrim.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": [
+        "complete-sdc-questionnaire",
+        "receiver-scan-credential"
+      ],
+      "otherNames": [
+        "Host Country Health Worker (IG persona)"
+      ]
+    },
+    {
+      "id": "origin-wallet",
+      "title": "Origin country wallet",
+      "description": "The pilgrim's national health wallet: records consent, holds the VHL QR code and shows it.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Origin Country Wallet (IG system actor OCHW)"
+      ]
+    },
+    {
+      "id": "origin-hie",
+      "title": "Origin country HIE",
+      "description": "The home country's health information exchange: assembles and signs the IPS, issues the VHL and answers the host's requests for it.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [
+        "vhl-share"
+      ],
+      "otherNames": [
+        "Origin Country HIE (IG system actor OCHIE)"
+      ]
+    },
+    {
+      "id": "host-emr",
+      "title": "Host country EMR",
+      "description": "The host facility's electronic medical record: scans the QR code, verifies the signature, retrieves the IPS and keeps a rendered copy.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [
+        "hcert-verify",
+        "vhl-receive"
+      ],
+      "otherNames": [
+        "Host Country EMR (IG system actor HCEMR)"
+      ]
+    },
+    {
+      "id": "trust-network",
+      "title": "Trust network",
+      "description": "WHO GDHCN: the trust network both countries take part in, which distributes the public keys documents are signed with.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": []
+    }
+  ]
+}

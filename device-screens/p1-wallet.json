@@ -1,0 +1,56 @@
+{
+  "$schema": "device-screen/0.1.0",
+  "id": "P1-wallet",
+  "title": "Kamal agrees to share, on his phone",
+  "description": "The padlock and the tick: Kamal confirms on his own wallet who may see his summary, and sets how the link is protected.",
+  "device": "phone",
+  "owner": "kamal",
+  "steps": [
+    {
+      "scenario": "p1-health-check-and-consent",
+      "step": "P1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "app": "National health wallet",
+      "subtitle": "Kamal • Pilgrimage Health Record",
+      "icon": "phone",
+      "brand": "#0d9488"
+    },
+    {
+      "type": "consent",
+      "title": "Share my Pilgrimage Health Record",
+      "icon": "lock",
+      "who": "Taifafeki health workers who treat me during the pilgrimage",
+      "what": "My patient summary: conditions, medicines, allergy",
+      "until": "The end of the pilgrimage season",
+      "granted": true
+    },
+    {
+      "type": "passcode",
+      "label": "Link passcode (I choose it)",
+      "digits": "2718",
+      "shown": false,
+      "note": "Asked for whenever the code is scanned"
+    },
+    {
+      "type": "statusBadge",
+      "status": "verified",
+      "text": "Consent recorded",
+      "detail": "Sent to Onesa's health information exchange. You can withdraw it in the wallet."
+    },
+    {
+      "type": "actions",
+      "buttons": [
+        {
+          "label": "Confirm and share",
+          "style": "success",
+          "icon": "check"
+        }
+      ],
+      "caption": "Nothing is shared abroad without this consent"
+    }
+  ]
+}

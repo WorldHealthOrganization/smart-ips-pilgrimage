@@ -1,0 +1,8 @@
+{
+  "_comment": "Which wireframe covers which visualiser THIS instance (smart-ips-pilgrimage) declares, by route key `<instance>/<visualiser>`. The same shape as cat-harness/docs/wireframes/index.json: a wireframe sits with the page it draws, and check:wireframes reads the `wireframes/` of every declared `docs` directory. It is here, in `findings/`, because this IG's site directory `docs/` is built at publish and commits nothing. `wireframe.css` is the shared mid-fidelity stylesheet, copied from cat-harness/docs/wireframes/ so the drawing renders here on its own.",
+  "wireframes": {
+    "journeys": {
+      "covers": ["smart-ips-pilgrimage/journeys"]
+    }
+  }
+}

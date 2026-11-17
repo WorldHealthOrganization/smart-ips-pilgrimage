@@ -48,7 +48,7 @@ AND generates the QR Code
 
 ```
 
-#### Unplanned Clinical Encounter at Hajj Health Facility
+#### Unplanned Clinical Encounter at Pilgrimage Health Facility
 
 ##### Verify Signature on CWT Payload using Kid
 

@@ -1,0 +1,22 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "French translation of input/pagecontent/scenarios.md. Agent translation, unofficial: no human has adjudicated it. Coverage 24/24.",
+  "label": "trans:fr/pagecontent/scenarios",
+  "locale": "fr",
+  "sourceFile": "input/pagecontent/scenarios.md",
+  "sourceHash": "bd37f3a73229",
+  "potFile": "translations/fr/pagecontent/scenarios.pot",
+  "poFile": "translations/fr/pagecontent/scenarios.po",
+  "status": {
+    "locale": "fr",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T11:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage fr session)"
+  },
+  "coverage": {
+    "translated": 24,
+    "total": 24,
+    "pct": 100
+  }
+}

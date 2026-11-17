@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="ac436f7" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.5.0" camunda:diagramRelationId="bd9a9cd4-1c73-4d9c-9de0-ad1c209baa3d">
+<bpmn:definitions xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns/" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="ac436f7" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.5.0" camunda:diagramRelationId="bd9a9cd4-1c73-4d9c-9de0-ad1c209baa3d">
+  <bpmn:resource id="host-emr" name="Host country EMR" />
+  <bpmn:resource id="host-health-worker" name="Host country health worker" />
+  <bpmn:resource id="origin-hie" name="Origin country HIE" />
+  <bpmn:resource id="origin-wallet" name="Origin country wallet" />
+  <bpmn:resource id="pilgrim" name="Pilgrim" />
   <bpmn:collaboration id="pcf-send-request-response" name="Health Check and Issue SHL">
     <bpmn:documentation>Documents the health check and SHL consent and issuance process</bpmn:documentation>
     <bpmn:extensionElements>
@@ -61,7 +66,7 @@
         <bpmn:flowNodeRef>Activity_0wou2yo</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_123d2ts</bpmn:flowNodeRef>
         <bpmn:childLaneSet id="LaneSet_0tvrxug">
-          <bpmn:lane id="Lane_0zklik6" name="Host Country EMR">
+          <bpmn:lane id="Lane_0zklik6" partitionElementRef="host-emr" name="Host Country EMR">
             <bpmn:documentation>The pilgrim's origin country's digital health wallet</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
@@ -78,14 +83,14 @@
             <bpmn:flowNodeRef>Activity_123d2ts</bpmn:flowNodeRef>
             <bpmn:childLaneSet id="LaneSet_0bmv3cw" />
           </bpmn:lane>
-          <bpmn:lane id="Lane_1u3c3sd" name="Origin Country HIE">
+          <bpmn:lane id="Lane_1u3c3sd" partitionElementRef="origin-hie" name="Origin Country HIE">
             <bpmn:flowNodeRef>Activity_1hznkm2</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_1iodyqb</bpmn:flowNodeRef>
           </bpmn:lane>
-          <bpmn:lane id="Lane_0slznq5" name="Origin Country Health Wallet">
+          <bpmn:lane id="Lane_0slznq5" partitionElementRef="origin-wallet" name="Origin Country Health Wallet">
             <bpmn:flowNodeRef>Activity_0untwjs</bpmn:flowNodeRef>
           </bpmn:lane>
-          <bpmn:lane id="Lane_1kq3iyf" name="Bar Code Scanner">
+          <bpmn:lane id="Lane_1kq3iyf" partitionElementRef="host-emr" name="Bar Code Scanner">
             <bpmn:flowNodeRef>Activity_0isufb9</bpmn:flowNodeRef>
           </bpmn:lane>
         </bpmn:childLaneSet>
@@ -107,8 +112,8 @@
         <bpmn:flowNodeRef>Event_14fzrpe</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0ihvpj7</bpmn:flowNodeRef>
         <bpmn:childLaneSet id="LaneSet_0cqcpr9">
-          <bpmn:lane id="Lane_1aj6m0j" name="Pilgrim">
-            <bpmn:documentation>The Hajj pilgrim</bpmn:documentation>
+          <bpmn:lane id="Lane_1aj6m0j" partitionElementRef="pilgrim" name="Pilgrim">
+            <bpmn:documentation>The pilgrim</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
                 <zeebe:property name="ig-actor-type" value="person" />
@@ -123,8 +128,8 @@
             <bpmn:flowNodeRef>Event_14fzrpe</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_0ihvpj7</bpmn:flowNodeRef>
           </bpmn:lane>
-          <bpmn:lane id="Lane_1890tz9" name="Host Country Health Worker">
-            <bpmn:documentation>Counselor from origin country supporting Hajj pilgrim during inital health screening</bpmn:documentation>
+          <bpmn:lane id="Lane_1890tz9" partitionElementRef="host-health-worker" name="Host Country Health Worker">
+            <bpmn:documentation>Counselor from origin country supporting pilgrim during inital health screening</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
                 <zeebe:property name="ig-actor-type" value="person" />
@@ -140,7 +145,7 @@
         </bpmn:childLaneSet>
       </bpmn:lane>
     </bpmn:laneSet>
-    <bpmn:task id="Activity_00h86kk" name="registration">
+    <bpmn:task id="Activity_00h86kk" name="registration"><bpmn:extensionElements><bootstrap.processes:skill ref="complete-sdc-questionnaire" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_0j74xg8</bpmn:incoming>
       <bpmn:outgoing>Flow_0ve7kok</bpmn:outgoing>
     </bpmn:task>
@@ -162,7 +167,7 @@
     <bpmn:sequenceFlow id="Flow_0y2c0te" sourceRef="Gateway_0gib4c3" targetRef="Activity_0sfhcs9" />
     <bpmn:sequenceFlow id="Flow_1egzdi4" sourceRef="Activity_0ihvpj7" targetRef="Event_14fzrpe" />
     <bpmn:sequenceFlow id="Flow_13kutqo" sourceRef="Activity_055rq1n" targetRef="Activity_0ihvpj7" />
-    <bpmn:task id="Activity_11ndkqo" name="Shows QR image on health wallet app">
+    <bpmn:task id="Activity_11ndkqo" name="Shows QR image on health wallet app"><bpmn:extensionElements><bootstrap.processes:skill ref="holder-present-credential" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_0ve7kok</bpmn:incoming>
       <bpmn:outgoing>Flow_1f8kd6w</bpmn:outgoing>
     </bpmn:task>
@@ -174,7 +179,7 @@
       <bpmn:incoming>Flow_10ebgbj</bpmn:incoming>
       <bpmn:outgoing>Flow_1l8b8gs</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:task id="Activity_0nu4v95" name="verify QR code signature">
+    <bpmn:task id="Activity_0nu4v95" name="verify QR code signature"><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-verify" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_0ycvb5t</bpmn:incoming>
       <bpmn:outgoing>Flow_1inzjaw</bpmn:outgoing>
     </bpmn:task>
@@ -188,7 +193,7 @@
       <bpmn:outgoing>Flow_0y2c0te</bpmn:outgoing>
       <bpmn:outgoing>Flow_0egfxz1</bpmn:outgoing>
     </bpmn:parallelGateway>
-    <bpmn:task id="Activity_0sfhcs9" name="uses bar code scanner">
+    <bpmn:task id="Activity_0sfhcs9" name="uses bar code scanner"><bpmn:extensionElements><bootstrap.processes:skill ref="receiver-scan-credential" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_0y2c0te</bpmn:incoming>
       <bpmn:outgoing>Flow_0bfknp3</bpmn:outgoing>
     </bpmn:task>
@@ -198,12 +203,12 @@
       <bpmn:incoming>Flow_1fnblb1</bpmn:incoming>
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_1fnblb1" sourceRef="Activity_0qcvetn" targetRef="Activity_0untwjs" />
-    <bpmn:receiveTask id="Activity_0qcvetn" name="Retrieve serialized CWT">
+    <bpmn:receiveTask id="Activity_0qcvetn" name="Retrieve serialized CWT"><bpmn:extensionElements><bootstrap.processes:skill ref="hcert-verify" /></bpmn:extensionElements>
       <bpmn:outgoing>Flow_0ycvb5t</bpmn:outgoing>
       <bpmn:outgoing>Flow_1fnblb1</bpmn:outgoing>
     </bpmn:receiveTask>
     <bpmn:sequenceFlow id="Flow_1e24hfi" sourceRef="Activity_1i8bqw0" targetRef="Activity_1hznkm2" />
-    <bpmn:sendTask id="Activity_1i8bqw0" name="retrieve health document (IPS) request">
+    <bpmn:sendTask id="Activity_1i8bqw0" name="retrieve health document (IPS) request"><bpmn:extensionElements><bootstrap.processes:skill ref="vhl-receive" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_1inzjaw</bpmn:incoming>
       <bpmn:outgoing>Flow_1e24hfi</bpmn:outgoing>
     </bpmn:sendTask>

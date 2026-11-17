@@ -1,0 +1,105 @@
+{
+  "$schema": "device-screen/0.1.0",
+  "id": "P5",
+  "title": "Dr Faisal reads the record kept in Onesa",
+  "description": "The insulin pen, the crossed-out penicillin and the heart: what Dr Faisal must know before he treats Kamal, read from the record kept in Onesa.",
+  "device": "tablet",
+  "owner": "dr-faisal",
+  "steps": [
+    {
+      "scenario": "p5-record-read-and-treated",
+      "step": "P5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "app": "Nalemi facility EMR — Treatment",
+      "subtitle": "Dr Faisal • Emergency",
+      "icon": "stethoscope",
+      "brand": "#0369a1"
+    },
+    {
+      "type": "personCard",
+      "actor": "kamal",
+      "banner": true,
+      "subtitle": "Pilgrim from Onesa • Salmah beside him",
+      "chips": [
+        {
+          "text": "Heat exhaustion",
+          "tone": "warning"
+        },
+        {
+          "text": "Low blood sugar",
+          "tone": "danger"
+        }
+      ]
+    },
+    {
+      "type": "recordList",
+      "title": "Patient summary",
+      "icon": "file",
+      "summary": {
+        "text": "From Onesa",
+        "tone": "info",
+        "icon": "globe"
+      },
+      "rows": [
+        {
+          "icon": "pen",
+          "label": "Insulin",
+          "detail": "Medicine he takes",
+          "status": {
+            "text": "Active",
+            "tone": "info"
+          }
+        },
+        {
+          "icon": "pill-off",
+          "label": "Penicillin",
+          "detail": "Allergy",
+          "status": {
+            "text": "Do not give",
+            "tone": "danger"
+          },
+          "struck": true
+        },
+        {
+          "icon": "heart",
+          "label": "Heart condition",
+          "detail": "On his record at home"
+        }
+      ],
+      "footnote": "Read from the record kept in Onesa"
+    },
+    {
+      "type": "statusBadge",
+      "column": "side",
+      "status": "verified",
+      "text": "Summary verified",
+      "detail": "Fetched from Onesa's HIE under the consent Kamal gave; a rendered copy is kept with this visit."
+    },
+    {
+      "type": "alert",
+      "column": "side",
+      "severity": "danger",
+      "icon": "pill-off",
+      "title": "Allergy",
+      "text": "Penicillin: choose another antibiotic if one is needed."
+    },
+    {
+      "type": "actions",
+      "buttons": [
+        {
+          "label": "Start the drip",
+          "style": "primary"
+        },
+        {
+          "label": "View the full summary",
+          "style": "secondary",
+          "icon": "file"
+        }
+      ]
+    }
+  ]
+}

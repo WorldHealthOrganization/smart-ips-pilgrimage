@@ -1,0 +1,296 @@
+# Arabic translation of processes/Health Check and Counseling, Explicit Consent on Wallet
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Health Check and Counseling, Explicit Consent on Wallet\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.225Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:158
+#. Diagram label
+msgid "arrive to clinic"
+msgstr "الوصول إلى العيادة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:145
+#. Diagram label
+msgid "Conduct health assessment"
+msgstr "إجراء التقييم الصحي"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:301
+#. Diagram label
+msgid "configure SHL privacy settings on wallet"
+msgstr "ضبط إعدادات خصوصية SHL في المحفظة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:242
+#. Diagram label
+msgid "Counsel patient on consent and digital health wallet"
+msgstr "إرشاد المريض بشأن الموافقة والمحفظة الصحية الرقمية"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:122
+#. Diagram label
+msgid "Counselor"
+msgstr "المستشار"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:251
+#. Diagram label
+msgid "display consent form"
+msgstr "عرض نموذج الموافقة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:174
+#. Diagram label
+msgid "display SHL"
+msgstr "عرض SHL"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:200
+#. Diagram label
+msgid "display SHL configuration form"
+msgstr "عرض نموذج ضبط SHL"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:4
+#. Diagram element documentation
+msgid "Documents the health check and SHL consent and issuance process"
+msgstr "يوثّق عملية الفحص الصحي والموافقة على SHL وإصداره"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:197
+#. Diagram label
+msgid "End"
+msgstr "النهاية"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:293
+#. Diagram label
+msgid "generate SHL &#38; configure access to IPS via SHL"
+msgstr "توليد SHL &#38; ضبط الوصول إلى IPS عبر SHL"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:183
+#. Diagram label
+msgid "generate Verifiable SHL"
+msgstr "توليد SHL قابل للتحقق"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:15
+#. Diagram label
+msgid "Health Check and Counseling, Explicit Consent on Wallet"
+msgstr "الفحص الصحي والإرشاد، موافقة صريحة في المحفظة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:3
+#. Diagram label
+msgid "Health Check and Issue SHL"
+msgstr "الفحص الصحي وإصدار SHL"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:19
+#. Diagram label
+msgid "Health Check and SHL Issuance, Wallet Consent"
+msgstr "الفحص الصحي وإصدار SHL، الموافقة عبر المحفظة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:79
+#. Diagram label
+msgid "Human Actor"
+msgstr "جهة فاعلة بشرية"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:354
+#. Diagram label
+msgid "issue SHL"
+msgstr "إصدار SHL"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:193
+#. Diagram label
+msgid "leave clinic"
+msgstr "مغادرة العيادة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:322
+#. Diagram label
+msgid "login to wallet app"
+msgstr "تسجيل الدخول إلى تطبيق المحفظة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:343
+#. Diagram label
+msgid "no"
+msgstr "لا"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:43
+#. Diagram label
+msgid "Origin Country HIE"
+msgstr "HIE البلد الأم"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:59
+#. Diagram label
+msgid "Origin Country Wallet"
+msgstr "محفظة البلد الأم"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:102
+#. Diagram label
+msgid "Pilgrim"
+msgstr "الزائر"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:265
+#. Diagram label
+msgid "pilgrim confirmed consent in wallet?"
+msgstr "هل أكّد الزائر الموافقة في المحفظة؟"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:246
+#. Diagram label
+msgid "pilgrim provided consent to counselor?"
+msgstr "هل قدّم الزائر الموافقة للمستشار؟"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:255
+#. Diagram label
+msgid "process consent form"
+msgstr "معالجة نموذج الموافقة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:204
+#. Diagram label
+msgid "process privacy configuration form for SHL"
+msgstr "معالجة نموذج ضبط الخصوصية الخاص بـ SHL"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:280
+#. Diagram label
+msgid "Receive consent"
+msgstr "استلام الموافقة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:223
+#. Diagram label
+msgid "receive record consent response"
+msgstr "استلام استجابة تسجيل الموافقة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:214
+#. Diagram label
+msgid "receive SHL privacy configuration"
+msgstr "استلام ضبط خصوصية SHL"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:394
+#. Diagram label
+msgid "record consent from wallet - request"
+msgstr "تسجيل الموافقة من المحفظة - طلب"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:141
+#. Diagram label
+msgid "registration"
+msgstr "التسجيل"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:360
+#. Diagram label
+msgid "request SHL from wallet"
+msgstr "طلب SHL من المحفظة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:297
+#. Diagram label
+msgid "Review SHL"
+msgstr "مراجعة SHL"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:270
+#. Diagram label
+msgid "send Consent"
+msgstr "إرسال الموافقة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:232
+#. Diagram label
+msgid "send record consent response"
+msgstr "إرسال استجابة تسجيل الموافقة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:162
+#. Diagram label
+msgid "Start"
+msgstr "البداية"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:289
+#. Diagram label
+msgid "store consent directives"
+msgstr "تخزين توجيهات الموافقة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:27
+#. Diagram label
+msgid "System Actor"
+msgstr "جهة فاعلة نظامية"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:60
+#. Diagram element documentation
+msgid "The pilgrim's origin country's digital health wallet"
+msgstr "المحفظة الصحية الرقمية للبلد الأم للزائر"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:44
+#. Diagram element documentation
+msgid "The pilgrim's origin country's HIE or national system"
+msgstr "HIE البلد الأم للزائر أو نظامه الوطني"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:16
+#. Diagram element documentation
+msgid "This is the documentation for the overall business process - Element documentation"
+msgstr "هذا هو توثيق عملية العمل الشاملة - توثيق العنصر"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:20
+#. Diagram element documentation
+msgid "This is the documentation for the overall business process - process documentation"
+msgstr "هذا هو توثيق عملية العمل الشاملة - توثيق العملية"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:395
+#. Diagram element documentation
+msgid "This is the IHE PCF record consent transaction See https://profiles.ihe.net/ITI/PCF/ITI-108.html Access Consent - Create (ITI-108) Access Consent - Update (ITI-108) https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.html"
+msgstr "هذه هي معاملة تسجيل الموافقة في IHE PCF. انظر https://profiles.ihe.net/ITI/PCF/ITI-108.html الموافقة على الوصول - إنشاء (ITI-108) الموافقة على الوصول - تحديث (ITI-108) https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRegistry.html"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:340
+#. Diagram label
+msgid "yes"
+msgstr "نعم"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:127
+#. Diagram element documentation
+msgid "Counselor from origin country supporting pilgrim during inital health screening"
+msgstr "مرشد من بلد المنشأ يدعم الزائر خلال الفحص الصحي الأولي"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:169
+#. Diagram label
+msgid "eligible for pilgrimage?"
+msgstr "مؤهَّل للزيارة الدينية؟"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:330
+#. Diagram label
+msgid "fill consent form for sharing IPS during the pilgrimage on wallet"
+msgstr "ملء نموذج الموافقة على مشاركة IPS خلال الزيارة الدينية في المحفظة"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:174
+#. Diagram label
+msgid "inform patient ineligible for pilgrimage"
+msgstr "إبلاغ المريض بعدم أهليته للزيارة الدينية"
+
+#: input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn:107
+#. Diagram element documentation
+msgid "The pilgrim"
+msgstr "الزائر"
+
+#. Diagram element documentation
+#~ msgid "Counselor from origin country supporting Hajj pilgrim during inital health screening"
+#~ msgstr "مرشد من البلد الأم يدعم الحاج خلال الفحص الصحي الأولي"
+
+#. Diagram label
+#~ msgid "eligible for Hajj?"
+#~ msgstr "مؤهَّل للحج؟"
+
+#. Diagram label
+#~ msgid "fill consent form for sharing IPS during Hajj on wallet"
+#~ msgstr "ملء نموذج الموافقة على مشاركة IPS خلال الحج في المحفظة"
+
+#. Diagram label
+#~ msgid "inform patient ineligible for Hajj"
+#~ msgstr "إبلاغ المريض بعدم أهليته للحج"
+
+#. Diagram element documentation
+#~ msgid "The Hajj pilgrim"
+#~ msgstr "الحاج"

@@ -1,0 +1,21 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "9789240010567-eng",
+  "type": "book",
+  "title": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
+  "author": [
+    {
+      "literal": "World Health Organization"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2020
+      ]
+    ]
+  },
+  "ISBN": "9789240010567",
+  "URL": "https://www.who.int/publications/i/item/9789240010567",
+  "provenance": "authored"
+}

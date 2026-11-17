@@ -1,0 +1,89 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:es/processes/Health Check and Issue SHL",
+  "locale": "es",
+  "paths": {
+    "pot": "translations/es/processes/Health Check and Issue SHL.pot"
+  },
+  "po": "translations/es/processes/Health Check and Issue SHL.po",
+  "source_hashes": {
+    "pot": "28d95f6cccf8",
+    "po": "719d4b6613cd"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "28d95f6cccf8",
+          "po": "719d4b6613cd"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "4d23e65a44f6414371130eb3dc924020fd3a2767",
+        "metrics": {
+          "translated": 55,
+          "total": 55,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "28d95f6cccf8",
+          "po": "719d4b6613cd"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "4d23e65a44f6414371130eb3dc924020fd3a2767",
+        "metrics": {
+          "checked": 55,
+          "missing": 0,
+          "missing_strict": 0,
+          "missing_acronyms": 0,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        }
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "28d95f6cccf8",
+          "po": "719d4b6613cd"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "4d23e65a44f6414371130eb3dc924020fd3a2767",
+        "severity": "minor",
+        "metrics": {
+          "echoed": 1,
+          "translated": 55
+        },
+        "notes": "1 string(s) are byte-identical to the source. That is right for a proper noun and wrong for a sentence, which is why this warns rather than fails."
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

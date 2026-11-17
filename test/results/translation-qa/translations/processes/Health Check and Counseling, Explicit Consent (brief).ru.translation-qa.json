@@ -1,0 +1,87 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:ru/processes/Health Check and Counseling, Explicit Consent (brief)",
+  "locale": "ru",
+  "paths": {
+    "pot": "translations/ru/processes/Health Check and Counseling, Explicit Consent (brief).pot"
+  },
+  "po": "translations/ru/processes/Health Check and Counseling, Explicit Consent (brief).po",
+  "source_hashes": {
+    "pot": "953240222ea2",
+    "po": "a3d6ef6e0a72"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "953240222ea2",
+          "po": "a3d6ef6e0a72"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "545b2b32b84eae0bed18f0801aa1685f794b55be",
+        "metrics": {
+          "translated": 33,
+          "total": 33,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "953240222ea2",
+          "po": "a3d6ef6e0a72"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "545b2b32b84eae0bed18f0801aa1685f794b55be",
+        "metrics": {
+          "checked": 33,
+          "missing": 0,
+          "missing_strict": 0,
+          "missing_acronyms": 0,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        }
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "953240222ea2",
+          "po": "a3d6ef6e0a72"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "545b2b32b84eae0bed18f0801aa1685f794b55be",
+        "metrics": {
+          "echoed": 0,
+          "translated": 33
+        }
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

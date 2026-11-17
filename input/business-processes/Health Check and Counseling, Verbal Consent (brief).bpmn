@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="65a2317" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.5.0" camunda:diagramRelationId="bd9a9cd4-1c73-4d9c-9de0-ad1c209baa3d">
+<bpmn:definitions xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns/" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="65a2317" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.5.0" camunda:diagramRelationId="bd9a9cd4-1c73-4d9c-9de0-ad1c209baa3d">
+  <bpmn:resource id="counsellor" name="Counsellor" />
+  <bpmn:resource id="origin-wallet" name="Origin country wallet" />
+  <bpmn:resource id="pilgrim" name="Pilgrim" />
   <bpmn:collaboration id="pcf-send-request-response" name="Health Check and Issue SHL">
     <bpmn:documentation>Documents the health check and SHL consent and issuance process</bpmn:documentation>
     <bpmn:extensionElements>
@@ -70,8 +73,8 @@
         <bpmn:flowNodeRef>Gateway_04g5g05</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0a2dk4l</bpmn:flowNodeRef>
         <bpmn:childLaneSet id="LaneSet_1fd86oz">
-          <bpmn:lane id="Lane_15l2hl7" name="Counselor">
-            <bpmn:documentation>Counselor from origin country supporting Hajj pilgrim during inital health screening</bpmn:documentation>
+          <bpmn:lane id="Lane_15l2hl7" partitionElementRef="counsellor" name="Counselor">
+            <bpmn:documentation>Counselor from origin country supporting pilgrim during inital health screening</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
                 <zeebe:property name="ig-actor-type" value="person" />
@@ -86,8 +89,8 @@
             <bpmn:flowNodeRef>Gateway_04g5g05</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_0a2dk4l</bpmn:flowNodeRef>
           </bpmn:lane>
-          <bpmn:lane id="Lane_0g1cue8" name="Pilgrim">
-            <bpmn:documentation>The Hajj pilgrim</bpmn:documentation>
+          <bpmn:lane id="Lane_0g1cue8" partitionElementRef="pilgrim" name="Pilgrim">
+            <bpmn:documentation>The pilgrim</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
                 <zeebe:property name="ig-actor-type" value="person" />
@@ -111,7 +114,7 @@
         <bpmn:flowNodeRef>Activity_0220uyc</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0kdgdmi</bpmn:flowNodeRef>
         <bpmn:childLaneSet id="LaneSet_01jxvj6">
-          <bpmn:lane id="Lane_1qh4l5w" name="Origin Country  Wallet">
+          <bpmn:lane id="Lane_1qh4l5w" partitionElementRef="origin-wallet" name="Origin Country  Wallet">
             <bpmn:documentation>The pilgrim's origin country's digital health wallet</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
@@ -127,12 +130,12 @@
         </bpmn:childLaneSet>
       </bpmn:lane>
     </bpmn:laneSet>
-    <bpmn:task id="Activity_0jf6sb5" name="registration">
+    <bpmn:task id="Activity_0jf6sb5" name="registration"><bpmn:extensionElements><bootstrap.processes:skill ref="complete-sdc-questionnaire" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_0tfce9m</bpmn:incoming>
       <bpmn:outgoing>Flow_1pvand0</bpmn:outgoing>
     </bpmn:task>
     <bpmn:businessRuleTask id="Activity_06jssth" name="Conduct health assessment">
-      <bpmn:extensionElements>
+      <bpmn:extensionElements><bootstrap.processes:skill ref="review-decision-support-guidance" />
         <zeebe:calledDecision decisionId="conduct-health-assessment-0qi90kd" resultVariable="eligible-for-hajj" />
         <zeebe:ioMapping>
           <zeebe:output source="=e" target="OutputVariable_3g54vj1" />
@@ -156,7 +159,7 @@
       <bpmn:outgoing>Flow_04v5pie</bpmn:outgoing>
       <bpmn:outgoing>Flow_09o531n</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:task id="Activity_1gkedet" name="inform patient ineligibel for Hajj">
+    <bpmn:task id="Activity_1gkedet" name="inform patient ineligible for pilgrimage"><bpmn:extensionElements><bootstrap.processes:skill ref="inform-client" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_09o531n</bpmn:incoming>
       <bpmn:outgoing>Flow_00p5wv7</bpmn:outgoing>
     </bpmn:task>
@@ -173,12 +176,12 @@
       <bpmn:incoming>Flow_16jvour</bpmn:incoming>
       <bpmn:outgoing>Flow_1vnwnmu</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:task id="Activity_0x95bb2" name="Review SHL">
+    <bpmn:task id="Activity_0x95bb2" name="Review SHL"><bpmn:extensionElements><bootstrap.processes:skill ref="holder-consent-to-share" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_062h08q</bpmn:incoming>
       <bpmn:outgoing>Flow_16jvour</bpmn:outgoing>
     </bpmn:task>
     <bpmn:userTask id="Activity_0hhavs0" name="configure SHL privacy settings on wallet">
-      <bpmn:extensionElements>
+      <bpmn:extensionElements><bootstrap.processes:skill ref="holder-consent-to-share" />
         <zeebe:properties>
           <zeebe:property name="ig-code" value="shl-configure-privacy-settings" />
         </zeebe:properties>
@@ -200,7 +203,7 @@
       <bpmn:outgoing>Flow_1kpqa8r</bpmn:outgoing>
       <bpmn:outgoing>Flow_0x2k6nq</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:task id="Activity_0a2dk4l" name="Counsel patient on consent and digital health walllet">
+    <bpmn:task id="Activity_0a2dk4l" name="Counsel patient on consent and digital health wallet"><bpmn:extensionElements><bootstrap.processes:skill ref="inform-client" /></bpmn:extensionElements>
       <bpmn:extensionElements />
       <bpmn:incoming>Flow_04v5pie</bpmn:incoming>
       <bpmn:outgoing>Flow_0tcq8eo</bpmn:outgoing>

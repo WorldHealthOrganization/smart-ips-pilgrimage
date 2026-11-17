@@ -1,0 +1,30 @@
+# Arabic translation of pagecontent/actor-hcemr
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.159Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/actor-hcemr.md:1
+msgid "Description EMR used in Host Country of the pilgrimage by the Host Country Health Worker for accessing and managing health records. Serves as the interface utilized to view and/or ingest patient summary documents from Pilgrims. The Host Country EMR should, at a minimum, save a rendered version (e.g. PDF) of the Pilgrim's patient summary document for audit and liability purposes. The Host Country EMR may optionally ingest the patient summary document and transmit or otherwise make it available to the Host Country HIE for continued patient care.   Transactions participated in as source The Host Country EMR initiates requests to retrieve content in the following transactions:  retrieve VHL Manifest request retrieve IPS request"
+msgstr "الوصف EMR يستخدمه العامل الصحي في البلد المضيف للزيارة الدينية للوصول إلى السجلات الصحية وإدارتها. ويؤدي دور الواجهة المستخدمة لعرض مستندات ملخص المريض الواردة من الزوار و/أو استيعابها. وينبغي أن يحفظ EMR البلد المضيف، كحد أدنى، نسخة معروضة (مثل PDF) من مستند ملخص المريض الخاص بالزائر لأغراض التدقيق والمسؤولية القانونية. ويجوز لـ EMR البلد المضيف اختياريًا استيعاب مستند ملخص المريض وإرساله أو إتاحته بطريقة أخرى لـ HIE البلد المضيف لاستمرار رعاية المريض.   المعاملات المشارَك فيها بوصفه مصدرًا يبدأ EMR البلد المضيف طلبات استرجاع المحتوى في المعاملات التالية:  طلب استرجاع بيان VHL، طلب استرجاع IPS"

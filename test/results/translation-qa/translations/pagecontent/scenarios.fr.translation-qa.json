@@ -1,0 +1,114 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:fr/pagecontent/scenarios",
+  "locale": "fr",
+  "paths": {
+    "pot": "translations/fr/pagecontent/scenarios.pot"
+  },
+  "po": "translations/fr/pagecontent/scenarios.po",
+  "source_hashes": {
+    "pot": "b001499e3eff",
+    "po": "fd3b1e1f8eec"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "b001499e3eff",
+          "po": "fd3b1e1f8eec"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "translated": 24,
+          "total": 24,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "b001499e3eff",
+          "po": "fd3b1e1f8eec"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "severity": "minor",
+        "evidence": [
+          {
+            "text": "WHO — absent from: \"Décrit dans le cadre <a0>SMART Trust</a0> du GDHCN, selon lequel un participant \""
+          },
+          {
+            "text": "EMR — absent from: \"Une fois partagées avec le service terminologique de l'OMS, ces terminologies de\""
+          },
+          {
+            "text": "WHO — absent from: \"Une fois partagées avec le service terminologique de l'OMS, ces terminologies de\""
+          },
+          {
+            "text": "WHO — absent from: \"Ces terminologies devraient être partagées par le HIE national avec le service t\""
+          },
+          {
+            "text": "EMR — absent from: \"Il s'agit d'un scénario de « phase 1 » dans lequel un pèlerin se trouvant dans u\""
+          },
+          {
+            "text": "EMR — absent from: \"Ce processus permet de partager les systèmes de codes et jeux de valeurs nationa\""
+          },
+          {
+            "text": "WHO — absent from: \"GDHCN de l'OMS\""
+          }
+        ],
+        "metrics": {
+          "checked": 24,
+          "missing": 7,
+          "missing_strict": 0,
+          "missing_acronyms": 7,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        },
+        "notes": "7 acronym(s) from the source do not appear verbatim in the translation and no glossary entry speaks for them. That is right for one the target language localises — WHO is OMS in French — and wrong for one silently dropped, and this check cannot tell the two apart. Add them to translations/fr/glossary.po: a pinned msgstr says what the term must become, and a \"#, localised\" flag says it is rendered in the target language without pinning how."
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "b001499e3eff",
+          "po": "fd3b1e1f8eec"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "severity": "minor",
+        "metrics": {
+          "echoed": 1,
+          "translated": 24
+        },
+        "notes": "1 string(s) are byte-identical to the source. That is right for a proper noun and wrong for a sentence, which is why this warns rather than fails."
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

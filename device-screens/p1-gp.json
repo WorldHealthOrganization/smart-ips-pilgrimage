@@ -1,0 +1,94 @@
+{
+  "$schema": "device-screen/0.1.0",
+  "id": "P1-gp",
+  "title": "Dr Aisyah explains who can see it, and for how long",
+  "description": "The shield, the eye and the calendar: what the record is, who can see it, and for how long, explained by a clinician before Kamal decides.",
+  "device": "tablet",
+  "owner": "dr-aisyah",
+  "steps": [
+    {
+      "scenario": "p1-health-check-and-consent",
+      "step": "P1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "app": "Pre-pilgrimage health examination",
+      "subtitle": "Clinic, Tanavu • Dr Aisyah",
+      "icon": "stethoscope",
+      "brand": "#0d9488",
+      "status": {
+        "text": "Pilgrimage season 2026",
+        "tone": "info",
+        "icon": "calendar"
+      }
+    },
+    {
+      "type": "personCard",
+      "actor": "kamal",
+      "banner": true,
+      "subtitle": "Pilgrim • first pilgrimage • travelling with Salmah",
+      "chips": [
+        {
+          "text": "Fit to travel",
+          "tone": "success",
+          "icon": "check"
+        }
+      ]
+    },
+    {
+      "type": "recordList",
+      "title": "Examination",
+      "icon": "file",
+      "rows": [
+        {
+          "icon": "stethoscope",
+          "label": "Mandatory pre-pilgrimage health examination",
+          "status": {
+            "text": "Done",
+            "tone": "success"
+          }
+        },
+        {
+          "icon": "pen",
+          "label": "Medicines reviewed",
+          "detail": "Insulin, carried in his luggage"
+        },
+        {
+          "icon": "pill-off",
+          "label": "Allergy recorded",
+          "detail": "Penicillin",
+          "struck": true
+        }
+      ]
+    },
+    {
+      "type": "consent",
+      "column": "side",
+      "title": "What the Pilgrimage Health Record shares",
+      "icon": "shield",
+      "who": "Taifafeki health workers who treat Kamal",
+      "what": "His International Patient Summary, signed by Onesa",
+      "until": "The end of the pilgrimage season",
+      "granted": true
+    },
+    {
+      "type": "note",
+      "column": "side",
+      "icon": "phone",
+      "text": "Kamal confirms on his own wallet; the consent is recorded by Onesa's health information exchange."
+    },
+    {
+      "type": "actions",
+      "buttons": [
+        {
+          "label": "Send the consent request to Kamal's wallet",
+          "style": "primary",
+          "icon": "send"
+        }
+      ]
+    }
+  ],
+  "try": "Ask the room who should explain consent, and who records it"
+}

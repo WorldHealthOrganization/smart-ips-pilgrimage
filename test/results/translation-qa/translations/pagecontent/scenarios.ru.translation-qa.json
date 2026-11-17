@@ -1,0 +1,103 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:ru/pagecontent/scenarios",
+  "locale": "ru",
+  "paths": {
+    "pot": "translations/ru/pagecontent/scenarios.pot"
+  },
+  "po": "translations/ru/pagecontent/scenarios.po",
+  "source_hashes": {
+    "pot": "08399aed1312",
+    "po": "3fc35fdaf219"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "08399aed1312",
+          "po": "3fc35fdaf219"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "545b2b32b84eae0bed18f0801aa1685f794b55be",
+        "metrics": {
+          "translated": 24,
+          "total": 24,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "08399aed1312",
+          "po": "3fc35fdaf219"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "545b2b32b84eae0bed18f0801aa1685f794b55be",
+        "severity": "minor",
+        "evidence": [
+          {
+            "text": "WHO — absent from: \"Описано в структуре <a0>SMART Trust</a0> GDHCN, согласно которой Участник GDHCN \""
+          },
+          {
+            "text": "WHO — absent from: \"После передачи в Терминологическую службу ВОЗ эти терминологии следует сделать д\""
+          },
+          {
+            "text": "WHO — absent from: \"Эти терминологии следует передавать из национальной HIE в Терминологическую служ\""
+          },
+          {
+            "text": "WHO — absent from: \"GDHCN ВОЗ\""
+          }
+        ],
+        "metrics": {
+          "checked": 24,
+          "missing": 4,
+          "missing_strict": 0,
+          "missing_acronyms": 4,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        },
+        "notes": "4 acronym(s) from the source do not appear verbatim in the translation and no glossary entry speaks for them. That is right for one the target language localises — WHO is OMS in French — and wrong for one silently dropped, and this check cannot tell the two apart. Add them to translations/ru/glossary.po: a pinned msgstr says what the term must become, and a \"#, localised\" flag says it is rendered in the target language without pinning how."
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "08399aed1312",
+          "po": "3fc35fdaf219"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "545b2b32b84eae0bed18f0801aa1685f794b55be",
+        "metrics": {
+          "echoed": 0,
+          "translated": 24
+        }
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

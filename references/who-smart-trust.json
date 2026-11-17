@@ -1,0 +1,13 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-smart-trust",
+  "type": "webpage",
+  "title": "SMART Trust",
+  "author": [
+    {
+      "literal": "World Health Organization"
+    }
+  ],
+  "URL": "https://smart.who.int/smart-trust",
+  "provenance": "authored"
+}

@@ -1,0 +1,159 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "p1-health-check-and-consent",
+  "title": "P1 · The health check and the choice to share",
+  "description": "Three months before the pilgrimage, Kamal has the mandatory pre-pilgrimage health examination with Dr Aisyah. He is fit to travel. She explains what the Pilgrimage Health Record is, who can see it, and for how long. Kamal agrees on his wallet to share his patient summary with Taifafeki health workers during the pilgrimage, and sets how the link to it is protected. Step 1 of the overview of key process flows.",
+  "personas": [
+    "kamal",
+    "dr-aisyah",
+    "salmah",
+    "kamal-wallet",
+    "onesa-hie"
+  ],
+  "partOf": "the-pilgrims-hajj",
+  "follows": "p0-keys-and-codes-shared",
+  "when": "Three months before the pilgrimage",
+  "where": "A GP clinic in Tanavu",
+  "country": "Onesa",
+  "trustLadder": "record-trust",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Wide banner, aspect ratio 11:4. Bright natural daylight, soft pastel palette with clear colour accents. Faces in gentle three-quarter view with expressive, kind features. Technology shown as simple, oversized icons: a phone with a QR code, a shield with a check mark, a small speech bubble with a symbol. No readable text, no logos, no real brands, no flags with text. All people are fictional.",
+    "cast": [
+      {
+        "actor": "kamal",
+        "description": "Onesan man, 61, slim, short grey hair, kind face. Batik shirt in Onesa. In Taifafeki, two white pilgrim's garments (unstitched towelling cloth, right shoulder bare when in pilgrim's dress), a small waist pouch and one phone."
+      },
+      {
+        "actor": "salmah",
+        "description": "His wife, about 58. White modest pilgrimage outfit and white telekung-style hijab in Taifafeki; pastel baju kurung and tudung in Onesa."
+      },
+      {
+        "actor": "dr-aisyah",
+        "description": "Onesan GP, late 30s, tudung, white coat."
+      }
+    ],
+    "notes": [
+      "Pilgrim's white garments (two white unstitched sheets) is for men only; women wear ordinary modest clothing, usually white, face and hands uncovered.",
+      "Keep the shrine and other holy sites far in the background or out of frame.",
+      "Keep medical signs text-free so generators don't invent wrong Arabic.",
+      "The picture carries no text: the step title and the caption are page text."
+    ]
+  },
+  "steps": [
+    {
+      "id": "P1",
+      "title": "The health check and the choice to share",
+      "headline": "Kamal is found fit to travel, hears who can see his Pilgrimage Health Record and for how long, and agrees on his wallet to share it.",
+      "when": "Three months before the pilgrimage",
+      "where": "A GP clinic in Tanavu",
+      "touchpoint": "Pre-pilgrimage health examination; consent on the wallet",
+      "narrative": "Three months before the pilgrimage, Kamal has the mandatory pre-pilgrimage health examination with Dr Aisyah. He is fit to travel. She explains what the Pilgrimage Health Record is, who can see it, and for how long. Kamal agrees on his wallet to share his patient summary with Taifafeki health workers during the pilgrimage, and sets how the link to it is protected. Step 1 of the overview of key process flows.",
+      "lead": "kamal",
+      "experiences": [
+        {
+          "actor": "kamal",
+          "doing": "Has his health examination, listens to Dr Aisyah, and confirms on his wallet that Taifafeki health workers may see his summary during the pilgrimage; sets how the link is protected.",
+          "feeling": "“So the doctors there will know about my insulin. Good.”",
+          "emotion": 1
+        },
+        {
+          "actor": "dr-aisyah",
+          "doing": "Examines Kamal, finds him fit to travel, and explains what the record is, who can see it and for how long.",
+          "feeling": "“He understood what he agreed to. That is what matters.”",
+          "emotion": 1
+        },
+        {
+          "actor": "salmah",
+          "doing": "Sits with him and listens.",
+          "feeling": "“One less thing to worry about.”",
+          "emotion": 1
+        },
+        {
+          "actor": "kamal-wallet",
+          "doing": "Shows the consent form and the link's privacy settings, and sends the consent to the HIE."
+        },
+        {
+          "actor": "onesa-hie",
+          "doing": "Records the consent directive."
+        }
+      ],
+      "painPoint": "Without consent recorded at home, nothing may be shared abroad, and the clinic in Nalemi starts from nothing.",
+      "enabler": "Consent is given with a clinician who can explain it, and confirmed by the pilgrim on his own phone.",
+      "policy": "Is consent given once for the whole pilgrimage season, per facility, or per encounter — and can Kamal withdraw it while abroad?",
+      "handoff": {
+        "summary": "Kamal's consent is recorded at home",
+        "from": "kamal-wallet",
+        "to": "onesa-hie",
+        "carrier": "Wallet to HIE",
+        "payload": "Consent directive (HajjConsent)",
+        "offline": false
+      },
+      "realisedBy": [
+        {
+          "process": "input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn",
+          "tasks": [
+            "conduct-health-assessment",
+            "Activity_1snfpmi",
+            "consent-wallet-questionnaire",
+            "consent-wallet-send",
+            "consent-wallet-receive",
+            "Activity_0ibmc50",
+            "shl-configure-privacy-settings"
+          ]
+        },
+        {
+          "process": "input/business-processes/Health Check and Counseling, Verbal Consent.bpmn",
+          "tasks": [
+            "Activity_0x1vd9v",
+            "Activity_0m8ec66",
+            "Gateway_0ejh2an"
+          ]
+        }
+      ],
+      "gaps": [
+        "The two forms the pilgrim fills in, consent-wallet-questionnaire and shl-configure-privacy-settings, are named in the processes but not defined."
+      ],
+      "references": [
+        {
+          "label": "Business processes: Health Check and Counseling, Explicit Consent on Wallet; Verbal Consent",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/business-processes.html",
+          "rel": "specified by"
+        },
+        {
+          "label": "Transaction: record consent from wallet",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/transactions.html#record-consent-request",
+          "rel": "specified by"
+        },
+        {
+          "label": "Profile HajjConsent and its examples CONSENT-XXK and CONSENT-XXR",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/artifacts.html",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/pilgrim/p1.webp",
+        "alt": "In a Tanavu clinic, Dr Aisyah explains a consent card with a shield and a calendar to Kamal, in a batik shirt, who holds his phone with a padlock and a tick; Salmah sits beside him.",
+        "prompt": "A bright clinic room in Tanavu, window showing palm trees and a coastal town. Dr Aisyah sits beside Kamal (batik shirt), who holds his phone; Salmah sits next to him. The phone shows a large consent screen with a check-mark toggle and a small padlock. Dr Aisyah gestures to a simple card with shield, eye and calendar icons (who can see it, for how long). Kamal smiles, reassured."
+      },
+      "record": {
+        "state": "consented",
+        "description": "His consent to share his summary for the pilgrimage is recorded",
+        "heldWhere": "Onesa's HIE; Kamal's wallet"
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "clinician",
+      "label": "Pre-pilgrimage check, Dr Aisyah"
+    },
+    {
+      "icon": "paper",
+      "label": "Kamal agrees to share"
+    },
+    {
+      "icon": "phone",
+      "label": "Consent in his wallet"
+    }
+  ]
+}

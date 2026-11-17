@@ -1,0 +1,131 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "p6-break-the-glass",
+  "title": "P6 · When he cannot show the code (break the glass)",
+  "description": "On the day of Toreva Kamal collapses and is brought in unconscious. Salmah is not with him. Dr Hafiz of the Onesan medical team gives his pilgrimage registration number, and the facility reaches his summary through it. Described in this guide's user scenarios as a Phase 2 scenario.",
+  "personas": [
+    "kamal",
+    "dr-hafiz",
+    "dr-faisal",
+    "mina-facility-emr",
+    "onesa-hie"
+  ],
+  "partOf": "the-pilgrims-hajj",
+  "follows": "p5-record-read-and-treated",
+  "when": "The day of Toreva",
+  "where": "A health tent at Toreva",
+  "country": "Taifafeki",
+  "trustLadder": "record-trust",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Wide banner, aspect ratio 11:4. Bright natural daylight, soft pastel palette with clear colour accents. Faces in gentle three-quarter view with expressive, kind features. Technology shown as simple, oversized icons: a phone with a QR code, a shield with a check mark, a small speech bubble with a symbol. No readable text, no logos, no real brands, no flags with text. All people are fictional.",
+    "cast": [
+      {
+        "actor": "kamal",
+        "description": "Onesan man, 61, slim, short grey hair, kind face. Batik shirt in Onesa. In Taifafeki, two white pilgrim's garments (unstitched towelling cloth, right shoulder bare when in pilgrim's dress), a small waist pouch and one phone."
+      },
+      {
+        "actor": "dr-hafiz",
+        "description": "Onesan pilgrimage medical-team doctor, 40s, team vest."
+      },
+      {
+        "actor": "dr-faisal",
+        "description": "Taifafeki emergency doctor, 40s, short beard, white coat over a thobe."
+      }
+    ],
+    "notes": [
+      "Pilgrim's white garments (two white unstitched sheets) is for men only; women wear ordinary modest clothing, usually white, face and hands uncovered.",
+      "Keep the shrine and other holy sites far in the background or out of frame.",
+      "Keep medical signs text-free so generators don't invent wrong Arabic.",
+      "The picture carries no text: the step title and the caption are page text."
+    ]
+  },
+  "steps": [
+    {
+      "id": "P6",
+      "title": "When he cannot show the code",
+      "headline": "Kamal is brought in unconscious with no one to show his code; Dr Hafiz gives his pilgrimage registration number and the facility reaches his summary through it.",
+      "when": "The day of Toreva",
+      "where": "A health tent at Toreva",
+      "touchpoint": "Pilgrimage registration number; emergency access",
+      "narrative": "On the day of Toreva Kamal collapses and is brought in unconscious. Salmah is not with him. Dr Hafiz of the Onesan medical team gives his pilgrimage registration number, and the facility reaches his summary through it. Described in this guide's user scenarios as a Phase 2 scenario.",
+      "lead": "dr-hafiz",
+      "experiences": [
+        {
+          "actor": "kamal",
+          "doing": "Collapses on the day of Toreva and is brought in unconscious.",
+          "emotion": -2
+        },
+        {
+          "actor": "dr-hafiz",
+          "doing": "Identifies Kamal and gives his pilgrimage registration number to the facility.",
+          "feeling": "“He is one of ours. Here is his number.”",
+          "emotion": -1
+        },
+        {
+          "actor": "dr-faisal",
+          "doing": "Reaches Kamal's summary through the registration number and treats him.",
+          "feeling": "“Without this I would be treating blind.”",
+          "emotion": 0
+        },
+        {
+          "actor": "mina-facility-emr",
+          "doing": "Looks up the summary by the pilgrimage registration number."
+        },
+        {
+          "actor": "onesa-hie",
+          "doing": "Releases the summary for emergency access, if Kamal opted in."
+        }
+      ],
+      "painPoint": "An unconscious pilgrim cannot show a QR code or say a passcode, and his wife is not there.",
+      "enabler": "The pilgrim can opt in to break-the-glass access on his wallet; his country's medical team can identify him.",
+      "policy": "Who may open an unconscious pilgrim's record, on what legal basis, and how is it accounted for afterwards?",
+      "handoff": {
+        "summary": "The summary is reached without the pilgrim's phone",
+        "from": "dr-hafiz",
+        "to": "dr-faisal",
+        "carrier": "Pilgrimage registration number",
+        "payload": "Emergency access to the IPS",
+        "offline": false
+      },
+      "gaps": [
+        "No business process, transaction or consent profile for emergency access."
+      ],
+      "references": [
+        {
+          "label": "User scenarios: Phase 2, break the glass",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/scenarios.html",
+          "rel": "described in"
+        },
+        {
+          "label": "Origin Country Wallet: opt in or out of break-the-glass access",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/system-actors.html#ochw",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/pilgrim/p6.webp",
+        "alt": "At dusk on the plain of Toreva, Kamal lies unconscious on a stretcher; Dr Hafiz of the Onesan medical team hands Dr Faisal a phone with his registration number, under a broken-glass emergency sign and an open padlock.",
+        "prompt": "Evening at Toreva: the plain with the gentle hill of Jabal al-Rahmah in the far distance, golden dusk light, crowds in white as soft silhouettes. Medics carry Kamal, unconscious in white pilgrim's white garments, on a stretcher into a health tent. Dr Hafiz, in his medical-team vest, hands Dr Faisal a card with only a number symbol and a lanyard badge. Above them floats a red emergency-glass icon with a small crack and an unlocked padlock. Urgent but caring. Salmah is not in the scene."
+      },
+      "record": {
+        "state": "read-and-used",
+        "description": "Reached without his phone, through his pilgrimage registration",
+        "heldWhere": "Onesa's HIE; the Toreva health tent"
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "tent",
+      "label": "Collapsed at Toreva"
+    },
+    {
+      "icon": "clinician",
+      "label": "Dr Hafiz vouches"
+    },
+    {
+      "icon": "lock",
+      "label": "Break the glass"
+    }
+  ]
+}

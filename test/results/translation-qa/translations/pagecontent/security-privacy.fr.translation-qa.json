@@ -1,0 +1,87 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:fr/pagecontent/security-privacy",
+  "locale": "fr",
+  "paths": {
+    "pot": "translations/fr/pagecontent/security-privacy.pot"
+  },
+  "po": "translations/fr/pagecontent/security-privacy.po",
+  "source_hashes": {
+    "pot": "27ce1d9f7a4b",
+    "po": "54f236b0005c"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "27ce1d9f7a4b",
+          "po": "54f236b0005c"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "translated": 1,
+          "total": 1,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "27ce1d9f7a4b",
+          "po": "54f236b0005c"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "checked": 1,
+          "missing": 0,
+          "missing_strict": 0,
+          "missing_acronyms": 0,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        }
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "27ce1d9f7a4b",
+          "po": "54f236b0005c"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "echoed": 0,
+          "translated": 1
+        }
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

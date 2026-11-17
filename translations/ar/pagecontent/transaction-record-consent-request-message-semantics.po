@@ -1,0 +1,58 @@
+# Arabic translation of pagecontent/transaction-record-consent-request-message-semantics
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.203Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/transaction-record-consent-request-message-semantics.md:10
+msgid "Access Consent - Create (ITI-108)"
+msgstr "Access Consent - إنشاء (ITI-108)"
+
+#: input/pagecontent/transaction-record-consent-request-message-semantics.md:11
+msgid "Access Consent - Update (ITI-108)"
+msgstr "Access Consent - تحديث (ITI-108)"
+
+#: input/pagecontent/transaction-record-consent-request-message-semantics.md:3
+msgid "Message Semantics Request"
+msgstr "دلالات رسالة الطلب"
+
+#: input/pagecontent/transaction-record-consent-request-message-semantics.md:13
+msgid "Message Semantics Response"
+msgstr "دلالات رسالة الاستجابة"
+
+#: input/pagecontent/transaction-record-consent-request-message-semantics.md:7
+msgid "See <a0>https://profiles.ihe.net/ITI/PCF/ITI-108.html</a0> for more details."
+msgstr "انظر <a0>https://profiles.ihe.net/ITI/PCF/ITI-108.html</a0> لمزيد من التفاصيل."
+
+#: input/pagecontent/transaction-record-consent-request-message-semantics.md:14
+msgid "See the ITI 108 for Create and Update sections. The success or failure of the create/ update interaction is indicated by the http response code (e.g., 400, 200, etc.)."
+msgstr "انظر قسمَي Create وUpdate في ITI 108. ويُشار إلى نجاح تفاعل الإنشاء/التحديث أو فشله برمز استجابة http (مثل 400، 200، إلخ)."
+
+#: input/pagecontent/transaction-record-consent-request-message-semantics.md:9
+msgid "Specifically,"
+msgstr "وتحديدًا،"
+
+#: input/pagecontent/transaction-record-consent-request-message-semantics.md:4
+msgid "The message semantics for Record Consent Request utilizes a FHIR Consent resource set as PUT or POST http request."
+msgstr "تستخدم دلالات رسالة طلب Record Consent موردَ FHIR Consent مُرسَلًا في صورة طلب http من نوع PUT أو POST."

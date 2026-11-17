@@ -1,0 +1,22 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "French translation of input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn. Agent translation, unofficial: no human has adjudicated it. Coverage 29/29.",
+  "label": "trans:fr/processes/Clinical Encounter for Unplanned Care (brief)",
+  "locale": "fr",
+  "sourceFile": "input/business-processes/Clinical Encounter for Unplanned Care (brief).bpmn",
+  "sourceHash": "420a05dc5fb4",
+  "potFile": "translations/fr/processes/Clinical Encounter for Unplanned Care (brief).pot",
+  "poFile": "translations/fr/processes/Clinical Encounter for Unplanned Care (brief).po",
+  "status": {
+    "locale": "fr",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T11:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage fr session)"
+  },
+  "coverage": {
+    "translated": 29,
+    "total": 29,
+    "pct": 100
+  }
+}

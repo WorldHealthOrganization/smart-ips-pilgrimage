@@ -1,0 +1,38 @@
+# Arabic translation of pagecontent/decision-logic
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.173Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/decision-logic.md:11
+msgid "No decision logic have been defined for IPS-pilgrimage"
+msgstr "لم يُعرَّف أي منطق قرار لـ IPS-pilgrimage"
+
+#: input/pagecontent/decision-logic.md:3
+msgid "The decision-support logic component provides the decision logic and algorithms, as well as the scheduling of services, in accordance with WHO guidelines. The decision logic and algorithms in this implementation guide deconstruct the recommendations within the clinical guidelines and guidance into a machine readable format that clearly labels the inputs and outputs that would be operationalized in a digital decision-support system."
+msgstr "يوفّر مكوّن منطق دعم القرار منطقَ القرار والخوارزميات، فضلًا عن جدولة الخدمات، وفقًا لإرشادات منظمة الصحة العالمية (WHO). ويفكّك منطق القرار والخوارزميات في دليل التنفيذ هذا التوصياتِ الواردة في الإرشادات والتوجيهات السريرية إلى صيغة قابلة للقراءة آليًا تحدّد بوضوح المدخلات والمخرجات التي ستُفعَّل في نظام رقمي لدعم القرار."
+
+#: input/pagecontent/decision-logic.md:1
+msgid "This page describes the decision support logic."
+msgstr "تصف هذه الصفحة منطق دعم القرار."

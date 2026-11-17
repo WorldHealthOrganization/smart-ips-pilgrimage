@@ -12,12 +12,12 @@
         <concept>
           <code value="counselor"/>
           <display value="Counselor"/>
-          <definition value="Counselor from origin country supporting Hajj pilgrim during inital health screening"/>
+          <definition value="Counselor from origin country supporting pilgrim during inital health screening"/>
         </concept>
         <concept>
           <code value="pilgrim"/>
           <display value="Pilgrim"/>
-          <definition value="The Hajj pilgrim"/>
+          <definition value="The pilgrim"/>
         </concept>
         <concept>
           <code value="ochw"/>
@@ -101,7 +101,7 @@
         <title value="Counselor"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <description value="Counselor from origin country supporting Hajj pilgrim during inital health screening&#10;&#9;&#9;    More details of this transaction may be found on the &#10;&#9;&#9;    &#10;&#9;&#9;    page.&#10;&#9;&#9;  "/>
+        <description value="Counselor from origin country supporting pilgrim during inital health screening&#10;&#9;&#9;    More details of this transaction may be found on the &#10;&#9;&#9;    &#10;&#9;&#9;    page.&#10;&#9;&#9;  "/>
       </ActorDefinition>
     </resource>
   </entry>
@@ -128,7 +128,7 @@
         <title value="Pilgrim"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <description value="The Hajj pilgrim&#10;&#9;&#9;    More details of this transaction may be found on the &#10;&#9;&#9;    &#10;&#9;&#9;    page.&#10;&#9;&#9;  "/>
+        <description value="The pilgrim&#10;&#9;&#9;    More details of this transaction may be found on the &#10;&#9;&#9;    &#10;&#9;&#9;    page.&#10;&#9;&#9;  "/>
       </ActorDefinition>
     </resource>
   </entry>
@@ -227,7 +227,7 @@
     <name value="SGQuestionaire-consent-wallet-questionnaire"/>
     <status value="draft"/>
     <publisher value="WHO"/>
-    <name>fiill consent form for sharing IPS during Hajj on wallet</name>
+    <name>fiill consent form for sharing IPS during the pilgrimage on wallet</name>
     <baseDefinition value="http://smart.who.int/base/StructureDefinition/SGGraphDefinition"/>
     <derivation value="constraint"/>
     <differential>
@@ -236,7 +236,7 @@
       </element>
       <element id="Questionnaire.name">
         <path value="Questionnaire.name"/>
-        <patternCode value="fiill consent form for sharing IPS during Hajj on wallet"/>
+        <patternCode value="fiill consent form for sharing IPS during the pilgrimage on wallet"/>
       </element>
       <element id="Questionnaire.code">
         <path value="Questionnaire.code"/>

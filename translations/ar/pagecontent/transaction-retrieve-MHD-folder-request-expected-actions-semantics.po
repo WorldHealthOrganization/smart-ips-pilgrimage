@@ -1,0 +1,115 @@
+# Arabic translation of pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.206Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:13
+msgid "Audit event"
+msgstr "حدث التدقيق"
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:4
+msgid "Deciding the request: the pilgrim's consents are the policy"
+msgstr "البتّ في الطلب: موافقات الزائر هي السياسة"
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:16
+#, python-brace-format
+msgid "the {code0} and {code1} of each Consent read from the Consent Registry for the decision;"
+msgstr "قيمتا {code0} و{code1} لكل Consent مقروءة من سجل الموافقات (Consent Registry) لأغراض القرار؛"
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:19
+msgid "the documents released (the DocumentReferences returned), or the refusal."
+msgstr "المستندات المُفرَج عنها (DocumentReferences المُعادة)، أو الرفض."
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:11
+#, python-brace-format
+msgid "The Host Country EMR is identified by trust in the {code0} trust domain (see the authentication note in the message semantics). The Origin Country HIE releases the documents only when the passcode is valid, the VHL has not expired, the origin-release consent is active in its registry, the verified receiver matches {code1}, the purpose is treatment, and the request falls within {code2}. If any of these cannot be established, the request is not permitted."
+msgstr "يُحدَّد EMR البلد المضيف بالثقة في نطاق الثقة {code0} (انظر ملاحظة المصادقة في دلالات الرسائل). ولا تُفرج HIE بلد المنشأ عن المستندات إلا إذا كان رمز المرور صالحًا، ولم تنتهِ صلاحية VHL، وكانت موافقة الإفراج في بلد المنشأ سارية في سجلها، وطابقت الجهة المُستقبِلة المُتحقَّق منها {code1}، وكان الغرض هو العلاج، ووقع الطلب ضمن {code2}. وإذا تعذّر إثبات أيٍّ من ذلك، فلا يُسمح بالطلب."
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:14
+msgid "The Origin Country HIE records an audit event with Record Audit Event [ITI-20] for each request, whether documents are released or refused. VHL Volume 1 §1:XX.3 requires the VHL Sharer and the VHL Receiver to be grouped with an ATNA Secure Node or Secure Application, and ITI-YY5 §2:3.YY5.5.6 says both SHOULD log document access requests, the authentication method used, the receiver identity, the VHL folder ID and the authorization decision. In this guide the audit event recorded by the Origin Country HIE shall also cite:"
+msgstr "تسجّل HIE بلد المنشأ حدث تدقيق بواسطة Record Audit Event [ITI-20] لكل طلب، سواء أُفرج عن المستندات أم رُفض. ويشترط المجلد 1 من VHL §1:XX.3 أن تُجمَّع الجهة المُشارِكة في VHL والجهة المُستقبِلة في VHL مع ATNA Secure Node أو Secure Application، وينص ITI-YY5 §2:3.YY5.5.6 على أنه ينبغي (SHOULD) لكلتيهما تسجيل طلبات الوصول إلى المستندات، وطريقة المصادقة المستخدمة، وهوية الجهة المُستقبِلة، ومعرِّف مجلد VHL، وقرار التفويض. وفي هذا الدليل، يجب أن يستشهد حدث التدقيق الذي تسجّله HIE بلد المنشأ أيضًا بما يلي:"
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:18
+#, python-brace-format
+msgid "the purpose of use ({code0});"
+msgstr "غرض الاستخدام ({code0})؛"
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:17
+msgid "the receiver, as identified by the VHL authentication option used;"
+msgstr "الجهة المُستقبِلة، كما يحددها خيار مصادقة VHL المستخدم؛"
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:2
+msgid "The recipient OCHIE acts as a VHL Document Responder and must conform with the capability statement for <a0>VHL Document Responder</a0>"
+msgstr "تعمل OCHIE المتلقية بوصفها VHL Document Responder ويجب أن تمتثل لبيان القدرات الخاص بـ <a0>VHL Document Responder</a0>"
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:1
+msgid "The recipient OCHIE checks if the VHL request is valid and responds with the documentReference as a FHIR bundle Json."
+msgstr "تتحقق OCHIE المتلقية من صلاحية طلب VHL وتستجيب بـ documentReference في صورة FHIR bundle بتنسيق Json."
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:9
+#, python-brace-format
+msgid "Which consent a {code0} is, and the consent text the pilgrim was shown, are carried in {code1}: a code from the <a0>IPS.HAJJ.CONSENT</a0> CodeSystem, with {code2} set to the CodeSystem version."
+msgstr "تُحمَل هوية الموافقة التي يمثلها {code0}، ونص الموافقة الذي عُرض على الحاج، في {code1}: وهو رمز من CodeSystem <a0>IPS.HAJJ.CONSENT</a0>، مع ضبط {code2} على إصدار CodeSystem."
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:5
+msgid "For the pilgrimage there is no separate data sharing agreement to look up. The pilgrim's two <a0>HajjConsent</a0> resources are the policy, and each one binds the party it names:"
+msgstr "بالنسبة إلى الزيارة الدينية، لا توجد اتفاقية منفصلة لمشاركة البيانات يُرجَع إليها. فمورِدا <a0>HajjConsent</a0> الخاصان بالزائر هما السياسة، وكلٌّ منهما يُلزم الطرف الذي يسمّيه:"
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:15
+#, python-brace-format
+msgid "the governing policy: the pilgrim's consents, each by its {code0} code and CodeSystem version (for example {code1} and {code2} in this guide's examples, version 2.1.0);"
+msgstr "السياسة الحاكمة: موافقات الزائر، كلٌّ منها برمز {code0} الخاص بها وإصدار CodeSystem (على سبيل المثال {code1} و{code2} في أمثلة هذا الدليل، الإصدار 2.1.0)؛"
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:7
+#, python-brace-format
+msgid "The host-use consent ({code0}, or the fictional {code1} of this guide's examples) governs the Host Country Ministry of Health's use of the IPS after it is received: for treatment during the pilgrimage and any follow-up care, as its consent text states."
+msgstr "تحكم موافقة الاستخدام في البلد المضيف ({code0}، أو {code1} الخيالية في أمثلة هذا الدليل) استخدامَ وزارة الصحة في البلد المضيف لـ IPS بعد استلامه: للعلاج خلال الزيارة الدينية وأي رعاية متابعة، كما ينص نص الموافقة."
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:6
+#, python-brace-format
+msgid "The origin-release consent (for example {code0}, or the fictional {code1} of this guide's examples) lets the Origin Country HIE release the IPS to the recipient named in {code2} (role {code3}, information recipient), for the purpose in {code4} ({code5}), during {code6}. The Origin Country HIE enforces this consent from its own Consent Registry (as recorded by the Record Consent transaction, [ITI-108]), not from the copy carried inside the IPS. The IPS copy is signed when the IPS is issued, so it cannot show a later withdrawal."
+msgstr "تتيح موافقة الإفراج في بلد المنشأ (على سبيل المثال {code0}، أو {code1} الخيالية في أمثلة هذا الدليل) لـ HIE بلد المنشأ الإفراج عن IPS للمتلقي المسمّى في {code2} (الدور {code3}، متلقي المعلومات)، للغرض الوارد في {code4} ({code5})، خلال {code6}. وتُنفِّذ HIE بلد المنشأ هذه الموافقة انطلاقًا من سجل الموافقات (Consent Registry) الخاص بها (كما سجّلته معاملة Record Consent، [ITI-108])، لا من النسخة المحمولة داخل IPS. فنسخة IPS تُوقَّع عند إصدار IPS، ولذلك لا يمكنها إظهار سحبٍ لاحق."
+
+#: input/pagecontent/transaction-retrieve-MHD-folder-request-expected-actions-semantics.md:21
+msgid "This guide uses no separate data sharing agreement for the pilgrimage, so the consents themselves are the policy the audit event cites. The Host Country EMR, as an ATNA Secure Node or Secure Application, should also audit what it receives."
+msgstr "لا يستخدم هذا الدليل اتفاقية منفصلة لمشاركة البيانات للزيارة الدينية، ولذلك فإن الموافقات نفسها هي السياسة التي يستشهد بها حدث التدقيق. وينبغي لـ EMR البلد المضيف، بوصفه ATNA Secure Node أو Secure Application، أن يدقق أيضًا ما يستلمه."
+
+#~ msgid "For the Hajj there is no separate data sharing agreement to look up. The pilgrim's two <a0>HajjConsent</a0> resources are the policy, and each one binds the party it names:"
+#~ msgstr "بالنسبة إلى الحج، لا توجد اتفاقية منفصلة لمشاركة البيانات يُرجَع إليها. فمورِدا <a0>HajjConsent</a0> الخاصان بالحاج هما السياسة، وكلٌّ منهما يُلزم الطرف الذي يسمّيه:"
+
+#~ #, python-brace-format
+#~ msgid "the governing policy: the pilgrim's consents, each by its {code0} code and CodeSystem version (for example {code1} and {code2}, version 2.1.0);"
+#~ msgstr "السياسة الحاكمة: موافقات الحاج، كلٌّ منها برمز {code0} الخاص بها وإصدار CodeSystem (على سبيل المثال {code1} و{code2}، الإصدار 2.1.0)؛"
+
+#~ #, python-brace-format
+#~ msgid "The host-use consent ({code0}) governs the Host Country Ministry of Health's use of the IPS after it is received: for treatment during the Hajj and any follow-up care, as its consent text states."
+#~ msgstr "تحكم موافقة الاستخدام في البلد المضيف ({code0}) استخدامَ وزارة الصحة في البلد المضيف لـ IPS بعد استلامه: للعلاج خلال الحج وأي رعاية متابعة، كما ينص نص الموافقة."
+
+#~ #, python-brace-format
+#~ msgid "The origin-release consent (for example {code0}) lets the Origin Country HIE release the IPS to the recipient named in {code1} (role {code2}, information recipient), for the purpose in {code3} ({code4}), during {code5}. The Origin Country HIE enforces this consent from its own Consent Registry (as recorded by the Record Consent transaction, [ITI-108]), not from the copy carried inside the IPS. The IPS copy is signed when the IPS is issued, so it cannot show a later withdrawal."
+#~ msgstr "تتيح موافقة الإفراج في بلد المنشأ (على سبيل المثال {code0}) لـ HIE بلد المنشأ الإفراج عن IPS للمتلقي المسمّى في {code1} (الدور {code2}، متلقي المعلومات)، للغرض الوارد في {code3} ({code4})، خلال {code5}. وتُنفِّذ HIE بلد المنشأ هذه الموافقة انطلاقًا من سجل الموافقات (Consent Registry) الخاص بها (كما سجّلته معاملة Record Consent، [ITI-108])، لا من النسخة المحمولة داخل IPS. فنسخة IPS تُوقَّع عند إصدار IPS، ولذلك لا يمكنها إظهار سحبٍ لاحق."
+
+#~ msgid "This guide uses no separate data sharing agreement for the Hajj, so the consents themselves are the policy the audit event cites. The Host Country EMR, as an ATNA Secure Node or Secure Application, should also audit what it receives."
+#~ msgstr "لا يستخدم هذا الدليل اتفاقية منفصلة لمشاركة البيانات للحج، ولذلك فإن الموافقات نفسها هي السياسة التي يستشهد بها حدث التدقيق. وينبغي لـ EMR البلد المضيف، بوصفه ATNA Secure Node أو Secure Application، أن يدقق أيضًا ما يستلمه."

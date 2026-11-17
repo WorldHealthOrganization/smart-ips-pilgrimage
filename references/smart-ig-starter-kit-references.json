@@ -1,0 +1,14 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "smart-ig-starter-kit-references",
+  "type": "webpage",
+  "title": "References section of the SMART IG starter kit",
+  "author": [
+    {
+      "literal": "World Health Organization"
+    }
+  ],
+  "note": "Tutorials and reference materials for developers.",
+  "URL": "https://worldhealthorganization.github.io/smart-ig-starter-kit/references.html#2",
+  "provenance": "authored"
+}

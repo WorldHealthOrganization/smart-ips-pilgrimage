@@ -1,0 +1,53 @@
+# Arabic translation of pagecontent/sequence-diagrams
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.195Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/sequence-diagrams.md:22
+msgid "Health Assessment, Consent Counselling,  and Issuance of Smart Health Link"
+msgstr "التقييم الصحي، والإرشاد بشأن الموافقة، وإصدار رابط صحي ذكي"
+
+#: input/pagecontent/sequence-diagrams.md:5
+msgid "Initaite Secture Connection"
+msgstr "بدء اتصال آمن"
+
+#: input/pagecontent/sequence-diagrams.md:11
+msgid "Overall Sequence Diagram for Religious Pilgrimage and IPS"
+msgstr "مخطط التسلسل الإجمالي للزيارة الدينية وIPS"
+
+#: input/pagecontent/sequence-diagrams.md:17
+msgid "Routine Synchronization"
+msgstr "المزامنة الروتينية"
+
+#: input/pagecontent/sequence-diagrams.md:1
+msgid "This page includes sequence diagrams that describe interactions between actors and participants described in this Implementation Guide."
+msgstr "تتضمن هذه الصفحة مخططات تسلسل تصف التفاعلات بين الجهات الفاعلة والمشاركين الموصوفين في دليل التنفيذ هذا."
+
+#: input/pagecontent/sequence-diagrams.md:29
+msgid "Agreed IPS workflow for 'Clinical Encounter for Unplanned Care' between the Host and Origin countries"
+msgstr "سير عمل IPS المتفق عليه لـ «اللقاء السريري للرعاية غير المخطط لها» بين البلد المضيف وبلدان المنشأ"
+
+#~ msgid "Agreed IPS workflow for 'Clinical Encounter for Unplanned Care' between KSA and Origin countries"
+#~ msgstr "سير عمل IPS المتفق عليه لـ «اللقاء السريري للرعاية غير المخطط لها» بين KSA وبلدان المنشأ"

@@ -1,0 +1,162 @@
+# Arabic translation of pagecontent/concepts
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.171Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/concepts.md:28
+msgid "A machine-readable optical label that contains information about the item to which it is attached. In this context, it holds encrypted data that allows healthcare providers access to a pilgrim's IPS when scanned."
+msgstr "ملصق بصري مقروء آليًا يتضمن معلومات عن العنصر المُلحَق به. وفي هذا السياق، يحمل بيانات مشفّرة تتيح لمقدمي الرعاية الصحية الوصول إلى IPS الخاص بالزائر عند مسحه."
+
+#: input/pagecontent/concepts.md:22
+msgid "A medical professional, such as a doctor or nurse, who provides clinical care to the pilgrim. Clinicians use the pilgrim's health information, accessed via the healthcare system, to offer appropriate medical treatments."
+msgstr "مهني طبي، كالطبيب أو الممرض، يقدّم الرعاية السريرية للزائر. ويستخدم الممارسون السريريون المعلومات الصحية للزائر، التي يُوصَل إليها عبر نظام الرعاية الصحية، لتقديم العلاجات الطبية المناسبة."
+
+#: input/pagecontent/concepts.md:34
+msgid "A security feature that adds an extra layer of protection to the pilgrim's health information. The default PIN is often the pilgrim's birthdate, and it is used in conjunction with the QR code to access the IPS."
+msgstr "ميزة أمنية تضيف طبقة حماية إضافية إلى المعلومات الصحية للزائر. وغالبًا ما يكون PIN الافتراضي هو تاريخ ميلاد الزائر، ويُستخدم مع رمز QR للوصول إلى IPS."
+
+#: input/pagecontent/concepts.md:31
+msgid "A Smart Health Link is a special link that provides time-bound, password and cryptographically restricted access to a health certificate or document."
+msgstr "رابط SMART الصحي هو رابط خاص يتيح وصولًا محدودًا زمنيًا ومقيَّدًا بكلمة مرور وبالتشفير إلى شهادة صحية أو مستند صحي."
+
+#: input/pagecontent/concepts.md:43
+msgid "An IPS document together with a digital signature that can be used to verify the provenance of the IPS within a Trust Network."
+msgstr "مستند IPS مقرون بتوقيع رقمي يمكن استخدامه للتحقق من مصدر IPS ضمن شبكة الثقة."
+
+#: input/pagecontent/concepts.md:21
+msgid "Clinician"
+msgstr "الممارس السريري"
+
+#: input/pagecontent/concepts.md:36
+msgid "EMR (Electronic Medical Record)"
+msgstr "السجل الطبي الإلكتروني (EMR)"
+
+#: input/pagecontent/concepts.md:39
+msgid "HIE (Health Information Exchange)"
+msgstr "تبادل المعلومات الصحية (HIE)"
+
+#: input/pagecontent/concepts.md:12
+msgid "Host Country"
+msgstr "البلد المضيف"
+
+#: input/pagecontent/concepts.md:24
+msgid "International Patient Summary (IPS)"
+msgstr "ملخص المريض الدولي (IPS)"
+
+#: input/pagecontent/concepts.md:1
+msgid "Key concepts and abbreviations are described here. Additional terms are defined in the Glossary and List of Abbreviations in the <a0>WHO Digital Documentation of COVID-19 Certificates FHIR Implementation Guide</a0>."
+msgstr "تُوصَف هنا المفاهيم والاختصارات الرئيسية. وتَرِد مصطلحات إضافية في مسرد المصطلحات وقائمة الاختصارات في <a0>دليل تنفيذ FHIR للتوثيق الرقمي لشهادات COVID-19 الصادر عن منظمة الصحة العالمية (WHO)</a0>."
+
+#: input/pagecontent/concepts.md:4
+msgid "Key Concepts and Definitions"
+msgstr "المفاهيم والتعريفات الرئيسية"
+
+#: input/pagecontent/concepts.md:9
+msgid "Origin Country"
+msgstr "البلد الأم"
+
+#: input/pagecontent/concepts.md:6
+msgid "Pilgrim"
+msgstr "الزائر"
+
+#: input/pagecontent/concepts.md:33
+msgid "PIN (Personal Identification Number)"
+msgstr "رقم التعريف الشخصي (PIN)"
+
+#: input/pagecontent/concepts.md:27
+msgid "QR Code"
+msgstr "رمز QR"
+
+#: input/pagecontent/concepts.md:18
+msgid "Registration Nurse"
+msgstr "ممرض التسجيل"
+
+#: input/pagecontent/concepts.md:30
+msgid "Smart Health Link (SHL)"
+msgstr "رابط SMART الصحي (SHL)"
+
+#: input/pagecontent/concepts.md:10
+msgid "The country from which the pilgrim originates or holds citizenship. This is significant in the context of healthcare as health information and preparatory measures might be initiated in the origin country before the pilgrimage."
+msgstr "البلد الذي يأتي منه الزائر أو يحمل جنسيته. ولهذا أهمية في سياق الرعاية الصحية، إذ قد تبدأ المعلومات الصحية والتدابير التحضيرية في البلد الأم قبل الزيارة الدينية."
+
+#: input/pagecontent/concepts.md:42
+msgid "Verifiable International Patient Summary (Verifiable IPS)"
+msgstr "ملخص المريض الدولي القابل للتحقق (Verifiable IPS)"
+
+#: input/pagecontent/concepts.md:25
+msgid "A digital document that contains essential healthcare information about a patient, designed to support the continuity of care and patient safety. For pilgrims, the IPS includes basic demographics, medical history, medications, allergies, and other critical health information that can be shared across borders and healthcare systems."
+msgstr "مستند رقمي يتضمن المعلومات الصحية الأساسية عن المريض، صُمِّم لدعم استمرارية الرعاية وسلامة المرضى. وبالنسبة إلى الزوار، يتضمن IPS البيانات الديموغرافية الأساسية والتاريخ الطبي والأدوية والحساسيات وغيرها من المعلومات الصحية الحرجة التي يمكن مشاركتها عبر الحدود وبين أنظمة الرعاية الصحية."
+
+#: input/pagecontent/concepts.md:37
+msgid "A digital version of a patient's paper chart, used by healthcare providers for diagnosis and treatment. In the context of the pilgrimage, EMRs are used by host country medical facilities to manage pilgrim care."
+msgstr "نسخة رقمية من الملف الورقي للمريض، يستخدمها مقدمو الرعاية الصحية في التشخيص والعلاج. وفي سياق الزيارة الدينية، تستخدم المرافق الطبية في البلد المضيف سجلات EMRs لإدارة رعاية الزوار."
+
+#: input/pagecontent/concepts.md:19
+msgid "A healthcare professional responsible for the initial registration of pilgrims at pilgrimage health facilities. This includes collecting and verifying pilgrim information and initiating the health service process."
+msgstr "مهني رعاية صحية مسؤول عن التسجيل الأولي للزوار في المرافق الصحية للزيارة الدينية. ويشمل ذلك جمع معلومات الزوار والتحقق منها وبدء عملية الخدمة الصحية."
+
+#: input/pagecontent/concepts.md:16
+msgid "A medical facility set up to cater specifically to the needs of pilgrims. These facilities can range from clinics to hospitals and are equipped to handle both routine health checks and emergency services."
+msgstr "مرفق طبي أُنشئ خصيصًا لتلبية احتياجات الزوار. وتتراوح هذه المرافق بين العيادات والمستشفيات، وهي مجهّزة للتعامل مع الفحوص الصحية الروتينية وخدمات الطوارئ على حد سواء."
+
+#: input/pagecontent/concepts.md:7
+msgid "A person who undertakes the pilgrimage. In the context of the healthcare system, the pilgrim is the primary user, receiving healthcare services and interacting with various healthcare providers."
+msgstr "شخص يؤدي الزيارة الدينية. وفي سياق نظام الرعاية الصحية، يُعدّ الزائر المستخدم الرئيسي، إذ يتلقى خدمات الرعاية الصحية ويتفاعل مع مختلف مقدمي الرعاية الصحية."
+
+#: input/pagecontent/concepts.md:15
+msgid "Pilgrimage Health Facility"
+msgstr "المرفق الصحي للزيارة الدينية"
+
+#: input/pagecontent/concepts.md:13
+msgid "The country hosting the pilgrimage, which in this guide's examples is the fictional Taifafeki. The host country provides healthcare and other services to pilgrims during their stay."
+msgstr "البلد الذي يستضيف الزيارة الدينية، وهو في أمثلة هذا الدليل البلد الخيالي Taifafeki. ويقدّم البلد المضيف الرعاية الصحية وغيرها من الخدمات للزوار أثناء إقامتهم."
+
+#: input/pagecontent/concepts.md:40
+msgid "The electronic sharing of health information among different organizations. In the context of the pilgrimage, it refers to the system that allows origin countries and the host country to exchange pilgrim health information securely."
+msgstr "المشاركة الإلكترونية للمعلومات الصحية بين مختلف المؤسسات. وفي سياق الزيارة الدينية، يشير إلى النظام الذي يتيح للبلدان الأم والبلد المضيف تبادل المعلومات الصحية للزوار بصورة آمنة."
+
+#~ msgid "A digital document that contains essential healthcare information about a patient, designed to support the continuity of care and patient safety. For Hajj pilgrims, the IPS includes basic demographics, medical history, medications, allergies, and other critical health information that can be shared across borders and healthcare systems."
+#~ msgstr "مستند رقمي يتضمن المعلومات الصحية الأساسية عن المريض، صُمِّم لدعم استمرارية الرعاية وسلامة المرضى. وبالنسبة إلى الحجاج، يتضمن IPS البيانات الديموغرافية الأساسية والتاريخ الطبي والأدوية والحساسيات وغيرها من المعلومات الصحية الحرجة التي يمكن مشاركتها عبر الحدود وبين أنظمة الرعاية الصحية."
+
+#~ msgid "A digital version of a patient's paper chart, used by healthcare providers for diagnosis and treatment. In the context of the Hajj, EMRs are used by host country medical facilities to manage pilgrim care."
+#~ msgstr "نسخة رقمية من الملف الورقي للمريض، يستخدمها مقدمو الرعاية الصحية في التشخيص والعلاج. وفي سياق الحج، تستخدم المرافق الطبية في البلد المضيف سجلات EMRs لإدارة رعاية الحجاج."
+
+#~ msgid "A healthcare professional responsible for the initial registration of pilgrims at Hajj health facilities. This includes collecting and verifying pilgrim information and initiating the health service process."
+#~ msgstr "مهني رعاية صحية مسؤول عن التسجيل الأولي للحجاج في المرافق الصحية للحج. ويشمل ذلك جمع معلومات الحجاج والتحقق منها وبدء عملية الخدمة الصحية."
+
+#~ msgid "A medical facility set up to cater specifically to the needs of Hajj pilgrims. These facilities can range from clinics to hospitals and are equipped to handle both routine health checks and emergency services."
+#~ msgstr "مرفق طبي أُنشئ خصيصًا لتلبية احتياجات الحجاج. وتتراوح هذه المرافق بين العيادات والمستشفيات، وهي مجهّزة للتعامل مع الفحوص الصحية الروتينية وخدمات الطوارئ على حد سواء."
+
+#~ msgid "A person who undertakes the Hajj pilgrimage to Mecca. In the context of the healthcare system, the pilgrim is the primary user, receiving healthcare services and interacting with various healthcare providers."
+#~ msgstr "شخص يؤدي فريضة الحج إلى مكة المكرمة. وفي سياق نظام الرعاية الصحية، يُعدّ الحاج المستخدم الرئيسي، إذ يتلقى خدمات الرعاية الصحية ويتفاعل مع مختلف مقدمي الرعاية الصحية."
+
+#~ msgid "Hajj Health Facility"
+#~ msgstr "المرفق الصحي للحج"
+
+#~ msgid "The country hosting the pilgrimage, which in the case of the Hajj is the Kingdom of Saudi Arabia (KSA). The host country provides healthcare and other services to pilgrims during their stay."
+#~ msgstr "البلد الذي يستضيف الحج، وهو في حالة الحج المملكة العربية السعودية (KSA). ويقدّم البلد المضيف الرعاية الصحية وغيرها من الخدمات للحجاج أثناء إقامتهم."
+
+#~ msgid "The electronic sharing of health information among different organizations. In the context of the Hajj, it refers to the system that allows origin countries and the host country to exchange pilgrim health information securely."
+#~ msgstr "المشاركة الإلكترونية للمعلومات الصحية بين مختلف المؤسسات. وفي سياق الحج، يشير إلى النظام الذي يتيح للبلدان الأم والبلد المضيف تبادل المعلومات الصحية للحجاج بصورة آمنة."

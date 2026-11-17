@@ -1,0 +1,94 @@
+# Arabic translation of pagecontent/data-models-and-exchange
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.172Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/data-models-and-exchange.md:5
+msgid "<a0>Actors</a0> - A list and description of software or human entities that interact with the system, derived from business requirements defined in the L2."
+msgstr "<a0>الجهات الفاعلة</a0> - قائمة ووصف للكيانات البرمجية أو البشرية التي تتفاعل مع النظام، مستمدة من متطلبات العمل المحددة في L2."
+
+#: input/pagecontent/data-models-and-exchange.md:8
+msgid "<a0>Indicators and Measures</a0> - A thematic list of indicators defined in the implementation guide that link to L1 and L2 guidance documents."
+msgstr "<a0>المؤشرات والمقاييس</a0> - قائمة مواضيعية بالمؤشرات المحددة في دليل التنفيذ ترتبط بوثائق الإرشاد في L1 وL2."
+
+#: input/pagecontent/data-models-and-exchange.md:6
+msgid "<a0>Sequence Diagrams</a0> - Sequence diagrams depicting the interactions between system actors, in order, derived from business processes in the L2."
+msgstr "<a0>مخططات التسلسل</a0> - مخططات تسلسل تصوّر التفاعلات بين الجهات الفاعلة النظامية بالترتيب، مستمدة من عمليات العمل في L2."
+
+#: input/pagecontent/data-models-and-exchange.md:7
+msgid "<a0>Transactions</a0> - A defined list of system transactions at an atomic level for each actor along with narrative, capability statements, structure definition, questionnaires, document bundles and composition. It may also refer to transactions in other implementation guides."
+msgstr "<a0>المعاملات</a0> - قائمة محددة بمعاملات النظام على المستوى الذري لكل جهة فاعلة، مع السرد وبيانات القدرات وتعريفات البنية والاستبيانات وحزم المستندات والتكوين. وقد تشير أيضًا إلى معاملات في أدلة تنفيذ أخرى."
+
+#: input/pagecontent/data-models-and-exchange.md:17
+msgid "ActivityDefinitions"
+msgstr "ActivityDefinitions"
+
+#: input/pagecontent/data-models-and-exchange.md:10
+msgid "Design Documentation -DRAFT-"
+msgstr "وثائق التصميم -مسودة-"
+
+#: input/pagecontent/data-models-and-exchange.md:22
+msgid "FHIR Library"
+msgstr "FHIR Library"
+
+#: input/pagecontent/data-models-and-exchange.md:26
+msgid "Many of the ValueSets used in this IG are  from <a0>CPG on FHIR</a0> and the <a1>IPS</a1>. There are a number of generated ValueSets based on the user scenarios detailed in this IG."
+msgstr "كثير من ValueSets المستخدمة في دليل التنفيذ (IG) هذا مأخوذة من <a0>CPG on FHIR</a0> ومن <a1>IPS</a1>. وثمة عدد من ValueSets المُولَّدة استنادًا إلى سيناريوهات المستخدم المفصّلة في هذا IG."
+
+#: input/pagecontent/data-models-and-exchange.md:13
+msgid "PlanDefinitions"
+msgstr "PlanDefinitions"
+
+#: input/pagecontent/data-models-and-exchange.md:11
+msgid "The documentation below details how to use this IG to execute the decision logic and the resources required to do so including PlanDefinitions, ActivityDefinitions, ValueSets, and Libraries."
+msgstr "توضح الوثائق أدناه بالتفصيل كيفية استخدام هذا IG لتنفيذ منطق القرار والموارد اللازمة لذلك، بما فيها PlanDefinitions وActivityDefinitions وValueSets وLibraries."
+
+#: input/pagecontent/data-models-and-exchange.md:23
+msgid "The FHIR Library contains a base64 encoded CQL library which represents the decision logic as a series of boolean clauses. Each PlanDefinition and Measure will reference a Library from which each decision point can be made and specify which expression from the CQL is used to trigger a decision in PlanDefinition or where to retrieve data to create the MeasureReport in the Measure, respectively."
+msgstr "تحتوي FHIR Library على مكتبة CQL مرمَّزة بـ base64 تمثّل منطق القرار في صورة سلسلة من العبارات المنطقية (boolean). وسيشير كل PlanDefinition وMeasure إلى Library يمكن انطلاقًا منها اتخاذ كل نقطة قرار، ويحدد أي تعبير من CQL يُستخدم لإطلاق قرار في PlanDefinition أو من أين تُسترجع البيانات لإنشاء MeasureReport في Measure، على التوالي."
+
+#: input/pagecontent/data-models-and-exchange.md:3
+msgid "The pages included in this section are described below."
+msgstr "الصفحات المضمَّنة في هذا القسم موصوفة أدناه."
+
+#: input/pagecontent/data-models-and-exchange.md:28
+msgid "There is one exception to that format which is the vaccine libraries, which map the codes between a variety of different systems including SNOMED GPS and WHO ATC in order to allow implementers to search for any vaccine which might be applicable to their user. More details on this approach is provided below."
+msgstr "ثمة استثناء واحد من هذا التنسيق، وهو مكتبات اللقاحات، التي تربط الرموز بين مجموعة متنوعة من الأنظمة المختلفة، بما فيها SNOMED GPS وWHO ATC، لتمكين المنفِّذين من البحث عن أي لقاح قد ينطبق على مستخدمهم. وتُقدَّم أدناه مزيد من التفاصيل عن هذا النهج."
+
+#: input/pagecontent/data-models-and-exchange.md:15
+msgid "These PlanDefinitions can be found in the <a0>Artifact Index</a0>"
+msgstr "يمكن العثور على PlanDefinitions هذه في <a0>فهرس المصنوعات</a0>"
+
+#: input/pagecontent/data-models-and-exchange.md:1
+msgid "This section contains the data models and data exchange protocols with actors and transactions defined. It is part of the L3 machine-readable knowledge representation."
+msgstr "يحتوي هذا القسم على نماذج البيانات وبروتوكولات تبادل البيانات مع تعريف الجهات الفاعلة والمعاملات. وهو جزء من التمثيل المعرفي القابل للقراءة آليًا في L3."
+
+#: input/pagecontent/data-models-and-exchange.md:18
+msgid "To represent the activities that need to be carried out, this implementation guide follows the workflow patterns established by the base FHIR specification. Each antigen represented as a PlanDefinition will be processed to produce ActivityDefinitions conform to the FHIR Clinical Practice Guidelines Implementation guide <a0>CPG-ActivityProfiles</a0>."
+msgstr "لتمثيل الأنشطة التي يلزم تنفيذها، يتبع دليل التنفيذ هذا أنماط سير العمل التي وضعتها مواصفة FHIR الأساسية. وستُعالَج كل مستضد ممثَّل في صورة PlanDefinition لإنتاج ActivityDefinitions تمتثل لدليل تنفيذ الإرشادات السريرية FHIR Clinical Practice Guidelines <a0>CPG-ActivityProfiles</a0>."
+
+#: input/pagecontent/data-models-and-exchange.md:25
+msgid "ValueSets"
+msgstr "ValueSets"

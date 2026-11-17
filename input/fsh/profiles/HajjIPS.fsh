@@ -1,7 +1,7 @@
 Profile: HajjIPS
 Parent: BundleUvIps
-Title: "Bundle - IPS for Hajj"
-Description: "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide for the Hajj Pilgrimage."
+Title: "Bundle - IPS for Pilgrimage"
+Description: "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide for Pilgrimage."
 /* entry MS
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
@@ -21,8 +21,8 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[consent].resource only HajjConsent
 Profile: HajjIPSComposition
 Parent: CompositionUvIps
-Title: "Composition (IPS) for Hajj"
-Description: "Clinical document used to represent the International Patient Summary (IPS) data set for Hajj Pilgrimage" 
+Title: "Composition (IPS) for Pilgrimage"
+Description: "Clinical document used to represent the International Patient Summary (IPS) data set for Pilgrimage" 
 * section[sectionAdvanceDirectives] 1..1
 //* section[sectionAdvanceDirectives] obeys hajj-consents
 
@@ -31,12 +31,13 @@ Description: "Clinical document used to represent the International Patient Summ
 // Invariant: hajj-consents
 // Description: "Check that there are at least two HajjConsent resources, one of which is is for KSA and the other not KSA (but represents the origin country of the pilgrim)"
 // Severity: #warning
+// The pilgrimage consent code is carried in Consent.policyRule (not in provision.purpose, which holds the purpose of use, TREAT).
 // Expression: "
-// entry.select(resource as Consent).provision.purpose.exists(
-//    code.memberOf('http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT') and code.value = 'CONSENT-KSA'
+// entry.select(resource as Consent).policyRule.coding.exists(
+//    system = 'http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT' and code = 'CONSENT-KSA'
 //  )
 // and
-// entry.select(resource as Consent).provision.purpose.exists(
-//    code.memberOf('http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT') and code.value != 'CONSENT-KSA'
+// entry.select(resource as Consent).policyRule.coding.exists(
+//    system = 'http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT' and code != 'CONSENT-KSA'
 //  )
 // "

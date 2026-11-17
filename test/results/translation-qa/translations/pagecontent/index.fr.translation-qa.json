@@ -1,0 +1,111 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:fr/pagecontent/index",
+  "locale": "fr",
+  "paths": {
+    "pot": "translations/fr/pagecontent/index.pot"
+  },
+  "po": "translations/fr/pagecontent/index.po",
+  "source_hashes": {
+    "pot": "d054a71f060a",
+    "po": "4c7d4067bf4e"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "d054a71f060a",
+          "po": "4c7d4067bf4e"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "translated": 61,
+          "total": 61,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "d054a71f060a",
+          "po": "4c7d4067bf4e"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "severity": "minor",
+        "evidence": [
+          {
+            "text": "EMR — absent from: \"Et les systèmes : le portefeuille de santé national de Kamal (<a0>Portefeuille d\""
+          },
+          {
+            "text": "WHO — absent from: \"Et les systèmes : le portefeuille de santé national de Kamal (<a0>Portefeuille d\""
+          },
+          {
+            "text": "IP — absent from: \"Déclarations de propriété intellectuelle\""
+          },
+          {
+            "text": "WHO — absent from: \"Ce guide s'inscrit dans l'approche des lignes directrices SMART de l'OMS visant \""
+          },
+          {
+            "text": "WHO — absent from: \"Ce guide d'implémentation comprend une représentation lisible par machine des li\""
+          },
+          {
+            "text": "WHO — absent from: \"Ce guide d'implémentation vise à soutenir l'utilisation de documents vérifiables\""
+          }
+        ],
+        "metrics": {
+          "checked": 61,
+          "missing": 6,
+          "missing_strict": 0,
+          "missing_acronyms": 6,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        },
+        "notes": "6 acronym(s) from the source do not appear verbatim in the translation and no glossary entry speaks for them. That is right for one the target language localises — WHO is OMS in French — and wrong for one silently dropped, and this check cannot tell the two apart. Add them to translations/fr/glossary.po: a pinned msgstr says what the term must become, and a \"#, localised\" flag says it is rendered in the target language without pinning how."
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "d054a71f060a",
+          "po": "4c7d4067bf4e"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "severity": "minor",
+        "metrics": {
+          "echoed": 8,
+          "translated": 61
+        },
+        "notes": "8 string(s) are byte-identical to the source. That is right for a proper noun and wrong for a sentence, which is why this warns rather than fails."
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "hl7-ips",
+  "type": "webpage",
+  "title": "International Patient Summary",
+  "author": [
+    {
+      "literal": "HL7 International"
+    }
+  ],
+  "URL": "https://build.fhir.org/ig/HL7/fhir-ips/",
+  "provenance": "authored"
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:fr/pagecontent/reference-implementations-malaysia",
+  "locale": "fr",
+  "paths": {
+    "pot": "translations/fr/pagecontent/reference-implementations-malaysia.pot"
+  },
+  "po": "translations/fr/pagecontent/reference-implementations-malaysia.po",
+  "source_hashes": {
+    "pot": "309ce1fc3c6e",
+    "po": "ef620f271e56"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "309ce1fc3c6e",
+          "po": "ef620f271e56"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "translated": 59,
+          "total": 59,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "309ce1fc3c6e",
+          "po": "ef620f271e56"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "severity": "minor",
+        "evidence": [
+          {
+            "text": "WHO — absent from: \"a. Le VHL est intégré dans un certificat de santé (HCert) conformément à la spéc\""
+          },
+          {
+            "text": "EMR — absent from: \"Pays récepteur : Royaume d’Arabie saoudite Application réceptrice : Care Ware (D\""
+          },
+          {
+            "text": "EMR — absent from: \"L’examen de santé du Hajj est un bilan médical complet réalisé pour les pèlerins\""
+          }
+        ],
+        "metrics": {
+          "checked": 59,
+          "missing": 3,
+          "missing_strict": 0,
+          "missing_acronyms": 3,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        },
+        "notes": "3 acronym(s) from the source do not appear verbatim in the translation and no glossary entry speaks for them. That is right for one the target language localises — WHO is OMS in French — and wrong for one silently dropped, and this check cannot tell the two apart. Add them to translations/fr/glossary.po: a pinned msgstr says what the term must become, and a \"#, localised\" flag says it is rendered in the target language without pinning how."
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "309ce1fc3c6e",
+          "po": "ef620f271e56"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "echoed": 0,
+          "translated": 59
+        }
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

@@ -1,0 +1,65 @@
+# Arabic translation of user scenario the-pilgrims-hajj
+#
+# UNOFFICIAL — drafted by an agent from the template beside it. No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# requirement ids, placeholders, numbers and URLs are kept as written;
+# persona names are fictional and kept as written. Modern Standard Arabic,
+# right-to-left. msgctxt is the scenario field path.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: the-pilgrims-hajj\n"
+"POT-Creation-Date: 2026-11-12T11:57:11.968Z\n"
+"PO-Revision-Date: 2026-11-07\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: user-scenarios/the-pilgrims-hajj.json:20
+msgctxt "country"
+msgid "Cross-Border"
+msgstr "عابر للحدود"
+
+#: user-scenarios/the-pilgrims-hajj.json:5
+msgctxt "description"
+msgid "This guide's user scenarios told as one pilgrim's story, moment by moment along the overview of key process flows (steps 1–5 and A–B): Kamal, 61, from Tanavu, goes on pilgrimage for the first time. Each moment (P0 to P7) is a sub-journey: who takes part, what happens, what in this guide specifies it, what it does not yet specify, and the policy question it raises. Kamal comes from Onesa and goes on pilgrimage in Taifafeki, two fictional countries; the steps follow the guide's real reference implementation as a policy precedent. Every person is fictional. Told on the guide's home page, input/pagecontent/index.md."
+msgstr "سيناريوهات المستخدم في هذا الدليل مرويّةً بوصفها قصة زائر ديني واحد، لحظةً بلحظة على امتداد النظرة العامة على تدفقات العمليات الرئيسية (الخطوات 1–5 وA–B): Kamal، البالغ 61 عامًا، من Tanavu، يؤدي الزيارة الدينية للمرة الأولى. وكل لحظة (من P0 إلى P7) هي رحلة فرعية: مَن يشارك فيها، وما الذي يحدث، وما الذي يحدده منها هذا الدليل، وما الذي لا يحدده بعد، وسؤال السياسات الذي تطرحه. يأتي Kamal من Onesa ويؤدي الزيارة الدينية في Taifafeki، وهما بلدان خياليان؛ وتتبع الخطوات التنفيذ المرجعي الحقيقي للدليل بوصفه سابقة على صعيد السياسات. جميع الأشخاص خياليون. مرويّة في الصفحة الرئيسية للدليل، input/pagecontent/index.md."
+
+#: user-scenarios/the-pilgrims-hajj.json:28
+msgctxt "references.label"
+msgid "Overview of key process flows"
+msgstr "نظرة عامة على مسارات العمليات الرئيسية"
+
+#: user-scenarios/the-pilgrims-hajj.json:36
+msgctxt "references.label"
+msgid "Reference implementation"
+msgstr "التنفيذ المرجعي"
+
+#: user-scenarios/the-pilgrims-hajj.json:24
+msgctxt "references.label"
+msgid "The pilgrim's journey (guide page)"
+msgstr "رحلة الزائر (صفحة الدليل)"
+
+#: user-scenarios/the-pilgrims-hajj.json:32
+msgctxt "references.label"
+msgid "User scenarios"
+msgstr "سيناريوهات المستخدم"
+
+#: user-scenarios/the-pilgrims-hajj.json:4
+msgctxt "title"
+msgid "The pilgrim's journey"
+msgstr "رحلة الزائر الديني"
+
+#: user-scenarios/the-pilgrims-hajj.json:18
+msgctxt "when"
+msgid "One pilgrimage season"
+msgstr "موسم زيارة دينية واحد"
+
+#: user-scenarios/the-pilgrims-hajj.json:19
+msgctxt "where"
+msgid "Onesa and Taifafeki"
+msgstr "Onesa وTaifafeki"

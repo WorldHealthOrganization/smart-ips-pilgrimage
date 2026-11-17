@@ -1,0 +1,67 @@
+{
+  "$schema": "device-screen/0.1.0",
+  "id": "P7",
+  "title": "Back home: no record of the care abroad",
+  "description": "The question mark: Dr Aisyah's computer has nothing of Kamal's care in Taifafeki.",
+  "device": "desktop",
+  "owner": "dr-aisyah",
+  "steps": [
+    {
+      "scenario": "p7-back-home",
+      "step": "P7"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "app": "Clinic record — Tanavu",
+      "subtitle": "Dr Aisyah • follow-up",
+      "icon": "clinic",
+      "brand": "#0d9488"
+    },
+    {
+      "type": "personCard",
+      "actor": "kamal",
+      "banner": true,
+      "subtitle": "Home from the pilgrimage, well",
+      "chips": [
+        {
+          "text": "Back from the pilgrimage",
+          "tone": "info",
+          "icon": "plane"
+        }
+      ]
+    },
+    {
+      "type": "recordList",
+      "title": "Care abroad",
+      "icon": "globe",
+      "rows": [
+        {
+          "icon": "question",
+          "label": "Treated in Nalemi?",
+          "detail": "Nothing in this record: not the visit, the treatment, nor who opened his summary",
+          "status": {
+            "text": "Missing",
+            "tone": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "type": "alert",
+      "column": "side",
+      "severity": "warning",
+      "icon": "question",
+      "title": "No return path",
+      "text": "The guide does not yet say how the record of care abroad comes home. Kamal and Salmah tell it as best they remember."
+    },
+    {
+      "type": "note",
+      "column": "side",
+      "icon": "transfer",
+      "text": "Gap: the visit note and the access log stay in Taifafeki."
+    }
+  ],
+  "try": "Ask the room what should come home, and to whom"
+}

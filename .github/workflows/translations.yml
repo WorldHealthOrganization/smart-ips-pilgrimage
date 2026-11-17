@@ -1,0 +1,56 @@
+name: Translations
+
+# The .pot templates in translations/ are what the five UN-language
+# translators work from. A template that no longer matches its English source
+# (input/pagecontent/*.md, input/business-processes/*.bpmn) FAILS: run
+# `bun input/scripts/translation-pot.ts`. A translation left behind by an
+# English change only WARNS, per catalogue: refresh with
+# `bun input/scripts/po-status.ts --merge`, then translate the new strings.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  templates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: 1.4.4  # the platform's CI version (cat-harness/.bun-version)
+      - name: Mount the layers index.lock.json pins
+        # The same lock replay as site-publish.yml (check:workflow-submodules).
+        run: |
+          ref=$(python3 -c "import json;print(next(m['ref'] for m in json.load(open('index.lock.json'))['mounts'] if m['harness']=='cat-harness-tools'))")
+          M="$RUNNER_TEMP/mounter"
+          git init -q "$M"
+          git -C "$M" fetch -q --depth 1 https://github.com/litlfred/cat-harness-tools.git "$ref"
+          git -C "$M" checkout -q FETCH_HEAD
+          bun run "$M/scripts/mount-from-lock.ts" --root .
+          bun install --frozen-lockfile
+      - name: The templates are current with their English sources
+        run: bun input/scripts/translation-pot.ts --check
+      - name: The navbar templates are current with sushi-config.yaml's menu
+        run: bun input/scripts/navbar-pot.ts --check
+      - name: The home page's cards and story, in each language, are current with the scenarios and their catalogues
+        run: bun input/scripts/journey-cards.ts --check
+      - name: The overview figure, in each language, is current with its drawing and catalogues
+        run: bun input/scripts/workflow-figure.ts --check
+      - name: The user-scenario templates are current with the scenarios
+        run: bun cat-harness-tools/scripts/run-script.ts translate-user-scenarios:check --instance .
+      - name: No translation is marked official
+        run: bun cat-harness-tools/scripts/run-script.ts check:translation-officiality
+      - name: A glossary term used in its sense uses its fixed translation (translation:glossary:check)
+        # The layer gates run this only on the full tier, so a fast-tier PR
+        # could merge a catalogue that drops a fixed term (es/zh «IG», «QR»,
+        # 2026-11-13). An exception needs a verdict in
+        # translations/glossary-sense.json; uses pending adjudication fail nothing.
+        run: bun cat-harness-tools/scripts/run-script.ts translation:glossary:check --instance . --all-locales
+      - name: How far each translation is behind its template (warns, never fails)
+        run: bun input/scripts/po-status.ts --github

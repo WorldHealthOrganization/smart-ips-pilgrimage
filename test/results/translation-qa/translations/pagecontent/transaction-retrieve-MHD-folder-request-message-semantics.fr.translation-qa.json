@@ -1,0 +1,105 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:fr/pagecontent/transaction-retrieve-MHD-folder-request-message-semantics",
+  "locale": "fr",
+  "paths": {
+    "pot": "translations/fr/pagecontent/transaction-retrieve-MHD-folder-request-message-semantics.pot"
+  },
+  "po": "translations/fr/pagecontent/transaction-retrieve-MHD-folder-request-message-semantics.po",
+  "source_hashes": {
+    "pot": "e14c4ae2fff7",
+    "po": "82738b169e5d"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "e14c4ae2fff7",
+          "po": "82738b169e5d"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "translated": 13,
+          "total": 13,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "e14c4ae2fff7",
+          "po": "82738b169e5d"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "severity": "minor",
+        "evidence": [
+          {
+            "text": "EMR — absent from: \"Authentification du DME du pays d'accueil\""
+          },
+          {
+            "text": "EMR — absent from: \"Il est recommandé que le DME du pays d'accueil s'authentifie avec l'option OAuth\""
+          },
+          {
+            "text": "EMR — absent from: \"Ce guide montre actuellement le DME du pays d'accueil s'authentifiant auprès de \""
+          },
+          {
+            "text": "EMR — absent from: \"Le VHL [ITI-YY5] nomme trois options par lesquelles le VHL Receiver (ici, le DME\""
+          }
+        ],
+        "metrics": {
+          "checked": 13,
+          "missing": 4,
+          "missing_strict": 0,
+          "missing_acronyms": 4,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        },
+        "notes": "4 acronym(s) from the source do not appear verbatim in the translation and no glossary entry speaks for them. That is right for one the target language localises — WHO is OMS in French — and wrong for one silently dropped, and this check cannot tell the two apart. Add them to translations/fr/glossary.po: a pinned msgstr says what the term must become, and a \"#, localised\" flag says it is rendered in the target language without pinning how."
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "e14c4ae2fff7",
+          "po": "82738b169e5d"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "severity": "minor",
+        "metrics": {
+          "echoed": 1,
+          "translated": 13
+        },
+        "notes": "1 string(s) are byte-identical to the source. That is right for a proper noun and wrong for a sentence, which is why this warns rather than fails."
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

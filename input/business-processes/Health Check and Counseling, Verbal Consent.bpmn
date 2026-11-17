@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="67a40fb" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.5.0" camunda:diagramRelationId="bd9a9cd4-1c73-4d9c-9de0-ad1c209baa3d">
+<bpmn:definitions xmlns:bootstrap.processes="https://litlfred.github.io/bootstrap/v0/processes/ns/" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="67a40fb" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.5.0" camunda:diagramRelationId="bd9a9cd4-1c73-4d9c-9de0-ad1c209baa3d">
+  <bpmn:resource id="counsellor" name="Counsellor" />
+  <bpmn:resource id="origin-hie" name="Origin country HIE" />
+  <bpmn:resource id="origin-wallet" name="Origin country wallet" />
+  <bpmn:resource id="pilgrim" name="Pilgrim" />
   <bpmn:collaboration id="pcf-send-request-response" name="Health Check and Issue SHL">
     <bpmn:documentation>Documents the health check and SHL consent and issuance process</bpmn:documentation>
     <bpmn:extensionElements>
@@ -57,7 +61,7 @@
         <bpmn:flowNodeRef>Activity_1jgswii</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0c1yqup</bpmn:flowNodeRef>
         <bpmn:childLaneSet id="LaneSet_162f0rm">
-          <bpmn:lane id="Lane_1c4knx0" name="Origin Country  HIE">
+          <bpmn:lane id="Lane_1c4knx0" partitionElementRef="origin-hie" name="Origin Country  HIE">
             <bpmn:documentation>The pilgrim's origin country's HIE or national system</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
@@ -70,7 +74,7 @@
             <bpmn:flowNodeRef>Activity_1smj4fu</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_00mp7in</bpmn:flowNodeRef>
           </bpmn:lane>
-          <bpmn:lane id="Lane_0bs69mf" name="Origin Country  Wallet">
+          <bpmn:lane id="Lane_0bs69mf" partitionElementRef="origin-wallet" name="Origin Country  Wallet">
             <bpmn:documentation>The pilgrim's origin country's digital health wallet</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
@@ -106,8 +110,8 @@
         <bpmn:flowNodeRef>Activity_1g6mqgg</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0owttys</bpmn:flowNodeRef>
         <bpmn:childLaneSet id="LaneSet_1updfdp">
-          <bpmn:lane id="Lane_06ajvfm" name="Pilgrim">
-            <bpmn:documentation>The Hajj pilgrim</bpmn:documentation>
+          <bpmn:lane id="Lane_06ajvfm" partitionElementRef="pilgrim" name="Pilgrim">
+            <bpmn:documentation>The pilgrim</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
                 <zeebe:property name="ig-actor-type" value="person" />
@@ -124,8 +128,8 @@
             <bpmn:flowNodeRef>Activity_1g6mqgg</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_0owttys</bpmn:flowNodeRef>
           </bpmn:lane>
-          <bpmn:lane id="Lane_00bxgz7" name="Counselor">
-            <bpmn:documentation>Counselor from origin country supporting Hajj pilgrim during inital health screening</bpmn:documentation>
+          <bpmn:lane id="Lane_00bxgz7" partitionElementRef="counsellor" name="Counselor">
+            <bpmn:documentation>Counselor from origin country supporting pilgrim during inital health screening</bpmn:documentation>
             <bpmn:extensionElements>
               <zeebe:properties>
                 <zeebe:property name="ig-actor-type" value="person" />
@@ -143,12 +147,12 @@
         </bpmn:childLaneSet>
       </bpmn:lane>
     </bpmn:laneSet>
-    <bpmn:task id="Activity_09e0qyv" name="registration">
+    <bpmn:task id="Activity_09e0qyv" name="registration"><bpmn:extensionElements><bootstrap.processes:skill ref="complete-sdc-questionnaire" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_1w89xzr</bpmn:incoming>
       <bpmn:outgoing>Flow_1gk2ycb</bpmn:outgoing>
     </bpmn:task>
     <bpmn:businessRuleTask id="Activity_0x1vd9v" name="Conduct health assessment">
-      <bpmn:extensionElements>
+      <bpmn:extensionElements><bootstrap.processes:skill ref="review-decision-support-guidance" />
         <zeebe:calledDecision decisionId="conduct-health-assessment-0qi90kd" resultVariable="eligible-for-hajj" />
         <zeebe:ioMapping>
           <zeebe:output source="=e" target="OutputVariable_3g54vj1" />
@@ -172,7 +176,7 @@
       <bpmn:outgoing>Flow_1xml6e9</bpmn:outgoing>
       <bpmn:outgoing>Flow_0hbodqn</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:task id="Activity_1ha3tyo" name="inform patient ineligibel for Hajj">
+    <bpmn:task id="Activity_1ha3tyo" name="inform patient ineligible for pilgrimage"><bpmn:extensionElements><bootstrap.processes:skill ref="inform-client" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_0hbodqn</bpmn:incoming>
       <bpmn:outgoing>Flow_19iz91t</bpmn:outgoing>
     </bpmn:task>
@@ -188,7 +192,7 @@
       <bpmn:outgoing>Flow_1q86xz6</bpmn:outgoing>
       <bpmn:outgoing>Flow_0tnonvt</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:task id="Activity_0m8ec66" name="Counsel patient on consent and digital health walllet">
+    <bpmn:task id="Activity_0m8ec66" name="Counsel patient on consent and digital health wallet"><bpmn:extensionElements><bootstrap.processes:skill ref="inform-client" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_1xml6e9</bpmn:incoming>
       <bpmn:outgoing>Flow_0aj6blr</bpmn:outgoing>
     </bpmn:task>
@@ -198,7 +202,7 @@
       <bpmn:incoming>Flow_0tnonvt</bpmn:incoming>
       <bpmn:outgoing>Flow_12h3eis</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:task id="Activity_0yni0c5" name="Review SHL">
+    <bpmn:task id="Activity_0yni0c5" name="Review SHL"><bpmn:extensionElements><bootstrap.processes:skill ref="holder-consent-to-share" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_0nsuc9d</bpmn:incoming>
       <bpmn:outgoing>Flow_0p2jzif</bpmn:outgoing>
     </bpmn:task>
@@ -212,7 +216,7 @@
       <bpmn:outgoing>Flow_0nsuc9d</bpmn:outgoing>
     </bpmn:receiveTask>
     <bpmn:sendTask id="Activity_0f7z820" name="generate Verifiable SHL">
-      <bpmn:extensionElements>
+      <bpmn:extensionElements><bootstrap.processes:skill ref="vhl-share" />
         <zeebe:taskDefinition type="send-shl" />
         <zeebe:properties>
           <zeebe:property name="ig-code" value="send-shl" />
@@ -221,7 +225,7 @@
       <bpmn:incoming>Flow_17kq867</bpmn:incoming>
       <bpmn:outgoing>Flow_0hxk70t</bpmn:outgoing>
     </bpmn:sendTask>
-    <bpmn:task id="Activity_1smj4fu" name="generate SHL &#38; configure access to IPS via SHL">
+    <bpmn:task id="Activity_1smj4fu" name="generate SHL &#38; configure access to IPS via SHL"><bpmn:extensionElements><bootstrap.processes:skill ref="vhl-share" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_0ykevm9</bpmn:incoming>
       <bpmn:outgoing>Flow_17kq867</bpmn:outgoing>
     </bpmn:task>
@@ -245,7 +249,7 @@
       <bpmn:outgoing>Flow_0us54yq</bpmn:outgoing>
     </bpmn:sendTask>
     <bpmn:userTask id="Activity_1g6mqgg" name="configure SHL privacy settings on wallet">
-      <bpmn:extensionElements>
+      <bpmn:extensionElements><bootstrap.processes:skill ref="holder-consent-to-share" />
         <zeebe:properties>
           <zeebe:property name="ig-code" value="shl-configure-privacy-settings" />
         </zeebe:properties>

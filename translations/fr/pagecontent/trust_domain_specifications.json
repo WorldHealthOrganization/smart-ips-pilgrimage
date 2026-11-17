@@ -1,0 +1,22 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "French translation of input/pagecontent/trust_domain_specifications.md. Agent translation, unofficial: no human has adjudicated it. Coverage 1/1.",
+  "label": "trans:fr/pagecontent/trust_domain_specifications",
+  "locale": "fr",
+  "sourceFile": "input/pagecontent/trust_domain_specifications.md",
+  "sourceHash": "4df0ef28a80b",
+  "potFile": "translations/fr/pagecontent/trust_domain_specifications.pot",
+  "poFile": "translations/fr/pagecontent/trust_domain_specifications.po",
+  "status": {
+    "locale": "fr",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T11:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage fr session)"
+  },
+  "coverage": {
+    "translated": 1,
+    "total": 1,
+    "pct": 100
+  }
+}

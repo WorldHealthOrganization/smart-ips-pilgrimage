@@ -1,0 +1,155 @@
+# Arabic translation of user scenario p0-keys-and-codes-shared
+#
+# UNOFFICIAL — drafted by an agent from the template beside it. No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# requirement ids, placeholders, numbers and URLs are kept as written;
+# persona names are fictional and kept as written. Modern Standard Arabic,
+# right-to-left. msgctxt is the scenario field path.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: p0-keys-and-codes-shared\n"
+"POT-Creation-Date: 2026-11-12T11:57:11.961Z\n"
+"PO-Revision-Date: 2026-11-07\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:5
+msgctxt "country"
+msgid "Onesa"
+msgstr "Onesa"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:5
+msgctxt "description"
+msgid "Onesa's HIE publishes the public keys it signs health documents with to the WHO GDHCN trust network, and shares the national code systems its IPS uses with the WHO Terminology Service. Nothing about Kamal yet: this is what lets a Taifafeki clinic trust and read an Onesan record months later. Step A of the overview of key process flows."
+msgstr "تنشر منصة HIE في Onesa المفاتيح العمومية التي توقّع بها المستندات الصحية في شبكة الثقة GDHCN التابعة لمنظمة الصحة العالمية (WHO)، وتشارك نظم الترميز الوطنية التي يستخدمها IPS الخاص بها مع خدمة المصطلحات التابعة لمنظمة الصحة العالمية (WHO). لا شيء عن Kamal بعد: هذا ما يتيح لعيادة في Taifafeki أن تثق بسجل صادر من Onesa وتقرأه بعد أشهر. الخطوة A من النظرة العامة على تدفقات العمليات الرئيسية."
+
+#: user-scenarios/p0-keys-and-codes-shared.json:29
+msgctxt "scene.label"
+msgid "Onesa's signing keys"
+msgstr "مفاتيح التوقيع الخاصة بـ Onesa"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:91
+msgctxt "scene.label"
+msgid "Trusted abroad"
+msgstr "موضع ثقة في الخارج"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:87
+msgctxt "scene.label"
+msgid "WHO GDHCN trust list"
+msgstr "قائمة الثقة GDHCN التابعة لمنظمة الصحة العالمية (WHO)"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:45
+msgctxt "step.enabler"
+msgid "Both countries take part in one trust network, so each trusts the other's keys without a bilateral agreement."
+msgstr "يشارك البلدان كلاهما في شبكة ثقة واحدة، فيثق كلٌّ منهما بمفاتيح الآخر دون اتفاق ثنائي."
+
+#: user-scenarios/p0-keys-and-codes-shared.json:41
+msgctxt "step.experiences.doing"
+msgid "Lists Onesa's keys alongside those of every other participant, including Taifafeki."
+msgstr "يُدرج مفاتيح Onesa إلى جانب مفاتيح كل مشارك آخر، بما في ذلك Taifafeki."
+
+#: user-scenarios/p0-keys-and-codes-shared.json:37
+msgctxt "step.experiences.doing"
+msgid "Publishes the public keys it signs health documents with to GDHCN, and shares its national code systems with the WHO Terminology Service."
+msgstr "ينشر المفاتيح العمومية التي يوقّع بها المستندات الصحية في GDHCN، ويشارك نظم الترميز الوطنية الخاصة به مع خدمة المصطلحات التابعة لمنظمة الصحة العالمية (WHO)."
+
+#: user-scenarios/p0-keys-and-codes-shared.json:54
+msgctxt "step.gaps"
+msgid "No business process or transaction for publishing keys or terminologies."
+msgstr "لا توجد عملية عمل أو معاملة لنشر المفاتيح أو المصطلحات."
+
+#: user-scenarios/p0-keys-and-codes-shared.json:5
+msgctxt "step.handoff.carrier"
+msgid "GDHCN trust network"
+msgstr "شبكة الثقة GDHCN"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:50
+msgctxt "step.handoff.payload"
+msgid "Public signing keys (DSCs); national code systems"
+msgstr "مفاتيح التوقيع العمومية (DSCs)؛ نظم الترميز الوطنية"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:48
+msgctxt "step.handoff.summary"
+msgid "Onesa's keys and code systems are known to the trust network"
+msgstr "مفاتيح Onesa ونظم الترميز الخاصة بها معروفة لدى شبكة الثقة"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:29
+msgctxt "step.headline"
+msgid "Before anyone travels, Onesa's signing keys and code systems reach the trust network, so a Taifafeki clinic can trust and read an Onesan record months later."
+msgstr "قبل أن يسافر أحد، تصل مفاتيح التوقيع وأنظمة الرموز الخاصة بـ Onesa إلى شبكة الثقة، كي تتمكن عيادة في Taifafeki من الوثوق بسجل صادر من Onesa وقراءته بعد أشهر."
+
+#: user-scenarios/p0-keys-and-codes-shared.json:70
+msgctxt "step.illustration.alt"
+msgid "Two cards far apart, the flag of Onesa (home country) and the flag of Taifafeki (host country), each with a health cross; a golden key travels from Onesa to a blue globe of linked dots between them, and code books to the Taifafeki side."
+msgstr "بطاقتان متباعدتان، عَلَم Onesa (البلد الأم) وعَلَم Taifafeki (البلد المضيف)، تحمل كلٌّ منهما صليبًا صحيًا؛ ينتقل مفتاح ذهبي من Onesa إلى كرة أرضية زرقاء من النقاط المترابطة بينهما، وتنتقل كتب الرموز إلى جانب Taifafeki."
+
+#: user-scenarios/p0-keys-and-codes-shared.json:5
+msgctxt "step.narrative"
+msgid "Onesa's HIE publishes the public keys it signs health documents with to the WHO GDHCN trust network, and shares the national code systems its IPS uses with the WHO Terminology Service. Nothing about Kamal yet: this is what lets a Taifafeki clinic trust and read an Onesan record months later. Step A of the overview of key process flows."
+msgstr "تنشر منصة HIE في Onesa المفاتيح العمومية التي توقّع بها المستندات الصحية في شبكة الثقة GDHCN التابعة لمنظمة الصحة العالمية (WHO)، وتشارك نظم الترميز الوطنية التي يستخدمها IPS الخاص بها مع خدمة المصطلحات التابعة لمنظمة الصحة العالمية (WHO). لا شيء عن Kamal بعد: هذا ما يتيح لعيادة في Taifafeki أن تثق بسجل صادر من Onesa وتقرأه بعد أشهر. الخطوة A من النظرة العامة على تدفقات العمليات الرئيسية."
+
+#: user-scenarios/p0-keys-and-codes-shared.json:44
+msgctxt "step.painPoint"
+msgid "Without published keys, a Taifafeki clinic has no way to tell a genuine Onesan record from a forged one."
+msgstr "من دون مفاتيح منشورة، لا تملك عيادة في Taifafeki أي وسيلة للتمييز بين سجل حقيقي صادر من Onesa وآخر مزوَّر."
+
+#: user-scenarios/p0-keys-and-codes-shared.json:46
+msgctxt "step.policy"
+msgid "Which Onesan institution signs health documents on behalf of the health sector, and who in Taifafeki decides to accept that signature?"
+msgstr "ما المؤسسة في Onesa التي توقّع المستندات الصحية نيابةً عن القطاع الصحي، ومَن في Taifafeki يقرّر قبول هذا التوقيع؟"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:75
+msgctxt "step.record.description"
+msgid "Kamal's record stays in Onesa's HIE; only keys and code systems are shared"
+msgstr "يبقى سجل Kamal في منصة HIE في Onesa؛ ولا يُشارَك إلا المفاتيح ونظم الترميز"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:5
+msgctxt "step.record.heldWhere"
+msgid "Onesa's HIE"
+msgstr "منصة HIE في Onesa"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:58
+msgctxt "step.references.label"
+msgid "SMART Trust framework (by reference)"
+msgstr "إطار SMART Trust (بالإحالة)"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:63
+msgctxt "step.references.label"
+msgid "User scenarios: the first two sections"
+msgstr "سيناريوهات المستخدم: القسمان الأولان"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:28
+msgctxt "step.title"
+msgid "Keys and codes are shared"
+msgstr "تبادل المفاتيح والرموز"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:11
+msgctxt "step.when"
+msgid "Before the pilgrimage season"
+msgstr "قبل موسم الزيارة الدينية"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:12
+msgctxt "step.where"
+msgid "Lomaru and WHO GDHCN"
+msgstr "Lomaru وGDHCN التابعة لمنظمة الصحة العالمية (WHO)"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:4
+msgctxt "title"
+msgid "P0 · Before the season — keys and codes are shared"
+msgstr "P0 · قبل الموسم — تبادل المفاتيح والرموز"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:11
+msgctxt "when"
+msgid "Before the pilgrimage season"
+msgstr "قبل موسم الزيارة الدينية"
+
+#: user-scenarios/p0-keys-and-codes-shared.json:12
+msgctxt "where"
+msgid "Lomaru and WHO GDHCN"
+msgstr "Lomaru وGDHCN التابعة لمنظمة الصحة العالمية (WHO)"

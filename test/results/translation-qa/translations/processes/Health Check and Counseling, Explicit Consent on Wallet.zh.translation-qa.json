@@ -1,0 +1,93 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:zh/processes/Health Check and Counseling, Explicit Consent on Wallet",
+  "locale": "zh",
+  "paths": {
+    "pot": "translations/zh/processes/Health Check and Counseling, Explicit Consent on Wallet.pot"
+  },
+  "po": "translations/zh/processes/Health Check and Counseling, Explicit Consent on Wallet.po",
+  "source_hashes": {
+    "pot": "fdca10fa2f2c",
+    "po": "2cc6705fa295"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "fdca10fa2f2c",
+          "po": "2cc6705fa295"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "fef037cae8b9e33554de0d5e6b43dffcef72bcf1",
+        "metrics": {
+          "translated": 50,
+          "total": 50,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "fdca10fa2f2c",
+          "po": "2cc6705fa295"
+        },
+        "result": "fail",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "fef037cae8b9e33554de0d5e6b43dffcef72bcf1",
+        "severity": "major",
+        "evidence": [
+          {
+            "text": "38 — absent from: \"生成 SHL 并配置通过 SHL 访问 IPS\""
+          }
+        ],
+        "metrics": {
+          "checked": 50,
+          "missing": 1,
+          "missing_strict": 1,
+          "missing_acronyms": 0,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        }
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "fdca10fa2f2c",
+          "po": "2cc6705fa295"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "fef037cae8b9e33554de0d5e6b43dffcef72bcf1",
+        "metrics": {
+          "echoed": 0,
+          "translated": 50
+        }
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

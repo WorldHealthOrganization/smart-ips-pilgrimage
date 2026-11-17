@@ -1,0 +1,185 @@
+# Arabic translation of user scenario p6-break-the-glass
+#
+# UNOFFICIAL — drafted by an agent from the template beside it. No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# requirement ids, placeholders, numbers and URLs are kept as written;
+# persona names are fictional and kept as written. Modern Standard Arabic,
+# right-to-left. msgctxt is the scenario field path.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: p6-break-the-glass\n"
+"POT-Creation-Date: 2026-11-11T09:32:07.914Z\n"
+"PO-Revision-Date: 2026-11-07\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: user-scenarios/p6-break-the-glass.json:17
+msgctxt "country"
+msgid "Taifafeki"
+msgstr "Taifafeki"
+
+#: user-scenarios/p6-break-the-glass.json:5
+msgctxt "description"
+msgid "On the day of Toreva Kamal collapses and is brought in unconscious. Salmah is not with him. Dr Hafiz of the Onesan medical team gives his pilgrimage registration number, and the facility reaches his summary through it. Described in this guide's user scenarios as a Phase 2 scenario."
+msgstr "في يوم Toreva ينهار Kamal ويُحضَر فاقدًا للوعي. ولم تكن Salmah معه. فيقدّم د. Hafiz من الفريق الطبي الخاص بـ Onesa رقم تسجيله في الزيارة الدينية، ويصل المرفق الصحي إلى ملخصه من خلاله. موصوف في سيناريوهات المستخدم في هذا الدليل بوصفه سيناريو من المرحلة 2."
+
+#: user-scenarios/p6-break-the-glass.json:128
+msgctxt "scene.label"
+msgid "Break the glass"
+msgstr "كسر الزجاج"
+
+#: user-scenarios/p6-break-the-glass.json:120
+msgctxt "scene.label"
+msgid "Collapsed at Toreva"
+msgstr "الانهيار في Toreva"
+
+#: user-scenarios/p6-break-the-glass.json:124
+msgctxt "scene.label"
+msgid "Dr Hafiz vouches"
+msgstr "تزكية د. Hafiz"
+
+#: user-scenarios/p6-break-the-glass.json:80
+msgctxt "step.enabler"
+msgid "The pilgrim can opt in to break-the-glass access on his wallet; his country's medical team can identify him."
+msgstr "يمكن للزائر أن يشترك اختياريًا في الوصول بكسر الزجاج عبر محفظته؛ ويمكن للفريق الطبي لبلده التعرّف على هويته."
+
+#: user-scenarios/p6-break-the-glass.json:55
+msgctxt "step.experiences.doing"
+msgid "Collapses on the day of Toreva and is brought in unconscious."
+msgstr "ينهار في يوم Toreva ويُحضَر فاقدًا للوعي."
+
+#: user-scenarios/p6-break-the-glass.json:60
+msgctxt "step.experiences.doing"
+msgid "Identifies Kamal and gives his pilgrimage registration number to the facility."
+msgstr "يتعرّف على Kamal ويقدّم رقم تسجيله في الزيارة الدينية إلى المرفق الصحي."
+
+#: user-scenarios/p6-break-the-glass.json:72
+msgctxt "step.experiences.doing"
+msgid "Looks up the summary by the pilgrimage registration number."
+msgstr "يبحث عن الملخص باستخدام رقم التسجيل في الزيارة الدينية."
+
+#: user-scenarios/p6-break-the-glass.json:66
+msgctxt "step.experiences.doing"
+msgid "Reaches Kamal's summary through the registration number and treats him."
+msgstr "يصل إلى ملخص Kamal من خلال رقم التسجيل ويعالجه."
+
+#: user-scenarios/p6-break-the-glass.json:76
+msgctxt "step.experiences.doing"
+msgid "Releases the summary for emergency access, if Kamal opted in."
+msgstr "يتيح الملخص للوصول في حالات الطوارئ، إذا كان Kamal قد اشترك اختياريًا."
+
+#: user-scenarios/p6-break-the-glass.json:61
+msgctxt "step.experiences.feeling"
+msgid "“He is one of ours. Here is his number.”"
+msgstr "«إنه واحد منا. هذا رقمه.»"
+
+#: user-scenarios/p6-break-the-glass.json:67
+msgctxt "step.experiences.feeling"
+msgid "“Without this I would be treating blind.”"
+msgstr "«من دون هذا سأعالجه وأنا لا أرى شيئًا.»"
+
+#: user-scenarios/p6-break-the-glass.json:91
+msgctxt "step.gaps"
+msgid "No business process, transaction or consent profile for emergency access."
+msgstr "لا توجد عملية عمل أو معاملة أو ملف تعريف للموافقة على الوصول في حالات الطوارئ."
+
+#: user-scenarios/p6-break-the-glass.json:49
+msgctxt "step.handoff.carrier"
+msgid "Pilgrimage registration number"
+msgstr "رقم التسجيل في الزيارة الدينية"
+
+#: user-scenarios/p6-break-the-glass.json:87
+msgctxt "step.handoff.payload"
+msgid "Emergency access to the IPS"
+msgstr "الوصول في حالات الطوارئ إلى IPS"
+
+#: user-scenarios/p6-break-the-glass.json:83
+msgctxt "step.handoff.summary"
+msgid "The summary is reached without the pilgrim's phone"
+msgstr "يُوصَل إلى الملخص من دون هاتف الزائر"
+
+#: user-scenarios/p6-break-the-glass.json:46
+msgctxt "step.headline"
+msgid "Kamal is brought in unconscious with no one to show his code; Dr Hafiz gives his pilgrimage registration number and the facility reaches his summary through it."
+msgstr "يُحضَر Kamal فاقدًا للوعي ولا أحد يُظهر رمزه؛ فيقدّم الدكتور Hafiz رقم تسجيله في الزيارة الدينية، ويصل المرفق إلى ملخصه من خلاله."
+
+#: user-scenarios/p6-break-the-glass.json:107
+msgctxt "step.illustration.alt"
+msgid "At dusk on the plain of Toreva, Kamal lies unconscious on a stretcher; Dr Hafiz of the Onesan medical team hands Dr Faisal a phone with his registration number, under a broken-glass emergency sign and an open padlock."
+msgstr "عند الغسق في سهل Toreva، يرقد Kamal فاقدًا للوعي على نقالة؛ ويناول د. Hafiz من الفريق الطبي الخاص بـ Onesa الدكتورَ Faisal هاتفًا عليه رقم تسجيله، تحت لافتة طوارئ عليها زجاج مكسور وقفل مفتوح."
+
+#: user-scenarios/p6-break-the-glass.json:5
+msgctxt "step.narrative"
+msgid "On the day of Toreva Kamal collapses and is brought in unconscious. Salmah is not with him. Dr Hafiz of the Onesan medical team gives his pilgrimage registration number, and the facility reaches his summary through it. Described in this guide's user scenarios as a Phase 2 scenario."
+msgstr "في يوم Toreva ينهار Kamal ويُحضَر فاقدًا للوعي. ولم تكن Salmah معه. فيقدّم د. Hafiz من الفريق الطبي الخاص بـ Onesa رقم تسجيله في الزيارة الدينية، ويصل المرفق الصحي إلى ملخصه من خلاله. موصوف في سيناريوهات المستخدم في هذا الدليل بوصفه سيناريو من المرحلة 2."
+
+#: user-scenarios/p6-break-the-glass.json:79
+msgctxt "step.painPoint"
+msgid "An unconscious pilgrim cannot show a QR code or say a passcode, and his wife is not there."
+msgstr "لا يستطيع الزائر الفاقد للوعي أن يُبرز رمز QR أو أن يقول رمز المرور، وزوجته ليست هناك."
+
+#: user-scenarios/p6-break-the-glass.json:81
+msgctxt "step.policy"
+msgid "Who may open an unconscious pilgrim's record, on what legal basis, and how is it accounted for afterwards?"
+msgstr "مَن يجوز له فتح سجل زائر فاقد للوعي، وعلى أي أساس قانوني، وكيف يُحاسَب على ذلك لاحقًا؟"
+
+#: user-scenarios/p6-break-the-glass.json:112
+msgctxt "step.record.description"
+msgid "Reached without his phone, through his pilgrimage registration"
+msgstr "يُوصَل إليه من دون هاتفه، عبر تسجيله في الزيارة الدينية"
+
+#: user-scenarios/p6-break-the-glass.json:113
+msgctxt "step.record.heldWhere"
+msgid "Onesa's HIE; the Toreva health tent"
+msgstr "HIE الخاص بـ Onesa؛ الخيمة الصحية في Toreva"
+
+#: user-scenarios/p6-break-the-glass.json:100
+msgctxt "step.references.label"
+msgid "Origin Country Wallet: opt in or out of break-the-glass access"
+msgstr "محفظة البلد الأم: الاشتراك الاختياري في الوصول بكسر الزجاج أو الانسحاب منه"
+
+#: user-scenarios/p6-break-the-glass.json:95
+msgctxt "step.references.label"
+msgid "User scenarios: Phase 2, break the glass"
+msgstr "سيناريوهات المستخدم: المرحلة 2، كسر الزجاج"
+
+#: user-scenarios/p6-break-the-glass.json:4
+msgctxt "step.title"
+msgid "When he cannot show the code"
+msgstr "حين لا يستطيع إبراز الرمز"
+
+#: user-scenarios/p6-break-the-glass.json:49
+msgctxt "step.touchpoint"
+msgid "Pilgrimage registration number; emergency access"
+msgstr "رقم التسجيل في الزيارة الدينية؛ الوصول في حالات الطوارئ"
+
+#: user-scenarios/p6-break-the-glass.json:15
+msgctxt "step.when"
+msgid "The day of Toreva"
+msgstr "يوم Toreva"
+
+#: user-scenarios/p6-break-the-glass.json:16
+msgctxt "step.where"
+msgid "A health tent at Toreva"
+msgstr "خيمة صحية في Toreva"
+
+#: user-scenarios/p6-break-the-glass.json:4
+msgctxt "title"
+msgid "P6 · When he cannot show the code (break the glass)"
+msgstr "P6 · حين لا يستطيع إبراز الرمز (كسر الزجاج)"
+
+#: user-scenarios/p6-break-the-glass.json:15
+msgctxt "when"
+msgid "The day of Toreva"
+msgstr "يوم Toreva"
+
+#: user-scenarios/p6-break-the-glass.json:16
+msgctxt "where"
+msgid "A health tent at Toreva"
+msgstr "خيمة صحية في Toreva"

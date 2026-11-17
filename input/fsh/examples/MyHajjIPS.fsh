@@ -21,7 +21,7 @@ Alias: $consent = http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSEN
 Instance: MyIPS
 InstanceOf: HajjIPS
 Title: "My IPS"
-Description: "Hajj IPS Example"
+Description: "Pilgrimage IPS Example"
 Usage: #example
 * language = #en-GB
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
@@ -68,12 +68,16 @@ Usage: #example
 * entry[=].resource = 26bee0a9-5997-4557-ab9d-c6adbb05b572
 * entry[+].fullUrl = "urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7"
 * entry[=].resource = c7781f44-6df8-4a8b-9e06-0b34263a47c7
+* entry[+].fullUrl = "urn:uuid:544766f9-7335-4b17-86f4-638272370fe9"
+* entry[=].resource = 544766f9-7335-4b17-86f4-638272370fe9
+* entry[+].fullUrl = "urn:uuid:f0cf28e2-8308-431c-9747-5d5e809e5193"
+* entry[=].resource = f0cf28e2-8308-431c-9747-5d5e809e5193
 
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ad4d
 InstanceOf: Composition
-Title : "Hajj IPS Composition"
-Description: "Hajj IPS Composition Example"
+Title : "Pilgrimage IPS Composition"
+Description: "Pilgrimage IPS Composition Example"
 Usage: #inline
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "3f69e0a5-2177-4540-baab-7a5d0877428f"
@@ -133,8 +137,9 @@ Usage: #inline
 * section[+].title = "Advance Directives"
 * section[=].code = $loinc#42348-3
 * section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent MYS for pilgrimage</div>"
-* section[=].entry = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7)
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">pilgrimage consents: CONSENT-XXK (the origin country may release the IPS) and CONSENT-XXR (the host Ministry of Health may use it for treatment)</div>"
+* section[=].entry[0] = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7)
+* section[=].entry[+] = Reference(urn:uuid:544766f9-7335-4b17-86f4-638272370fe9)
 Instance: 2b90dd2b-2dab-4c75-9bb9-a355e07401e8
 InstanceOf: Patient
 Description: "Example Patient"
@@ -384,21 +389,59 @@ Usage: #inline
 * note.text = "Healthy carrier of MRSA"
 Instance: c7781f44-6df8-4a8b-9e06-0b34263a47c7
 InstanceOf: HajjConsent
-Description: "Example HajjConsent"
+Description: "Example HajjConsent CONSENT-XXK: the origin country may release the IPS to the host Ministry of Health, for treatment, during the pilgrimage period"
 Usage: #inline
 * status = #active
 * scope = $consentscope#patient-privacy
-* provision.purpose.code = IPS.HAJJ.CONSENT#CONSENT-KSA
+* category[0] = $loinc#59284-0 "Patient Consent"
+* category[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPTIN "opt-in"
+* patient = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* dateTime = "2025-04-01T09:00:00+08:00"
+* performer = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* organization = Reference(urn:uuid:f0cf28e2-8308-431c-9747-5d5e809e5193)
+* sourceAttachment.contentType = #text/plain
+* sourceAttachment.url = "https://hie.xxk.example.org/consents/hajj-1446/consent-xxk.txt"
+* policyRule = $consent|2.1.0#CONSENT-XXK "Consent for Onesa (fictional example)"
 * provision.type = #permit
-* patient.display = "patient1"
-* dateTime = "2016-05-11"
-* organization.display = "Org1"
-* policyRule.text = "some policy"
-* provision.period.start = "1964-01-01"
-* provision.period.end = "2016-01-01"
-* category.coding.code = #acd
-* performer.display = "Org1"
-* sourceReference = Reference(DocumentReference/ex-documentreference)
+* provision.period.start = "2025-05-01"
+* provision.period.end = "2025-08-31"
+* provision.actor.role = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#IRCP "information recipient"
+* provision.actor.reference.identifier.system = "urn:ietf:rfc:3986"
+* provision.actor.reference.identifier.value = "https://moh.xxr.example.org/"
+* provision.actor.reference.display = "Ministry of Health Taifafeki (example)"
+* provision.purpose = http://terminology.hl7.org/CodeSystem/v3-ActReason#TREAT "treatment"
+Instance: 544766f9-7335-4b17-86f4-638272370fe9
+InstanceOf: HajjConsent
+Description: "Example HajjConsent CONSENT-XXR: the host Ministry of Health may use the IPS for treatment during the pilgrimage period and follow-up care"
+Usage: #inline
+* status = #active
+* scope = $consentscope#patient-privacy
+* category[0] = $loinc#59284-0 "Patient Consent"
+* category[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPTIN "opt-in"
+* patient = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* dateTime = "2025-04-01T09:05:00+08:00"
+* performer = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* organization = Reference(urn:uuid:f0cf28e2-8308-431c-9747-5d5e809e5193)
+* sourceAttachment.contentType = #text/plain
+* sourceAttachment.url = "https://hie.xxk.example.org/consents/hajj-1446/consent-xxr.txt"
+* policyRule = $consent|2.1.0#CONSENT-XXR "Consent for Taifafeki (fictional example)"
+* provision.type = #permit
+* provision.period.start = "2025-05-01"
+* provision.period.end = "2025-08-31"
+* provision.actor.role = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#IRCP "information recipient"
+* provision.actor.reference.identifier.system = "urn:ietf:rfc:3986"
+* provision.actor.reference.identifier.value = "https://moh.xxr.example.org/"
+* provision.actor.reference.display = "Ministry of Health Taifafeki (example)"
+* provision.purpose = http://terminology.hl7.org/CodeSystem/v3-ActReason#TREAT "treatment"
+Instance: f0cf28e2-8308-431c-9747-5d5e809e5193
+InstanceOf: HajjOrganization
+Description: "Example origin country HIE (fictional): custodian of the pilgrim's consents"
+Usage: #inline
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "https://hie.xxk.example.org/"
+* active = true
+* type = http://terminology.hl7.org/CodeSystem/organization-type#govt "Government"
+* name = "Ministry of Health Onesa Health Information Exchange (example)"
 Instance: ex-documentreference
 InstanceOf: DocumentReference
 Title: "DocumentReference Consent Paperwork example"

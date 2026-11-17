@@ -1,0 +1,815 @@
+{
+  "$schema": "glossary-sense/v1",
+  "verdicts": [
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "03dcf986c2a4e480c8fbdffc98c2a3e838d310f7f54eba32e630792f1af56f12",
+      "msgid": "The consent is stored in the consent registry. Please see here for Capability statements for the Consent Registry actor",
+      "verdict": "other-sense",
+      "reason": "'Consent Registry actor' is an IHE PCF system actor with capability statements, not a harness Actor.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "086f18a80d96298f58e2d6747fdfd68d66e580324af6483edc8ce3d06e9ad37e",
+      "msgid": "System Actor",
+      "verdict": "other-sense",
+      "reason": "'System Actor' is the DAK/IHE category of system actors, not a harness Actor node; unsure, leaning other-sense.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "1337ead1fd7dfa462cefed98863f0987662a722dfc3c61da9b34b25b6160c56b",
+      "msgid": "Host Country EMR (IG system actor HCEMR): role host-emr",
+      "verdict": "other-sense",
+      "reason": "'IG system actor' names the guide's own FHIR ActorDefinition category, and 'Actor' in the ArchiMate model is ArchiMate's; neither is the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "2d90629d2895fc27ba99a6695efeea8951e9042f98d2514f8cffe44586f231e6",
+      "msgid": "Human Actor",
+      "verdict": "other-sense",
+      "reason": "'Human Actor' is the DAK persona category heading (human users of the system), not a harness Actor node; unsure, leaning other-sense.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "6efdc5cd31156c4fd6b677e96ac7fbdac734d5f9900010dd35e39d69dd696ee7",
+      "msgid": "<a0>Transactions</a0> - A defined list of system transactions at an atomic level for each actor along with narrative, capability statements, structure definition, questionnaires, document bundles and composition. It may also refer to transactions in other implementation guides.",
+      "verdict": "other-sense",
+      "reason": "'for each actor' means IHE/DAK system actors exchanging transactions, not harness Actors persisted across processes.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "8ba7945477b028ebdf28a420715b5b1b7cfa7b6267adf75198a0b35306db3097",
+      "msgid": "Overview of key process flows, from this guide's <a href=\"en/smart-ips-pilgrimage/archimate/2.1.0/view/overview-of-key-process-flows/\">ArchiMate model</a>. Each picture is a role of the guide (its actor or persona), and each numbered flow is a moment of <a href=\"index.html\">the pilgrim's journey</a>.",
+      "verdict": "other-sense",
+      "reason": "'IG system actor' names the guide's own FHIR ActorDefinition category, and 'Actor' in the ArchiMate model is ArchiMate's; neither is the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "964977ff11a2bc7d95e73e3cabf6feac6830201b2a3950e27858c401494e6043",
+      "msgid": "The two pilgrim forms named in P1, and a page for the pilgrim and counsellor actors: their actor files exist but no page includes them.",
+      "verdict": "other-sense",
+      "reason": "'pilgrim and counsellor actors' and their 'actor files' are the IG's DAK persona pages (input/pagecontent/actor-pilgrim.md, actor-counselor.md), generic persona types rather than harness Actor nodes (scenarios/actors/*.json are concrete people like kamal.json); unsure, leaning other-sense.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "b14178c60918dd778186d39b51d2a1fd37fe9d407151b09d4371f6f9b181df5f",
+      "msgid": "Origin Country HIE (IG system actor OCHIE): role origin-hie",
+      "verdict": "other-sense",
+      "reason": "'IG system actor' names the guide's own FHIR ActorDefinition category, and 'Actor' in the ArchiMate model is ArchiMate's; neither is the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "f5f841c0b1c435ab00bd9f78dd6a28dd4cc7c105d55fed31d9ef8f0a4c5627eb",
+      "msgid": "Origin Country Wallet (IG system actor OCHW): role origin-wallet",
+      "verdict": "other-sense",
+      "reason": "'IG system actor' names the guide's own FHIR ActorDefinition category, and 'Actor' in the ArchiMate model is ArchiMate's; neither is the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Actor",
+      "label": "Actor",
+      "msgidSha256": "fe9a323c28f8746e6c1d3de0fb58b7a1dfb16431989b89ecaefefe7a7c624cd5",
+      "msgid": "The Record Consent Request Event transaction is initiated by a Origin Country Health Solution against the Origin Country HIE. This transaction shall follow the IHE PCF record consent (ITI-108) transaction. The Origin Country Health Wallet acts as the Consent Record actor role and the Origin Country HIE acts as the Consent Registry actor role.",
+      "verdict": "other-sense",
+      "reason": "'Consent Record actor role' / 'Consent Registry actor role' are IHE PCF actors, not harness Actors.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Content",
+      "label": "Content",
+      "msgidSha256": "0f74475140da20563db23982727c8ee5f8085a0606ee46e2a0748ceebc321375",
+      "msgid": "These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation. See the overview on <a0>validating FHIR profiles and resources</a0> for more information about validating profiles and how to use these artifacts.",
+      "verdict": "other-sense",
+      "reason": "'the content of the specification' is the ordinary sense of a document's contents, not harness Content Node Instances.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Content",
+      "label": "Content",
+      "msgidSha256": "8613d8e2d412284f622a98f1e465d8f515141414c4441fed8c89f12431554240",
+      "msgid": "Specified by: transactions <a0>retrieve VHL folder</a0> and <a1>retrieve IPS</a1>; the <a2>Host Country EMR</a2>'s duty to keep a rendered copy; test case View IPS content (<a3>Testing</a3>).",
+      "verdict": "other-sense",
+      "reason": "'View IPS content' is the clinical content of a patient summary, not harness Content Node Instances of a Knowledge Graph.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Content",
+      "label": "Content",
+      "msgidSha256": "c30e24b45ed2859a9fa09c13847d739ff36a3ef5f33e0273d44fb9b709df8224",
+      "msgid": "Test case: View IPS content",
+      "verdict": "other-sense",
+      "reason": "'View IPS content' is the IPS document's content, not the harness's Content node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Node",
+      "label": "Node",
+      "msgidSha256": "91bc6fb4b884a75a082c0fe8359b9136e8f49367deb5f9df0820b6cf2630ba22",
+      "msgid": "<a0>Audit Trail and Node Authentication (ATNA) Profile</a0>",
+      "verdict": "other-sense",
+      "reason": "In the IHE ATNA profile name, 'Node' is a networked system node being authenticated, not a harness file/IRI Node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "2a8ca6b1267958e08ddc21cd89e9647a273c54ddc12c0ca13dd951f6191ee816",
+      "msgid": "Onesa's HIE publishes the public keys it signs health documents with to the WHO GDHCN trust network, and shares the national code systems its IPS uses with the WHO Terminology Service. Nothing about Kamal yet: this is what lets a Taifafeki clinic trust and read an Onesan record months later. Step A of the overview of key process flows.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "2cb73133257e1113521e7afd3113bd40932cb001090beabae8ecb87613563099",
+      "msgid": "process privacy configuration form for SHL",
+      "verdict": "other-sense",
+      "reason": "'process' is the verb (to handle a privacy configuration form) in a BPMN task label, not a harness Process.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "385ff40c4257b2d33aea2abbf975219baa60a6a7ab15bc3789d0d19655098214",
+      "msgid": "The scenarios below, told as one pilgrim's story: <a0>The Pilgrim's Journey</a0> follows a fictional Malaysian pilgrim through every step of the key process flows, with the question each step raises.",
+      "verdict": "other-sense",
+      "reason": "'key process flows' are the IG's business process flows told as a story, not a specific harness Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "6560b5c6f6ce60d1be926ee098702fd10633baf479fda4c88bba189f3c8b70f0",
+      "msgid": "Overview of key process flows, ArchiMate view",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "8592a4bcebcfda1164aaab20c2a1cc869823ae15ca12874f1c84acc8cb397556",
+      "msgid": "Nurse Reem scans the code in the facility's EMR and enters the passcode. The EMR checks the signature with Onesa's public key, fetched from GDHCN: the record really comes from Onesa's HIE and has not been changed. Step 4 and step B of the overview of key process flows.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "85abfcac6ae6779e3a975fe40a6755a55a7950790f2d6eeab56131c700225db2",
+      "msgid": "This guide's user scenarios told as one pilgrim's story, moment by moment along the overview of key process flows (steps 1–5 and A–B): Kamal, 61, from Tanavu, goes on pilgrimage for the first time. Each moment (P0 to P7) is a sub-journey: who takes part, what happens, what in this guide specifies it, what it does not yet specify, and the policy question it raises. Kamal comes from Onesa and goes on pilgrimage in Taifafeki, two fictional countries; the steps follow the guide's real reference implementation as a policy precedent. Every person is fictional. Told on the guide's home page, input/pagecontent/index.md.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "88672bb9656346eff22755b01ca85d651e74bab8b2d948afb1c8dd4e51f7e9e7",
+      "msgid": "This page provides an overview of illustrative functional requirements that may be considered to kick-start the process of designing or adapting the information systems.",
+      "verdict": "other-sense",
+      "reason": "'kick-start the process of designing' is the ordinary sense of an undertaking, not a harness Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "8ba7945477b028ebdf28a420715b5b1b7cfa7b6267adf75198a0b35306db3097",
+      "msgid": "Overview of key process flows, from this guide's <a href=\"en/smart-ips-pilgrimage/archimate/2.1.0/view/overview-of-key-process-flows/\">ArchiMate model</a>. Each picture is a role of the guide (its actor or persona), and each numbered flow is a moment of <a href=\"index.html\">the pilgrim's journey</a>.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "8e91a5c9776356f0753001d3cdd9a97b88d554fe0a382527b83584413188809e",
+      "msgid": "process consent form",
+      "verdict": "other-sense",
+      "reason": "'process' is the verb (to handle a consent form) in a BPMN task label, not a harness Process.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "9e68a415dc1691176e579a237e0183a86636ff3ed6beb585bcd2ad512ddb9234",
+      "msgid": "The scenarios below, told as one pilgrim's story: <a0>the home page</a0> follows a fictional Onesan pilgrim through every step of the key process flows, with the question each step raises.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "bb28b443c3f59ea5a76c445dcc39f8880387000fb2b871a6ed3be427e626874b",
+      "msgid": "On the second day in Nalemi, in the heat, Kamal feels dizzy and weak. Salmah brings him to the pilgrimage health facility. At registration he opens his wallet and shows Nurse Reem the QR code. Step 3 of the overview of key process flows.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "c8b257d64141f9c66661560bb5d07c910bf6a36f7e40fc1c2daca799b620445f",
+      "msgid": "The <a0>user scenarios</a0> of this guide told as one pilgrim's story, step by step along the <a1>overview of key process flows</a1> (the numbered steps 1–5 and A–B of the figure below). Each moment names who takes part, what happens, and what in this guide specifies it, and asks the policy question it raises. Where the guide does not yet specify a moment, the moment says so.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' links the IG's business-process overview diagram, not a specific harness Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "cc243901a0d81da216b91b119dbbdd86c99e654c4e88e6dae6e2c231c56a3e12",
+      "msgid": "The EMR follows the link to Onesa's HIE and retrieves Kamal's summary. Dr Faisal sees the insulin and the penicillin allergy before he treats him for heat exhaustion and low blood sugar. The EMR keeps a rendered copy of the summary with the record of the visit. Step 5 of the overview of key process flows.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "d444da18ce6793449df33f82186a44375a9db0fed733463d46aaf9e8992002a2",
+      "msgid": "Onesa's HIE assembles Kamal's International Patient Summary from his care history: his conditions, his medicines, his allergy. It issues a Verifiable Health Link to it, signs it with a key registered with GDHCN, and puts the QR code in his wallet. Step 2 of the overview of key process flows.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "d4b35d31e71f53484c2e18ede46b46a7fe6b56114f95b8ff774618901d6bd650",
+      "msgid": "This Implementation Guide makes use of <a0>Clinical Quality Language</a0> for the decision support artifacts including the PlanDefinitions and Measures. They are used to express how a calculation should occur and can be used with a CQL engine in order to process the decision or indicator directly from the applicable FHIR resources. Links to this specification, the FHIR Clinical Practice Guidelines Specification, and other helpful resources can be found in the Support dropdown.",
+      "verdict": "other-sense",
+      "reason": "'process the decision' is the verb for a CQL engine computing a result, not a harness Process.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "d9201e560ae8bd6ea1ef59b26f2ef7532477247f6486f09c48b9bfc600933103",
+      "msgid": "Three months before the pilgrimage, Kamal has the mandatory pre-pilgrimage health examination with Dr Aisyah. He is fit to travel. She explains what the Pilgrimage Health Record is, who can see it, and for how long. Kamal agrees on his wallet to share his patient summary with Taifafeki health workers during the pilgrimage, and sets how the link to it is protected. Step 1 of the overview of key process flows.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "dfd68a31314bb20a0ba29f02eea73947687d207e3d53c20550a42e2d1fa326cc",
+      "msgid": "The diagram here denotes the key process flows at a high level, which are further described in details as various business processes.",
+      "verdict": "other-sense",
+      "reason": "Describes high-level business process flows of the pilot in the ordinary/business sense, not a declared harness Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "e1b39fb78230e232361276deff4687494ecb59dae2fcad15a9eafa1af67e6673",
+      "msgid": "The <a0>user scenarios</a0> of this guide told as one pilgrim's story, step by step along the <a1>overview of key process flows</a1> (the numbered steps 1–5 and A–B of the figure below). Click a picture to walk through that moment in the <a2>journeys viewer</a2>, which names who takes part, what in this guide specifies it, and the policy question it raises.",
+      "verdict": "other-sense",
+      "reason": "'overview of key process flows' is the guide's (DAK) page name for its business flows, not a harness BPMN Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Process",
+      "label": "Process",
+      "msgidSha256": "f67ac44b7f03560f329621641912a8f56ff4c29ff73b817b0d22042c7b993744",
+      "msgid": "Overview of key process flows",
+      "verdict": "other-sense",
+      "reason": "A heading for the IG's business-process overview diagram; 'process flows' is the business sense, not a harness Process node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "028bb490c26ebef32b139be9580a4a5c9198eb135a654354f85bded03516a7a6",
+      "msgid": "Reference implementation by Malaysia on MySejahtera App",
+      "verdict": "other-sense",
+      "reason": "'Reference implementation' on MySejahtera means an exemplar implementation, not a harness IRI Reference.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "0ac532158aa98d3e9a579978f4a0c0fcc4e62058d9ef3c1b50fec97ea49d53a1",
+      "msgid": "Every person in this story is fictional. The setting follows this guide's <a0>Malaysian reference implementation</a0>: a pilgrim from Malaysia performing Hajj in the Kingdom of Saudi Arabia (KSA).",
+      "verdict": "other-sense",
+      "reason": "'Malaysian reference implementation' means an exemplar national implementation, not a harness IRI Reference.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "1a434aca39983ddafd5d32c7f49194876941c20d37744e7b6c9f894ef190c647",
+      "msgid": "# Process Name Process ID Personas Objectives      Title  ID used to reference this process throughout the DAK  Individuals interacting to complete the process  A concrete statement describing what the process seeks to achieve    1.0 Publication of National Public Keys for Verification  IPS.PILGRIMAGE.1.0  WHO GDHCN National HIE Host Country EMR  Distribute keys used to verify patient records   2.0 Publication of National Terminologies  IPS.PILGRIMAGE.2.0  WHO TSNational HIEHost Country EMRHost Country HIE  Distribute national terminologies (e.g. medical products) used in national profiles of the IPS    3.0 Issuance of Health Document at Origin Country IPS.PILGRIMAGE.3.0 PilgrimCounselorHealth Wallet AppNational HIE Retrieve a Pilgrim's patient summary for a unplanned clinical encounter   4.0 Clinical Encounter for Unplanned Care IPS.PILGRIMAGE.4.0 Host Country Health workerPilgrimHost Country EMRNational HIE Retrieve a Pilgrim's patient summary for a unplanned clinical encounter   5.0 Break The Glass Clinical Encounter (not in scope for phase 1)  IPS.PILGRIMAGE.5.0 National Pilgrimage AuthorityHost Country Health WorkerPilgrimHost Country EMRNational HIE Retrieve a Pilgrim's patient summary for an emergency unplanned clinical encounter   6.0 Retrieve IPS post the pilgrimage for Investigation (not in scope) IPS.PILGRIMAGE.6.0 National Pilgrimage AuthorityHost Country EMR Retrieve a Pilgrim's patient summary post the pilgrimage for investigating legal matters",
+      "verdict": "other-sense",
+      "reason": "'reference' here is the verb for citing a DAK process by its identifier (IPS.PILGRIMAGE.n), not a Node naming another Node by IRI.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "2ca213c2457324403c7ec2897ad33aa3572c27f4c4379184c07dc0078d30b76b",
+      "msgid": "Every person in this story, and both countries, are fictional. Kamal comes from Onesa (code {code0}) and goes on pilgrimage in Taifafeki (code {code1}): two fictional countries shared with the <a0>SMART Trust demo</a0>, whose codes are ISO 3166-1 user-assigned codes, so they never name a real country. The steps follow this guide's real <a1>Malaysian reference implementation</a1>, Malaysia's Hajj Health Card, as a policy precedent.",
+      "verdict": "other-sense",
+      "reason": "'reference implementation' and 'by reference' are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "3c09676d280fc0927ab2fd7521e98d86e0fe3472b55e682ad94db66c72b8b409",
+      "msgid": "Deployment Guidance  - contains relevant technical specifications and guidance, testing resources, reference implementation materials, and supporting guidance for adaptation to local contexts.",
+      "verdict": "other-sense",
+      "reason": "'reference implementation materials' means exemplar implementations, not a harness IRI Reference.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "3cd54e42840fbc174e94329bb936f41807dcdd42f514aa33cce607099c7245ee",
+      "msgid": "Reference Implementations",
+      "verdict": "other-sense",
+      "reason": "'reference implementation' and 'by reference' are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "3f11d5d5ab1308bede80c8807a79de56cbbd192ac1453fa398c638c15f39ebbc",
+      "msgid": "The FHIR Library contains a base64 encoded CQL library which represents the decision logic as a series of boolean clauses. Each PlanDefinition and Measure will reference a Library from which each decision point can be made and specify which expression from the CQL is used to trigger a decision in PlanDefinition or where to retrieve data to create the MeasureReport in the Measure, respectively.",
+      "verdict": "other-sense",
+      "reason": "'reference a Library' is the FHIR resource-reference sense (PlanDefinition/Measure pointing to a Library), not a harness Node-to-Node IRI naming.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "4125fb730e2b4ce72de514657df71e37b6c92f954257ef255acd351052965f3f",
+      "msgid": "Reference architecture",
+      "verdict": "other-sense",
+      "reason": "'Reference architecture' is an exemplar architecture, not a harness IRI Reference.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "4caade0e0c150a11ed3edf9a3e901e654c218582b691df151255fb48fe0a21ed",
+      "msgid": "The fourth layer (L4: Executable—reference applications and services) focuses on software applications and services within a digital ecosystem. It is intended to include executable reference software that accurately represents the intentions, operational, and functional requirements of the WHO recommendations; addresses user and health system needs; and comprises machine-readable data and calculations within interoperability standards, as documented in the L1–L3 layers. As a fully functional application, it is intended to serve as a generic starting point, ready to be localised to the specific operational context of the users, population, and health system within which it is deployed. Additional products at this layer include terminology services to support consistent data representation for interoperability; reusable software libraries including software development kits; application programming interfaces; and function as a service to support updates to FHIR content and capabilities across subscribed digital systems.",
+      "verdict": "other-sense",
+      "reason": "'reference applications and services' means exemplar/reference software (DAK L4), not a Node's IRI naming of another Node.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "85abfcac6ae6779e3a975fe40a6755a55a7950790f2d6eeab56131c700225db2",
+      "msgid": "This guide's user scenarios told as one pilgrim's story, moment by moment along the overview of key process flows (steps 1–5 and A–B): Kamal, 61, from Tanavu, goes on pilgrimage for the first time. Each moment (P0 to P7) is a sub-journey: who takes part, what happens, what in this guide specifies it, what it does not yet specify, and the policy question it raises. Kamal comes from Onesa and goes on pilgrimage in Taifafeki, two fictional countries; the steps follow the guide's real reference implementation as a policy precedent. Every person is fictional. Told on the guide's home page, input/pagecontent/index.md.",
+      "verdict": "other-sense",
+      "reason": "'reference implementation' and 'by reference' are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "a348e763161e5796f9e61b241beb2b99f56d1eab9305ce775da6d40548f7b759",
+      "msgid": "Reference implementation: the receiving steps",
+      "verdict": "other-sense",
+      "reason": "'reference implementation' and 'by reference' are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "a6c8fd81af5dc320aa2d243b67a8d81b87cdb52209617054921777a874f0043a",
+      "msgid": "This page includes sample reference implementation that can be leveraged to support the implementation of SMART Guidelines for IPS during Pilgrimage. Content here is solely for demonstration purposes only.",
+      "verdict": "other-sense",
+      "reason": "'sample reference implementation' means exemplar software, not a harness IRI Reference.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "ab6c30cc2cc18c03c15999c2809e2b3a668f4d243313d59c88bcb3cb3f37bf9a",
+      "msgid": "Reference applications",
+      "verdict": "other-sense",
+      "reason": "'Reference applications' are exemplar software (DAK L4), not a harness IRI Reference.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "bfcb21ce985f1375b3d4fb6eeb0709ebc1954698604f6480f793123c53155095",
+      "msgid": "Specified by: the same process (tasks scan QR code, add passcode, verify QR code signature); the receiving steps of the <a0>Malaysian reference implementation</a0>.",
+      "verdict": "other-sense",
+      "reason": "'Malaysian reference implementation' means an exemplar national implementation, not a harness IRI Reference.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "cb2f09f944f9f5066b9925b72ec10c9ea3c885db8a6a33c08bcdde7a0b89ea64",
+      "msgid": "SMART Trust framework (by reference)",
+      "verdict": "other-sense",
+      "reason": "'reference implementation' and 'by reference' are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "dd973baeb4a15f76e3bda96ee3e1b7452d092d1f3d51c0a39d6807af9ce90dcb",
+      "msgid": "Reference implementation",
+      "verdict": "other-sense",
+      "reason": "'reference implementation' and 'by reference' are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "e3b9d65ac8ba597129ac99e8c88f33ef6697d3294b548925aac6451e1608d8b7",
+      "msgid": "Not yet consistent: the concepts page says the default passcode is the pilgrim's birth date; the reference implementation sets one standard passcode for all its pilgrims for the season.",
+      "verdict": "other-sense",
+      "reason": "'reference implementation' and 'by reference' are ordinary uses, not the harness's Reference node kind.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "f751e8a2289d111fa176b9f4bc358570b6f25e46eadebabe0034c8b0d3a2c629",
+      "msgid": "Specified by: the <a0>SMART Trust</a0> framework, by reference.",
+      "verdict": "other-sense",
+      "reason": "'by reference' means the SMART Trust framework is cited/incorporated by reference, not a harness Node naming another by IRI.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Reference",
+      "label": "Reference",
+      "msgidSha256": "ff43cd4f3931c52ec87972b38a584adc1e7e29d875f4f4fd73cbca115535a710",
+      "msgid": "The following page provides a reference to resources that can guide countries in adapting the guidelines for country use.",
+      "verdict": "other-sense",
+      "reason": "'provides a reference to resources' means a pointer/citation for readers, not a harness Node naming another Node by IRI.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/bootstrap/v0/ns/Role",
+      "label": "Role",
+      "msgidSha256": "42d18906d7b574fab871b7f2795ac02dec64eda69154c192d54a5cc6b17731ec",
+      "msgid": "The Ministry of Health Malaysia (MOH) is the government ministry responsible for the health system in Malaysia. MOH is dedicated to improving the health of the population through comprehensive health services, promotion of health awareness, and ensuring access to quality healthcare. The ministry plays a crucial role in implementing health policies, conducting health examinations, and collaborating on international health initiatives.",
+      "verdict": "other-sense",
+      "reason": "'plays a crucial role' is the idiomatic sense of function/importance, not a harness Role or swimlane.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/actor",
+      "label": "actor",
+      "msgidSha256": "03dcf986c2a4e480c8fbdffc98c2a3e838d310f7f54eba32e630792f1af56f12",
+      "msgid": "The consent is stored in the consent registry. Please see here for Capability statements for the Consent Registry actor",
+      "verdict": "other-sense",
+      "reason": "'Consent Registry actor' is an IHE PCF system actor with capability statements, not a harness Actor.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/actor",
+      "label": "actor",
+      "msgidSha256": "086f18a80d96298f58e2d6747fdfd68d66e580324af6483edc8ce3d06e9ad37e",
+      "msgid": "System Actor",
+      "verdict": "other-sense",
+      "reason": "'System Actor' is the DAK/IHE category of system actors, not a harness Actor node; unsure, leaning other-sense.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/actor",
+      "label": "actor",
+      "msgidSha256": "1337ead1fd7dfa462cefed98863f0987662a722dfc3c61da9b34b25b6160c56b",
+      "msgid": "Host Country EMR (IG system actor HCEMR): role host-emr",
+      "verdict": "other-sense",
+      "reason": "'IG system actor' names the guide's own FHIR ActorDefinition category, and 'actor' in the ArchiMate model is ArchiMate's; neither is the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/actor",
+      "label": "actor",
+      "msgidSha256": "2d90629d2895fc27ba99a6695efeea8951e9042f98d2514f8cffe44586f231e6",
+      "msgid": "Human Actor",
+      "verdict": "other-sense",
+      "reason": "'Human Actor' is the DAK persona category heading (human users of the system), not a harness Actor node; unsure, leaning other-sense.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/actor",
+      "label": "actor",
+      "msgidSha256": "6efdc5cd31156c4fd6b677e96ac7fbdac734d5f9900010dd35e39d69dd696ee7",
+      "msgid": "<a0>Transactions</a0> - A defined list of system transactions at an atomic level for each actor along with narrative, capability statements, structure definition, questionnaires, document bundles and composition. It may also refer to transactions in other implementation guides.",
+      "verdict": "other-sense",
+      "reason": "'for each actor' means IHE/DAK system actors exchanging transactions, not harness Actors persisted across processes.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/actor",
+      "label": "actor",
+      "msgidSha256": "8ba7945477b028ebdf28a420715b5b1b7cfa7b6267adf75198a0b35306db3097",
+      "msgid": "Overview of key process flows, from this guide's <a href=\"en/smart-ips-pilgrimage/archimate/2.1.0/view/overview-of-key-process-flows/\">ArchiMate model</a>. Each picture is a role of the guide (its actor or persona), and each numbered flow is a moment of <a href=\"index.html\">the pilgrim's journey</a>.",
+      "verdict": "other-sense",
+      "reason": "'IG system actor' names the guide's own FHIR ActorDefinition category, and 'actor' in the ArchiMate model is ArchiMate's; neither is the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/actor",
+      "label": "actor",
+      "msgidSha256": "964977ff11a2bc7d95e73e3cabf6feac6830201b2a3950e27858c401494e6043",
+      "msgid": "The two pilgrim forms named in P1, and a page for the pilgrim and counsellor actors: their actor files exist but no page includes them.",
+      "verdict": "other-sense",
+      "reason": "'pilgrim and counsellor actors' and their 'actor files' are the IG's DAK persona pages (input/pagecontent/actor-pilgrim.md, actor-counselor.md), generic persona types rather than harness Actor nodes (scenarios/actors/*.json are concrete people like kamal.json); unsure, leaning other-sense.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/actor",
+      "label": "actor",
+      "msgidSha256": "b14178c60918dd778186d39b51d2a1fd37fe9d407151b09d4371f6f9b181df5f",
+      "msgid": "Origin Country HIE (IG system actor OCHIE): role origin-hie",
+      "verdict": "other-sense",
+      "reason": "'IG system actor' names the guide's own FHIR ActorDefinition category, and 'actor' in the ArchiMate model is ArchiMate's; neither is the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/actor",
+      "label": "actor",
+      "msgidSha256": "f5f841c0b1c435ab00bd9f78dd6a28dd4cc7c105d55fed31d9ef8f0a4c5627eb",
+      "msgid": "Origin Country Wallet (IG system actor OCHW): role origin-wallet",
+      "verdict": "other-sense",
+      "reason": "'IG system actor' names the guide's own FHIR ActorDefinition category, and 'actor' in the ArchiMate model is ArchiMate's; neither is the harness term.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/actor",
+      "label": "actor",
+      "msgidSha256": "fe9a323c28f8746e6c1d3de0fb58b7a1dfb16431989b89ecaefefe7a7c624cd5",
+      "msgid": "The Record Consent Request Event transaction is initiated by a Origin Country Health Solution against the Origin Country HIE. This transaction shall follow the IHE PCF record consent (ITI-108) transaction. The Origin Country Health Wallet acts as the Consent Record actor role and the Origin Country HIE acts as the Consent Registry actor role.",
+      "verdict": "other-sense",
+      "reason": "'Consent Record actor role' / 'Consent Registry actor role' are IHE PCF actors, not harness Actors.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "046dd5df42307654fbccf5e50b5ec6d0786d7079c643663cca53086dc929d30c",
+      "msgid": "Policy question: what must the summary contain for a pilgrim — and who decides what is left out?",
+      "verdict": "other-sense",
+      "reason": "A clinical-content policy question about the patient summary, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "062b21624a74fbcc3227d4ec4c61c8a0d558a45f95b95ccdf70d26da9bf45c53",
+      "msgid": "Policy question: what should happen when a pilgrim arrives with no phone, a flat battery, or no QR code?",
+      "verdict": "other-sense",
+      "reason": "An operational health-service policy question, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "1965e479fbf68480c045dfd1d72ba546e7948af62b5814be894c104a9338794d",
+      "msgid": "Policy question: should the host country send a summary of care back to the home country — and with whose consent?",
+      "verdict": "other-sense",
+      "reason": "A health-information-exchange policy question between countries, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "1df6232350bf66be4eafe09ff558114c6d8a5d700bec620cf829c5c359412486",
+      "msgid": "Policy question: does Malaysia learn that Kamal's record was opened in KSA, and by whom?",
+      "verdict": "other-sense",
+      "reason": "A privacy/data-access governance question for the pilot, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "1f1fc0cabf0a0715f571e9830d674f5d81d6f755d7bb023458e55afd696d602b",
+      "msgid": "Overview, people and policy questions",
+      "verdict": "other-sense",
+      "reason": "'policy question/precedent' and a Trust Domain's default consent policy are public-health governance, not the harness's ODRL access policy.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "1ffdd3eb542a2dc273e03d353fb69a3cb031c206365f04f42d4605d5268b9a83",
+      "msgid": "Implied consent. The pilgrim does nothing, and the Trust Domain's default policy applies (HL7 ActConsentDirective {code0}). This Trust Domain is opt-in: its default is the IHE PCF implicit policy {code1}. With no pilgrimage consent, the IPS is not shared.",
+      "verdict": "other-sense",
+      "reason": "'policy question/precedent' and a Trust Domain's default consent policy are public-health governance, not the harness's ODRL access policy.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "2ca213c2457324403c7ec2897ad33aa3572c27f4c4379184c07dc0078d30b76b",
+      "msgid": "Every person in this story, and both countries, are fictional. Kamal comes from Onesa (code {code0}) and goes on pilgrimage in Taifafeki (code {code1}): two fictional countries shared with the <a0>SMART Trust demo</a0>, whose codes are ISO 3166-1 user-assigned codes, so they never name a real country. The steps follow this guide's real <a1>Malaysian reference implementation</a1>, Malaysia's Hajj Health Card, as a policy precedent.",
+      "verdict": "other-sense",
+      "reason": "'policy question/precedent' and a Trust Domain's default consent policy are public-health governance, not the harness's ODRL access policy.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "327f1218d7ceaab9ebc83998c472544a8718934983a64c49016d958855bd8e9a",
+      "msgid": "Implied consent. The pilgrim does nothing, and the Trust Domain's default policy applies (HL7 ActConsentDirective {code0}). This Trust Domain is opt-in: its default is the IHE PCF implicit policy {code1}. With no Hajj consent, the IPS is not shared.",
+      "verdict": "other-sense",
+      "reason": "The Trust Domain's default consent policy (HL7 ActConsentDirective / IHE PCF implicit policy) is a consent policy, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "35591777dc9728a9eda44a994596e66cca0d3b73994768fbbeb4bd9054d1d1ee",
+      "msgid": "Policy question: is consent given once for the whole Hajj season, per facility, or per encounter — and can Kamal withdraw it while abroad?",
+      "verdict": "other-sense",
+      "reason": "A consent-policy question about Hajj care, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "6a42e3b49fba4771315b01f1fe742b829e40ece613e69871619af5b49789b89f",
+      "msgid": "Policy question: what protection should the passcode give — and is a passcode shared by every pilgrim of a country a passcode at all?",
+      "verdict": "other-sense",
+      "reason": "A security/passcode policy question for the pilot, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "75880655c8e89966bfc267165e33f2df0b298562b4e254428c04abda8f0cc913",
+      "msgid": "Policy question: who may open an unconscious pilgrim's record, on what legal basis, and how is it accounted for afterwards?",
+      "verdict": "other-sense",
+      "reason": "A break-the-glass legal access policy question, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "85abfcac6ae6779e3a975fe40a6755a55a7950790f2d6eeab56131c700225db2",
+      "msgid": "This guide's user scenarios told as one pilgrim's story, moment by moment along the overview of key process flows (steps 1–5 and A–B): Kamal, 61, from Tanavu, goes on pilgrimage for the first time. Each moment (P0 to P7) is a sub-journey: who takes part, what happens, what in this guide specifies it, what it does not yet specify, and the policy question it raises. Kamal comes from Onesa and goes on pilgrimage in Taifafeki, two fictional countries; the steps follow the guide's real reference implementation as a policy precedent. Every person is fictional. Told on the guide's home page, input/pagecontent/index.md.",
+      "verdict": "other-sense",
+      "reason": "'policy question/precedent' and a Trust Domain's default consent policy are public-health governance, not the harness's ODRL access policy.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "b6a8174fe2b25bd4b01f7f435b2ded590354dd13a8df5355b49aa221e2d76d56",
+      "msgid": "Policy question: which Malaysian institution signs health documents on behalf of the health sector, and who in KSA decides to accept that signature?",
+      "verdict": "other-sense",
+      "reason": "A trust/signing governance policy question between national institutions, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "c611981fab983bc648368eb81240f5a5a1eff07f40aa4c9fd155600a98eeb6af",
+      "msgid": "Policy",
+      "verdict": "other-sense",
+      "reason": "The 'Policy' heading on the Trust Domain page denotes trust-network governance policy, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "c8b257d64141f9c66661560bb5d07c910bf6a36f7e40fc1c2daca799b620445f",
+      "msgid": "The <a0>user scenarios</a0> of this guide told as one pilgrim's story, step by step along the <a1>overview of key process flows</a1> (the numbered steps 1–5 and A–B of the figure below). Each moment names who takes part, what happens, and what in this guide specifies it, and asks the policy question it raises. Where the guide does not yet specify a moment, the moment says so.",
+      "verdict": "other-sense",
+      "reason": "'the policy question it raises' is a health/privacy governance question, not a harness ODRL policy definition.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/policy",
+      "label": "policy",
+      "msgidSha256": "e1b39fb78230e232361276deff4687494ecb59dae2fcad15a9eafa1af67e6673",
+      "msgid": "The <a0>user scenarios</a0> of this guide told as one pilgrim's story, step by step along the <a1>overview of key process flows</a1> (the numbered steps 1–5 and A–B of the figure below). Click a picture to walk through that moment in the <a2>journeys viewer</a2>, which names who takes part, what in this guide specifies it, and the policy question it raises.",
+      "verdict": "other-sense",
+      "reason": "'policy question/precedent' and a Trust Domain's default consent policy are public-health governance, not the harness's ODRL access policy.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-13"
+    },
+    {
+      "term": "https://litlfred.github.io/cat-harness/v0/ns/glossary/platform/role",
+      "label": "role",
+      "msgidSha256": "42d18906d7b574fab871b7f2795ac02dec64eda69154c192d54a5cc6b17731ec",
+      "msgid": "The Ministry of Health Malaysia (MOH) is the government ministry responsible for the health system in Malaysia. MOH is dedicated to improving the health of the population through comprehensive health services, promotion of health awareness, and ensuring access to quality healthcare. The ministry plays a crucial role in implementing health policies, conducting health examinations, and collaborating on international health initiatives.",
+      "verdict": "other-sense",
+      "reason": "'plays a crucial role' is the idiomatic sense of function/importance, not a harness Role or swimlane.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/folio-assistant-core/v0/ns/glossary/platform/glossary",
+      "label": "glossary",
+      "msgidSha256": "359e0d36485dac77af931ab44b03769745f014ffcb85a8f8137feebe1e3d3f9f",
+      "msgid": "<a0>Concepts</a0> - A glossary of terms and key concepts introduced in the L2 or in the Implementation Guide",
+      "verdict": "other-sense",
+      "reason": "The DAK 'Concepts' page is the IG's L2 glossary of health concepts, not the harness instance's SKOS glossary concept scheme.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    }
+  ]
+}

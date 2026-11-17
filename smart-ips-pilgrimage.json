@@ -1,0 +1,263 @@
+{
+  "$schema": "cat-harness-declaration/1.0.0",
+  "name": "smart-ips-pilgrimage",
+  "version": "2.1.0",
+  "repository": "litlfred/smart-ips-pilgrimage",
+  "iriBase": "https://litlfred.github.io/smart-ips-pilgrimage/",
+  "title": "SMART Verifiable IPS for Pilgrimage",
+  "description": "The WHO SMART Guidelines Verifiable IPS for Pilgrimage implementation guide (FHIR IG source under input/): GDHCN and IPS for verifiable health documents during pilgrimage, as a harnessed instance of smart-base.",
+  "needs": [
+    "smart-base",
+    "smart-trust-tools"
+  ],
+  "assets": [
+    {
+      "id": "agent-instructions",
+      "src": "AGENTS.md",
+      "role": "agent-instructions",
+      "title": "AGENTS.md — smart-ips-pilgrimage",
+      "description": "Cold start for work here, and its one rule: fhir-artifact-index/ and document-kinds/ are generated at publish from the IG's AST, never authored by hand."
+    },
+    {
+      "id": "instance-readme",
+      "src": "README.md",
+      "role": "instance-readme",
+      "title": "SMART Verifiable IPS for Pilgrimage",
+      "description": "The SMART Verifiable IPS for Pilgrimage implementation guide: where it is published and where its issues are managed."
+    }
+  ],
+  "directories": [
+    {
+      "id": "smart-ips-pilgrimage-ast",
+      "path": "fhir-ast/",
+      "description": "SMART Verifiable IPS for Pilgrimage's IG Publisher AST, INGESTED here although the IG's source is not (owner, 2026-10-04: an IG's semi-static KG may stay remote, and its AST is still ingested into the folio). Read from the branch family cat/fhir-harness/fhir-ast/ on the IG's own repository (litlfred/smart-ips-pilgrimage), one branch per IG package id; this IG's member is cat/fhir-harness/fhir-ast/smart.who.int.ips-pilgrimage. Restored by fhir-harness/scripts/ig-cache.sh; absent from the checkout by design. Bean nr5p.",
+      "graphTypologies": [
+        "ig-ast"
+      ],
+      "storage": {
+        "branchPrefix": "cat/fhir-harness/fhir-ast/",
+        "keyedBy": "family",
+        "keyFrom": "the IG's package id",
+        "repository": "litlfred/smart-ips-pilgrimage",
+        "tool": "ig-cache"
+      }
+    },
+    {
+      "id": "smart-ips-pilgrimage-artifact-index",
+      "path": "fhir-artifact-index/",
+      "description": "The artefact index for smart-ips-pilgrimage. `index.json`, `menu.json`, `releases.json` and `package.tgz` are NOT COMMITTED: fhir-harness's `ig-index:build` writes them at publish from the IG's AST (`builtAtPublish`, fhir-harness#124). Only the README stays committed. Bean nr5p.",
+      "graphTypologies": [
+        "fhir-artifact-index"
+      ],
+      "readOnly": true,
+      "readOnlyBasis": "Built from the IG's own AST, and GENERATED -- fhir-harness's `ig-index:build` writes this index at publish, a person does not edit or commit it (fhir-harness#124). A hand edit here silently changes what this repository claims upstream published, and `check:materialized-fixity` is what catches one that happened.",
+      "served": true
+    },
+    {
+      "id": "smart-ips-pilgrimage-document-kinds",
+      "path": "document-kinds/",
+      "description": "How this IG realises the document kinds of the layers it needs: today `dak.coverage.smart-ips-pilgrimage.json`, the DAK view of `fhir-artifact-index/`, which places each artefact in one of the ten DAK components by its FHIR resource type and lists what no rule places. GENERATED at publish by the DAK layer's `gen-document-kinds.ts` (`bun run cat smart-base:document-kinds`; declared `builtAtPublish`, because the index it reads is built at publish too, fhir-harness#124) into this directory, and not committed, because the report is about this IG (folio-assistant#2598). Bean nr5p.",
+      "graphTypologies": [
+        "document-kinds"
+      ]
+    },
+    {
+      "id": "smart-ips-pilgrimage-docs",
+      "path": "docs/",
+      "instanceRoot": true,
+      "description": "The reader-facing pages, generated from `fhir-artifact-index/index.json` by `smart-ips-pilgrimage:pages` (`fhir-harness/scripts/gen-ig-pages.ts`). These are the artefact pages of smart-ips-pilgrimage's IG site (`igSite`, bean `mftp`): they build into smart-ips-pilgrimage's own IG site at `/smart-ips-pilgrimage/` under the IG's menu. Generated at publish, never authored or committed.",
+      "graphTypologies": [
+        "docs",
+        "ig-pages"
+      ],
+      "derivedFrom": [
+        "smart-ips-pilgrimage-artifact-index",
+        "smart-base-themes"
+      ],
+      "writer": [
+        "fhir-harness/scripts/gen-ig-pages.ts",
+        "fhir-harness/scripts/templates/ig-pages/"
+      ],
+      "igSite": true,
+      "tile": {
+        "icon": "docs"
+      }
+    },
+    {
+      "id": "references",
+      "path": "references/",
+      "description": "smart-ips-pilgrimage's bibliography: one folio-reference/v1 CSL-JSON entry per cited work, `<key>.json`. The IG is one document with one bibliography page, the KG Bibliography the site publishes (`en/folio-assistant-core/bibliography/`, the IG menu's Bibliography item); the IG pages hold no reference lists of their own, and each in-text citation links to its entry there as `en/folio-assistant-core/bibliography/references/<key>/`. smart-base's `check:ig-citations` fails on a citation with no entry, a page reference list, or a reference-section link to a work this directory does not hold",
+      "graphTypologies": [
+        "references"
+      ]
+    },
+    {
+      "id": "business-processes",
+      "path": "input/business-processes/",
+      "graphTypologies": [
+        "business-processes"
+      ],
+      "description": "The guide's business processes (BPMN 2.0), the IG source the IG Publisher renders; the processes viewer draws them for this instance, and the journeys' steps name their tasks (realisedBy). The .svg beside three of them are drawings by bootstrap-tools' render-bpmn, for the journeys viewer to highlight a step's tasks. Each leaf lane binds its role (partitionElementRef, scenarios/roles.json) and the tasks a person performs name their skill (<bootstrap.processes:skill>); they stay here, in the IG's layout, rather than moving to a harness processes/ directory, because the IG Publisher and the journeys' realisedBy read them here."
+    },
+    {
+      "id": "scenarios",
+      "path": "scenarios/",
+      "graphTypologies": [
+        "scenarios"
+      ],
+      "description": "The people and systems of the pilgrim's journey (actors/, each person with a meta.persona) and the roles they play (roles.json), named after this guide's personas and system actors. Every person is fictional."
+    },
+    {
+      "id": "user-scenarios",
+      "path": "user-scenarios/",
+      "graphTypologies": [
+        "user-scenario"
+      ],
+      "description": "The pilgrim's journey (the home page, input/pagecontent/index.md) as user scenarios: the parent journey the-pilgrims-hajj and one sub-journey per moment P0 to P7, partOf the parent and following each other in order. Each step's picture is input/images/pilgrim/<p>.webp."
+    },
+    {
+      "id": "code-lists",
+      "path": "code-lists/",
+      "graphTypologies": [
+        "code-list"
+      ],
+      "description": "The record-trust ladder the journeys' steps name: how far Kamal's health summary can be trusted abroad, moment by moment."
+    },
+    {
+      "id": "archimate",
+      "path": "archimate/",
+      "graphTypologies": [
+        "archimate"
+      ],
+      "description": "The guide as ArchiMate (cat-harness's archimate subgraph): the people and systems of scenarios/roles.json, the journey moments P0 to P7 of user-scenarios/ with who takes part in each, and the home page's overview of key process flows (input/images/workflow.png) as a view with every box where the figure draws it. Built by archimate/build.py from those sources (`check:archimate` fails when the committed model is stale); the archimate-pages visualiser draws every view as SVG, and archimate/pretty.py draws the overview again in the original figure's style (input/includes/workflow-pretty.svg), one pictogram per role; the pages toggle between the two."
+    },
+    {
+      "id": "device-screens",
+      "path": "device-screens/",
+      "graphTypologies": [
+        "device-screen"
+      ],
+      "description": "What each person sees on their own device at a step of the pilgrim's journeys, from the owner's illustrations: Kamal's consent and his signed QR code, the scanner and the facility screen at registration in Nalemi, Dr Faisal's tablet, Dr Hafiz's break-the-glass phone and Dr Aisyah's computer at home. device-screen nodes (the harness's kind), drawn by the journeys viewer in the workshop's Device Demo. Every person is fictional."
+    },
+    {
+      "id": "smart-ips-pilgrimage-findings",
+      "path": "findings/",
+      "graphTypologies": [
+        "docs"
+      ],
+      "description": "Authored review material about this instance's pages, kept apart from `docs/`, which `smart-ips-pilgrimage:pages` wholly generates at publish. `wireframes/` holds the as-is wireframe of this instance's `journeys` visualiser with its findings (`check:wireframes` reads the `wireframes/` of every declared `docs` directory), as smart-base's `findings/` does for its own."
+    },
+    {
+      "id": "workshops",
+      "path": "workshops/",
+      "graphTypologies": [
+        "workshop"
+      ],
+      "description": "The policy question each moment of the pilgrim's journey raises, as a workshop for origin- and host-country policy makers."
+    },
+    {
+      "id": "smart-ips-pilgrimage-translations",
+      "path": "translations/",
+      "graphTypologies": [
+        "translation-sources"
+      ],
+      "description": "The gettext side of this IG's text, one directory per target locale (ar, es, fr, ru, zh; the source is en): .pot templates extracted by input/scripts/translation-pot.ts (the harness's own extractors) from the narrative pages in input/pagecontent/ and the BPMN in input/business-processes/, and the .po catalogues translated from them, each with a translation-node/v1 manifest. Agent translations are unofficial (official: false, generatedBy agent) until a person signs them off. FHIR resources are not here: they use CodeSystem supplements in input/fsh/translations/<locale>.fsh."
+    }
+  ],
+  "visualisers": [
+    {
+      "id": "archimate",
+      "renderedBy": "archimate-pages",
+      "covers": [
+        "archimate"
+      ],
+      "writer": [
+        "cat-harness-tools/archimate/scripts/gen-archimate-pages.ts"
+      ]
+    },
+    {
+      "id": "journeys",
+      "renderedBy": "journeys-viewer",
+      "coversKinds": [
+        "user-scenario",
+        "workshop",
+        "device-screen"
+      ],
+      "subgraphs": "instance"
+    }
+  ],
+  "avatar": {
+    "glyph": "M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4zM8 12l3 3 5-6",
+    "tone": 199,
+    "reads": "a shield with a check mark: a verified health document for travel, in WHO blue"
+  },
+  "_avatar_comment": "A shield with a check mark: verifiable IPS documents for pilgrimage, in WHO blue (tone 199, matching smart-base and smart-trust).",
+  "_builtAtPublish_comment": "Owner, 2026-10-14 (B1; schemas/built-at-publish.ts in cat-harness). The artefact index, DAK coverage report, JSON-LD @context, and IG pages are computed at the checkout's pins at publish and never committed.",
+  "builtAtPublish": [
+    {
+      "path": "fhir-artifact-index/index.json",
+      "writer": [
+        "ig-index:build"
+      ],
+      "because": "checkout",
+      "reason": "the IG's artefact index: built by fhir-harness's ig-index:build from the IG's AST (restored from the IG repository's AST cache) and its own sushi-config.yaml, so it moves when the IG's default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)"
+    },
+    {
+      "path": "fhir-artifact-index/menu.json",
+      "writer": [
+        "ig-index:build"
+      ],
+      "because": "checkout",
+      "reason": "the IG's menu: built by fhir-harness's ig-index:build from the IG's AST (restored from the IG repository's AST cache) and its own sushi-config.yaml, so it moves when the IG's default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)"
+    },
+    {
+      "path": "fhir-artifact-index/releases.json",
+      "writer": [
+        "ig-index:build"
+      ],
+      "because": "checkout",
+      "reason": "the IG's release list: built by fhir-harness's ig-index:build from the IG's AST (restored from the IG repository's AST cache) and its own sushi-config.yaml, so it moves when the IG's default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)"
+    },
+    {
+      "path": "fhir-artifact-index/package.tgz",
+      "writer": [
+        "ig-index:build"
+      ],
+      "because": "checkout",
+      "reason": "the Publisher-shaped package the JSON view pages read each resource from: built by fhir-harness's ig-index:build from the IG's AST (restored from the IG repository's AST cache) and its own sushi-config.yaml, so it moves when the IG's default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)"
+    },
+    {
+      "path": "document-kinds/dak.coverage.smart-ips-pilgrimage.json",
+      "writer": [
+        "smart-base:document-kinds"
+      ],
+      "because": "checkout",
+      "directory": "smart-ips-pilgrimage-document-kinds",
+      "reason": "the DAK view of this IG's artefact index, which is itself built at publish (fhir-artifact-index/index.json above), so the report moves with the index and is built after it (fhir-harness#124)"
+    },
+    {
+      "path": "ns/context/v1.jsonld",
+      "writer": [
+        "jsonld:contexts"
+      ],
+      "because": "checkout",
+      "reason": "the prefixes and content-context terms its documents use, flattened with the jsonldPrefixes of the layers it needs at the checkout's pins"
+    },
+    {
+      "path": "docs/",
+      "writer": [
+        "smart-ips-pilgrimage:pages"
+      ],
+      "because": "checkout",
+      "directory": "smart-ips-pilgrimage-docs",
+      "reason": "the artefact pages gen-ig-pages renders from this instance's artefact index with the IG-page templates and the smart-base themes and chrome, all read at the checkout's pins"
+    }
+  ],
+  "enableSubgraphs": [
+    "folio-assistant-core.collab",
+    "smart-base.collab",
+    "fhir-harness.collab",
+    "smart-base.L2-collab",
+    "smart-base.L3-collab"
+  ]
+}

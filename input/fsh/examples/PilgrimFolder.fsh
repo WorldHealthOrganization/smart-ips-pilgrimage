@@ -1,6 +1,6 @@
 Instance:   PilgrimFolder
 InstanceOf: IHE.MHD.Minimal.Folder
-Title: "My Hajj Pilgrimage Minimal Folder"
+Title: "My Pilgrimage Minimal Folder"
 Description:      "Folder for Pilgrim"
 Usage: #example
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST

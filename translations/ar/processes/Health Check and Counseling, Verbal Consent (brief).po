@@ -1,0 +1,203 @@
+# Arabic translation of processes/Health Check and Counseling, Verbal Consent (brief)
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Health Check and Counseling, Verbal Consent (brief)\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.227Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:147
+#. Diagram label
+msgid "arrive to clinic"
+msgstr "الوصول إلى العيادة"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:134
+#. Diagram label
+msgid "Conduct health assessment"
+msgstr "إجراء التقييم الصحي"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:180
+#. Diagram label
+msgid "configure SHL privacy settings on wallet"
+msgstr "ضبط إعدادات الخصوصية لـ SHL في المحفظة"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:203
+#. Diagram label
+msgid "Counsel patient on consent and digital health wallet"
+msgstr "إرشاد المريض بشأن الموافقة والمحفظة الصحية الرقمية"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:73
+#. Diagram label
+msgid "Counselor"
+msgstr "المستشار"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:208
+#. Diagram label
+msgid "display SHL"
+msgstr "عرض SHL"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:190
+#. Diagram label
+msgid "display SHL configuration form"
+msgstr "عرض نموذج ضبط SHL"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:4
+#. Diagram element documentation
+msgid "Documents the health check and SHL consent and issuance process"
+msgstr "يوثّق عملية الفحص الصحي والموافقة على SHL وإصداره"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:167
+#. Diagram label
+msgid "End"
+msgstr "النهاية"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:15
+#. Diagram label
+msgid "Health Check and Counseling, Verbal Consent (brief)"
+msgstr "الفحص الصحي والإرشاد، الموافقة الشفهية (مختصر)"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:3
+#. Diagram label
+msgid "Health Check and Issue SHL"
+msgstr "الفحص الصحي وإصدار SHL"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:44
+#. Diagram label
+msgid "Health Check and SHL Issuance, Wallet Consent"
+msgstr "الفحص الصحي وإصدار SHL، الموافقة عبر المحفظة"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:52
+#. Diagram label
+msgid "Human Actor"
+msgstr "جهة فاعلة بشرية"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:234
+#. Diagram label
+msgid "issue SHL"
+msgstr "إصدار SHL"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:163
+#. Diagram label
+msgid "leave clinic"
+msgstr "مغادرة العيادة"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:194
+#. Diagram label
+msgid "login to wallet app"
+msgstr "تسجيل الدخول إلى تطبيق المحفظة"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:221
+#. Diagram label
+msgid "no"
+msgstr "لا"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:114
+#. Diagram label
+msgid "Origin Country Wallet"
+msgstr "محفظة بلد المنشأ"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:89
+#. Diagram label
+msgid "Pilgrim"
+msgstr "الزائر"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:198
+#. Diagram label
+msgid "pilgrim provided consent to counselor?"
+msgstr "هل قدّم الزائر موافقته للمستشار؟"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:213
+#. Diagram label
+msgid "process privacy configuration form for SHL"
+msgstr "معالجة نموذج ضبط الخصوصية لـ SHL"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:130
+#. Diagram label
+msgid "registration"
+msgstr "التسجيل"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:236
+#. Diagram label
+msgid "request SHL from wallet"
+msgstr "طلب SHL من المحفظة"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:176
+#. Diagram label
+msgid "Review SHL"
+msgstr "مراجعة SHL"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:151
+#. Diagram label
+msgid "Start"
+msgstr "البداية"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:109
+#. Diagram label
+msgid "System Actor"
+msgstr "جهة فاعلة نظامية"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:115
+#. Diagram element documentation
+msgid "The pilgrim's origin country's digital health wallet"
+msgstr "المحفظة الصحية الرقمية لبلد منشأ الزائر"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:16
+#. Diagram element documentation
+msgid "This is the documentation for the overall business process - Element documentation"
+msgstr "هذا هو توثيق عملية العمل الإجمالية - توثيق العنصر"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:45
+#. Diagram element documentation
+msgid "This is the documentation for the overall business process - process documentation"
+msgstr "هذا هو توثيق عملية العمل الإجمالية - توثيق العملية"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:230
+#. Diagram label
+msgid "yes"
+msgstr "نعم"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:77
+#. Diagram element documentation
+msgid "Counselor from origin country supporting pilgrim during inital health screening"
+msgstr "مرشد من بلد المنشأ يدعم الزائر خلال الفحص الصحي الأولي"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:162
+#. Diagram label
+msgid "inform patient ineligible for pilgrimage"
+msgstr "إبلاغ المريض بعدم أهليته للزيارة الدينية"
+
+#: input/business-processes/Health Check and Counseling, Verbal Consent (brief).bpmn:93
+#. Diagram element documentation
+msgid "The pilgrim"
+msgstr "الزائر"
+
+#. Diagram element documentation
+#~ msgid "Counselor from origin country supporting Hajj pilgrim during inital health screening"
+#~ msgstr "مرشد من بلد المنشأ يدعم الحاج خلال الفحص الصحي الأولي"
+
+#. Diagram label
+#~ msgid "inform patient ineligible for Hajj"
+#~ msgstr "إبلاغ المريض بعدم أهليته للحج"
+
+#. Diagram element documentation
+#~ msgid "The Hajj pilgrim"
+#~ msgstr "الحاج"

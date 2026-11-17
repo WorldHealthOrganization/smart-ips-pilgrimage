@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of input/pagecontent/dictionary.md. Agent translation, unofficial: no human has adjudicated it. Coverage 2/2.",
+  "label": "trans:es/pagecontent/dictionary",
+  "locale": "es",
+  "sourceFile": "input/pagecontent/dictionary.md",
+  "sourceHash": "32e1cd14994b",
+  "potFile": "translations/es/pagecontent/dictionary.pot",
+  "poFile": "translations/es/pagecontent/dictionary.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 2,
+    "total": 2,
+    "pct": 100
+  }
+}

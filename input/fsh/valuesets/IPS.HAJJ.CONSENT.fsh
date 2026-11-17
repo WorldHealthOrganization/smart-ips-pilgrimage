@@ -1,6 +1,6 @@
 ValueSet:     IPS.HAJJ.CONSENT
 Title:        "IPS.HAJJ.CONSENT ValueSet of consent policies"
-Description:  "ValueSet of codes for consent policies for Hajj pilgrims"
+Description:  "ValueSet of codes for consent policies for pilgrims"
 
 * ^status = #active
 * ^experimental = true

@@ -1,0 +1,195 @@
+# Arabic translation of user scenario p1-health-check-and-consent
+#
+# UNOFFICIAL — drafted by an agent from the template beside it. No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# requirement ids, placeholders, numbers and URLs are kept as written;
+# persona names are fictional and kept as written. Modern Standard Arabic,
+# right-to-left. msgctxt is the scenario field path.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: p1-health-check-and-consent\n"
+"POT-Creation-Date: 2026-11-10T20:12:07.193Z\n"
+"PO-Revision-Date: 2026-11-07\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: user-scenarios/p1-health-check-and-consent.json:17
+msgctxt "country"
+msgid "Onesa"
+msgstr "Onesa"
+
+#: user-scenarios/p1-health-check-and-consent.json:5
+msgctxt "description"
+msgid "Three months before the pilgrimage, Kamal has the mandatory pre-pilgrimage health examination with Dr Aisyah. He is fit to travel. She explains what the Pilgrimage Health Record is, who can see it, and for how long. Kamal agrees on his wallet to share his patient summary with Taifafeki health workers during the pilgrimage, and sets how the link to it is protected. Step 1 of the overview of key process flows."
+msgstr "قبل الزيارة الدينية بثلاثة أشهر، يخضع Kamal للفحص الصحي الإلزامي السابق للزيارة الدينية لدى د. Aisyah. وهو لائق للسفر. وتشرح له ما سجل الزيارة الدينية الصحي، ومن يمكنه الاطلاع عليه، ولأي مدة. ويوافق Kamal في محفظته على مشاركة ملخص المريض الخاص به مع العاملين الصحيين في Taifafeki خلال الزيارة الدينية، ويضبط كيفية حماية الرابط المؤدي إليه. الخطوة 1 من النظرة العامة على تدفقات العمليات الرئيسية."
+
+#: user-scenarios/p1-health-check-and-consent.json:156
+msgctxt "scene.label"
+msgid "Consent in his wallet"
+msgstr "الموافقة في محفظته"
+
+#: user-scenarios/p1-health-check-and-consent.json:152
+msgctxt "scene.label"
+msgid "Kamal agrees to share"
+msgstr "موافقة Kamal على المشاركة"
+
+#: user-scenarios/p1-health-check-and-consent.json:148
+msgctxt "scene.label"
+msgid "Pre-pilgrimage check, Dr Aisyah"
+msgstr "فحص ما قبل الزيارة الدينية، د. Aisyah"
+
+#: user-scenarios/p1-health-check-and-consent.json:81
+msgctxt "step.enabler"
+msgid "Consent is given with a clinician who can explain it, and confirmed by the pilgrim on his own phone."
+msgstr "تُمنح الموافقة بحضور ممارس سريري قادر على شرحها، ويؤكدها الزائر على هاتفه الخاص."
+
+#: user-scenarios/p1-health-check-and-consent.json:61
+msgctxt "step.experiences.doing"
+msgid "Examines Kamal, finds him fit to travel, and explains what the record is, who can see it and for how long."
+msgstr "تفحص Kamal، وتجده لائقًا للسفر، وتشرح ما السجل، ومن يمكنه الاطلاع عليه، ولأي مدة."
+
+#: user-scenarios/p1-health-check-and-consent.json:55
+msgctxt "step.experiences.doing"
+msgid "Has his health examination, listens to Dr Aisyah, and confirms on his wallet that Taifafeki health workers may see his summary during the pilgrimage; sets how the link is protected."
+msgstr "يخضع لفحصه الصحي، ويستمع إلى د. Aisyah، ويؤكد في محفظته أنه يجوز للعاملين الصحيين في Taifafeki الاطلاع على ملخصه خلال الزيارة الدينية؛ ويضبط كيفية حماية الرابط."
+
+#: user-scenarios/p1-health-check-and-consent.json:77
+msgctxt "step.experiences.doing"
+msgid "Records the consent directive."
+msgstr "يسجّل توجيه الموافقة."
+
+#: user-scenarios/p1-health-check-and-consent.json:73
+msgctxt "step.experiences.doing"
+msgid "Shows the consent form and the link's privacy settings, and sends the consent to the HIE."
+msgstr "يعرض نموذج الموافقة وإعدادات خصوصية الرابط، ويرسل الموافقة إلى HIE."
+
+#: user-scenarios/p1-health-check-and-consent.json:67
+msgctxt "step.experiences.doing"
+msgid "Sits with him and listens."
+msgstr "تجلس معه وتستمع."
+
+#: user-scenarios/p1-health-check-and-consent.json:62
+msgctxt "step.experiences.feeling"
+msgid "“He understood what he agreed to. That is what matters.”"
+msgstr "«لقد فهم ما وافق عليه. وهذا هو المهم.»"
+
+#: user-scenarios/p1-health-check-and-consent.json:68
+msgctxt "step.experiences.feeling"
+msgid "“One less thing to worry about.”"
+msgstr "«همٌّ أقلّ يشغل البال.»"
+
+#: user-scenarios/p1-health-check-and-consent.json:56
+msgctxt "step.experiences.feeling"
+msgid "“So the doctors there will know about my insulin. Good.”"
+msgstr "«إذن سيعرف الأطباء هناك أمر الإنسولين الذي أتناوله. جيد.»"
+
+#: user-scenarios/p1-health-check-and-consent.json:114
+msgctxt "step.gaps"
+msgid "The two forms the pilgrim fills in, consent-wallet-questionnaire and shl-configure-privacy-settings, are named in the processes but not defined."
+msgstr "النموذجان اللذان يملؤهما الحاج، consent-wallet-questionnaire و shl-configure-privacy-settings، مذكوران بالاسم في العمليات لكنهما غير معرَّفين."
+
+#: user-scenarios/p1-health-check-and-consent.json:87
+msgctxt "step.handoff.carrier"
+msgid "Wallet to HIE"
+msgstr "من المحفظة إلى HIE"
+
+#: user-scenarios/p1-health-check-and-consent.json:88
+msgctxt "step.handoff.payload"
+msgid "Consent directive (HajjConsent)"
+msgstr "توجيه الموافقة (HajjConsent)"
+
+#: user-scenarios/p1-health-check-and-consent.json:84
+msgctxt "step.handoff.summary"
+msgid "Kamal's consent is recorded at home"
+msgstr "تُسجَّل موافقة Kamal في البلد الأم"
+
+#: user-scenarios/p1-health-check-and-consent.json:46
+msgctxt "step.headline"
+msgid "Kamal is found fit to travel, hears who can see his Pilgrimage Health Record and for how long, and agrees on his wallet to share it."
+msgstr "يُعَدّ Kamal لائقًا للسفر، ويُبلَّغ بمن يمكنه الاطلاع على سجله الصحي للزيارة الدينية ولأي مدة، ويوافق في محفظته على مشاركته."
+
+#: user-scenarios/p1-health-check-and-consent.json:135
+msgctxt "step.illustration.alt"
+msgid "In a Tanavu clinic, Dr Aisyah explains a consent card with a shield and a calendar to Kamal, in a batik shirt, who holds his phone with a padlock and a tick; Salmah sits beside him."
+msgstr "في عيادة في Tanavu، تشرح د. Aisyah لـ Kamal، الذي يرتدي قميص باتيك، بطاقة موافقة عليها درع وتقويم، وهو يمسك هاتفه وعليه قفل وعلامة صح؛ وتجلس Salmah بجانبه."
+
+#: user-scenarios/p1-health-check-and-consent.json:5
+msgctxt "step.narrative"
+msgid "Three months before the pilgrimage, Kamal has the mandatory pre-pilgrimage health examination with Dr Aisyah. He is fit to travel. She explains what the Pilgrimage Health Record is, who can see it, and for how long. Kamal agrees on his wallet to share his patient summary with Taifafeki health workers during the pilgrimage, and sets how the link to it is protected. Step 1 of the overview of key process flows."
+msgstr "قبل الزيارة الدينية بثلاثة أشهر، يخضع Kamal للفحص الصحي الإلزامي السابق للزيارة الدينية لدى د. Aisyah. وهو لائق للسفر. وتشرح له ما سجل الزيارة الدينية الصحي، ومن يمكنه الاطلاع عليه، ولأي مدة. ويوافق Kamal في محفظته على مشاركة ملخص المريض الخاص به مع العاملين الصحيين في Taifafeki خلال الزيارة الدينية، ويضبط كيفية حماية الرابط المؤدي إليه. الخطوة 1 من النظرة العامة على تدفقات العمليات الرئيسية."
+
+#: user-scenarios/p1-health-check-and-consent.json:80
+msgctxt "step.painPoint"
+msgid "Without consent recorded at home, nothing may be shared abroad, and the clinic in Nalemi starts from nothing."
+msgstr "من دون موافقة مسجَّلة في البلد الأم، لا يجوز مشاركة أي شيء في الخارج، وتبدأ العيادة في Nalemi من لا شيء."
+
+#: user-scenarios/p1-health-check-and-consent.json:82
+msgctxt "step.policy"
+msgid "Is consent given once for the whole pilgrimage season, per facility, or per encounter — and can Kamal withdraw it while abroad?"
+msgstr "هل تُمنح الموافقة مرة واحدة لموسم الزيارة الدينية بأكمله، أم لكل مرفق، أم لكل لقاء — وهل يمكن لـ Kamal سحبها وهو في الخارج؟"
+
+#: user-scenarios/p1-health-check-and-consent.json:140
+msgctxt "step.record.description"
+msgid "His consent to share his summary for the pilgrimage is recorded"
+msgstr "تُسجَّل موافقته على مشاركة ملخصه لأغراض الزيارة الدينية"
+
+#: user-scenarios/p1-health-check-and-consent.json:141
+msgctxt "step.record.heldWhere"
+msgid "Onesa's HIE; Kamal's wallet"
+msgstr "منصة HIE في Onesa؛ محفظة Kamal"
+
+#: user-scenarios/p1-health-check-and-consent.json:118
+msgctxt "step.references.label"
+msgid "Business processes: Health Check and Counseling, Explicit Consent on Wallet; Verbal Consent"
+msgstr "عمليات العمل: الفحص الصحي والإرشاد، الموافقة الصريحة عبر المحفظة؛ الموافقة الشفهية"
+
+#: user-scenarios/p1-health-check-and-consent.json:128
+msgctxt "step.references.label"
+msgid "Profile HajjConsent and its examples CONSENT-XXK and CONSENT-XXR"
+msgstr "ملف التعريف HajjConsent ومثالاه CONSENT-XXK وCONSENT-XXR"
+
+#: user-scenarios/p1-health-check-and-consent.json:123
+msgctxt "step.references.label"
+msgid "Transaction: record consent from wallet"
+msgstr "المعاملة: تسجيل الموافقة من المحفظة"
+
+#: user-scenarios/p1-health-check-and-consent.json:4
+msgctxt "step.title"
+msgid "The health check and the choice to share"
+msgstr "الفحص الصحي وقرار المشاركة"
+
+#: user-scenarios/p1-health-check-and-consent.json:49
+msgctxt "step.touchpoint"
+msgid "Pre-pilgrimage health examination; consent on the wallet"
+msgstr "الفحص الصحي السابق للزيارة الدينية؛ الموافقة في المحفظة"
+
+#: user-scenarios/p1-health-check-and-consent.json:5
+msgctxt "step.when"
+msgid "Three months before the pilgrimage"
+msgstr "قبل الزيارة الدينية بثلاثة أشهر"
+
+#: user-scenarios/p1-health-check-and-consent.json:16
+msgctxt "step.where"
+msgid "A GP clinic in Tanavu"
+msgstr "عيادة طبيب عام في Tanavu"
+
+#: user-scenarios/p1-health-check-and-consent.json:4
+msgctxt "title"
+msgid "P1 · The health check and the choice to share"
+msgstr "P1 · الفحص الصحي وخيار المشاركة"
+
+#: user-scenarios/p1-health-check-and-consent.json:5
+msgctxt "when"
+msgid "Three months before the pilgrimage"
+msgstr "قبل الزيارة الدينية بثلاثة أشهر"
+
+#: user-scenarios/p1-health-check-and-consent.json:16
+msgctxt "where"
+msgid "A GP clinic in Tanavu"
+msgstr "عيادة طبيب عام في Tanavu"

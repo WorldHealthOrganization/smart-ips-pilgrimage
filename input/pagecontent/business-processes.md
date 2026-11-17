@@ -15,7 +15,7 @@ part of providing care for pilgrims during a pilgrimage.
 The diagram here denotes the key process flows at a high level, which are further described in details as various business processes.
 
   <div> 
-    <img src="workflow.png" alt="Overview of key clinical process flows" style="width:85%"/>
+    <div style="width:85%" markdown="0">{% lang-fragment workflow-figure.html %}</div>
   </div>
 <br/>
 

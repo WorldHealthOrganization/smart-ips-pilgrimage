@@ -1,0 +1,15 @@
+{
+  "id": "kamal-wallet",
+  "title": "Kamal's national health wallet",
+  "kind": "system",
+  "description": "Kamal's national health wallet app on his phone: records his consent, holds the VHL QR code, and shows it at the facility. Plays the guide's Origin Country Wallet.",
+  "roles": [
+    "origin-wallet"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedIn": [
+      "https://worldhealthorganization.github.io/smart-ips-pilgrimage/system-actors.html#ochw"
+    ]
+  }
+}

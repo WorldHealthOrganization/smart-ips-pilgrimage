@@ -1,0 +1,106 @@
+{
+  "$schema": "translation-qa/v1",
+  "label": "trans:fr/pagecontent/adapting",
+  "locale": "fr",
+  "paths": {
+    "pot": "translations/fr/pagecontent/adapting.pot"
+  },
+  "po": "translations/fr/pagecontent/adapting.po",
+  "source_hashes": {
+    "pot": "b6e3bae83e70",
+    "po": "342a36689b0c"
+  },
+  "criteria": {
+    "translation-coverage": [
+      {
+        "field_hash": {
+          "pot": "b6e3bae83e70",
+          "po": "342a36689b0c"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "translated": 7,
+          "total": 7,
+          "pct": 100
+        }
+      }
+    ],
+    "translation-terms-preserved": [
+      {
+        "field_hash": {
+          "pot": "b6e3bae83e70",
+          "po": "342a36689b0c"
+        },
+        "result": "warn",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "severity": "minor",
+        "evidence": [
+          {
+            "text": "WHO — absent from: \"Pour en savoir plus sur les niveaux de représentation des connaissances et leur \""
+          },
+          {
+            "text": "WHO — absent from: \"Le quatrième niveau (L4 : exécutable — applications et services de référence) po\""
+          },
+          {
+            "text": "WHO — absent from: \"Les artefacts techniques fondés sur des normes de ce guide d’implémentation se s\""
+          },
+          {
+            "text": "WHO — absent from: \"Pour mettre en œuvre les recommandations de l’OMS dans les contextes nationaux, \""
+          },
+          {
+            "text": "WHO — absent from: \"Les lignes directrices de l’OMS formulent et approuvent des recommandations rigo\""
+          }
+        ],
+        "metrics": {
+          "checked": 7,
+          "missing": 5,
+          "missing_strict": 0,
+          "missing_acronyms": 5,
+          "glossary_broken": 0,
+          "glossary_resolved": 0
+        },
+        "notes": "5 acronym(s) from the source do not appear verbatim in the translation and no glossary entry speaks for them. That is right for one the target language localises — WHO is OMS in French — and wrong for one silently dropped, and this check cannot tell the two apart. Add them to translations/fr/glossary.po: a pinned msgstr says what the term must become, and a \"#, localised\" flag says it is rendered in the target language without pinning how."
+      }
+    ],
+    "translation-not-echo": [
+      {
+        "field_hash": {
+          "pot": "b6e3bae83e70",
+          "po": "342a36689b0c"
+        },
+        "result": "pass",
+        "reviewer": {
+          "kind": "script",
+          "id": "pipeline/translation-block-qa.ts",
+          "actor": "local-sweep",
+          "version": "v1",
+          "script_hash": "6ea41c942da1",
+          "script_commit_sha": "unknown"
+        },
+        "reviewed_tree": "b473a325d03f43a75bd777d1720d82f2600db86e",
+        "metrics": {
+          "echoed": 0,
+          "translated": 7
+        }
+      }
+    ],
+    "translation-semantic-roundtrip": []
+  }
+}

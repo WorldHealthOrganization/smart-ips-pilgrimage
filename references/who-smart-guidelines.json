@@ -1,0 +1,14 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-smart-guidelines",
+  "type": "webpage",
+  "title": "SMART Guidelines",
+  "author": [
+    {
+      "literal": "World Health Organization"
+    }
+  ],
+  "note": "Overviews the SMART Guidelines approach.",
+  "URL": "https://www.who.int/teams/digital-health-and-innovation/smart-guidelines",
+  "provenance": "authored"
+}

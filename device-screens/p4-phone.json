@@ -1,0 +1,42 @@
+{
+  "$schema": "device-screen/0.1.0",
+  "id": "P4-phone",
+  "title": "Kamal shows his code",
+  "description": "Kamal's phone at the registration desk in Nalemi: the code, and nothing else.",
+  "device": "phone",
+  "owner": "kamal",
+  "steps": [
+    {
+      "scenario": "p4-scanned-and-checked",
+      "step": "P4"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "app": "National health wallet",
+      "subtitle": "Kamal • Pilgrimage Health Record",
+      "icon": "phone",
+      "brand": "#0d9488"
+    },
+    {
+      "type": "qr",
+      "title": "Pilgrimage Health Record",
+      "holder": "Kamal",
+      "payload": "https://vhl.hie.onesa.example/manifest/kamal-pilgrimage-2026?exp=1798761600#key=7c1e9a44b20f5d3e",
+      "badge": {
+        "text": "Signed by Onesa • GDHCN",
+        "tone": "success",
+        "icon": "shield-check"
+      },
+      "caption": "Show this code at registration"
+    },
+    {
+      "type": "alert",
+      "severity": "info",
+      "icon": "lock",
+      "title": "Passcode protected",
+      "text": "The facility asks for the passcode. Salmah knows it."
+    }
+  ]
+}

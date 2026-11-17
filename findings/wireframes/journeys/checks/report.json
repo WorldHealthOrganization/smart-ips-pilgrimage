@@ -1,0 +1,117 @@
+{
+  "tool": "wireframe-check",
+  "use": "as-is",
+  "topic": "journeys",
+  "surface": "smart-ips-pilgrimage/journeys",
+  "assetDir": "findings/wireframes/journeys",
+  "viewports": {
+    "web": {
+      "width": 1280,
+      "height": 800
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "candidates": [
+    {
+      "file": "findings/wireframes/journeys/as-is-index.html",
+      "entries": [
+        {
+          "kind": "script",
+          "viewport": "web",
+          "criterion": "renders",
+          "result": "pass",
+          "notes": "1794 characters of visible text"
+        },
+        {
+          "kind": "script",
+          "viewport": "web",
+          "criterion": "no-overflow",
+          "result": "pass",
+          "notes": "scrollWidth 1280, viewport 1280"
+        },
+        {
+          "kind": "script",
+          "viewport": "web",
+          "criterion": "no-placeholder",
+          "result": "pass",
+          "notes": "none found"
+        },
+        {
+          "kind": "script",
+          "viewport": "mobile",
+          "criterion": "renders",
+          "result": "pass",
+          "notes": "1794 characters of visible text"
+        },
+        {
+          "kind": "script",
+          "viewport": "mobile",
+          "criterion": "no-overflow",
+          "result": "pass",
+          "notes": "scrollWidth 390, viewport 390"
+        },
+        {
+          "kind": "script",
+          "viewport": "mobile",
+          "criterion": "no-placeholder",
+          "result": "pass",
+          "notes": "none found"
+        }
+      ],
+      "webScreenshot": "findings/wireframes/journeys/checks/as-is-index.web.png",
+      "mobileScreenshot": "findings/wireframes/journeys/checks/as-is-index.mobile.png"
+    },
+    {
+      "file": "findings/wireframes/journeys/as-is-journey.html",
+      "entries": [
+        {
+          "kind": "script",
+          "viewport": "web",
+          "criterion": "renders",
+          "result": "pass",
+          "notes": "2744 characters of visible text"
+        },
+        {
+          "kind": "script",
+          "viewport": "web",
+          "criterion": "no-overflow",
+          "result": "pass",
+          "notes": "scrollWidth 1280, viewport 1280"
+        },
+        {
+          "kind": "script",
+          "viewport": "web",
+          "criterion": "no-placeholder",
+          "result": "pass",
+          "notes": "none found"
+        },
+        {
+          "kind": "script",
+          "viewport": "mobile",
+          "criterion": "renders",
+          "result": "pass",
+          "notes": "2744 characters of visible text"
+        },
+        {
+          "kind": "script",
+          "viewport": "mobile",
+          "criterion": "no-overflow",
+          "result": "pass",
+          "notes": "scrollWidth 390, viewport 390"
+        },
+        {
+          "kind": "script",
+          "viewport": "mobile",
+          "criterion": "no-placeholder",
+          "result": "pass",
+          "notes": "none found"
+        }
+      ],
+      "webScreenshot": "findings/wireframes/journeys/checks/as-is-journey.web.png",
+      "mobileScreenshot": "findings/wireframes/journeys/checks/as-is-journey.mobile.png"
+    }
+  ]
+}

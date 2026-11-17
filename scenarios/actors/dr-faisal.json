@@ -1,0 +1,26 @@
+{
+  "id": "dr-faisal",
+  "title": "Dr Faisal (emergency physician, Nalemi)",
+  "kind": "person",
+  "description": "Persona: an emergency physician at the same pilgrimage health facility in Nalemi; a Host Country Health Worker. Fictional.",
+  "roles": [
+    "host-health-worker"
+  ],
+  "capabilities": [],
+  "meta": {
+    "persona": {
+      "name": "Dr Faisal",
+      "role": "Emergency physician",
+      "country": "Taifafeki",
+      "goal": "Treat safely, knowing the pilgrim's medicines and allergies.",
+      "needs": [
+        "The patient's medicines and allergies before he treats",
+        "A summary he can read"
+      ],
+      "frustrations": [
+        "Summaries in a language he does not read",
+        "Unconscious patients with nothing to go on"
+      ]
+    }
+  }
+}

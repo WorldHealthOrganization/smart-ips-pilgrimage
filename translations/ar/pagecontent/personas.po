@@ -1,0 +1,62 @@
+# Arabic translation of pagecontent/personas
+#
+# UNOFFICIAL — drafted by an agent from the template beside it (owner
+# 2026-11-06: "launch 6 UN translators (w/ validations)"). No human has
+# adjudicated it; official means human sign-off (#206). Acronyms, codes,
+# placeholders, numbers and URLs are kept as written; persona names are
+# fictional and kept as written. Modern Standard Arabic, right-to-left.
+#
+# Untainted round trip, 2026-11-07: two back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids. One term-of-art
+# drift found and fixed ("counselor" read back as "guide": now المستشار
+# throughout). No claim, quantifier, negation or named entity was found moved.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-06T09:51:52.183Z\n"
+"PO-Revision-Date: 2026-11-06\n"
+"Last-Translator: smart-ips-pilgrimage agent (drafted, unofficial)\n"
+"Language: ar\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: input/pagecontent/personas.md:54
+msgid "Digital Services"
+msgstr "الخدمات الرقمية"
+
+#: input/pagecontent/personas.md:110
+msgid "External Hardware and Devices"
+msgstr "الأجهزة والمعدات الخارجية"
+
+#: input/pagecontent/personas.md:6
+msgid "In the clinical flows, generic personas are represented using profiles of the various entity resources in HL7 FHIR, such as <a0>Patient</a0>, <a1>Practitioner</a1>, <a2>PractitionerRole</a2>, and <a3>RelatedPerson</a3>."
+msgstr "في المسارات السريرية، تُمثَّل الشخصيات الافتراضية العامة باستخدام ملفات تعريف (profiles) لموارد الكيانات المختلفة في HL7 FHIR، مثل <a0>Patient</a0> و<a1>Practitioner</a1> و<a2>PractitionerRole</a2> و<a3>RelatedPerson</a3>."
+
+#: input/pagecontent/personas.md:3
+msgid "Integrating the Healthcare Enterprise (IHE) maintains a <a0>repository with common actors</a0> used in IHE profiles."
+msgstr "تحتفظ مبادرة تكامل مؤسسات الرعاية الصحية (IHE) <a0>بمستودع للجهات الفاعلة المشتركة</a0> المستخدمة في ملفات تعريف IHE."
+
+#: input/pagecontent/personas.md:5
+msgid "Key generic personas interacting with the system"
+msgstr "الشخصيات الافتراضية العامة الرئيسية المتفاعلة مع النظام"
+
+#: input/pagecontent/personas.md:9
+msgid "Role Description Different Names ISCO Code (if applicable)     Pilgrim Person undergoing a pilgrimage to a pilgrimage host country. During an unplanned care encounter they would provide explicit consent to access a patient summary information to a Host Country Health Worker. In case of emergency, they may have provided consent during a \"break the glass\" scenario. Patient, client, health system user    Counsellor Health worker or practitioner empanelled by the origin country National Pilgrimage Authority to conduct health assessments for pilgrims planning to go to a pilgrimage. Health worker, Practitioner, Nurse    Accompanying Clinician from Origin Country Clinician from Origin Country accompanying pilgrims to a pilgrimage host country.  During an unplanned care encounter they would provide explicit consent to access a patient summary information to a Host Country Health Worker, only if the pilgrim themselves is unable to do so. Clinician, Doctor    Host Country Health Worker Health worker in the Host Country of a pilgrimage event that is providing care to and/or performing registration and intake of a Pilgrim during a clinical encounter. Clinician, Provider, Doctor, Nurse, Receptionist    National Pilgrimage Authority Organization that manages the application of a Pilgrim as they apply to make pilgrim to a pilgrimage host country. Responsible for providing a Pilgrim with a Pilgrimage Registration Number and assessing health status of Pilgrim before approval is granted by the Pilgrimage Host Country. Optionally responsible for ensuring consent in case of \"break the glass\" scenario when a Pilgrim is not able to provide explicit consent in an emergency care setting due to, for example, unconsciousness. In this case, the National Pilgrimage Authority should collect consent from the Pilgrim for potential future \"break the glass scenario\", associate a Pilgrimage Registration Number to a patient summary document, and provide access means to the Host Country HIE to the patient summary document by association to the Pilgrimage Registration Number Pilgrimage Authority"
+msgstr "الدور الوصف الأسماء البديلة رمز ISCO (إن وُجد)     الزائر شخص يؤدي الزيارة الدينية إلى البلد المضيف للزيارة الدينية. وخلال لقاء رعاية غير مخطَّط له، يقدّم موافقة صريحة على اطلاع العامل الصحي في البلد المضيف على معلومات ملخص المريض. وفي الحالات الطارئة، قد يكون قد قدّم موافقته ضمن سيناريو «كسر الزجاج» (break the glass). المريض، العميل، مستخدم النظام الصحي    المستشار عامل صحي أو ممارس معتمد لدى الهيئة الوطنية للزيارة الدينية في بلد المنشأ لإجراء التقييمات الصحية للزوار الذين يعتزمون أداء الزيارة الدينية. عامل صحي، ممارس، ممرض    الممارس السريري المرافق من بلد المنشأ ممارس سريري من بلد المنشأ يرافق الزوار إلى البلد المضيف للزيارة الدينية. وخلال لقاء رعاية غير مخطَّط له، يقدّم موافقة صريحة على اطلاع العامل الصحي في البلد المضيف على معلومات ملخص المريض، وذلك فقط إذا تعذّر على الزائر نفسه القيام بذلك. ممارس سريري، طبيب    العامل الصحي في البلد المضيف عامل صحي في البلد المضيف لحدث الزيارة الدينية يقدّم الرعاية للزائر و/أو يتولى تسجيله واستقباله أثناء لقاء سريري. ممارس سريري، مقدّم رعاية، طبيب، ممرض، موظف استقبال    الهيئة الوطنية للزيارة الدينية منظمة تدير طلب الزائر عند تقدّمه لأداء الزيارة الدينية إلى البلد المضيف للزيارة الدينية. وهي مسؤولة عن تزويد الزائر برقم تسجيل الزيارة الدينية وتقييم حالته الصحية قبل منح الموافقة من البلد المضيف للزيارة الدينية. وتكون اختياريًا مسؤولة عن ضمان الموافقة في سيناريو «كسر الزجاج» عندما يتعذّر على الزائر تقديم موافقة صريحة في سياق رعاية طارئة بسبب فقدان الوعي مثلًا. وفي هذه الحالة، ينبغي للهيئة الوطنية للزيارة الدينية جمع موافقة الزائر على سيناريو «كسر الزجاج» المحتمل مستقبلًا، وربط رقم تسجيل الزيارة الدينية بوثيقة ملخص المريض، وتوفير وسائل الوصول إلى وثيقة ملخص المريض لنظام تبادل المعلومات الصحية (HIE) في البلد المضيف عبر ربطها برقم تسجيل الزيارة الدينية. هيئة الزيارة الدينية"
+
+#: input/pagecontent/personas.md:112
+msgid "Service Description Different Names Service Code (if applicable)     Bar code scanner Handheld scanner capable of scanning QR Codes, linked to host country EMR. QR code scanner    Pilgrim card Physical card for pilgrims to carry that has the QR code printed on it."
+msgstr "الخدمة الوصف الأسماء البديلة رمز الخدمة (إن وُجد)     ماسح الرموز الشريطية ماسح محمول قادر على مسح رموز QR، ومرتبط بالسجل الطبي الإلكتروني (EMR) في البلد المضيف. ماسح رموز QR    بطاقة الزائر بطاقة مادية يحملها الزوار مطبوع عليها رمز QR."
+
+#: input/pagecontent/personas.md:58
+msgid "Service Description Different Names Service Code (if applicable)     National Health Information Exchange Health information exchange of origin country of a Pilgrim. Responsible for providing standardized patient summary information for a Pilgrim and making that accessible to the Pilgrim as part of a patient-mediated exchange data exchange and consent approach. HIE    National Health Wallet App Health Wallet App linked to the National HIE that manages access to patient summary information of a Pilgrim, particularly the IPS. The wallet app should manage consent profiles including time-bound access to an IPS, selective disclosure of content that is shared within the patient summary, and opt-out/opt-in on usage of the patient summary in a \"break the glass\" scenario. HIE    WHO GDHCN WHO Global Digital Health Certification Network for management of public keys provided through National HIEs for verification of digital signatures GDHCN, Trust Network Gateway, TNG, Public Key Directory, PKD    WHO Terminology Service WHO hosted Terminology Service used for handling codesystems and valuesets used by National Systems WHO TS, TS    Host Country EMR EMR used in Host Country of the pilgrimage by the Host Country Health Worker for accessing and managing health records. Serves as the interface utilized to view and/or ingest patient summary documents from Pilgrims. The Host Country EMR should, at a minimum, save a rendered version (e.g. PDF) of the Pilgrim's patient summary document for audit and liability purposes. The Host Country EMR may optionally ingest the patient summary document and transmit or otherwise make it available to the Host Country HIE for continued patient care. In the optional scenario of a \"break the glass\" scenario, the Host Country EMR should retrieve the patient summary of the Pilgrim from the Host Country HIE via the association of that document to the Pilgrim Registration Number. Host EMR, EMR, Electronic Medical Records System    Host Country HIE Health Information Exchange of the Host Country which contains ingested patient summary information during a Pilgrim's care encounter or manages access to their patient summary during a \"break the glass\" scenario. Host HIE"
+msgstr "الخدمة الوصف الأسماء البديلة رمز الخدمة (إن وُجد)     التبادل الوطني للمعلومات الصحية تبادل المعلومات الصحية في بلد منشأ الزائر. وهو مسؤول عن توفير معلومات موحَّدة لملخص المريض الخاص بالزائر وإتاحتها للزائر في إطار نهج لتبادل البيانات والموافقة بوساطة المريض. HIE    تطبيق المحفظة الصحية الوطنية تطبيق محفظة صحية مرتبط بنظام HIE الوطني يدير الوصول إلى معلومات ملخص المريض الخاص بالزائر، ولا سيما IPS. وينبغي لتطبيق المحفظة إدارة ملفات الموافقة، بما في ذلك الوصول المحدود زمنيًا إلى IPS، والإفصاح الانتقائي عن المحتوى المُشارَك ضمن ملخص المريض، والانسحاب/الاشتراك في استخدام ملخص المريض ضمن سيناريو «كسر الزجاج». HIE    WHO GDHCN الشبكة العالمية لإصدار الشهادات الصحية الرقمية التابعة لمنظمة الصحة العالمية لإدارة المفاتيح العمومية المقدَّمة عبر أنظمة HIE الوطنية للتحقق من التوقيعات الرقمية GDHCN، بوابة شبكة الثقة، TNG، دليل المفاتيح العمومية، PKD    خدمة المصطلحات التابعة لمنظمة الصحة العالمية خدمة مصطلحات تستضيفها منظمة الصحة العالمية وتُستخدم لمعالجة نظم الترميز (codesystems) ومجموعات القيم (valuesets) التي تستخدمها الأنظمة الوطنية WHO TS، TS    السجل الطبي الإلكتروني في البلد المضيف سجل طبي إلكتروني (EMR) يستخدمه العامل الصحي في البلد المضيف للزيارة الدينية للوصول إلى السجلات الصحية وإدارتها. ويمثّل الواجهة المستخدمة لعرض وثائق ملخص المريض الخاصة بالزوار و/أو استيعابها. وينبغي للسجل الطبي الإلكتروني في البلد المضيف، كحد أدنى، حفظ نسخة معروضة (مثل PDF) من وثيقة ملخص المريض الخاصة بالزائر لأغراض التدقيق والمسؤولية. ويجوز للسجل الطبي الإلكتروني في البلد المضيف اختياريًا استيعاب وثيقة ملخص المريض ونقلها أو إتاحتها بطريقة أخرى لنظام HIE في البلد المضيف لمواصلة رعاية المريض. وفي السيناريو الاختياري «كسر الزجاج»، ينبغي للسجل الطبي الإلكتروني في البلد المضيف استرجاع ملخص المريض الخاص بالزائر من نظام HIE في البلد المضيف عبر ربط تلك الوثيقة برقم تسجيل الزائر. EMR المضيف، EMR، نظام السجلات الطبية الإلكترونية    HIE في البلد المضيف تبادل المعلومات الصحية في البلد المضيف، الذي يحتوي على معلومات ملخص المريض المُستوعَبة أثناء لقاء رعاية الزائر أو يدير الوصول إلى ملخص المريض الخاص به أثناء سيناريو «كسر الزجاج». HIE المضيف"
+
+#: input/pagecontent/personas.md:1
+msgid "This page lists and describes the human users and digital services that interact with the system, derived from the business requirements defined at the operational level (L2)."
+msgstr "تسرد هذه الصفحة وتصف المستخدمين البشريين والخدمات الرقمية التي تتفاعل مع النظام، والمستمدة من متطلبات العمل المحدَّدة على المستوى التشغيلي (L2)."

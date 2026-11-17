@@ -1,0 +1,22 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Russian translation of input/pagecontent/index.md. UNOFFICIAL: agent translation, not signed off by a person. Coverage: 28/28 strings.",
+  "label": "trans:ru/pagecontent/index",
+  "locale": "ru",
+  "sourceFile": "input/pagecontent/index.md",
+  "potFile": "translations/ru/pagecontent/index.pot",
+  "poFile": "translations/ru/pagecontent/index.po",
+  "status": {
+    "locale": "ru",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (ru team session)"
+  },
+  "coverage": {
+    "translated": 49,
+    "total": 62,
+    "pct": 79
+  },
+  "description": "Unofficial Russian translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it."
+}

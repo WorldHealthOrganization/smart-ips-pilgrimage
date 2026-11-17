@@ -1,0 +1,125 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "p2-summary-signed",
+  "title": "P2 · His summary is assembled and signed",
+  "description": "Onesa's HIE assembles Kamal's International Patient Summary from his care history: his conditions, his medicines, his allergy. It issues a Verifiable Health Link to it, signs it with a key registered with GDHCN, and puts the QR code in his wallet. Step 2 of the overview of key process flows.",
+  "personas": [
+    "onesa-hie",
+    "kamal-wallet",
+    "kamal"
+  ],
+  "partOf": "the-pilgrims-hajj",
+  "follows": "p1-health-check-and-consent",
+  "when": "Before departure",
+  "where": "Onesa's HIE; Kamal's home",
+  "country": "Onesa",
+  "trustLadder": "record-trust",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Wide banner, aspect ratio 11:4. Bright natural daylight, soft pastel palette with clear colour accents. Faces in gentle three-quarter view with expressive, kind features. Technology shown as simple, oversized icons: a phone with a QR code, a shield with a check mark, a small speech bubble with a symbol. No readable text, no logos, no real brands, no flags with text. All people are fictional.",
+    "cast": [
+      {
+        "actor": "kamal",
+        "description": "Onesan man, 61, slim, short grey hair, kind face. Batik shirt in Onesa. In Taifafeki, two white pilgrim's garments (unstitched towelling cloth, right shoulder bare when in pilgrim's dress), a small waist pouch and one phone."
+      }
+    ],
+    "notes": [
+      "Pilgrim's white garments (two white unstitched sheets) is for men only; women wear ordinary modest clothing, usually white, face and hands uncovered.",
+      "Keep the shrine and other holy sites far in the background or out of frame.",
+      "Keep medical signs text-free so generators don't invent wrong Arabic.",
+      "The picture carries no text: the step title and the caption are page text."
+    ]
+  },
+  "steps": [
+    {
+      "id": "P2",
+      "title": "His summary is assembled and signed",
+      "headline": "Onesa's HIE turns Kamal's care history into a signed patient summary and puts the link to it in his wallet as a QR code.",
+      "when": "Before departure",
+      "where": "Onesa's HIE; Kamal's home",
+      "touchpoint": "National health wallet",
+      "narrative": "Onesa's HIE assembles Kamal's International Patient Summary from his care history: his conditions, his medicines, his allergy. It issues a Verifiable Health Link to it, signs it with a key registered with GDHCN, and puts the QR code in his wallet. Step 2 of the overview of key process flows.",
+      "lead": "onesa-hie",
+      "experiences": [
+        {
+          "actor": "onesa-hie",
+          "doing": "Assembles the IPS (conditions, medicines, allergy), issues a Verifiable Health Link to it, and signs it with a key registered with GDHCN."
+        },
+        {
+          "actor": "kamal-wallet",
+          "doing": "Receives the QR code and keeps it ready to show."
+        },
+        {
+          "actor": "kamal",
+          "doing": "Sees the QR code appear in his wallet as he packs.",
+          "feeling": "“Everything they need is in my phone.”",
+          "emotion": 1
+        }
+      ],
+      "painPoint": "Without a signed summary, a clinic abroad has only what Kamal can remember and explain.",
+      "enabler": "One signed link, issued at home, that any participating country can verify.",
+      "policy": "What must the summary contain for a pilgrim — and who decides what is left out?",
+      "handoff": {
+        "summary": "The VHL QR code is in Kamal's wallet",
+        "from": "onesa-hie",
+        "to": "kamal-wallet",
+        "carrier": "Wallet app",
+        "payload": "Signed VHL (QR code) to the IPS",
+        "offline": true
+      },
+      "realisedBy": [
+        {
+          "process": "input/business-processes/Health Check and Counseling, Explicit Consent on Wallet.bpmn",
+          "tasks": [
+            "Activity_1hhzmu2",
+            "generate-shl",
+            "display-shl",
+            "Activity_1816554"
+          ]
+        }
+      ],
+      "examples": [
+        "Bundle/MyIPS",
+        "List/PilgrimFolder"
+      ],
+      "gaps": [
+        "No business process for assembling the IPS from the care history."
+      ],
+      "references": [
+        {
+          "label": "Transaction: issue VHL",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/transactions.html#issue-vhl-request",
+          "rel": "specified by"
+        },
+        {
+          "label": "Profile HajjIPS and the example My IPS; the folder example My Pilgrimage Minimal Folder",
+          "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/artifacts.html",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/pilgrim/p2.webp",
+        "alt": "Icons for his conditions, medicines and allergy are gathered into one summary, stamped with a green shield by a golden key and turned into a QR code on the phone Kamal holds beside his packed suitcase.",
+        "prompt": "A stylised server room merging into a document. Soft-glowing panels assemble a one-page patient summary from three icons: a heart (conditions), a pill bottle and insulin pen (medicines), and a red allergy warning symbol. A golden key stamps a shield with a check mark onto it. On the right the summary shrinks into a QR code and flies into a phone in Kamal's hand; he stands at home in batik with a packed suitcase. No readable text."
+      },
+      "record": {
+        "state": "signed",
+        "description": "His IPS is signed and its QR code is in his wallet",
+        "heldWhere": "Kamal's wallet (QR code); Onesa's HIE"
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "database",
+      "label": "Onesa's HIE"
+    },
+    {
+      "icon": "key",
+      "label": "Signed summary"
+    },
+    {
+      "icon": "qr",
+      "label": "QR code in his wallet"
+    }
+  ]
+}

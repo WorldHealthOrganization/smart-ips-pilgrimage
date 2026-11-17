@@ -1,0 +1,13 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-gdhcn",
+  "type": "webpage",
+  "title": "Global Digital Health Certification Network",
+  "author": [
+    {
+      "literal": "World Health Organization"
+    }
+  ],
+  "URL": "https://www.who.int/initiatives/global-digital-health-certification-network",
+  "provenance": "authored"
+}

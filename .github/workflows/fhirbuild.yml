@@ -9,15 +9,13 @@ name: CI
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events for any main branch
-  push:
-    branches-ignore:    
-      - 'gh-pages'
-  pull_request:
-
+  # Manual trigger only (owner, 2026-11-01 09:02Z, card Q-VC-8 A; issue #6):
+  # the WHO template build cannot fetch who.template.root, so it no longer runs
+  # on push or pull request. harness-pr-checks.yml checks every pull request.
+  # Run this from the Actions tab when a WHO build is wanted.
   workflow_dispatch:
 
 jobs:
   # This workflow contains a single job called "build"
   call_build: 
-    uses: WorldHealthOrganization/smart-base/.github/workflows/fhirbuild.yml@main
+    uses: litlfred/smart-base/.github/workflows/fhirbuild.yml@9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0 # index.lock.json

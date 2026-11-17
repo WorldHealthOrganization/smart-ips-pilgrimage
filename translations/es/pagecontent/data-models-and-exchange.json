@@ -1,0 +1,25 @@
+{
+  "$schema": "translation-node/v1",
+  "$comment": "Spanish translation of input/pagecontent/data-models-and-exchange.md. Agent translation, unofficial: no human has adjudicated it. Coverage 17/17.",
+  "label": "trans:es/pagecontent/data-models-and-exchange",
+  "locale": "es",
+  "sourceFile": "input/pagecontent/data-models-and-exchange.md",
+  "sourceHash": "05ff0a0d57ef",
+  "potFile": "translations/es/pagecontent/data-models-and-exchange.pot",
+  "poFile": "translations/es/pagecontent/data-models-and-exchange.po",
+  "poIncludes": [
+    "translations/es/glossary.po"
+  ],
+  "status": {
+    "locale": "es",
+    "official": false,
+    "generatedBy": "agent",
+    "generatedAt": "2026-11-06T10:00:00Z",
+    "generator": "agent translation (smart-ips-pilgrimage es session)"
+  },
+  "coverage": {
+    "translated": 17,
+    "total": 17,
+    "pct": 100
+  }
+}
