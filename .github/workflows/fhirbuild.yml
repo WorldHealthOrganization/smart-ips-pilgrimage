@@ -18,4 +18,4 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   call_build: 
-    uses: WorldHealthOrganization/smart-base/.github/workflows/fhirbuild.yml@main
+    uses: litlfred/smart-base/.github/workflows/fhirbuild.yml@9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0 # index.lock.json
