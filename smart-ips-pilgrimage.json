@@ -3,7 +3,7 @@
   "name": "smart-ips-pilgrimage",
   "version": "2.1.0",
   "repository": "litlfred/smart-ips-pilgrimage",
-  "iriBase": "https://litlfred.github.io/smart-ips-pilgrimage/",
+  "iriBase": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/",
   "title": "SMART Verifiable IPS for Pilgrimage",
   "description": "The WHO SMART Guidelines Verifiable IPS for Pilgrimage implementation guide (FHIR IG source under input/): GDHCN and IPS for verifiable health documents during pilgrimage, as a harnessed instance of smart-base.",
   "needs": [
