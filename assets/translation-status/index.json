@@ -1,6 +1,6 @@
 {
   "$schema": "folio-translation-status/v1",
-  "changedAt": "2026-11-17",
+  "changedAt": "2026-11-18",
   "scope": "cat-harness/translations",
   "tile": {
     "smart-base-translations": {

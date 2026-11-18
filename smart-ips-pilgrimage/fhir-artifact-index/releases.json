@@ -1,7 +1,7 @@
 {
   "$schema": "ig-releases/v1",
   "repository": "WorldHealthOrganization/smart-ips-pilgrimage",
-  "readAt": "2026-11-17",
+  "readAt": "2026-11-18",
   "releases": [
     {
       "tag": "v2.0.3",

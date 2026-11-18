@@ -6,9 +6,9 @@
   "source": {
     "kind": "sushi-config",
     "of": "https://github.com/WorldHealthOrganization/smart-ips-pilgrimage",
-    "ref": "7ee9b7f3054cdd2baee121f06a30d6e7e3393015",
+    "ref": "564fc17b0b27a95de147e0f331cb72bb631aff91",
     "path": "sushi-config.yaml",
-    "readAt": "2026-11-17"
+    "readAt": "2026-11-18"
   },
   "groups": [
     {

@@ -4,14 +4,14 @@
     "schema": "https://schema.org/",
     "dcterms": "http://purl.org/dc/terms/"
   },
-  "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/relationship/id-4d04ec822be95089bed923260c04f054",
+  "@id": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/archimate/2.1.0/relationship/id-4d04ec822be95089bed923260c04f054",
   "@type": "archimate:Triggering",
   "schema:identifier": "id-4d04ec822be95089bed923260c04f054",
   "archimate:source": {
-    "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-abe54aba83bf5d3fb7555a45a6d55e33"
+    "@id": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-abe54aba83bf5d3fb7555a45a6d55e33"
   },
   "archimate:target": {
-    "@id": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-15ad62c4c32e52439597bee188559dea"
+    "@id": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/archimate/2.1.0/element/id-15ad62c4c32e52439597bee188559dea"
   },
-  "dcterms:isPartOf": "https://litlfred.github.io/smart-ips-pilgrimage/archimate/2.1.0"
+  "dcterms:isPartOf": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/archimate/2.1.0"
 }

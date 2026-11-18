@@ -716,121 +716,6 @@
    "templatesOnly": 99
   },
   {
-   "name": "smart-base",
-   "repository": "litlfred/smart-base",
-   "translations": "translations",
-   "locales": [
-    "ar",
-    "es",
-    "fr",
-    "ru",
-    "zh"
-   ],
-   "rows": [],
-   "templatesOnly": 10
-  },
-  {
-   "name": "who-iris",
-   "repository": "litlfred/who-iris",
-   "translations": "translations",
-   "locales": [
-    "ar",
-    "es",
-    "fr",
-    "ru",
-    "zh"
-   ],
-   "rows": [
-    {
-     "catalogue": "glossary/who-iris--who-terms",
-     "sources": [
-      "who-iris/glossary/who-iris.glossary.json"
-     ],
-     "cells": {
-      "ar": {
-       "state": "machine",
-       "entries": 4,
-       "translated": 4,
-       "fuzzy": 0,
-       "hash": "27c5c521b1f97332"
-      },
-      "es": {
-       "state": "machine",
-       "entries": 4,
-       "translated": 4,
-       "fuzzy": 0,
-       "hash": "f2a145e691d1c46b"
-      },
-      "fr": {
-       "state": "machine",
-       "entries": 4,
-       "translated": 4,
-       "fuzzy": 0,
-       "hash": "123a972e129ac3e1"
-      },
-      "ru": {
-       "state": "machine",
-       "entries": 4,
-       "translated": 4,
-       "fuzzy": 0,
-       "hash": "531deaaae266676f"
-      },
-      "zh": {
-       "state": "machine",
-       "entries": 4,
-       "translated": 4,
-       "fuzzy": 0,
-       "hash": "ed4c506ac2e3d79f"
-      }
-     }
-    },
-    {
-     "catalogue": "site/iris-site",
-     "sources": [
-      "who-iris/scripts/gen-iris-pages.ts"
-     ],
-     "cells": {
-      "ar": {
-       "state": "machine",
-       "entries": 156,
-       "translated": 156,
-       "fuzzy": 0,
-       "hash": "a34d21960d45eb27"
-      },
-      "es": {
-       "state": "machine",
-       "entries": 156,
-       "translated": 156,
-       "fuzzy": 0,
-       "hash": "7523d93181a097e7"
-      },
-      "fr": {
-       "state": "machine",
-       "entries": 156,
-       "translated": 156,
-       "fuzzy": 0,
-       "hash": "1f4add868a0ba059"
-      },
-      "ru": {
-       "state": "machine",
-       "entries": 156,
-       "translated": 156,
-       "fuzzy": 0,
-       "hash": "9241cc47fad0343a"
-      },
-      "zh": {
-       "state": "machine",
-       "entries": 156,
-       "translated": 156,
-       "fuzzy": 0,
-       "hash": "479ece57d5006c38"
-      }
-     }
-    }
-   ],
-   "templatesOnly": 4
-  },
-  {
    "name": "fhir-harness",
    "repository": "litlfred/fhir-harness",
    "translations": "translations",
@@ -1019,6 +904,121 @@
     }
    ],
    "templatesOnly": 7
+  },
+  {
+   "name": "who-iris",
+   "repository": "litlfred/who-iris",
+   "translations": "translations",
+   "locales": [
+    "ar",
+    "es",
+    "fr",
+    "ru",
+    "zh"
+   ],
+   "rows": [
+    {
+     "catalogue": "glossary/who-iris--who-terms",
+     "sources": [
+      "who-iris/glossary/who-iris.glossary.json"
+     ],
+     "cells": {
+      "ar": {
+       "state": "machine",
+       "entries": 4,
+       "translated": 4,
+       "fuzzy": 0,
+       "hash": "27c5c521b1f97332"
+      },
+      "es": {
+       "state": "machine",
+       "entries": 4,
+       "translated": 4,
+       "fuzzy": 0,
+       "hash": "f2a145e691d1c46b"
+      },
+      "fr": {
+       "state": "machine",
+       "entries": 4,
+       "translated": 4,
+       "fuzzy": 0,
+       "hash": "123a972e129ac3e1"
+      },
+      "ru": {
+       "state": "machine",
+       "entries": 4,
+       "translated": 4,
+       "fuzzy": 0,
+       "hash": "531deaaae266676f"
+      },
+      "zh": {
+       "state": "machine",
+       "entries": 4,
+       "translated": 4,
+       "fuzzy": 0,
+       "hash": "ed4c506ac2e3d79f"
+      }
+     }
+    },
+    {
+     "catalogue": "site/iris-site",
+     "sources": [
+      "who-iris/scripts/gen-iris-pages.ts"
+     ],
+     "cells": {
+      "ar": {
+       "state": "machine",
+       "entries": 156,
+       "translated": 156,
+       "fuzzy": 0,
+       "hash": "a34d21960d45eb27"
+      },
+      "es": {
+       "state": "machine",
+       "entries": 156,
+       "translated": 156,
+       "fuzzy": 0,
+       "hash": "7523d93181a097e7"
+      },
+      "fr": {
+       "state": "machine",
+       "entries": 156,
+       "translated": 156,
+       "fuzzy": 0,
+       "hash": "1f4add868a0ba059"
+      },
+      "ru": {
+       "state": "machine",
+       "entries": 156,
+       "translated": 156,
+       "fuzzy": 0,
+       "hash": "9241cc47fad0343a"
+      },
+      "zh": {
+       "state": "machine",
+       "entries": 156,
+       "translated": 156,
+       "fuzzy": 0,
+       "hash": "479ece57d5006c38"
+      }
+     }
+    }
+   ],
+   "templatesOnly": 4
+  },
+  {
+   "name": "smart-base",
+   "repository": "litlfred/smart-base",
+   "translations": "translations",
+   "locales": [
+    "ar",
+    "es",
+    "fr",
+    "ru",
+    "zh"
+   ],
+   "rows": [],
+   "templatesOnly": 10
   },
   {
    "name": "folio-assistant-core",

@@ -2,29 +2,47 @@
  "$schema": "site-parity-report/v1",
  "outcome": "published-with-shortfall",
  "shortfall": [
-  "directories the current root serves and the candidate does not: sitepreview/"
+  "directories the current root serves and the candidate does not: sitepreview/ (against the last clean publish)"
  ],
- "droppedByRuling": [
-  {
-   "what": "comparison-v2.0.2/",
-   "ruling": "owner, 2026-10-14, \"2a\": the IG Publisher's version comparisons (comparison-v*/) are not rendered and not published"
-  }
- ],
+ "droppedByRuling": [],
  "current": {
-  "pages": 19115,
+  "pages": 4628,
   "counts": {
    "siteNav": 0,
-   "search": 0,
-   "navbarRow": 0,
-   "rail": 0,
-   "translationMeta": 0
+   "search": 2920,
+   "navbarRow": 1931,
+   "rail": 2887,
+   "translationMeta": 2920
   },
   "dirs": [
+   "ar",
+   "archimate",
+   "artifact",
    "assets",
-   "comparison-v2.0.2",
-   "sitepreview"
+   "cat-harness",
+   "en",
+   "es",
+   "fhir-artifact-index",
+   "folio-assistant-core",
+   "fr",
+   "id-lookup",
+   "openapi",
+   "pilgrim",
+   "questionnaires",
+   "ru",
+   "smart-base",
+   "smart-ips-pilgrimage",
+   "zh"
   ],
-  "index": []
+  "index": [
+   "search",
+   "navbarRow",
+   "rail",
+   "translationMeta"
+  ],
+  "stamp": {
+   "present": true
+  }
  },
  "candidate": {
   "pages": 4628,
