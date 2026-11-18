@@ -156,20 +156,20 @@
     "links": [
       {
         "label": "The IG",
-        "href": "https://litlfred.github.io/smart-ips-pilgrimage/",
+        "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/",
         "frame": "FHIR IG"
       },
       {
         "label": "The pilgrim's journey",
-        "href": "https://litlfred.github.io/smart-ips-pilgrimage/index.html"
+        "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/index.html"
       },
       {
         "label": "Business processes",
-        "href": "https://litlfred.github.io/smart-ips-pilgrimage/business-processes.html"
+        "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/business-processes.html"
       },
       {
         "label": "ArchiMate",
-        "href": "https://litlfred.github.io/smart-ips-pilgrimage/en/smart-ips-pilgrimage/archimate/2.1.0/view/overview-of-key-process-flows/"
+        "href": "https://worldhealthorganization.github.io/smart-ips-pilgrimage/en/smart-ips-pilgrimage/archimate/2.1.0/view/overview-of-key-process-flows/"
       }
     ],
     "ig": {

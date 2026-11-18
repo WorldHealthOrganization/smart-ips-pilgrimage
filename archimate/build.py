@@ -35,11 +35,15 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+# The seed of every element id (uuid5). It is a fixed string, not an IRI to follow:
+# the ids are cited by input/includes/workflow-figure*.html, so it stays as first
+# minted when the iriBase moves.
 NAMESPACE = "https://litlfred.github.io/smart-ips-pilgrimage/archimate"
 SOURCE = "SMART Verifiable IPS for Pilgrimage (litlfred/smart-ips-pilgrimage): the pilgrim's journey and the overview of key process flows"
 MODEL_NAME = "SMART Verifiable IPS for Pilgrimage"
 FIXED_TIME = (2026, 1, 1, 0, 0, 0)
-IG = "https://litlfred.github.io/smart-ips-pilgrimage/"
+# Where the IG's pages are: the instance declaration's iriBase.
+IG = json.loads((ROOT / "smart-ips-pilgrimage.json").read_text(encoding="utf-8"))["iriBase"]
 JOURNEYS = "en/smart-ips-pilgrimage/journeys/smart-ips-pilgrimage/"
 
 # --- The overview figure, transcribed (input/images/workflow.png, 1280 x 720) ---
