@@ -36,7 +36,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "input/includes/workflow-pretty.svg"
-IG = "https://litlfred.github.io/smart-ips-pilgrimage/"
+# Where the IG's pages are: the instance declaration's iriBase.
+IG = json.loads((ROOT / "smart-ips-pilgrimage.json").read_text(encoding="utf-8"))["iriBase"]
 VIEW = "Overview of key process flows"
 XSI = "{http://www.w3.org/2001/XMLSchema-instance}type"
 BLUE, BLUE_TEXT, GREEN, INK = "#4472C4", "#2F5597", "#548235", "#1f1f1f"
@@ -122,7 +123,7 @@ def draw():
            f'<marker id="wf-a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="{GREEN}"/></marker></defs>',
            '<rect width="100%" height="100%" fill="#fff"/>']
 
-    VIEW_PAGE = f"en/smart-ips-pilgrimage/archimate/{version()}/views/overview-of-key-process-flows/"
+    VIEW_PAGE = f"en/smart-ips-pilgrimage/archimate/{version()}/view/overview-of-key-process-flows/"
     # The countries: a dashed Y between them, and each one's name, large, at its outer edge.
     locs = [(elements[e][1], x, y, w, h) for e, x, y, w, h in boxes.values() if elements[e][0] == "Location"]
     gdhcn = next((b for b in boxes.values() if elements[b[0]][2].get("role", "").endswith("#trust-network")), None)
